@@ -4,7 +4,7 @@ import { IntlProvider } from "react-intl";
 import flatten from "flat";
 
 import { LOCALES } from "./constants";
-import messages from "./messages";
+import messages from "./languages";
 
 interface ProviderProps {
   children: any;

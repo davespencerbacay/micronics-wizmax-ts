@@ -12,7 +12,7 @@ export const getFromStorage = (name: any) => {
   }
 
   try {
-    return JSON.parse(window.localStorage.getItem(name) || JSON.parse(""));
+    return JSON.parse(window.localStorage.getItem(name) || JSON.parse("en-us"));
   } catch (e) {
     console.error(e);
 

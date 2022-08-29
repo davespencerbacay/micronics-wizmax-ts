@@ -1,6 +1,6 @@
 import React, { useReducer, createContext } from "react";
 import defaultContext from "./defaultContext";
-import { saveToStorage } from "../utils/localStorage";
+import { saveToStorage } from "../helpers/localStorage";
 import { STORAGE_KEY } from "../constants";
 
 const AppContext = createContext<any>("");

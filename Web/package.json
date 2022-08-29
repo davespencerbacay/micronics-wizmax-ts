@@ -13,6 +13,7 @@
     "@types/react-dom": "^18.0.6",
     "flat": "^5.0.2",
     "lodash": "^4.17.21",
+    "node-sass": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intl": "^6.1.0",
