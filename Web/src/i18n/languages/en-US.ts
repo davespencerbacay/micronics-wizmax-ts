@@ -9,5 +9,8 @@ export default {
       disclaimer:
         "Some images used for product photos are rendered 3D models that may have slight differences compared to the actual product. Product specifications may change without prior notice.",
     },
+    navigationBar: {
+      search: "Search"
+    }
   },
 };
