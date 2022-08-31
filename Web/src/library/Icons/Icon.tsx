@@ -1,4 +1,3 @@
-import { IMAGES } from "constants/";
 import React from "react";
 
 interface IconProps {
