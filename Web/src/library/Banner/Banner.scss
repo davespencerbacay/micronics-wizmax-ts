@@ -1,0 +1,21 @@
+@import "~styles/index.scss";
+
+.header-container {
+  padding: 6em 0 3em 0;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: $background-dark;
+  h2 {
+    color: $color-white;
+    font-weight: 900;
+    font-size: 5rem;
+  }
+  p {
+    color: $color-white;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+}
