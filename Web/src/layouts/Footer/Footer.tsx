@@ -32,7 +32,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <img src={IMAGES.COMPANY_LOGOS.MAIN} />
+        <img src={IMAGES.COMPANY_LOGOS.MAIN} alt="" />
       </div>
 
       <Container>
