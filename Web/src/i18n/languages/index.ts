@@ -1,7 +1,8 @@
 import en from "./en-US";
 import kr from "./kr-KR";
 
-export default {
+const langs = {
   ...en,
   ...kr,
 };
+export default langs;

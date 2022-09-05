@@ -1,9 +1,10 @@
 import { LOCALES } from "../constants";
 
-export default {
+const convertedTexts = {
   [LOCALES.ENGLISH]: {
     global: {
       selectLanguage: "Select Language",
+      companyName: "Wizmax Global",
     },
     footer: {
       header: "HANMI MICRONICS © ALL RIGHTS RESERVED.",
@@ -32,3 +33,4 @@ export default {
     },
   },
 };
+export default convertedTexts;
