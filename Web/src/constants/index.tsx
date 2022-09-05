@@ -7,10 +7,11 @@ import Shop from "pages/Shop/Shop";
 
 /* Change languge consts */
 export const STORAGE_KEY: string = "locale";
+
 export const LANGUAGES = {
   KOREA: "KR",
-  EN: "EN"
-}
+  EN: "EN",
+};
 
 /* Theme Variants */
 export const VARIANTS = {
@@ -53,7 +54,7 @@ export const REACT_ROUTES: ReactRoutesType[] = [
 export const IMAGES = {
   COMPANY_LOGOS: {
     MAIN: "images/micronics-assets/main-logo.png",
-    NAVBAR: "images/micronics-assets/navbar-logo.png"
+    NAVBAR: "images/micronics-assets/navbar-logo.png",
   },
   FACEBOOK: "images/micronics-assets/facebook.png",
   TWITTER: "images/micronics-assets/twitter.png",

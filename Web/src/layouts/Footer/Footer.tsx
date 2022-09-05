@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { productCategories } from "data/productCategories";
 import { Col, Container, Row } from "reactstrap";
 import Icon from "library/Icons/Icon";
+import useResponsive from "hooks/useResponsive";
+import classnames from "classnames";
 
 const ProductLinks = () => {
   return (
@@ -20,7 +22,51 @@ const ProductLinks = () => {
     </ul>
   );
 };
+const OtherLinks = () => {
+  const links = [
+    {
+      text: intl("footer.contactUs"),
+      path: "/",
+    },
+    {
+      text: intl("footer.productSpecs"),
+      path: "/",
+    },
+    {
+      text: intl("footer.softwareDrivers"),
+      path: "/",
+      hasMarginBottom: true,
+    },
+    {
+      text: intl("footer.mouseDrivers"),
+      path: "/",
+    },
+    {
+      text: intl("footer.keyboardDrivers"),
+      path: "/",
+    },
+    {
+      text: intl("footer.headsetDrivers"),
+      path: "/",
+    },
+  ];
+  return (
+    <ul>
+      {links.map((link) => {
+        const linkClassname = classnames({
+          "mb-4": link.hasMarginBottom,
+        });
+        return (
+          <li className={linkClassname}>
+            <Link to={link.path}>{link.text}</Link>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
 const Footer = () => {
+  const isMobileMode = useResponsive("mobile");
   const icons = [
     IMAGES.FACEBOOK,
     IMAGES.INSTAGRAM,
@@ -29,19 +75,24 @@ const Footer = () => {
     IMAGES.YOUTUBE,
   ];
 
+  const footerClassnames = classnames({
+    footer: true,
+    "footer-mobile-view": isMobileMode,
+  });
+
   return (
-    <footer className="footer">
+    <footer className={footerClassnames}>
       <div className="footer-logo">
         <img src={IMAGES.COMPANY_LOGOS.MAIN} alt={IMAGES.COMPANY_LOGOS.MAIN} />
       </div>
 
       <Container>
-        <Row>
-          <Col xs={12} md={4} lg={4}>
+        <Row className="justify-content-md-center">
+          <Col xs={6} md={4} lg={3}>
             <ProductLinks />
           </Col>
-          <Col xs={12} md={4} lg={4}>
-            <ProductLinks />
+          <Col xs={6} md={4} lg={3}>
+            <OtherLinks />
           </Col>
           <Col xs={12} md={4} lg={4}>
             <div className="footer-inquiries">
@@ -49,7 +100,9 @@ const Footer = () => {
               <p>{intl("footer.specialOffers")}</p>
               <div className="footer-inquiries--icons">
                 {icons.map((icon) => (
-                  <Icon width={40} icon={icon} />
+                  <Link to="/">
+                    <Icon width={30} icon={icon} />
+                  </Link>
                 ))}
               </div>
             </div>
