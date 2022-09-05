@@ -1,4 +1,4 @@
-import { REACT_ROUTES } from "constants/";
+import { REACT_ROUTES } from "constants/constants";
 import useChangeLanguage from "hooks/useChangeLanguage";
 import { LOCALES } from "i18n/constants";
 import intl from "i18n/intl";

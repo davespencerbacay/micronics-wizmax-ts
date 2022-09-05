@@ -10,39 +10,19 @@ import {
     DropdownItem,
     DropdownMenu
 } from 'reactstrap'
-import { IMAGES, ROUTE_PATH } from "constants/";
+import { IMAGES, ROUTE_PATH } from "constants/constants";
 import { Link } from 'react-router-dom';
-import intl from 'i18n/intl';
 import "./NavigationBar.scss"
 import useChangeLanguage from 'hooks/useChangeLanguage';
 import { LOCALES } from 'i18n';
+import { LANGUAGES } from 'constants/constants';
+import { navbarLinks } from './constants';
 
 const NavigationLinks = () => {
-    const navbarLinkName = [
-        {
-            routePath: ROUTE_PATH.INDEX,
-            text: intl("navigationBar.home")
-        },
-        {
-            routePath: ROUTE_PATH.PRODUCT,
-            text: intl("navigationBar.products")
-        },
-        {
-            routePath: ROUTE_PATH.SUPPORT,
-            text: intl("navigationBar.support")
-        },
-        {
-            routePath: ROUTE_PATH.SHOP,
-            text: intl("navigationBar.shop")
-        },
-        {
-            routePath: ROUTE_PATH.CONTACT,
-            text: intl("navigationBar.contact")
-        },
-    ]
+
     return (
         <NavItem className='navbar-item'>
-            {navbarLinkName.map((link) => (
+            {navbarLinks.map((link) => (
                 <Link to={link.routePath}>{link.text}</Link>
             )
             )}
@@ -81,8 +61,8 @@ const NavigationBar: React.FC = () => {
                         Select Language
                     </DropdownToggle>
                     <DropdownMenu right>
-                        <DropdownItem onClick={() => changeLanguage(LOCALES.KOREAN)}>KR</DropdownItem>
-                        <DropdownItem onClick={() => changeLanguage(LOCALES.ENGLISH)}>US</DropdownItem>
+                        <DropdownItem onClick={() => changeLanguage(LOCALES.KOREAN)}>{LANGUAGES.KOREA}</DropdownItem>
+                        <DropdownItem onClick={() => changeLanguage(LOCALES.ENGLISH)}>{LANGUAGES.EN}</DropdownItem>
                     </DropdownMenu>
                 </UncontrolledDropdown>
             </Navbar>

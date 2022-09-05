@@ -7,6 +7,10 @@ import Shop from "pages/Shop/Shop";
 
 /* Change languge consts */
 export const STORAGE_KEY: string = "locale";
+export const LANGUAGES = {
+  KOREA: "KR",
+  EN: "EN"
+}
 
 /* Theme Variants */
 export const VARIANTS = {

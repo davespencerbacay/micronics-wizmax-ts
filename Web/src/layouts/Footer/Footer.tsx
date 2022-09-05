@@ -1,6 +1,6 @@
 import "./Footer.scss";
 import intl from "i18n/intl";
-import { IMAGES, ROUTE_PATH } from "constants/";
+import { IMAGES, ROUTE_PATH } from "constants/constants";
 import { Link } from "react-router-dom";
 import { productCategories } from "data/productCategories";
 import { Col, Container, Row } from "reactstrap";
