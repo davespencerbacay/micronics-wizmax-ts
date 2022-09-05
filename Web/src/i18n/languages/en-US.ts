@@ -15,6 +15,12 @@ export default {
       getInTouch: "Get in touch:",
       specialOffers:
         "Get special offers, product news, and event information from our social media pages.",
+      contactUs: "Contact Us",
+      productSpecs: "Product Specifications",
+      softwareDrivers: "Software and Drivers",
+      mouseDrivers: "Mouse Drivers",
+      keyboardDrivers: "Keyboard Drivers",
+      headsetDrivers: "Headset Drivers",
     },
     navigationBar: {
       search: "Search",
@@ -23,6 +29,6 @@ export default {
       support: "Support",
       shop: "Shop",
       contact: "Contact",
-    }
+    },
   },
 };
