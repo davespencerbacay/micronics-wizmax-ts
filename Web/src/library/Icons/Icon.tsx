@@ -10,7 +10,7 @@ const Icon: React.FC<IconProps> = (props) => {
     return <React.Fragment />;
   }
 
-  return <img src={props.icon} width={props.width} />;
+  return <img src={props.icon} width={props.width} alt={props.icon} />;
 };
 
 Icon.defaultProps = {

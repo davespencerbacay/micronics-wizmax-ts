@@ -2,6 +2,9 @@ import { LOCALES } from "../constants";
 
 export default {
   [LOCALES.ENGLISH]: {
+    global: {
+      selectLanguage: "Select Language",
+    },
     footer: {
       header: "HANMI MICRONICS © ALL RIGHTS RESERVED.",
       description:
@@ -14,7 +17,12 @@ export default {
         "Get special offers, product news, and event information from our social media pages.",
     },
     navigationBar: {
-      search: "Search"
+      search: "Search",
+      home: "Home",
+      products: "Products",
+      support: "Support",
+      shop: "Shop",
+      contact: "Contact",
     }
   },
 };
