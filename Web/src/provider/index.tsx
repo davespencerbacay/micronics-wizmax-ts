@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { AppContext } from "../context";
+import { AppContext } from "../context/";
 import { I18nPropvider } from "../i18n";
 
 interface ProviderWrapperProps {

@@ -8,6 +8,9 @@ import Shop from "pages/Shop/Shop";
 /* Change languge consts */
 export const STORAGE_KEY: string = "locale";
 
+/* Web App Constants Text */
+export const COMPANY_NAME = "Wizmax Global";
+
 export const LANGUAGES = {
   KOREA: "KR",
   EN: "EN",

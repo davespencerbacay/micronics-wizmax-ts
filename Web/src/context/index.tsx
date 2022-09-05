@@ -15,10 +15,10 @@ let reducer = (state: any, action: any) => {
   }
 };
 
-interface AppContextProvider {
+interface IAppContextProvider {
   children: JSX.Element;
 }
-const AppContextProvider: React.FC<AppContextProvider> = ({ children }) => {
+const AppContextProvider: React.FC<IAppContextProvider> = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, defaultContext);
   const value = { state, dispatch };
 
