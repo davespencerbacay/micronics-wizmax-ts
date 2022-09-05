@@ -1,37 +1,36 @@
 .navbar {
-    background-color: black;
-    .navbar-brand {
-        img {
-            position: relative;
-            left: 3rem;
-        }
+  background-color: black;
+  &-brand {
+    img {
+      position: relative;
+      left: 3rem;
     }
-    .navbar-nav {
-        .navbar-item {
-            a {
-                color: lightgray;
-                font-size: 1.3rem;
-                font-weight: bold;
-                margin-left: 5rem;
-                margin-right: 5rem;
-                text-transform: uppercase;
-                &:hover {
-                    color: white;
-                }
-            }
-            i {
-                color: lightgray;
-                cursor: pointer;
-                &:hover {
-                    color: white;
-                }
-            }
+  }
+  &-nav {
+    .navbar-item {
+      a {
+        color: lightgray;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        text-transform: uppercase;
+        &:hover {
+          color: white;
         }
-    
+      }
+      .search-icon {
+        color: lightgray;
+        cursor: pointer;
+        &:hover {
+          color: white;
+        }
+      }
     }
-    .select-language {
-            color: lightgray;
-            text-decoration: none;
-            list-style-type: none;
-}
+  }
+  .select-language {
+    color: lightgray;
+    text-decoration: none;
+    list-style-type: none;
+  }
 }

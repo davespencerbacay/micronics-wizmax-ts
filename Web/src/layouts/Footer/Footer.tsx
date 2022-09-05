@@ -1,6 +1,6 @@
 import "./Footer.scss";
 import intl from "i18n/intl";
-import { IMAGES, ROUTE_PATH } from "constants/constants";
+import { IMAGES, ROUTE_PATH } from "constants/";
 import { Link } from "react-router-dom";
 import { productCategories } from "data/productCategories";
 import { Col, Container, Row } from "reactstrap";
@@ -32,7 +32,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <img src={IMAGES.COMPANY_LOGOS.MAIN} alt="" />
+        <img src={IMAGES.COMPANY_LOGOS.MAIN} alt={IMAGES.COMPANY_LOGOS.MAIN} />
       </div>
 
       <Container>

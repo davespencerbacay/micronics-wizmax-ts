@@ -2,6 +2,9 @@ import { LOCALES } from "../constants";
 
 export default {
   [LOCALES.KOREAN]: {
+    global: {
+      selectLanguage: "Select Language",
+    },
     footer: {
       header: "KR-HANMI MICRONICS © ALL RIGHTS RESERVED.",
       description:
@@ -14,12 +17,12 @@ export default {
         "Get special offers, product news, and event information from our social media pages.",
     },
     navigationBar: {
-      search: "KR-Search",
-      home: "집",
-      products: "제품",
-      support: "지원하다",
-      shop: "가게",
-      contact: "연락하다",
+      search: "Search",
+      home: "Home",
+      products: "Products",
+      support: "Support",
+      shop: "Shop",
+      contact: "Contact",
     }
   },
 };

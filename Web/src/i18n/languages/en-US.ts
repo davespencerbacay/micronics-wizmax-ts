@@ -2,6 +2,9 @@ import { LOCALES } from "../constants";
 
 export default {
   [LOCALES.ENGLISH]: {
+    global: {
+      selectLanguage: "Select Language",
+    },
     footer: {
       header: "HANMI MICRONICS © ALL RIGHTS RESERVED.",
       description:

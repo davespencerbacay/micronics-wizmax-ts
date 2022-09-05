@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
     Navbar,
     NavbarBrand,
@@ -10,15 +10,38 @@ import {
     DropdownItem,
     DropdownMenu
 } from 'reactstrap'
-import { IMAGES, ROUTE_PATH } from "constants/constants";
+import { IMAGES, ROUTE_PATH, LANGUAGES } from "constants/";
 import { Link } from 'react-router-dom';
 import "./NavigationBar.scss"
 import useChangeLanguage from 'hooks/useChangeLanguage';
 import { LOCALES } from 'i18n';
-import { LANGUAGES } from 'constants/constants';
-import { navbarLinks } from './constants';
+import intl from 'i18n/intl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
-const NavigationLinks = () => {
+const NavigationLinks:React.FC = () => {
+    const navbarLinks = [
+        {
+            routePath: ROUTE_PATH.INDEX,
+            text: intl('navigationBar.home')
+        },
+        {
+            routePath: ROUTE_PATH.PRODUCT,
+            text: intl('navigationBar.products')
+        },
+        {
+            routePath: ROUTE_PATH.SUPPORT,
+            text: intl('navigationBar.support')
+        },
+        {
+            routePath: ROUTE_PATH.SHOP,
+            text: intl('navigationBar.shop')
+        },
+        {
+            routePath: ROUTE_PATH.CONTACT,
+            text: intl('navigationBar.contact')
+        },
+    ]
 
     return (
         <NavItem className='navbar-item'>
@@ -26,15 +49,12 @@ const NavigationLinks = () => {
                 <Link to={link.routePath}>{link.text}</Link>
             )
             )}
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <FontAwesomeIcon className='search-icon' icon={faMagnifyingGlass} />
         </NavItem>
     )
 }
 
 const NavigationBar: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const toggle = () => setIsOpen(!isOpen);
-
     const changeLanguage = useChangeLanguage();
     return (
         <React.Fragment>
@@ -56,9 +76,9 @@ const NavigationBar: React.FC = () => {
                     <NavigationLinks />
                 </Nav>
                 <UncontrolledDropdown>
-                    <NavbarToggler onClick={toggle} />
-                    <DropdownToggle className='' caret>
-                        Select Language
+                    <NavbarToggler />
+                    <DropdownToggle caret>
+                        {intl('global.selectLanguage')}
                     </DropdownToggle>
                     <DropdownMenu right>
                         <DropdownItem onClick={() => changeLanguage(LOCALES.KOREAN)}>{LANGUAGES.KOREA}</DropdownItem>
