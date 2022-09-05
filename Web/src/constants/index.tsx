@@ -4,6 +4,7 @@ import Product from "pages/Product/Product";
 import { ReactRoutesType } from "./types";
 import Support from "pages/Support/Support";
 import Shop from "pages/Shop/Shop";
+import MainWrapper from "helpers/NavbarAndFooterWrapper";
 
 /* Change languge consts */
 export const STORAGE_KEY: string = "locale";
@@ -30,26 +31,31 @@ export const ROUTE_PATH = {
   SHOP: "/shop",
   CONTACT: "/contact",
 };
+
 export const REACT_ROUTES: ReactRoutesType[] = [
   {
     PATH: ROUTE_PATH.INDEX,
-    ELEMENT: <Home />,
+    ELEMENT: <MainWrapper component={<Home />} />,
   },
   {
     PATH: ROUTE_PATH.PRODUCT,
-    ELEMENT: <Product />,
+    ELEMENT: <MainWrapper component={<Product />} />,
   },
   {
     PATH: ROUTE_PATH.SUPPORT,
-    ELEMENT: <Support />,
+    ELEMENT: <MainWrapper component={<Support />} />,
   },
   {
     PATH: ROUTE_PATH.SHOP,
-    ELEMENT: <Shop />,
+    /* !! NOTE: Delete this comment in the next sprint (Iteration 2) */
+    /* Show footer and component only */
+    ELEMENT: <MainWrapper component={<Shop />} showNavbar={false} />,
   },
   {
     PATH: ROUTE_PATH.CONTACT,
-    ELEMENT: <Contact />,
+    /* !! NOTE: Delete this comment in the next sprint (Iteration 2) */
+    /* Show navbar and component only */
+    ELEMENT: <MainWrapper component={<Contact />} showFooter={false} />,
   },
 ];
 
