@@ -1,21 +1,46 @@
 @import "~styles/index.scss";
+$banner-dark: #111214;
+$banner-light: #fff;
 
-.header-container {
-  padding: 6em 0 3em 0;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-color: $background-dark;
+.banner {
+  padding: 5rem 0;
+
+  &.center {
+    text-align: center;
+  }
+  &.left {
+    text-align: left;
+  }
+  &.right {
+    text-align: right;
+  }
+  &.dark {
+    background-color: $banner-dark;
+
+    h2 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+  &.light {
+    background-color: $banner-light;
+    h2 {
+      color: black;
+    }
+    p {
+      color: black;
+    }
+  }
+
   h2 {
-    color: $color-white;
+    font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   p {
-    color: $color-white;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
   }
 }

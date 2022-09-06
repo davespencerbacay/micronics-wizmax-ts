@@ -1,5 +1,4 @@
 import { COMPANY_NAME } from "constants/";
-import intl from "i18n/intl";
 import React, { useEffect } from "react";
 
 interface IPageTitle {
@@ -14,7 +13,7 @@ const PageTitle: React.FC<IPageTitle> = (props) => {
 };
 
 PageTitle.defaultProps = {
-  title: intl("global.companyName").toString(),
+  title: "Wizmax Global",
 };
 
 export default PageTitle;
