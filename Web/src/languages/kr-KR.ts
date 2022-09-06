@@ -1,4 +1,4 @@
-import { LOCALES } from "../constants";
+import { LOCALES } from "../i18n/constants";
 
 const convertedText = {
   [LOCALES.KOREAN]: {

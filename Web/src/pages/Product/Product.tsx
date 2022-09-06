@@ -1,15 +1,13 @@
-import Footer from "layouts/Footer/Footer";
-import NavigationBar from "layouts/NavigationBar/NavigationBar";
 import PageTitle from "library/PageTitle/PageTitle";
+import React from "react";
 import "./Product.scss";
 
 const Product: React.FC = () => {
   return (
-    <div>
-      <NavigationBar />
+    <React.Fragment>
       <PageTitle title="Products" />
-      <Footer />
-    </div>
+      <p>Products</p>
+    </React.Fragment>
   );
 };
 
