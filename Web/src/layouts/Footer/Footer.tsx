@@ -11,10 +11,10 @@ import classnames from "classnames";
 const ProductLinks = () => {
   return (
     <ul>
-      {productCategories.map((cat) => {
+      {productCategories.map((cat, index) => {
         const linkPath = ROUTE_PATH.PRODUCT + "/" + cat.id;
         return (
-          <li>
+          <li key={index}>
             <Link to={linkPath}>{cat.name}</Link>
           </li>
         );
@@ -52,12 +52,12 @@ const OtherLinks = () => {
   ];
   return (
     <ul>
-      {links.map((link) => {
+      {links.map((link, index) => {
         const linkClassname = classnames({
           "mb-4": link.hasMarginBottom,
         });
         return (
-          <li className={linkClassname}>
+          <li className={linkClassname} key={index}>
             <Link to={link.path}>{link.text}</Link>
           </li>
         );
@@ -99,8 +99,8 @@ const Footer = () => {
               <h2>{intl("footer.getInTouch")}</h2>
               <p>{intl("footer.specialOffers")}</p>
               <div className="footer-inquiries--icons">
-                {icons.map((icon) => (
-                  <Link to="/">
+                {icons.map((icon, index) => (
+                  <Link to="/" key={index}>
                     <Icon width={30} icon={icon} />
                   </Link>
                 ))}

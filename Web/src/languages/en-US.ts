@@ -31,6 +31,10 @@ const convertedTexts = {
       shop: "Shop",
       contact: "Contact",
     },
+    supportPage: {
+      bannerTitle: "Drivers and Manuals Download",
+      bannerSubtitle: "Find software and Driver for your Wizmax Hardware.",
+    },
   },
 };
 export default convertedTexts;
