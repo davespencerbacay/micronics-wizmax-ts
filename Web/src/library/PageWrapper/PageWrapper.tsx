@@ -2,12 +2,12 @@ import Footer from "layouts/Footer/Footer";
 import NavigationBar from "layouts/NavigationBar/NavigationBar";
 import React from "react";
 
-interface INavbarAndFooterWrapper {
+interface IPageWrapper {
   showNavbar?: boolean;
   showFooter?: boolean;
   component: JSX.Element;
 }
-const NavbarAndFooterWrapper: React.FC<INavbarAndFooterWrapper> = (props) => {
+const PageWrapper: React.FC<IPageWrapper> = (props) => {
   if (props.showNavbar && props.showFooter && props.component) {
     return (
       <React.Fragment>
@@ -35,8 +35,8 @@ const NavbarAndFooterWrapper: React.FC<INavbarAndFooterWrapper> = (props) => {
   return props.component;
 };
 
-NavbarAndFooterWrapper.defaultProps = {
+PageWrapper.defaultProps = {
   showNavbar: true,
   showFooter: true,
 };
-export default NavbarAndFooterWrapper;
+export default PageWrapper;

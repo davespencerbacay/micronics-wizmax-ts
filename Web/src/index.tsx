@@ -12,8 +12,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <Provider>
         <Router>
           <Routes>
-            {REACT_ROUTES.map((ROUTE) => (
-              <React.Fragment>
+            {REACT_ROUTES.map((ROUTE, index) => (
+              <React.Fragment key={index}>
                 <Route path={ROUTE.PATH} element={ROUTE.ELEMENT} />
               </React.Fragment>
             ))}

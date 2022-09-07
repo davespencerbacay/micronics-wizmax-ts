@@ -35,6 +35,10 @@ const convertedText = {
       english: "English (US)",
       getInTouch: "Get in Touch",
     },
+    supportPage: {
+      bannerTitle: "KR-Drivers and Manuals Download",
+      bannerSubtitle: "KR-Find software and Driver for your Wizmax Hardware.",
+    },
   },
 };
 export default convertedText;

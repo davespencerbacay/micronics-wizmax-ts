@@ -35,6 +35,10 @@ const convertedTexts = {
       english: "English (US)",
       getInTouch: "Get in Touch",
     },
+    supportPage: {
+      bannerTitle: "Drivers and Manuals Download",
+      bannerSubtitle: "Find software and Driver for your Wizmax Hardware.",
+    },
   },
 };
 export default convertedTexts;

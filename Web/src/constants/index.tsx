@@ -43,7 +43,7 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   },
   {
     PATH: ROUTE_PATH.SUPPORT,
-    ELEMENT: <PageWrapper component={<Support />} />,
+    ELEMENT: <PageWrapper component={<Support />} showNavbar={false} />,
   },
   {
     PATH: ROUTE_PATH.SHOP,
