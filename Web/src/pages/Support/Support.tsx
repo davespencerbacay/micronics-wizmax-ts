@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./Support.scss";
 
 const Support: React.FC = () => {
-    return (
-        <div>Support</div>
-    )
-}
+  return <div>Support</div>;
+};
 
-export default Support
+export default Support;

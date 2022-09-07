@@ -30,6 +30,10 @@ const convertedText = {
       support: "KR-Support",
       shop: "KR-Shop",
       contact: "KR-Contact",
+      translation: "Translation",
+      korean: "Korean",
+      english: "English (US)",
+      getInTouch: "Get in Touch",
     },
   },
 };

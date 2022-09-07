@@ -1,15 +1,18 @@
+$lightgray: #d3d3d3;
 .navbar {
   background-color: black;
   &-brand {
     img {
       position: relative;
       left: 3rem;
+      width: 13rem;
+      height: 3rem;
     }
   }
   &-nav {
     .navbar-item {
       a {
-        color: lightgray;
+        color: $lightgray;
         font-size: 1.3rem;
         font-weight: bold;
         margin-left: 5rem;
@@ -20,7 +23,7 @@
         }
       }
       .search-icon {
-        color: lightgray;
+        color: $lightgray;
         cursor: pointer;
         &:hover {
           color: white;
@@ -29,7 +32,7 @@
     }
   }
   .select-language {
-    color: lightgray;
+    color: $lightgray;
     text-decoration: none;
     list-style-type: none;
   }

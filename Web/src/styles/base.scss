@@ -8,4 +8,9 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(225, 226, 232, 1) 35%
+  );
 }
