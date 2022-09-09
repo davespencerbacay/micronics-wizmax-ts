@@ -8,9 +8,14 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+}
+body {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 65%,
     rgba(225, 226, 232, 1) 35%
   );
+}
+.has-margin-top {
+  margin-top: 5rem;
 }

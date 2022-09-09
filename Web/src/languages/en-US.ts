@@ -35,6 +35,22 @@ const convertedTexts = {
       english: "English (US)",
       getInTouch: "Get in Touch",
     },
+    /* SUB LINKS */
+    productSubLinks: {
+      mouse: "Mouse",
+      keyboard: "Keyboard",
+      headset: "Headset",
+      fansCoolers: "Fans & Coolers",
+      pcCase: "PC Case",
+      psu: "Power Supplies",
+      accessories: "Accessories",
+    },
+    supportSubLinks: {
+      driversSoftwares: "Drivers & Softwares",
+      brochuresManuals: "Brochures & Manuals",
+    },
+    shopSubLinks: {},
+    contactSubLinks: {},
     supportPage: {
       bannerTitle: "Drivers and Manuals Download",
       bannerSubtitle: "Find software and Driver for your Wizmax Hardware.",

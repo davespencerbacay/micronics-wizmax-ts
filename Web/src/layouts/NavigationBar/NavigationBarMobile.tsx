@@ -11,10 +11,9 @@ import "./NavigationBarMobile.scss";
 import intl from "i18n/intl";
 import { Link } from "react-router-dom";
 import { ROUTE_PATH } from "constants/";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import classnames from "classnames";
 
+//NAVIGATION LINKS AND ROUTES
 const NavigationLinksMobile: React.FC = () => {
   const navbarLinksMobile = [
     {
@@ -45,7 +44,11 @@ const NavigationLinksMobile: React.FC = () => {
         <ListGroupItem className="navbar-ul-div-li">
           <Link to={link.routePath}>
             {link.text}
-            <FontAwesomeIcon className="arrow-icon" icon={faLocationArrow} />
+            <img
+              className="arrow-icon"
+              src="/images/micronics-assets/go-to-icon.svg"
+              alt="Arrow Icon"
+            />
           </Link>
         </ListGroupItem>
       ))}
@@ -53,6 +56,7 @@ const NavigationLinksMobile: React.FC = () => {
   );
 };
 
+//SOCIAL MEDIA ICONS AND IMAGES
 const NavbarSocialMedias: React.FC = () => {
   const socialMedias = [
     {
@@ -103,35 +107,34 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
   const [line1Animation, setLine1Animation] = useState(true);
   const [line2Animation, setLine2Animation] = useState(true);
   //show and hide navbar
-  const sampleSample = () => {
+  const crossHandler = () => {
     setIsHidden((prevState) => !prevState);
     setLine1Animation((prevState) => !prevState);
     setLine2Animation((prevState) => !prevState);
   };
   //Cross Button
-  const navbar = classnames({
+  const navbarClassname = classnames({
     "navbar-container": true,
     "navbar-container-hide": isHidden,
   });
-  const line1 = classnames({
+  const line1Classname = classnames({
     "line-1": true,
     "line-1-horizontal": line1Animation,
   });
-  const line2 = classnames({
+  const line2Classname = classnames({
     "line-2": true,
     "line-2-horizontal": line2Animation,
   });
 
   return (
     <React.Fragment>
-      <Container className={navbar} fluid="sm">
+      <Container className={navbarClassname} fluid="sm">
         <FormGroup className="switch-container" switch>
           <Input className="switch" type="switch" role="switch" />
         </FormGroup>
-        {/* <CloseButton className="close-button" /> */}
-        <div className="cross-container" onClick={sampleSample}>
-          <div className={line1}></div>
-          <div className={line2}></div>
+        <div className="cross-container" onClick={crossHandler}>
+          <div className={line1Classname}></div>
+          <div className={line2Classname}></div>
         </div>
         <ListGroup className="navbar-ul" flush>
           <NavigationLinksMobile />
@@ -142,12 +145,20 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
                 className="navbar-ul-subgroup-li"
                 onClick={() => props.changeLanguage(LOCALES.KOREAN)}
               >
+                <img
+                  src="/images/micronics-assets/KR Flag.svg"
+                  alt="KR Flag"
+                ></img>
                 {intl("navigationBar.korean")}
               </ListGroupItem>
               <ListGroupItem
                 className="navbar-ul-subgroup-li"
                 onClick={() => props.changeLanguage(LOCALES.ENGLISH)}
               >
+                <img
+                  src="/images/micronics-assets/US Flag.svg"
+                  alt="US Flag"
+                ></img>
                 {intl("navigationBar.english")}
               </ListGroupItem>
             </ListGroup>

@@ -1,39 +1,184 @@
 $lightgray: #d3d3d3;
 .navbar {
   background-color: black;
+  height: 5rem;
   &-brand {
     img {
-      position: relative;
-      left: 3rem;
       width: 13rem;
       height: 3rem;
     }
   }
   &-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     .navbar-item {
-      a {
-        color: $lightgray;
-        font-size: 1.3rem;
-        font-weight: bold;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        text-transform: uppercase;
-        &:hover {
-          color: white;
-        }
-      }
-      .search-icon {
-        color: $lightgray;
-        cursor: pointer;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      .links {
+        color: #d3d3d3;
+        transition: all 0.3s ease;
         &:hover {
           color: white;
         }
       }
     }
+    .search-icon {
+      color: #d3d3d3;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
   }
   .select-language {
-    color: $lightgray;
-    text-decoration: none;
-    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    button {
+      background-color: transparent;
+      border: none;
+      &:hover {
+        background-color: transparent;
+      }
+      &:active {
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .language-menu-toggler {
+      cursor: default;
+    }
+    .globe-icon {
+      z-index: 1;
+      font-size: 2rem;
+      color: #d3d3d3;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+
+    .language-dropdown-menu {
+      animation: dropdown 0.3s ease;
+      @keyframes dropdown {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+    .language-dropdown-menu-hide {
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 3rem;
+      animation: dropdownhide 0.3s ease;
+      @keyframes dropdownhide {
+        0% {
+          opacity: 1;
+          visibility: visible;
+          display: block;
+        }
+        100% {
+          opacity: 0;
+          visibility: hidden;
+          display: none;
+        }
+      }
+    }
+
+    img {
+      background-color: #d3d3d3;
+      border-radius: 100%;
+      &:hover {
+        background-color: white;
+      }
+    }
+    .language {
+      height: 100%;
+      &:hover {
+        background-color: #d3d3d3;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+.sub-navbar {
+  top: 5rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5rem);
+  transition: height 0.3s ease;
+  animation: showsubnavbar 0.5s ease;
+  @keyframes showsubnavbar {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 20rem;
+    }
+  }
+  .sub-navbar-nav {
+    height: 18rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .sub-navbar-items {
+      margin: auto;
+      color: white;
+      animation: showsubnavbaritems 1s ease;
+      @keyframes showsubnavbaritems {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.sub-navbar-hide {
+  top: 5rem;
+  height: 20rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5rem);
+  transition: height 0.3s ease;
+  animation: hidesubnavbar 0.5s ease;
+  @keyframes hidesubnavbar {
+    100% {
+      height: 20rem;
+    }
+    0% {
+      height: 0;
+    }
+  }
+  .sub-navbar-nav {
+    height: 18rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .sub-navbar-items {
+      margin: auto;
+      color: white;
+      transition: all 0.5s ease;
+    }
   }
 }
