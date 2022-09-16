@@ -121,14 +121,19 @@ $lightgray: #d3d3d3;
   height: 20rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5rem);
-  transition: height 0.3s ease;
+  transition: top 0.3s ease;
   animation: showsubnavbar 0.5s ease;
+  z-index: 0;
   @keyframes showsubnavbar {
     0% {
-      height: 0;
+      top: -10rem;
+      backdrop-filter: blur(5rem);
+      background: rgba(255, 255, 255, 0.1);
     }
     100% {
-      height: 20rem;
+      top: 5rem;
+      backdrop-filter: blur(5rem);
+      background: rgba(255, 255, 255, 0.1);
     }
   }
   .sub-navbar-nav {
@@ -141,6 +146,11 @@ $lightgray: #d3d3d3;
     .sub-navbar-items {
       margin: auto;
       color: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      font-size: 2rem;
       animation: showsubnavbaritems 1s ease;
       @keyframes showsubnavbaritems {
         0% {
@@ -151,6 +161,19 @@ $lightgray: #d3d3d3;
         }
       }
     }
+    .sub-navbar-items-support {
+      margin: auto;
+      color: white;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      img {
+        padding: 1rem;
+      }
+      pre {
+        font-size: 2rem;
+      }
+    }
   }
 }
 .sub-navbar-hide {
@@ -158,14 +181,19 @@ $lightgray: #d3d3d3;
   height: 20rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5rem);
-  transition: height 0.3s ease;
+  transition: top 0.3s ease;
   animation: hidesubnavbar 0.5s ease;
+  z-index: 0;
   @keyframes hidesubnavbar {
     100% {
-      height: 20rem;
+      top: 5rem;
+      backdrop-filter: blur(5rem);
+      background: rgba(255, 255, 255, 0.1);
     }
     0% {
-      height: 0;
+      top: -10rem;
+      backdrop-filter: blur(5rem);
+      background: rgba(255, 255, 255, 0.1);
     }
   }
   .sub-navbar-nav {
@@ -179,6 +207,11 @@ $lightgray: #d3d3d3;
       margin: auto;
       color: white;
       transition: all 0.5s ease;
+    }
+    .sub-navbar-items-support {
+      margin: auto;
+      color: white;
+      white-space: pre;
     }
   }
 }

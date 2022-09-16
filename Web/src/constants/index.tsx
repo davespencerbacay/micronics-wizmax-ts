@@ -30,6 +30,8 @@ export const ROUTE_PATH = {
   SUPPORT: "/support",
   SHOP: "/shop",
   CONTACT: "/contact",
+  PRODUCT_DETAIL: "/products/:productID",
+  PRODUCT_CATEGORY: "/products/:categoryID",
 };
 
 export const REACT_ROUTES: ReactRoutesType[] = [
@@ -64,6 +66,25 @@ export const IMAGES = {
   COMPANY_LOGOS: {
     MAIN: "images/micronics-assets/main-logo.png",
     NAVBAR: "images/micronics-assets/navbar-logo.png",
+  },
+  PRODUCT_IMAGES: {
+    MOUSE: "images/micronics-assets/product-images/Mouse-1.png",
+    KEYBOARD: "images/micronics-assets/product-images/Keyboard-1.png",
+    HEADSET: "images/micronics-assets/product-images/Headset-1.png",
+    PC_CASE: "images/micronics-assets/product-images/Pc Case-1.png",
+    FANS_COOLERS: "images/micronics-assets/product-images/Fans Coolers-1.png",
+    PSU: "images/micronics-assets/product-images/PSU-1.png",
+    ACCESSORIES: "images/micronics-assets/product-images/Accessories.svg",
+  },
+  SUPPORT_ICONS: {
+    DRIVER_SOFTWARES: "images/micronics-assets/Drivers and Softwares.svg",
+    BROCHURE_MANUALS: "images/micronics-assets/Brochures and Manuals.svg",
+  },
+  FLAGS: {
+    USA: "images/micronics-assets/US Flag.svg",
+    KOREA: "images/micronics-assets/KR Flag.svg",
+    PHILIPPINES: "images/micronics-assets/Philippines Flag.svg",
+    ECUADOR: "images/micronics-assets/Ecuador Flag.svg",
   },
   FACEBOOK: "images/micronics-assets/facebook.png",
   TWITTER: "images/micronics-assets/twitter.png",

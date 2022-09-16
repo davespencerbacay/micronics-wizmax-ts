@@ -21,12 +21,8 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBarDesktop.scss";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
-import {
-  ContactSubLinks,
-  ProductSubLinks,
-  ShopSubLinks,
-  SupportSubLinks,
-} from "./NavigationBarSubLinks";
+import { NavigationBarSubLinks } from "./NavigationBarSubLinks";
+import { productSubLinks, supportSubLinks } from "./links/links";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
@@ -47,23 +43,11 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   });
 
   //Products Sub Links
-  const [subProducts, setSubProducts] = useState(false);
-  const [subSupport, setSubSupport] = useState(false);
-  const [subShop, setSubShop] = useState(false);
-  const [subContact, setSubContact] = useState(false);
-  const showSubProducts = () => {
-    setSubProducts((prevState) => !prevState);
-  };
-  const showSubSupport = () => {
-    setSubSupport((prevState) => !prevState);
-  };
-  const showSubShop = () => {
-    setSubShop((prevState) => !prevState);
-  };
-  const showSubContact = () => {
-    setSubContact((prevState) => !prevState);
-  };
+  const [showSubLinks, setShowSubLinks] = useState(false);
 
+  const subLinksHandler = () => {
+    setShowSubLinks((prevState) => !prevState);
+  };
   return (
     <React.Fragment>
       <Navbar className="navbar" fixed="top">
@@ -91,8 +75,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.PRODUCT}
-                    onMouseOver={showSubProducts}
-                    onMouseLeave={showSubProducts}
+                    onMouseOver={subLinksHandler}
+                    onMouseLeave={subLinksHandler}
                   >
                     {intl("navigationBar.products")}
                   </Link>
@@ -101,8 +85,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.SUPPORT}
-                    onMouseOver={showSubSupport}
-                    onMouseLeave={showSubSupport}
+                    onMouseOver={subLinksHandler}
+                    onMouseLeave={subLinksHandler}
                   >
                     {intl("navigationBar.support")}
                   </Link>
@@ -111,8 +95,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.SHOP}
-                    onMouseOver={showSubShop}
-                    onMouseLeave={showSubShop}
+                    onMouseOver={subLinksHandler}
+                    onMouseLeave={subLinksHandler}
                   >
                     {intl("navigationBar.shop")}
                   </Link>
@@ -121,8 +105,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.CONTACT}
-                    onMouseOver={showSubContact}
-                    onMouseLeave={showSubContact}
+                    onMouseOver={subLinksHandler}
+                    onMouseLeave={subLinksHandler}
                   >
                     {intl("navigationBar.contact")}
                   </Link>
@@ -168,15 +152,15 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
           </Row>
         </Container>
       </Navbar>
-      {subProducts && (
-        <ProductSubLinks subProducts={subProducts}></ProductSubLinks>
+      {showSubLinks && (
+        <NavigationBarSubLinks
+          subLinks={productSubLinks}
+        ></NavigationBarSubLinks>
       )}
-      {subSupport && (
-        <SupportSubLinks subSupport={subSupport}></SupportSubLinks>
-      )}
-      {subShop && <ShopSubLinks subShop={subShop}></ShopSubLinks>}
-      {subContact && (
-        <ContactSubLinks subContact={subContact}></ContactSubLinks>
+      {showSubLinks && (
+        <NavigationBarSubLinks
+          subLinks={supportSubLinks}
+        ></NavigationBarSubLinks>
       )}
     </React.Fragment>
   );
