@@ -10,8 +10,8 @@ import { LOCALES } from "i18n";
 import "./NavigationBarMobile.scss";
 import intl from "i18n/intl";
 import { Link } from "react-router-dom";
-import { ROUTE_PATH } from "constants/";
 import classnames from "classnames";
+import { ROUTE_PATH } from "constants/routes";
 
 //NAVIGATION LINKS AND ROUTES
 const NavigationLinksMobile: React.FC = () => {
@@ -40,8 +40,8 @@ const NavigationLinksMobile: React.FC = () => {
 
   return (
     <div className="navbar-ul-div">
-      {navbarLinksMobile.map((link) => (
-        <ListGroupItem className="navbar-ul-div-li">
+      {navbarLinksMobile.map((link, index) => (
+        <ListGroupItem className="navbar-ul-div-li" key={index}>
           <Link to={link.routePath}>
             {link.text}
             <img
@@ -84,8 +84,13 @@ const NavbarSocialMedias: React.FC = () => {
   return (
     <ListGroup className="social-icons-group">
       <ListGroupItem className="social-icons-li">
-        {socialMedias.map((socials) => (
-          <a href={socials.url} target="_blank" rel="noopener noreferrer">
+        {socialMedias.map((socials, index) => (
+          <a
+            href={socials.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+          >
             <img
               className="social-icons"
               src={socials.image}

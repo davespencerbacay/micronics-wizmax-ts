@@ -1,6 +1,6 @@
+import { ROUTE_PATH } from "constants/routes";
 import intl from "i18n/intl";
 import Icon from "library/Icons/Icon";
-import { ROUTE_PATH } from "constants/";
 
 export type SubLinksType = {
   icon: string | JSX.Element;

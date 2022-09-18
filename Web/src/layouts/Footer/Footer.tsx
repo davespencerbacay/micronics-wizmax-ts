@@ -1,12 +1,13 @@
 import "./Footer.scss";
 import intl from "i18n/intl";
-import { IMAGES, ROUTE_PATH } from "constants/";
+import { IMAGES } from "constants/";
 import { Link } from "react-router-dom";
 import { productCategories } from "data/productCategories";
 import { Col, Container, Row } from "reactstrap";
 import Icon from "library/Icons/Icon";
 import useResponsive from "hooks/useResponsive";
 import classnames from "classnames";
+import { ROUTE_PATH } from "constants/routes";
 
 const ProductLinks = () => {
   return (

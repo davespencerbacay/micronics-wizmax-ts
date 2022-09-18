@@ -5,6 +5,7 @@ import { ReactRoutesType } from "./types";
 import Support from "pages/Support/Support";
 import Shop from "pages/Shop/Shop";
 import PageWrapper from "library/PageWrapper/PageWrapper";
+import { ROUTE_PATH } from "./routes";
 
 /* Change languge consts */
 export const STORAGE_KEY: string = "locale";
@@ -22,44 +23,6 @@ export const VARIANTS = {
   DARK: "dark",
   LIGHT: "light",
 };
-
-/* Route */
-export const ROUTE_PATH = {
-  INDEX: "/",
-  PRODUCT: "/products",
-  SUPPORT: "/support",
-  SHOP: "/shop",
-  CONTACT: "/contact",
-  PRODUCT_DETAIL: "/products/:productID",
-  PRODUCT_CATEGORY: "/products/:categoryID",
-};
-
-export const REACT_ROUTES: ReactRoutesType[] = [
-  {
-    PATH: ROUTE_PATH.INDEX,
-    ELEMENT: <PageWrapper component={<Home />} />,
-  },
-  {
-    PATH: ROUTE_PATH.PRODUCT,
-    ELEMENT: <PageWrapper component={<Product />} />,
-  },
-  {
-    PATH: ROUTE_PATH.SUPPORT,
-    ELEMENT: <PageWrapper component={<Support />} showNavbar={false} />,
-  },
-  {
-    PATH: ROUTE_PATH.SHOP,
-    /* !! NOTE: Delete this comment in the next sprint (Iteration 2) */
-    /* Show footer and component only */
-    ELEMENT: <PageWrapper component={<Shop />} showNavbar={false} />,
-  },
-  {
-    PATH: ROUTE_PATH.CONTACT,
-    /* !! NOTE: Delete this comment in the next sprint (Iteration 2) */
-    /* Show navbar and component only */
-    ELEMENT: <PageWrapper component={<Contact />} showFooter={false} />,
-  },
-];
 
 /* Web App Constant Images */
 export const IMAGES = {
@@ -92,3 +55,28 @@ export const IMAGES = {
   TIKTOK: "images/micronics-assets/tiktok.png",
   YOUTUBE: "images/micronics-assets/youtube.png",
 };
+
+export const REACT_ROUTES: ReactRoutesType[] = [
+  {
+    PATH: ROUTE_PATH.INDEX,
+    ELEMENT: <PageWrapper component={<Home />} />,
+  },
+  {
+    PATH: ROUTE_PATH.PRODUCT,
+    ELEMENT: <PageWrapper component={<Product />} />,
+  },
+  {
+    PATH: ROUTE_PATH.SUPPORT,
+    ELEMENT: <PageWrapper component={<Support />} showNavbar={false} />,
+  },
+  {
+    PATH: ROUTE_PATH.SHOP,
+    /* Show footer and component only */
+    ELEMENT: <PageWrapper component={<Shop />} showNavbar={false} />,
+  },
+  {
+    PATH: ROUTE_PATH.CONTACT,
+    /* Show navbar and component only */
+    ELEMENT: <PageWrapper component={<Contact />} showFooter={false} />,
+  },
+];

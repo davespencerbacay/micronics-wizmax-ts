@@ -12,7 +12,7 @@ import {
   Col,
   Dropdown,
 } from "reactstrap";
-import { IMAGES, ROUTE_PATH, LANGUAGES } from "constants/";
+import { IMAGES, LANGUAGES } from "constants/";
 import { Link } from "react-router-dom";
 import { LOCALES } from "i18n";
 import intl from "i18n/intl";
@@ -23,6 +23,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
 import { NavigationBarSubLinks } from "./NavigationBarSubLinks";
 import { productSubLinks, supportSubLinks } from "./links/links";
+import { ROUTE_PATH } from "constants/routes";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
