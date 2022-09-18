@@ -45,9 +45,25 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
 
   //Products Sub Links
   const [showSubLinks, setShowSubLinks] = useState(false);
+  const [hoveredLinks, setHoveredLinks] = useState({
+    productLinks: false,
+    supportLinks: false,
+  });
 
-  const subLinksHandler = () => {
+  const productLinkHandler = () => {
     setShowSubLinks((prevState) => !prevState);
+    setHoveredLinks({
+      productLinks: true,
+      supportLinks: false,
+    });
+  };
+
+  const supportLinkHandler = () => {
+    setShowSubLinks((prevState) => !prevState);
+    setHoveredLinks({
+      productLinks: false,
+      supportLinks: true,
+    });
   };
   return (
     <React.Fragment>
@@ -76,8 +92,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.PRODUCT}
-                    onMouseOver={subLinksHandler}
-                    onMouseLeave={subLinksHandler}
+                    onMouseOver={productLinkHandler}
+                    onMouseLeave={productLinkHandler}
                   >
                     {intl("navigationBar.products")}
                   </Link>
@@ -86,8 +102,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.SUPPORT}
-                    onMouseOver={subLinksHandler}
-                    onMouseLeave={subLinksHandler}
+                    onMouseOver={supportLinkHandler}
+                    onMouseLeave={supportLinkHandler}
                   >
                     {intl("navigationBar.support")}
                   </Link>
@@ -96,8 +112,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.SHOP}
-                    onMouseOver={subLinksHandler}
-                    onMouseLeave={subLinksHandler}
+                    onMouseOver={productLinkHandler}
+                    onMouseLeave={productLinkHandler}
                   >
                     {intl("navigationBar.shop")}
                   </Link>
@@ -106,8 +122,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.CONTACT}
-                    onMouseOver={subLinksHandler}
-                    onMouseLeave={subLinksHandler}
+                    onMouseOver={productLinkHandler}
+                    onMouseLeave={productLinkHandler}
                   >
                     {intl("navigationBar.contact")}
                   </Link>
@@ -155,12 +171,13 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
       </Navbar>
       {showSubLinks && (
         <NavigationBarSubLinks
-          subLinks={productSubLinks}
-        ></NavigationBarSubLinks>
-      )}
-      {showSubLinks && (
-        <NavigationBarSubLinks
-          subLinks={supportSubLinks}
+          subLinks={
+            hoveredLinks?.productLinks
+              ? productSubLinks
+              : hoveredLinks?.supportLinks
+              ? supportSubLinks
+              : null
+          }
         ></NavigationBarSubLinks>
       )}
     </React.Fragment>

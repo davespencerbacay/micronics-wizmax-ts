@@ -6,7 +6,7 @@ import { SubLinksType } from "./links/links";
 import "./NavigationBarDesktop.scss";
 
 interface INavigationBarSubLinks {
-  subLinks: SubLinksType[];
+  subLinks: SubLinksType[] | null;
   hasIcon?: boolean;
   className?: string;
   children?: string | JSX.Element;
@@ -25,7 +25,7 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
     <React.Fragment>
       <Navbar className={subNavbarClassnames} fixed="top">
         <Nav className="sub-navbar-nav">
-          {props.subLinks.map((sublink) => {
+          {props.subLinks!.map((sublink) => {
             return (
               <NavItem className="sub-navbar-items">
                 <Link to={sublink.path}>
