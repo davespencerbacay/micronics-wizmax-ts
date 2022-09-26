@@ -5,6 +5,7 @@ import { Navbar, Nav, NavItem } from "reactstrap";
 import { SubLinksType } from "./links/links";
 import "./NavigationBarDesktop.scss";
 
+
 interface INavigationBarSubLinks {
   subLinks: SubLinksType[] | null;
   hasIcon?: boolean;
@@ -12,6 +13,7 @@ interface INavigationBarSubLinks {
   children?: string | JSX.Element;
   showSubLinks?: boolean;
 }
+
 
 export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
   props

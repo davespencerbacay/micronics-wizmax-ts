@@ -12,6 +12,8 @@ import intl from "i18n/intl";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
 import { ROUTE_PATH } from "constants/routes";
+import KoreanFlag from "library/Icons/KoreanFlag/KoreanFlag";
+import USFLag from "library/Icons/USFlag/USFlag";
 
 //NAVIGATION LINKS AND ROUTES
 const NavigationLinksMobile: React.FC = () => {
@@ -150,20 +152,14 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
                 className="navbar-ul-subgroup-li"
                 onClick={() => props.changeLanguage(LOCALES.KOREAN)}
               >
-                <img
-                  src="/images/micronics-assets/KR Flag.svg"
-                  alt="KR Flag"
-                ></img>
+                <KoreanFlag width={30} className="kr-svg-navbar-mobile" />
                 {intl("navigationBar.korean")}
               </ListGroupItem>
               <ListGroupItem
                 className="navbar-ul-subgroup-li"
                 onClick={() => props.changeLanguage(LOCALES.ENGLISH)}
               >
-                <img
-                  src="/images/micronics-assets/US Flag.svg"
-                  alt="US Flag"
-                ></img>
+             <USFLag width={30} className="us-flag-svg" />
                 {intl("navigationBar.english")}
               </ListGroupItem>
             </ListGroup>
