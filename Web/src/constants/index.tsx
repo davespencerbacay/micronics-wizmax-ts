@@ -13,9 +13,18 @@ export const STORAGE_KEY: string = "locale";
 /* Web App Constants Text */
 export const COMPANY_NAME = "Wizmax Global";
 
-export const CONTACTS = {
-  KOREA_TEL: "(+82): 70 5066 4501 / 10 5501 3107",
+type ContactTypes =
+  | "KOREA_TEL"
+  | "PH_TEL"
+  | "EMAIL"
+  | "BUSINESS_INQUIRY"
+  | "GENERAL_INQUIRY";
+export const CONTACTS: Record<ContactTypes, string> = {
+  KOREA_TEL: "70 5066 4501 / 10 5501 3107",
   PH_TEL: "917 6466 166",
+  EMAIL: "support@micronicsglobal.com",
+  BUSINESS_INQUIRY: "Sales@wizmaxglobal.com",
+  GENERAL_INQUIRY: "Support@wizmaxglobal.com",
 };
 
 export const LANGUAGES = {

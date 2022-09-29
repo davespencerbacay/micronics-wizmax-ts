@@ -44,6 +44,7 @@ const convertedTexts = {
         "Stay in touch and keep up-to-date with all our latest news, events and campaigns.You can do this by joining us on social media.",
       getInTouch:
         "Get in touch on Twitter, Facebook, and more social networks.",
+      reachHere: "You can also reach us here: ",
     },
     inquiryContacts: {
       korTel: "Korea Tel(+82): ",
