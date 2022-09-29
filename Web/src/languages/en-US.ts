@@ -35,6 +35,23 @@ const convertedTexts = {
       bannerTitle: "Drivers and Manuals Download",
       bannerSubtitle: "Find software and Driver for your Wizmax Hardware.",
     },
+    distributorPage: {
+      bannerTitle: "Become Distributor",
+      bannerDescription:
+        "Please feel free to share your suggestions and feedback with us.",
+      stayInTouch: "Stay in touch",
+      stayInTouchSubtitle:
+        "Stay in touch and keep up-to-date with all our latest news, events and campaigns.You can do this by joining us on social media.",
+      getInTouch:
+        "Get in touch on Twitter, Facebook, and more social networks.",
+    },
+    inquiryContacts: {
+      korTel: "Korea Tel(+82): ",
+      phTel: "Philippines Tel(+63): ",
+      email: "E-mail: ",
+      balanceInquiry: "Business Inquiry: ",
+      generalInquiry: "General Inquiry: ",
+    },
   },
 };
 export default convertedTexts;

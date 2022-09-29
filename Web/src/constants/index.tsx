@@ -5,12 +5,18 @@ import { ReactRoutesType } from "./types";
 import Support from "pages/Support/Support";
 import Shop from "pages/Shop/Shop";
 import PageWrapper from "library/PageWrapper/PageWrapper";
+import BecomeDistributor from "pages/BecomeDistributor/BecomeDistributor";
 
 /* Change languge consts */
 export const STORAGE_KEY: string = "locale";
 
 /* Web App Constants Text */
 export const COMPANY_NAME = "Wizmax Global";
+
+export const CONTACTS = {
+  KOREA_TEL: "(+82): 70 5066 4501 / 10 5501 3107",
+  PH_TEL: "917 6466 166",
+};
 
 export const LANGUAGES = {
   KOREA: "KR",
@@ -30,6 +36,7 @@ export const ROUTE_PATH = {
   SUPPORT: "/support",
   SHOP: "/shop",
   CONTACT: "/contact",
+  BECOME_DISTRIBUTOR: "/become-distributor",
 };
 
 export const REACT_ROUTES: ReactRoutesType[] = [
@@ -47,15 +54,17 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   },
   {
     PATH: ROUTE_PATH.SHOP,
-    /* !! NOTE: Delete this comment in the next sprint (Iteration 2) */
-    /* Show footer and component only */
     ELEMENT: <PageWrapper component={<Shop />} showNavbar={false} />,
   },
   {
     PATH: ROUTE_PATH.CONTACT,
-    /* !! NOTE: Delete this comment in the next sprint (Iteration 2) */
-    /* Show navbar and component only */
     ELEMENT: <PageWrapper component={<Contact />} showFooter={false} />,
+  },
+  {
+    PATH: ROUTE_PATH.BECOME_DISTRIBUTOR,
+    ELEMENT: (
+      <PageWrapper component={<BecomeDistributor />} showNavbar={false} />
+    ),
   },
 ];
 
@@ -63,6 +72,7 @@ export const REACT_ROUTES: ReactRoutesType[] = [
 export const IMAGES = {
   COMPANY_LOGOS: {
     MAIN: "images/micronics-assets/main-logo.png",
+    HORIZONTAL_BLACK: "images/logos/wizmax-logo-horizonall-black.png",
     NAVBAR: "images/micronics-assets/navbar-logo.png",
   },
   FACEBOOK: "images/micronics-assets/facebook.png",
