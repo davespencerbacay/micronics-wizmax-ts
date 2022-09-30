@@ -5,13 +5,27 @@ import { ReactRoutesType } from "./types";
 import Support from "pages/Support/Support";
 import Shop from "pages/Shop/Shop";
 import PageWrapper from "library/PageWrapper/PageWrapper";
-import { ROUTE_PATH } from "./routes";
+import BecomeDistributor from "pages/BecomeDistributor/BecomeDistributor";
 
 /* Change languge consts */
 export const STORAGE_KEY: string = "locale";
 
 /* Web App Constants Text */
 export const COMPANY_NAME = "Wizmax Global";
+
+type ContactTypes =
+  | "KOREA_TEL"
+  | "PH_TEL"
+  | "EMAIL"
+  | "BUSINESS_INQUIRY"
+  | "GENERAL_INQUIRY";
+export const CONTACTS: Record<ContactTypes, string> = {
+  KOREA_TEL: "70 5066 4501 / 10 5501 3107",
+  PH_TEL: "917 6466 166",
+  EMAIL: "support@micronicsglobal.com",
+  BUSINESS_INQUIRY: "Sales@wizmaxglobal.com",
+  GENERAL_INQUIRY: "Support@wizmaxglobal.com",
+};
 
 export const LANGUAGES = {
   KOREA: "KR",
@@ -24,36 +38,14 @@ export const VARIANTS = {
   LIGHT: "light",
 };
 
-/* Web App Constant Images */
-export const IMAGES = {
-  COMPANY_LOGOS: {
-    MAIN: "images/micronics-assets/main-logo.png",
-    NAVBAR: "images/micronics-assets/navbar-logo.png",
-  },
-  PRODUCT_IMAGES: {
-    MOUSE: "images/micronics-assets/product-images/Mouse-1.png",
-    KEYBOARD: "images/micronics-assets/product-images/Keyboard-1.png",
-    HEADSET: "images/micronics-assets/product-images/Headset-1.png",
-    PC_CASE: "images/micronics-assets/product-images/Pc Case-1.png",
-    FANS_COOLERS: "images/micronics-assets/product-images/Fans Coolers-1.png",
-    PSU: "images/micronics-assets/product-images/PSU-1.png",
-    ACCESSORIES: "images/micronics-assets/product-images/Accessories.svg",
-  },
-  SUPPORT_ICONS: {
-    DRIVER_SOFTWARES: "images/micronics-assets/Drivers and Softwares.svg",
-    BROCHURE_MANUALS: "images/micronics-assets/Brochures and Manuals.svg",
-  },
-  FLAGS: {
-    USA: "images/micronics-assets/US Flag.svg",
-    KOREA: "images/micronics-assets/KR Flag.svg",
-    PHILIPPINES: "images/micronics-assets/Philippines Flag.svg",
-    ECUADOR: "images/micronics-assets/Ecuador Flag.svg",
-  },
-  FACEBOOK: "images/micronics-assets/facebook.png",
-  TWITTER: "images/micronics-assets/twitter.png",
-  INSTAGRAM: "images/micronics-assets/instagram.png",
-  TIKTOK: "images/micronics-assets/tiktok.png",
-  YOUTUBE: "images/micronics-assets/youtube.png",
+/* Route */
+export const ROUTE_PATH = {
+  INDEX: "/",
+  PRODUCT: "/products",
+  SUPPORT: "/support",
+  SHOP: "/shop",
+  CONTACT: "/contact",
+  BECOME_DISTRIBUTOR: "/become-distributor",
 };
 
 export const REACT_ROUTES: ReactRoutesType[] = [
@@ -71,12 +63,30 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   },
   {
     PATH: ROUTE_PATH.SHOP,
-    /* Show footer and component only */
     ELEMENT: <PageWrapper component={<Shop />} showNavbar={false} />,
   },
   {
     PATH: ROUTE_PATH.CONTACT,
-    /* Show navbar and component only */
     ELEMENT: <PageWrapper component={<Contact />} showFooter={false} />,
   },
+  {
+    PATH: ROUTE_PATH.BECOME_DISTRIBUTOR,
+    ELEMENT: (
+      <PageWrapper component={<BecomeDistributor />} showNavbar={false} />
+    ),
+  },
 ];
+
+/* Web App Constant Images */
+export const IMAGES = {
+  COMPANY_LOGOS: {
+    MAIN: "images/micronics-assets/main-logo.png",
+    HORIZONTAL_BLACK: "images/logos/wizmax-logo-horizonall-black.png",
+    NAVBAR: "images/micronics-assets/navbar-logo.png",
+  },
+  FACEBOOK: "images/micronics-assets/facebook.png",
+  TWITTER: "images/micronics-assets/twitter.png",
+  INSTAGRAM: "images/micronics-assets/instagram.png",
+  TIKTOK: "images/micronics-assets/tiktok.png",
+  YOUTUBE: "images/micronics-assets/youtube.png",
+};
