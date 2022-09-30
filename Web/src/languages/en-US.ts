@@ -49,7 +49,12 @@ const convertedTexts = {
       driversSoftwares: "Drivers & Softwares",
       brochuresManuals: "Brochures & Manuals",
     },
-    shopSubLinks: {},
+    shopSubLinks: {
+      northAmerica: "North America",
+      korea: "Korea",
+      philippines: "Philippines",
+      ecuador: "Ecuador",
+    },
     contactSubLinks: {},
     supportPage: {
       bannerTitle: "Drivers and Manuals Download",

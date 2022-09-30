@@ -22,7 +22,7 @@ import "./NavigationBarDesktop.scss";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
 import { NavigationBarSubLinks } from "./NavigationBarSubLinks";
-import { productSubLinks, supportSubLinks } from "./links/links";
+import { productSubLinks, supportSubLinks, shopSubLinks } from "./links/links";
 import { ROUTE_PATH } from "constants/routes";
 
 interface INavigationBarDesktop {
@@ -48,21 +48,42 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   const [hoveredLinks, setHoveredLinks] = useState({
     productLinks: false,
     supportLinks: false,
+    shopLinks: false,
   });
 
   const productLinkHandler = () => {
-    setShowSubLinks((prevState) => !prevState);
+    setShowSubLinks(true);
     setHoveredLinks({
       productLinks: true,
       supportLinks: false,
+      shopLinks: false,
     });
   };
 
   const supportLinkHandler = () => {
-    setShowSubLinks((prevState) => !prevState);
+    setShowSubLinks(true);
     setHoveredLinks({
       productLinks: false,
       supportLinks: true,
+      shopLinks: false,
+    });
+  };
+
+  const shopLinkHandler = () => {
+    setShowSubLinks(true);
+    setHoveredLinks({
+      productLinks: false,
+      supportLinks: false,
+      shopLinks: true,
+    });
+  };
+
+  const hideAllLinks = () => {
+    setShowSubLinks(false);
+    setHoveredLinks({
+      productLinks: false,
+      supportLinks: false,
+      shopLinks: false,
     });
   };
   return (
@@ -84,7 +105,11 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
             <Col xs={8} md={8} lg={8}>
               <Nav className="navbar-nav">
                 <NavItem className="navbar-item">
-                  <Link className="links" to={ROUTE_PATH.INDEX}>
+                  <Link
+                    className="links"
+                    to={ROUTE_PATH.INDEX}
+                    onMouseOver={hideAllLinks}
+                  >
                     {intl("navigationBar.home")}
                   </Link>
                 </NavItem>
@@ -112,8 +137,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <Link
                     className="links"
                     to={ROUTE_PATH.SHOP}
-                    onMouseOver={productLinkHandler}
-                    onMouseLeave={productLinkHandler}
+                    onMouseOver={shopLinkHandler}
+                    onMouseLeave={shopLinkHandler}
                   >
                     {intl("navigationBar.shop")}
                   </Link>
@@ -176,8 +201,20 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
               ? productSubLinks
               : hoveredLinks?.supportLinks
               ? supportSubLinks
+              : hoveredLinks?.shopLinks
+              ? shopSubLinks
               : null
           }
+          hideAllLinks={hideAllLinks}
+          // shopLinks={
+          //   hoveredLinks?.productLinks
+          //     ? productSubLinks
+          //     : hoveredLinks?.supportLinks
+          //     ? supportSubLinks
+          //     : hoveredLinks?.shopLinks
+          //     ? shopSubLinks
+          //     : null
+          // }
         ></NavigationBarSubLinks>
       )}
     </React.Fragment>
