@@ -55,7 +55,10 @@ const convertedTexts = {
       philippines: "Philippines",
       ecuador: "Ecuador",
     },
-    contactSubLinks: {},
+    contactSubLinks: {
+      inquiry: "Inquiry",
+      becomeDistributor: "Become a Distributor",
+    },
     supportPage: {
       bannerTitle: "Drivers and Manuals Download",
       bannerSubtitle: "Find software and Driver for your Wizmax Hardware.",

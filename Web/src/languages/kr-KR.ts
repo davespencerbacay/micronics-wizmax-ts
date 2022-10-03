@@ -50,7 +50,10 @@ const convertedText = {
       brochuresManuals: "KR-Brochures & Manuals",
     },
     shopSubLinks: {},
-    contactSubLinks: {},
+    contactSubLinks: {
+      inquiry: "KR-Inquiry",
+      becomeDistributor: "KR-Become a Distributor",
+    },
     supportPage: {
       bannerTitle: "KR-Drivers and Manuals Download",
       bannerSubtitle: "KR-Find software and Driver for your Wizmax Hardware.",

@@ -71,9 +71,7 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   },
   {
     PATH: ROUTE_PATH.BECOME_DISTRIBUTOR,
-    ELEMENT: (
-      <PageWrapper component={<BecomeDistributor />} showNavbar={false} />
-    ),
+    ELEMENT: <PageWrapper component={<BecomeDistributor />} />,
   },
 ];
 
