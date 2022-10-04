@@ -169,7 +169,6 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                     onClick={languageDropDownHandler}
                   />
                 </DropdownToggle>
-
                 <DropdownMenu className={languageDropdownMenuClassname}>
                   <DropdownItem
                     className="language"
@@ -203,15 +202,6 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
               : null
           }
           hideAllLinks={hideAllLinks}
-          // shopLinks={
-          //   hoveredLinks?.productLinks
-          //     ? productSubLinks
-          //     : hoveredLinks?.supportLinks
-          //     ? supportSubLinks
-          //     : hoveredLinks?.shopLinks
-          //     ? shopSubLinks
-          //     : null
-          // }
         ></NavigationBarSubLinks>
       )}
     </React.Fragment>
