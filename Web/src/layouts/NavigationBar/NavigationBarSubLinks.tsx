@@ -9,6 +9,7 @@ import {
 } from "./links/links";
 import "./NavigationBarDesktop.scss";
 
+
 interface INavigationBarSubLinks {
   subLinks: SubLinksType[] | null;
   hasIcon?: boolean;
@@ -17,6 +18,7 @@ interface INavigationBarSubLinks {
   showSubLinks?: boolean;
   hideAllLinks: () => void;
 }
+
 
 export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
   props
