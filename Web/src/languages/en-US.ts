@@ -30,6 +30,34 @@ const convertedTexts = {
       support: "Support",
       shop: "Shop",
       contact: "Contact",
+      translation: "Translation",
+      korean: "Korean",
+      english: "English (US)",
+      getInTouch: "Get in Touch",
+    },
+    /* SUB LINKS */
+    productSubLinks: {
+      mouse: "Mouse",
+      keyboard: "Keyboard",
+      headset: "Headset",
+      fansCoolers: "Fans & Coolers",
+      pcCase: "PC Case",
+      psu: "Power Supplies",
+      accessories: "Accessories",
+    },
+    supportSubLinks: {
+      driversSoftwares: "Drivers & Softwares",
+      brochuresManuals: "Brochures & Manuals",
+    },
+    shopSubLinks: {
+      northAmerica: "North America",
+      korea: "Korea",
+      philippines: "Philippines",
+      ecuador: "Ecuador",
+    },
+    contactSubLinks: {
+      inquiry: "Inquiry",
+      becomeDistributor: "Become a Distributor",
     },
     supportPage: {
       bannerTitle: "Drivers and Manuals Download",

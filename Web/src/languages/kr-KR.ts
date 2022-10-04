@@ -30,6 +30,29 @@ const convertedText = {
       support: "KR-Support",
       shop: "KR-Shop",
       contact: "KR-Contact",
+      translation: "Translation",
+      korean: "KR-Korean",
+      english: "KR-English (US)",
+      getInTouch: "KR-Get in Touch",
+    },
+    productSubLinks: {
+      /* SUB LINKS */
+      mouse: "KR-Mouse",
+      keyboard: "KR-Keyboard",
+      headset: "KR-Headset",
+      fansCoolers: "KR-Fans & Coolers",
+      pcCase: "KR-PC Case",
+      psu: "KR-Power Supplies",
+      accessories: "KR-Accessories",
+    },
+    supportSubLinks: {
+      driversSoftwares: "KR-Drivers & Softwares",
+      brochuresManuals: "KR-Brochures & Manuals",
+    },
+    shopSubLinks: {},
+    contactSubLinks: {
+      inquiry: "KR-Inquiry",
+      becomeDistributor: "KR-Become a Distributor",
     },
     supportPage: {
       bannerTitle: "KR-Drivers and Manuals Download",
