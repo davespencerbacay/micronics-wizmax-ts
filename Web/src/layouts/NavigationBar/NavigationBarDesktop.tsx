@@ -15,7 +15,7 @@ import {
 import { IMAGES, LANGUAGES } from "constants/";
 import { Link } from "react-router-dom";
 import { LOCALES } from "i18n";
-import intl from "i18n/intl";
+import intl, { useIntl } from "i18n/intl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBarDesktop.scss";
@@ -33,6 +33,13 @@ import { ROUTE_PATH } from "constants/routes";
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
 }
+interface INavItems {
+  text: string;
+  path: string;
+  onMouseOver: () => void;
+  onMouseLeave?: () => void;
+}
+type LinkType = "home" | "products" | "support" | "shop" | "contact";
 
 const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   //Select Language Dropdown
@@ -57,43 +64,13 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     contactLinks: false,
   });
 
-  const productLinkHandler = () => {
+  const navLinkHandlers = (link: LinkType) => {
     setShowSubLinks(true);
     setHoveredLinks({
-      productLinks: true,
-      supportLinks: false,
-      shopLinks: false,
-      contactLinks: false,
-    });
-  };
-
-  const supportLinkHandler = () => {
-    setShowSubLinks(true);
-    setHoveredLinks({
-      productLinks: false,
-      supportLinks: true,
-      shopLinks: false,
-      contactLinks: false,
-    });
-  };
-
-  const shopLinkHandler = () => {
-    setShowSubLinks(true);
-    setHoveredLinks({
-      productLinks: false,
-      supportLinks: false,
-      shopLinks: true,
-      contactLinks: false,
-    });
-  };
-
-  const contactLinkHandler = () => {
-    setShowSubLinks(true);
-    setHoveredLinks({
-      productLinks: false,
-      supportLinks: false,
-      shopLinks: false,
-      contactLinks: true,
+      productLinks: link === "products",
+      supportLinks: link === "support",
+      shopLinks: link === "shop",
+      contactLinks: link === "contact",
     });
   };
 
@@ -106,6 +83,39 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
       contactLinks: false,
     });
   };
+
+  const navItems: INavItems[] = [
+    {
+      text: useIntl("navigationBar.home"),
+      path: ROUTE_PATH.INDEX,
+      onMouseOver: () => hideAllLinks(),
+    },
+    {
+      text: useIntl("navigationBar.products"),
+      path: ROUTE_PATH.PRODUCT,
+      onMouseLeave: () => navLinkHandlers("products"),
+      onMouseOver: () => navLinkHandlers("products"),
+    },
+    {
+      text: useIntl("navigationBar.support"),
+      path: ROUTE_PATH.SUPPORT,
+      onMouseLeave: () => navLinkHandlers("support"),
+      onMouseOver: () => navLinkHandlers("support"),
+    },
+    {
+      text: useIntl("navigationBar.shop"),
+      path: ROUTE_PATH.SHOP,
+      onMouseLeave: () => navLinkHandlers("shop"),
+      onMouseOver: () => navLinkHandlers("shop"),
+    },
+    {
+      text: useIntl("navigationBar.contact"),
+      path: ROUTE_PATH.CONTACT,
+      onMouseLeave: () => navLinkHandlers("contact"),
+      onMouseOver: () => navLinkHandlers("contact"),
+    },
+  ];
+
   return (
     <React.Fragment>
       <Navbar className="navbar" fixed="top">
@@ -124,55 +134,20 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
             </Col>
             <Col xs={8} md={8} lg={8}>
               <Nav className="navbar-nav">
-                <NavItem className="navbar-item">
-                  <Link
-                    className="links"
-                    to={ROUTE_PATH.INDEX}
-                    onMouseOver={hideAllLinks}
-                  >
-                    {intl("navigationBar.home")}
-                  </Link>
-                </NavItem>
-                <NavItem className="navbar-item">
-                  <Link
-                    className="links"
-                    to={ROUTE_PATH.PRODUCT}
-                    onMouseOver={productLinkHandler}
-                    onMouseLeave={productLinkHandler}
-                  >
-                    {intl("navigationBar.products")}
-                  </Link>
-                </NavItem>
-                <NavItem className="navbar-item">
-                  <Link
-                    className="links"
-                    to={ROUTE_PATH.SUPPORT}
-                    onMouseOver={supportLinkHandler}
-                    onMouseLeave={supportLinkHandler}
-                  >
-                    {intl("navigationBar.support")}
-                  </Link>
-                </NavItem>
-                <NavItem className="navbar-item">
-                  <Link
-                    className="links"
-                    to={ROUTE_PATH.SHOP}
-                    onMouseOver={shopLinkHandler}
-                    onMouseLeave={shopLinkHandler}
-                  >
-                    {intl("navigationBar.shop")}
-                  </Link>
-                </NavItem>
-                <NavItem className="navbar-item">
-                  <Link
-                    className="links"
-                    to={ROUTE_PATH.CONTACT}
-                    onMouseOver={contactLinkHandler}
-                    onMouseLeave={contactLinkHandler}
-                  >
-                    {intl("navigationBar.contact")}
-                  </Link>
-                </NavItem>
+                {navItems.map((item) => {
+                  return (
+                    <NavItem className="navbar-item">
+                      <Link
+                        className="links"
+                        to={item.path}
+                        onMouseOver={item.onMouseOver}
+                        onMouseLeave={item.onMouseLeave}
+                      >
+                        {item.text}
+                      </Link>
+                    </NavItem>
+                  );
+                })}
                 <NavItem className="navbar-item">
                   <FontAwesomeIcon
                     className="search-icon"

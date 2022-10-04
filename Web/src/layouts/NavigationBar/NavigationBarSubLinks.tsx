@@ -9,7 +9,6 @@ import {
 } from "./links/links";
 import "./NavigationBarDesktop.scss";
 
-
 interface INavigationBarSubLinks {
   subLinks: SubLinksType[] | null;
   hasIcon?: boolean;
@@ -18,7 +17,6 @@ interface INavigationBarSubLinks {
   showSubLinks?: boolean;
   hideAllLinks: () => void;
 }
-
 
 export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
   props
@@ -74,52 +72,18 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
                       );
                     })}
                   {sublink.id === "contact" &&
-                    sublink.inquiryTexts?.map((text: IInquiryTexts) => {
-                      return <p className="contact-links">{text.text}</p>;
-                    })}
+                    sublink.inquiryTexts?.map((text: IInquiryTexts) => (
+                      <p className="contact-links">{text.text}</p>
+                    ))}
                   {sublink.id === "contact" &&
                     sublink.becomeDistributorTexts?.map(
-                      (text: IBecomeDistributorTexts) => {
-                        return <p className="contact-links">{text.text}</p>;
-                      }
+                      (text: IBecomeDistributorTexts) => (
+                        <p className="contact-links">{text.text}</p>
+                      )
                     )}
                 </NavItem>
               );
             })}
-          {/* {props.subLinks &&
-            props.subLinks!.map((sublink) => {
-              return (
-                <NavItem className={sublink.className}>
-                  <Link to={sublink.path}>
-                    {sublink.icon}
-                    <div>{sublink.text}</div>
-                  </Link>
-                  {sublink.shops?.map((shop: IShopLinks) => {
-                    return (
-                      <Link className="shop-links" to={shop.name}>
-                        {shop.name}
-                      </Link>
-                    );
-                  })}
-                  {sublink.inquiryTexts?.map((text: IInquiryTexts) => {
-                    return (
-                      <Link className="contact-links" to={text.text}>
-                        {text.text}
-                      </Link>
-                    );
-                  })}
-                  {sublink.becomeDistributorTexts?.map(
-                    (text: IBecomeDistributorTexts) => {
-                      return (
-                        <Link className="contact-links" to={text.text}>
-                          {text.text}
-                        </Link>
-                      );
-                    }
-                  )}
-                </NavItem>
-              );
-            })} */}
         </Nav>
       </Navbar>
     );
