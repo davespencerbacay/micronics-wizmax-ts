@@ -6,6 +6,7 @@ import Support from "pages/Support/Support";
 import Shop from "pages/Shop/Shop";
 import PageWrapper from "library/PageWrapper/PageWrapper";
 import BecomeDistributor from "pages/BecomeDistributor/BecomeDistributor";
+import { ROUTE_PATH } from "./routes";
 
 /* Change languge consts */
 export const STORAGE_KEY: string = "locale";
@@ -36,16 +37,6 @@ export const LANGUAGES = {
 export const VARIANTS = {
   DARK: "dark",
   LIGHT: "light",
-};
-
-/* Route */
-export const ROUTE_PATH = {
-  INDEX: "/",
-  PRODUCT: "/products",
-  SUPPORT: "/support",
-  SHOP: "/shop",
-  CONTACT: "/contact",
-  BECOME_DISTRIBUTOR: "/become-distributor",
 };
 
 export const REACT_ROUTES: ReactRoutesType[] = [

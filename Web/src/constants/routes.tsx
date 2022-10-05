@@ -11,4 +11,5 @@ export const ROUTE_PATH = {
   CONTACT_BECOME_DISTRIBUTOR: "/contact/become-a-distributor",
   PRODUCT_DETAIL: "/products/:productID",
   PRODUCT_CATEGORY: "/products/:categoryID",
+  BECOME_DISTRIBUTOR: "/become-distributor",
 };

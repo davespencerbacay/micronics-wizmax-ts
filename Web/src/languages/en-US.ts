@@ -5,6 +5,7 @@ const convertedTexts = {
     global: {
       selectLanguage: "Select Language",
       companyName: "Wizmax Global",
+      send: "Send",
     },
     footer: {
       header: "HANMI MICRONICS © ALL RIGHTS RESERVED.",
@@ -73,6 +74,23 @@ const convertedTexts = {
       getInTouch:
         "Get in touch on Twitter, Facebook, and more social networks.",
       reachHere: "You can also reach us here: ",
+      form: {
+        header: {
+          title: "Become one of us",
+          subTitle: "Fields mark with an * is required.",
+        },
+        companyName: "Company Name",
+        companyEmailAddress: "Company Email Address",
+        businessWebsite: "Business Website",
+        businessAddress: "Business Address",
+        zipCode: "Zip Code",
+        fullName: "Full Name / Contact Person",
+        designation: "Designation / Position",
+        mobileNumber: "Mobile Number",
+        telNumber: "Telephone Number",
+        natureBusiness: "Nature of Business",
+        message: "Message",
+      },
     },
     inquiryContacts: {
       korTel: "Korea Tel(+82): ",

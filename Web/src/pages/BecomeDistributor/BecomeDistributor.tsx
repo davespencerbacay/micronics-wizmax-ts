@@ -1,14 +1,20 @@
 import { useIntl } from "i18n/intl";
 import Banner from "library/Banner/Banner";
+import LabeledValue from "library/LabeledValue/LabeledValue";
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./BecomeDistributor.scss";
-import Inquiries from "./components/Inquiries";
+import Form from "./components/Form/Form";
+import Inquiries from "./components/Inquiries/Inquiries";
 
 const BecomeDistributor = () => {
   const LOCALIZATION = {
     bannerTitle: useIntl("distributorPage.bannerTitle"),
     bannerDescription: useIntl("distributorPage.bannerDescription"),
+    header: {
+      title: useIntl("distributorPage.form.header.title"),
+      subTitle: useIntl("distributorPage.form.header.subTitle"),
+    },
   };
 
   return (
@@ -21,7 +27,14 @@ const BecomeDistributor = () => {
       />
       <Container className="distributor-container">
         <Row>
-          <Col xs={12} md={8} lg={8}></Col>
+          <Col xs={12} md={8} lg={8}>
+            <LabeledValue
+              title={LOCALIZATION.header.title}
+              subTitle={LOCALIZATION.header.subTitle}
+              variant="bold"
+            />
+            <Form />
+          </Col>
           <Col xs={12} md={4} lg={4}>
             <Inquiries />
           </Col>
