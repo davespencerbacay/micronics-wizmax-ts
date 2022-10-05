@@ -41,8 +41,8 @@ const Inquiries = () => {
       </div>
       <div className="inquiries-contact-list">
         <h5>{LOCALIZATION.reachHere}</h5>
-        {contactList.map((contact) => (
-          <label>{contact.label + " " + contact.value}</label>
+        {contactList.map((contact, index) => (
+          <label key={index}>{contact.label + " " + contact.value}</label>
         ))}
       </div>
     </div>

@@ -134,9 +134,9 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
             </Col>
             <Col xs={8} md={8} lg={8}>
               <Nav className="navbar-nav">
-                {navItems.map((item) => {
+                {navItems.map((item, index) => {
                   return (
-                    <NavItem className="navbar-item">
+                    <NavItem className="navbar-item" key={index}>
                       <Link
                         className="links"
                         to={item.path}
