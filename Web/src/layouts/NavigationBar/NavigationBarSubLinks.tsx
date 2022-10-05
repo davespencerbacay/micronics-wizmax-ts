@@ -8,6 +8,9 @@ import {
   SubLinksType,
 } from "./links/links";
 import "./NavigationBarDesktop.scss";
+import { ROUTE_PATH } from "constants/routes";
+import Icon from "library/Icons/Icon";
+import GoTo from "library/Icons/Navigations/GoTo/GoTo";
 
 interface INavigationBarSubLinks {
   subLinks: SubLinksType[] | null;
@@ -22,6 +25,28 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
   props
 ) => {
   const [hideSubNavbar, setHideSubNavbar] = useState(false);
+
+  const GetLinkID = () => {
+    let productLinkID = props.subLinks?.find((link) => link.id === "product");
+    let supportLinkID = props.subLinks?.find((link) => link.id === "support");
+    let shopLinkID = props.subLinks?.find((link) => link.id === "shop");
+
+    return productLinkID ? (
+      <Link className="view-all-nav-item" to={ROUTE_PATH.PRODUCT}>
+        View All Products <GoTo width={10} />
+      </Link>
+    ) : supportLinkID ? (
+      <Link className="view-all-nav-item" to={ROUTE_PATH.SUPPORT}>
+        View All <GoTo width={10} />
+      </Link>
+    ) : shopLinkID ? (
+      <Link className="view-all-nav-item" to={ROUTE_PATH.SHOP}>
+        View All <GoTo width={10} />
+      </Link>
+    ) : (
+      <div className="blank-nav-item">Wizmax Global</div>
+    );
+  };
 
   const hideSubNavbarHandler = () => {
     setHideSubNavbar(true);
@@ -85,6 +110,7 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
               );
             })}
         </Nav>
+        <GetLinkID />
       </Navbar>
     );
   }

@@ -12,8 +12,14 @@ import intl from "i18n/intl";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
 import { ROUTE_PATH } from "constants/routes";
-import KoreanFlag from "library/Icons/KoreanFlag/KoreanFlag";
-import USFLag from "library/Icons/USFlag/USFlag";
+import KoreanFlag from "library/Icons/Flags/KoreanFlag/KoreanFlag";
+import USFLag from "library/Icons/Flags/USFlag/USFlag";
+import GoTo from "library/Icons/Navigations/GoTo/GoTo";
+import Facebook from "library/Icons/SocialMedias/Facebook/Facebook";
+import Instagram from "library/Icons/SocialMedias/Instagram/Instagram";
+import Tiktok from "library/Icons/SocialMedias/Tiktok/Tiktok";
+import Twitter from "library/Icons/SocialMedias/Twitter/Twitter";
+import Youtube from "library/Icons/SocialMedias/Youtube/Youtube";
 
 //NAVIGATION LINKS AND ROUTES
 const NavigationLinksMobile: React.FC = () => {
@@ -46,11 +52,7 @@ const NavigationLinksMobile: React.FC = () => {
         <ListGroupItem className="navbar-ul-div-li" key={index}>
           <Link to={link.routePath}>
             {link.text}
-            <img
-              className="arrow-icon"
-              src="/images/micronics-assets/go-to-icon.svg"
-              alt="Arrow Icon"
-            />
+            <GoTo className="arrow-icon" width={10} />
           </Link>
         </ListGroupItem>
       ))}
@@ -63,23 +65,23 @@ const NavbarSocialMedias: React.FC = () => {
   const socialMedias = [
     {
       url: "https://www.facebook.com/Wizmax-100846952546335/",
-      image: "/images/micronics-assets/Facebook Icon-Colored.svg",
+      image: <Facebook width={50} className="social-icons" />,
     },
     {
       url: "https://www.instagram.com/wizmaxglobal/",
-      image: "/images/micronics-assets/Instagram Icon-Colored.svg",
+      image: <Instagram width={50} className="social-icons" />,
     },
     {
       url: "https://www.tiktok.com/@wizmaxinc",
-      image: "/images/micronics-assets/Tiktok Icon-Colored.svg",
+      image: <Tiktok width={50} className="social-icons" />,
     },
     {
       url: "https://twitter.com/Wizmaxinc",
-      image: "/images/micronics-assets/Twitter Icon-Colored.svg",
+      image: <Twitter width={50} className="social-icons" />,
     },
     {
       url: "https://www.youtube.com/channel/UC78IfgEhU10aaQWi-iqpvGg",
-      image: "/images/micronics-assets/Youtube Icon-Colored.svg",
+      image: <Youtube width={50} className="social-icons" />,
     },
   ];
 
@@ -93,11 +95,7 @@ const NavbarSocialMedias: React.FC = () => {
             rel="noopener noreferrer"
             key={index}
           >
-            <img
-              className="social-icons"
-              src={socials.image}
-              alt={socials.image}
-            />
+            {socials.image}
           </a>
         ))}
       </ListGroupItem>
@@ -159,7 +157,7 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
                 className="navbar-ul-subgroup-li"
                 onClick={() => props.changeLanguage(LOCALES.ENGLISH)}
               >
-             <USFLag width={30} className="us-flag-svg" />
+                <USFLag width={30} className="us-flag-svg" />
                 {intl("navigationBar.english")}
               </ListGroupItem>
             </ListGroup>

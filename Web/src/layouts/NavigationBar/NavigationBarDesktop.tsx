@@ -119,7 +119,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   return (
     <React.Fragment>
       <Navbar className="navbar" fixed="top">
-        <Container fluid>
+        <Container fluid className="container-fluid">
           <Row>
             <Col xs={2} md={2} lg={2}>
               <NavbarBrand className="navbar-brand">

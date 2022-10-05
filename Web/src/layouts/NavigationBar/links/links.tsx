@@ -1,6 +1,10 @@
 import { ROUTE_PATH } from "constants/routes";
 import intl from "i18n/intl";
+import EcuadorFlag from "library/Icons/Flags/EcuadorFlag/EcuadorFlag";
 import Icon from "library/Icons/Icon";
+import KoreanFlag from "library/Icons/Flags/KoreanFlag/KoreanFlag";
+import PhilippineFlag from "library/Icons/Flags/PhilippineFlag/PhilippineFlag";
+import USFLag from "library/Icons/Flags/USFlag/USFlag";
 
 export interface IShopLinks {
   name: string;
@@ -110,16 +114,16 @@ export const supportSubLinks: SubLinksType[] = [
 ];
 
 const SHOP_ICONS = {
-  SHOP_USA: "images/micronics-assets/US Flag.svg",
-  SHOP_KOREA: "images/micronics-assets/KR Flag.svg",
-  SHOP_PHILIPPINES: "images/micronics-assets/Philippines Flag.svg",
-  SHOP_ECUADOR: "images/micronics-assets/Ecuador Flag.svg",
+  SHOP_USA: <USFLag width={25} />,
+  SHOP_KOREA: <KoreanFlag width={25} />,
+  SHOP_PHILIPPINES: <PhilippineFlag width={25} />,
+  SHOP_ECUADOR: <EcuadorFlag width={25} />,
 };
 
 export const shopSubLinks: SubLinksType[] = [
   {
     id: "shop",
-    icon: <Icon icon={SHOP_ICONS.SHOP_USA} width={20}></Icon>,
+    icon: SHOP_ICONS.SHOP_USA,
     text: intl("shopSubLinks.northAmerica"),
     path: ROUTE_PATH.SHOP,
     className: "sub-navbar-shop-items",
@@ -132,7 +136,7 @@ export const shopSubLinks: SubLinksType[] = [
   },
   {
     id: "shop",
-    icon: <Icon icon={SHOP_ICONS.SHOP_KOREA} width={20}></Icon>,
+    icon: SHOP_ICONS.SHOP_KOREA,
     text: intl("shopSubLinks.korea"),
     path: ROUTE_PATH.SHOP,
     className: "sub-navbar-shop-items",
@@ -154,7 +158,7 @@ export const shopSubLinks: SubLinksType[] = [
   },
   {
     id: "shop",
-    icon: <Icon icon={SHOP_ICONS.SHOP_PHILIPPINES} width={20}></Icon>,
+    icon: SHOP_ICONS.SHOP_PHILIPPINES,
     text: intl("shopSubLinks.philippines"),
     path: ROUTE_PATH.SHOP,
     className: "sub-navbar-shop-items",
@@ -166,7 +170,7 @@ export const shopSubLinks: SubLinksType[] = [
   },
   {
     id: "shop",
-    icon: <Icon icon={SHOP_ICONS.SHOP_ECUADOR} width={20}></Icon>,
+    icon: SHOP_ICONS.SHOP_ECUADOR,
     text: intl("shopSubLinks.ecuador"),
     path: ROUTE_PATH.SHOP,
     className: "sub-navbar-shop-items",
