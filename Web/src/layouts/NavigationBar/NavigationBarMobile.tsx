@@ -88,14 +88,14 @@ const NavbarSocialMedias: React.FC = () => {
   return (
     <ListGroup className="social-icons-group">
       <ListGroupItem className="social-icons-li">
-        {socialMedias.map((socials, index) => (
+        {socialMedias.map((social, index) => (
           <a
-            href={socials.url}
+            href={social.url}
             target="_blank"
             rel="noopener noreferrer"
             key={index}
           >
-            {socials.image}
+            {social.image}
           </a>
         ))}
       </ListGroupItem>

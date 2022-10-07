@@ -44,15 +44,28 @@ const convertedText = {
       pcCase: "KR-PC Case",
       psu: "KR-Power Supplies",
       accessories: "KR-Accessories",
+      viewAllProducts: "KR-View All Products",
     },
     supportSubLinks: {
       driversSoftwares: "KR-Drivers & Softwares",
       brochuresManuals: "KR-Brochures & Manuals",
+      viewAll: "KR-View All",
     },
-    shopSubLinks: {},
+    shopSubLinks: {
+      northAmerica: "North America",
+      korea: "Korea",
+      philippines: "Philippines",
+      ecuador: "Ecuador",
+      viewAllShops: "KR-View All Shops",
+    },
     contactSubLinks: {
       inquiry: "KR-Inquiry",
+      inquiryText:
+        "KR-Need Help? We can assist you in any product-related inquiry.",
       becomeDistributor: "KR-Become a Distributor",
+      becomeDistributorText:
+        "KR-Be part of the Wizmax Family! Let's make a Deal.",
+      wizmaxGlobal: "KR-Wizmax Global",
     },
     supportPage: {
       bannerTitle: "KR-Drivers and Manuals Download",

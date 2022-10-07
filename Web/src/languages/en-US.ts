@@ -44,20 +44,27 @@ const convertedTexts = {
       pcCase: "PC Case",
       psu: "Power Supplies",
       accessories: "Accessories",
+      viewAllProducts: "View All Products",
     },
     supportSubLinks: {
       driversSoftwares: "Drivers & Softwares",
       brochuresManuals: "Brochures & Manuals",
+      viewAll: "View All",
     },
     shopSubLinks: {
       northAmerica: "North America",
       korea: "Korea",
       philippines: "Philippines",
       ecuador: "Ecuador",
+      viewAllShops: "View All Shops",
     },
     contactSubLinks: {
       inquiry: "Inquiry",
+      inquiryText:
+        "Need Help? We can assist you in any product-related inquiry.",
       becomeDistributor: "Become a Distributor",
+      becomeDistributorText: "Be part of the Wizmax Family! Let's make a Deal.",
+      wizmaxGlobal: "Wizmax Global",
     },
     supportPage: {
       bannerTitle: "Drivers and Manuals Download",

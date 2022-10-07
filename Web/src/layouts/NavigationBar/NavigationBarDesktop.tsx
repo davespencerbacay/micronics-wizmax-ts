@@ -15,7 +15,7 @@ import {
 import { IMAGES, LANGUAGES } from "constants/";
 import { Link } from "react-router-dom";
 import { LOCALES } from "i18n";
-import intl, { useIntl } from "i18n/intl";
+import { useIntl } from "i18n/intl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBarDesktop.scss";
