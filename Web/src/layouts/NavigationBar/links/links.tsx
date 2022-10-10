@@ -1,17 +1,25 @@
 import { ROUTE_PATH } from "constants/routes";
+import {
+  ShopLinksType,
+  IShops,
+  shopsUSA,
+  shopsKorea,
+  shopsPhilippines,
+  shopsEcuador,
+} from "constants/shops";
 import intl from "i18n/intl";
+import EcuadorFlag from "library/Icons/Flags/EcuadorFlag/EcuadorFlag";
 import Icon from "library/Icons/Icon";
+import KoreanFlag from "library/Icons/Flags/KoreanFlag/KoreanFlag";
+import PhilippineFlag from "library/Icons/Flags/PhilippineFlag/PhilippineFlag";
+import USFLag from "library/Icons/Flags/USFlag/USFlag";
 
-export interface IShopLinks {
-  name: string;
-  link: string;
-}
 export interface IInquiryTexts {
-  text: string;
+  text: string | JSX.Element;
 }
 
 export interface IBecomeDistributorTexts {
-  text: string;
+  text: string | JSX.Element;
 }
 
 export type SubLinksType = {
@@ -20,9 +28,11 @@ export type SubLinksType = {
   text: string | JSX.Element;
   path: string;
   className: string;
-  shops?: IShopLinks[];
   inquiryTexts?: IInquiryTexts[];
   becomeDistributorTexts?: IBecomeDistributorTexts[];
+  shops?: IShops[];
+  shopName?: ShopLinksType[];
+  shopLink?: ShopLinksType[];
 };
 
 const PRODUCT_IMAGES = {
@@ -110,72 +120,45 @@ export const supportSubLinks: SubLinksType[] = [
 ];
 
 const SHOP_ICONS = {
-  SHOP_USA: "images/micronics-assets/US Flag.svg",
-  SHOP_KOREA: "images/micronics-assets/KR Flag.svg",
-  SHOP_PHILIPPINES: "images/micronics-assets/Philippines Flag.svg",
-  SHOP_ECUADOR: "images/micronics-assets/Ecuador Flag.svg",
+  SHOP_USA: <USFLag width={25} />,
+  SHOP_KOREA: <KoreanFlag width={25} />,
+  SHOP_PHILIPPINES: <PhilippineFlag width={25} />,
+  SHOP_ECUADOR: <EcuadorFlag width={25} />,
 };
 
 export const shopSubLinks: SubLinksType[] = [
   {
     id: "shop",
-    icon: <Icon icon={SHOP_ICONS.SHOP_USA} width={20}></Icon>,
+    icon: SHOP_ICONS.SHOP_USA,
     text: intl("shopSubLinks.northAmerica"),
     path: ROUTE_PATH.SHOP,
     className: "sub-navbar-shop-items",
-    shops: [
-      {
-        name: "Amazon",
-        link: "https://www.amazon.com/stores/WIZMAX/page/AADA7D9F-FC97-4B97-B16B-ABFBAD23A146?ref_=ast_blnE",
-      },
-    ],
+    shops: shopsUSA,
   },
   {
     id: "shop",
-    icon: <Icon icon={SHOP_ICONS.SHOP_KOREA} width={20}></Icon>,
+    icon: SHOP_ICONS.SHOP_KOREA,
     text: intl("shopSubLinks.korea"),
     path: ROUTE_PATH.SHOP,
     className: "sub-navbar-shop-items",
-    shops: [
-      {
-        name: "Micronics Korea",
-        link: "http://www.micronics.co.kr/micronics/index.php",
-      },
-      {
-        name: "Compuzone",
-        link: "https://www.compuzone.co.kr/search/search.htm?Seargbl=1&hidden_Txt=&IsEventSearch=&SearchProductKey=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EB%8B%89%EC%8A%A4",
-      },
-      { name: "Naver", link: "https://smartstore.naver.com/micronics" },
-      {
-        name: "Danawa",
-        link: "https://search.danawa.com/dsearch.php?query=micronics&originalQuery=micronics&volumeType=allvs&page=1&limit=40&sort=saveDESC&list=list&boost=true&addDelivery=N&makerbrand_name=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EB%8B%89%EC%8A%A4&recommendedSort=Y&defaultUICategoryCode=112777&defaultPhysicsCategoryCode=861%7C880%7C997%7C0&defaultVmTab=943&defaultVaTab=83552&tab=main",
-      },
-    ],
+    shops: shopsKorea,
   },
   {
     id: "shop",
-    icon: <Icon icon={SHOP_ICONS.SHOP_PHILIPPINES} width={20}></Icon>,
+    icon: SHOP_ICONS.SHOP_PHILIPPINES,
     text: intl("shopSubLinks.philippines"),
+
     path: ROUTE_PATH.SHOP,
     className: "sub-navbar-shop-items",
-    shops: [
-      { name: "Wizmax Official Store", link: "http://wizmaxph.myshopify.com/" },
-      { name: "Shopee", link: "" },
-      { name: "Lazada", link: "http://www.lazada.com.ph/shop/wizmax-global" },
-    ],
+    shops: shopsPhilippines,
   },
   {
     id: "shop",
-    icon: <Icon icon={SHOP_ICONS.SHOP_ECUADOR} width={20}></Icon>,
+    icon: SHOP_ICONS.SHOP_ECUADOR,
     text: intl("shopSubLinks.ecuador"),
     path: ROUTE_PATH.SHOP,
     className: "sub-navbar-shop-items",
-    shops: [
-      {
-        name: "MaxiTec",
-        link: "https://www.maxitec.com.ec/gaming-y-videojuegos/micronics?PS=24",
-      },
-    ],
+    shops: shopsEcuador,
   },
 ];
 
@@ -192,7 +175,7 @@ export const contactSubLinks: SubLinksType[] = [
     className: "sub-navbar-contact-items",
     inquiryTexts: [
       {
-        text: "Need Help? We can assist you in any product-related inquiry.",
+        text: intl("contactSubLinks.inquiryText"),
       },
     ],
   },
@@ -204,7 +187,7 @@ export const contactSubLinks: SubLinksType[] = [
     className: "sub-navbar-contact-items",
     becomeDistributorTexts: [
       {
-        text: "Be part of the Wizmax Family! Let's make a Deal.",
+        text: intl("contactSubLinks.becomeDistributorText"),
       },
     ],
   },

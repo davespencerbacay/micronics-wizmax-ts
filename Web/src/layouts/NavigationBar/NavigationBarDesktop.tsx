@@ -15,7 +15,7 @@ import {
 import { IMAGES, LANGUAGES } from "constants/";
 import { Link } from "react-router-dom";
 import { LOCALES } from "i18n";
-import intl, { useIntl } from "i18n/intl";
+import { useIntl } from "i18n/intl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBarDesktop.scss";
@@ -119,7 +119,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   return (
     <React.Fragment>
       <Navbar className="navbar" fixed="top">
-        <Container fluid>
+        <Container fluid className="container-fluid">
           <Row>
             <Col xs={2} md={2} lg={2}>
               <NavbarBrand className="navbar-brand">
@@ -169,7 +169,6 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                     onClick={languageDropDownHandler}
                   />
                 </DropdownToggle>
-
                 <DropdownMenu className={languageDropdownMenuClassname}>
                   <DropdownItem
                     className="language"
@@ -203,15 +202,6 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
               : null
           }
           hideAllLinks={hideAllLinks}
-          // shopLinks={
-          //   hoveredLinks?.productLinks
-          //     ? productSubLinks
-          //     : hoveredLinks?.supportLinks
-          //     ? supportSubLinks
-          //     : hoveredLinks?.shopLinks
-          //     ? shopSubLinks
-          //     : null
-          // }
         ></NavigationBarSubLinks>
       )}
     </React.Fragment>

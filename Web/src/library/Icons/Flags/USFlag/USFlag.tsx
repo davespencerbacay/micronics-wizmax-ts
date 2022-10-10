@@ -3,7 +3,7 @@ import "./USFlag.scss";
 
 interface IUSFlag {
   width: number | string;
-  className: string;
+  className?: string;
 }
 
 const USFLag: React.FC<IUSFlag> = ({ width, className }) => {
