@@ -20,6 +20,7 @@ import Instagram from "library/Icons/SocialMedias/Instagram/Instagram";
 import Tiktok from "library/Icons/SocialMedias/Tiktok/Tiktok";
 import Twitter from "library/Icons/SocialMedias/Twitter/Twitter";
 import Youtube from "library/Icons/SocialMedias/Youtube/Youtube";
+import { SOCIAL_MEDIA } from "constants/";
 
 //NAVIGATION LINKS AND ROUTES
 const NavigationLinksMobile: React.FC = () => {
@@ -64,23 +65,23 @@ const NavigationLinksMobile: React.FC = () => {
 const NavbarSocialMedias: React.FC = () => {
   const socialMedias = [
     {
-      url: "https://www.facebook.com/Wizmax-100846952546335/",
+      url: SOCIAL_MEDIA.FACEBOOK_LINK,
       image: <Facebook width={50} className="social-icons" />,
     },
     {
-      url: "https://www.instagram.com/wizmaxglobal/",
+      url: SOCIAL_MEDIA.INSTAGRAM_LINK,
       image: <Instagram width={50} className="social-icons" />,
     },
     {
-      url: "https://www.tiktok.com/@wizmaxinc",
+      url: SOCIAL_MEDIA.TIKTOK_LINK,
       image: <Tiktok width={50} className="social-icons" />,
     },
     {
-      url: "https://twitter.com/Wizmaxinc",
+      url: SOCIAL_MEDIA.TWITTER_LINK,
       image: <Twitter width={50} className="social-icons" />,
     },
     {
-      url: "https://www.youtube.com/channel/UC78IfgEhU10aaQWi-iqpvGg",
+      url: SOCIAL_MEDIA.YOUTUBE_LINK,
       image: <Youtube width={50} className="social-icons" />,
     },
   ];

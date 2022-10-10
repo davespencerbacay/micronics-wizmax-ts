@@ -1,3 +1,5 @@
+import { SHOPS } from "constants/";
+
 export interface IShops {
   name: string;
   link: string;
@@ -11,9 +13,8 @@ export type ShopLinksType = {
 
 const USA_SHOPS: ShopLinksType[] = [
   {
-    shopName: "Amazon",
-    shopLink:
-      "https://www.amazon.com/stores/WIZMAX/page/AADA7D9F-FC97-4B97-B16B-ABFBAD23A146?ref_=ast_blnE",
+    shopName: SHOPS.AMAZON_LABEL,
+    shopLink: SHOPS.AMAZON_LINK,
   },
 ];
 export const shopsUSA = USA_SHOPS.map((shop) => {
@@ -25,22 +26,20 @@ export const shopsUSA = USA_SHOPS.map((shop) => {
 
 const KOREA_SHOPS: ShopLinksType[] = [
   {
-    shopName: "Micronics Korea",
-    shopLink: "http://www.micronics.co.kr/micronics/index.php",
+    shopName: SHOPS.MICRONICS_KOREA_LABEL,
+    shopLink: SHOPS.MICRONICS_KOREA_LINK,
   },
   {
-    shopName: "Compuzone",
-    shopLink:
-      "https://www.compuzone.co.kr/search/search.htm?Seargbl=1&hidden_Txt=&IsEventSearch=&SearchProductKey=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EB%8B%89%EC%8A%A4",
+    shopName: SHOPS.COMPUZONE_LABEL,
+    shopLink: SHOPS.COMPUZONE_LINK,
   },
   {
-    shopName: "Naver",
-    shopLink: "https://smartstore.naver.com/micronics",
+    shopName: SHOPS.NAVER_LABEL,
+    shopLink: SHOPS.NAVER_LINK,
   },
   {
-    shopName: "Danawa",
-    shopLink:
-      "https://search.danawa.com/dsearch.php?query=micronics&originalQuery=micronics&volumeType=allvs&page=1&limit=40&sort=saveDESC&list=list&boost=true&addDelivery=N&makerbrand_name=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EB%8B%89%EC%8A%A4&recommendedSort=Y&defaultUICategoryCode=112777&defaultPhysicsCategoryCode=861%7C880%7C997%7C0&defaultVmTab=943&defaultVaTab=83552&tab=main",
+    shopName: SHOPS.DANAWA_LABEL,
+    shopLink: SHOPS.DANAWA_LINK,
   },
 ];
 export const shopsKorea = KOREA_SHOPS.map((shop) => {
@@ -52,16 +51,16 @@ export const shopsKorea = KOREA_SHOPS.map((shop) => {
 
 export const PHILIPPINES_SHOPS: ShopLinksType[] = [
   {
-    shopName: "Wizmax Official Store",
-    shopLink: "http://wizmaxph.myshopify.com/",
+    shopName: SHOPS.WIZMAX_OFFICIAL_STORE_LABEL,
+    shopLink: SHOPS.WIZMAX_OFFICIAL_STORE_LINK,
   },
   {
-    shopName: "Shopee",
+    shopName: SHOPS.SHOPEE_LABEL,
     shopLink: "",
   },
   {
-    shopName: "Lazada",
-    shopLink: "http://www.lazada.com.ph/shop/wizmax-global",
+    shopName: SHOPS.LAZADA_LABEL,
+    shopLink: SHOPS.LAZADA_LINK,
   },
 ];
 export const shopsPhilippines = PHILIPPINES_SHOPS.map((shop) => {
@@ -73,8 +72,8 @@ export const shopsPhilippines = PHILIPPINES_SHOPS.map((shop) => {
 
 export const ECUADOR_SHOPS: ShopLinksType[] = [
   {
-    shopName: "MaxiTec",
-    shopLink: "https://www.maxitec.com.ec/gaming-y-videojuegos/micronics?PS=24",
+    shopName: SHOPS.MAXITEC_LABEL,
+    shopLink: SHOPS.MAXITEC_LINK,
   },
 ];
 export const shopsEcuador = ECUADOR_SHOPS.map((shop) => {
