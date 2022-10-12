@@ -121,6 +121,16 @@ $lightgray: #d3d3d3;
       }
     }
   }
+  .switch-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    label {
+      color: white;
+    }
+  }
 }
 .sub-navbar {
   top: 5rem;

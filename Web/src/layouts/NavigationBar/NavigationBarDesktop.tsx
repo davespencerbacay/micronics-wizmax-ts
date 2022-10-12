@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -11,6 +11,8 @@ import {
   Row,
   Col,
   Dropdown,
+  FormGroup,
+  Input,
 } from "reactstrap";
 import { IMAGES, LANGUAGES } from "constants/";
 import { Link } from "react-router-dom";
@@ -29,6 +31,7 @@ import {
   contactSubLinks,
 } from "./links/links";
 import { ROUTE_PATH } from "constants/routes";
+import { ThemeContext } from "context/ThemeContext";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
@@ -84,6 +87,13 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     });
   };
 
+  const { isDarkMode, setIsDarkMode } = useContext<any>(ThemeContext);
+  const switchHandler = () => {
+    setIsDarkMode(!isDarkMode);
+
+    console.log(isDarkMode);
+  };
+
   const navItems: INavItems[] = [
     {
       text: useIntl("navigationBar.home"),
@@ -127,7 +137,11 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <img
                     className="navbar-logo"
                     alt="navbar-logo"
-                    src={IMAGES.COMPANY_LOGOS.NAVBAR}
+                    src={
+                      isDarkMode
+                        ? IMAGES.COMPANY_LOGOS.NAVBAR_BLACK
+                        : IMAGES.COMPANY_LOGOS.NAVBAR_WHITE
+                    }
                   />
                 </Link>
               </NavbarBrand>
@@ -156,7 +170,12 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                 </NavItem>
               </Nav>
             </Col>
-            <Col xs={2} md={2} lg={2}>
+            <Col xs={1} md={1} lg={1}>
+              <FormGroup className="switch-container" switch>
+                <Input type="switch" role="switch" onClick={switchHandler} />
+              </FormGroup>
+            </Col>
+            <Col xs={1} md={1} lg={1}>
               <Dropdown
                 className="select-language"
                 isOpen={languageDropDownOpen}

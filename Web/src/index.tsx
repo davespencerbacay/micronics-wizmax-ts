@@ -5,21 +5,24 @@ import Provider from "provider";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { REACT_ROUTES } from "constants/";
 import "styles/index.scss";
+import { ThemeProvider } from "context/ThemeContext";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.Fragment>
-    <AppContextProvider>
-      <Provider>
-        <Router>
-          <Routes>
-            {REACT_ROUTES.map((ROUTE, index) => (
-              <React.Fragment key={index}>
-                <Route path={ROUTE.PATH} element={ROUTE.ELEMENT} />
-              </React.Fragment>
-            ))}
-          </Routes>
-        </Router>
-      </Provider>
-    </AppContextProvider>
+    <ThemeProvider>
+      <AppContextProvider>
+        <Provider>
+          <Router>
+            <Routes>
+              {REACT_ROUTES.map((ROUTE, index) => (
+                <React.Fragment key={index}>
+                  <Route path={ROUTE.PATH} element={ROUTE.ELEMENT} />
+                </React.Fragment>
+              ))}
+            </Routes>
+          </Router>
+        </Provider>
+      </AppContextProvider>
+    </ThemeProvider>
   </React.Fragment>
 );
