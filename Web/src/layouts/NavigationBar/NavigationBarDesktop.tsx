@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -90,9 +90,10 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   const { isDarkMode, setIsDarkMode } = useContext<any>(ThemeContext);
   const switchHandler = () => {
     setIsDarkMode(!isDarkMode);
-
-    console.log(isDarkMode);
+    localStorage.setItem("dark-mode", JSON.stringify(!isDarkMode));
   };
+
+  useEffect(() => {}, [isDarkMode]);
 
   const navItems: INavItems[] = [
     {
@@ -172,7 +173,12 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
             </Col>
             <Col xs={1} md={1} lg={1}>
               <FormGroup className="switch-container" switch>
-                <Input type="switch" role="switch" onClick={switchHandler} />
+                <Input
+                  type="switch"
+                  role="switch"
+                  defaultChecked={isDarkMode}
+                  onClick={switchHandler}
+                />
               </FormGroup>
             </Col>
             <Col xs={1} md={1} lg={1}>

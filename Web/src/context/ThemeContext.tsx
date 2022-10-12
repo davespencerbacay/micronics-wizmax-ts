@@ -12,8 +12,8 @@ type ThemeContextType = {
 };
 
 interface IThemeContext {
-  isDarkMode: boolean;
-  setIsDarkMode: Dispatch<SetStateAction<boolean>>;
+  isDarkMode: string | boolean;
+  setIsDarkMode: Dispatch<SetStateAction<string | boolean>>;
 }
 
 export const themeContextDefaultValue: IThemeContext = {
@@ -26,12 +26,15 @@ export const ThemeContext = createContext<IThemeContext>(
 );
 
 export const ThemeProvider: React.FC<ThemeContextType> = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const [isDarkMode, setIsDarkMode] = useState<any>(
+    localStorage.getItem("dark-mode")
+  );
+  console.log(isDarkMode);
   const value = { isDarkMode, setIsDarkMode };
 
   const themeClassnames = classNames({
-    dark: isDarkMode === true,
-    light: isDarkMode === false,
+    dark: isDarkMode,
+    light: !isDarkMode,
   });
 
   useEffect(() => {
