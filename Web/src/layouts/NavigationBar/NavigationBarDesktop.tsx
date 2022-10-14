@@ -19,7 +19,11 @@ import { Link } from "react-router-dom";
 import { LOCALES } from "i18n";
 import { useIntl } from "i18n/intl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMagnifyingGlass,
+  faMoon,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBarDesktop.scss";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
@@ -33,6 +37,7 @@ import {
 import { ROUTE_PATH } from "constants/routes";
 import { ThemeContext } from "context/ThemeContext";
 import useChangeTheme from "hooks/useChangeTheme";
+import Icon from "library/Icons/Icon";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
@@ -186,22 +191,25 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                 </NavItem>
               </Nav>
             </Col>
-            <Col xs={1} md={1} lg={1}>
-              <FormGroup className="switch-container" switch>
-                <Input
-                  type="switch"
-                  role="switch"
-                  defaultChecked={darkTheme}
-                  onClick={switchHandler}
-                />
-              </FormGroup>
-            </Col>
-            <Col xs={1} md={1} lg={1}>
+            {/* <Col xs={1} md={1} lg={1}></Col> */}
+            <Col xs={2} md={2} lg={2}>
               <Dropdown
                 className="select-language"
                 isOpen={languageDropDownOpen}
                 toggle={toggle}
               >
+                <FontAwesomeIcon
+                  className="theme-icon"
+                  icon={darkTheme ? faMoon : faSun}
+                />
+                <FormGroup className="switch-container" switch>
+                  <Input
+                    type="switch"
+                    role="switch"
+                    defaultChecked={darkTheme}
+                    onClick={switchHandler}
+                  />
+                </FormGroup>
                 <DropdownToggle className="language-menu-toggler">
                   <FontAwesomeIcon
                     className="globe-icon"

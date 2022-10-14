@@ -21,6 +21,9 @@ $font-light: #d3d3d3;
           color: $font-dark;
         }
       }
+      .theme-icon {
+        color: $font-dark;
+      }
     }
     .footer {
       background-color: $background-dark;
@@ -36,6 +39,20 @@ $font-light: #d3d3d3;
   color: $font-dark;
   .light {
     background: $main-background;
+    .navbar {
+      background-color: $background-dark;
+      .navbar-nav {
+        .links {
+          color: $font-light;
+        }
+      }
+      .theme-icon {
+        color: $font-light;
+      }
+    }
+    .sub-navbar {
+      background-color: $background-light;
+    }
     .footer {
       background-color: $background-light;
       color: $font-dark;
