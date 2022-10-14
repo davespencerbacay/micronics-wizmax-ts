@@ -32,6 +32,7 @@ import {
 } from "./links/links";
 import { ROUTE_PATH } from "constants/routes";
 import { ThemeContext } from "context/ThemeContext";
+import useChangeTheme from "hooks/useChangeTheme";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
@@ -87,11 +88,25 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     });
   };
 
-  const { isDarkMode, setIsDarkMode } = useContext<any>(ThemeContext);
+  const themeCtx = useContext(ThemeContext);
+
+  const isDarkMode = themeCtx.state.darkMode;
+
+  const [darkTheme, isDarkTheme] = useState(isDarkMode);
+
+  const changeTheme = useChangeTheme();
+
   const switchHandler = () => {
-    setIsDarkMode(!isDarkMode);
-    localStorage.setItem("dark-mode", JSON.stringify(!isDarkMode));
+    isDarkTheme((prevState: any) => !prevState);
+    localStorage.setItem("dark_mode", JSON.stringify(!darkTheme));
+    changeTheme(!darkTheme);
   };
+
+  // const { isDarkMode, setIsDarkMode } = useContext<any>(ThemeContext);
+  // const switchHandler = () => {
+  //   setIsDarkMode((prevState: any) => !prevState);
+  //   localStorage.setItem("dark-mode", JSON.stringify(!isDarkMode));
+  // };
 
   useEffect(() => {}, [isDarkMode]);
 
@@ -139,7 +154,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                     className="navbar-logo"
                     alt="navbar-logo"
                     src={
-                      isDarkMode
+                      darkTheme
                         ? IMAGES.COMPANY_LOGOS.NAVBAR_BLACK
                         : IMAGES.COMPANY_LOGOS.NAVBAR_WHITE
                     }
@@ -176,7 +191,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                 <Input
                   type="switch"
                   role="switch"
-                  defaultChecked={isDarkMode}
+                  defaultChecked={darkTheme}
                   onClick={switchHandler}
                 />
               </FormGroup>

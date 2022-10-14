@@ -1,14 +1,13 @@
-import React, { useContext, useEffect } from "react";
 import { IMAGES } from "constants/";
 import { Container } from "reactstrap";
 import { useIntl } from "i18n/intl";
 import "./Footer.scss";
 import { ThemeContext } from "context/ThemeContext";
+import { useContext } from "react";
 
 const Footer = () => {
-  const { isDarkMode } = useContext(ThemeContext);
-
-  useEffect(() => {}, [isDarkMode]);
+  const themeCtx = useContext(ThemeContext);
+  const isDarkMode = themeCtx.state.darkMode;
 
   return (
     <footer className="footer">

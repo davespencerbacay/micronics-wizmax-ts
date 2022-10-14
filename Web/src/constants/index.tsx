@@ -9,7 +9,10 @@ import BecomeDistributor from "pages/BecomeDistributor/BecomeDistributor";
 import { ROUTE_PATH } from "./routes";
 
 /* Change languge consts */
-export const STORAGE_KEY: string = "locale";
+export const STORAGE_KEY: Record<string, string> = {
+  LOCALE: "locale",
+  DARK_MODE: "dark_mode",
+};
 
 /* Web App Constants Text */
 export const COMPANY_NAME = "Wizmax Global";

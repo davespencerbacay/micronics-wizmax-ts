@@ -10,7 +10,7 @@ let reducer = (state: any, action: any) => {
     case "reset":
       return defaultContext;
     case "setLocale":
-      saveToStorage(STORAGE_KEY, action.locale);
+      saveToStorage(STORAGE_KEY.LOCALE, action.locale);
       return { ...state, locale: action.locale };
   }
 };

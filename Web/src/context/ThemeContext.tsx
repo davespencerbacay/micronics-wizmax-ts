@@ -1,49 +1,52 @@
 import classNames from "classnames";
-import React, {
-  createContext,
-  Dispatch,
-  SetStateAction,
-  useEffect,
-  useState,
-} from "react";
+import React, { useReducer, createContext, useEffect } from "react";
+import { getFromStorage, saveToStorage } from "../helpers/localStorage";
 
-type ThemeContextType = {
+const STORAGE_KEY: Record<string, string> = {
+  DARK_MODE: "dark_mode",
+};
+
+const defaultThemeContext = {
+  darkMode: getFromStorage(STORAGE_KEY.DARK_MODE) || false,
+};
+const ThemeContext = createContext<any>("");
+
+let reducer = (state: any, action: any) => {
+  switch (action.type) {
+    case "reset":
+      return defaultThemeContext;
+    case "setTheme":
+      saveToStorage(STORAGE_KEY.DARK_MODE, action.darkMode);
+      return { ...state, darkMode: action.darkMode };
+  }
+};
+
+interface IThemeContextProvider {
   children: JSX.Element;
-};
-
-interface IThemeContext {
-  isDarkMode: string | boolean;
-  setIsDarkMode: Dispatch<SetStateAction<string | boolean>>;
 }
-
-export const themeContextDefaultValue: IThemeContext = {
-  isDarkMode: false,
-  setIsDarkMode: () => false,
-};
-
-export const ThemeContext = createContext<IThemeContext>(
-  themeContextDefaultValue
-);
-
-export const ThemeProvider: React.FC<ThemeContextType> = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState<any>(
-    localStorage.getItem("dark-mode")
-  );
-  console.log(isDarkMode);
-  const value = { isDarkMode, setIsDarkMode };
+const ThemeContextProvider: React.FC<IThemeContextProvider> = ({
+  children,
+}) => {
+  const [state, dispatch] = useReducer(reducer, defaultThemeContext);
+  const value = { state, dispatch };
 
   const themeClassnames = classNames({
-    dark: isDarkMode,
-    light: !isDarkMode,
+    dark: state.darkMode === true,
+    light: state.darkMode === false,
   });
 
+  console.log(value);
+
   useEffect(() => {
-    document.body.classList.toggle("dark-theme", isDarkMode);
-    document.body.classList.toggle("light-theme", !isDarkMode);
-  }, [isDarkMode]);
+    document.body.classList.toggle("dark-theme", state.darkMode === true);
+    document.body.classList.toggle("light-theme", state.darkMode === false);
+  }, [state.darkMode]);
+
   return (
     <ThemeContext.Provider value={value}>
       <div className={themeClassnames}>{children}</div>
     </ThemeContext.Provider>
   );
 };
+
+export { ThemeContext, ThemeContextProvider };

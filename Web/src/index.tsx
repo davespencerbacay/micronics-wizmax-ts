@@ -5,11 +5,11 @@ import Provider from "provider";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { REACT_ROUTES } from "constants/";
 import "styles/index.scss";
-import { ThemeProvider } from "context/ThemeContext";
+import { ThemeContextProvider } from "context/ThemeContext";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.Fragment>
-    <ThemeProvider>
+    <ThemeContextProvider>
       <AppContextProvider>
         <Provider>
           <Router>
@@ -23,6 +23,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           </Router>
         </Provider>
       </AppContextProvider>
-    </ThemeProvider>
+    </ThemeContextProvider>
   </React.Fragment>
 );
