@@ -1,4 +1,45 @@
-import { SHOPS } from "constants/";
+type ShopTypes =
+  | "AMAZON_LABEL"
+  | "AMAZON_LINK"
+  | "MICRONICS_KOREA_LABEL"
+  | "MICRONICS_KOREA_LINK"
+  | "COMPUZONE_LABEL"
+  | "COMPUZONE_LINK"
+  | "NAVER_LABEL"
+  | "NAVER_LINK"
+  | "DANAWA_LABEL"
+  | "DANAWA_LINK"
+  | "WIZMAX_OFFICIAL_STORE_LABEL"
+  | "WIZMAX_OFFICIAL_STORE_LINK"
+  | "SHOPEE_LABEL"
+  | "SHOPEE_LINK"
+  | "LAZADA_LABEL"
+  | "LAZADA_LINK"
+  | "MAXITEC_LABEL"
+  | "MAXITEC_LINK";
+export const SHOPS: Record<ShopTypes, string> = {
+  AMAZON_LABEL: "Amazon",
+  AMAZON_LINK:
+    "https://www.amazon.com/stores/WIZMAX/page/AADA7D9F-FC97-4B97-B16B-ABFBAD23A146?ref_=ast_blnE",
+  MICRONICS_KOREA_LABEL: "Micronics Korea",
+  MICRONICS_KOREA_LINK: "http://www.micronics.co.kr/micronics/index.php",
+  COMPUZONE_LABEL: "Compuzone",
+  COMPUZONE_LINK:
+    "https://www.compuzone.co.kr/search/search.htm?Seargbl=1&hidden_Txt=&IsEventSearch=&SearchProductKey=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EB%8B%89%EC%8A%A4v",
+  NAVER_LABEL: "Naver",
+  NAVER_LINK: "https://smartstore.naver.com/micronics",
+  DANAWA_LABEL: "Danawa",
+  DANAWA_LINK: "Amazon",
+  WIZMAX_OFFICIAL_STORE_LABEL: "Wizmax Official Store",
+  WIZMAX_OFFICIAL_STORE_LINK: "http://wizmaxph.myshopify.com/",
+  SHOPEE_LABEL: "Shopee",
+  SHOPEE_LINK: "",
+  LAZADA_LABEL: "Lazada",
+  LAZADA_LINK: "http://www.lazada.com.ph/shop/wizmax-global",
+  MAXITEC_LABEL: "MaxiTec",
+  MAXITEC_LINK:
+    "https://www.maxitec.com.ec/gaming-y-videojuegos/micronics?PS=24",
+};
 
 export interface IShops {
   name: string;

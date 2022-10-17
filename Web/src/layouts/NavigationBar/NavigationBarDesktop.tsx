@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -11,13 +11,19 @@ import {
   Row,
   Col,
   Dropdown,
+  FormGroup,
+  Input,
 } from "reactstrap";
 import { IMAGES, LANGUAGES } from "constants/";
 import { Link } from "react-router-dom";
 import { LOCALES } from "i18n";
 import { useIntl } from "i18n/intl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMagnifyingGlass,
+  faMoon,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBarDesktop.scss";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
@@ -29,6 +35,8 @@ import {
   contactSubLinks,
 } from "./links/links";
 import { ROUTE_PATH } from "constants/routes";
+import { ThemeContext } from "context/ThemeContext";
+import useChangeTheme from "hooks/useChangeTheme";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
@@ -84,6 +92,22 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     });
   };
 
+  const themeCtx = useContext(ThemeContext);
+
+  const isDarkMode = themeCtx.state.darkMode;
+
+  const [darkTheme, isDarkTheme] = useState(isDarkMode);
+
+  const changeTheme = useChangeTheme();
+
+  const switchHandler = () => {
+    isDarkTheme((prevState: any) => !prevState);
+    localStorage.setItem("dark_mode", JSON.stringify(!darkTheme));
+    changeTheme(!darkTheme);
+  };
+
+  useEffect(() => {}, [isDarkMode]);
+
   const navItems: INavItems[] = [
     {
       text: useIntl("navigationBar.home"),
@@ -127,7 +151,11 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                   <img
                     className="navbar-logo"
                     alt="navbar-logo"
-                    src={IMAGES.COMPANY_LOGOS.NAVBAR}
+                    src={
+                      darkTheme
+                        ? IMAGES.COMPANY_LOGOS.NAVBAR_BLACK
+                        : IMAGES.COMPANY_LOGOS.NAVBAR_WHITE
+                    }
                   />
                 </Link>
               </NavbarBrand>
@@ -162,6 +190,18 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                 isOpen={languageDropDownOpen}
                 toggle={toggle}
               >
+                <FontAwesomeIcon
+                  className="theme-icon"
+                  icon={darkTheme ? faMoon : faSun}
+                />
+                <FormGroup className="switch-container" switch>
+                  <Input
+                    type="switch"
+                    role="switch"
+                    defaultChecked={darkTheme}
+                    onClick={switchHandler}
+                  />
+                </FormGroup>
                 <DropdownToggle className="language-menu-toggler">
                   <FontAwesomeIcon
                     className="globe-icon"

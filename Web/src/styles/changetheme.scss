@@ -1,0 +1,61 @@
+$main-background: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 1) 65%,
+  rgba(225, 226, 232, 1) 35%
+);
+$background-dark: #1d1d1f;
+$font-dark: #000000;
+
+$background-light: #ffffff;
+$font-light: #d3d3d3;
+
+.dark-theme {
+  background: $background-dark;
+  color: $font-light;
+  .dark {
+    background: $background-dark;
+    .navbar {
+      background-color: $background-light;
+      .navbar-nav {
+        .links {
+          color: $font-dark;
+        }
+      }
+      .theme-icon {
+        color: $font-dark;
+      }
+    }
+    .footer {
+      background-color: $background-dark;
+      color: $font-light;
+      h5 {
+        color: $font-light;
+      }
+    }
+  }
+}
+.light-theme {
+  background: $main-background;
+  color: $font-dark;
+  .light {
+    background: $main-background;
+    .navbar {
+      background-color: $background-dark;
+      .navbar-nav {
+        .links {
+          color: $font-light;
+        }
+      }
+      .theme-icon {
+        color: $font-light;
+      }
+    }
+    .sub-navbar {
+      background-color: $background-light;
+    }
+    .footer {
+      background-color: $background-light;
+      color: $font-dark;
+    }
+  }
+}
