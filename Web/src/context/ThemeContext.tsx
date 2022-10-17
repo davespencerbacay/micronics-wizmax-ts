@@ -28,14 +28,11 @@ const ThemeContextProvider: React.FC<IThemeContextProvider> = ({
   children,
 }) => {
   const [state, dispatch] = useReducer(reducer, defaultThemeContext);
-  const value = { state, dispatch };
 
   const themeClassnames = classNames({
     dark: state.darkMode === true,
     light: state.darkMode === false,
   });
-
-  console.log(value);
 
   useEffect(() => {
     document.body.classList.toggle("dark-theme", state.darkMode === true);
@@ -43,7 +40,7 @@ const ThemeContextProvider: React.FC<IThemeContextProvider> = ({
   }, [state.darkMode]);
 
   return (
-    <ThemeContext.Provider value={value}>
+    <ThemeContext.Provider value={{ state, dispatch }}>
       <div className={themeClassnames}>{children}</div>
     </ThemeContext.Provider>
   );

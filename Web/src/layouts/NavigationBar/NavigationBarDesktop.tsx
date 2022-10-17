@@ -37,7 +37,6 @@ import {
 import { ROUTE_PATH } from "constants/routes";
 import { ThemeContext } from "context/ThemeContext";
 import useChangeTheme from "hooks/useChangeTheme";
-import Icon from "library/Icons/Icon";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
@@ -106,12 +105,6 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     localStorage.setItem("dark_mode", JSON.stringify(!darkTheme));
     changeTheme(!darkTheme);
   };
-
-  // const { isDarkMode, setIsDarkMode } = useContext<any>(ThemeContext);
-  // const switchHandler = () => {
-  //   setIsDarkMode((prevState: any) => !prevState);
-  //   localStorage.setItem("dark-mode", JSON.stringify(!isDarkMode));
-  // };
 
   useEffect(() => {}, [isDarkMode]);
 
@@ -191,7 +184,6 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
                 </NavItem>
               </Nav>
             </Col>
-            {/* <Col xs={1} md={1} lg={1}></Col> */}
             <Col xs={2} md={2} lg={2}>
               <Dropdown
                 className="select-language"
