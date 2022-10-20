@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useField } from "formik";
 import { Input, InputProps } from "reactstrap";
 
-const FormikTextInput: React.FC<InputProps> = (props) => {
+interface IFormikTextInput extends InputProps {
+  isTextArea?: boolean;
+}
+const FormikTextInput: React.FC<IFormikTextInput> = (props) => {
   const [field, meta, helper] = useField<string>(props.name ?? "");
   const errorText = meta.error && meta.touched ? meta.error : "";
   const [value, setValue] = useState(props.value || "");
