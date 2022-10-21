@@ -1,5 +1,5 @@
 import { useCallback, useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const useChangeTheme = () => {
   /* Hook for changing theme */

@@ -8,11 +8,11 @@ import {
   shopsEcuador,
 } from "constants/shops";
 import intl from "i18n/intl";
-import EcuadorFlag from "library/Icons/Flags/EcuadorFlag/EcuadorFlag";
-import Icon from "library/Icons/Icon";
-import KoreanFlag from "library/Icons/Flags/KoreanFlag/KoreanFlag";
-import PhilippineFlag from "library/Icons/Flags/PhilippineFlag/PhilippineFlag";
-import USFLag from "library/Icons/Flags/USFlag/USFlag";
+import EcuadorFlag from "library/Images/Flags/EcuadorFlag/EcuadorFlag";
+import KoreanFlag from "library/Images/Flags/KoreanFlag/KoreanFlag";
+import PhilippineFlag from "library/Images/Flags/PhilippineFlag/PhilippineFlag";
+import USFLag from "library/Images/Flags/USFlag/USFlag";
+import Img from "library/Images/Image";
 
 export interface IInquiryTexts {
   text: string | JSX.Element;
@@ -48,49 +48,49 @@ const PRODUCT_IMAGES = {
 export const productSubLinks: SubLinksType[] = [
   {
     id: "product",
-    icon: <Icon icon={PRODUCT_IMAGES.MOUSE} width={130}></Icon>,
+    icon: <Img img={PRODUCT_IMAGES.MOUSE} width={130}></Img>,
     text: intl("productSubLinks.mouse"),
     path: ROUTE_PATH.PRODUCT_CATEGORY + 1,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    icon: <Icon icon={PRODUCT_IMAGES.KEYBOARD} width={130}></Icon>,
+    icon: <Img img={PRODUCT_IMAGES.KEYBOARD} width={130}></Img>,
     text: intl("productSubLinks.keyboard"),
     path: ROUTE_PATH.PRODUCT_CATEGORY + 2,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    icon: <Icon icon={PRODUCT_IMAGES.HEADSET} width={130}></Icon>,
+    icon: <Img img={PRODUCT_IMAGES.HEADSET} width={130}></Img>,
     text: intl("productSubLinks.headset"),
     path: ROUTE_PATH.PRODUCT_CATEGORY + 3,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    icon: <Icon icon={PRODUCT_IMAGES.FANS_COOLERS} width={130}></Icon>,
+    icon: <Img img={PRODUCT_IMAGES.FANS_COOLERS} width={130}></Img>,
     text: intl("productSubLinks.fansCoolers"),
     path: ROUTE_PATH.PRODUCT_CATEGORY + 4,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    icon: <Icon icon={PRODUCT_IMAGES.PC_CASE} width={130}></Icon>,
+    icon: <Img img={PRODUCT_IMAGES.PC_CASE} width={130}></Img>,
     text: intl("productSubLinks.pcCase"),
     path: ROUTE_PATH.PRODUCT_CATEGORY + 5,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    icon: <Icon icon={PRODUCT_IMAGES.PSU} width={130}></Icon>,
+    icon: <Img img={PRODUCT_IMAGES.PSU} width={130}></Img>,
     text: intl("productSubLinks.psu"),
     path: ROUTE_PATH.PRODUCT_CATEGORY + 6,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    icon: <Icon icon={PRODUCT_IMAGES.ACCESSORIES} width={130}></Icon>,
+    icon: <Img img={PRODUCT_IMAGES.ACCESSORIES} width={130}></Img>,
     text: intl("productSubLinks.accessories"),
     path: ROUTE_PATH.PRODUCT_CATEGORY + 7,
     className: "sub-navbar-items",
@@ -105,14 +105,14 @@ const SUPPORT_ICONS = {
 export const supportSubLinks: SubLinksType[] = [
   {
     id: "support",
-    icon: <Icon icon={SUPPORT_ICONS.DRIVER_SOFTWARES} width={70}></Icon>,
+    icon: <Img img={SUPPORT_ICONS.DRIVER_SOFTWARES} width={70}></Img>,
     text: intl("supportSubLinks.driversSoftwares"),
     path: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
     className: "sub-navbar-support-items",
   },
   {
     id: "support",
-    icon: <Icon icon={SUPPORT_ICONS.BROCHURE_MANUALS} width={80}></Icon>,
+    icon: <Img img={SUPPORT_ICONS.BROCHURE_MANUALS} width={80}></Img>,
     text: intl("supportSubLinks.brochuresManuals"),
     path: ROUTE_PATH.SUPPORT_BROCHURE_MANUALS,
     className: "sub-navbar-support-items",
@@ -169,7 +169,7 @@ const CONTACT_ICONS = {
 export const contactSubLinks: SubLinksType[] = [
   {
     id: "contact",
-    icon: <Icon icon={CONTACT_ICONS.RIGHT_ARROW} width={15}></Icon>,
+    icon: <Img img={CONTACT_ICONS.RIGHT_ARROW} width={15}></Img>,
     text: intl("contactSubLinks.inquiry"),
     path: ROUTE_PATH.CONTACT_INQUIRY,
     className: "sub-navbar-contact-items",
@@ -181,7 +181,7 @@ export const contactSubLinks: SubLinksType[] = [
   },
   {
     id: "contact",
-    icon: <Icon icon={CONTACT_ICONS.RIGHT_ARROW} width={15}></Icon>,
+    icon: <Img img={CONTACT_ICONS.RIGHT_ARROW} width={15}></Img>,
     text: intl("contactSubLinks.becomeDistributor"),
     path: ROUTE_PATH.CONTACT_BECOME_DISTRIBUTOR,
     className: "sub-navbar-contact-items",

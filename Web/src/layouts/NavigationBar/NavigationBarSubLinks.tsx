@@ -8,7 +8,7 @@ import {
 } from "./links/links";
 import "./NavigationBarDesktop.scss";
 import { ROUTE_PATH } from "constants/routes";
-import GoTo from "library/Icons/Navigations/GoTo/GoTo";
+import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import { IShops } from "constants/shops";
 import intl from "i18n/intl";
 
@@ -64,9 +64,9 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
       >
         <Nav className="sub-navbar-nav">
           {props.subLinks &&
-            props.subLinks!.map((sublink) => {
+            props.subLinks!.map((sublink, index) => {
               return (
-                <NavItem className={sublink.className}>
+                <NavItem key={index} className={sublink.className}>
                   {sublink.id === "contact" ? (
                     <Link to={sublink.path}>
                       <div>

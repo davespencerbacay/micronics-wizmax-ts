@@ -1,4 +1,12 @@
 @import "styles/changetheme.scss";
+@font-face {
+  font-family: exo;
+  src: url(../../public/fonts/Exo/Exo/Exo-Black.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(../../public/fonts/Roboto/Roboto-Black.ttf);
+}
 
 *,
 *::after,
@@ -6,6 +14,17 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: exo;
+}
+p {
+  font-family: roboto;
 }
 html {
   font-size: 62.5%;

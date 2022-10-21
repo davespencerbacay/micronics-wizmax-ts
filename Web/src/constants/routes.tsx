@@ -2,6 +2,13 @@
 export const ROUTE_PATH = {
   INDEX: "/",
   PRODUCT: "/products",
+  PRODUCT_MOUSE: "/products/mouse",
+  PRODUCT_KEYBOARD: "/products/keyboard",
+  PRODUCT_HEADSET: "/products/headset",
+  PRODUCT_FANS_COOLERS: "/products/fans-and-coolers",
+  PRODUCT_PCCASE: "/products/pc-case",
+  PRODUCT_PSU: "/products/psu",
+  PRODUCT_ACCESSORIES: "/products/accessories",
   SUPPORT: "/support",
   SUPPORT_BROCHURE_MANUALS: "/support/brochures-and-manuals",
   SUPPORT_DRIVERS_SOFTWARES: "/support/drivers-and-softwares",

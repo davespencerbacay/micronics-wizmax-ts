@@ -4,10 +4,10 @@ import { IMAGES } from "constants/";
 import { Link } from "react-router-dom";
 import { productCategories } from "data/productCategories";
 import { Col, Container, Row } from "reactstrap";
-import Icon from "library/Icons/Icon";
 import useResponsive from "hooks/useResponsive";
 import classnames from "classnames";
 import { ROUTE_PATH } from "constants/routes";
+import Img from "library/Images/Image";
 
 const ProductLinks = () => {
   return (
@@ -102,7 +102,7 @@ const Footer = () => {
               <div className="footer-inquiries--icons">
                 {icons.map((icon, index) => (
                   <Link to="/" key={index}>
-                    <Icon width={30} icon={icon} />
+                    <Img width={30} img={icon} />
                   </Link>
                 ))}
               </div>
