@@ -97,9 +97,22 @@ const convertedTexts = {
         telNumber: "Telephone Number",
         natureBusiness: "Nature of Business",
         message: "Message",
-        validation: {
-          companyName: "test {number}",
+      },
+    },
+    contactPage: {
+      bannerTitle: "Contact Us",
+      bannerDescription:
+        "Please feel free to share your suggestions and feedback with us.",
+      form: {
+        header: {
+          title: "Become one of us",
+          subTitle: "Fields mark with an * is required.",
         },
+        name: "Full Name",
+        mobileNumber: "Mobile Number",
+        emailAddress: "Email Address",
+        subject: "Subject",
+        message: "Message",
       },
     },
     inquiryContacts: {
