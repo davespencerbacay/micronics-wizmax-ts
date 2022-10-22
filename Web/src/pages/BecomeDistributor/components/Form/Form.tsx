@@ -5,6 +5,8 @@ import LabeledInput from "../LabeledInput/LabeledInput";
 import "./Form.scss";
 import ButtonWithLoading from "library/ButtonWithLoading/ButtonWithLoading";
 import * as Yup from "yup";
+import Toast from "library/Toast/Toast";
+import { useState } from "react";
 
 type EmailData = {
   companyName: string;
@@ -32,6 +34,7 @@ interface ILabeledInput {
   isTextArea?: boolean;
 }
 const Form = () => {
+  const [showToast, setShowToast] = useState(false);
   const LOCALIZATION = {
     companyName: useIntl("distributorPage.form.companyName"),
     companyEmailAddress: useIntl("distributorPage.form.companyEmailAddress"),
@@ -88,6 +91,7 @@ const Form = () => {
         onSubmit={(data: EmailData, { setSubmitting }) => {
           setSubmitting(true);
           setTimeout(() => {
+            setShowToast(true);
             console.log(data);
             setSubmitting(false);
           }, 5000);
@@ -236,8 +240,7 @@ const Form = () => {
                 disabled={isSubmitting || Object.keys(errors).length !== 0}
                 type="submit"
               ></ButtonWithLoading>
-              {/* <pre>{JSON.stringify(values, null, 2)}</pre>
-              <pre>{JSON.stringify(errors, null, 2)}</pre> */}
+              <Toast isVisible={showToast} setter={setShowToast} />
             </form>
           );
         }}
