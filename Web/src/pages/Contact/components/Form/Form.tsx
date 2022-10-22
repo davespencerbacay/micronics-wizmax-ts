@@ -5,6 +5,8 @@ import LabeledInput from "../LabeledInput/LabeledInput";
 import "./Form.scss";
 import ButtonWithLoading from "library/ButtonWithLoading/ButtonWithLoading";
 import * as Yup from "yup";
+import { useEffect, useState } from "react";
+import Toast from "library/Toast/Toast";
 
 type EmailData = {
   fullName: string;
@@ -26,6 +28,7 @@ interface ILabeledInput {
   isTextArea?: boolean;
 }
 const Form = () => {
+  const [showToast, setShowToast] = useState(false);
   const LOCALIZATION = {
     fullName: useIntl("contactPage.form.name"),
     mobileNumber: useIntl("contactPage.form.mobileNumber"),
@@ -61,6 +64,7 @@ const Form = () => {
         onSubmit={(data: EmailData, { setSubmitting }) => {
           setSubmitting(true);
           setTimeout(() => {
+            setShowToast(true);
             console.log(data);
             setSubmitting(false);
           }, 5000);
@@ -149,6 +153,8 @@ const Form = () => {
                 disabled={isSubmitting || Object.keys(errors).length !== 0}
                 type="submit"
               ></ButtonWithLoading>
+
+              <Toast isVisible={showToast} setter={setShowToast} />
             </form>
           );
         }}

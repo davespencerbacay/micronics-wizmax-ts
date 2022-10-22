@@ -105,7 +105,7 @@ const convertedTexts = {
         "Please feel free to share your suggestions and feedback with us.",
       form: {
         header: {
-          title: "Become one of us",
+          title: "Contact Us",
           subTitle: "Fields mark with an * is required.",
         },
         name: "Full Name",

@@ -9,6 +9,16 @@
     }
   }
 
+  .toast-message {
+    position: fixed;
+    right: 1rem;
+    top: 6rem;
+    z-index: 9999;
+    width: auto;
+    font-size: 16px;
+    padding: 0.5rem 3rem;
+  }
+
   .form-control {
     font-size: 1.6rem;
     border-radius: 0;
