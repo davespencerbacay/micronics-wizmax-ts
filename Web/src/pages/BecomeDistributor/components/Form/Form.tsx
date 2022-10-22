@@ -4,6 +4,7 @@ import { Col, Row } from "reactstrap";
 import LabeledInput from "../LabeledInput/LabeledInput";
 import "./Form.scss";
 import ButtonWithLoading from "library/ButtonWithLoading/ButtonWithLoading";
+import * as Yup from "yup";
 
 type EmailData = {
   companyName: string;
@@ -59,10 +60,31 @@ const Form = () => {
     NOB: "",
     message: "",
   };
+
+  const validationSchema = Yup.object({
+    companyName: Yup.string().required("Company name field is required."),
+    companyEmailAddress: Yup.string()
+      .email("Invalid email address")
+      .required("Email address field is required."),
+    businessWebsite: Yup.string().required(
+      "Business website field is required."
+    ),
+    businessAddress: Yup.string().required(
+      "Business address field is required."
+    ),
+    zipCode: Yup.string().required("Zip Code field is required."),
+    name: Yup.string().required("Fullname/Contact field is required."),
+    designation: Yup.string().required("Designation/Field field is required."),
+    mobileNumber: Yup.string().required("Mobile Number field is required."),
+    telNumber: Yup.string().required("Telephone Number field is required."),
+    NOB: Yup.string().required("Nature of business field is required."),
+    message: Yup.string().required("Message field is required."),
+  });
   return (
     <div className="distributor-form">
       <Formik
         initialValues={initialValues}
+        validationSchema={validationSchema}
         onSubmit={(data: EmailData, { setSubmitting }) => {
           setSubmitting(true);
           setTimeout(() => {
@@ -71,7 +93,14 @@ const Form = () => {
           }, 5000);
         }}
       >
-        {({ values, isSubmitting, handleChange, handleSubmit, handleBlur }) => {
+        {({
+          values,
+          isSubmitting,
+          handleChange,
+          handleSubmit,
+          handleBlur,
+          errors,
+        }) => {
           const labeledInput: ILabeledInput[] = [
             {
               name: "companyName",
@@ -197,16 +226,18 @@ const Form = () => {
                       onBlur={handleBlur}
                       value={data.value as any}
                       type={data.isTextArea ? "textarea" : "text"}
+                      errors={errors}
                     />
                   </Col>
                 ))}
               </Row>
               <ButtonWithLoading
                 isLoading={isSubmitting}
-                disabled={isSubmitting}
+                disabled={isSubmitting || Object.keys(errors).length !== 0}
                 type="submit"
               ></ButtonWithLoading>
-              {/* <pre>{JSON.stringify(values, null, 2)}</pre> */}
+              {/* <pre>{JSON.stringify(values, null, 2)}</pre>
+              <pre>{JSON.stringify(errors, null, 2)}</pre> */}
             </form>
           );
         }}

@@ -97,6 +97,9 @@ const convertedTexts = {
         telNumber: "Telephone Number",
         natureBusiness: "Nature of Business",
         message: "Message",
+        validation: {
+          companyName: "test {number}",
+        },
       },
     },
     inquiryContacts: {
