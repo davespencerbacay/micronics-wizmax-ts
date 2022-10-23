@@ -7,6 +7,7 @@ import ButtonWithLoading from "library/ButtonWithLoading/ButtonWithLoading";
 import * as Yup from "yup";
 import Toast from "library/Toast/Toast";
 import { useState } from "react";
+import DialogModal from "library/Modal/Modal";
 
 type EmailData = {
   companyName: string;
@@ -104,6 +105,7 @@ const Form = () => {
           handleSubmit,
           handleBlur,
           errors,
+          dirty,
         }) => {
           const labeledInput: ILabeledInput[] = [
             {
@@ -241,6 +243,7 @@ const Form = () => {
                 type="submit"
               ></ButtonWithLoading>
               <Toast isVisible={showToast} setter={setShowToast} />
+              <DialogModal showModal={dirty} />
             </form>
           );
         }}
