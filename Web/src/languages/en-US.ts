@@ -67,6 +67,10 @@ const convertedTexts = {
       becomeDistributorText: "Be part of the Wizmax Family! Let's make a Deal.",
       wizmaxGlobal: "Wizmax Global",
     },
+    productPage: {
+      checkAndShop: "Check and shop at stores nearest you.",
+      shopNow: "Shop Now",
+    },
     supportPage: {
       bannerTitle: "Drivers and Manuals Download",
       bannerSubtitle: "Find software and Driver for your Wizmax Hardware.",

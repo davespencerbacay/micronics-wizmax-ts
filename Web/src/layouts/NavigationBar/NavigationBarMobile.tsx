@@ -12,14 +12,14 @@ import intl from "i18n/intl";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
 import { ROUTE_PATH } from "constants/routes";
-import KoreanFlag from "library/Icons/Flags/KoreanFlag/KoreanFlag";
-import USFLag from "library/Icons/Flags/USFlag/USFlag";
-import GoTo from "library/Icons/Navigations/GoTo/GoTo";
-import Facebook from "library/Icons/SocialMedias/Facebook/Facebook";
-import Instagram from "library/Icons/SocialMedias/Instagram/Instagram";
-import Tiktok from "library/Icons/SocialMedias/Tiktok/Tiktok";
-import Twitter from "library/Icons/SocialMedias/Twitter/Twitter";
-import Youtube from "library/Icons/SocialMedias/Youtube/Youtube";
+import KoreanFlag from "library/Images/Flags/KoreanFlag/KoreanFlag";
+import USFLag from "library/Images/Flags/USFlag/USFlag";
+import GoTo from "library/Images/Navigations/GoTo/GoTo";
+import Facebook from "library/Images/SocialMedias/Facebook/Facebook";
+import Instagram from "library/Images/SocialMedias/Instagram/Instagram";
+import Tiktok from "library/Images/SocialMedias/Tiktok/Tiktok";
+import Twitter from "library/Images/SocialMedias/Twitter/Twitter";
+import Youtube from "library/Images/SocialMedias/Youtube/Youtube";
 import { SOCIAL_MEDIA } from "constants/";
 
 //NAVIGATION LINKS AND ROUTES

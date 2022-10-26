@@ -6,6 +6,11 @@ const STORAGE_KEY: Record<string, string> = {
   DARK_MODE: "dark_mode",
 };
 
+export enum ThemeVariants {
+  dark = "dark",
+  light = "light",
+}
+
 const defaultThemeContext = {
   darkMode: getFromStorage(STORAGE_KEY.DARK_MODE) || false,
 };

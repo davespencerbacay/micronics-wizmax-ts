@@ -8,7 +8,7 @@ import PageWrapper from "library/PageWrapper/PageWrapper";
 import BecomeDistributor from "pages/BecomeDistributor/BecomeDistributor";
 import { ROUTE_PATH } from "./routes";
 
-/* Change languge consts */
+/* Change context consts */
 export const STORAGE_KEY: Record<string, string> = {
   LOCALE: "locale",
   DARK_MODE: "dark_mode",

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -14,7 +14,7 @@ import {
   FormGroup,
   Input,
 } from "reactstrap";
-import { IMAGES, LANGUAGES } from "constants/";
+import { IMAGES, LANGUAGES, STORAGE_KEY } from "constants/";
 import { Link } from "react-router-dom";
 import { LOCALES } from "i18n";
 import { useIntl } from "i18n/intl";
@@ -35,8 +35,11 @@ import {
   contactSubLinks,
 } from "./links/links";
 import { ROUTE_PATH } from "constants/routes";
-import { ThemeContext } from "context/ThemeContext";
-import useChangeTheme from "hooks/useChangeTheme";
+import useChangeTheme from "hooks/themeHooks/useChangeTheme";
+import SearchBarDesktop from "./search/SearchBarDesktop";
+import { saveToStorage } from "helpers/localStorage";
+import useIsDarkMode from "hooks/themeHooks/useIsDarkMode";
+import { ColumnProps } from "reactstrap/types/lib/Col";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
@@ -44,8 +47,17 @@ interface INavigationBarDesktop {
 interface INavItems {
   text: string;
   path: string;
-  onMouseOver: () => void;
-  onMouseLeave?: () => void;
+  handler?: () => void;
+}
+
+interface IColValue {
+  col: {
+    xs: ColumnProps;
+    sm: ColumnProps;
+    md: ColumnProps;
+    lg: ColumnProps;
+  };
+  component: React.ReactNode;
 }
 type LinkType = "home" | "products" | "support" | "shop" | "contact";
 
@@ -91,52 +103,153 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
       contactLinks: false,
     });
   };
-
-  const themeCtx = useContext(ThemeContext);
-
-  const isDarkMode = themeCtx.state.darkMode;
-
-  const [darkTheme, isDarkTheme] = useState(isDarkMode);
+  // LIGHT AND DARK THEME CONTEXT
+  const isDarkMode = useIsDarkMode();
 
   const changeTheme = useChangeTheme();
 
   const switchHandler = () => {
-    isDarkTheme((prevState: any) => !prevState);
-    localStorage.setItem("dark_mode", JSON.stringify(!darkTheme));
-    changeTheme(!darkTheme);
+    saveToStorage(STORAGE_KEY.DARK_MODE, false);
+    changeTheme(!isDarkMode);
   };
-
-  useEffect(() => {}, [isDarkMode]);
+  //SEARCHBAR
+  const [openSearchBar, setOpenSearchBar] = useState(false);
+  const SearchBarHandler = () => {
+    setOpenSearchBar((prevState) => !prevState);
+  };
 
   const navItems: INavItems[] = [
     {
       text: useIntl("navigationBar.home"),
       path: ROUTE_PATH.INDEX,
-      onMouseOver: () => hideAllLinks(),
+      handler: () => hideAllLinks(),
     },
     {
       text: useIntl("navigationBar.products"),
       path: ROUTE_PATH.PRODUCT,
-      onMouseLeave: () => navLinkHandlers("products"),
-      onMouseOver: () => navLinkHandlers("products"),
+      handler: () => navLinkHandlers("products"),
     },
     {
       text: useIntl("navigationBar.support"),
       path: ROUTE_PATH.SUPPORT,
-      onMouseLeave: () => navLinkHandlers("support"),
-      onMouseOver: () => navLinkHandlers("support"),
+      handler: () => navLinkHandlers("support"),
     },
     {
       text: useIntl("navigationBar.shop"),
       path: ROUTE_PATH.SHOP,
-      onMouseLeave: () => navLinkHandlers("shop"),
-      onMouseOver: () => navLinkHandlers("shop"),
+      handler: () => navLinkHandlers("shop"),
     },
     {
       text: useIntl("navigationBar.contact"),
       path: ROUTE_PATH.CONTACT,
-      onMouseLeave: () => navLinkHandlers("contact"),
-      onMouseOver: () => navLinkHandlers("contact"),
+      handler: () => navLinkHandlers("contact"),
+    },
+  ];
+  const colValues: IColValue[] = [
+    {
+      col: {
+        xs: 2,
+        sm: 2,
+        md: 2,
+        lg: 2,
+      },
+      component: (
+        <NavbarBrand className="navbar-brand">
+          <Link to={ROUTE_PATH.INDEX}>
+            <img
+              className="navbar-logo"
+              alt="navbar-logo"
+              src={
+                isDarkMode
+                  ? IMAGES.COMPANY_LOGOS.NAVBAR_BLACK
+                  : IMAGES.COMPANY_LOGOS.NAVBAR_WHITE
+              }
+            />
+          </Link>
+        </NavbarBrand>
+      ),
+    },
+    {
+      col: {
+        xs: 8,
+        sm: 8,
+        md: 8,
+        lg: 8,
+      },
+      component: (
+        <Nav className="navbar-nav">
+          {navItems.map((item, index) => {
+            return (
+              <NavItem className="navbar-item" key={index}>
+                <Link
+                  className="links"
+                  to={item.path}
+                  onMouseOver={item.handler}
+                  onMouseLeave={item.handler}
+                >
+                  {item.text}
+                </Link>
+              </NavItem>
+            );
+          })}
+          <NavItem className="navbar-item">
+            <FontAwesomeIcon
+              className="search-icon"
+              icon={faMagnifyingGlass}
+              onClick={SearchBarHandler}
+            />
+          </NavItem>
+        </Nav>
+      ),
+    },
+    {
+      col: {
+        xs: 2,
+        sm: 2,
+        md: 2,
+        lg: 2,
+      },
+      component: (
+        <Dropdown
+          className="select-language"
+          isOpen={languageDropDownOpen}
+          toggle={toggle}
+        >
+          <FontAwesomeIcon
+            className="theme-icon"
+            icon={isDarkMode ? faMoon : faSun}
+          />
+          <FormGroup className="switch-container" switch>
+            <Input
+              type="switch"
+              role="switch"
+              defaultChecked={isDarkMode}
+              onClick={switchHandler}
+            />
+          </FormGroup>
+          <DropdownToggle className="language-menu-toggler">
+            <FontAwesomeIcon
+              className="globe-icon"
+              icon={faGlobe}
+              onClick={languageDropDownHandler}
+            />
+          </DropdownToggle>
+          <DropdownMenu className={languageDropdownMenuClassname}>
+            <DropdownItem
+              className="language"
+              onClick={() => props.changeLanguage(LOCALES.KOREAN)}
+            >
+              {LANGUAGES.KOREA}
+            </DropdownItem>
+            <DropdownItem
+              className="language"
+              onClick={() => props.changeLanguage(LOCALES.ENGLISH)}
+            >
+              {LANGUAGES.EN}
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+      ),
     },
   ];
 
@@ -145,86 +258,9 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
       <Navbar className="navbar" fixed="top">
         <Container fluid className="container-fluid">
           <Row>
-            <Col xs={2} md={2} lg={2}>
-              <NavbarBrand className="navbar-brand">
-                <Link to={ROUTE_PATH.INDEX}>
-                  <img
-                    className="navbar-logo"
-                    alt="navbar-logo"
-                    src={
-                      darkTheme
-                        ? IMAGES.COMPANY_LOGOS.NAVBAR_BLACK
-                        : IMAGES.COMPANY_LOGOS.NAVBAR_WHITE
-                    }
-                  />
-                </Link>
-              </NavbarBrand>
-            </Col>
-            <Col xs={8} md={8} lg={8}>
-              <Nav className="navbar-nav">
-                {navItems.map((item, index) => {
-                  return (
-                    <NavItem className="navbar-item" key={index}>
-                      <Link
-                        className="links"
-                        to={item.path}
-                        onMouseOver={item.onMouseOver}
-                        onMouseLeave={item.onMouseLeave}
-                      >
-                        {item.text}
-                      </Link>
-                    </NavItem>
-                  );
-                })}
-                <NavItem className="navbar-item">
-                  <FontAwesomeIcon
-                    className="search-icon"
-                    icon={faMagnifyingGlass}
-                  />
-                </NavItem>
-              </Nav>
-            </Col>
-            <Col xs={2} md={2} lg={2}>
-              <Dropdown
-                className="select-language"
-                isOpen={languageDropDownOpen}
-                toggle={toggle}
-              >
-                <FontAwesomeIcon
-                  className="theme-icon"
-                  icon={darkTheme ? faMoon : faSun}
-                />
-                <FormGroup className="switch-container" switch>
-                  <Input
-                    type="switch"
-                    role="switch"
-                    defaultChecked={darkTheme}
-                    onClick={switchHandler}
-                  />
-                </FormGroup>
-                <DropdownToggle className="language-menu-toggler">
-                  <FontAwesomeIcon
-                    className="globe-icon"
-                    icon={faGlobe}
-                    onClick={languageDropDownHandler}
-                  />
-                </DropdownToggle>
-                <DropdownMenu className={languageDropdownMenuClassname}>
-                  <DropdownItem
-                    className="language"
-                    onClick={() => props.changeLanguage(LOCALES.KOREAN)}
-                  >
-                    {LANGUAGES.KOREA}
-                  </DropdownItem>
-                  <DropdownItem
-                    className="language"
-                    onClick={() => props.changeLanguage(LOCALES.ENGLISH)}
-                  >
-                    {LANGUAGES.EN}
-                  </DropdownItem>
-                </DropdownMenu>
-              </Dropdown>
-            </Col>
+            {colValues.map((colValue) => (
+              <Col {...colValue.col}>{colValue.component}</Col>
+            ))}
           </Row>
         </Container>
       </Navbar>
@@ -244,6 +280,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
           hideAllLinks={hideAllLinks}
         ></NavigationBarSubLinks>
       )}
+      {openSearchBar && <SearchBarDesktop />}
     </React.Fragment>
   );
 };
