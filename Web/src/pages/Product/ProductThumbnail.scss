@@ -1,10 +1,6 @@
 .thumbnail-container {
-  display: flex;
-  flex-direction: column;
-  padding: 3rem;
-  margin: 3rem;
-  &:nth-child(6) {
-    opacity: 0.5;
+  img {
+    width: 100%;
   }
   p {
     text-align: center;

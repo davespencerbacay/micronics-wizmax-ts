@@ -4,11 +4,8 @@ import React from "react";
 import "./ProductBox.scss";
 
 interface IProductBox {
-  name?: string;
-  img?: string;
-  variants?: ThemeVariants;
-  countryAvailability?: CountryAvailability;
-  children?: JSX.Element | JSX.Element[];
+  variants: ThemeVariants;
+  children: JSX.Element | React.ReactNode;
   className?: string;
 }
 

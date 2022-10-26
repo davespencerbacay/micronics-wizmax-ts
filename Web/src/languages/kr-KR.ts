@@ -68,6 +68,10 @@ const convertedText = {
         "KR-Be part of the Wizmax Family! Let's make a Deal.",
       wizmaxGlobal: "KR-Wizmax Global",
     },
+    productPage: {
+      checkAndShop: "KR-Check and shop at stores nearest you.",
+      shopNow: "KR-Shop Now",
+    },
     supportPage: {
       bannerTitle: "KR-Drivers and Manuals Download",
       bannerSubtitle: "KR-Find software and Driver for your Wizmax Hardware.",

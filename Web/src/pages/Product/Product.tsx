@@ -7,8 +7,6 @@ import { productCategories } from "data/productCategories";
 import ProductBox from "library/ProductBox/ProductBox";
 import { ThemeVariants } from "context/ThemeContext";
 import ProductThumbnail from "./ProductThumbnail";
-import ChevronLeft from "library/Images/Navigations/ChevronArrows/ChevronLeft";
-import ChevronRight from "library/Images/Navigations/ChevronArrows/ChevronRight";
 
 const Product: React.FC = () => {
   return (
@@ -16,7 +14,7 @@ const Product: React.FC = () => {
       <CategoryTab />
       {productCategories.map((cat) => {
         return (
-          <React.Fragment key={cat.id}>
+          <React.Fragment key={cat.categoryId}>
             <CategoryBanner img={cat.img} />
             <CategoryCaption name={cat.name} text={cat.text} />
 
@@ -24,13 +22,11 @@ const Product: React.FC = () => {
               variants={ThemeVariants.dark}
               className="product-thumbnail-box"
             >
-              <span className="chevron-left">
-                <ChevronLeft className="arrow-left" />
-              </span>
-              <ProductThumbnail catId={cat.id} />
-              <span className="chevron-right">
-                <ChevronRight className="arrow-right" />
-              </span>
+              <ProductThumbnail
+                catId={cat.categoryId}
+                img={cat.img}
+                name={cat.name}
+              />
             </ProductBox>
           </React.Fragment>
         );

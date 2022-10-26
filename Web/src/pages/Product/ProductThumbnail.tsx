@@ -1,11 +1,12 @@
 import products from "data/products";
 import React from "react";
+import { Col, Container, Row } from "reactstrap";
 import "./ProductThumbnail.scss";
 
 type ProductThumbnailType = {
   catId: string;
-  img?: string;
-  name?: string;
+  img: string;
+  name: string | JSX.Element;
 };
 
 const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
@@ -14,16 +15,21 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   );
   console.log(productFilterByCategoryId);
   return (
-    <React.Fragment>
-      {productFilterByCategoryId.map((p) => {
-        return (
-          <div className="thumbnail-container">
-            <img src={p.img} width={300} />
-            <p>{p.name}</p>
-          </div>
-        );
-      })}
-    </React.Fragment>
+    <Container fluid>
+      <Row>
+        {productFilterByCategoryId.map((p) => {
+          return (
+            <Col xs={4} sm={3} md={2} lg={2}>
+              <div className="thumbnail-container">
+                <img src={p.img} />
+                <p>{p.countryAvailability}</p>
+                <p>{p.name}</p>
+              </div>
+            </Col>
+          );
+        })}
+      </Row>
+    </Container>
   );
 };
 

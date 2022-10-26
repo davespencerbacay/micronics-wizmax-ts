@@ -13,7 +13,7 @@ const ProductLinks = () => {
   return (
     <ul>
       {productCategories.map((cat, index) => {
-        const linkPath = ROUTE_PATH.PRODUCT + "/" + cat.id;
+        const linkPath = ROUTE_PATH.PRODUCT + "/" + cat.categoryId;
         return (
           <li key={index}>
             <Link to={linkPath}>{cat.name}</Link>

@@ -1,5 +1,6 @@
 import { ROUTE_PATH } from "constants/routes";
 import { productCategories } from "data/productCategories";
+import intl from "i18n/intl";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -11,16 +12,17 @@ const CategoryTab: React.FC = () => {
     <div>
       <Nav className="nav-container" pills>
         {productCategories.map((cat) => (
-          <NavItem className="nav-items" key={cat.id}>
+          <NavItem className="nav-items" key={cat.categoryId}>
             <Link to={cat.link}>{cat.name}</Link>
           </NavItem>
         ))}
       </Nav>
       <div className="shop-now">
-        Check and shop at stores nearest you. &nbsp;
+        {intl("productPage.checkAndShop")} &nbsp;
         <Link to={ROUTE_PATH.SHOP}>
           <b>
-            Shop Now<GoTo width={10}></GoTo>
+            {intl("productPage.shopNow")}
+            <GoTo width={10}></GoTo>
           </b>
         </Link>
       </div>
