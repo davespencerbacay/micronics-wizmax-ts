@@ -103,6 +103,22 @@ const convertedTexts = {
         message: "Message",
       },
     },
+    contactPage: {
+      bannerTitle: "Contact Us",
+      bannerDescription:
+        "Please feel free to share your suggestions and feedback with us.",
+      form: {
+        header: {
+          title: "Contact Us",
+          subTitle: "Fields mark with an * is required.",
+        },
+        name: "Full Name",
+        mobileNumber: "Mobile Number",
+        emailAddress: "Email Address",
+        subject: "Subject",
+        message: "Message",
+      },
+    },
     inquiryContacts: {
       korTel: "Korea Tel(+82): ",
       phTel: "Philippines Tel(+63): ",

@@ -9,7 +9,7 @@ export const ROUTE_PATH = {
   SUPPORT_DRIVERS_SOFTWARES: "/support/drivers-and-softwares",
   SHOP: "/shop",
   CONTACT: "/contact",
-  CONTACT_INQUIRY: "/contact/inquiry",
-  CONTACT_BECOME_DISTRIBUTOR: "/contact/become-a-distributor",
+  CONTACT_INQUIRY: "/contact",
+  CONTACT_BECOME_DISTRIBUTOR: "/become-distributor",
   BECOME_DISTRIBUTOR: "/become-distributor",
 };

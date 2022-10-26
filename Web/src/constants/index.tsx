@@ -85,7 +85,7 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   },
   {
     PATH: ROUTE_PATH.CONTACT,
-    ELEMENT: <PageWrapper component={<Contact />} showFooter={false} />,
+    ELEMENT: <PageWrapper component={<Contact />} />,
   },
   {
     PATH: ROUTE_PATH.BECOME_DISTRIBUTOR,
