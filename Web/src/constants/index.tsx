@@ -76,12 +76,12 @@ export const REACT_ROUTES: ReactRoutesType[] = [
     ELEMENT: <PageWrapper component={<Product />} />,
   },
   {
-    PATH: ROUTE_PATH.SUPPORT,
-    ELEMENT: <PageWrapper component={<Support />} showNavbar={false} />,
+    PATH: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
+    ELEMENT: <PageWrapper component={<Support />} />,
   },
   {
     PATH: ROUTE_PATH.SHOP,
-    ELEMENT: <PageWrapper component={<Shop />} showNavbar={false} />,
+    ELEMENT: <PageWrapper component={<Shop />} />,
   },
   {
     PATH: ROUTE_PATH.CONTACT,

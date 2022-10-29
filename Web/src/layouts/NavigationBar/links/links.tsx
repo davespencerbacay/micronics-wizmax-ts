@@ -107,7 +107,10 @@ export const supportSubLinks: SubLinksType[] = [
     id: "support",
     icon: <Icon icon={SUPPORT_ICONS.DRIVER_SOFTWARES} width={70}></Icon>,
     text: intl("supportSubLinks.driversSoftwares"),
-    path: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
+    path: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES_BY_CATEGORY_ID.replace(
+      ":categoryId",
+      "77484846-2aee-4059-8415-d98b064b2c4a"
+    ),
     className: "sub-navbar-support-items",
   },
   {
