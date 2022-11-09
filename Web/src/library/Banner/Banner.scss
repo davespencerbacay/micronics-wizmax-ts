@@ -8,6 +8,7 @@ $banner-light: #fff;
 
   &.center {
     text-align: center;
+    padding: 10rem;
   }
   &.left {
     text-align: left;
@@ -26,7 +27,6 @@ $banner-light: #fff;
     }
   }
   &.light {
-    background-color: $banner-light;
     h2 {
       color: black;
     }
@@ -38,10 +38,20 @@ $banner-light: #fff;
   h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 5rem;
   }
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.4rem;
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .banner {
+    h2 {
+      font-size: 3rem;
+    }
+    &.center {
+      padding: 3rem;
+    }
   }
 }
