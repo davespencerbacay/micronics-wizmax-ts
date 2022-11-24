@@ -23,6 +23,8 @@ const Support: React.FC = () => {
     text: "All Products",
   };
 
+  console.log(navItems);
+
   const filteredNavItems = [allProductItem, ...navItems];
   return (
     <div className="support-container">
@@ -35,7 +37,7 @@ const Support: React.FC = () => {
       <Container className="support-container">
         <Row>
           <Col xs={12} md={3} lg={3}>
-            <Sidebar navItems={filteredNavItems} title="Categories" />
+            <Sidebar navItems={[]} title="Categories" />
           </Col>
         </Row>
       </Container>
