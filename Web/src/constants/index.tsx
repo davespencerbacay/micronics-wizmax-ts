@@ -81,7 +81,7 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   },
   {
     PATH: ROUTE_PATH.SHOP,
-    ELEMENT: <PageWrapper component={<Shop />} showNavbar={false} />,
+    ELEMENT: <PageWrapper component={<Shop />} />,
   },
   {
     PATH: ROUTE_PATH.CONTACT,
