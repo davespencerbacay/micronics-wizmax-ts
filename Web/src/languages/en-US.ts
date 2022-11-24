@@ -5,6 +5,7 @@ const convertedTexts = {
     global: {
       selectLanguage: "Select Language",
       companyName: "Wizmax Global",
+      send: "Send",
     },
     footer: {
       header: "HANMI MICRONICS © ALL RIGHTS RESERVED.",
@@ -30,10 +31,100 @@ const convertedTexts = {
       support: "Support",
       shop: "Shop",
       contact: "Contact",
+      translation: "Translation",
+      korean: "Korean",
+      english: "English (US)",
+      getInTouch: "Get in Touch",
+    },
+    /* SUB LINKS */
+    productSubLinks: {
+      mouse: "Mouse",
+      keyboard: "Keyboard",
+      headset: "Headset",
+      fansCoolers: "Fans & Coolers",
+      pcCase: "PC Case",
+      psu: "Power Supplies",
+      accessories: "Accessories",
+      viewAllProducts: "View All Products",
+    },
+    supportSubLinks: {
+      driversSoftwares: "Drivers & Softwares",
+      brochuresManuals: "Brochures & Manuals",
+      viewAll: "View All",
+    },
+    shopSubLinks: {
+      northAmerica: "North America",
+      korea: "Korea",
+      philippines: "Philippines",
+      ecuador: "Ecuador",
+      viewAllShops: "View All Shops",
+    },
+    contactSubLinks: {
+      inquiry: "Inquiry",
+      inquiryText:
+        "Need Help? We can assist you in any product-related inquiry.",
+      becomeDistributor: "Become a Distributor",
+      becomeDistributorText: "Be part of the Wizmax Family! Let's make a Deal.",
+      wizmaxGlobal: "Wizmax Global",
+    },
+    productPage: {
+      checkAndShop: "Check and shop at stores nearest you.",
+      shopNow: "Shop Now",
     },
     supportPage: {
-      bannerTitle: "Drivers and Manuals Download",
+      bannerTitle: "Download Drivers and Manuals",
       bannerSubtitle: "Find software and Driver for your Wizmax Hardware.",
+    },
+    distributorPage: {
+      bannerTitle: "Become Distributor",
+      bannerDescription:
+        "Please feel free to share your suggestions and feedback with us.",
+      stayInTouch: "Stay in touch",
+      stayInTouchSubtitle:
+        "Stay in touch and keep up-to-date with all our latest news, events and campaigns.You can do this by joining us on social media.",
+      getInTouch:
+        "Get in touch on Twitter, Facebook, and more social networks.",
+      reachHere: "You can also reach us here: ",
+      form: {
+        header: {
+          title: "Become one of us",
+          subTitle: "Fields mark with an * is required.",
+        },
+        companyName: "Company Name",
+        companyEmailAddress: "Company Email Address",
+        businessWebsite: "Business Website",
+        businessAddress: "Business Address",
+        zipCode: "Zip Code",
+        fullName: "Full Name / Contact Person",
+        designation: "Designation / Position",
+        mobileNumber: "Mobile Number",
+        telNumber: "Telephone Number",
+        natureBusiness: "Nature of Business",
+        message: "Message",
+      },
+    },
+    contactPage: {
+      bannerTitle: "Contact Us",
+      bannerDescription:
+        "Please feel free to share your suggestions and feedback with us.",
+      form: {
+        header: {
+          title: "Contact Us",
+          subTitle: "Fields mark with an * is required.",
+        },
+        name: "Full Name",
+        mobileNumber: "Mobile Number",
+        emailAddress: "Email Address",
+        subject: "Subject",
+        message: "Message",
+      },
+    },
+    inquiryContacts: {
+      korTel: "Korea Tel(+82): ",
+      phTel: "Philippines Tel(+63): ",
+      email: "E-mail: ",
+      balanceInquiry: "Business Inquiry: ",
+      generalInquiry: "General Inquiry: ",
     },
   },
 };

@@ -1,0 +1,16 @@
+.chevron-left,
+.chevron-right {
+  background-color: green;
+  position: relative;
+}
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0rem;
+}
+.arrow-left {
+  left: 0;
+}
+.arrow-right {
+  right: 0;
+}

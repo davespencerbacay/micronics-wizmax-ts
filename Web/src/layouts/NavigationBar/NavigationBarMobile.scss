@@ -1,0 +1,236 @@
+.navbar-container {
+  position: fixed;
+  max-width: 50%;
+  height: 100%;
+  border-radius: 0 3rem 0 0;
+  box-shadow: 0.1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5rem);
+  overflow: hidden;
+  transition: all 1s ease;
+  .switch-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    .switch {
+      animation: switch 1s ease;
+      @keyframes switch {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .cross-container {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: 5rem;
+    .line-1 {
+      position: absolute;
+      right: 1rem;
+      top: 2.5rem;
+      width: 3rem;
+      background-color: black;
+      padding: 0.01rem;
+      transform: rotate(45deg);
+      transition: all 0.3s ease;
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+    .line-2 {
+      position: absolute;
+      right: 1rem;
+      top: 2.5rem;
+      width: 3rem;
+      background-color: black;
+      padding: 0.01rem;
+      transform: rotate(-45deg);
+      transition: all 0.3s ease;
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .close-button {
+    float: right;
+    position: relative;
+    top: 2rem;
+    right: 1rem;
+    font-weight: 100;
+    font-size: 2rem;
+    color: black;
+    opacity: 1;
+  }
+  .navbar-ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+    animation: navbarul 1s ease-out;
+    @keyframes navbarul {
+      0% {
+        opacity: 0;
+      }
+      25% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0;
+      }
+      75% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .navbar-ul-div {
+      width: 100%;
+      .navbar-ul-div-li {
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        border-bottom: 0.1rem solid lightgray;
+        list-style: none;
+        font-size: 2rem;
+        padding: 0;
+        a {
+          margin: 0;
+          padding: 1rem;
+          color: black;
+          border: none;
+          display: block;
+        }
+        &:active {
+          background-color: lightgray;
+          transition: all 0.5s ease;
+        }
+        .arrow-icon {
+          float: right;
+          position: relative;
+          top: 0rem;
+        }
+      }
+    }
+    .translation {
+      width: 100%;
+      background-color: transparent;
+      text-decoration: none;
+      list-style: none;
+      font-size: 2rem;
+      padding: 1rem;
+      color: black;
+      border-bottom: 0.1rem solid lightgray;
+      svg {
+        margin-right: 1rem;
+      }
+    }
+
+    .navbar-ul-subgroup {
+      .navbar-ul-subgroup-li {
+        background-color: transparent;
+        font-size: 1.3rem;
+        border: none;
+      }
+    }
+  }
+  .social-media-section {
+    margin-top: 5rem;
+    background-color: transparent;
+    text-align: center;
+    padding: 0;
+    h2 {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    .social-icons-group {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      .social-icons-li {
+        border: none;
+        background-color: transparent;
+        display: inline-block;
+        padding: 0;
+        .social-icons {
+          width: 4.5rem;
+          height: 4.5rem;
+          margin: 1rem;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////////////HIDDEN NAVBAR
+.navbar-container-hide {
+  position: fixed;
+  top: 1rem;
+  left: 0rem;
+  height: 5rem;
+  width: 5rem;
+  background-color: #eff0f3;
+  border-radius: 0rem 1.5rem 1.5rem 0rem;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    0.5rem 0.5rem 1.5rem rgba(70, 70, 70, 0.12);
+  z-index: 2;
+  transition: all 0.7s ease;
+  .cross-container {
+    position: absolute;
+    top: 0;
+    .line-1-horizontal {
+      position: absolute;
+      right: 0.5rem;
+      top: 2rem;
+      width: 2.5rem;
+      background-color: black;
+      padding: 0.01rem;
+      transform: rotate(0deg);
+      transition: all 0.3s ease;
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+    .line-2-horizontal {
+      position: absolute;
+      right: 0.5rem;
+      top: 3rem;
+      width: 2.5rem;
+      background-color: black;
+      padding: 0.01rem;
+      transform: rotate(0deg);
+      transition: all 0.3s ease;
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .switch-container,
+  .navbar-ul {
+    display: none;
+    &::after {
+      display: none;
+    }
+    &::before {
+      display: none;
+    }
+  }
+}
