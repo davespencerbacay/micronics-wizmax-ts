@@ -1,0 +1,20 @@
+.sidebar-container {
+  h5 {
+    font-weight: 800;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .nav {
+    .nav-item {
+      margin-bottom: 1rem;
+      a {
+        color: #333;
+        font-weight: 300;
+        font-size: 15px;
+      }
+    }
+  }
+}

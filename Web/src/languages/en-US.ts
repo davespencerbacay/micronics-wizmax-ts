@@ -72,7 +72,7 @@ const convertedTexts = {
       shopNow: "Shop Now",
     },
     supportPage: {
-      bannerTitle: "Drivers and Manuals Download",
+      bannerTitle: "Download Drivers and Manuals",
       bannerSubtitle: "Find software and Driver for your Wizmax Hardware.",
     },
     distributorPage: {
