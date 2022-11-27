@@ -11,6 +11,7 @@ import ProductThumbnail from "./ProductThumbnail";
 const Product: React.FC = () => {
   return (
     <div className="product-container">
+      {/* <SmoothScroll /> */}
       <CategoryTab />
       {productCategories.map((cat) => {
         return (
