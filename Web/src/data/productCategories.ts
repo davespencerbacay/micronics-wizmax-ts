@@ -6,7 +6,6 @@ interface IProductCategories {
   categoryId: string;
   name: string | JSX.Element;
   link: Partial<Location> | string;
-  // refLink?: React.RefObject<HTMLDivElement>;
   img: string;
   text: string;
 }
