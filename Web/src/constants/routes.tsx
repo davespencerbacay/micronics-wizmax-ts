@@ -1,9 +1,10 @@
+import { Route, Router } from "react-router-dom";
 /* Route */
 export const ROUTE_PATH = {
   INDEX: "/",
   PRODUCT: "/products",
-  PRODUCT_DETAIL: "/products/:productID",
   PRODUCT_CATEGORY: "/products/:categoryId",
+  PRODUCT_LANDING: "/products/:categoryId/:productId",
   SUPPORT: "/support",
   SUPPORT_BROCHURE_MANUALS: "/support/brochures-and-manuals",
   SUPPORT_DRIVERS_SOFTWARES: "/support/drivers-and-softwares",

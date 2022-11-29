@@ -51,6 +51,7 @@ interface INavItems {
 }
 
 interface IColValue {
+  id: string | number;
   col: {
     xs: ColumnProps;
     sm: ColumnProps;
@@ -147,6 +148,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   ];
   const colValues: IColValue[] = [
     {
+      id: 1,
       col: {
         xs: 2,
         sm: 2,
@@ -170,6 +172,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
       ),
     },
     {
+      id: 2,
       col: {
         xs: 8,
         sm: 8,
@@ -203,6 +206,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
       ),
     },
     {
+      id: 3,
       col: {
         xs: 2,
         sm: 2,
@@ -259,7 +263,9 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
         <Container fluid className="container-fluid">
           <Row>
             {colValues.map((colValue) => (
-              <Col {...colValue.col}>{colValue.component}</Col>
+              <Col {...colValue.col} key={colValue.id}>
+                {colValue.component}
+              </Col>
             ))}
           </Row>
         </Container>

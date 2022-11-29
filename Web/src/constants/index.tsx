@@ -7,6 +7,7 @@ import Shop from "pages/Shop/Shop";
 import PageWrapper from "library/PageWrapper/PageWrapper";
 import BecomeDistributor from "pages/BecomeDistributor/BecomeDistributor";
 import { ROUTE_PATH } from "./routes";
+import ProductLanding from "pages/Product/ProductLanding/ProductLanding";
 
 /* Change context consts */
 export const STORAGE_KEY: Record<string, string> = {
@@ -74,6 +75,10 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   {
     PATH: ROUTE_PATH.PRODUCT,
     ELEMENT: <PageWrapper component={<Product />} />,
+  },
+  {
+    PATH: ROUTE_PATH.PRODUCT_LANDING,
+    ELEMENT: <PageWrapper component={<ProductLanding />} />,
   },
   {
     PATH: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,

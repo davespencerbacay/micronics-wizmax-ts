@@ -7,8 +7,12 @@ import { productCategories } from "data/productCategories";
 import { ROUTE_PATH } from "constants/routes";
 import "./Support.scss";
 
-const Support: React.FC = () => {
-  const navItems = productCategories.map((cat) => {
+type SupportType = {
+  navItems?: any;
+};
+
+const Support: React.FC<SupportType> = (props) => {
+  props.navItems = productCategories.map((cat) => {
     return {
       link: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
       text: cat.name,
@@ -23,7 +27,7 @@ const Support: React.FC = () => {
     text: "All Products",
   };
 
-  const filteredNavItems = [allProductItem, ...navItems];
+  const filteredNavItems = [allProductItem, ...props.navItems];
   return (
     <div className="support-container">
       <Banner
