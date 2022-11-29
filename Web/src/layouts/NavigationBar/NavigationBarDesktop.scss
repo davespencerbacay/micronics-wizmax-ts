@@ -170,7 +170,7 @@ $lightgray: #d3d3d3;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1rem);
   animation: showsubnavbar 0.5s ease;
-  z-index: 0;
+  z-index: 2;
   @keyframes showsubnavbar {
     0% {
       top: 0rem;

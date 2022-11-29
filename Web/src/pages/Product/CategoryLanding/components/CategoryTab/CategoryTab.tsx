@@ -7,13 +7,18 @@ import { Link } from "react-router-dom";
 import { Nav, NavItem } from "reactstrap";
 import "./CategoryTab.scss";
 
-const CategoryTab: React.FC = () => {
+type CategoryTabType = {
+  refLinkHandler: (any: any) => void;
+};
+
+const CategoryTab: React.FC<CategoryTabType> = (props) => {
   return (
     <div>
       <Nav className="nav-container" pills>
-        {productCategories.map((cat) => (
+        {productCategories.map((cat, index) => (
           <NavItem className="nav-items" key={cat.categoryId}>
-            <Link to={cat.link}>{cat.name}</Link>
+            <p onClick={() => props.refLinkHandler(index)}>{cat.name}</p>
+            {/* <Link to={cat.link}>{cat.name}</Link> */}
           </NavItem>
         ))}
       </Nav>
