@@ -1,5 +1,17 @@
 @import "~styles/index.scss";
 
+.banner {
+  .container {
+    h2 {
+      font-family: "Exo", sans-serif;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}
 .shop-container {
   padding: 5rem 0;
 
@@ -15,12 +27,71 @@
   &.dark {
     color: white;
   }
-
+  .country-buttons {
+    border: none;
+    border-bottom: 0.1rem solid lightgray;
+    background-color: transparent;
+    margin-left: 2rem;
+    width: 100%;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    .arrowClose {
+      width: auto;
+      position: absolute;
+      right: 1rem;
+      svg {
+        width: 1.5rem;
+        transform: rotate(90deg);
+        transition: all 0.5s ease;
+      }
+    }
+    &:focus {
+      outline: none;
+      border: none;
+      border-bottom: 0.1rem solid lightgray;
+      box-shadow: none;
+    }
+    .arrowOpen {
+      width: auto;
+      position: absolute;
+      right: 1rem;
+      svg {
+        width: 1.5rem;
+        transform: rotate(0deg);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+  .links {
+    margin-left: 5rem;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    &:hover {
+      text-shadow: 0 0.5rem 1rem gray;
+      transition: all 0.5s ease;
+      scale: 1.1;
+    }
+    &:not(:hover) {
+      transition: all 0.5s ease;
+      scale: 1;
+    }
+  }
   h5 {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
+    font-family: "Exo", sans-serif;
     font-size: 30px;
     font-weight: 550;
+    border-bottom: 0.1rem solid lightgray;
   }
   li {
     font-size: 17px;
@@ -42,6 +113,32 @@
     text-transform: capitalize;
     display: block;
     margin: auto;
+  }
+}
+.shop-footer {
+  border-top: 0.1rem solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10rem;
+  h3 {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+  button {
+    width: 20rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8;
+    border-radius: 5rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: -20px -10px 15px rgba(0, 0, 0, 0.015),
+      10px 10px 15px rgba(70, 70, 70, 0.12);
   }
 }
 @media only screen and (max-width: 768px) {
