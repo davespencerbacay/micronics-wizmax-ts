@@ -12,12 +12,19 @@
   }
 
   .support-table {
-    h2 {
-      font-weight: 800;
-      font-size: 18px;
+    .table-captions {
       border-bottom: 1px solid #eee;
       margin-bottom: 1rem;
       padding-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        font-weight: 800;
+        font-size: 18px;
+      }
+      span {
+        font-size: 1.2rem;
+      }
     }
 
     .table-content {
@@ -26,8 +33,28 @@
         font-size: 27px;
         font-weight: 300;
       }
+    }
+
+    .table-items {
       display: flex;
       justify-content: space-between;
+      vertical-align: middle;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+      padding-left: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+
+      h5 {
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+
+      button {
+        margin-left: 1rem;
+      }
     }
   }
 }

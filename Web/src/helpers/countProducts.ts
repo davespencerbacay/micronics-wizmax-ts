@@ -5,7 +5,9 @@ const countProducts = (id?: string) => {
     return products.length;
   }
 
-  const filteredProducts = products.map((product) => product.categoryId === id);
+  const filteredProducts = products.filter(
+    (product) => product.categoryId === id
+  );
   return filteredProducts.length;
 };
 
