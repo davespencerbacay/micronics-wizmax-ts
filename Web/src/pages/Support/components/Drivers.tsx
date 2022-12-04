@@ -45,6 +45,10 @@ const Drivers: React.FC = () => {
   const selectedCategory =
     productCategories.find((cp) => cp.categoryId === categoryId)?.name || "All";
 
+  const downloadHandler = (file: string) => {
+    window.open(file, "_blank")!.focus();
+  };
+
   return (
     <div className="support-container">
       <Banner
@@ -76,7 +80,9 @@ const Drivers: React.FC = () => {
                           <h5>{p.name}</h5>
                         </div>
                         <div>
-                          <ShadowedButton>
+                          <ShadowedButton
+                            onClick={() => downloadHandler(p.file)}
+                          >
                             Driver <DownloadIcon />
                           </ShadowedButton>
                         </div>
