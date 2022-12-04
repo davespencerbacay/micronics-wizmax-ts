@@ -1,3 +1,33 @@
-.support-container {
+.support-content {
   padding: 3rem 0;
+
+  .sidebar-container {
+    h5 {
+      border: none;
+    }
+
+    .sidebar-categories {
+      padding-left: 2rem;
+    }
+  }
+
+  .support-table {
+    h2 {
+      font-weight: 800;
+      font-size: 18px;
+      border-bottom: 1px solid #eee;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .table-content {
+      h5 {
+        font-weight: 900;
+        font-size: 27px;
+        font-weight: 300;
+      }
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

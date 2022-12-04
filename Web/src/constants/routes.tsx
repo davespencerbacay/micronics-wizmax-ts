@@ -4,7 +4,7 @@ export const ROUTE_PATH = {
   PRODUCT: "/products",
   PRODUCT_DETAIL: "/products/:productID",
   PRODUCT_CATEGORY: "/products/:categoryId",
-  SUPPORT: "/support",
+  SUPPORT: "/support/drivers-and-softwares",
   SUPPORT_BROCHURE_MANUALS: "/support/brochures-and-manuals",
   SUPPORT_DRIVERS_SOFTWARES: "/support/drivers-and-softwares",
   SUPPORT_DRIVERS_SOFTWARES_BY_CATEGORY_ID:

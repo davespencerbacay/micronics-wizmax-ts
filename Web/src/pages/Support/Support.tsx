@@ -6,12 +6,14 @@ import { Col, Container, Row } from "reactstrap";
 import { productCategories } from "data/productCategories";
 import { ROUTE_PATH } from "constants/routes";
 import "./Support.scss";
+import countProducts from "helpers/countProducts";
 
 const Support: React.FC = () => {
   const navItems = productCategories.map((cat) => {
     return {
-      link: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
-      text: cat.name,
+      link: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES as string,
+      text: cat.name as string,
+      count: countProducts(cat.categoryId),
     };
   });
 
@@ -21,9 +23,8 @@ const Support: React.FC = () => {
       "all"
     ),
     text: "All Products",
+    count: countProducts(),
   };
-
-  console.log(navItems);
 
   const filteredNavItems = [allProductItem, ...navItems];
   return (
@@ -34,10 +35,25 @@ const Support: React.FC = () => {
         variant="light"
         align="center"
       />
-      <Container className="support-container">
+      <Container className="support-content">
         <Row>
           <Col xs={12} md={3} lg={3}>
-            <Sidebar navItems={[]} title="Categories" />
+            <Sidebar navItems={filteredNavItems} title="Categories" />
+          </Col>
+          <Col xs={12} md={9} lg={9}>
+            <div className="support-table">
+              <h2>Drivers</h2>
+              <div className="table-content">
+                <div>
+                  <h5>WM11</h5>
+                </div>
+                <div>
+                  <button>Brochure</button>
+                  <button>Manual</button>
+                  <button>Driver</button>
+                </div>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
