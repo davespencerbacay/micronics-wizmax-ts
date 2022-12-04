@@ -2,9 +2,8 @@
 export const ROUTE_PATH = {
   INDEX: "/",
   PRODUCT: "/products",
-  PRODUCT_DETAIL: "/products/:productID",
   PRODUCT_CATEGORY: "/products/:categoryId",
-  SUPPORT: "/support/drivers-and-softwares",
+  PRODUCT_LANDING: "/products/:categoryId/:productId",
   SUPPORT_BROCHURE_MANUALS: "/support/brochures-and-manuals",
   SUPPORT_DRIVERS_SOFTWARES: "/support/drivers-and-softwares",
   SUPPORT_DRIVERS_SOFTWARES_BY_CATEGORY_ID:

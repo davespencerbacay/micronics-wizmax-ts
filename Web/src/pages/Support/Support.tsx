@@ -8,8 +8,12 @@ import { ROUTE_PATH } from "constants/routes";
 import "./Support.scss";
 import countProducts from "helpers/countProducts";
 
-const Support: React.FC = () => {
-  const navItems = productCategories.map((cat) => {
+type SupportType = {
+  navItems?: any;
+};
+
+const Support: React.FC<SupportType> = (props) => {
+  props.navItems = productCategories.map((cat) => {
     return {
       link: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES as string,
       text: cat.name as string,
@@ -26,7 +30,7 @@ const Support: React.FC = () => {
     count: countProducts(),
   };
 
-  const filteredNavItems = [allProductItem, ...navItems];
+  const filteredNavItems = [allProductItem, ...props.navItems];
   return (
     <div className="support-container">
       <Banner
