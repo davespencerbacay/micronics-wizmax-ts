@@ -101,15 +101,15 @@ export const REACT_ROUTES: ReactRoutesType[] = [
 /* Web App Constant Images */
 export const IMAGES = {
   COMPANY_LOGOS: {
-    MAIN: "images/logos/main-logo.png",
-    HORIZONTAL_BLACK: "images/logos/wizmax-logo-horizonall-black.png",
-    HORIZONTAL_WHITE: "images/logos/wizmax-logo-horizontal-white.png",
-    NAVBAR_WHITE: "images/logos/navbar-logo.png",
-    NAVBAR_BLACK: "images/logos/navbar-logo-black.png",
+    MAIN: "/images/logos/main-logo.png",
+    HORIZONTAL_BLACK: "/images/logos/wizmax-logo-horizonall-black.png",
+    HORIZONTAL_WHITE: "/images/logos/wizmax-logo-horizontal-white.png",
+    NAVBAR_WHITE: "/images/logos/navbar-logo.png",
+    NAVBAR_BLACK: "/images/logos/navbar-logo-black.png",
   },
-  FACEBOOK: "images/micronics-assets/facebook.png",
-  TWITTER: "images/micronics-assets/twitter.png",
-  INSTAGRAM: "images/micronics-assets/instagram.png",
-  TIKTOK: "images/micronics-assets/tiktok.png",
-  YOUTUBE: "images/micronics-assets/youtube.png",
+  FACEBOOK: "/images/micronics-assets/facebook.png",
+  TWITTER: "/images/micronics-assets/twitter.png",
+  INSTAGRAM: "/images/micronics-assets/instagram.png",
+  TIKTOK: "/images/micronics-assets/tiktok.png",
+  YOUTUBE: "/images/micronics-assets/youtube.png",
 };
