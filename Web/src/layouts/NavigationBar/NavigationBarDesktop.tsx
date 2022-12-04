@@ -132,7 +132,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     },
     {
       text: useIntl("navigationBar.support"),
-      path: ROUTE_PATH.SUPPORT,
+      path: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
       handler: () => navLinkHandlers("support"),
     },
     {

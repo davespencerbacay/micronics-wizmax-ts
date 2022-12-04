@@ -1,0 +1,16 @@
+.badge {
+  background-color: rgb(245, 245, 245) !important;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid rgb(245, 245, 245);
+  border-radius: 5px;
+  font-size: 1.3rem;
+  box-shadow: 3px 3px 3px #eee;
+  transition: 0.5s;
+  color: #333;
+  font-weight: 900;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: none;
+  }
+}

@@ -36,13 +36,13 @@ export type SubLinksType = {
 };
 
 const PRODUCT_IMAGES = {
-  MOUSE: "images/micronics-assets/product-images/Mouse-1.png",
-  KEYBOARD: "images/micronics-assets/product-images/Keyboard-1.png",
-  HEADSET: "images/micronics-assets/product-images/Headset-1.png",
-  PC_CASE: "images/micronics-assets/product-images/Pc Case-1.png",
-  FANS_COOLERS: "images/micronics-assets/product-images/Fans Coolers-1.png",
-  PSU: "images/micronics-assets/product-images/PSU-1.png",
-  ACCESSORIES: "images/micronics-assets/product-images/Accessories.svg",
+  MOUSE: "/images/micronics-assets/product-images/Mouse-1.png",
+  KEYBOARD: "/images/micronics-assets/product-images/Keyboard-1.png",
+  HEADSET: "/images/micronics-assets/product-images/Headset-1.png",
+  PC_CASE: "/images/micronics-assets/product-images/Pc Case-1.png",
+  FANS_COOLERS: "/images/micronics-assets/product-images/Fans Coolers-1.png",
+  PSU: "/images/micronics-assets/product-images/PSU-1.png",
+  ACCESSORIES: "/images/micronics-assets/product-images/Accessories.svg",
 };
 
 export const productSubLinks: SubLinksType[] = [
@@ -98,8 +98,8 @@ export const productSubLinks: SubLinksType[] = [
 ];
 
 const SUPPORT_ICONS = {
-  DRIVER_SOFTWARES: "images/micronics-assets/Drivers and Softwares.svg",
-  BROCHURE_MANUALS: "images/micronics-assets/Brochures and Manuals.svg",
+  DRIVER_SOFTWARES: "/images/micronics-assets/Drivers and Softwares.svg",
+  BROCHURE_MANUALS: "/images/micronics-assets/Brochures and Manuals.svg",
 };
 
 export const supportSubLinks: SubLinksType[] = [
@@ -107,10 +107,7 @@ export const supportSubLinks: SubLinksType[] = [
     id: "support",
     icon: <Img img={SUPPORT_ICONS.DRIVER_SOFTWARES} width={70}></Img>,
     text: intl("supportSubLinks.driversSoftwares"),
-    path: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES_BY_CATEGORY_ID.replace(
-      ":categoryId",
-      "77484846-2aee-4059-8415-d98b064b2c4a"
-    ),
+    path: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
     className: "sub-navbar-support-items",
   },
   {
@@ -166,7 +163,7 @@ export const shopSubLinks: SubLinksType[] = [
 ];
 
 const CONTACT_ICONS = {
-  RIGHT_ARROW: "images/micronics-assets/Chevron Right Arrow.svg",
+  RIGHT_ARROW: "/images/micronics-assets/Chevron Right Arrow.svg",
 };
 
 export const contactSubLinks: SubLinksType[] = [

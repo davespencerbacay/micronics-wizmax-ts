@@ -34,7 +34,7 @@ const NavigationLinksMobile: React.FC = () => {
       text: intl("navigationBar.products"),
     },
     {
-      routePath: ROUTE_PATH.SUPPORT,
+      routePath: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
       text: intl("navigationBar.support"),
     },
     {

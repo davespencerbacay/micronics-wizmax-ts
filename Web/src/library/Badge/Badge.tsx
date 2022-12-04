@@ -1,5 +1,6 @@
 import React from "react";
 import { BadgeProps, Badge as BadgeReactStrap } from "reactstrap";
+import "./Badge.scss";
 
 interface IBadge extends BadgeProps {
   value: string | number;
