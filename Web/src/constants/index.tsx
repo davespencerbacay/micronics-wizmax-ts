@@ -2,11 +2,13 @@ import Home from "pages/Home/Home";
 import Contact from "pages/Contact/Contact";
 import Product from "pages/Product/Product";
 import { ReactRoutesType } from "./types";
-import Support from "pages/Support/Support";
 import Shop from "pages/Shop/Shop";
 import PageWrapper from "library/PageWrapper/PageWrapper";
 import BecomeDistributor from "pages/BecomeDistributor/BecomeDistributor";
 import { ROUTE_PATH } from "./routes";
+import Drivers from "pages/Support/components/Drivers";
+import ProductLanding from "pages/Product/ProductLanding/ProductLanding";
+import Manuals from "pages/Support/components/Manuals";
 
 /* Change context consts */
 export const STORAGE_KEY: Record<string, string> = {
@@ -76,8 +78,20 @@ export const REACT_ROUTES: ReactRoutesType[] = [
     ELEMENT: <PageWrapper component={<Product />} />,
   },
   {
+    PATH: ROUTE_PATH.PRODUCT_LANDING,
+    ELEMENT: <PageWrapper component={<ProductLanding />} />,
+  },
+  {
     PATH: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
-    ELEMENT: <PageWrapper component={<Support />} />,
+    ELEMENT: <PageWrapper component={<Drivers />} />,
+  },
+  {
+    PATH: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES_BY_CATEGORY_ID,
+    ELEMENT: <PageWrapper component={<Drivers />} />,
+  },
+  {
+    PATH: ROUTE_PATH.SUPPORT_BROCHURE_MANUALS,
+    ELEMENT: <PageWrapper component={<Manuals />} />,
   },
   {
     PATH: ROUTE_PATH.SHOP,

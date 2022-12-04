@@ -11,17 +11,18 @@ interface ISidebar extends NavProps {
   navItems: {
     link: string;
     text: string;
+    count: number;
   }[];
 }
 const Sidebar: React.FC<ISidebar> = (props) => {
   return (
     <div className="sidebar-container">
       <h5>{props.title}</h5>
-      <Nav vertical={props.vertical}>
+      <Nav vertical={props.vertical} className="sidebar-categories">
         {props.navItems.map((item) => (
           <NavItem key={item.text}>
             <Link to={item.link}>{item.text}</Link>
-            <Badge value={0} />
+            <Badge value={item.count} />
           </NavItem>
         ))}
       </Nav>

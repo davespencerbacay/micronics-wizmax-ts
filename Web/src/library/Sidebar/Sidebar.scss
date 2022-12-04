@@ -10,6 +10,8 @@
   .nav {
     .nav-item {
       margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
       a {
         color: #333;
         font-weight: 300;

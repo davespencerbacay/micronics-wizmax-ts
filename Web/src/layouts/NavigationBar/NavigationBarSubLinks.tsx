@@ -36,7 +36,10 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
         {intl("productSubLinks.viewAllProducts")} <GoTo width={10} />
       </Link>
     ) : supportLinkID ? (
-      <Link className="view-all-nav-item" to={ROUTE_PATH.SUPPORT}>
+      <Link
+        className="view-all-nav-item"
+        to={ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES}
+      >
         {intl("supportSubLinks.viewAll")} <GoTo width={10} />
       </Link>
     ) : shopLinkID ? (

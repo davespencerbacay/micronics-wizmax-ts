@@ -1,3 +1,17 @@
+// export const REGIONS: Record<RegionTypes, string> = {
+//   ASIA_PACIFIC_LABEL: "Asia Pacific",
+//   NORTH_AND_SOUTH_AMERICA_LABEL: "North and South America",
+// };
+
+// type CountryTypes = "KOREA" | "PHILIPPINES" | "NORTH_AMERICA" | "ECUADOR";
+
+// export const COUNTRIES: Record<CountryTypes, string> = {
+//   KOREA: "Korea",
+//   PHILIPPINES: "Philippines",
+//   NORTH_AMERICA: "North America",
+//   ECUADOR: "Ecuador",
+// };
+
 type ShopTypes =
   | "AMAZON_LABEL"
   | "AMAZON_LINK"
@@ -16,7 +30,9 @@ type ShopTypes =
   | "LAZADA_LABEL"
   | "LAZADA_LINK"
   | "MAXITEC_LABEL"
-  | "MAXITEC_LINK";
+  | "MAXITEC_LINK"
+  | "JAPAN_LABEL"
+  | "JAPAN_LINK";
 export const SHOPS: Record<ShopTypes, string> = {
   AMAZON_LABEL: "Amazon",
   AMAZON_LINK:
@@ -29,9 +45,10 @@ export const SHOPS: Record<ShopTypes, string> = {
   NAVER_LABEL: "Naver",
   NAVER_LINK: "https://smartstore.naver.com/micronics",
   DANAWA_LABEL: "Danawa",
-  DANAWA_LINK: "Amazon",
+  DANAWA_LINK:
+    "https://search.danawa.com/dsearch.php?query=micronics&originalQuery=micronics&volumeType=allvs&page=1&limit=40&sort=saveDESC&list=list&boost=true&addDelivery=N&makerbrand_name=마이크로닉스&recommendedSort=Y&defaultUICategoryCode=112777&defaultPhysicsCategoryCode=861%7C880%7C997%7C0&defaultVmTab=943&defaultVaTab=83552&tab=main",
   WIZMAX_OFFICIAL_STORE_LABEL: "Wizmax Official Store",
-  WIZMAX_OFFICIAL_STORE_LINK: "http://wizmaxph.myshopify.com/",
+  WIZMAX_OFFICIAL_STORE_LINK: "http://www.wizmaxph.myshopify.com/",
   SHOPEE_LABEL: "Shopee",
   SHOPEE_LINK: "",
   LAZADA_LABEL: "Lazada",
@@ -39,6 +56,8 @@ export const SHOPS: Record<ShopTypes, string> = {
   MAXITEC_LABEL: "MaxiTec",
   MAXITEC_LINK:
     "https://www.maxitec.com.ec/gaming-y-videojuegos/micronics?PS=24",
+  JAPAN_LABEL: "Links",
+  JAPAN_LINK: "https://www.links.co.jp/",
 };
 
 export interface IShops {
@@ -111,6 +130,19 @@ export const shopsPhilippines = PHILIPPINES_SHOPS.map((shop) => {
   };
 });
 
+export const JAPAN_SHOPS: any = [
+  {
+    shopName: SHOPS.JAPAN_LABEL,
+    shopLink: SHOPS.JAPAN_LINK,
+  },
+];
+export const shopsJapan = JAPAN_SHOPS.map((shop: any) => {
+  return {
+    name: shop.shopName,
+    link: shop.shopLink,
+  };
+});
+
 export const ECUADOR_SHOPS: ShopLinksType[] = [
   {
     shopName: SHOPS.MAXITEC_LABEL,
@@ -123,3 +155,38 @@ export const shopsEcuador = ECUADOR_SHOPS.map((shop) => {
     link: shop.shopLink,
   };
 });
+
+export const REGIONS_COUNTRIES: Record<any, any> = {
+  REGIONS: [
+    {
+      REGION: "Asia Pacific",
+      COUNTRIES: [
+        {
+          country: "Korea",
+          shops: shopsKorea,
+        },
+        {
+          country: "Philippines",
+          shops: shopsPhilippines,
+        },
+        {
+          country: "Japan",
+          shops: shopsJapan,
+        },
+      ],
+    },
+    {
+      REGION: "North and South America",
+      COUNTRIES: [
+        {
+          country: "North America",
+          shops: shopsUSA,
+        },
+        {
+          country: "Ecuador",
+          shops: shopsEcuador,
+        },
+      ],
+    },
+  ],
+};
