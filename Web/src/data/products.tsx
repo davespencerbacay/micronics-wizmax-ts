@@ -127,9 +127,30 @@ const products = [
       ":categoryId",
       "CATEGORY_MOUSE"
     ).replace(":productId", "ZM1"),
-    name: "product 1",
+    name: "ZM1",
     img: "/images/micronics-assets/product-images/mouse.svg",
-    countryAvailability: ["PH", "KR", "US"],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
   },
   {
     id: "2",

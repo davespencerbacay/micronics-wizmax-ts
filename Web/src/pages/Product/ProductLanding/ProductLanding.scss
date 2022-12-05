@@ -3,11 +3,12 @@
 .slider-container {
   margin: 10rem;
   .product-img {
-    transform: scale(0.5);
+    transform: scale(0.8);
     transition: all 0.5s;
-    opacity: 0.5;
+    opacity: 0.6;
+
     img {
-      width: 50rem;
+      width: 100%;
       margin: 0 auto;
     }
   }
@@ -16,9 +17,9 @@
     transition: all 0.5s;
     opacity: 1;
   }
-  .product-img.inactiveProdcutImg {
-    transform: scale(0.3);
+  .product-img.inactiveProductImg {
+    transform: scale(0.8);
     transition: all 0.5s;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 }

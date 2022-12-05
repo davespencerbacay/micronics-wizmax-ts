@@ -8,6 +8,7 @@ type ProductLandingType = {
 };
 
 const ProductLanding: React.FC<ProductLandingType> = (props) => {
+  const [imageIndex, setImageIndex] = useState<any>(0);
   let settings: any = {
     infinite: false,
     lazyLoad: true,
@@ -18,18 +19,19 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
     swipeToSlide: true,
     beforeChange: (current: any, next: any) => setImageIndex(next),
   };
-  const [imageIndex, setImageIndex] = useState<any>(0);
+
   useEffect(() => {}, [imageIndex]);
   return (
     <div className="slider-container">
       <Slider {...settings}>
         {products.map((p: any, index: any) => {
+          console.log(index - 1, imageIndex - 1);
           return (
             <div
               className={
                 index === imageIndex
                   ? "product-img activeProductImg"
-                  : index + 1 === imageIndex
+                  : index === imageIndex + 1
                   ? "product-img inactiveProductImg"
                   : "product-img"
               }
