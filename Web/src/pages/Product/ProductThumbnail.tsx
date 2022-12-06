@@ -53,11 +53,12 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
     <Container fluid>
       <Row>
         {productFilterByCategoryId.map((p: any, index: any) => {
+          console.log("index", index, "image", p.img[0]);
           return (
             <Col xs={4} sm={3} md={2} lg={2} key={p.id}>
               <div className="thumbnail-container">
                 <Link to={p.path}>
-                  <img src={p.img} />
+                  <img src={p.img[0]} alt={p.img[0]} />
                 </Link>
                 <div className="thumbnail-details-container">
                   <p className="thumbnail-product-label">{p.name}</p>
