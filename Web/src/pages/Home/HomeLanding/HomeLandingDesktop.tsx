@@ -6,6 +6,8 @@ import HeadsetSection from "./Sections/HeadsetSection/HeadsetSection";
 import MouseSection from "./Sections/MouseSection/MouseSection";
 import KeyboardSection from "./Sections/KeyboardSection/KeyboardSection";
 import OtherProductsSection from "./Sections/OtherProductsSection/OtherProductsSection";
+import PopupSection from "./Sections/PopupSection/PopupSection";
+import SmoothScroll from "layouts/SmoothScroll/SmoothScroll";
 
 const HomeLanding: React.FC = () => {
   const videoSection = useRef<HTMLDivElement>(null);
@@ -14,6 +16,7 @@ const HomeLanding: React.FC = () => {
       videoSection.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <div className="home-landing-container">
       <MainSection videoSectionHandler={videoSectionHandler} />
@@ -22,6 +25,7 @@ const HomeLanding: React.FC = () => {
       <MouseSection />
       <KeyboardSection />
       <OtherProductsSection />
+      <PopupSection />
     </div>
   );
 };
