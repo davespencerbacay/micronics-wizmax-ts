@@ -1,0 +1,38 @@
+.specifications-container {
+  animation-name: specifications;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  @keyframes specifications {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .specifications-table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    tbody {
+      tr {
+        border-top: 0.1rem solid lightgray;
+        border-bottom: 0.1rem solid lightgray;
+        th {
+          font-family: "Roboto", sans-serif;
+          font-size: 2rem;
+          padding: 3rem;
+          border: none;
+        }
+        td {
+          border: none;
+          font-family: "Exo", sans-serif;
+          padding: 3.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
