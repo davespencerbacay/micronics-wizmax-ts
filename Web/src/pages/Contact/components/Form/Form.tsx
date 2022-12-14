@@ -26,6 +26,7 @@ interface ILabeledInput {
     lg: number;
   };
   isTextArea?: boolean;
+  className?: string;
 }
 const Form = () => {
   const [showToast, setShowToast] = useState(false);
@@ -81,7 +82,7 @@ const Form = () => {
           const labeledInput: ILabeledInput[] = [
             {
               name: "fullName",
-              label: LOCALIZATION.fullName,
+              label: LOCALIZATION.fullName + " " + "*",
               value: values.fullName,
               colDef: {
                 xs: 12,
@@ -91,7 +92,7 @@ const Form = () => {
             },
             {
               name: "mobileNumber",
-              label: LOCALIZATION.mobileNumber,
+              label: LOCALIZATION.mobileNumber + " " + "*",
               value: values.mobileNumber,
               colDef: {
                 xs: 12,
@@ -101,7 +102,7 @@ const Form = () => {
             },
             {
               name: "emailAddress",
-              label: LOCALIZATION.emailAddress,
+              label: LOCALIZATION.emailAddress + " " + "*",
               value: values.emailAddress,
               colDef: {
                 xs: 12,
@@ -111,17 +112,18 @@ const Form = () => {
             },
             {
               name: "subject",
-              label: LOCALIZATION.subject,
+              label: LOCALIZATION.subject + " " + "*",
               value: values.subject,
               colDef: {
                 xs: 12,
                 md: 6,
                 lg: 12,
               },
+              className: "subject",
             },
             {
               name: "message",
-              label: LOCALIZATION.message,
+              label: LOCALIZATION.message + " " + "*",
               value: values.message,
               colDef: {
                 xs: 12,
@@ -144,6 +146,8 @@ const Form = () => {
                       value={data.value as any}
                       type={data.isTextArea ? "textarea" : "text"}
                       errors={errors}
+                      hideLabel={true}
+                      className={data.className}
                     />
                   </Col>
                 ))}

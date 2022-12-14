@@ -6,6 +6,8 @@ import { Container, Row, Col } from "reactstrap";
 import "./Contact.scss";
 import Inquiries from "../../library/Inquiries/Inquiries";
 import Form from "./components/Form/Form";
+import { useNavigate } from "react-router-dom";
+import { ROUTE_PATH } from "constants/routes";
 
 const Contact = () => {
   const LOCALIZATION = {
@@ -16,6 +18,7 @@ const Contact = () => {
       subTitle: useIntl("contactPage.form.header.subTitle"),
     },
   };
+  const navigate = useNavigate();
 
   return (
     <React.Fragment>
@@ -32,6 +35,11 @@ const Contact = () => {
               title={LOCALIZATION.header.title}
               subTitle={LOCALIZATION.header.subTitle}
               variant="bold"
+              buttonProps={{
+                show: true,
+                text: "Become a Distributor",
+                onClick: () => navigate(ROUTE_PATH.BECOME_DISTRIBUTOR),
+              }}
             />
             <Form />
           </Col>
