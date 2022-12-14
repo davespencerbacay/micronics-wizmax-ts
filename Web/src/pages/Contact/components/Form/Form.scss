@@ -1,4 +1,7 @@
 .distributor-form {
+  @media screen and (max-width: 900px) {
+    margin-bottom: 2rem;
+  }
   .label-value {
     border-bottom: none;
     padding-bottom: 0;
@@ -22,5 +25,25 @@
   .form-control {
     font-size: 1.6rem;
     border-radius: 0;
+  }
+  @media screen and (max-width: 900px) {
+    margin-bottom: 2rem;
+
+    input[name="subject"] {
+      width: 80%;
+      margin: auto;
+      display: block;
+    }
+  }
+
+  button {
+    box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.2);
+    background-color: transparent !important;
+    color: #212529 !important;
+    border-radius: 40px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    border: none;
   }
 }
