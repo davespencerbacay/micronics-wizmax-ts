@@ -233,6 +233,7 @@ const Form = () => {
                       value={data.value as any}
                       type={data.isTextArea ? "textarea" : "text"}
                       errors={errors}
+                      hideLabel={true}
                     />
                   </Col>
                 ))}
