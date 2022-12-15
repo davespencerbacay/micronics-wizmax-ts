@@ -32,3 +32,9 @@
     }
   }
 }
+.loading {
+  background-color: red;
+  video {
+    object-fit: cover;
+  }
+}

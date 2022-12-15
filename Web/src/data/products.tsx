@@ -16,12 +16,12 @@ const products = [
     ).replace(":productId", "ZM1"),
     name: "ZM1",
     brochure:
-      "/images/micronics-assets/product-images/mouse/brochure/zm-1_db_english.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086124/product-brochures/mouse/zm-1_db_english_yho6c5.jpg",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/zm1-1.png",
-      "/images/micronics-assets/product-images/mouse/images/zm1-2.png",
-      "/images/micronics-assets/product-images/mouse/images/zm1-3.png",
-      "/images/micronics-assets/product-images/mouse/images/zm1-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/zm1-1_y1rcit.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/zm1-2_vjwbdf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/zm1-3_vfb5uc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/zm1-4_myflwy.png",
     ],
     countryAvailability: [
       {
@@ -134,11 +134,11 @@ const products = [
     ).replace(":productId", "ZM2"),
     name: "ZM2",
     brochure:
-      "/images/micronics-assets/product-images/mouse/brochure/ZM2_DB_Translation_Revision.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/ZM2_DB_Translation_Revision_tbsqns.jpg",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/ZM2-1.png",
-      "/images/micronics-assets/product-images/mouse/images/ZM2-2.png",
-      "/images/micronics-assets/product-images/mouse/images/ZM2-3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/ZM2-1_emfkkk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/ZM2-2_ypbfct.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/ZM2-3_daziuk.png",
     ],
     countryAvailability: [
       {
@@ -251,13 +251,13 @@ const products = [
     ).replace(":productId", "MM1"),
     name: "MM1",
     brochure:
-      "/images/micronics-assets/product-images/mouse/brochure/Mouse_MM1_DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086122/product-brochures/mouse/Mouse_MM1_DB_ywgchq.png",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/mm1-1.png",
-      "/images/micronics-assets/product-images/mouse/images/mm1-2.png",
-      "/images/micronics-assets/product-images/mouse/images/mm1-3.png",
-      "/images/micronics-assets/product-images/mouse/images/mm1-4.png",
-      "/images/micronics-assets/product-images/mouse/images/mm1-5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/mm1-1_mqwr2z.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/mm1-2_pjwfjv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/mm1-3_ezkuje.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/mm1-4_psawbp.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/mm1-5_cch16g.png",
     ],
     countryAvailability: [
       {
@@ -370,14 +370,14 @@ const products = [
     ).replace(":productId", "WM1"),
     name: "WM1",
     brochure:
-      "/images/micronics-assets/product-images/mouse/brochure/WM1-DB.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086117/product-brochures/mouse/WM1-DB_k6lydo.jpg",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/wm1-1.png",
-      "/images/micronics-assets/product-images/mouse/images/wm1-2.png",
-      "/images/micronics-assets/product-images/mouse/images/wm1-3.png",
-      "/images/micronics-assets/product-images/mouse/images/wm1-4.png",
-      "/images/micronics-assets/product-images/mouse/images/wm1-5.png",
-      "/images/micronics-assets/product-images/mouse/images/wm1-6.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085985/product-images/mouse/wm1-1_filoyf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085985/product-images/mouse/wm1-2_qpmstr.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085983/product-images/mouse/wm1-3_tworek.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085982/product-images/mouse/wm1-4_xflhak.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/wm1-5_zwfjah.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/wm1-6_hf2c1e.png",
     ],
     countryAvailability: [
       {
@@ -494,13 +494,13 @@ const products = [
     ).replace(":productId", "WM2"),
     name: "WM2",
     brochure:
-      "/images/micronics-assets/product-images/mouse/brochure/WM2_DB_Translation_Revision.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/WM2_DB_Translation_Revision_vbymny.jpg",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/WM2-4.png",
-      "/images/micronics-assets/product-images/mouse/images/WM2-1.png",
-      "/images/micronics-assets/product-images/mouse/images/WM2-2.png",
-      "/images/micronics-assets/product-images/mouse/images/WM2-3.png",
-      "/images/micronics-assets/product-images/mouse/images/WM2-5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/WM2-4_mgrnbe.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085974/product-images/mouse/WM2-1_gvuuu4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085974/product-images/mouse/WM2-2_piyliy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085972/product-images/mouse/WM2-3_k0fkdl.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/WM2-5_p2he9h.png",
     ],
     countryAvailability: [
       {
@@ -621,12 +621,12 @@ const products = [
     ).replace(":productId", "MG40"),
     name: "MG40",
     brochure:
-      "/images/micronics-assets/product-images/mouse/brochure/MANIC-G40-DB_ENGLISH.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/MANIC-G40-DB_ENGLISH_u90cef.jpg",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/MG40 -3.png",
-      "/images/micronics-assets/product-images/mouse/images/MG40 -1.png",
-      "/images/micronics-assets/product-images/mouse/images/MG40 -2.png",
-      "/images/micronics-assets/product-images/mouse/images/MG40 -4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG40_-3_pi1dmq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/MG40_-1_qe33yh.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/MG40_-2_vdeinx.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085972/product-images/mouse/MG40_-4_sfzhh8.png",
     ],
     countryAvailability: [
       {
@@ -737,11 +737,11 @@ const products = [
     ).replace(":productId", "MG501"),
     name: "MG501",
     brochure:
-      "/images/micronics-assets/product-images/mouse/brochure/MG501_DB_Translation.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086122/product-brochures/mouse/MG501_DB_Translation_z5pfzh.jpg",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/MG501-3.png",
-      "/images/micronics-assets/product-images/mouse/images/MG501-1.png",
-      "/images/micronics-assets/product-images/mouse/images/MG501-2.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-3_trm1hu.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-1_nylamn.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/MG501-2_mi8uez.png",
     ],
     countryAvailability: [
       {
@@ -857,10 +857,10 @@ const products = [
     name: "MG530",
     brochure: "",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/MG530  - 3.png",
-      "/images/micronics-assets/product-images/mouse/images/MG530  - 1.png",
-      "/images/micronics-assets/product-images/mouse/images/MG530  - 2.png",
-      "/images/micronics-assets/product-images/mouse/images/MG530  - 4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085977/product-images/mouse/MG530_-_3_qcpwtm.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085984/product-images/mouse/MG530_-_1_jll17u.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085974/product-images/mouse/MG530_-_2_lwk6ez.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/MG530_-_4_vaefnl.png",
     ],
     countryAvailability: [
       {
@@ -978,15 +978,14 @@ const products = [
     name: "Manic ZG106",
     brochure: "",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-1.png",
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-2.png",
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-3.png",
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-4.png",
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-5.png",
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-6.png",
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-7.png",
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-8.png",
-      "/images/micronics-assets/product-images/mouse/images/ZG106 3327-9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085975/product-images/mouse/ZG106_3327-1_z2ea4p.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085974/product-images/mouse/ZG106_3327-2_agdosk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/ZG106_3327-4_bn0mpm.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/ZG106_3327-5_kynaqu.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/ZG106_3327-6_oqcvjv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085974/product-images/mouse/ZG106_3327-7_ptgigf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085975/product-images/mouse/ZG106_3327-8_lx9xdg.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085983/product-images/mouse/ZG106_3327-9_aq9vk4.png",
     ],
     countryAvailability: [
       {
@@ -1104,13 +1103,13 @@ const products = [
     name: "Manic M630W",
     brochure: "",
     img: [
-      "/images/micronics-assets/product-images/mouse/images/M630W-B-2.png",
-      "/images/micronics-assets/product-images/mouse/images/M630W-B-1.png",
-      "/images/micronics-assets/product-images/mouse/images/M630W-B-3.png",
-      "/images/micronics-assets/product-images/mouse/images/M630W-B-4.png",
-      "/images/micronics-assets/product-images/mouse/images/M630W-B-5.png",
-      "/images/micronics-assets/product-images/mouse/images/M630W-B-6.png",
-      "/images/micronics-assets/product-images/mouse/images/M630W-B-7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/M630W-B-2_aiszl4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085984/product-images/mouse/M630W-B-1_h7uaww.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/M630W-B-3_juiig4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-4_xd4h2l.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-5_yfutxe.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-6_nvvqqv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/M630W-B-7_rxsc2t.png",
     ],
     countryAvailability: [
       {
@@ -1230,12 +1229,12 @@ const products = [
     ).replace(":productId", "ZK1"),
     name: "ZK1",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/ZK1_DB_english.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/ZK1_DB_english_g3stxw.jpg",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/zk1-1.png",
-      "/images/micronics-assets/product-images/keyboard/images/zk1-2.png",
-      "/images/micronics-assets/product-images/keyboard/images/zk1-3.png",
-      "/images/micronics-assets/product-images/keyboard/images/zk1-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086156/product-images/keyboard/zk1-1_gbquyo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086158/product-images/keyboard/ZK1-2_qtdwzn.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/zk1-3_v45bvo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/ZK1-4_vioony.png",
     ],
     countryAvailability: [
       {
@@ -1356,13 +1355,13 @@ const products = [
     ).replace(":productId", "ZK2"),
     name: "ZK2",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/ZK2-DB-english.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086199/product-brochures/keyboard/ZK2-DB-english_u3jzek.jpg",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/ZK2-1.png",
-      "/images/micronics-assets/product-images/keyboard/images/ZK2-2.png",
-      "/images/micronics-assets/product-images/keyboard/images/ZK2-3.png",
-      "/images/micronics-assets/product-images/keyboard/images/ZK2-4.png",
-      "/images/micronics-assets/product-images/keyboard/images/ZK2-5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/ZK2-1_tckpbc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086155/product-images/keyboard/ZK2-2_xqfjxo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086163/product-images/keyboard/ZK2-3_ioeyku.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086162/product-images/keyboard/ZK2-4_c80n1i.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086153/product-images/keyboard/ZK2-5_dfjfpr.png",
     ],
     countryAvailability: [
       {
@@ -1485,12 +1484,12 @@ const products = [
     ).replace(":productId", "WK1"),
     name: "WK1",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/Keyboard_WK1_DB_updated.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086196/product-brochures/keyboard/Keyboard_WK1_DB_updated_zkqmtu.png",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/WK1B - 4.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK1B - 2.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK1B - 3.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK1B - 1.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086149/product-images/keyboard/WK1B_-_4_dohgft.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086155/product-images/keyboard/WK1B_-_2_muswa6.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086160/product-images/keyboard/WK1B_-_3_dxdzid.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/WK1B_-_1_knqp2n.png",
     ],
     countryAvailability: [
       {
@@ -1611,12 +1610,12 @@ const products = [
     ).replace(":productId", "WK2"),
     name: "WK2",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/Keyboard_WK2_DB_updated.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086198/product-brochures/keyboard/Keyboard_WK2_DB_updated_k8oprk.png",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/WK2-1.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK2-2.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK2-3.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK2-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086156/product-images/keyboard/WK2-1_oxhjgm.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086149/product-images/keyboard/WK2-2_j5xk2h.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/WK2-3_sbrzgd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086150/product-images/keyboard/WK2-4_orwsfr.png",
     ],
     countryAvailability: [
       {
@@ -1739,12 +1738,12 @@ const products = [
     ).replace(":productId", "WK3"),
     name: "WK3",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/Keyboard_WK3_DB_updated.png",
+      "/images/micronics-assets/product-images/keyboard/brochure/https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086191/product-brochures/keyboard/Keyboard_WK3_DB_updated_xattjd.png",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/WK3 - 1.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK3-2.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK3-3.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK3-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086157/product-images/keyboard/WK3_-_1_phxefg.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086163/product-images/keyboard/WK3-2_lsqqfa.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086161/product-images/keyboard/WK3-3_lili7s.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086161/product-images/keyboard/WK3-4_fuuonj.png",
     ],
     countryAvailability: [
       {
@@ -1867,12 +1866,12 @@ const products = [
     ).replace(":productId", "WK4"),
     name: "WK4",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/wk4_DB_english.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086208/product-brochures/keyboard/wk4_DB_english_ujvsps.jpg",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/WK4-1.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK4-2.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK4-3.png",
-      "/images/micronics-assets/product-images/keyboard/images/WK4-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086157/product-images/keyboard/WK4-1_wv5aey.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086162/product-images/keyboard/WK4-2_dt7vdw.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/WK4-3_vr8qv3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086156/product-images/keyboard/WK4-4_iyqh2e.png",
     ],
     countryAvailability: [
       {
@@ -1995,14 +1994,14 @@ const products = [
     ).replace(":productId", "MK1"),
     name: "MK1",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/Keyboard_MK1_DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086190/product-brochures/keyboard/Keyboard_MK1_DB_tvv4qc.png",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/MK1 - 1.png",
-      "/images/micronics-assets/product-images/keyboard/images/MK1 - 2.png",
-      "/images/micronics-assets/product-images/keyboard/images/MK1 - 3.png",
-      "/images/micronics-assets/product-images/keyboard/images/MK1 - 4.png",
-      "/images/micronics-assets/product-images/keyboard/images/MK1 - 5.png",
-      "/images/micronics-assets/product-images/keyboard/images/MK1 - 6.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/MK1_-_1_h1nx3y.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086155/product-images/keyboard/MK1_-_2_qnmaam.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086153/product-images/keyboard/MK1_-_3_zodwy7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/MK1_-_4_z7o5wp.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/MK1_-_5_k2biy6.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/MK1_-_6_uq9pgc.png",
     ],
     countryAvailability: [
       {
@@ -2125,16 +2124,16 @@ const products = [
     ).replace(":productId", "EX580"),
     name: "EX580",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/EX580_ENG.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086194/product-brochures/keyboard/EX580_ENG_s8a2hl.jpg",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/EX580 - 1.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580 - 2.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580 - 3.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580 - 4.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580 - 5.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580 - 6.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580 - 7.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580 - 8.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/EX580_-_1_hedycm.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX580_-_2_kgm53x.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX580_-_3_jo6vah.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX580_-_4_sy9aye.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086150/product-images/keyboard/EX580_-_5_jfswvo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086150/product-images/keyboard/EX580_-_6_omcboi.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/EX580_-_7_jv9lri.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/EX580_-_8_qq7ih1.png",
     ],
     countryAvailability: [
       {
@@ -2253,15 +2252,15 @@ const products = [
     ).replace(":productId", "EX580L"),
     name: "EX580L",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/EX580L_DB-ENG.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086198/product-brochures/keyboard/EX580L_DB-ENG_toi7ho.jpg",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/EX580_L_0005_05.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580_L_0006_06.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580_L_0008_08.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580_L_0009_09.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580_L_0010_10.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580_L_0011_11.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX580_L_0012_12.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086147/product-images/keyboard/EX580_L_0005_05_sj0qik.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/EX580_L_0006_06_nsbbcj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086164/product-images/keyboard/EX580_L_0008_08_v52qqn.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086161/product-images/keyboard/EX580_L_0009_09_zacuri.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086160/product-images/keyboard/EX580_L_0010_10_w4pytb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086167/product-images/keyboard/EX580_L_0011_11_u5iajl.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086149/product-images/keyboard/EX580_L_0012_12_xcm4lp.png",
     ],
     countryAvailability: [
       {
@@ -2384,12 +2383,12 @@ const products = [
     ).replace(":productId", "MANICX100"),
     name: "Manic X100",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/Keyboard_X100_DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086189/product-brochures/keyboard/Keyboard_X100_DB_juxvlv.png",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/X100 - 3.png",
-      "/images/micronics-assets/product-images/keyboard/images/X100 - 2.png",
-      "/images/micronics-assets/product-images/keyboard/images/X100 - 4.png",
-      "/images/micronics-assets/product-images/keyboard/images/X100 - 1.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/X100_-_3_j0letm.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/X100_-_2_ulmsyo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/X100_-_4_j6hknh.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/X100_-_1_ryqy7k.png",
     ],
     countryAvailability: [
       {
@@ -2508,13 +2507,13 @@ const products = [
     ).replace(":productId", "MANICEX89"),
     name: "Manic EX89 TKL",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/EX89_DB_ENGLISH.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/EX89_DB_ENGLISH_i6khvn.jpg",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/EX89 TKL - 5.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX89 TKL - 1.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX89 TKL - 2.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX89 TKL - 3.png",
-      "/images/micronics-assets/product-images/keyboard/images/EX89 TKL - 4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX89_TKL_-_5_dh3qar.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086145/product-images/keyboard/EX89_TKL_-_1_va3epb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086144/product-images/keyboard/EX89_TKL_-_2_d9y47v.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086145/product-images/keyboard/EX89_TKL_-_3_spsv28.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086147/product-images/keyboard/EX89_TKL_-_4_c6bb1h.png",
     ],
     countryAvailability: [
       {
@@ -2635,11 +2634,11 @@ const products = [
     ).replace(":productId", "MK350"),
     name: "Manic K350",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/K350_DB_ENG.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086189/product-brochures/keyboard/K350_DB_ENG_g8sasm.jpg",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/K350 - 3.png",
-      "/images/micronics-assets/product-images/keyboard/images/K350 - 1.png",
-      "/images/micronics-assets/product-images/keyboard/images/K350 - 2.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/K350_-_3_o8brsb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086149/product-images/keyboard/K350_-_1_uc8yz3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086147/product-images/keyboard/K350_-_2_sic6ax.png",
     ],
     countryAvailability: [
       {
@@ -2760,13 +2759,13 @@ const products = [
     ).replace(":productId", "MX40"),
     name: "Manic X40",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/DB_X40_ENGLISH.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086211/product-brochures/keyboard/DB_X40_ENGLISH_pkw25q.jpg",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/X40 - 1.png",
-      "/images/micronics-assets/product-images/keyboard/images/X40 - 2.png",
-      "/images/micronics-assets/product-images/keyboard/images/X40 - 3.png",
-      "/images/micronics-assets/product-images/keyboard/images/X40 - 4.png",
-      "/images/micronics-assets/product-images/keyboard/images/X40 - 5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086164/product-images/keyboard/X40_-_1_f8dqvc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086156/product-images/keyboard/X40_-_2_khrk31.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086166/product-images/keyboard/X40_-_3_iaipzi.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086162/product-images/keyboard/X40_-_4_jxibli.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086164/product-images/keyboard/X40_-_5_kpoesi.png",
     ],
     countryAvailability: [
       {
@@ -2914,9 +2913,9 @@ const products = [
     name: "Manic X40P",
     brochure: "",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/Manic X40P-3.png",
-      "/images/micronics-assets/product-images/keyboard/images/Manic X40P-1.png",
-      "/images/micronics-assets/product-images/keyboard/images/Manic X40P-2.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/Manic_X40P-3_mbbzxw.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/Manic_X40P-1_wzaefl.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/Manic_X40P-2_foagnk.png",
     ],
     countryAvailability: [
       {
@@ -3055,11 +3054,11 @@ const products = [
     name: "Wizmax W85 TKL",
     brochure: "",
     img: [
-      "/images/micronics-assets/product-images/keyboard/images/W85TKL - 3.png",
-      "/images/micronics-assets/product-images/keyboard/images/W85TKL - 1.png",
-      "/images/micronics-assets/product-images/keyboard/images/W85TKL - 2.png",
-      "/images/micronics-assets/product-images/keyboard/images/W85TKL - 4.png",
-      "/images/micronics-assets/product-images/keyboard/images/W85TKL - 5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/W85TKL_-_3_qz4ln7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/W85TKL_-_1_sbfkw9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086165/product-images/keyboard/W85TKL_-_2_d23fix.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086157/product-images/keyboard/W85TKL_-_4_vt1ken.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086160/product-images/keyboard/W85TKL_-_5_rkmncy.png",
     ],
     countryAvailability: [
       {
@@ -3179,13 +3178,13 @@ const products = [
     ).replace(":productId", "WH1"),
     name: "WH1",
     brochure:
-      "/images/micronics-assets/product-images/headset/brochure/Headset_WH1_DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086264/product-brochures/headset/Headset_WH1_DB_fmg2zn.png",
     img: [
-      "/images/micronics-assets/product-images/headset/images/wh1-1.png",
-      "/images/micronics-assets/product-images/headset/images/wh1-2.png",
-      "/images/micronics-assets/product-images/headset/images/wh1-3.png",
-      "/images/micronics-assets/product-images/headset/images/wh1-4.png",
-      "/images/micronics-assets/product-images/headset/images/wh1-5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/wh1-1_oo98c0.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086240/product-images/headset/wh1-2_ejidex.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/wh1-3_k4nciy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/wh1-4_crycgc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086241/product-images/headset/wh1-5_vybgt6.png",
     ],
     countryAvailability: [
       {
@@ -3326,12 +3325,12 @@ const products = [
     ).replace(":productId", "MH1"),
     name: "MH1",
     brochure:
-      "/images/micronics-assets/product-images/headset/brochure/MH1-DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086264/product-brochures/headset/MH1-DB_tvc1qc.png",
     img: [
-      "/images/micronics-assets/product-images/headset/images/MH-1-1.png",
-      "/images/micronics-assets/product-images/headset/images/MH-1-2.png",
-      "/images/micronics-assets/product-images/headset/images/MH-1-3.png",
-      "/images/micronics-assets/product-images/headset/images/MH-1-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/MH-1-1_erld5s.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/MH-1-2_z9alpn.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/MH-1-3_vd4wal.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/MH-1-4_hjhrld.png",
     ],
     countryAvailability: [
       {
@@ -3468,13 +3467,13 @@ const products = [
     ).replace(":productId", "MH2"),
     name: "MH2",
     brochure:
-      "/images/micronics-assets/product-images/headset/brochure/MH2-DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086259/product-brochures/headset/MH2-DB_t7szyj.png",
     img: [
-      "/images/micronics-assets/product-images/headset/images/MH2-1.png",
-      "/images/micronics-assets/product-images/headset/images/MH2-2.png",
-      "/images/micronics-assets/product-images/headset/images/MH2-3.png",
-      "/images/micronics-assets/product-images/headset/images/MH2-4.png",
-      "/images/micronics-assets/product-images/headset/images/MH2-5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086242/product-images/headset/MH2-1_fu2t0b.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/MH2-2_gm8xna.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086240/product-images/headset/MH2-3_psaxg5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086241/product-images/headset/MH2-4_ycdpow.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086236/product-images/headset/MH2-5_wetip2.png",
     ],
     countryAvailability: [
       {
@@ -3607,7 +3606,7 @@ const products = [
     name: "MH3",
     brochure: "",
     img: [
-      "/images/micronics-assets/product-images/headset/images/MH3 1000x1000px.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
     ],
     countryAvailability: [
       {
@@ -3753,14 +3752,14 @@ const products = [
     name: "W301",
     brochure: "",
     img: [
-      "/images/micronics-assets/product-images/headset/images/W301-4.png",
-      "/images/micronics-assets/product-images/headset/images/W301-1.png",
-      "/images/micronics-assets/product-images/headset/images/W301-2.png",
-      "/images/micronics-assets/product-images/headset/images/W301-3.png",
-      "/images/micronics-assets/product-images/headset/images/W301-5.png",
-      "/images/micronics-assets/product-images/headset/images/W301-6.png",
-      "/images/micronics-assets/product-images/headset/images/W301-7.png",
-      "/images/micronics-assets/product-images/headset/images/W301-8.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086239/product-images/headset/W301-4_vzgams.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/W301-1_zukbip.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/W301-2_a21xez.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/W301-3_mxpqyj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/W301-5_evuxd3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/W301-6_qg0ziq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/W301-7_wssqmo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/W301-8_czq7xn.png",
     ],
     countryAvailability: [
       {
@@ -3905,13 +3904,13 @@ const products = [
     ).replace(":productId", "MHS301"),
     name: "Manic HS-301",
     brochure:
-      "/images/micronics-assets/product-images/headset/brochure/Headset_HS-301_DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086269/product-brochures/headset/Headset_HS-301_DB_tyh8v0.png",
     img: [
-      "/images/micronics-assets/product-images/headset/images/HS-301_05.png",
-      "/images/micronics-assets/product-images/headset/images/HS-301_01.png",
-      "/images/micronics-assets/product-images/headset/images/HS-301_02.png",
-      "/images/micronics-assets/product-images/headset/images/HS-301_03.png",
-      "/images/micronics-assets/product-images/headset/images/HS-301_04.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-301_05_qvwrg6.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-301_01_m4z1yl.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-301_02_iwhkvw.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-301_03_kfpogv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-301_04_j7s8jw.png",
     ],
     countryAvailability: [
       {
@@ -4054,12 +4053,12 @@ const products = [
     ).replace(":productId", "MHS370"),
     name: "Manic HS-370",
     brochure:
-      "/images/micronics-assets/product-images/headset/brochure/Headset_HS-370_DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086265/product-brochures/headset/Headset_HS-370_DB_isqh2j.png",
     img: [
-      "/images/micronics-assets/product-images/headset/images/HS-370_02.png",
-      "/images/micronics-assets/product-images/headset/images/HS-370_01.png",
-      "/images/micronics-assets/product-images/headset/images/HS-370_03.png",
-      "/images/micronics-assets/product-images/headset/images/HS-370_04.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/HS-370_02_clsujt.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-370_01_qr647g.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-370_03_ewd7fy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-370_04_iy3k0v.png",
     ],
     countryAvailability: [
       {
@@ -4202,17 +4201,17 @@ const products = [
     ).replace(":productId", "MHS420"),
     name: "Manic HS-420",
     brochure:
-      "/images/micronics-assets/product-images/headset/brochure/Headset_HS-420_DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086263/product-brochures/headset/Headset_HS-420_DB_ttq3ek.png",
     img: [
-      "/images/micronics-assets/product-images/headset/images/HS-420_01_Black.png",
-      "/images/micronics-assets/product-images/headset/images/HS-420_02_Black.png",
-      "/images/micronics-assets/product-images/headset/images/HS-420_03_Black.png",
-      "/images/micronics-assets/product-images/headset/images/HS-420_01_White.png",
-      "/images/micronics-assets/product-images/headset/images/HS-420_02_White.png",
-      "/images/micronics-assets/product-images/headset/images/HS-420_03_White.png",
-      "/images/micronics-assets/product-images/headset/images/HS-420_01_Pink.png",
-      "/images/micronics-assets/product-images/headset/images/HS-420_02_Pink.png",
-      "/images/micronics-assets/product-images/headset/images/HS-420_03_Pink.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_01_Black_gmcsjv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/HS-420_02_Black_wymjks.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-420_03_Black_dhy8r7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-420_01_White_xaiqp3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-420_02_White_wpbbye.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-420_03_White_k6xsvk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086239/product-images/headset/HS-420_01_Pink_bkm1ru.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_02_Pink_dfxfq4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/HS-420_03_Pink_udeuoe.png",
     ],
     countryAvailability: [
       {
@@ -4355,13 +4354,13 @@ const products = [
     ).replace(":productId", "MHS530"),
     name: "Manic HS-530",
     brochure:
-      "/images/micronics-assets/product-images/headset/brochure/Headset_HS-530_DB.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086266/product-brochures/headset/Headset_HS-530_DB_pdnlra.png",
     img: [
-      "/images/micronics-assets/product-images/headset/images/HS-530_03.png",
-      "/images/micronics-assets/product-images/headset/images/HS-530_01.png",
-      "/images/micronics-assets/product-images/headset/images/HS-530_02.png",
-      "/images/micronics-assets/product-images/headset/images/HS-530_05.png",
-      "/images/micronics-assets/product-images/headset/images/HS-530_06_Remote.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/HS-530_03_l0djbv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/HS-530_01_wdeezt.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-530_02_d2qrlj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-530_05_slsatq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-530_06_Remote_glbmcm.png",
     ],
     countryAvailability: [
       {
@@ -4505,12 +4504,12 @@ const products = [
     ).replace(":productId", "GX3-CHANG"),
     name: "GX3 Chang",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/DB_GX3_ENGLISH_UPDATED.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086332/product-brochures/pc_case/DB_GX3_ENGLISH_UPDATED_whqbhn.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/gx3-chang_2.png",
-      "/images/micronics-assets/product-images/pc_case/images/gx3-chang_1.png",
-      "/images/micronics-assets/product-images/pc_case/images/gx3-chang_3.png",
-      "/images/micronics-assets/product-images/pc_case/images/gx3-chang_4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086307/product-images/pc_case/gx3-chang_2_ky7iwo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086308/product-images/pc_case/gx3-chang_1_vftkly.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086305/product-images/pc_case/gx3-chang_3_lzjgfe.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086301/product-images/pc_case/gx3-chang_4_xnnc33.png",
     ],
     countryAvailability: [
       {
@@ -4618,12 +4617,12 @@ const products = [
     ).replace(":productId", "GM3-MOON"),
     name: "GM3 Moon",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/DB_GM3_MOON_UPDATED.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086355/product-brochures/pc_case/DB_GM3_MOON_UPDATED_oxy2wc.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/gm3-moon_2.png",
-      "/images/micronics-assets/product-images/pc_case/images/gm3-moon_1.png",
-      "/images/micronics-assets/product-images/pc_case/images/gm3-moon_3.png",
-      "/images/micronics-assets/product-images/pc_case/images/gm3-moon_4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086304/product-images/pc_case/gm3-moon_2_x7pw4r.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086307/product-images/pc_case/gm3-moon_1_z9yknp.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/gm3-moon_3_yowxla.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086305/product-images/pc_case/gm3-moon_4_mvx0ph.png",
     ],
     countryAvailability: [
       {
@@ -4723,11 +4722,11 @@ const products = [
     ).replace(":productId", "GX1-PUNCH"),
     name: "GX1 Punch",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/GXPUNCH-DB.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086351/product-brochures/pc_case/GXPUNCH-DB_czuszg.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/gx-3.png",
-      "/images/micronics-assets/product-images/pc_case/images/gx-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/gx-1.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086309/product-images/pc_case/gx-3_ojilvc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gx-2_zf81vf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086289/product-images/pc_case/gx-1_pjmrzo.png",
     ],
     countryAvailability: [
       {
@@ -4834,12 +4833,12 @@ const products = [
     ).replace(":productId", "EL1-RAPANG"),
     name: "EL1 Rapang",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/rapang-db.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086343/product-brochures/pc_case/rapang-db_zkjycy.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/em1-4.png",
-      "/images/micronics-assets/product-images/pc_case/images/em1-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/em1-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/em1-3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/em1-4_fvktu5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086287/product-images/pc_case/em1-1_hvfgtm.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/em1-2_tpnfnc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/em1-3_tcduj0.png",
     ],
     countryAvailability: [
       {
@@ -4931,11 +4930,11 @@ const products = [
     ).replace(":productId", "EM1-WOOFER-B"),
     name: "EM1 Woofer",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/EM1-Woofer-Black_updated.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086337/product-brochures/pc_case/EM1-Woofer-Black_updated_fmbqw5.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/wb-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/wb-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/wb-3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086298/product-images/pc_case/wb-2_w009ns.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086306/product-images/pc_case/wb-1_uvk57h.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/wb-3_cpwbya.png",
     ],
     countryAvailability: [
       {
@@ -5042,14 +5041,14 @@ const products = [
     ).replace(":productId", "EM2-STEREO-B"),
     name: "EM2 Stereo",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/DB_EM2-STEREO_Black_UPDATED.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086346/product-brochures/pc_case/DB_EM2-STEREO_Black_UPDATED_zy2ose.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/em2-stereo-black6.png",
-      "/images/micronics-assets/product-images/pc_case/images/em2-stereo-black1.png",
-      "/images/micronics-assets/product-images/pc_case/images/em2-stereo-black2.png",
-      "/images/micronics-assets/product-images/pc_case/images/em2-stereo-black3.png",
-      "/images/micronics-assets/product-images/pc_case/images/em2-stereo-black4.png",
-      "/images/micronics-assets/product-images/pc_case/images/em2-stereo-black5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086314/product-images/pc_case/em2-stereo-black6_gdgnfe.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086312/product-images/pc_case/em2-stereo-black1_o2f1lr.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086315/product-images/pc_case/em2-stereo-black2_kjm9y6.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086307/product-images/pc_case/em2-stereo-black3_uh5squ.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086313/product-images/pc_case/em2-stereo-black4_ihigmn.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086314/product-images/pc_case/em2-stereo-black5_qu4oaf.png",
     ],
     countryAvailability: [
       {
@@ -5152,9 +5151,9 @@ const products = [
     name: "GM1 Transform",
     brochure: "",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/gm1b-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/gm1b-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/gm1b.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-1_fc8hcm.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086304/product-images/pc_case/gm1b_ldvnfp.png",
     ],
     countryAvailability: [
       {
@@ -5258,11 +5257,11 @@ const products = [
     ).replace(":productId", "OM1-CIRCLE"),
     name: "OM1 Circle",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/OM1-DB.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086341/product-brochures/pc_case/OM1-DB_xk4tsz.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/om1-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/om1-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/om1-3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/om1-1_wkppqa.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/om1-2_ycsrdj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/om1-3_aez8f1.png",
     ],
     countryAvailability: [
       {
@@ -5367,13 +5366,14 @@ const products = [
     ).replace(":productId", "GH1-MESH-W"),
     name: "GH1 Mesh White",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086342/product-brochures/pc_case/GH-1-MESH-DB_v8oy61.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GH1 Mesh White - 5.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH1 Mesh White - 1.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH1 Mesh White - 2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH1 Mesh White - 3.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH1 Mesh White - 4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086293/product-images/pc_case/GH1_Mesh_White_-_5_fnqqxv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086289/product-images/pc_case/GH1_Mesh_White_-_1_jpi7qj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086299/product-images/pc_case/GH1_Mesh_White_-_2_zahnun.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086287/product-images/pc_case/GH1_Mesh_White_-_3_o2o9ts.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086292/product-images/pc_case/GH1_Mesh_White_-_4_iwpk9q.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086299/product-images/pc_case/GH1_Mesh_White_-_6_tw3xgj.png",
     ],
     countryAvailability: [
       {
@@ -5481,9 +5481,9 @@ const products = [
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/Shadow 2-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/Shadow 2-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/Shadow 2-3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/Shadow_2-2_wbhlpt.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086289/product-images/pc_case/Shadow_2-1_njr0yr.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/Shadow_2-3_xfwm4r.png",
     ],
     countryAvailability: [
       {
@@ -5598,10 +5598,10 @@ const products = [
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GH2 Metal-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH2 Metal-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH2 Metal-3.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH2 Metal-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GH2_Metal-2_ewg04n.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086293/product-images/pc_case/GH2_Metal-1_k424qt.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086294/product-images/pc_case/GH2_Metal-3_rnwe8s.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086290/product-images/pc_case/GH2_Metal-4_y7mrqx.png",
     ],
     countryAvailability: [
       {
@@ -5711,10 +5711,10 @@ const products = [
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GH3 Troika-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH3 Troika-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH3 Troika-3.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH3 Troika-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/GH3_Troika-2_vy9f8k.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086307/product-images/pc_case/GH3_Troika-1_datnze.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086290/product-images/pc_case/GH3_Troika-3_z4lsfd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086290/product-images/pc_case/GH3_Troika-4_b0prlz.png",
     ],
     countryAvailability: [
       {
@@ -5824,10 +5824,10 @@ const products = [
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GH4 Leto-3.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH4 Leto-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH4 Leto-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH4 Leto-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086294/product-images/pc_case/GH4_Leto-3_mcayqh.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086293/product-images/pc_case/GH4_Leto-1_rmgop7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/GH4_Leto-2_fbr5qh.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086292/product-images/pc_case/GH4_Leto-4_zrfv2v.png",
     ],
     countryAvailability: [
       {
@@ -5939,10 +5939,10 @@ const products = [
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GL1 Mortar-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/GL1 Mortar-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GL1 Mortar-3.png",
-      "/images/micronics-assets/product-images/pc_case/images/GL1 Mortar-4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086298/product-images/pc_case/GL1_Mortar-1_n7sjat.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/GL1_Mortar-2_jw7ahi.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086299/product-images/pc_case/GL1_Mortar-3_qeyk2o.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086299/product-images/pc_case/GL1_Mortar-4_q1uk9b.png",
     ],
     countryAvailability: [
       {
@@ -6052,9 +6052,9 @@ const products = [
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GH4 LetoMesh-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH4 LetoMesh-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GH4 LetoMesh-3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/GH4_LetoMesh-1_rkjk1m.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086292/product-images/pc_case/GH4_LetoMesh-2_tqtlwq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/GH4_LetoMesh-3_bo48f5.png",
     ],
     countryAvailability: [
       {
@@ -6166,9 +6166,9 @@ const products = [
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/CX-480-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/CX-480-3.png",
-      "/images/micronics-assets/product-images/pc_case/images/CX-480-2.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086286/product-images/pc_case/CX-480-1_pywggf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/CX-480-3_h30xoz.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086287/product-images/pc_case/CX-480-2_alh5cu.png",
     ],
     countryAvailability: [
       {
@@ -6282,11 +6282,11 @@ const products = [
     ).replace(":productId", "GX2-NEURON-GLASS"),
     name: "GX2-Neuron Glass",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/(UPDATED) GX2 NEURON GLASS DB_TRANSLATED.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086340/product-brochures/pc_case/UPDATED_GX2_NEURON_GLASS_DB_TRANSLATED_rxe8r6.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GX2-NEURON-GLASS2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GX2-NEURON-GLASS1.png",
-      "/images/micronics-assets/product-images/pc_case/images/GX2-NEURON-GLASS3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GX2-NEURON-GLASS2_kemy3i.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/GX2-NEURON-GLASS1_qqdsku.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086300/product-images/pc_case/GX2-NEURON-GLASS3_clbxon.png",
     ],
     countryAvailability: [
       {
@@ -6402,11 +6402,11 @@ const products = [
     ).replace(":productId", "GX2-NEURON-MESH"),
     name: "GX2-Neuron Mesh",
     brochure:
-      "/images/micronics-assets/product-images/pc_case/brochure/(UPDATED) GX2 NEURON MESH DB_TRANSLATED.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086332/product-brochures/pc_case/UPDATED_GX2_NEURON_MESH_DB_TRANSLATED_pbk7go.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GX2-NEURON-MESH3.png",
-      "/images/micronics-assets/product-images/pc_case/images/GX2-NEURON-MESH2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GX2-NEURON-MESH1.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086296/product-images/pc_case/GX2-NEURON-MESH3_oym7bi.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086294/product-images/pc_case/GX2-NEURON-MESH2_zqegix.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GX2-NEURON-MESH1_gncfbd.png",
     ],
     countryAvailability: [
       {
@@ -6525,10 +6525,10 @@ const products = [
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/(UPDATED) GX2 NEURON MESH DB_TRANSLATED.jpg",
     img: [
-      "/images/micronics-assets/product-images/pc_case/images/GM2 Helios-1.png",
-      "/images/micronics-assets/product-images/pc_case/images/GM2 Helios-2.png",
-      "/images/micronics-assets/product-images/pc_case/images/GM2 Helios-4.png",
-      "/images/micronics-assets/product-images/pc_case/images/GM2 Helios-3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086301/product-images/pc_case/GM2_Helios-1_mmzo9q.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086302/product-images/pc_case/GM2_Helios-2_fp6car.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086301/product-images/pc_case/GM2_Helios-4_xldxoy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086301/product-images/pc_case/GM2_Helios-3_wxwngq.png",
     ],
     countryAvailability: [
       {
