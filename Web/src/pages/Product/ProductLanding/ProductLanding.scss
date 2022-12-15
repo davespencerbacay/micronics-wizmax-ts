@@ -5,7 +5,7 @@
   .product-img {
     transform: scale(0.8);
     transition: all 0.5s;
-    opacity: 0.6;
+    opacity: 0.5;
 
     img {
       width: 100%;
@@ -17,11 +17,11 @@
     transition: all 0.5s;
     opacity: 1;
   }
-  .product-img.inactiveProductImg {
-    transform: scale(0.8);
-    transition: all 0.5s;
-    opacity: 0.6;
-  }
+  // .product-img.inactiveProductImg {
+  //   transform: scale(0.8);
+  //   transition: all 0.5s;
+  //   opacity: 0.5;
+  // }
   h3 {
     text-align: center;
     font-family: "Roboto", sans-serif;

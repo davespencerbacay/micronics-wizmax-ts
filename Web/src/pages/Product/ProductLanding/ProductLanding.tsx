@@ -24,13 +24,16 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   }, [product, productId]);
   const [imageIndex, setImageIndex] = useState<any>(0);
   let settings: any = {
+    className: "center",
     infinite: true,
     lazyLoad: true,
     speed: 300,
     slidesToShow: 3,
     centerMode: true,
-    centerPadding: 0,
+    centerPadding: "1rem",
     swipeToSlide: true,
+    focusOnSelect: true,
+    slidesToScroll: 1,
     beforeChange: (current: any, next: any) => setImageIndex(next),
   };
 
@@ -61,17 +64,25 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
         <Slider {...settings}>
           {product.img &&
             product.img.map((image: any, index: any) => {
+              console.log(
+                "index",
+                index,
+                "image index",
+                imageIndex,
+                "length",
+                product.img.length
+              );
               return (
                 <div
                   className={
                     index === imageIndex
                       ? "product-img activeProductImg"
-                      : index === imageIndex + 1
-                      ? "product-img inactiveProductImg"
+                      : product.img.length === 3 && imageIndex + 1
+                      ? "product-img activeProductImg"
                       : "product-img"
                   }
                 >
-                  <img src={image} />
+                  <img src={image} alt={image} />
                 </div>
               );
             })}

@@ -24,6 +24,7 @@ const ScrollingVideoAnimation: React.FC<ScrollingVideoAnimationType> = (
       let acceleration = 0.1;
       let scrollPos = 0;
       let delay = 0;
+
       ScrollTrigger.create({
         trigger: refVideoContainer.current,
         pin: refVideoContainer.current,
@@ -33,7 +34,7 @@ const ScrollingVideoAnimation: React.FC<ScrollingVideoAnimationType> = (
         onUpdate: (self) => {
           if (refVideo.current) {
             let videoCurrentTime = refVideo.current.currentTime;
-            scrollPos = self.progress / 0.1;
+            scrollPos = (self.progress / 28) * 400;
 
             delay += (scrollPos - delay) * acceleration;
             videoCurrentTime = scrollPos;
@@ -44,6 +45,8 @@ const ScrollingVideoAnimation: React.FC<ScrollingVideoAnimationType> = (
           }
         },
       });
+    } else {
+      alert("Loading");
     }
   }, [refVideoContainer, refVideo, refVideoText]);
 
@@ -55,6 +58,7 @@ const ScrollingVideoAnimation: React.FC<ScrollingVideoAnimationType> = (
       <video
         id="video"
         className="video"
+        playsInline={true}
         src={props.videoSrc}
         ref={refVideo}
       ></video>
