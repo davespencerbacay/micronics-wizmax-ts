@@ -9,6 +9,7 @@ import { ROUTE_PATH } from "./routes";
 import Drivers from "pages/Support/components/Drivers";
 import ProductLanding from "pages/Product/ProductLanding/ProductLanding";
 import Manuals from "pages/Support/components/Manuals";
+import Ces from "pages/Special/ces";
 
 /* Change context consts */
 export const STORAGE_KEY: Record<string, string> = {
@@ -104,6 +105,10 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   {
     PATH: ROUTE_PATH.BECOME_DISTRIBUTOR,
     ELEMENT: <PageWrapper component={<BecomeDistributor />} />,
+  },
+  {
+    PATH: ROUTE_PATH.CES,
+    ELEMENT: <PageWrapper component={<Ces />} showFooter={false} />,
   },
 ];
 

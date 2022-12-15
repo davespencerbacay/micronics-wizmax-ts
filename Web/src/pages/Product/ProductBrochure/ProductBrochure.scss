@@ -1,0 +1,16 @@
+.brochure-container {
+  animation-name: brochure;
+  animation-timing-function: ease;
+  animation-duration: 0.5s;
+  @keyframes brochure {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}

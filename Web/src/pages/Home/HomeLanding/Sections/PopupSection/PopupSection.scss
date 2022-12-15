@@ -1,0 +1,70 @@
+.popup-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(200, 200, 200, 0.9);
+  border-radius: 10rem 10rem 0 0rem;
+  padding: 2rem;
+  img {
+    width: 20rem;
+  }
+  .wizmax {
+    animation-name: wizmax;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    @keyframes wizmax {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  .ces {
+    animation-name: ces;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    @keyframes ces {
+      0% {
+        transform: rotate3d(1, 1, 1, 90deg);
+      }
+      25% {
+        transform: rotateY(180deg);
+      }
+      50% {
+        transform: rotateZ(270deg);
+      }
+      100% {
+        transform: rotate3d(0, 0, 0, 360deg);
+      }
+    }
+  }
+
+  h3 {
+    text-align: center;
+    strong {
+      animation: text 1s ease alternate-reverse infinite;
+      @keyframes text {
+        0% {
+          color: black;
+        }
+        100% {
+          color: red;
+        }
+      }
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

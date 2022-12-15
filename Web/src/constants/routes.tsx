@@ -13,4 +13,6 @@ export const ROUTE_PATH = {
   CONTACT_INQUIRY: "/contact",
   CONTACT_BECOME_DISTRIBUTOR: "/become-distributor",
   BECOME_DISTRIBUTOR: "/become-distributor",
+  //special links
+  CES: "/ces",
 };

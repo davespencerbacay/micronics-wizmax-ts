@@ -6,9 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { REACT_ROUTES } from "constants/";
 import "styles/index.scss";
 import { ThemeContextProvider } from "context/ThemeContext";
+import SmoothScroll from "layouts/SmoothScroll/SmoothScroll";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.Fragment>
+    {/* <SmoothScroll /> */}
     <ThemeContextProvider>
       <AppContextProvider>
         <Provider>

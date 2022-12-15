@@ -1,0 +1,31 @@
+.ces-product-page-container {
+  animation-name: product-page;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  @keyframes product-page {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .cat-container {
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 4rem;
+    }
+    .cat-row {
+      .cat-col {
+        .cat-img {
+          width: 30rem;
+        }
+        p {
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
+}
