@@ -24,6 +24,8 @@ $lightgray: #d3d3d3;
       .links {
         color: #d3d3d3;
         transition: all 0.3s ease;
+        background-color: transparent;
+        border: none;
         &:hover {
           color: white;
         }

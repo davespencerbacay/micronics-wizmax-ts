@@ -50,7 +50,7 @@ export const productSubLinks: SubLinksType[] = [
     id: "product",
     icon: <Img img={PRODUCT_IMAGES.MOUSE} width={130}></Img>,
     text: intl("productSubLinks.mouse"),
-    path: ROUTE_PATH.PRODUCT_CATEGORY + 1,
+    path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
     className: "sub-navbar-items",
   },
   {

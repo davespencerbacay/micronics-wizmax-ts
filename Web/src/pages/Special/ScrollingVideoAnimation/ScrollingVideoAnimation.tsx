@@ -45,8 +45,6 @@ const ScrollingVideoAnimation: React.FC<ScrollingVideoAnimationType> = (
           }
         },
       });
-    } else {
-      alert("Loading");
     }
   }, [refVideoContainer, refVideo, refVideoText]);
 

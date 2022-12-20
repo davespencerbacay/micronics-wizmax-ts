@@ -15,17 +15,24 @@ const CESProductPage: React.FC = () => {
         );
         return (
           <Container className="cat-container" fluid>
-            <h1>{cat.name}</h1>
+            <div className="cat-title">
+              <h1>{cat.name}</h1>
+            </div>
 
             <Row className="cat-row">
               {productFilterByCategoryId.map((product: any) => {
                 return (
-                  <Col className="cat-col" xs={2} sm={2} md={2} lg={2}>
+                  <Col className="cat-col" xs={4} sm={4} md={3} lg={3}>
                     <Link to={product.path}>
                       <Img className="cat-img" img={product.img[0]}></Img>
                     </Link>
 
-                    <p>{product.name}</p>
+                    <div className="new-release-text-container">
+                      <p className="new-release-text">
+                        {product.isNewRelease ? product.isNewRelease : <br />}
+                      </p>
+                    </div>
+                    <p className="cat-name">{product.name}</p>
                   </Col>
                 );
               })}
