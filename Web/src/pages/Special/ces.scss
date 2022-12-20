@@ -5,8 +5,8 @@
       background-color: black;
       background-attachment: fixed;
       .video {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         object-fit: cover;
       }
     }
@@ -31,4 +31,11 @@
         -10px 0px 20px rgb(105, 105, 105);
     }
   }
+}
+.loading-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }

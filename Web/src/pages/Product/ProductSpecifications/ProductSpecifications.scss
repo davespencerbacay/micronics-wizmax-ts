@@ -18,19 +18,38 @@
       tr {
         border-top: 0.1rem solid lightgray;
         border-bottom: 0.1rem solid lightgray;
-        th {
+        .specs-name {
           font-family: "Roboto", sans-serif;
           font-size: 2rem;
           padding: 3rem;
           border: none;
         }
-        td {
+        .subname-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          text-align: center;
+        }
+        .subdescription-container {
+          .specs-subdescription {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 200%;
+          }
+        }
+
+        .specs-description {
           border: none;
           font-family: "Exo", sans-serif;
           padding: 3.5rem;
           display: flex;
-          align-items: center;
+          flex-direction: row;
+          align-items: flex-end;
           justify-content: flex-end;
+          text-align: end;
         }
       }
     }

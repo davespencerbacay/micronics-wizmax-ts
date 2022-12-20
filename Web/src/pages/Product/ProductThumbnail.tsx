@@ -55,7 +55,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
         {productFilterByCategoryId.map((p: any, index: any) => {
           console.log("index", index, "image", p.img[0]);
           return (
-            <Col xs={4} sm={3} md={2} lg={2} key={p.id}>
+            <Col xs={4} sm={3} md={2} lg={2} key={index}>
               <div className="thumbnail-container">
                 <Link to={p.path}>
                   <img src={p.img[0]} alt={p.img[0]} />
@@ -64,14 +64,14 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                   <p className="thumbnail-product-label">{p.name}</p>
                   <Button
                     className="thumbnail-country-availability-btn"
-                    onClick={() => toggleCountryAvailability(p.id)}
-                    onBlur={() => closeCountryAvailability(p.id)}
+                    onClick={() => toggleCountryAvailability(index)}
+                    onBlur={() => closeCountryAvailability(index)}
                   >
                     Country Availability
                     <span>
                       <GoTo
                         className={
-                          openCountryAvailability === p.id
+                          openCountryAvailability === index
                             ? "arrowOpen"
                             : "arrowClose"
                         }
@@ -79,7 +79,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                     </span>
                     <Collapse
                       className="thumbnail-country-availability-collapse"
-                      isOpen={isOpen[p.id]}
+                      isOpen={isOpen[index]}
                     >
                       <Row>
                         {p.countryAvailability.map(

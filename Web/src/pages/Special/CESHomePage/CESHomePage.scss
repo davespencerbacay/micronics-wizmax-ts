@@ -1,0 +1,13 @@
+.ces-home-page-container {
+  animation-name: home-page;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  @keyframes home-page {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

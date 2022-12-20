@@ -15,7 +15,7 @@ import {
   Input,
 } from "reactstrap";
 import { IMAGES, LANGUAGES, STORAGE_KEY } from "constants/";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { LOCALES } from "i18n";
 import { useIntl } from "i18n/intl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -48,6 +48,7 @@ interface INavItems {
   text: string;
   path: string;
   handler?: () => void;
+  onClick?: () => void;
 }
 
 interface IColValue {
@@ -86,7 +87,6 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   });
 
   const navLinkHandlers = (link: LinkType) => {
-    setShowSubLinks(true);
     setHoveredLinks({
       productLinks: link === "products",
       supportLinks: link === "support",
@@ -103,6 +103,26 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
       shopLinks: false,
       contactLinks: false,
     });
+  };
+  const subNavBarHandler = () => {
+    setShowSubLinks(false);
+  };
+
+  const linkHandler = (link: LinkType) => {
+    window.scrollTo(0, 0);
+    setShowSubLinks(true);
+    setHoveredLinks({
+      productLinks: link === "products",
+      supportLinks: link === "support",
+      shopLinks: link === "shop",
+      contactLinks: link === "contact",
+    });
+  };
+  const navigate = useNavigate();
+  const navigateToHome = () => {
+    navigate("/");
+    setShowSubLinks(false);
+    window.scrollTo(0, 0);
   };
   // LIGHT AND DARK THEME CONTEXT
   const isDarkMode = useIsDarkMode();
@@ -123,27 +143,32 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     {
       text: useIntl("navigationBar.home"),
       path: ROUTE_PATH.INDEX,
-      handler: () => hideAllLinks(),
+      // handler: () => hideAllLinks(),
+      onClick: () => navigateToHome(),
     },
     {
       text: useIntl("navigationBar.products"),
       path: ROUTE_PATH.PRODUCT,
       handler: () => navLinkHandlers("products"),
+      onClick: () => linkHandler("products"),
     },
     {
       text: useIntl("navigationBar.support"),
       path: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
       handler: () => navLinkHandlers("support"),
+      onClick: () => linkHandler("support"),
     },
     {
       text: useIntl("navigationBar.shop"),
       path: ROUTE_PATH.SHOP,
       handler: () => navLinkHandlers("shop"),
+      onClick: () => linkHandler("shop"),
     },
     {
       text: useIntl("navigationBar.contact"),
       path: ROUTE_PATH.CONTACT,
       handler: () => navLinkHandlers("contact"),
+      onClick: () => linkHandler("contact"),
     },
   ];
   const colValues: IColValue[] = [
@@ -184,14 +209,13 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
           {navItems.map((item, index) => {
             return (
               <NavItem className="navbar-item" key={index}>
-                <Link
+                <button
                   className="links"
-                  to={item.path}
                   onMouseOver={item.handler}
-                  onMouseLeave={item.handler}
+                  onClick={item.onClick}
                 >
                   {item.text}
-                </Link>
+                </button>
               </NavItem>
             );
           })}
@@ -259,34 +283,36 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
 
   return (
     <React.Fragment>
-      <Navbar className="navbar" fixed="top">
-        <Container fluid className="container-fluid">
-          <Row>
-            {colValues.map((colValue) => (
-              <Col {...colValue.col} key={colValue.id}>
-                {colValue.component}
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </Navbar>
-      {showSubLinks && (
-        <NavigationBarSubLinks
-          subLinks={
-            hoveredLinks?.productLinks
-              ? productSubLinks
-              : hoveredLinks?.supportLinks
-              ? supportSubLinks
-              : hoveredLinks?.shopLinks
-              ? shopSubLinks
-              : hoveredLinks?.contactLinks
-              ? contactSubLinks
-              : null
-          }
-          hideAllLinks={hideAllLinks}
-        ></NavigationBarSubLinks>
-      )}
-      {openSearchBar && <SearchBarDesktop />}
+      <div onMouseLeave={subNavBarHandler}>
+        <Navbar className="navbar" fixed="top">
+          <Container fluid className="container-fluid">
+            <Row>
+              {colValues.map((colValue) => (
+                <Col {...colValue.col} key={colValue.id}>
+                  {colValue.component}
+                </Col>
+              ))}
+            </Row>
+          </Container>
+        </Navbar>
+        {showSubLinks && (
+          <NavigationBarSubLinks
+            subLinks={
+              hoveredLinks?.productLinks
+                ? productSubLinks
+                : hoveredLinks?.supportLinks
+                ? supportSubLinks
+                : hoveredLinks?.shopLinks
+                ? shopSubLinks
+                : hoveredLinks?.contactLinks
+                ? contactSubLinks
+                : null
+            }
+            hideAllLinks={hideAllLinks}
+          ></NavigationBarSubLinks>
+        )}
+        {openSearchBar && <SearchBarDesktop />}
+      </div>
     </React.Fragment>
   );
 };

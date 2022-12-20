@@ -1,4 +1,14 @@
 .thumbnail-container {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  &:hover {
+    scale: 1.1;
+    transition: scale ease 0.5s;
+  }
+  &:not(:hover) {
+    scale: 1;
+    transition: scale ease 0.5s;
+  }
   img {
     width: 100%;
   }
@@ -8,6 +18,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+
     .thumbnail-product-label {
       font-family: "Exo", sans-serif;
       font-weight: bold;

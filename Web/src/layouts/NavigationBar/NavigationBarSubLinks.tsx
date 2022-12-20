@@ -54,17 +54,13 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
   };
 
   const hideSubNavbarHandler = () => {
-    setHideSubNavbar(true);
+    setHideSubNavbar(false);
     props.hideAllLinks();
   };
 
   if (props.showSubLinks || !hideSubNavbar) {
     return (
-      <Navbar
-        className="sub-navbar"
-        fixed="top"
-        onMouseLeave={hideSubNavbarHandler}
-      >
+      <Navbar className="sub-navbar" fixed="top">
         <Nav className="sub-navbar-nav">
           {props.subLinks &&
             props.subLinks!.map((sublink, index) => {
@@ -76,6 +72,11 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
                         {sublink.text}
                         {sublink.icon}
                       </div>
+                    </Link>
+                  ) : sublink.id === "product" ? (
+                    <Link to={sublink.path}>
+                      {sublink.icon}
+                      <div>{sublink.text}</div>
                     </Link>
                   ) : (
                     <Link to={sublink.path}>

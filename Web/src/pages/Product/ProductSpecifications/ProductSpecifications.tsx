@@ -9,15 +9,49 @@ interface IProductSpecifications {
 const ProductSpecifications: React.FC<IProductSpecifications> = (props) => {
   return (
     <div className="specifications-container">
-      <Table className="specifications-table">
+      <Table className="specifications-table" responsive>
         <tbody>
           {props.specifications.map((specs: any) => {
-            return (
-              <tr>
-                <th>{specs.name}</th>
-                <td>{specs.description}</td>
-              </tr>
-            );
+            if (specs.subname && specs.subdescription !== null) {
+              return (
+                <tr>
+                  <th className="specs-name">{specs.name}</th>
+                  <td>
+                    {specs.subname && (
+                      <div className="subname-container">
+                        {specs.subname.map((name: any) => {
+                          return <th className="specs-subname">{name}</th>;
+                        })}
+                      </div>
+                    )}
+                  </td>
+                  <td>
+                    {specs.subdescription && (
+                      <div className="subdescription-container">
+                        {specs.subdescription.map((description: any) => {
+                          return (
+                            <td className="specs-subdescription">
+                              {description}
+                            </td>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </td>
+
+                  <td className="specs-description">{specs.description}</td>
+                </tr>
+              );
+            } else {
+              return (
+                <tr>
+                  <th className="specs-name">{specs.name}</th>
+                  <td></td>
+                  <td></td>
+                  <td className="specs-description">{specs.description}</td>
+                </tr>
+              );
+            }
           })}
         </tbody>
       </Table>
