@@ -7,9 +7,8 @@ import MouseSection from "./Sections/MouseSection/MouseSection";
 import KeyboardSection from "./Sections/KeyboardSection/KeyboardSection";
 import OtherProductsSection from "./Sections/OtherProductsSection/OtherProductsSection";
 import PopupSection from "./Sections/PopupSection/PopupSection";
-import SmoothScroll from "layouts/SmoothScroll/SmoothScroll";
 
-const HomeLanding: React.FC = () => {
+const HomeLandingDesktop: React.FC = () => {
   const videoSection = useRef<HTMLDivElement>(null);
   const videoSectionHandler = () => {
     if (videoSection.current) {
@@ -30,4 +29,4 @@ const HomeLanding: React.FC = () => {
   );
 };
 
-export default HomeLanding;
+export default HomeLandingDesktop;
