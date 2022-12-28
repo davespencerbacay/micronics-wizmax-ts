@@ -22,21 +22,27 @@ const CategoryTab: React.FC<CategoryTabType> = (props) => {
   return (
     <React.Fragment>
       {isMobile ? (
-        <div className="nav">
-          <Nav className="nav-container" pills>
-            {productCategories.map((cat, index) => (
-              <NavItem className="nav-items" key={cat.categoryId}>
-                {navClick && (
-                  <p onClick={() => props.refLinkHandler(index)}>{cat.name}</p>
-                )}
+        <div className="nav-mobile">
+          <Nav className={navClick ? "nav-container" : "nav-container-hide"}>
+            {productCategories.map((cat, index) => {
+              return (
+                <React.Fragment>
+                  {navClick && (
+                    <NavItem className="nav-items" key={cat.categoryId}>
+                      <p onClick={() => props.refLinkHandler(index)}>
+                        {cat.name}
+                      </p>
 
-                {/* <Link to={cat.link}>{cat.name}</Link> */}
-              </NavItem>
-            ))}
-            <div className="arrow-container" onClick={navClickHandler}>
-              <span></span>
-            </div>
+                      {/* <Link to={cat.link}>{cat.name}</Link> */}
+                    </NavItem>
+                  )}
+                </React.Fragment>
+              );
+            })}
           </Nav>
+          <div className="arrow-container" onClick={navClickHandler}>
+            <span></span>
+          </div>
         </div>
       ) : (
         <div>
