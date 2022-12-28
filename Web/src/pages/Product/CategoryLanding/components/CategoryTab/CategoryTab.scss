@@ -1,42 +1,79 @@
-.nav-container {
+.nav {
   position: fixed;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background-color: darkgray;
-  padding: 0.5rem;
+  margin: auto;
   z-index: 1;
-  .nav-items {
-    padding: 0.5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    p {
-      color: white;
-      cursor: pointer;
-      &:hover {
-        color: black;
+  .nav-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+    .arrow-container {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      background-color: lightgray;
+      span {
+        border: 0.1rem solid Gray;
+        border-radius: 5rem;
+        background-color: white;
+        padding: 1rem;
+        width: 10rem;
       }
     }
   }
 }
-.shop-now {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  position: relative;
-  margin-bottom: 4rem;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: white;
-  z-index: 0;
-  top: 4rem;
-  border: 0.1rem solid lightgray;
-  padding: 0rem;
-  a {
-    color: black;
+
+//FOR DESKTOP DEVICES
+@media only screen and (min-width: 754px) {
+  .nav-container {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: darkgray;
+    padding: 0.5rem;
+    z-index: 1;
+    .nav-items {
+      padding: 0.5rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      p {
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  .shop-now {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    position: relative;
+    margin-bottom: 4rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    z-index: 0;
+    top: 4rem;
+    border: 0.1rem solid lightgray;
+    padding: 0rem;
+    a {
+      color: black;
+    }
   }
 }
