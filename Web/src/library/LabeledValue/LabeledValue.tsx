@@ -7,6 +7,11 @@ interface ILabeledValue {
   subTitle?: string;
   isVisible?: boolean;
   variant?: "light" | "bold";
+  buttonProps?: {
+    show?: boolean;
+    text: string;
+    onClick: () => void;
+  };
 }
 
 const LabeledValue: React.FC<ILabeledValue> = (props) => {
@@ -17,8 +22,17 @@ const LabeledValue: React.FC<ILabeledValue> = (props) => {
   if (props.isVisible) {
     return (
       <div className={labelValueClassnames}>
-        <h5>{props.title}</h5>
-        <p>{props.subTitle}</p>
+        <div>
+          <h5>{props.title}</h5>
+          <p>{props.subTitle}</p>
+        </div>
+        <div>
+          {props.buttonProps?.show ? (
+            <button onClick={props.buttonProps.onClick}>
+              {props.buttonProps.text}
+            </button>
+          ) : null}
+        </div>
       </div>
     );
   }

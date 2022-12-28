@@ -10,8 +10,8 @@ interface ILabeledInput extends InputProps {
 const LabeledInput: React.FC<ILabeledInput> = (props) => {
   return (
     <div className="labeled-input">
-      <LabeledValue title={props.label} />
-      <FormikTextInput {...props} />
+      {props.hideLabel ? null : <LabeledValue title={props.label} />}
+      <FormikTextInput {...props} placeholder={props.label} />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useField } from "formik";
 import { FormFeedback, Input, InputProps } from "reactstrap";
+import "./FormikInput.scss";
 
 interface IFormikTextInput extends InputProps {
   isTextArea?: boolean;
@@ -31,6 +32,8 @@ const FormikTextInput: React.FC<IFormikTextInput> = (props) => {
         value={field.value}
         onChange={handleOnChange}
         invalid={errorText ? true : false}
+        className="main-input"
+        rows={5}
       />
       <FormFeedback>{meta.error}</FormFeedback>
     </React.Fragment>

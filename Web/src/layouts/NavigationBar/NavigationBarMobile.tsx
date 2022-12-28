@@ -132,6 +132,21 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
     "line-2-horizontal": line2Animation,
   });
 
+  const listItems = [
+    {
+      className: "navbar-ul-subgroup-li",
+      onClick: () => props.changeLanguage(LOCALES.KOREAN),
+      flag: <KoreanFlag width={30} className="kr-svg-navbar-mobile" />,
+      flagName: intl("navigationBar.korean"),
+    },
+    {
+      className: "navbar-ul-subgroup-li",
+      onClick: () => props.changeLanguage(LOCALES.ENGLISH),
+      flag: <USFLag width={30} className="us-flag-svg" />,
+      flagName: intl("navigationBar.english"),
+    },
+  ];
+
   return (
     <React.Fragment>
       <Container className={navbarClassname} fluid="sm">
@@ -147,20 +162,17 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
           <ListGroupItem className="translation">
             {intl("navigationBar.translation")}
             <ListGroup className="navbar-ul-subgroup" flush>
-              <ListGroupItem
-                className="navbar-ul-subgroup-li"
-                onClick={() => props.changeLanguage(LOCALES.KOREAN)}
-              >
-                <KoreanFlag width={30} className="kr-svg-navbar-mobile" />
-                {intl("navigationBar.korean")}
-              </ListGroupItem>
-              <ListGroupItem
-                className="navbar-ul-subgroup-li"
-                onClick={() => props.changeLanguage(LOCALES.ENGLISH)}
-              >
-                <USFLag width={30} className="us-flag-svg" />
-                {intl("navigationBar.english")}
-              </ListGroupItem>
+              {listItems.map((items: any) => {
+                return (
+                  <ListGroupItem
+                    className={items.className}
+                    onClick={items.onClick}
+                  >
+                    {items.flag}
+                    {items.flagName}
+                  </ListGroupItem>
+                );
+              })}
             </ListGroup>
           </ListGroupItem>
           <ListGroupItem className="social-media-section">

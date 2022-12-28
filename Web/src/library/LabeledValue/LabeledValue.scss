@@ -1,4 +1,6 @@
 .label-value {
+  display: flex;
+  justify-content: space-between;
   h5 {
     font-family: "Roboto", sans-serif;
     font-weight: 800;
@@ -8,6 +10,12 @@
   }
   p {
     font-size: 1.2rem;
+  }
+  button {
+    border: none;
+    background: transparent;
+    border-bottom: 1px dotted #333;
+    font-size: 1.3rem;
   }
 }
 

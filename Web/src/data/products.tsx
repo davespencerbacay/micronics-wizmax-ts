@@ -162,6 +162,7 @@ const products = [
         country: "Japan",
       },
     ],
+    isNewRelease: "New Release",
     table: [
       {
         name: "MODEL NAME",
@@ -524,6 +525,7 @@ const products = [
         country: "Japan",
       },
     ],
+    isNewRelease: "New Release",
     table: [
       {
         name: "MODEL NAME",
@@ -650,6 +652,7 @@ const products = [
         country: "Japan",
       },
     ],
+    isNewRelease: "New Release",
     table: [
       {
         name: "MODEL NAME",
@@ -765,6 +768,7 @@ const products = [
         country: "Japan",
       },
     ],
+    isNewRelease: "New Release",
     table: [
       {
         name: "MODEL NAME",
@@ -884,6 +888,7 @@ const products = [
         country: "Japan",
       },
     ],
+    isNewRelease: "New Release",
     table: [
       {
         name: "MODEL NAME",
@@ -1009,6 +1014,7 @@ const products = [
         country: "Japan",
       },
     ],
+    isNewRelease: "New Release",
     table: [
       {
         name: "MODEL NAME",
@@ -1133,6 +1139,7 @@ const products = [
         country: "Japan",
       },
     ],
+    isNewRelease: "New Release",
     table: [
       {
         name: "MODEL NAME",
