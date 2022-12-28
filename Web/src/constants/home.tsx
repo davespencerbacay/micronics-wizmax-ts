@@ -1,5 +1,7 @@
 export const HOME_IMAGES = {
   HOME_LANDING: "images/micronics-assets/home-page/Landing Page.jpg",
+  HOME_MOBILE_BG: "images/micronics-assets/home-page/mobile-bg.png",
+  HOME_MOBILE_LOGO: "images/micronics-assets/home-page/WIZMAX LOGO 3.1.png",
   HOME_HEADSET_SECTION: {
     HEADSET: "images/micronics-assets/home-page/headset-mh2.png",
     HEADSET_LEFT: "images/micronics-assets/home-page/MH2-FacingLeft.png",

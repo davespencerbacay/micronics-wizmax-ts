@@ -1,16 +1,29 @@
 .keyboard-section {
-  position: relative;
+  height: 100vh;
+  background: linear-gradient(to top, #ffffff, #e1e2e8);
+  background-attachment: fixed;
+  overflow: hidden;
+  .keyboard-img-container {
+    position: relative;
+    top: 20rem;
+    width: auto;
+    img {
+      width: 200%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
   .keyboard-caption-container {
-    position: absolute;
-    top: 20%;
-    left: 50%;
+    position: relative;
+    top: 50rem;
     text-align: center;
-    transform: translate(-50%, -50%);
     h3 {
-      font-size: 7rem;
+      font-size: 3rem;
     }
     p {
-      font-size: 3rem;
+      font-size: 2rem;
     }
     .learn-more {
       position: relative;
@@ -42,9 +55,57 @@
       }
     }
   }
-  .keyboard-img-container {
-    img {
-      width: 100%;
+}
+//DESKTOP VIEW
+@media only screen and (min-width: 754px) {
+  .keyboard-section {
+    position: relative;
+    .keyboard-caption-container {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      h3 {
+        font-size: 7rem;
+      }
+      p {
+        font-size: 3rem;
+      }
+      .learn-more {
+        position: relative;
+        top: 1rem;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-family: "Exo", sans-serif;
+          width: 25rem;
+          font-size: 1.7rem;
+          border: none;
+          border-radius: 1.5rem;
+          box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5),
+            0.5rem 0.5rem 1.5rem rgba(70, 70, 70, 0.12);
+          background-color: #eff0f3;
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          span {
+            float: right;
+            svg {
+              width: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+    .keyboard-img-container {
+      img {
+        width: 100%;
+      }
     }
   }
 }
