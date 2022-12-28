@@ -76,54 +76,54 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 2rem;
-            animation: textgradient 0.5s linear infinite alternate-reverse;
-            @keyframes textgradient {
-              0% {
-                background: linear-gradient(
-                  to right,
-                  rgb(255, 255, 0),
-                  rgb(255, 235, 0)
-                );
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-              }
-              25% {
-                background: linear-gradient(
-                  to right,
-                  rgb(255, 235, 0),
-                  rgb(255, 215, 0)
-                );
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-              }
-              50% {
-                background: linear-gradient(
-                  to right,
-                  rgb(255, 215, 0),
-                  rgb(255, 195, 0)
-                );
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-              }
-              75% {
-                background: linear-gradient(
-                  to right,
-                  rgb(255, 195, 0),
-                  rgb(255, 175, 0)
-                );
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-              }
-              100% {
-                background: linear-gradient(
-                  to right,
-                  rgb(255, 175, 0),
-                  rgb(255, 165, 0)
-                );
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-              }
-            }
+            // animation: textgradient 0.5s linear infinite alternate-reverse;
+            // @keyframes textgradient {
+            //   0% {
+            //     background: linear-gradient(
+            //       to right,
+            //       rgb(255, 255, 0),
+            //       rgb(255, 235, 0)
+            //     );
+            //     background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+            //   }
+            //   25% {
+            //     background: linear-gradient(
+            //       to right,
+            //       rgb(255, 235, 0),
+            //       rgb(255, 215, 0)
+            //     );
+            //     background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+            //   }
+            //   50% {
+            //     background: linear-gradient(
+            //       to right,
+            //       rgb(255, 215, 0),
+            //       rgb(255, 195, 0)
+            //     );
+            //     background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+            //   }
+            //   75% {
+            //     background: linear-gradient(
+            //       to right,
+            //       rgb(255, 195, 0),
+            //       rgb(255, 175, 0)
+            //     );
+            //     background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+            //   }
+            //   100% {
+            //     background: linear-gradient(
+            //       to right,
+            //       rgb(255, 175, 0),
+            //       rgb(255, 165, 0)
+            //     );
+            //     background-clip: text;
+            //     -webkit-text-fill-color: transparent;
+            //   }
+            // }
           }
         }
       }
@@ -204,54 +204,54 @@
               background-clip: text;
               -webkit-text-fill-color: transparent;
               font-size: 2rem;
-              animation: textgradient 0.5s linear infinite alternate-reverse;
-              @keyframes textgradient {
-                0% {
-                  background: linear-gradient(
-                    to right,
-                    rgb(255, 255, 0),
-                    rgb(255, 235, 0)
-                  );
-                  background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                }
-                25% {
-                  background: linear-gradient(
-                    to right,
-                    rgb(255, 235, 0),
-                    rgb(255, 215, 0)
-                  );
-                  background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                }
-                50% {
-                  background: linear-gradient(
-                    to right,
-                    rgb(255, 215, 0),
-                    rgb(255, 195, 0)
-                  );
-                  background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                }
-                75% {
-                  background: linear-gradient(
-                    to right,
-                    rgb(255, 195, 0),
-                    rgb(255, 175, 0)
-                  );
-                  background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                }
-                100% {
-                  background: linear-gradient(
-                    to right,
-                    rgb(255, 175, 0),
-                    rgb(255, 165, 0)
-                  );
-                  background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                }
-              }
+              // animation: textgradient 0.5s linear infinite alternate-reverse;
+              // @keyframes textgradient {
+              //   0% {
+              //     background: linear-gradient(
+              //       to right,
+              //       rgb(255, 255, 0),
+              //       rgb(255, 235, 0)
+              //     );
+              //     background-clip: text;
+              //     -webkit-text-fill-color: transparent;
+              //   }
+              //   25% {
+              //     background: linear-gradient(
+              //       to right,
+              //       rgb(255, 235, 0),
+              //       rgb(255, 215, 0)
+              //     );
+              //     background-clip: text;
+              //     -webkit-text-fill-color: transparent;
+              //   }
+              //   50% {
+              //     background: linear-gradient(
+              //       to right,
+              //       rgb(255, 215, 0),
+              //       rgb(255, 195, 0)
+              //     );
+              //     background-clip: text;
+              //     -webkit-text-fill-color: transparent;
+              //   }
+              //   75% {
+              //     background: linear-gradient(
+              //       to right,
+              //       rgb(255, 195, 0),
+              //       rgb(255, 175, 0)
+              //     );
+              //     background-clip: text;
+              //     -webkit-text-fill-color: transparent;
+              //   }
+              //   100% {
+              //     background: linear-gradient(
+              //       to right,
+              //       rgb(255, 175, 0),
+              //       rgb(255, 165, 0)
+              //     );
+              //     background-clip: text;
+              //     -webkit-text-fill-color: transparent;
+              //   }
+              // }
             }
           }
         }

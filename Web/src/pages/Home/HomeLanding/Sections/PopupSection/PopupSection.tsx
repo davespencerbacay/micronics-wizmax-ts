@@ -25,10 +25,6 @@ const PopupSection: React.FC = () => {
       {!isMobile && (
         <div className="popup-container">
           <Img
-            className="wizmax"
-            img="/images/micronics-assets/home-page/wizmax.png"
-          />
-          <Img
             className="ces"
             img="/images/micronics-assets/home-page/ces.png"
           />
