@@ -1,4 +1,5 @@
 import products from "data/products";
+import useResponsive from "hooks/useResponsive";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -49,13 +50,14 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   const hideToolTipHandler = () => {
     setShowToolTip("");
   };
+  const isMobile = useResponsive("mobile");
   return (
     <Container fluid>
       <Row>
         {productFilterByCategoryId.map((p: any, index: any) => {
           console.log("index", index, "image", p.img[0]);
           return (
-            <Col xs={4} sm={3} md={2} lg={2} key={index}>
+            <Col xs={6} sm={6} md={2} lg={2} key={index}>
               <div className="thumbnail-container">
                 <Link to={p.path}>
                   <img src={p.img[0]} alt={p.img[0]} />

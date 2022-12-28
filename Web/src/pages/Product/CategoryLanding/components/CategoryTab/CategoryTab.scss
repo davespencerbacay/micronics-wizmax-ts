@@ -1,5 +1,6 @@
-.nav {
+.nav-mobile {
   position: fixed;
+  top: 6.5rem;
   width: 100%;
   margin: auto;
   z-index: 1;
@@ -7,27 +8,100 @@
     margin: 0;
     padding: 0;
     display: flex;
+    height: 40vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: lightgray;
-    .arrow-container {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      text-align: center;
-      background-color: lightgray;
-      span {
-        border: 0.1rem solid Gray;
-        border-radius: 5rem;
-        background-color: white;
-        padding: 1rem;
-        width: 10rem;
+    background-color: darkgray;
+    transition: all 0.5s ease;
+    animation: navheight 0.5s ease;
+    @keyframes navheight {
+      0% {
+        height: 0vh;
       }
+      100% {
+        height: 40vh;
+      }
+    }
+    .nav-items {
+      animation: navitems 0.5s ease;
+      @keyframes navitems {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      p {
+        padding: 1.1rem;
+        color: white;
+        cursor: pointer;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  .nav-container-hide {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 0vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: darkgray;
+    transition: height 0.5s ease;
+    animation: navheighthide 0.5s ease;
+    @keyframes navheighthide {
+      100% {
+        height: 0vh;
+      }
+      0% {
+        height: 40vh;
+      }
+    }
+    .nav-items {
+      animation: navitemshide 0.5s ease;
+      @keyframes navitemshide {
+        100% {
+          opacity: 1;
+        }
+        0% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .arrow-container {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: lightgray;
+    span {
+      border: 0.1rem solid Gray;
+      border-radius: 5rem;
+      background-color: white;
+      padding: 0.2rem;
+      width: 10rem;
+      position: relative;
+      top: 0.5rem;
     }
   }
 }

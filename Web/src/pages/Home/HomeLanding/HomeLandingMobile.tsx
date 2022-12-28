@@ -6,7 +6,6 @@ import MainSection from "./Sections/MainSection/MainSection";
 import MouseSection from "./Sections/MouseSection/MouseSection";
 import OtherProductsSection from "./Sections/OtherProductsSection/OtherProductsSection";
 import PopupSection from "./Sections/PopupSection/PopupSection";
-import VideoContainer from "./VideoAnimation";
 
 const HomeLandingMobile: React.FC = () => {
   const headsetSection = useRef<HTMLDivElement>(null);
@@ -22,7 +21,7 @@ const HomeLandingMobile: React.FC = () => {
       <MouseSection />
       <KeyboardSection />
       <OtherProductsSection />
-      {/* <PopupSection /> */}
+      <PopupSection />
     </div>
   );
 };
