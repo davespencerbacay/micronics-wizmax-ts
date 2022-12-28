@@ -21,6 +21,7 @@ import Tiktok from "library/Images/SocialMedias/Tiktok/Tiktok";
 import Twitter from "library/Images/SocialMedias/Twitter/Twitter";
 import Youtube from "library/Images/SocialMedias/Youtube/Youtube";
 import { SOCIAL_MEDIA } from "constants/";
+import NavbarLogoMobile from "library/NavigationBar/NavbarLogoMobile";
 
 //NAVIGATION LINKS AND ROUTES
 const NavigationLinksMobile: React.FC = () => {
@@ -149,38 +150,45 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
 
   return (
     <React.Fragment>
-      <Container className={navbarClassname} fluid="sm">
-        <FormGroup className="switch-container" switch>
-          <Input className="switch" type="switch" role="switch" />
-        </FormGroup>
-        <div className="cross-container" onClick={crossHandler}>
-          <div className={line1Classname}></div>
-          <div className={line2Classname}></div>
+      <div className="navbar-mobile">
+        <Container className={navbarClassname} fluid="sm">
+          <FormGroup className="switch-container" switch>
+            <Input className="switch" type="switch" role="switch" />
+          </FormGroup>
+          <div className="cross-container" onClick={crossHandler}>
+            <div className={line1Classname}></div>
+            <div className={line2Classname}></div>
+          </div>
+          <ListGroup className="navbar-ul" flush>
+            <NavigationLinksMobile />
+            <ListGroupItem className="translation">
+              {intl("navigationBar.translation")}
+              <ListGroup className="navbar-ul-subgroup" flush>
+                {listItems.map((items: any) => {
+                  return (
+                    <ListGroupItem
+                      className={items.className}
+                      onClick={items.onClick}
+                    >
+                      {items.flag}
+                      {items.flagName}
+                    </ListGroupItem>
+                  );
+                })}
+              </ListGroup>
+            </ListGroupItem>
+            <ListGroupItem className="social-media-section">
+              <h2>{intl("navigationBar.getInTouch")}</h2>
+              <NavbarSocialMedias />
+            </ListGroupItem>
+          </ListGroup>
+        </Container>
+        <div className="navbar-logo-container">
+          <Link to={ROUTE_PATH.INDEX}>
+            <NavbarLogoMobile />
+          </Link>
         </div>
-        <ListGroup className="navbar-ul" flush>
-          <NavigationLinksMobile />
-          <ListGroupItem className="translation">
-            {intl("navigationBar.translation")}
-            <ListGroup className="navbar-ul-subgroup" flush>
-              {listItems.map((items: any) => {
-                return (
-                  <ListGroupItem
-                    className={items.className}
-                    onClick={items.onClick}
-                  >
-                    {items.flag}
-                    {items.flagName}
-                  </ListGroupItem>
-                );
-              })}
-            </ListGroup>
-          </ListGroupItem>
-          <ListGroupItem className="social-media-section">
-            <h2>{intl("navigationBar.getInTouch")}</h2>
-            <NavbarSocialMedias />
-          </ListGroupItem>
-        </ListGroup>
-      </Container>
+      </div>
     </React.Fragment>
   );
 };
