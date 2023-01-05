@@ -10,16 +10,17 @@ export const HOME_IMAGES = {
     MOUSE: "images/micronics-assets/home-page/mouse.png",
   },
   HOME_KEYBOARD_SECTION: {
-    KEYBOARD: "images/micronics-assets/home-page/Keyboard.png",
+    KEYBOARD: "images/micronics-assets/home-page/Keyboard New.png",
   },
   HOME_OTHERS_SECTION: {
     ACCESSORIES_1: "images/micronics-assets/home-page/Accessories-1.png",
     ACCESSORIES_2: "images/micronics-assets/home-page/Accessories-2.png",
     POWER_SUPPLY: "images/micronics-assets/home-page/PSU.png",
+    PC_CASE: "images/micronics-assets/home-page/EH-1 Mondrian -2.png",
   },
 };
 export const HOME_VIDEOS = {
   HEADSET_MH2: "videos/home/headset.mp4",
   MOUSE_WM2:
-    "https://res.cloudinary.com/ddwocxwmc/video/upload/v1671081057/WM2_Sensor_gcguok.mp4",
+    "https://res.cloudinary.com/ddwocxwmc/video/upload/v1672905138/WM2_Sensor_-_Trimmed_z03prm.mp4",
 };

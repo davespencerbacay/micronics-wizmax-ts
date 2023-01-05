@@ -12,6 +12,7 @@ import ShadowedButton from "library/ShadowedButton/ShadowedButton";
 import DownloadIcon from "library/Icons/DownloadIcon";
 import { useParams } from "react-router-dom";
 import NoInformationToDisplay from "library/NoInformationToDisplay/NoInformationToDisplay";
+import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 
 const Drivers: React.FC = () => {
   const { categoryId } = useParams();
@@ -95,6 +96,7 @@ const Drivers: React.FC = () => {
           </Col>
         </Row>
       </Container>
+      <ScrollToTopButton />
     </div>
   );
 };
