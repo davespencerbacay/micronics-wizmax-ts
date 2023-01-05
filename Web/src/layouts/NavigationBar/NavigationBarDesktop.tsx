@@ -109,7 +109,6 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   };
 
   const linkHandler = (link: LinkType) => {
-    window.scrollTo(0, 0);
     setShowSubLinks(true);
     setHoveredLinks({
       productLinks: link === "products",

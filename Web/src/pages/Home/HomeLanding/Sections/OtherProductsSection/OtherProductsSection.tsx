@@ -5,16 +5,22 @@ import "./OtherProductsSection.scss";
 import { otherProductsImages } from "data/Home/images";
 import Img from "library/Images/Image";
 import useResponsive from "hooks/useResponsive";
+import { useNavigate } from "react-router-dom";
 
 const OtherProductsSection: React.FC = () => {
   const isMobileMode = useResponsive("mobile");
+  const navigate = useNavigate();
+  const navigateToProductsOthers = () => {
+    navigate("/products");
+    window.scrollTo(0, 6900);
+  };
   return (
     <React.Fragment>
       {isMobileMode ? (
         <section className="other-products-section">
           <div className="other-products-caption-container">
             <h3>More Products</h3>
-            <div className="learn-more">
+            <div className="learn-more" onClick={navigateToProductsOthers}>
               <p>
                 View All
                 <span>
@@ -39,7 +45,7 @@ const OtherProductsSection: React.FC = () => {
         <section className="other-products-section">
           <div className="other-products-caption-container">
             <h3>More Products</h3>
-            <div className="learn-more">
+            <div className="learn-more" onClick={navigateToProductsOthers}>
               <p>
                 View All
                 <span>

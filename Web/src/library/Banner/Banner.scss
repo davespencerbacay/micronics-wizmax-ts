@@ -5,7 +5,7 @@ $banner-light: #fff;
 .banner {
   padding: 5rem 0;
   box-shadow: 3px 3px 3px #eee;
-
+  margin-top: 8vh;
   &.center {
     text-align: center;
     padding: 10rem;
@@ -43,6 +43,51 @@ $banner-light: #fff;
   p {
     font-family: "Roboto", sans-serif;
     font-size: 2rem;
+  }
+}
+//DESKTOP VIEW
+@media only screen and (min-width: 754px) {
+  .banner {
+    padding: 5rem 0;
+    box-shadow: 3px 3px 3px #eee;
+    &.center {
+      text-align: center;
+      padding: 10rem;
+    }
+    &.left {
+      text-align: left;
+    }
+    &.right {
+      text-align: right;
+    }
+    &.dark {
+      background-color: $banner-dark;
+
+      h2 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    }
+    &.light {
+      h2 {
+        color: black;
+      }
+      p {
+        color: black;
+      }
+    }
+
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 900;
+      font-size: 5rem;
+    }
+    p {
+      font-family: "Roboto", sans-serif;
+      font-size: 2rem;
+    }
   }
 }
 @media only screen and (max-width: 500px) {

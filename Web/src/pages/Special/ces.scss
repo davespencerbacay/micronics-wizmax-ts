@@ -7,11 +7,38 @@
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
+.ces-container {
+  margin-top: 10vh;
+  animation-name: product-page;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  background-color: #333;
+  @keyframes product-page {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 
 //DESKTOP VIEW
 @media only screen and (min-width: 754px) {
   .ces-container {
-    background-color: black;
+    margin: 0;
+    animation-name: product-page;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    background-color: #333;
+    @keyframes product-page {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
     .scrolling-videos {
       .scrolling-videos-container {
         background-color: black;

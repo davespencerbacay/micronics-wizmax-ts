@@ -7,6 +7,7 @@ import { productCategories } from "data/productCategories";
 import ProductBox from "library/ProductBox/ProductBox";
 import { ThemeVariants } from "context/ThemeContext";
 import ProductThumbnail from "./ProductThumbnail";
+import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 
 const Product: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
@@ -47,6 +48,7 @@ const Product: React.FC = () => {
           </React.Fragment>
         );
       })}
+      <ScrollToTopButton />
     </div>
   );
 };
