@@ -65,7 +65,7 @@ const MainSection: React.FC<MainSectionType> = (props) => {
             <Col xs={5} sm={5} md={4} lg={5}>
               <div className="headset-image-container">
                 <Img
-                  img={HOME_IMAGES.HOME_HEADSET_SECTION.HEADSET}
+                  img={HOME_IMAGES.HOME_HEADSET_SECTION.HEADSET_LEFT}
                   className="headset-mh2"
                 />
               </div>

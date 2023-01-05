@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import classNames from "classnames";
 import { REGIONS_COUNTRIES } from "constants/shops";
+import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 
 const Shop: React.FC = () => {
   const themeCtx = useContext(ThemeContext);
@@ -107,6 +108,7 @@ const Shop: React.FC = () => {
         <h3>Need More Help?</h3>
         <button>Contact Support</button>
       </div>
+      <ScrollToTopButton />
     </React.Fragment>
   );
 };

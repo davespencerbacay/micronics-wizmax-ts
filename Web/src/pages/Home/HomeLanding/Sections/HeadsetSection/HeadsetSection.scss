@@ -68,8 +68,11 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: flex-end;
+      align-items: center;
       height: 100%;
+      position: relative;
+      right: 10rem;
+      top: 30rem;
       h3 {
         font-size: 7rem;
         font-family: "Exo", sans-serif;
@@ -114,6 +117,7 @@
       position: relative;
       top: 0rem;
       right: 0rem;
+      left: 10rem;
       img {
         width: auto;
         height: 80rem;

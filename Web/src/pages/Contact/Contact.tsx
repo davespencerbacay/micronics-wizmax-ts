@@ -8,6 +8,7 @@ import Inquiries from "../../library/Inquiries/Inquiries";
 import Form from "./components/Form/Form";
 import { useNavigate } from "react-router-dom";
 import { ROUTE_PATH } from "constants/routes";
+import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 
 const Contact = () => {
   const LOCALIZATION = {
@@ -48,6 +49,7 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
+      <ScrollToTopButton />
     </React.Fragment>
   );
 };

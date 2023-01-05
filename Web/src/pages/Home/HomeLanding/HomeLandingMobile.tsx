@@ -1,3 +1,4 @@
+import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import React, { useRef } from "react";
 import "./HomeLandingMobile.scss";
 import HeadsetSection from "./Sections/HeadsetSection/HeadsetSection";
@@ -22,6 +23,7 @@ const HomeLandingMobile: React.FC = () => {
       <KeyboardSection />
       <OtherProductsSection />
       <PopupSection />
+      <ScrollToTopButton />
     </div>
   );
 };

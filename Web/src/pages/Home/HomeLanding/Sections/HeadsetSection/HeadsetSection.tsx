@@ -58,8 +58,13 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
           <Container fluid="xs">
             <Row>
               <Col>
+                <div className="img-container">
+                  <Img img={HOME_IMAGES.HOME_OTHERS_SECTION.PC_CASE}></Img>
+                </div>
+              </Col>
+              <Col>
                 <div className="caption-btn-container">
-                  <h3>Audibly Dominate</h3>
+                  <h3>The Stylish</h3>
                   <p>Veraciously Votive To Victory</p>
                   <div
                     className="learn-more"
@@ -72,13 +77,6 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
                       </span>
                     </p>
                   </div>
-                </div>
-              </Col>
-              <Col>
-                <div className="img-container">
-                  <Img
-                    img={HOME_IMAGES.HOME_HEADSET_SECTION.HEADSET_LEFT}
-                  ></Img>
                 </div>
               </Col>
             </Row>

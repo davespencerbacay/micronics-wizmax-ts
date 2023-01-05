@@ -7,7 +7,11 @@ interface IProductBrochure {
 const ProductBrochure: React.FC<IProductBrochure> = (props: any) => {
   return (
     <div className="brochure-container">
-      <img className="" src={props.brochure} alt={props.brochure}></img>
+      {props.brochure ? (
+        <img className="" src={props.brochure} alt={props.brochure}></img>
+      ) : (
+        <h1 className="not-available">Brochure Not Available</h1>
+      )}
     </div>
   );
 };

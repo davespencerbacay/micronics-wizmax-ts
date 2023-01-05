@@ -7,6 +7,7 @@ import MouseSection from "./Sections/MouseSection/MouseSection";
 import KeyboardSection from "./Sections/KeyboardSection/KeyboardSection";
 import OtherProductsSection from "./Sections/OtherProductsSection/OtherProductsSection";
 import PopupSection from "./Sections/PopupSection/PopupSection";
+import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 
 const HomeLandingDesktop: React.FC = () => {
   const videoSection = useRef<HTMLDivElement>(null);
@@ -25,6 +26,7 @@ const HomeLandingDesktop: React.FC = () => {
       <KeyboardSection />
       <OtherProductsSection />
       <PopupSection />
+      <ScrollToTopButton />
     </div>
   );
 };
