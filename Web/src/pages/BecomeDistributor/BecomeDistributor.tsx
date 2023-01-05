@@ -6,6 +6,7 @@ import { Container, Row, Col } from "reactstrap";
 import "./BecomeDistributor.scss";
 import Form from "./components/Form/Form";
 import Inquiries from "../../library/Inquiries/Inquiries";
+import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 
 const BecomeDistributor = () => {
   const LOCALIZATION = {
@@ -40,6 +41,7 @@ const BecomeDistributor = () => {
           </Col>
         </Row>
       </Container>
+      <ScrollToTopButton />
     </React.Fragment>
   );
 };

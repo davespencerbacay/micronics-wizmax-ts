@@ -119,9 +119,9 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   };
   const navigate = useNavigate();
   const navigateToHome = () => {
+    window.scrollTo(0, 0);
     navigate("/");
     setShowSubLinks(false);
-    window.scrollTo(0, 0);
   };
   // LIGHT AND DARK THEME CONTEXT
   const isDarkMode = useIsDarkMode();
@@ -228,56 +228,56 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
         </Nav>
       ),
     },
-    {
-      id: 3,
-      col: {
-        xs: 2,
-        sm: 2,
-        md: 2,
-        lg: 2,
-      },
-      component: (
-        <Dropdown
-          className="select-language"
-          isOpen={languageDropDownOpen}
-          toggle={toggle}
-        >
-          <FontAwesomeIcon
-            className="theme-icon"
-            icon={isDarkMode ? faMoon : faSun}
-          />
-          <FormGroup className="switch-container" switch>
-            <Input
-              type="switch"
-              role="switch"
-              defaultChecked={isDarkMode}
-              onClick={switchHandler}
-            />
-          </FormGroup>
-          <DropdownToggle className="language-menu-toggler">
-            <FontAwesomeIcon
-              className="globe-icon"
-              icon={faGlobe}
-              onClick={languageDropDownHandler}
-            />
-          </DropdownToggle>
-          <DropdownMenu className={languageDropdownMenuClassname}>
-            <DropdownItem
-              className="language"
-              onClick={() => props.changeLanguage(LOCALES.KOREAN)}
-            >
-              {LANGUAGES.KOREA}
-            </DropdownItem>
-            <DropdownItem
-              className="language"
-              onClick={() => props.changeLanguage(LOCALES.ENGLISH)}
-            >
-              {LANGUAGES.EN}
-            </DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
-      ),
-    },
+    // {
+    //   id: 3,
+    //   col: {
+    //     xs: 2,
+    //     sm: 2,
+    //     md: 2,
+    //     lg: 2,
+    //   },
+    //   component: (
+    //     <Dropdown
+    //       className="select-language"
+    //       isOpen={languageDropDownOpen}
+    //       toggle={toggle}
+    //     >
+    //       {/* <FontAwesomeIcon
+    //         className="theme-icon"
+    //         icon={isDarkMode ? faMoon : faSun}
+    //       />
+    //       <FormGroup className="switch-container" switch>
+    //         <Input
+    //           type="switch"
+    //           role="switch"
+    //           defaultChecked={isDarkMode}
+    //           onClick={switchHandler}
+    //         />
+    //       </FormGroup> */}
+    //       <DropdownToggle className="language-menu-toggler">
+    //         <FontAwesomeIcon
+    //           className="globe-icon"
+    //           icon={faGlobe}
+    //           onClick={languageDropDownHandler}
+    //         />
+    //       </DropdownToggle>
+    //       <DropdownMenu className={languageDropdownMenuClassname}>
+    //         <DropdownItem
+    //           className="language"
+    //           onClick={() => props.changeLanguage(LOCALES.KOREAN)}
+    //         >
+    //           {LANGUAGES.KOREA}
+    //         </DropdownItem>
+    //         <DropdownItem
+    //           className="language"
+    //           onClick={() => props.changeLanguage(LOCALES.ENGLISH)}
+    //         >
+    //           {LANGUAGES.EN}
+    //         </DropdownItem>
+    //       </DropdownMenu>
+    //     </Dropdown>
+    //   ),
+    // },
   ];
 
   return (

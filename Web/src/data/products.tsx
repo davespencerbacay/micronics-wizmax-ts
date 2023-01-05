@@ -139,6 +139,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/ZM2-1_emfkkk.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/ZM2-2_ypbfct.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/ZM2-3_daziuk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/ZM2-1_emfkkk.png",
     ],
     countryAvailability: [
       {
@@ -745,6 +746,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-3_trm1hu.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-1_nylamn.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/MG501-2_mi8uez.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-3_trm1hu.png",
     ],
     countryAvailability: [
       {
@@ -2646,6 +2648,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/K350_-_3_o8brsb.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086149/product-images/keyboard/K350_-_1_uc8yz3.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086147/product-images/keyboard/K350_-_2_sic6ax.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/K350_-_3_o8brsb.png",
     ],
     countryAvailability: [
       {
@@ -2923,6 +2926,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/Manic_X40P-3_mbbzxw.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/Manic_X40P-1_wzaefl.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/Manic_X40P-2_foagnk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/Manic_X40P-3_mbbzxw.png",
     ],
     countryAvailability: [
       {
@@ -3613,6 +3617,9 @@ const products = [
     name: "MH3",
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
     ],
     countryAvailability: [
@@ -4503,6 +4510,236 @@ const products = [
   },
   //PC CASE
   {
+    productId: "EH1-MONDRIAN",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_PCCASE"
+    ).replace(":productId", "EH1-MONDRIAN"),
+    name: "EH1 Mondrian",
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912245/product-images/pc_case/EH-1_Mondrian_-4_kuvx4z.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912243/product-images/pc_case/EH-1_Mondrian_-1_jqkie6.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912243/product-images/pc_case/EH-1_Mondrian_-2_xa0uj4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912243/product-images/pc_case/EH-1_Mondrian_-3_nwryhj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912242/product-images/pc_case/EH-1_Mondrian_-5_uyygfy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912241/product-images/pc_case/EH-1_Mondrian_-6_nakdgq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912242/product-images/pc_case/EH-1_Mondrian_-7_eqjrud.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912241/product-images/pc_case/EH-1_Mondrian_-8_qnwwyh.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["EH1 Mondrian"],
+      },
+      {
+        name: "DIMENSION",
+        description: ["525mm(H) x 235mm(W) x 450mm(D)"],
+      },
+      // {
+      //   name: "WEIGHT",
+      //   description: ["7.9kg"]
+      // },
+      // {
+      //   name: "PSU SIZE",
+      //   description: ["Standard ATX"],
+      // },
+      // {
+      //   name: "MOTHERBOARD",
+      //   description: ["E-ATX / ATX / M-ATX / ITX"],
+      // },
+      // {
+      //   name: "I/O PANEL",
+      //   description: ["Power,LED Mode,Audio,USB 3.0 x2,USB 3.1 Type C"],
+      // },
+      // {
+      //   name: "COLOR",
+      //   description: ["White"],
+      // },
+      {
+        name: "VGA LENGTH",
+        description: ["405mm (Max)"],
+      },
+      // {
+      //   name: "PCI SLOTS",
+      //   description: ["8+3 (Vertical)"],
+      // },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5in, 3.5in & 2.5in", "2.5in x3"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["175mm (Max)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top", "PSU Cover"],
+        subdescription: [
+          "140mm x3, 120mm x3 (Optional)",
+          "120/140mm (Optional)",
+          "120mm x3 (Optional), 140mm x3 (Optional)",
+          "120mm Fan x2 (Optional)",
+        ],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Top"],
+        subdescription: [
+          "120/240/280/360mm (Optional)",
+          "120/140mm (Optional)",
+        ],
+      },
+      // {
+      //   name: "SIDE PANEL",
+      //   description: [""],
+      //   subname: ["Left", "Right"],
+      //   subdescription: ["Tempered Glass", "Steel"],
+      // },
+    ],
+  },
+  {
+    productId: "SERIATION",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_PCCASE"
+    ).replace(":productId", "SERIATION"),
+    name: "Seriation",
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912827/product-images/pc_case/Seriation_rnkgcz.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912827/product-images/pc_case/Seriation_rnkgcz.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912827/product-images/pc_case/Seriation_rnkgcz.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912827/product-images/pc_case/Seriation_rnkgcz.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["Seriation"],
+      },
+      {
+        name: "DIMENSION",
+        description: ["506mm(H) x 235mm(W) x 484mm(D)"],
+      },
+      // {
+      //   name: "WEIGHT",
+      //   description: ["7.9kg"]
+      // },
+      // {
+      //   name: "PSU SIZE",
+      //   description: ["Standard ATX"],
+      // },
+      // {
+      //   name: "MOTHERBOARD",
+      //   description: ["E-ATX / ATX / M-ATX / ITX"],
+      // },
+      // {
+      //   name: "I/O PANEL",
+      //   description: ["Power,LED Mode,Audio,USB 3.0 x2,USB 3.1 Type C"],
+      // },
+      // {
+      //   name: "COLOR",
+      //   description: ["White"],
+      // },
+      {
+        name: "VGA LENGTH",
+        description: ["375mm (Max)"],
+      },
+      // {
+      //   name: "PCI SLOTS",
+      //   description: ["8+3 (Vertical)"],
+      // },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5in, 3.5in & 2.5in", "2.5in x3"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["170mm (Max)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top", "PSU Cover"],
+        subdescription: [
+          "140mm x3, 120mm x3 (Optional)",
+          "120/140mm (Optional)",
+          "120mm x3 (Optional), 140mm x3 (Optional)",
+          "120mm Fan x2 (Optional)",
+        ],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Top"],
+        subdescription: [
+          "120/240/280/360mm (Optional)",
+          "120/140mm (Optional)",
+        ],
+      },
+      // {
+      //   name: "SIDE PANEL",
+      //   description: [""],
+      //   subname: ["Left", "Right"],
+      //   subdescription: ["Tempered Glass", "Steel"],
+      // },
+    ],
+  },
+  {
     productId: "GX3-CHANG",
     categoryId: "CATEGORY_PCCASE",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(
@@ -4734,6 +4971,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086309/product-images/pc_case/gx-3_ojilvc.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gx-2_zf81vf.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086289/product-images/pc_case/gx-1_pjmrzo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086309/product-images/pc_case/gx-3_ojilvc.png",
     ],
     countryAvailability: [
       {
@@ -4942,6 +5180,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086298/product-images/pc_case/wb-2_w009ns.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086306/product-images/pc_case/wb-1_uvk57h.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/wb-3_cpwbya.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086298/product-images/pc_case/wb-2_w009ns.png",
     ],
     countryAvailability: [
       {
@@ -5161,6 +5400,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-1_fc8hcm.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086304/product-images/pc_case/gm1b_ldvnfp.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
     ],
     countryAvailability: [
       {
@@ -5269,6 +5509,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/om1-1_wkppqa.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/om1-2_ycsrdj.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/om1-3_aez8f1.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/om1-1_wkppqa.png",
     ],
     countryAvailability: [
       {
@@ -5491,6 +5732,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/Shadow_2-2_wbhlpt.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086289/product-images/pc_case/Shadow_2-1_njr0yr.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/Shadow_2-3_xfwm4r.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/Shadow_2-2_wbhlpt.png",
     ],
     countryAvailability: [
       {
@@ -6062,6 +6304,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/GH4_LetoMesh-1_rkjk1m.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086292/product-images/pc_case/GH4_LetoMesh-2_tqtlwq.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/GH4_LetoMesh-3_bo48f5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/GH4_LetoMesh-1_rkjk1m.png",
     ],
     countryAvailability: [
       {
@@ -6176,6 +6419,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086286/product-images/pc_case/CX-480-1_pywggf.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/CX-480-3_h30xoz.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086287/product-images/pc_case/CX-480-2_alh5cu.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086286/product-images/pc_case/CX-480-1_pywggf.png",
     ],
     countryAvailability: [
       {
@@ -6294,6 +6538,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GX2-NEURON-GLASS2_kemy3i.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/GX2-NEURON-GLASS1_qqdsku.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086300/product-images/pc_case/GX2-NEURON-GLASS3_clbxon.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GX2-NEURON-GLASS2_kemy3i.png",
     ],
     countryAvailability: [
       {
@@ -6414,6 +6659,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086296/product-images/pc_case/GX2-NEURON-MESH3_oym7bi.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086294/product-images/pc_case/GX2-NEURON-MESH2_zqegix.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GX2-NEURON-MESH1_gncfbd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086296/product-images/pc_case/GX2-NEURON-MESH3_oym7bi.png",
     ],
     countryAvailability: [
       {
@@ -7168,6 +7414,8 @@ const products = [
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219018/product-images/fans_coolers/ML240_Frozen_Tuna-2_pqc1vp.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219017/product-images/fans_coolers/ML240_Frozen_Tuna-1_vbtgpj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219018/product-images/fans_coolers/ML240_Frozen_Tuna-2_pqc1vp.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219017/product-images/fans_coolers/ML240_Frozen_Tuna-1_vbtgpj.png",
     ],
     countryAvailability: [
       {
@@ -7271,6 +7519,8 @@ const products = [
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219317/product-brochures/fans_coolers/DB_ML360-Frozen-Tuna_english_zjrrcl.jpg",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219361/product-images/fans_coolers/ML360_FROZEN_TUNA-4_eddhvb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219358/product-images/fans_coolers/ML360_FROZEN_TUNA-1_xrn7de.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219361/product-images/fans_coolers/ML360_FROZEN_TUNA-4_eddhvb.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219358/product-images/fans_coolers/ML360_FROZEN_TUNA-1_xrn7de.png",
     ],
@@ -7377,6 +7627,8 @@ const products = [
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_2_tdnaee.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_1_nmw6wo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_2_tdnaee.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_1_nmw6wo.png",
     ],
     countryAvailability: [
       {
@@ -7469,6 +7721,9 @@ const products = [
     name: "MA-6 Frigate",
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
     ],
     countryAvailability: [
@@ -7761,6 +8016,9 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
     ],
     countryAvailability: [
       {
@@ -7858,6 +8116,9 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
     ],
     countryAvailability: [
       {
@@ -7954,6 +8215,9 @@ const products = [
     name: "MF-14",
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
     ],
     countryAvailability: [
@@ -8192,6 +8456,9 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
     ],
     countryAvailability: [
       {
@@ -8327,6 +8594,9 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
     ],
     countryAvailability: [
       {
@@ -8461,6 +8731,9 @@ const products = [
     name: "Wizmax Platinum",
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
     ],
     countryAvailability: [
@@ -8599,6 +8872,9 @@ const products = [
     name: "Astro II Platinum",
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
     ],
     countryAvailability: [
@@ -8739,6 +9015,9 @@ const products = [
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672222141/product-brochures/psu/Astro-II-GD-DB_nu7oiq.jpg",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
     ],
     countryAvailability: [
