@@ -9,7 +9,7 @@ import {
 import { LOCALES } from "i18n";
 import "./NavigationBarMobile.scss";
 import intl from "i18n/intl";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import classnames from "classnames";
 import { ROUTE_PATH } from "constants/routes";
 import KoreanFlag from "library/Images/Flags/KoreanFlag/KoreanFlag";
@@ -22,6 +22,8 @@ import Twitter from "library/Images/SocialMedias/Twitter/Twitter";
 import Youtube from "library/Images/SocialMedias/Youtube/Youtube";
 import { SOCIAL_MEDIA } from "constants/";
 import NavbarLogoMobile from "library/NavigationBar/NavbarLogoMobile";
+import PopupSection from "pages/Home/HomeLanding/Sections/PopupSection/PopupSection";
+import Img from "library/Images/Image";
 
 //NAVIGATION LINKS AND ROUTES
 interface INavigationLinksMobile {
@@ -164,6 +166,15 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
     setLine2Animation((prevState) => !prevState);
   };
 
+  const navigate = useNavigate();
+
+  const goToCesHandler = () => {
+    window.scrollTo(0, 0);
+    navigate("/ces");
+    setIsHidden(true);
+    setLine1Animation((prevState) => !prevState);
+    setLine2Animation((prevState) => !prevState);
+  };
   return (
     <React.Fragment>
       <div className="navbar-mobile">
@@ -177,6 +188,14 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
           </div>
           <ListGroup className="navbar-ul" flush>
             <NavigationLinksMobile routeHandler={routeHandler} />
+            <div className="ces-navbar-mobile" onClick={goToCesHandler}>
+              <Img
+                className="ces"
+                img="/images/micronics-assets/home-page/ces.png"
+              />
+              <strong>LIVE!</strong>
+              <p>Click Here!</p>
+            </div>
             {/* <ListGroupItem className="translation">
               {intl("navigationBar.translation")}
               <ListGroup className="navbar-ul-subgroup" flush>
