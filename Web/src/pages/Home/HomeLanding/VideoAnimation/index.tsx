@@ -11,8 +11,8 @@ const VideoContainer: React.FC<VideoContainerType> = (props) => {
   return (
     <div className="video-section" ref={props.videoRef}>
       <VideoAnimation
-        title="MH2 Gaming Headset"
-        videoSrc={HOME_VIDEOS.HEADSET_MH2}
+        title="WM2 Gaming Mouse"
+        videoSrc={HOME_VIDEOS.MOUSE_WM2}
       />
     </div>
   );
