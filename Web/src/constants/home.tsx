@@ -16,7 +16,7 @@ export const HOME_IMAGES = {
     ACCESSORIES_1: "images/micronics-assets/home-page/Accessories-1.png",
     ACCESSORIES_2: "images/micronics-assets/home-page/Accessories-2.png",
     POWER_SUPPLY: "images/micronics-assets/home-page/PSU.png",
-    PC_CASE: "images/micronics-assets/home-page/EH-1 Mondrian -2.png",
+    PC_CASE: "images/micronics-assets/home-page/EH1-Mondrian New.png",
   },
 };
 export const HOME_VIDEOS = {

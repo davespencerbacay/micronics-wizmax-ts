@@ -72,47 +72,47 @@ const NavigationLinksMobile: React.FC<INavigationLinksMobile> = (props) => {
 };
 
 //SOCIAL MEDIA ICONS AND IMAGES
-const NavbarSocialMedias: React.FC = () => {
-  const socialMedias = [
-    {
-      url: SOCIAL_MEDIA.FACEBOOK_LINK,
-      image: <Facebook width={50} className="social-icons" />,
-    },
-    {
-      url: SOCIAL_MEDIA.INSTAGRAM_LINK,
-      image: <Instagram width={50} className="social-icons" />,
-    },
-    {
-      url: SOCIAL_MEDIA.TIKTOK_LINK,
-      image: <Tiktok width={50} className="social-icons" />,
-    },
-    {
-      url: SOCIAL_MEDIA.TWITTER_LINK,
-      image: <Twitter width={50} className="social-icons" />,
-    },
-    {
-      url: SOCIAL_MEDIA.YOUTUBE_LINK,
-      image: <Youtube width={50} className="social-icons" />,
-    },
-  ];
+// const NavbarSocialMedias: React.FC = () => {
+//   const socialMedias = [
+//     {
+//       url: SOCIAL_MEDIA.FACEBOOK_LINK,
+//       image: <Facebook width={50} className="social-icons" />,
+//     },
+//     {
+//       url: SOCIAL_MEDIA.INSTAGRAM_LINK,
+//       image: <Instagram width={50} className="social-icons" />,
+//     },
+//     {
+//       url: SOCIAL_MEDIA.TIKTOK_LINK,
+//       image: <Tiktok width={50} className="social-icons" />,
+//     },
+//     {
+//       url: SOCIAL_MEDIA.TWITTER_LINK,
+//       image: <Twitter width={50} className="social-icons" />,
+//     },
+//     {
+//       url: SOCIAL_MEDIA.YOUTUBE_LINK,
+//       image: <Youtube width={50} className="social-icons" />,
+//     },
+//   ];
 
-  return (
-    <ListGroup className="social-icons-group">
-      <ListGroupItem className="social-icons-li">
-        {socialMedias.map((social, index) => (
-          <a
-            href={social.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            key={index}
-          >
-            {social.image}
-          </a>
-        ))}
-      </ListGroupItem>
-    </ListGroup>
-  );
-};
+//   return (
+//     <ListGroup className="social-icons-group">
+//       <ListGroupItem className="social-icons-li">
+//         {socialMedias.map((social, index) => (
+//           <a
+//             href={social.url}
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             key={index}
+//           >
+//             {social.image}
+//           </a>
+//         ))}
+//       </ListGroupItem>
+//     </ListGroup>
+//   );
+// };
 
 interface INavigationBarMobile {
   changeLanguage: (language: string) => void;
@@ -160,6 +160,8 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
   const routeHandler = () => {
     window.scrollTo(0, 0);
     setIsHidden(true);
+    setLine1Animation((prevState) => !prevState);
+    setLine2Animation((prevState) => !prevState);
   };
 
   return (
@@ -175,7 +177,7 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
           </div>
           <ListGroup className="navbar-ul" flush>
             <NavigationLinksMobile routeHandler={routeHandler} />
-            <ListGroupItem className="translation">
+            {/* <ListGroupItem className="translation">
               {intl("navigationBar.translation")}
               <ListGroup className="navbar-ul-subgroup" flush>
                 {listItems.map((items: any) => {
@@ -190,10 +192,10 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
                   );
                 })}
               </ListGroup>
-            </ListGroupItem>
+            </ListGroupItem> */}
             <ListGroupItem className="social-media-section">
-              <h2>{intl("navigationBar.getInTouch")}</h2>
-              <NavbarSocialMedias />
+              {/* <h2>{intl("navigationBar.getInTouch")}</h2> */}
+              {/* <NavbarSocialMedias /> */}
             </ListGroupItem>
           </ListGroup>
         </Container>
