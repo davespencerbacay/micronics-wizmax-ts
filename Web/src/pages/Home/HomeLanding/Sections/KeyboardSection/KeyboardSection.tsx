@@ -3,10 +3,21 @@ import useResponsive from "hooks/useResponsive";
 import Img from "library/Images/Image";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./KeyboardSection.scss";
 
 const KeyboardSection: React.FC = () => {
   const isMobileMode = useResponsive("mobile");
+
+  const navigate = useNavigate();
+  const navigateToProductsKeyboard = () => {
+    navigate("/products");
+    if (isMobileMode) {
+      window.scrollTo(0, 0);
+    } else {
+      window.scrollTo(0, 2200);
+    }
+  };
   return (
     <React.Fragment>
       {isMobileMode ? (
@@ -17,7 +28,7 @@ const KeyboardSection: React.FC = () => {
           <div className="keyboard-caption-container">
             <h3>Your Key To Victory</h3>
             <p>Power In Every Stroke</p>
-            <div className="learn-more">
+            <div className="learn-more" onClick={navigateToProductsKeyboard}>
               <p>
                 Learn More
                 <span>
@@ -32,7 +43,7 @@ const KeyboardSection: React.FC = () => {
           <div className="keyboard-caption-container">
             <h3>Your Key To Victory</h3>
             <p>Power In Every Stroke</p>
-            <div className="learn-more">
+            <div className="learn-more" onClick={navigateToProductsKeyboard}>
               <p>
                 Learn More
                 <span>

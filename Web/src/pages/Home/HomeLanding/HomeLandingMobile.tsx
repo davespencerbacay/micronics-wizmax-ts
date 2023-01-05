@@ -15,7 +15,7 @@ const HomeLandingMobile: React.FC = () => {
     }
   };
   return (
-    <div>
+    <div className="home-landing-mobile-container">
       <MainSection headsetSectionHandler={headsetSectionHandler} />
       <HeadsetSection sectionRef={headsetSection} />
       <MouseSection />
