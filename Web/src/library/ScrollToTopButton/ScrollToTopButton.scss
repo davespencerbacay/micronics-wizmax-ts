@@ -1,0 +1,28 @@
+.scroll-top-container {
+  position: fixed;
+  bottom: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  .scroll-top-arrow-container {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #2997ff;
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1),
+      10px 10px 15px rgba(70, 70, 70, 0.012);
+    z-index: 3;
+    .scroll-arrow {
+      width: 5rem;
+      height: 5rem;
+      transform: rotate(-90deg);
+    }
+  }
+}

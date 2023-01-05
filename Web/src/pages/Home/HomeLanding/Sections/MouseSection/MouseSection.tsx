@@ -2,12 +2,19 @@ import { HOME_IMAGES } from "constants/home";
 import useResponsive from "hooks/useResponsive";
 import Img from "library/Images/Image";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Col, Container } from "reactstrap";
 import "./MouseSection.scss";
 
 const MouseSection: React.FC = () => {
   const isMobileMode = useResponsive("mobile");
+  useEffect(() => {}, [isMobileMode]);
+  const navigate = useNavigate();
+  const navigateToProductsMouse = () => {
+    navigate("/products");
+    window.scrollTo(0, 0);
+  };
   return (
     <React.Fragment>
       {isMobileMode ? (
@@ -17,7 +24,7 @@ const MouseSection: React.FC = () => {
               <div className="mouse-caption-container">
                 <h3>Survival Of The Fastest</h3>
                 <p>Accurately Precise, Incredibly Fast</p>
-                <div className="learn-more">
+                <div className="learn-more" onClick={navigateToProductsMouse}>
                   <p>
                     Learn More
                     <span>
@@ -39,7 +46,7 @@ const MouseSection: React.FC = () => {
           <div className="mouse-caption-container">
             <h3>Survival Of The Fastest</h3>
             <p>Accurately Precise, Incredibly Fast</p>
-            <div className="learn-more">
+            <div className="learn-more" onClick={navigateToProductsMouse}>
               <p>
                 Learn More
                 <span>

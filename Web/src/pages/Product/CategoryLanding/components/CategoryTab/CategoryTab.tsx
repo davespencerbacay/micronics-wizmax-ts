@@ -3,7 +3,7 @@ import { productCategories } from "data/productCategories";
 import useResponsive from "hooks/useResponsive";
 import intl from "i18n/intl";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Nav, NavItem } from "reactstrap";
 import "./CategoryTab.scss";

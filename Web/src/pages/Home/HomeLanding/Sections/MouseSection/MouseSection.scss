@@ -49,7 +49,6 @@
     position: relative;
     top: 30rem;
     img {
-      position: relative;
       width: 100%;
     }
   }
@@ -66,6 +65,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
+      z-index: 2;
       h3 {
         font-size: 7rem;
         font-family: "Exo", sans-serif;
@@ -81,6 +81,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         p {
           font-family: "Exo", sans-serif;
           width: 25rem;
@@ -105,6 +106,8 @@
       }
     }
     .mouse-img-container {
+      position: relative;
+      top: 0rem;
       img {
         width: 100%;
       }

@@ -66,6 +66,7 @@
       left: 50%;
       text-align: center;
       transform: translate(-50%, -50%);
+      z-index: 2;
       h3 {
         font-size: 7rem;
       }
@@ -79,6 +80,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         p {
           font-family: "Exo", sans-serif;
           width: 25rem;
@@ -103,6 +105,8 @@
       }
     }
     .keyboard-img-container {
+      position: relative;
+      top: 40rem;
       img {
         width: 100%;
       }

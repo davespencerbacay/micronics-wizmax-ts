@@ -3,6 +3,7 @@ import useResponsive from "hooks/useResponsive";
 import Img from "library/Images/Image";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "./HeadsetSection.scss";
 
@@ -12,6 +13,15 @@ type HeadsetSectionType = {
 
 const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
   const isMobileMode = useResponsive("mobile");
+  const navigate = useNavigate();
+  const navigateToProductsHeadset = () => {
+    navigate("/products");
+    if (isMobileMode) {
+      window.scrollTo(0, 5500);
+    } else {
+      window.scrollTo(0, 4800);
+    }
+  };
   return (
     <React.Fragment>
       {isMobileMode ? (
@@ -27,7 +37,10 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
                 <div className="caption-btn-container">
                   <h3>Audibly Dominate</h3>
                   <p>Veraciously Votive To Victory</p>
-                  <div className="learn-more">
+                  <div
+                    className="learn-more"
+                    onClick={navigateToProductsHeadset}
+                  >
                     <p>
                       Learn More
                       <span>
@@ -48,7 +61,10 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
                 <div className="caption-btn-container">
                   <h3>Audibly Dominate</h3>
                   <p>Veraciously Votive To Victory</p>
-                  <div className="learn-more">
+                  <div
+                    className="learn-more"
+                    onClick={navigateToProductsHeadset}
+                  >
                     <p>
                       Learn More
                       <span>

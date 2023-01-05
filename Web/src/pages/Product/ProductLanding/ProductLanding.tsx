@@ -30,7 +30,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
     speed: 300,
     slidesToShow: 3,
     centerMode: true,
-    centerPadding: "1rem",
+    centerPadding: "0rem",
     swipeToSlide: true,
     focusOnSelect: true,
     slidesToScroll: 1,
