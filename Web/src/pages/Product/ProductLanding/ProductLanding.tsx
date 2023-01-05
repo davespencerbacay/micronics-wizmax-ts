@@ -37,7 +37,9 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
     beforeChange: (current: any, next: any) => setImageIndex(next),
   };
 
-  useEffect(() => {}, [imageIndex]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [imageIndex]);
 
   //brochure and specs button
   const [brochureBtnIsActive, setBrochureBtnIsActive] = useState(true);
