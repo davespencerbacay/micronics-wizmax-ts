@@ -133,10 +133,10 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     changeTheme(!isDarkMode);
   };
   //SEARCHBAR
-  const [openSearchBar, setOpenSearchBar] = useState(false);
-  const SearchBarHandler = () => {
-    setOpenSearchBar((prevState) => !prevState);
-  };
+  // const [openSearchBar, setOpenSearchBar] = useState(false);
+  // const SearchBarHandler = () => {
+  //   setOpenSearchBar((prevState) => !prevState);
+  // };
 
   const navItems: INavItems[] = [
     {
@@ -218,13 +218,13 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
               </NavItem>
             );
           })}
-          <NavItem className="navbar-item">
+          {/* <NavItem className="navbar-item">
             <FontAwesomeIcon
               className="search-icon"
               icon={faMagnifyingGlass}
               onClick={SearchBarHandler}
             />
-          </NavItem>
+          </NavItem> */}
         </Nav>
       ),
     },
@@ -310,7 +310,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
             hideAllLinks={hideAllLinks}
           ></NavigationBarSubLinks>
         )}
-        {openSearchBar && <SearchBarDesktop />}
+        {/* {openSearchBar && <SearchBarDesktop />} */}
       </div>
     </React.Fragment>
   );
