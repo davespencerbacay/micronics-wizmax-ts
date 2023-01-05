@@ -7,7 +7,7 @@ export const HOME_IMAGES = {
     HEADSET_LEFT: "images/micronics-assets/home-page/MH2-FacingLeft.png",
   },
   HOME_MOUSE_SECTION: {
-    MOUSE: "images/micronics-assets/home-page/Mouse.png",
+    MOUSE: "images/micronics-assets/home-page/mouse.png",
   },
   HOME_KEYBOARD_SECTION: {
     KEYBOARD: "images/micronics-assets/home-page/Keyboard.png",
@@ -20,4 +20,6 @@ export const HOME_IMAGES = {
 };
 export const HOME_VIDEOS = {
   HEADSET_MH2: "videos/home/headset.mp4",
+  MOUSE_WM2:
+    "https://res.cloudinary.com/ddwocxwmc/video/upload/v1671081057/WM2_Sensor_gcguok.mp4",
 };
