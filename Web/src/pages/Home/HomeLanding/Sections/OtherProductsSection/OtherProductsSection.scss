@@ -1,3 +1,7 @@
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
+}
 .other-products-section {
   height: 100vh;
   background: linear-gradient(to top, #ffffff, #e1e2e8);
@@ -7,6 +11,7 @@
     top: 10rem;
     text-align: center;
     h3 {
+      font-family: "MetropolisBold", sans-serif;
       font-size: 3rem;
     }
     .learn-more {
@@ -68,6 +73,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       h3 {
+        font-family: "MetropolisBold", sans-serif;
         font-size: 7rem;
       }
       .learn-more {

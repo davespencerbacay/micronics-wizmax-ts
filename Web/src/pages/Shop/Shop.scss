@@ -1,9 +1,12 @@
 @import "~styles/index.scss";
-
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
+}
 .banner {
   .container {
     h2 {
-      font-family: "Exo", sans-serif;
+      font-family: "Metropolis", sans-serif;
       font-weight: 300;
       text-transform: uppercase;
     }
@@ -88,7 +91,7 @@
   }
   h5 {
     padding-bottom: 1rem;
-    font-family: "Exo", sans-serif;
+    font-family: "Metropolis", sans-serif;
     font-size: 30px;
     font-weight: 550;
     border-bottom: 0.1rem solid lightgray;
@@ -124,7 +127,7 @@
   text-align: center;
   padding: 10rem;
   h3 {
-    font-family: "Exo", sans-serif;
+    font-family: "Metropolis", sans-serif;
     font-weight: 300;
     font-size: 5rem;
     margin-bottom: 2rem;

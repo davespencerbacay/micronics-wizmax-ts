@@ -77,10 +77,25 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
               return (
                 <div
                   className={
+                    // index === imageIndex
+                    //   ? "product-img activeProductImg"
+                    //   : product.img.length === 3 && imageIndex + 1
+                    //   ? "product-img activeProductImg"
+                    //   : "product-img"
                     index === imageIndex
                       ? "product-img activeProductImg"
-                      : product.img.length === 3 && imageIndex + 1
-                      ? "product-img activeProductImg"
+                      : imageIndex === index - 1
+                      ? "product-img rightProductImg"
+                      : imageIndex === index - 2
+                      ? "product-img right2ProductImg"
+                      : imageIndex === index + 1
+                      ? "product-img leftProductImg"
+                      : imageIndex === index + 2
+                      ? "product-img left2ProductImg"
+                      : imageIndex === 0
+                      ? "product-img lastProductImg"
+                      : imageIndex === product.img.length - 1
+                      ? "product-img firstProductImg"
                       : "product-img"
                   }
                 >
