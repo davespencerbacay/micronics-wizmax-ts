@@ -1,7 +1,10 @@
 @import "~styles/index.scss";
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
+}
 $banner-dark: #111214;
 $banner-light: #fff;
-
 .banner {
   padding: 5rem 0;
   box-shadow: 3px 3px 3px #eee;
@@ -28,6 +31,7 @@ $banner-light: #fff;
   }
   &.light {
     h2 {
+      font-family: "MetropolisBold", sans-serif;
       color: black;
     }
     p {
@@ -36,7 +40,7 @@ $banner-light: #fff;
   }
 
   h2 {
-    font-family: "Roboto", sans-serif;
+    font-family: "MetropolisBold", sans-serif;
     font-weight: 900;
     font-size: 5rem;
   }
@@ -64,6 +68,7 @@ $banner-light: #fff;
       background-color: $banner-dark;
 
       h2 {
+        font-family: "MetropolisBold", sans-serif;
         color: white;
       }
       p {
@@ -80,7 +85,7 @@ $banner-light: #fff;
     }
 
     h2 {
-      font-family: "Roboto", sans-serif;
+      font-family: "MetropolisBold", sans-serif;
       font-weight: 900;
       font-size: 5rem;
     }

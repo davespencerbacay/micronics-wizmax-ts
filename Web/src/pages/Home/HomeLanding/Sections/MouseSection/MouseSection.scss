@@ -1,3 +1,7 @@
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
+}
 .mouse-section {
   height: 100vh;
   background: linear-gradient(-165deg, #ffffff 50%, #e1e2e8 50%);
@@ -9,7 +13,7 @@
     top: 20rem;
     h3 {
       font-size: 3rem;
-      font-family: "Exo", sans-serif;
+      font-family: "MetropolisBold", sans-serif;
       font-weight: 500;
     }
     p {
@@ -68,7 +72,7 @@
       z-index: 2;
       h3 {
         font-size: 7rem;
-        font-family: "Exo", sans-serif;
+        font-family: "MetropolisBold", sans-serif;
         font-weight: 500;
       }
       p {

@@ -2,6 +2,8 @@ import { ROUTE_PATH } from "constants/routes";
 import { productCategories } from "data/productCategories";
 import useResponsive from "hooks/useResponsive";
 import intl from "i18n/intl";
+import Img from "library/Images/Image";
+import ChevronRight from "library/Images/Navigations/ChevronArrows/ChevronRight";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -14,35 +16,51 @@ type CategoryTabType = {
 
 const CategoryTab: React.FC<CategoryTabType> = (props) => {
   const isMobile = useResponsive("mobile");
-  const [navClick, isNavClick] = useState(false);
-
-  const navClickHandler = () => {
-    isNavClick((prevState) => !prevState);
-  };
+  // const [navClick, isNavClick] = useState(false);
+  // const navMobileRef = React.createRef<any>();
+  // useEffect(() => {}, [navMobileRef, navClick]);
+  // const navClickHandler = () => {
+  //   isNavClick((prevState) => !prevState);
+  //   navMobileRef.current.focus;
+  //   console.log(navMobileRef.current);
+  // };
+  // const navMobileUnfocusHandler = () => {
+  //   isNavClick(false);
+  // };
   return (
     <React.Fragment>
       {isMobile ? (
-        <div className="nav-mobile">
-          <Nav className={navClick ? "nav-container" : "nav-container-hide"}>
+        <div
+          tabIndex={0}
+          className="product-nav-mobile"
+          // ref={navMobileRef}
+          // onBlur={navMobileUnfocusHandler}
+        >
+          <Nav className="product-nav-mobile-container">
             {productCategories.map((cat, index) => {
               return (
                 <React.Fragment>
-                  {navClick && (
-                    <NavItem className="nav-items" key={cat.categoryId}>
-                      <p onClick={() => props.refLinkHandler(index)}>
-                        {cat.name}
-                      </p>
-
+                  {
+                    <NavItem
+                      className="product-nav-mobile-items"
+                      key={cat.categoryId}
+                    >
+                      <img
+                        src={cat.icon}
+                        alt={cat.icon}
+                        onClick={() => {
+                          props.refLinkHandler(index);
+                          // navMobileUnfocusHandler();
+                        }}
+                      />
+                      {/* <p>{cat.name}</p> */}
                       {/* <Link to={cat.link}>{cat.name}</Link> */}
                     </NavItem>
-                  )}
+                  }
                 </React.Fragment>
               );
             })}
           </Nav>
-          <div className="arrow-container" onClick={navClickHandler}>
-            <span></span>
-          </div>
         </div>
       ) : (
         <div>
