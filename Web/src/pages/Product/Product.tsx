@@ -8,9 +8,13 @@ import ProductBox from "library/ProductBox/ProductBox";
 import { ThemeVariants } from "context/ThemeContext";
 import ProductThumbnail from "./ProductThumbnail";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
+import useResponsive from "hooks/useResponsive";
 
 const Product: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
+  const categoryRefLinkTitle = useRef<(HTMLDivElement | null)[]>([]);
+  const isMobile = useResponsive("mobile");
+  useEffect(() => {}, [isMobile, categoryRefLink]);
   const refLinkHandler = (index: any) => {
     if (categoryRefLink) {
       console.log(categoryRefLink.current[index]);
@@ -20,9 +24,20 @@ const Product: React.FC = () => {
       });
     }
   };
+  const refLinkTitleHandler = (index: any) => {
+    if (categoryRefLinkTitle) {
+      console.log(categoryRefLinkTitle.current[index]);
+      categoryRefLinkTitle.current[index]?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  };
   return (
     <div className="product-container">
-      <CategoryTab refLinkHandler={refLinkHandler} />
+      <CategoryTab
+        refLinkHandler={isMobile ? refLinkTitleHandler : refLinkHandler}
+      />
       {productCategories.map((cat, index) => {
         return (
           <React.Fragment key={cat.categoryId}>
@@ -33,7 +48,13 @@ const Product: React.FC = () => {
               }
               categoryId={cat.categoryId}
             />
-            <CategoryCaption name={cat.name} text={cat.text} />
+            <CategoryCaption
+              name={cat.name}
+              text={cat.text}
+              catRef={(refLink: any) =>
+                (categoryRefLinkTitle.current[index] = refLink)
+              }
+            />
 
             <ProductBox
               variants={ThemeVariants.dark}

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
+}
 .keyboard-section {
   height: 100vh;
   background: linear-gradient(to top, #ffffff, #e1e2e8);
@@ -20,6 +24,7 @@
     top: 50rem;
     text-align: center;
     h3 {
+      font-family: "MetropolisBold", sans-serif;
       font-size: 3rem;
     }
     p {
@@ -68,6 +73,7 @@
       transform: translate(-50%, -50%);
       z-index: 2;
       h3 {
+        font-family: "MetropolisBold" sans-serif;
         font-size: 7rem;
       }
       p {

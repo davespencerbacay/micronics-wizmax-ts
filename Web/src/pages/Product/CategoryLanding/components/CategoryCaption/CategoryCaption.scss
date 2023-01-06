@@ -1,9 +1,13 @@
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
+}
 .caption-container {
   margin-top: 2rem;
   text-align: center;
   h1 {
     font-size: 3rem;
-    font-family: "Exo", sans-serif;
+    font-family: "MetropolisBold", sans-serif;
     margin: 0;
   }
   p {
@@ -29,7 +33,7 @@
 
     h1 {
       font-size: 5rem;
-      font-family: "Exo", sans-serif;
+      font-family: "MetropolisBold", sans-serif;
       margin: 0;
     }
     p {

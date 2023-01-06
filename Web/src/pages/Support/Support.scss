@@ -1,8 +1,13 @@
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
+}
 .support-content {
   padding: 3rem 0;
 
   .sidebar-container {
     h5 {
+      font-family: "MetropolisBold", sans-serif;
       border: none;
     }
 
@@ -19,6 +24,7 @@
       display: flex;
       justify-content: space-between;
       h2 {
+        font-family: "MetropolisBold", sans-serif;
         font-weight: 800;
         font-size: 18px;
       }
