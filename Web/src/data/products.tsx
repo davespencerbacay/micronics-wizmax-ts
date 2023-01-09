@@ -109,7 +109,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-ZM-1
             </span>
           </React.Fragment>,
@@ -228,7 +228,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-ZM-2
             </span>
           </React.Fragment>,
@@ -347,7 +347,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-MM1-1
             </span>
           </React.Fragment>,
@@ -471,7 +471,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-WM-1
             </span>
           </React.Fragment>,
@@ -599,7 +599,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-WM-2
             </span>
           </React.Fragment>,
@@ -716,7 +716,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-REI-HMM-MANICG40
             </span>
           </React.Fragment>,
@@ -837,7 +837,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-MG501
             </span>
           </React.Fragment>,
@@ -959,7 +959,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-MG530
             </span>
           </React.Fragment>,
@@ -1085,7 +1085,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-ZG106
             </span>
           </React.Fragment>,
@@ -1212,7 +1212,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-M630W, R-R-HMM-R630W
             </span>
           </React.Fragment>,
@@ -1339,7 +1339,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-ZK-1
             </span>
           </React.Fragment>,
@@ -1468,7 +1468,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-ZK-2
             </span>
           </React.Fragment>,
@@ -1594,7 +1594,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-WK-1
             </span>
           </React.Fragment>,
@@ -1722,7 +1722,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-WK-2
             </span>
           </React.Fragment>,
@@ -1850,7 +1850,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-WK-3
             </span>
           </React.Fragment>,
@@ -1978,7 +1978,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-WK-4
             </span>
           </React.Fragment>,
@@ -2108,7 +2108,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-MK-1-FCC
             </span>
           </React.Fragment>,
@@ -2236,8 +2236,8 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-X50
-              (Derivative model)
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-X50 (Derivative model)
             </span>
           </React.Fragment>,
         ],
@@ -2367,7 +2367,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-EX580L
             </span>
           </React.Fragment>,
@@ -2491,7 +2491,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-X100
             </span>
           </React.Fragment>,
@@ -2618,7 +2618,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-EX89
             </span>
           </React.Fragment>,
@@ -2744,7 +2744,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-K350
             </span>
           </React.Fragment>,
@@ -2897,7 +2897,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-MANICX40
             </span>
           </React.Fragment>,
@@ -3039,7 +3039,7 @@ const products = [
       //   description: [
       //     <React.Fragment>
       //       <span>
-      //         <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+      //         <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
       //         R-R-HMM-K350
       //       </span>
       //     </React.Fragment>,
@@ -3163,7 +3163,7 @@ const products = [
       //   description: [
       //     <React.Fragment>
       //       <span>
-      //         <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+      //         <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
       //         R-R-HMM-K350
       //       </span>
       //     </React.Fragment>,
@@ -3311,7 +3311,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-WH-1
             </span>
           </React.Fragment>,
@@ -3453,7 +3453,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-MH1-1
             </span>
           </React.Fragment>,
@@ -3592,7 +3592,8 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-MH2
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-MH2
             </span>
           </React.Fragment>,
         ],
@@ -3740,7 +3741,7 @@ const products = [
       //   description: [
       //     <React.Fragment>
       //       <span>
-      //         <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+      //         <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
       //         R-R-HMM-WH-1
       //       </span>
       //     </React.Fragment>,
@@ -3893,7 +3894,7 @@ const products = [
       //   description: [
       //     <React.Fragment>
       //       <span>
-      //         <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+      //         <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
       //         R-R-HMM-WH-1
       //       </span>
       //     </React.Fragment>,
@@ -4042,7 +4043,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-HS-301
             </span>
           </React.Fragment>,
@@ -4190,7 +4191,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-HS-370
             </span>
           </React.Fragment>,
@@ -4343,7 +4344,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-HS-420
             </span>
           </React.Fragment>,
@@ -4492,7 +4493,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp;
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-HS-530
             </span>
           </React.Fragment>,

@@ -43,7 +43,7 @@ export const productCategories: IProductCategories[] = [
     categoryId: "CATEGORY_FC",
     name: "Fans & Coolers",
     link: ROUTE_PATH.PRODUCT_CATEGORY.replace(":categoryId", "CATEGORY_FC"),
-    img: "",
+    img: "./images/micronics-assets/product-categories",
     icon: "./images/icons/Cooler.png",
     text: "Don't let your computer overheat! Keep it running smoothly and efficiently with our top-of-the-line computer cooling system. Stay cool, stay focused, and keep your computer performing at its best with our advanced technology.",
   },
