@@ -50,9 +50,9 @@ export const SHOPS: Record<ShopTypes, string> = {
   WIZMAX_OFFICIAL_STORE_LABEL: "Wizmax Official Store",
   WIZMAX_OFFICIAL_STORE_LINK: "http://www.wizmaxph.myshopify.com/",
   SHOPEE_LABEL: "Shopee",
-  SHOPEE_LINK: "",
+  SHOPEE_LINK: "https://shopee.ph/wizmaxph",
   LAZADA_LABEL: "Lazada",
-  LAZADA_LINK: "http://www.lazada.com.ph/shop/wizmax-global",
+  LAZADA_LINK: "https://www.lazada.com.ph/shop/wizmax",
   MAXITEC_LABEL: "MaxiTec",
   MAXITEC_LINK:
     "https://www.maxitec.com.ec/gaming-y-videojuegos/micronics?PS=24",

@@ -14,27 +14,29 @@ const PopupSection: React.FC = () => {
   return (
     <React.Fragment>
       {isMobile && (
-        <div className="popup-container" onClick={goToCesHandler}>
-          <Img
-            className="ces"
-            img="/images/micronics-assets/home-page/ces.png"
-          />
-          <strong>LIVE!</strong>
-        </div>
+        // <div className="popup-container" onClick={goToCesHandler}>
+        //   <Img
+        //     className="ces"
+        //     img="/images/micronics-assets/home-page/ces.png"
+        //   />
+        //   <strong>LIVE!</strong>
+        // </div>
+        <div></div>
       )}
       {!isMobile && (
-        <div className="popup-container">
-          <Img
-            className="ces"
-            img="/images/micronics-assets/home-page/ces.png"
-          />
-          <h3>
-            is now <strong>LIVE!</strong>
-          </h3>
-          <p onClick={goToCesHandler}>
-            Visit <strong>CES</strong> Now
-          </p>
-        </div>
+        // <div className="popup-container">
+        //   <Img
+        //     className="ces"
+        //     img="/images/micronics-assets/home-page/ces.png"
+        //   />
+        //   <h3>
+        //     is now <strong>LIVE!</strong>
+        //   </h3>
+        //   <p onClick={goToCesHandler}>
+        //     Visit <strong>CES</strong> Now
+        //   </p>
+        // </div>
+        <div></div>
       )}
     </React.Fragment>
   );

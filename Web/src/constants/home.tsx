@@ -22,5 +22,5 @@ export const HOME_IMAGES = {
 export const HOME_VIDEOS = {
   HEADSET_MH2: "videos/home/headset.mp4",
   MOUSE_WM2:
-    "https://res.cloudinary.com/ddwocxwmc/video/upload/v1672905138/WM2_Sensor_-_Trimmed_z03prm.mp4",
+    "https://res.cloudinary.com/ddwocxwmc/video/upload/v1673229415/Mouse_Sensor_Trimmed_2_czo5ot.mp4",
 };

@@ -60,7 +60,7 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
 
   if (props.showSubLinks || !hideSubNavbar) {
     return (
-      <Navbar className="sub-navbar" fixed="top">
+      <div className="sub-navbar-container">
         <Nav className="sub-navbar-nav">
           {props.subLinks &&
             props.subLinks!.map((sublink, index) => {
@@ -113,7 +113,7 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
             })}
         </Nav>
         <GetLinkID />
-      </Navbar>
+      </div>
     );
   }
   return <React.Fragment />;

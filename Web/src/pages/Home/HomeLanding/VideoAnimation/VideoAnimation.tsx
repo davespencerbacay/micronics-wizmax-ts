@@ -24,7 +24,7 @@ const VideoAnimation: React.FC<VideoAnimationType> = (props) => {
         trigger: refVideoContainer.current,
         pin: refVideoContainer.current,
         start: "center center",
-        end: "+=300% top",
+        end: "+=200% top",
         markers: false,
         onUpdate: (self) => {
           if (refVideo.current) {
@@ -51,7 +51,7 @@ const VideoAnimation: React.FC<VideoAnimationType> = (props) => {
           trigger: refVideoText.current,
           start: "top top-=1000",
           scrub: true,
-          end: "+=300%",
+          end: "+=100%",
           markers: false,
         },
       });
