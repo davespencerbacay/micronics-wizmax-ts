@@ -188,14 +188,14 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
           </div>
           <ListGroup className="navbar-ul" flush>
             <NavigationLinksMobile routeHandler={routeHandler} />
-            <div className="ces-navbar-mobile" onClick={goToCesHandler}>
+            {/* <div className="ces-navbar-mobile" onClick={goToCesHandler}>
               <Img
                 className="ces"
                 img="/images/micronics-assets/home-page/ces.png"
               />
               <strong>LIVE!</strong>
               <p>Click Here!</p>
-            </div>
+            </div> */}
             {/* <ListGroupItem className="translation">
               {intl("navigationBar.translation")}
               <ListGroup className="navbar-ul-subgroup" flush>
