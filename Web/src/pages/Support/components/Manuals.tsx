@@ -13,8 +13,10 @@ import DownloadIcon from "library/Icons/DownloadIcon";
 import { useParams } from "react-router-dom";
 import NoInformationToDisplay from "library/NoInformationToDisplay/NoInformationToDisplay";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
+import useResponsive from "hooks/useResponsive";
 
 const Drivers: React.FC = () => {
+  const isMobile = useResponsive("mobile");
   const { categoryId } = useParams();
   const filteredNavItems = productCategories.map((cat) => {
     return {
@@ -77,18 +79,22 @@ const Drivers: React.FC = () => {
                   <React.Fragment>
                     {displayedProducts.map((p: any) => (
                       <div className="table-items">
-                        <div>
+                        <div className="title-btn-container">
                           <h5>{p.name}</h5>
-                        </div>
-                        <div>
-                          <ShadowedButton onClick={() => downloadHandler(p.db)}>
-                            Brochure <DownloadIcon />
-                          </ShadowedButton>
-                          <ShadowedButton
-                            onClick={() => downloadHandler(p.manual)}
+                          <div
+                            className={isMobile ? "table-btn-container" : ""}
                           >
-                            Manual <DownloadIcon />
-                          </ShadowedButton>
+                            <ShadowedButton
+                              onClick={() => downloadHandler(p.db)}
+                            >
+                              Brochure <DownloadIcon />
+                            </ShadowedButton>
+                            <ShadowedButton
+                              onClick={() => downloadHandler(p.manual)}
+                            >
+                              Manual <DownloadIcon />
+                            </ShadowedButton>
+                          </div>
                         </div>
                       </div>
                     ))}

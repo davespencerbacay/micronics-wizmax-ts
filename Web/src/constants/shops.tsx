@@ -41,7 +41,7 @@ export const SHOPS: Record<ShopTypes, string> = {
   MICRONICS_KOREA_LINK: "http://www.micronics.co.kr/micronics/index.php",
   COMPUZONE_LABEL: "Compuzone",
   COMPUZONE_LINK:
-    "https://www.compuzone.co.kr/search/search.htm?Seargbl=1&hidden_Txt=&IsEventSearch=&SearchProductKey=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EB%8B%89%EC%8A%A4v",
+    "https://www.compuzone.co.kr/search/search.htm?Seargbl=1&hidden_Txt=&IsEventSearch=&SearchProductKey=%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EB%8B%89%EC%8A%A4",
   NAVER_LABEL: "Naver",
   NAVER_LINK: "https://smartstore.naver.com/micronics",
   DANAWA_LABEL: "Danawa",
@@ -112,11 +112,11 @@ export const shopsKorea = KOREA_SHOPS.map((shop) => {
 export const PHILIPPINES_SHOPS: ShopLinksType[] = [
   {
     shopName: SHOPS.WIZMAX_OFFICIAL_STORE_LABEL,
-    shopLink: SHOPS.WIZMAX_OFFICIAL_STORE_LINK,
+    shopLink: "",
   },
   {
     shopName: SHOPS.SHOPEE_LABEL,
-    shopLink: "",
+    shopLink: SHOPS.SHOPEE_LINK,
   },
   {
     shopName: SHOPS.LAZADA_LABEL,

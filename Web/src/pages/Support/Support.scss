@@ -3,24 +3,21 @@
   src: url("../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
 }
 .support-content {
-  padding: 3rem 0;
-
   .sidebar-container {
+    padding: 2rem;
     h5 {
       font-family: "MetropolisBold", sans-serif;
       border: none;
     }
-
     .sidebar-categories {
-      padding-left: 2rem;
+      padding-left: 0rem;
     }
   }
 
   .support-table {
     .table-captions {
+      padding: 2rem;
       border-bottom: 1px solid #eee;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
       display: flex;
       justify-content: space-between;
       h2 {
@@ -34,32 +31,119 @@
     }
 
     .table-content {
-      h5 {
-        font-weight: 900;
-        font-size: 27px;
-        font-weight: 300;
+      padding: 0;
+      margin: 0;
+      .title-btn-container {
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .table-btn-container {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          button {
+            width: 15rem;
+          }
+        }
+        h5 {
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 500;
+          margin-bottom: 2rem;
+        }
       }
     }
 
     .table-items {
-      display: flex;
-      justify-content: space-between;
-      vertical-align: middle;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
       border-bottom: 1px solid #eee;
-      padding-left: 3rem;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+    }
+  }
+}
 
+//desktop view
+@media only screen and (min-width: 754px) {
+  .support-content {
+    padding: 3rem 0;
+
+    .sidebar-container {
       h5 {
-        font-size: 2.3rem;
-        text-transform: uppercase;
-        font-weight: 300;
+        font-family: "MetropolisBold", sans-serif;
+        border: none;
       }
 
-      button {
-        margin-left: 1rem;
+      .sidebar-categories {
+        padding-left: 2rem;
+      }
+    }
+
+    .support-table {
+      .table-captions {
+        border-bottom: 1px solid #eee;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-family: "MetropolisBold", sans-serif;
+          font-weight: 800;
+          font-size: 18px;
+        }
+        span {
+          font-size: 1.2rem;
+        }
+      }
+
+      .table-content {
+        h5 {
+          font-weight: 900;
+          font-size: 27px;
+          font-weight: 300;
+        }
+        .title-btn-container {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          align-content: center;
+          position: relative;
+          padding: 3rem;
+          h5 {
+            font-size: 3rem;
+            font-weight: 500;
+          }
+          button {
+            position: relative;
+            left: 10rem;
+          }
+        }
+      }
+
+      .table-items {
+        display: flex;
+        justify-content: space-between;
+        vertical-align: middle;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        h5 {
+          font-size: 2.3rem;
+          text-transform: uppercase;
+          font-weight: 300;
+        }
+
+        button {
+          margin-left: 1rem;
+        }
       }
     }
   }

@@ -33,6 +33,7 @@ export type SubLinksType = {
   shops?: IShops[];
   shopName?: ShopLinksType[];
   shopLink?: ShopLinksType[];
+  route?: any;
 };
 
 const PRODUCT_IMAGES = {
@@ -55,6 +56,7 @@ export const productSubLinks: SubLinksType[] = [
   },
   {
     id: "product",
+    route: "Keyboard",
     icon: <Img img={PRODUCT_IMAGES.KEYBOARD} width={130}></Img>,
     text: intl("productSubLinks.keyboard"),
     path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
@@ -62,6 +64,7 @@ export const productSubLinks: SubLinksType[] = [
   },
   {
     id: "product",
+    route: "Headset",
     icon: <Img img={PRODUCT_IMAGES.HEADSET} width={130}></Img>,
     text: intl("productSubLinks.headset"),
     path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
@@ -69,6 +72,7 @@ export const productSubLinks: SubLinksType[] = [
   },
   {
     id: "product",
+    route: "FC",
     icon: <Img img={PRODUCT_IMAGES.FANS_COOLERS} width={130}></Img>,
     text: intl("productSubLinks.fansCoolers"),
     path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
@@ -76,6 +80,7 @@ export const productSubLinks: SubLinksType[] = [
   },
   {
     id: "product",
+    route: "PC Case",
     icon: <Img img={PRODUCT_IMAGES.PC_CASE} width={130}></Img>,
     text: intl("productSubLinks.pcCase"),
     path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
@@ -83,6 +88,7 @@ export const productSubLinks: SubLinksType[] = [
   },
   {
     id: "product",
+    route: "PSU",
     icon: <Img img={PRODUCT_IMAGES.PSU} width={130}></Img>,
     text: intl("productSubLinks.psu"),
     path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
@@ -90,6 +96,7 @@ export const productSubLinks: SubLinksType[] = [
   },
   {
     id: "product",
+    route: "Accessories",
     icon: <Img img={PRODUCT_IMAGES.ACCESSORIES} width={130}></Img>,
     text: intl("productSubLinks.accessories"),
     path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),

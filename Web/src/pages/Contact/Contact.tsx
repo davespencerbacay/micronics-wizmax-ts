@@ -30,7 +30,7 @@ const Contact = () => {
         variant="light"
       />
       <Container className="distributor-container">
-        <Row>
+        <Row className="distributor-row">
           <Col xs={12} md={8} lg={8}>
             <LabeledValue
               title={LOCALIZATION.header.title}

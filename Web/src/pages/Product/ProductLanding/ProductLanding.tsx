@@ -17,6 +17,9 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   const [product, setProduct] = useState<any>({});
   const [currentProduct, setCurrentProduct] = useState(0);
   const [lastProduct, setLastProduct] = useState(0);
+  const [previousButtonHover, setPreviousButtonHover] = useState(false);
+  const [nextButtonHover, setNextButtonHover] = useState(false);
+  const [slideToShow, setSlideToShow] = useState(0);
   const navigate = useNavigate();
   console.log(productId);
 
@@ -27,18 +30,28 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
       (i: any) => i.productId === productId
     );
     const indexOfLastProduct = productData.length - 1;
+    const slides = productData[productIndex].img.length;
 
     setLastProduct(indexOfLastProduct);
     setCurrentProduct(productIndex);
     setProduct(singleProduct);
-  }, [product, productId, currentProduct, lastProduct]);
+    setSlideToShow(slides);
+  }, [
+    product,
+    productId,
+    currentProduct,
+    lastProduct,
+    previousButtonHover,
+    nextButtonHover,
+  ]);
   const [imageIndex, setImageIndex] = useState<any>(0);
+
   let settings: any = {
     className: "center",
     infinite: true,
     lazyLoad: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: slideToShow < 4 ? 1 : 3,
     centerMode: true,
     centerPadding: "0rem",
     swipeToSlide: true,
@@ -77,6 +90,19 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   const nextProductHandler = (productCategory: any, productId: any) => {
     navigate(`/products/${productCategory}/${productId}`);
   };
+  const prevButtonHandler = () => {
+    setPreviousButtonHover(true);
+  };
+  const prevButtonLeaveHandler = () => {
+    setPreviousButtonHover(false);
+  };
+  const nextButtonHandler = () => {
+    setNextButtonHover(true);
+  };
+  const nextButtonLeaveHandler = () => {
+    setNextButtonHover(false);
+  };
+
   return (
     <React.Fragment>
       <div className="product-landing-container">
@@ -117,7 +143,13 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                         : "product-img"
                     }
                   >
-                    <img src={image} alt={image} />
+                    <img
+                      className={
+                        product.img.length < 4 ? "activeProductImg1" : ""
+                      }
+                      src={image}
+                      alt={image}
+                    />
                   </div>
                 );
               })}
@@ -141,39 +173,64 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
           )}
         </div>
         <div className="prev-next-product-container">
+          {!previousButtonHover && currentProduct - 1 !== -1 && (
+            <div
+              className="prev-product-title"
+              onMouseEnter={prevButtonHandler}
+            >
+              <p>{products[currentProduct - 1]?.name}</p>
+            </div>
+          )}
+          {!nextButtonHover && lastProduct !== currentProduct && (
+            <div
+              className="next-product-title"
+              onMouseEnter={nextButtonHandler}
+            >
+              <p>{products[currentProduct + 1]?.name}</p>
+            </div>
+          )}
+
           <div className="prev-next-btn-container">
-            <div
-              className="prev-product-btn"
-              onClick={() =>
-                prevProductHandler(
-                  products[currentProduct - 1].categoryId,
-                  products[currentProduct - 1].productId
-                )
-              }
-              style={{ display: currentProduct - 1 === -1 ? "none" : "flex" }}
-            >
-              <img
-                src={products[currentProduct - 1]?.img[0]}
-                alt={products[currentProduct - 1]?.img[0]}
-              />
-            </div>
-            <div
-              className="next-product-btn"
-              onClick={() =>
-                nextProductHandler(
-                  products[currentProduct + 1].categoryId,
-                  products[currentProduct + 1].productId
-                )
-              }
-              style={{
-                display: lastProduct === currentProduct ? "none" : "flex",
-              }}
-            >
-              <img
-                src={products[currentProduct + 1]?.img[0]}
-                alt={products[currentProduct + 1]?.img[0]}
-              />
-            </div>
+            {previousButtonHover && (
+              <div
+                className="prev-product-btn"
+                onClick={() =>
+                  prevProductHandler(
+                    products[currentProduct - 1].categoryId,
+                    products[currentProduct - 1].productId
+                  )
+                }
+                onMouseLeave={prevButtonLeaveHandler}
+                style={{
+                  display: currentProduct - 1 === -1 ? "none" : "flex",
+                }}
+              >
+                <img
+                  src={products[currentProduct - 1]?.img[0]}
+                  alt={products[currentProduct - 1]?.img[0]}
+                />
+              </div>
+            )}
+            {nextButtonHover && (
+              <div
+                className="next-product-btn"
+                onClick={() =>
+                  nextProductHandler(
+                    products[currentProduct + 1].categoryId,
+                    products[currentProduct + 1].productId
+                  )
+                }
+                onMouseLeave={nextButtonLeaveHandler}
+                style={{
+                  display: lastProduct === currentProduct ? "none" : "flex",
+                }}
+              >
+                <img
+                  src={products[currentProduct + 1]?.img[0]}
+                  alt={products[currentProduct + 1]?.img[0]}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
