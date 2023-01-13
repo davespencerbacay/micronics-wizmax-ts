@@ -1,5 +1,7 @@
 import classNames from "classnames";
 import products from "data/products";
+import useResponsive from "hooks/useResponsive";
+import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Slider from "react-slick";
@@ -18,9 +20,12 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   const [currentProduct, setCurrentProduct] = useState(0);
   const [lastProduct, setLastProduct] = useState(0);
   const [previousButtonHover, setPreviousButtonHover] = useState(false);
+  const [previousButtonClick, setPreviousButtonClick] = useState(false);
   const [nextButtonHover, setNextButtonHover] = useState(false);
+  const [nextButtonClick, setNextButtonClick] = useState(false);
   const [slideToShow, setSlideToShow] = useState(0);
   const navigate = useNavigate();
+  const isMobile = useResponsive("mobile");
   console.log(productId);
 
   useEffect(() => {
@@ -62,7 +67,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [imageIndex]);
+  }, [imageIndex, isMobile]);
 
   //brochure and specs button
   const [brochureBtnIsActive, setBrochureBtnIsActive] = useState(true);
@@ -96,13 +101,25 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   const prevButtonLeaveHandler = () => {
     setPreviousButtonHover(false);
   };
+  const prevButtonClickHandler = () => {
+    setPreviousButtonClick(true);
+  };
+  const closePrevButton = () => {
+    setPreviousButtonClick(false);
+  };
   const nextButtonHandler = () => {
     setNextButtonHover(true);
   };
   const nextButtonLeaveHandler = () => {
     setNextButtonHover(false);
   };
-
+  const nextButtonOnClickHandler = () => {
+    setNextButtonClick(true);
+  };
+  const closeNextButton = () => {
+    setNextButtonClick(false);
+  };
+  console.log(nextButtonClick);
   return (
     <React.Fragment>
       <div className="product-landing-container">
@@ -173,64 +190,110 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
           )}
         </div>
         <div className="prev-next-product-container">
-          {!previousButtonHover && currentProduct - 1 !== -1 && (
-            <div
-              className="prev-product-title"
-              onMouseEnter={prevButtonHandler}
-            >
-              <p>{products[currentProduct - 1]?.name}</p>
-            </div>
-          )}
-          {!nextButtonHover && lastProduct !== currentProduct && (
-            <div
-              className="next-product-title"
-              onMouseEnter={nextButtonHandler}
-            >
-              <p>{products[currentProduct + 1]?.name}</p>
-            </div>
-          )}
+          <div className="prev-product-title-container">
+            {currentProduct - 1 !== -1 && (
+              <div>
+                {isMobile ? (
+                  <p
+                    className={
+                      previousButtonClick
+                        ? "prev-product-title-hide"
+                        : "prev-product-title"
+                    }
+                    onClick={prevButtonClickHandler}
+                  >
+                    previous
+                  </p>
+                ) : (
+                  <p>{products[currentProduct - 1]?.name}</p>
+                )}
+              </div>
+            )}
+          </div>
+          {/* NEXT PRODUCT TITLE */}
+          <div className="next-product-title-container">
+            {isMobile ? (
+              <p
+                className={
+                  nextButtonClick
+                    ? "next-product-title-hide"
+                    : "next-product-title"
+                }
+                onClick={nextButtonOnClickHandler}
+              >
+                next
+              </p>
+            ) : (
+              <p
+                className={
+                  nextButtonHover
+                    ? "next-product-title-hide"
+                    : "next-product-title"
+                }
+                onMouseEnter={nextButtonHandler}
+              >
+                {<p>{products[currentProduct + 1]?.name}</p>}
+              </p>
+            )}
+          </div>
 
           <div className="prev-next-btn-container">
-            {previousButtonHover && (
-              <div
-                className="prev-product-btn"
+            {/* PREVIOUS BUTTON */}
+            <div
+              className={
+                previousButtonHover || previousButtonClick
+                  ? "prev-product-btn"
+                  : "prev-product-btn-hide"
+              }
+              onMouseLeave={prevButtonLeaveHandler}
+              style={{
+                display: currentProduct - 1 === -1 ? "none" : "flex",
+              }}
+            >
+              <img
+                src={products[currentProduct - 1]?.img[0]}
+                alt={products[currentProduct - 1]?.img[0]}
                 onClick={() =>
                   prevProductHandler(
                     products[currentProduct - 1].categoryId,
                     products[currentProduct - 1].productId
                   )
                 }
-                onMouseLeave={prevButtonLeaveHandler}
-                style={{
-                  display: currentProduct - 1 === -1 ? "none" : "flex",
-                }}
-              >
-                <img
-                  src={products[currentProduct - 1]?.img[0]}
-                  alt={products[currentProduct - 1]?.img[0]}
-                />
-              </div>
-            )}
-            {nextButtonHover && (
-              <div
-                className="next-product-btn"
+              />
+              {isMobile && (
+                <div className="left-arrow-close" onClick={closePrevButton}>
+                  <GoTo />
+                </div>
+              )}
+            </div>
+            {/* NEXT BUTTON */}
+            <div
+              className={
+                nextButtonHover || nextButtonClick
+                  ? "next-product-btn"
+                  : "next-product-btn-hide"
+              }
+              onMouseLeave={nextButtonLeaveHandler}
+              style={{
+                display: lastProduct === currentProduct ? "none" : "flex",
+              }}
+            >
+              {isMobile && (
+                <div className="right-arrow-close" onClick={closeNextButton}>
+                  <GoTo />
+                </div>
+              )}
+              <img
+                src={products[currentProduct + 1]?.img[0]}
+                alt={products[currentProduct + 1]?.img[0]}
                 onClick={() =>
                   nextProductHandler(
                     products[currentProduct + 1].categoryId,
                     products[currentProduct + 1].productId
                   )
                 }
-                onMouseLeave={nextButtonLeaveHandler}
-                style={{
-                  display: lastProduct === currentProduct ? "none" : "flex",
-                }}
-              >
-                <img
-                  src={products[currentProduct + 1]?.img[0]}
-                  alt={products[currentProduct + 1]?.img[0]}
-                />
-              </div>
-            )}
+              />
+            </div>
           </div>
         </div>
       </div>

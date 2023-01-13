@@ -56,13 +56,14 @@ const MainSection: React.FC<MainSectionType> = (props) => {
               <div className="main-caption">
                 <p className="text1">Pique Your</p>
                 <p className="text2">Gaming Experience.</p>
-                <div className="text3-container" onClick={navigateToMH2}>
-                  <p>
-                    MH2
+                <div className="text3-container">
+                  <p>MH2</p>
+                  <button onClick={navigateToMH2}>
+                    Learn More{" "}
                     <span>
                       <GoTo />
                     </span>
-                  </p>
+                  </button>
                 </div>
               </div>
             </Col>
