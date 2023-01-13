@@ -61,16 +61,14 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
           <div className="headset-container">
             <div className="img-container">
               <Img img={HOME_IMAGES.HOME_OTHERS_SECTION.PC_CASE}></Img>
-              <div
-                className="product-link-container"
-                onClick={navigateToMondrian}
-              >
-                <p>
-                  EH1 Mondrian
+              <div className="product-link-container">
+                <p>EH1 Mondrian</p>
+                <button onClick={navigateToMondrian}>
+                  Learn More
                   <span>
                     <GoTo />
                   </span>
-                </p>
+                </button>
               </div>
             </div>
 
