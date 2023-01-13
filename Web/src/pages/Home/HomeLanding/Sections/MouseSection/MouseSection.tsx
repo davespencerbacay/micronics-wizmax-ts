@@ -15,6 +15,9 @@ const MouseSection: React.FC = () => {
     navigate("/products");
     window.scrollTo(0, 0);
   };
+  const navigateToZM1 = () => {
+    navigate("/products/CATEGORY_MOUSE/ZM1");
+  };
   return (
     <React.Fragment>
       {isMobileMode ? (
@@ -57,6 +60,14 @@ const MouseSection: React.FC = () => {
           </div>
           <div className="mouse-img-container">
             <Img img={HOME_IMAGES.HOME_MOUSE_SECTION.MOUSE}></Img>
+            <div className="mouse-link-container" onClick={navigateToZM1}>
+              <p>
+                ZM1
+                <span>
+                  <GoTo />
+                </span>
+              </p>
+            </div>
           </div>
         </section>
       )}

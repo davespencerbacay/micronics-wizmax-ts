@@ -110,15 +110,24 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
 
                   {sublink.id === "shop" &&
                     sublink.shops?.map((shop: IShops) => {
+                      console.log(shop.name);
                       return (
-                        <a
-                          className="shop-links"
-                          href={shop.link}
-                          target="_blank"
-                          rel="noreferrer noopener"
-                        >
-                          {shop.name}
-                        </a>
+                        <React.Fragment>
+                          {shop.name === "Wizmax Official Store" ? (
+                            <p className="disabled-links">
+                              Wizmax Official Store
+                            </p>
+                          ) : (
+                            <a
+                              className="shop-links"
+                              href={shop.link}
+                              target="_blank"
+                              rel="noreferrer noopener"
+                            >
+                              {shop.name}
+                            </a>
+                          )}
+                        </React.Fragment>
                       );
                     })}
                   {sublink.id === "contact" &&

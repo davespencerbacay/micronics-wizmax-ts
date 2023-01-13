@@ -280,6 +280,17 @@ $lightgray: #d3d3d3;
           }
         }
       }
+      .disabled-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.3rem;
+        border-bottom: 1px solid lightgray;
+        color: black;
+        cursor: not-allowed;
+      }
       .shop-links {
         display: flex;
         flex-direction: column;
