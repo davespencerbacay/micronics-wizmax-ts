@@ -82,108 +82,233 @@
 }
 
 //DESKTOP VIEW
-@media only screen and (min-width: 754px) {
-  .headset-container {
-    width: 100%;
-    height: 100%;
-    margin-left: 0;
-    margin-right: 0;
+@media only screen and (min-width: 1440px) {
+  .main-container {
+    height: 100vh;
+    margin-top: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     .container-fluid {
-      margin-left: 0;
-      margin-right: 0;
-      padding-left: 0;
-      padding-right: 0;
     }
-    .headset-caption {
-      height: 100%;
+    .main-caption {
       width: 100%;
+      height: 80vh;
       font-size: 7rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       position: relative;
-      left: 20rem;
+
       font-family: "MetropolisBold", sans-serif;
-      .text1 {
-      }
+      .text1,
       .text2 {
+        position: relative;
+        left: 10rem;
+      }
+      .text3-container {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
       }
     }
-    .headset-text-button {
+    .main-text-button {
       text-align: center;
-      transform: rotate(90deg);
       cursor: pointer;
       font-family: "Roboto", sans-serif;
-      font-size: 2rem;
+      font-size: 1.5rem;
       position: relative;
-      top: 70rem;
-      span {
-        margin: 0.5rem;
-        position: relative;
-      }
-      .span1 {
-        opacity: 0.8;
-        animation-name: span1;
-        animation-timing-function: ease;
-        animation-duration: 1s;
-        animation-direction: normal;
-        animation-iteration-count: infinite;
-        @keyframes span1 {
-          0% {
-            left: 0;
-          }
-          100% {
-            left: 1rem;
+
+      height: 20vh;
+      p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: rotate(90deg);
+        span {
+          margin: 0.5rem;
+          position: relative;
+        }
+        .span1 {
+          opacity: 0.8;
+          animation-name: span1;
+          animation-timing-function: ease;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-iteration-count: infinite;
+          @keyframes span1 {
+            0% {
+              left: 0;
+            }
+            100% {
+              left: 1rem;
+            }
           }
         }
-      }
-      .span2 {
-        opacity: 0.6;
-        animation-name: span2;
-        animation-timing-function: ease;
-        animation-duration: 1s;
-        animation-direction: normal;
-        animation-iteration-count: infinite;
-        @keyframes span2 {
-          25% {
-            left: 0;
-          }
-          100% {
-            left: 1rem;
+        .span2 {
+          opacity: 0.6;
+          animation-name: span2;
+          animation-timing-function: ease;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-iteration-count: infinite;
+          @keyframes span2 {
+            25% {
+              left: 0;
+            }
+            100% {
+              left: 1rem;
+            }
           }
         }
-      }
-      .span3 {
-        opacity: 0.4;
-        animation-name: span3;
-        animation-timing-function: ease;
-        animation-duration: 1s;
-        animation-direction: normal;
-        animation-iteration-count: infinite;
-        @keyframes span3 {
-          50% {
-            left: 0;
-          }
-          100% {
-            left: 1rem;
+        .span3 {
+          opacity: 0.4;
+          animation-name: span3;
+          animation-timing-function: ease;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-iteration-count: infinite;
+          @keyframes span3 {
+            50% {
+              left: 0;
+            }
+            100% {
+              left: 1rem;
+            }
           }
         }
       }
     }
-    .headset-image-container {
-      width: 100%;
-      height: 96vh;
-      .headset-mh2 {
+    .main-image-container {
+      height: 80vh;
+      padding: 5rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .main-mh2 {
         position: relative;
-        top: 5rem;
-        right: 10rem;
-        width: auto;
-        height: 80rem;
+        top: 15rem;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+//1024px below view
+@media only screen and (max-width: 1440px) and (min-width: 754px) {
+  .main-container {
+    height: 100vh;
+    margin-top: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    .container-fluid {
+    }
+    .main-caption {
+      width: 100%;
+      height: 70vh;
+      font-size: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+
+      font-family: "MetropolisBold", sans-serif;
+      .text1,
+      .text2 {
+        position: relative;
+        left: 10rem;
+      }
+    }
+    .main-text-button {
+      text-align: center;
+      cursor: pointer;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5rem;
+      position: relative;
+      height: 30vh;
+      p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: rotate(90deg);
+        span {
+          margin: 0.5rem;
+          position: relative;
+        }
+        .span1 {
+          opacity: 0.8;
+          animation-name: span1;
+          animation-timing-function: ease;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-iteration-count: infinite;
+          @keyframes span1 {
+            0% {
+              left: 0;
+            }
+            100% {
+              left: 1rem;
+            }
+          }
+        }
+        .span2 {
+          opacity: 0.6;
+          animation-name: span2;
+          animation-timing-function: ease;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-iteration-count: infinite;
+          @keyframes span2 {
+            25% {
+              left: 0;
+            }
+            100% {
+              left: 1rem;
+            }
+          }
+        }
+        .span3 {
+          opacity: 0.4;
+          animation-name: span3;
+          animation-timing-function: ease;
+          animation-duration: 1s;
+          animation-direction: normal;
+          animation-iteration-count: infinite;
+          @keyframes span3 {
+            50% {
+              left: 0;
+            }
+            100% {
+              left: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .main-image-container {
+      height: 70vh;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      .main-mh2 {
+        position: relative;
+        top: 0rem;
+        width: 100%;
+        height: auto;
       }
     }
   }

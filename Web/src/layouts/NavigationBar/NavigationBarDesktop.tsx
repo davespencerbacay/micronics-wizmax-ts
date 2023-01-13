@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -119,8 +119,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
   };
   const navigate = useNavigate();
   const navigateToHome = () => {
-    window.scrollTo(0, 0);
     navigate("/");
+    window.scrollTo(0, 0);
     setShowSubLinks(false);
   };
   // LIGHT AND DARK THEME CONTEXT

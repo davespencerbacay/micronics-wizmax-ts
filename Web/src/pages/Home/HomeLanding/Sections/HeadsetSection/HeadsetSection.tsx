@@ -22,6 +22,9 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
       window.scrollTo(0, 4800);
     }
   };
+  const navigateToMondrian = () => {
+    navigate("/products/CATEGORY_PCCASE/EH1-MONDRIAN");
+  };
   return (
     <React.Fragment>
       {isMobileMode ? (
@@ -55,32 +58,35 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
         </section>
       ) : (
         <section className="headset-section">
-          <Container fluid="xs">
-            <Row>
-              <Col>
-                <div className="img-container">
-                  <Img img={HOME_IMAGES.HOME_OTHERS_SECTION.PC_CASE}></Img>
-                </div>
-              </Col>
-              <Col>
-                <div className="caption-btn-container">
-                  <h3>The Stylish</h3>
-                  <p>Veraciously Votive To Victory</p>
-                  <div
-                    className="learn-more"
-                    onClick={navigateToProductsHeadset}
-                  >
-                    <p>
-                      Learn More
-                      <span>
-                        <GoTo />
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </Col>
-            </Row>
-          </Container>
+          <div className="headset-container">
+            <div className="img-container">
+              <Img img={HOME_IMAGES.HOME_OTHERS_SECTION.PC_CASE}></Img>
+              <div
+                className="product-link-container"
+                onClick={navigateToMondrian}
+              >
+                <p>
+                  EH1 Mondrian
+                  <span>
+                    <GoTo />
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div className="caption-btn-container">
+              <h3>The Stylish</h3>
+              <p>Veraciously Votive To Victory</p>
+              <div className="learn-more" onClick={navigateToProductsHeadset}>
+                <p>
+                  Learn More
+                  <span>
+                    <GoTo />
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       )}
     </React.Fragment>

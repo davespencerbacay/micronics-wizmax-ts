@@ -3175,6 +3175,142 @@ const products = [
       },
     ],
   },
+  {
+    productId: "W101P",
+    categoryId: "CATEGORY_KB",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_KB"
+    ).replace(":productId", "W101P"),
+    name: "W101P",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Peacock_Green_-_4_pjmnll.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487924/product-images/keyboard/W101P_Peacock_Green_-_3_qegl29.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487922/product-images/keyboard/W101P_Peacock_Green_-_2_qucmti.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487932/product-images/keyboard/W101P_Sky_Blue_-_4_w9eclg.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487930/product-images/keyboard/W101P_Sky_Blue_-_3_wdarsi.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487928/product-images/keyboard/W101P_Sky_Blue_-_2_mzsepb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_4_culfli.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_3_vcfc39.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_2_zwsxuw.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["W101P"],
+      },
+      // {
+      //   name: "SIZE",
+      //   description: ["446mm(L) x 135mm(W) x 37mm(H) ± 2mm"],
+      // },
+      // {
+      //   name: "WEIGHT",
+      //   description: ["1020g ± 10g"],
+      // },
+      {
+        name: "SWITCH",
+        description: ["4th Generation Jixian Optical Switch"],
+      },
+      {
+        name: "KEYCAP",
+        description: ["PBT 2 Color Keycap"],
+      },
+      // {
+      //   name: "NUMBER OF KEYS",
+      //   description: ["104 Keys"],
+      // },
+      {
+        name: "LIFESPAN",
+        description: ["100 Million Strokes"],
+      },
+      // {
+      //   name: "CONCURRENT INPUT",
+      //   description: ["104 Infinite Simultaneous Inputs"],
+      // },
+      // {
+      //   name: "CABLE LENGTH",
+      //   description: ["1.5m"],
+      // },
+      {
+        name: "POLLING RATE",
+        description: ["1000Hz"],
+      },
+      {
+        name: "LED",
+        description: ["RGB"],
+      },
+      {
+        name: "FEATURE",
+        description: ["IPX8 Waterproof"],
+      },
+      // {
+      //   name: "INTERFACE",
+      //   description: ["USB / Fabric Cable"],
+      // },
+      // {
+      //   name: "COMPATIBILITY",
+      //   description: ["Windows XP®, Windows 7®, Windows 8® , Windows 10®"],
+      // },
+      {
+        name: "PRODUCT TYPE ",
+        description: ["Gaming Keyboard"],
+      },
+      // {
+      //   name: "CONTENTS",
+      //   description: ["Manic EX580 Keyboard, Product Manual, Keycap Puller"],
+      // },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Labeled at the back of the keyboard"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      // {
+      //   name: "KC CERTIFICATION NUMBER",
+      //   description: [
+      //     <React.Fragment>
+      //       <span>
+      //         <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-X50
+      //         (Derivative model)
+      //       </span>
+      //     </React.Fragment>,
+      //   ],
+      // },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
   //HEADSET SECTION
   {
     productId: "WH1",
@@ -4620,116 +4756,116 @@ const products = [
       // },
     ],
   },
-  {
-    productId: "SERIATION",
-    categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "SERIATION"),
-    name: "Seriation",
-    isNewRelease: "New Release",
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912827/product-images/pc_case/Seriation_rnkgcz.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["Seriation"],
-      },
-      {
-        name: "DIMENSION",
-        description: ["506mm(H) x 235mm(W) x 484mm(D)"],
-      },
-      // {
-      //   name: "WEIGHT",
-      //   description: ["7.9kg"]
-      // },
-      // {
-      //   name: "PSU SIZE",
-      //   description: ["Standard ATX"],
-      // },
-      // {
-      //   name: "MOTHERBOARD",
-      //   description: ["E-ATX / ATX / M-ATX / ITX"],
-      // },
-      // {
-      //   name: "I/O PANEL",
-      //   description: ["Power,LED Mode,Audio,USB 3.0 x2,USB 3.1 Type C"],
-      // },
-      // {
-      //   name: "COLOR",
-      //   description: ["White"],
-      // },
-      {
-        name: "VGA LENGTH",
-        description: ["375mm (Max)"],
-      },
-      // {
-      //   name: "PCI SLOTS",
-      //   description: ["8+3 (Vertical)"],
-      // },
-      {
-        name: "DRIVE BAY",
-        description: [""],
-        subname: ["HDD", "SSD"],
-        subdescription: ["3.5in, 3.5in & 2.5in", "2.5in x3"],
-      },
-      {
-        name: "CPU COOLER MOUNTING HEIGHT",
-        description: ["170mm (Max)"],
-      },
-      {
-        name: "COOLER SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Rear", "Top", "PSU Cover"],
-        subdescription: [
-          "140mm x3, 120mm x3 (Optional)",
-          "120/140mm (Optional)",
-          "120mm x3 (Optional), 140mm x3 (Optional)",
-          "120mm Fan x2 (Optional)",
-        ],
-      },
-      {
-        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Top"],
-        subdescription: [
-          "120/240/280/360mm (Optional)",
-          "120/140mm (Optional)",
-        ],
-      },
-      // {
-      //   name: "SIDE PANEL",
-      //   description: [""],
-      //   subname: ["Left", "Right"],
-      //   subdescription: ["Tempered Glass", "Steel"],
-      // },
-    ],
-  },
+  // {
+  //   productId: "SERIATION",
+  //   categoryId: "CATEGORY_PCCASE",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(
+  //     ":categoryId",
+  //     "CATEGORY_PCCASE"
+  //   ).replace(":productId", "SERIATION"),
+  //   name: "Seriation",
+  //   isNewRelease: "New Release",
+  //   brochure: "",
+  //   img: [
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912827/product-images/pc_case/Seriation_rnkgcz.png",
+  //   ],
+  //   countryAvailability: [
+  //     {
+  //       abbreviation: "KR",
+  //       country: "Korea",
+  //     },
+  //     {
+  //       abbreviation: "PH",
+  //       country: "Philippines",
+  //     },
+  //     {
+  //       abbreviation: "US",
+  //       country: "United States",
+  //     },
+  //     {
+  //       abbreviation: "EC",
+  //       country: "Ecuador",
+  //     },
+  //     {
+  //       abbreviation: "JP",
+  //       country: "Japan",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME",
+  //       description: ["Seriation"],
+  //     },
+  //     {
+  //       name: "DIMENSION",
+  //       description: ["506mm(H) x 235mm(W) x 484mm(D)"],
+  //     },
+  //     // {
+  //     //   name: "WEIGHT",
+  //     //   description: ["7.9kg"]
+  //     // },
+  //     // {
+  //     //   name: "PSU SIZE",
+  //     //   description: ["Standard ATX"],
+  //     // },
+  //     // {
+  //     //   name: "MOTHERBOARD",
+  //     //   description: ["E-ATX / ATX / M-ATX / ITX"],
+  //     // },
+  //     // {
+  //     //   name: "I/O PANEL",
+  //     //   description: ["Power,LED Mode,Audio,USB 3.0 x2,USB 3.1 Type C"],
+  //     // },
+  //     // {
+  //     //   name: "COLOR",
+  //     //   description: ["White"],
+  //     // },
+  //     {
+  //       name: "VGA LENGTH",
+  //       description: ["375mm (Max)"],
+  //     },
+  //     // {
+  //     //   name: "PCI SLOTS",
+  //     //   description: ["8+3 (Vertical)"],
+  //     // },
+  //     {
+  //       name: "DRIVE BAY",
+  //       description: [""],
+  //       subname: ["HDD", "SSD"],
+  //       subdescription: ["3.5in, 3.5in & 2.5in", "2.5in x3"],
+  //     },
+  //     {
+  //       name: "CPU COOLER MOUNTING HEIGHT",
+  //       description: ["170mm (Max)"],
+  //     },
+  //     {
+  //       name: "COOLER SPECIFICATIONS",
+  //       description: [""],
+  //       subname: ["Front", "Rear", "Top", "PSU Cover"],
+  //       subdescription: [
+  //         "140mm x3, 120mm x3 (Optional)",
+  //         "120/140mm (Optional)",
+  //         "120mm x3 (Optional), 140mm x3 (Optional)",
+  //         "120mm Fan x2 (Optional)",
+  //       ],
+  //     },
+  //     {
+  //       name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+  //       description: [""],
+  //       subname: ["Front", "Top"],
+  //       subdescription: [
+  //         "120/240/280/360mm (Optional)",
+  //         "120/140mm (Optional)",
+  //       ],
+  //     },
+  //     // {
+  //     //   name: "SIDE PANEL",
+  //     //   description: [""],
+  //     //   subname: ["Left", "Right"],
+  //     //   subdescription: ["Tempered Glass", "Steel"],
+  //     // },
+  //   ],
+  // },
   {
     productId: "GX3-CHANG",
     categoryId: "CATEGORY_PCCASE",
@@ -5935,119 +6071,119 @@ const products = [
       },
     ],
   },
-  {
-    productId: "GH3-TROIKA",
-    categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GH3-TROIKA"),
-    name: "GH3 Troika",
-    // brochure:
-    //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/GH3_Troika-2_vy9f8k.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086307/product-images/pc_case/GH3_Troika-1_datnze.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086290/product-images/pc_case/GH3_Troika-3_z4lsfd.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086290/product-images/pc_case/GH3_Troika-4_b0prlz.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["GH3 Troika"],
-      },
-      {
-        name: "DIMENSION",
-        description: ["507mm(H) x 219mm(W) x 426mm(D)"],
-      },
-      // {
-      //   name: "WEIGHT",
-      //   description: ["7.9kg"],
-      // },
-      {
-        name: "PSU SIZE",
-        description: ["Standard ATX"],
-      },
-      {
-        name: "MOTHERBOARD",
-        description: ["EATX / ATX / M-ATX / ITX"],
-      },
-      {
-        name: "I/O PANEL",
-        description: ["Power, Reset, USB 3.0, USB 2.0, HD Audio, Mic"],
-      },
-      {
-        name: "COLOR",
-        description: ["Black"],
-      },
-      {
-        name: "VGA LENGTH",
-        description: ["370mm (Max) (319mm with Front Sandwich Configuration)"],
-      },
-      // {
-      //   name: "GPU LENGTH",
-      //   description: ["350mm (Max)"],
-      // },
-      {
-        name: "PCI SLOTS",
-        description: ["7"],
-      },
-      {
-        name: "DRIVE BAY",
-        description: [""],
-        subname: ["ODD", "HDD/SSD", "SSD"],
-        subdescription: ["5.25in", "3.5in & 2.5in x2", "2.5in x2"],
-      },
-      {
-        name: "CPU COOLER MOUNTING HEIGHT",
-        description: ["165mm (Max)"],
-      },
-      {
-        name: "COOLER SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Rear", "Top"],
-        subdescription: [
-          "120mm Blue LED Fan x2 (140mm Fan x2 Optional)",
-          "120mm Blue LED Fan",
-          "120mm Fan x2 or 140mm Fan x2 (Optional)",
-        ],
-      },
-      {
-        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Top"],
-        subdescription: ["120/240/280/360mm", "120/240/280mm"],
-      },
-      {
-        name: "SIDE PANEL",
-        description: [""],
-        subname: ["Left"],
-        subdescription: ["Tempered Glass"],
-      },
-    ],
-  },
+  // {
+  //   productId: "GH3-TROIKA",
+  //   categoryId: "CATEGORY_PCCASE",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(
+  //     ":categoryId",
+  //     "CATEGORY_PCCASE"
+  //   ).replace(":productId", "GH3-TROIKA"),
+  //   name: "GH3 Troika",
+  //   // brochure:
+  //   //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
+  //   img: [
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/GH3_Troika-2_vy9f8k.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086307/product-images/pc_case/GH3_Troika-1_datnze.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086290/product-images/pc_case/GH3_Troika-3_z4lsfd.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086290/product-images/pc_case/GH3_Troika-4_b0prlz.png",
+  //   ],
+  //   countryAvailability: [
+  //     {
+  //       abbreviation: "KR",
+  //       country: "Korea",
+  //     },
+  //     {
+  //       abbreviation: "PH",
+  //       country: "Philippines",
+  //     },
+  //     {
+  //       abbreviation: "US",
+  //       country: "United States",
+  //     },
+  //     {
+  //       abbreviation: "EC",
+  //       country: "Ecuador",
+  //     },
+  //     {
+  //       abbreviation: "JP",
+  //       country: "Japan",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME",
+  //       description: ["GH3 Troika"],
+  //     },
+  //     {
+  //       name: "DIMENSION",
+  //       description: ["507mm(H) x 219mm(W) x 426mm(D)"],
+  //     },
+  //     // {
+  //     //   name: "WEIGHT",
+  //     //   description: ["7.9kg"],
+  //     // },
+  //     {
+  //       name: "PSU SIZE",
+  //       description: ["Standard ATX"],
+  //     },
+  //     {
+  //       name: "MOTHERBOARD",
+  //       description: ["EATX / ATX / M-ATX / ITX"],
+  //     },
+  //     {
+  //       name: "I/O PANEL",
+  //       description: ["Power, Reset, USB 3.0, USB 2.0, HD Audio, Mic"],
+  //     },
+  //     {
+  //       name: "COLOR",
+  //       description: ["Black"],
+  //     },
+  //     {
+  //       name: "VGA LENGTH",
+  //       description: ["370mm (Max) (319mm with Front Sandwich Configuration)"],
+  //     },
+  //     // {
+  //     //   name: "GPU LENGTH",
+  //     //   description: ["350mm (Max)"],
+  //     // },
+  //     {
+  //       name: "PCI SLOTS",
+  //       description: ["7"],
+  //     },
+  //     {
+  //       name: "DRIVE BAY",
+  //       description: [""],
+  //       subname: ["ODD", "HDD/SSD", "SSD"],
+  //       subdescription: ["5.25in", "3.5in & 2.5in x2", "2.5in x2"],
+  //     },
+  //     {
+  //       name: "CPU COOLER MOUNTING HEIGHT",
+  //       description: ["165mm (Max)"],
+  //     },
+  //     {
+  //       name: "COOLER SPECIFICATIONS",
+  //       description: [""],
+  //       subname: ["Front", "Rear", "Top"],
+  //       subdescription: [
+  //         "120mm Blue LED Fan x2 (140mm Fan x2 Optional)",
+  //         "120mm Blue LED Fan",
+  //         "120mm Fan x2 or 140mm Fan x2 (Optional)",
+  //       ],
+  //     },
+  //     {
+  //       name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+  //       description: [""],
+  //       subname: ["Front", "Top"],
+  //       subdescription: ["120/240/280/360mm", "120/240/280mm"],
+  //     },
+  //     {
+  //       name: "SIDE PANEL",
+  //       description: [""],
+  //       subname: ["Left"],
+  //       subdescription: ["Tempered Glass"],
+  //     },
+  //   ],
+  // },
   {
     productId: "GH4-LETO",
     categoryId: "CATEGORY_PCCASE",
@@ -6390,124 +6526,124 @@ const products = [
       },
     ],
   },
-  {
-    productId: "CX-480",
-    categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "CX-480"),
-    name: "Coolmax CX-480",
-    // brochure:
-    //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086286/product-images/pc_case/CX-480-1_pywggf.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/CX-480-3_h30xoz.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086287/product-images/pc_case/CX-480-2_alh5cu.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["Coolmax CX480"],
-      },
-      {
-        name: "DIMENSION",
-        description: ["482mm(H) x 205mm(W) x 390mm(D)"],
-      },
-      // {
-      //   name: "WEIGHT",
-      //   description: ["7.9kg"],
-      // },
-      {
-        name: "PSU SIZE",
-        description: ["Standard ATX"],
-      },
-      {
-        name: "MOTHERBOARD",
-        description: ["ATX / M-ATX / ITX"],
-      },
-      {
-        name: "I/O PANEL",
-        description: [
-          "Power, USB 3.0, USB 2.0 x2, HD Audio, Mic, LED On & Off",
-        ],
-      },
-      {
-        name: "COLOR",
-        description: ["Black"],
-      },
-      {
-        name: "VGA LENGTH",
-        description: ["340mm (Max), 280mm with water cooling"],
-      },
-      // {
-      //   name: "GPU LENGTH",
-      //   description: ["350mm (Max)"],
-      // },
-      {
-        name: "PCI SLOTS",
-        description: ["7"],
-      },
-      {
-        name: "DRIVE BAY",
-        description: [""],
-        subname: ["HDD", "SSD"],
-        subdescription: ["3.5in, 3.5in & 2.5in", "2.5in x3"],
-      },
-      {
-        name: "CPU COOLER MOUNTING HEIGHT",
-        description: ["160mm (Max)"],
-      },
-      {
-        name: "COOLER SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Rear", "Top", "Power Duct"],
-        subdescription: [
-          "120mm Rainbow Fan x3 (140mm Fan x2 Optional)",
-          "120mm Rainbow Fan",
-          "120mm Rainbow Fan x3 (140mm Fan x2 Optional)",
-          "Duct 120mm Fan x2 (Optional)",
-        ],
-      },
-      {
-        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Top"],
-        subdescription: [
-          "240/280mm/360(Optional)",
-          "120mm/240mm/280mm(Optional)",
-        ],
-      },
-      {
-        name: "SIDE PANEL",
-        description: [""],
-        subname: ["Left"],
-        subdescription: ["Tempered Glass"],
-      },
-    ],
-  },
+  // {
+  //   productId: "CX-480",
+  //   categoryId: "CATEGORY_PCCASE",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(
+  //     ":categoryId",
+  //     "CATEGORY_PCCASE"
+  //   ).replace(":productId", "CX-480"),
+  //   name: "Coolmax CX-480",
+  //   // brochure:
+  //   //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
+  //   img: [
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086286/product-images/pc_case/CX-480-1_pywggf.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/CX-480-3_h30xoz.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086287/product-images/pc_case/CX-480-2_alh5cu.png",
+  //   ],
+  //   countryAvailability: [
+  //     {
+  //       abbreviation: "KR",
+  //       country: "Korea",
+  //     },
+  //     {
+  //       abbreviation: "PH",
+  //       country: "Philippines",
+  //     },
+  //     {
+  //       abbreviation: "US",
+  //       country: "United States",
+  //     },
+  //     {
+  //       abbreviation: "EC",
+  //       country: "Ecuador",
+  //     },
+  //     {
+  //       abbreviation: "JP",
+  //       country: "Japan",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME",
+  //       description: ["Coolmax CX480"],
+  //     },
+  //     {
+  //       name: "DIMENSION",
+  //       description: ["482mm(H) x 205mm(W) x 390mm(D)"],
+  //     },
+  //     // {
+  //     //   name: "WEIGHT",
+  //     //   description: ["7.9kg"],
+  //     // },
+  //     {
+  //       name: "PSU SIZE",
+  //       description: ["Standard ATX"],
+  //     },
+  //     {
+  //       name: "MOTHERBOARD",
+  //       description: ["ATX / M-ATX / ITX"],
+  //     },
+  //     {
+  //       name: "I/O PANEL",
+  //       description: [
+  //         "Power, USB 3.0, USB 2.0 x2, HD Audio, Mic, LED On & Off",
+  //       ],
+  //     },
+  //     {
+  //       name: "COLOR",
+  //       description: ["Black"],
+  //     },
+  //     {
+  //       name: "VGA LENGTH",
+  //       description: ["340mm (Max), 280mm with water cooling"],
+  //     },
+  //     // {
+  //     //   name: "GPU LENGTH",
+  //     //   description: ["350mm (Max)"],
+  //     // },
+  //     {
+  //       name: "PCI SLOTS",
+  //       description: ["7"],
+  //     },
+  //     {
+  //       name: "DRIVE BAY",
+  //       description: [""],
+  //       subname: ["HDD", "SSD"],
+  //       subdescription: ["3.5in, 3.5in & 2.5in", "2.5in x3"],
+  //     },
+  //     {
+  //       name: "CPU COOLER MOUNTING HEIGHT",
+  //       description: ["160mm (Max)"],
+  //     },
+  //     {
+  //       name: "COOLER SPECIFICATIONS",
+  //       description: [""],
+  //       subname: ["Front", "Rear", "Top", "Power Duct"],
+  //       subdescription: [
+  //         "120mm Rainbow Fan x3 (140mm Fan x2 Optional)",
+  //         "120mm Rainbow Fan",
+  //         "120mm Rainbow Fan x3 (140mm Fan x2 Optional)",
+  //         "Duct 120mm Fan x2 (Optional)",
+  //       ],
+  //     },
+  //     {
+  //       name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+  //       description: [""],
+  //       subname: ["Front", "Top"],
+  //       subdescription: [
+  //         "240/280mm/360(Optional)",
+  //         "120mm/240mm/280mm(Optional)",
+  //       ],
+  //     },
+  //     {
+  //       name: "SIDE PANEL",
+  //       description: [""],
+  //       subname: ["Left"],
+  //       subdescription: ["Tempered Glass"],
+  //     },
+  //   ],
+  // },
   {
     productId: "GX2-NEURON-GLASS",
     categoryId: "CATEGORY_PCCASE",

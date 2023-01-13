@@ -87,62 +87,39 @@
         margin-bottom: 1rem;
         padding-bottom: 1rem;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+
         h2 {
           font-family: "MetropolisBold", sans-serif;
           font-weight: 800;
-          font-size: 18px;
+          font-size: 30px;
+          text-transform: uppercase;
         }
         span {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
         }
       }
 
       .table-content {
-        h5 {
-          font-weight: 900;
-          font-size: 27px;
-          font-weight: 300;
-        }
-        .title-btn-container {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          align-content: center;
-          position: relative;
-          padding: 3rem;
-          h5 {
-            font-size: 3rem;
-            font-weight: 500;
+        .table-items {
+          .title-btn-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            h5 {
+              position: relative;
+              left: 10rem;
+              font-size: 25px;
+              font-weight: 500;
+            }
+            button {
+              position: relative;
+              right: 10rem;
+              margin-left: 1rem;
+              margin-right: 1rem;
+            }
           }
-          button {
-            position: relative;
-            left: 10rem;
-          }
-        }
-      }
-
-      .table-items {
-        display: flex;
-        justify-content: space-between;
-        vertical-align: middle;
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid #eee;
-        padding-left: 3rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-
-        h5 {
-          font-size: 2.3rem;
-          text-transform: uppercase;
-          font-weight: 300;
-        }
-
-        button {
-          margin-left: 1rem;
         }
       }
     }

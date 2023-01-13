@@ -1,7 +1,9 @@
 import { HOME_IMAGES } from "constants/home";
 import useResponsive from "hooks/useResponsive";
 import Img from "library/Images/Image";
+import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import "./MainSection.scss";
 
@@ -12,9 +14,14 @@ type MainSectionType = {
 
 const MainSection: React.FC<MainSectionType> = (props) => {
   const isMobileMode = useResponsive("mobile");
+  const navigate = useNavigate();
+
+  const navigateToMH2 = () => {
+    navigate("/products/HEADSET/MH2");
+  };
   return (
     <section
-      className="headset-container"
+      className="main-container"
       style={{
         backgroundImage: isMobileMode
           ? `url("${HOME_IMAGES.HOME_MOBILE_BG}")`
@@ -45,29 +52,39 @@ const MainSection: React.FC<MainSectionType> = (props) => {
       ) : (
         <Container fluid>
           <Row>
-            <Col className="col1" xs={5} sm={5} md={4} lg={5}>
-              <div className="headset-caption">
+            <Col className="col1" xs={5} sm={5} md={6} lg={6}>
+              <div className="main-caption">
                 <p className="text1">Pique Your</p>
                 <p className="text2">Gaming Experience.</p>
+                <div className="text3-container" onClick={navigateToMH2}>
+                  <p>
+                    MH2
+                    <span>
+                      <GoTo />
+                    </span>
+                  </p>
+                </div>
               </div>
             </Col>
-            <Col xs={2} sm={2} md={4} lg={2}>
-              <p
-                className="headset-text-button"
-                onClick={props.videoSectionHandler}
-              >
-                Explore More
-                <span className="span1">&gt;</span>
-                <span className="span2">&gt;</span>
-                <span className="span3">&gt;</span>
-              </p>
-            </Col>
-            <Col xs={5} sm={5} md={4} lg={5}>
-              <div className="headset-image-container">
+            <Col xs={5} sm={5} md={6} lg={6}>
+              <div className="main-image-container">
                 <Img
                   img={HOME_IMAGES.HOME_HEADSET_SECTION.HEADSET_LEFT}
-                  className="headset-mh2"
+                  className="main-mh2"
                 />
+              </div>
+            </Col>
+            <Col xs={2} sm={2} md={12} lg={12}>
+              <div
+                className="main-text-button"
+                onClick={props.videoSectionHandler}
+              >
+                <p>
+                  Explore More
+                  <span className="span1">&gt;</span>
+                  <span className="span2">&gt;</span>
+                  <span className="span3">&gt;</span>
+                </p>
               </div>
             </Col>
           </Row>

@@ -225,16 +225,20 @@ const Form = () => {
               <Row>
                 {labeledInput.map((data, index) => (
                   <Col {...{ ...data.colDef }} key={index}>
-                    <LabeledInput
-                      name={data.name}
-                      label={data.label}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={data.value as any}
-                      type={data.isTextArea ? "textarea" : "text"}
-                      errors={errors}
-                      hideLabel={true}
-                    />
+                    <div
+                      className={data.isTextArea ? "textarea-container" : ""}
+                    >
+                      <LabeledInput
+                        name={data.name}
+                        label={data.label}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        value={data.value as any}
+                        type={data.isTextArea ? "textarea" : "text"}
+                        errors={errors}
+                        hideLabel={true}
+                      />
+                    </div>
                   </Col>
                 ))}
               </Row>
