@@ -9367,6 +9367,804 @@ const products = [
       },
     ],
   },
+  {
+    productId: "MN-GL4",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "MN-GL4"),
+    name: "MN-GL4",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832864/product-brochures/accessories/Accesories_MN-GL4_DB_qumcvf.png",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832756/product-images/accessories/MN-GL4-1_ep7piv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832753/product-images/accessories/MN-GL4-2_amaew9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832754/product-images/accessories/MN-GL4-3_rzojlr.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["MN-GL4"],
+      },
+      {
+        name: "PRODUCT TYPE",
+        description: ["Thermal Grease"],
+      },
+      {
+        name: "COLOR",
+        description: ["Gray"],
+      },
+      {
+        name: "DENSITY (g/mL @ 25°C)",
+        description: ["2.6 ± 0.08"],
+      },
+      {
+        name: "VDAF (200°C, 24H)",
+        description: ["<0.6%"],
+      },
+      {
+        name: "THERMAL CONDUCTIVITY(W/m-k)",
+        description: ["8.5 ± 0.1"],
+      },
+      {
+        name: "THERMAL IMPEDANCE(°C-in²/W)",
+        description: ["<0.102"],
+      },
+      {
+        name: "BREAKDOWN VOLTAGE (kV/mm)",
+        description: [">5.0"],
+      },
+      {
+        name: "OPERATING TEMPERATURE (°C)",
+        description: ["-40~150"],
+      },
+      {
+        name: "NET WEIGHT",
+        description: ["4g / 0.1oz"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "MN-GL20",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "MN-GL20"),
+    name: "MN-GL20",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833030/product-brochures/accessories/Accesories_MN-GL20_DB_yyf4ip.png",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833064/product-images/accessories/MN-GL20-2_ubpi1u.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833061/product-images/accessories/MN-GL20-1_qrnwz8.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833060/product-images/accessories/MN-GL20-3_w3ozab.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["MN-GL20"],
+      },
+      {
+        name: "PRODUCT TYPE",
+        description: ["Thermal Grease"],
+      },
+      {
+        name: "COLOR",
+        description: ["Gray"],
+      },
+      {
+        name: "DENSITY (g/mL @ 25°C)",
+        description: ["2.6 ± 0.08"],
+      },
+      {
+        name: "VDAF (200°C, 24H)",
+        description: ["<0.6%"],
+      },
+      {
+        name: "THERMAL CONDUCTIVITY (W/m-k)",
+        description: ["8.5 ± 0.1"],
+      },
+      {
+        name: "THERMAL IMPEDANCE (°C-in²/W)",
+        description: ["<0.102"],
+      },
+      {
+        name: "BREAKDOWN VOLTAGE (kV/mm)",
+        description: [">5.0"],
+      },
+      {
+        name: "OPERATING TEMPERATURE (°C)",
+        description: ["-40~150"],
+      },
+      {
+        name: "NET WEIGHT",
+        description: ["20g / 0.7oz"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  //SPEAKERS
+  {
+    productId: "ROUND-STUDIO-BT-1000",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "ROUND-STUDIO-BT-1000"),
+    name: "Round Studio BT-1000",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833981/product-brochures/accessories/BT1000_DB_ENG_nqtrrv.jpg",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_3_nyfky4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_1_iozrvy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_2_frdimb.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["Round Studio BT-1000"],
+      },
+      {
+        name: "COLOR",
+        description: ["Dark Gray/White/Pink"],
+      },
+      {
+        name: "SIZE",
+        description: ["45cm(W) x 6.5cm(D) x 6.5cm(H)"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["440g"],
+      },
+      {
+        name: "BLUETOOTH TYPE",
+        description: ["4.2 EDR"],
+      },
+      {
+        name: "MUSIC PLAYTIME",
+        description: ["4-6 hrs"],
+      },
+      {
+        name: "BATTERY",
+        description: ["18650 Li-ion Cell(2200mAh)"],
+      },
+      {
+        name: "OUTPUT POWER",
+        description: ["5W x 2"],
+      },
+      {
+        name: "DRIVER UNIT",
+        description: ["45mm x 2"],
+      },
+      {
+        name: "FREQUENCY RESPONSE",
+        description: ["120Hz-18KHz"],
+      },
+      {
+        name: "S/N",
+        description: ["≥70dB @ 1KHz / 1.0W"],
+      },
+      {
+        name: "DISTORTION",
+        description: ["<0.2% @ 1KHz / 1.0W"],
+      },
+      {
+        name: "SEPARATION",
+        description: ["≥65 dB @ 1kHz  1.0W"],
+      },
+      {
+        name: "INPUT IMPEDANCE",
+        description: ["≥15,000 ohms"],
+      },
+      {
+        name: "5PIN USB CABLE LENGTH",
+        description: ["98cm"],
+      },
+      {
+        name: "AUX CABLE LENGTH",
+        description: ["95cm"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year"],
+      },
+      {
+        name: "KC CERTIFICATION",
+        description: ["R-CMI-HMM-BT-1000"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "ROUND-STUDIO-UB1000",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "ROUND-STUDIO-UB1000"),
+    name: "Round Studio UB-1000",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834162/product-brochures/accessories/UB-1000_DB-ENG_kfzzl7.jpg",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834203/product-images/accessories/UB-1000_-_4_rplios.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834203/product-images/accessories/UB-1000_-_1_is2tyf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_2_frdimb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834200/product-images/accessories/UB-1000_-_3_y6ahqz.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["Round Studio UB-1000"],
+      },
+      {
+        name: "COLOR",
+        description: ["Black"],
+      },
+      {
+        name: "SIZE",
+        description: ["45cm(W) x 6.5cm(D) x 6.5cm(H)"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["440g"],
+      },
+      {
+        name: "OUTPUT POWER",
+        description: ["5W x 2"],
+      },
+      {
+        name: "DRIVER UNIT",
+        description: ["45mm x 2"],
+      },
+      {
+        name: "FREQUENCY RESPONSE",
+        description: ["120Hz-18KHz"],
+      },
+      {
+        name: "S/N",
+        description: ["≥70dB @ 1KHz / 1.0W"],
+      },
+      {
+        name: "DISTORTION",
+        description: ["<0.2% @ 1KHz / 1.0W"],
+      },
+      {
+        name: "SEPARATION",
+        description: ["≥65 dB @ 1kHz  1.0W"],
+      },
+      {
+        name: "INPUT IMPEDANCE",
+        description: ["≥15,000 ohms"],
+      },
+      {
+        name: "POWER CABLE LENGTH",
+        description: ["98cm"],
+      },
+      {
+        name: "AUX CABLE LENGTH",
+        description: ["95cm"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year"],
+      },
+      {
+        name: "KC CERTIFICATION",
+        description: ["R-R-HMM-UB-1000"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  //MOUSEPAD
+  {
+    productId: "MANIC-GAMING-FIELD-P1",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "MANIC-GAMING-FIELD-P1"),
+    name: "Manic Gaming Field P1",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834418/product-brochures/accessories/P1_DB_ENGLISH_lgi9na.jpg",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834360/product-images/accessories/Gaming_Field_P1_-_4_ntvakv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834358/product-images/accessories/Gaming_Field_P1_-_1_ugtfp5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834360/product-images/accessories/Gaming_Field_P1_-_2_jnbf2p.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834360/product-images/accessories/Gaming_Field_P1_-_3_nacqh8.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["Manic Gaming Field P1 Mouse Pad"],
+      },
+      {
+        name: "SIZE",
+        description: ["780mm(W) x 300mm(H)"],
+      },
+      {
+        name: "THICKNESS",
+        description: ["5mm"],
+      },
+      {
+        name: "TEXTURE",
+        description: ["Surface(cloth) / Back(rubber)"],
+      },
+      {
+        name: "PACKAGE",
+        description: [
+          "Box/Bulk(bulk products are shipped in plastic packaging without box)",
+        ],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  //PALM REST
+  {
+    productId: "MPAMPAM",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "MPAMPAM"),
+    name: "Manic PAMPAM",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834533/product-brochures/accessories/PAMPAM_DB_ENGLISH_n18xfo.jpg",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834561/product-images/accessories/Pampam-2_rm6opl.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834562/product-images/accessories/Pampam-1_a7jl4q.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834562/product-images/accessories/Pampam-3_yv7na9.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["Manic Pampam"],
+      },
+      {
+        name: "SIZE",
+        description: ["433mm(W) x 73mm(L) x 15mm(H)"],
+      },
+      {
+        name: "THICKNESS",
+        description: ["5mm"],
+      },
+      {
+        name: "COLOR",
+        description: ["Black"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  //SSD
+  {
+    productId: "WGX4",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "WGX4"),
+    name: "Warp GX4 M.2 NMVe",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834868/product-images/accessories/GX4_SSD_2TB-1_jrs1su.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834864/product-images/accessories/GX4_SSD_2TB-2_u4eltg.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834860/product-images/accessories/GX4_SSD_2TB-3_whg3uc.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["Warp GX4 M.2 NVMe SSD with Heatsink"],
+      },
+      {
+        name: "SIZE",
+        description: ["(80±0.15) x (22±0.15) x (15±0.08)mm"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["36g ± 0.2g"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["M.2 2280, PCIe Gen 4x4"],
+      },
+      {
+        name: "NAND FLASH",
+        description: ["3D NAND"],
+      },
+      {
+        name: "CONTROLLER",
+        description: ["INNOGRIT"],
+      },
+      {
+        name: "OPERATING TEMPERATURE",
+        description: ["10°C - 70°C"],
+      },
+      {
+        name: "STORAGE TEMPERATURE",
+        description: ["-45°C - 95°C"],
+      },
+      {
+        name: "SHOCK RESISTANCE",
+        description: ["1500G at 0.5ms"],
+      },
+      {
+        name: "VOLUME",
+        description: ["512GB / 1TB / 2TB"],
+      },
+      {
+        name: "READ / WRITE SPEED",
+        description: ["7500/6700 MB/s"],
+      },
+      {
+        name: "TBW",
+        description: ["4000TBW"],
+      },
+      {
+        name: "MTBF",
+        description: ["1,000,000 Hours"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["5years"],
+      },
+      {
+        name: "KC CERFTICATION",
+        description: ["R-R-HMM-WarpNV4D"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  //LED CONTROLLER
+  {
+    productId: "MC-LC1",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "MC-LC1"),
+    name: "MC-LC1",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835095/product-images/accessories/MN-LC1-1_bzjujg.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835097/product-images/accessories/MN-LC1-2_afwxpu.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["MC-LC1"],
+      },
+      {
+        name: "DESCRIPTION",
+        description: ["LED Controller"],
+      },
+      {
+        name: "CONNECTIVITY",
+        description: ["3-Pin"],
+      },
+      {
+        name: "VOLTAGE",
+        description: ["5V"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  //MONITOR TABLE
+  {
+    productId: "UV-M100",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_ACCESSORIES"
+    ).replace(":productId", "UV-M100"),
+    name: "UV-M100",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835221/product-images/accessories/UV-M100-1_gjqzan.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835220/product-images/accessories/UV-M100-2_rlhkay.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835220/product-images/accessories/UV-M100-3_smb50h.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["UV-M100"],
+      },
+      {
+        name: "DESCRIPTION",
+        description: ["Keyboard Sterilization Monitor Stand"],
+      },
+      {
+        name: "SIZE",
+        description: ["615(L)mm x 209.5(W)mm x 91(H)mm"],
+      },
+      {
+        name: "INTERFACE",
+        description: ["USB (Micro 5 pin)"],
+      },
+      {
+        name: "LED",
+        description: ["UVC+UVA Hybrid LED"],
+      },
+      {
+        name: "UVC-LED",
+        description: ["270~280nm"],
+      },
+      {
+        name: "UVA-LED",
+        description: ["390~410nm"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
 ];
 
 export default products;
