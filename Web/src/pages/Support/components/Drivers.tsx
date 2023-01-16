@@ -90,7 +90,7 @@ const Drivers: React.FC = () => {
                               Driver <DownloadIcon />
                             </ShadowedButton>
                             <ShadowedButton
-                              onClick={() => downloadHandler(p.file)}
+                              onClick={() => downloadHandler(p.software)}
                             >
                               Software <DownloadIcon />
                             </ShadowedButton>

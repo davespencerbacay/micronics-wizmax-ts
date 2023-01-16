@@ -8,137 +8,22 @@ const products = [
    *  */
   // MOUSE SECTION
   {
-    productId: "ZM1",
+    productId: "M630W",
     categoryId: "CATEGORY_MOUSE",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(
       ":categoryId",
       "CATEGORY_MOUSE"
-    ).replace(":productId", "ZM1"),
-    name: "ZM1",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086124/product-brochures/mouse/zm-1_db_english_yho6c5.jpg",
+    ).replace(":productId", "M630W"),
+    name: "Manic M630W",
+    brochure: "",
     img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/zm1-1_y1rcit.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/zm1-2_vjwbdf.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/zm1-3_vfb5uc.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/zm1-4_myflwy.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["ZM1"],
-      },
-      {
-        name: "SIZE ",
-        description: ["120mm(L) x 66mm(W) x 35mm(H)"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["108g ± 2g"],
-      },
-      {
-        name: "SWITCH",
-        description: ["Huano Switch"],
-      },
-      {
-        name: "LIFESPAN",
-        description: ["20 million clicks"],
-      },
-      {
-        name: "SENSOR",
-        description: ["PIXART PMW 3389"],
-      },
-      {
-        name: "CABLE LENGTH",
-        description: ["1.62m"],
-      },
-      {
-        name: "POLLING RATE",
-        description: ["1000Hz"],
-      },
-      {
-        name: "LED",
-        description: ["Bottom RGB"],
-      },
-      {
-        name: "INTERFACE",
-        description: ["USB / Polyfabric Cable  "],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11® , PlayStation4®",
-        ],
-      },
-      {
-        name: "ACCELERATION",
-        description: ["50G"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Labeled at the back"],
-      },
-      {
-        name: "KC CERTIFICATION ",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-ZM-1
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME ",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE ",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "ZM2",
-    categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "ZM2"),
-    name: "ZM2",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/ZM2_DB_Translation_Revision_tbsqns.jpg",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/ZM2-1_emfkkk.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/ZM2-2_ypbfct.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/ZM2-3_daziuk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/M630W-B-2_aiszl4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085984/product-images/mouse/M630W-B-1_h7uaww.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/M630W-B-3_juiig4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-4_xd4h2l.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-5_yfutxe.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-6_nvvqqv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/M630W-B-7_rxsc2t.png",
     ],
     countryAvailability: [
       {
@@ -166,53 +51,59 @@ const products = [
     table: [
       {
         name: "MODEL NAME",
-        description: ["ZM2"],
+        description: ["Manic M630W"],
       },
       {
         name: "SIZE ",
-        description: ["127.4mm(L) x 69.96mm(W) x 39.7mm(H)"],
+        description: ["103mm(L) x 70mm(W) x 42mm(H) ± 1mm"],
       },
       {
         name: "WEIGHT",
-        description: ["111g"],
+        description: ["62g ± 5g (with receiver)"],
       },
       {
         name: "SWITCH",
-        description: ["Huano Switch"],
+        description: ["Silent Switch"],
       },
       {
         name: "LIFESPAN",
-        description: ["20 million clicks"],
+        description: ["5 Million Clicks"],
       },
       {
         name: "SENSOR",
-        description: ["PAW3370 Optical Sensor"],
+        description: ["Optical Sensor (DPI: 1,600)"],
+      },
+      {
+        name: "WIRELESS DISTANCE",
+        description: ["10m"],
       },
       // {
       //   name: "CABLE LENGTH",
-      //   description: ["1.62m"],
+      //   description: ["1.8m"],
       // },
       {
         name: "POLLING RATE",
-        description: ["1000Hz"],
+        description: ["250Hz"],
       },
-      {
-        name: "LED",
-        description: ["7 Mode RGB"],
-      },
+      // {
+      //   name: "LED",
+      //   description: ["RGB"],
+      // },
       {
         name: "INTERFACE",
-        description: ["Gold-Plated USB"],
+        description: ["USB 2.4GHz"],
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®",
-        ],
+        description: ["Windows 7®, Windows 10®, Windows 11®"],
       },
+      // {
+      //   name: "ACCELERATION",
+      //   description: ["30G"],
+      // },
       {
-        name: "ACCELERATION",
-        description: ["50G"],
+        name: "CONTENTS",
+        description: ["M630W Mouse, AA Battery, Receiver, Product Manual"],
       },
       {
         name: "WARRANTY",
@@ -220,7 +111,7 @@ const products = [
       },
       {
         name: "PRODUCTION DATE",
-        description: ["Labeled at the back"],
+        description: ["Labeled at the Bottom of the Mouse"],
       },
       {
         name: "KC CERTIFICATION ",
@@ -228,7 +119,7 @@ const products = [
           <React.Fragment>
             <span>
               <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-ZM-2
+              R-R-HMM-M630W, R-R-HMM-R630W
             </span>
           </React.Fragment>,
         ],
@@ -239,249 +130,6 @@ const products = [
       },
       {
         name: "CUSTOMER SERVICE ",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "MM1",
-    categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "MM1"),
-    name: "MM1",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086122/product-brochures/mouse/Mouse_MM1_DB_ywgchq.png",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/mm1-1_mqwr2z.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/mm1-2_pjwfjv.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/mm1-3_ezkuje.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/mm1-4_psawbp.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/mm1-5_cch16g.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["MM1"],
-      },
-      {
-        name: "SIZE",
-        description: ["117.5mm(L) x 65.9mm(W) x 38.8mm(H)"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["108g ± 2g"],
-      },
-      {
-        name: "SWITCH",
-        description: ["Huano Switch"],
-      },
-      {
-        name: "LIFESPAN",
-        description: ["20 million clicks"],
-      },
-      {
-        name: "SENSOR",
-        description: ["PAW3327 Optical Sensor"],
-      },
-      {
-        name: "CABLE LENGTH",
-        description: ["1.9m"],
-      },
-      {
-        name: "POLLING RATE",
-        description: ["1000Hz"],
-      },
-      {
-        name: "LED",
-        description: ["RGB (7 MODES AVAILABLE)"],
-      },
-      {
-        name: "INTERFACE",
-        description: ["USB / Paracord Cable"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11® , PlayStation4®",
-        ],
-      },
-      {
-        name: "ACCELERATION ",
-        description: ["30G"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Labeled at the back"],
-      },
-      {
-        name: "KC Certification No",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MM1-1
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "WM1",
-    categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "WM1"),
-    name: "WM1",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086117/product-brochures/mouse/WM1-DB_k6lydo.jpg",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085985/product-images/mouse/wm1-1_filoyf.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085985/product-images/mouse/wm1-2_qpmstr.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085983/product-images/mouse/wm1-3_tworek.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085982/product-images/mouse/wm1-4_xflhak.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/wm1-5_zwfjah.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/wm1-6_hf2c1e.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["WM1"],
-      },
-      {
-        name: "SIZE",
-        description: ["121.2mm(L) x 66.6mm(W) x 38.8mm(H)"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["70g ± 2g"],
-      },
-      {
-        name: "SWITCH",
-        description: ["Huano Switch"],
-      },
-      {
-        name: "LIFESPAN",
-        description: ["20 million clicks"],
-      },
-      {
-        name: "SENSOR",
-        description: ["PAW3370 Optical Sensor "],
-      },
-      {
-        name: "CABLE LENGTH",
-        description: ["1.9m"],
-      },
-      {
-        name: "POLLING RATE",
-        description: ["1000Hz"],
-      },
-      {
-        name: "LED",
-        description: ["RGB (7 modes available)"],
-      },
-      {
-        name: "DPI",
-        description: ["19,000 DPI (7 steps adjustable)"],
-      },
-      {
-        name: "INTERFACE",
-        description: [" USB / Paracord cable"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11® , PlayStation4®",
-        ],
-      },
-      {
-        name: "ACCELERATION",
-        description: ["50G"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Label at the back"],
-      },
-      {
-        name: "KC CERTIFICATION NUMBER",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-WM-1
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
         description: ["wizmaxglobal.com"],
       },
     ],
@@ -503,6 +151,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085972/product-images/mouse/WM2-3_k0fkdl.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/WM2-5_p2he9h.png",
     ],
+    file: "https://drive.google.com/file/d/17_MmVyGkwSBKR7Rn-GRZFCI9oaH3ThPZ/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -630,6 +280,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/MG40_-2_vdeinx.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085972/product-images/mouse/MG40_-4_sfzhh8.png",
     ],
+    file: "https://drive.google.com/file/d/1kAS7zf9yNbalXI1Woj_604igO8ZSBy9B/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -746,6 +398,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-1_nylamn.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/MG501-2_mi8uez.png",
     ],
+    file: "https://drive.google.com/file/d/1e9WsE5_H3KqXSmZ62ArEC4ews-qjuvU5/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -837,128 +491,6 @@ const products = [
             <span>
               <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
               R-R-HMM-MG501
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME ",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE ",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "MG530",
-    categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "MG530"),
-    name: "MG530",
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085977/product-images/mouse/MG530_-_3_qcpwtm.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085984/product-images/mouse/MG530_-_1_jll17u.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085974/product-images/mouse/MG530_-_2_lwk6ez.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/MG530_-_4_vaefnl.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    isNewRelease: "New Release",
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["MG530"],
-      },
-      {
-        name: "SIZE ",
-        description: ["120mm(L) x 67mm(W) x 38mm(H)"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["119g"],
-      },
-      {
-        name: "SWITCH",
-        description: ["Huano Switch"],
-      },
-      {
-        name: "LIFESPAN",
-        description: ["20 Million Clicks"],
-      },
-      {
-        name: "SENSOR",
-        description: ["PAW3327 Optical Sensor"],
-      },
-      {
-        name: "CABLE LENGTH",
-        description: ["1.9m"],
-      },
-      {
-        name: "POLLING RATE",
-        description: ["1000Hz"],
-      },
-      {
-        name: "LED",
-        description: ["7 Mode RGB"],
-      },
-      {
-        name: "INTERFACE",
-        description: ["USB / Fabric Cable"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®",
-        ],
-      },
-      {
-        name: "ACCELERATION",
-        description: ["30G"],
-      },
-      {
-        name: "CONTENTS",
-        description: ["MG530 Mouse, Product Manual"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Labeled at the back"],
-      },
-      {
-        name: "KC CERTIFICATION ",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MG530
             </span>
           </React.Fragment>,
         ],
@@ -1100,23 +632,22 @@ const products = [
     ],
   },
   {
-    productId: "M630W",
+    productId: "MG530",
     categoryId: "CATEGORY_MOUSE",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(
       ":categoryId",
       "CATEGORY_MOUSE"
-    ).replace(":productId", "M630W"),
-    name: "Manic M630W",
+    ).replace(":productId", "MG530"),
+    name: "MG530",
     brochure: "",
     img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/M630W-B-2_aiszl4.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085984/product-images/mouse/M630W-B-1_h7uaww.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/M630W-B-3_juiig4.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-4_xd4h2l.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-5_yfutxe.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-6_nvvqqv.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/M630W-B-7_rxsc2t.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085977/product-images/mouse/MG530_-_3_qcpwtm.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085984/product-images/mouse/MG530_-_1_jll17u.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085974/product-images/mouse/MG530_-_2_lwk6ez.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/MG530_-_4_vaefnl.png",
     ],
+    file: "https://drive.google.com/file/d/13BcJRMfc2__tjO3bkVOujM6IhXDl3Xl3/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -1143,59 +674,57 @@ const products = [
     table: [
       {
         name: "MODEL NAME",
-        description: ["Manic M630W"],
+        description: ["MG530"],
       },
       {
         name: "SIZE ",
-        description: ["103mm(L) x 70mm(W) x 42mm(H) ± 1mm"],
+        description: ["120mm(L) x 67mm(W) x 38mm(H)"],
       },
       {
         name: "WEIGHT",
-        description: ["62g ± 5g (with receiver)"],
+        description: ["119g"],
       },
       {
         name: "SWITCH",
-        description: ["Silent Switch"],
+        description: ["Huano Switch"],
       },
       {
         name: "LIFESPAN",
-        description: ["5 Million Clicks"],
+        description: ["20 Million Clicks"],
       },
       {
         name: "SENSOR",
-        description: ["Optical Sensor (DPI: 1,600)"],
+        description: ["PAW3327 Optical Sensor"],
       },
       {
-        name: "WIRELESS DISTANCE",
-        description: ["10m"],
+        name: "CABLE LENGTH",
+        description: ["1.9m"],
       },
-      // {
-      //   name: "CABLE LENGTH",
-      //   description: ["1.8m"],
-      // },
       {
         name: "POLLING RATE",
-        description: ["250Hz"],
+        description: ["1000Hz"],
       },
-      // {
-      //   name: "LED",
-      //   description: ["RGB"],
-      // },
+      {
+        name: "LED",
+        description: ["7 Mode RGB"],
+      },
       {
         name: "INTERFACE",
-        description: ["USB 2.4GHz"],
+        description: ["USB / Fabric Cable"],
       },
       {
         name: "COMPATIBILITY",
-        description: ["Windows 7®, Windows 10®, Windows 11®"],
+        description: [
+          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®",
+        ],
       },
-      // {
-      //   name: "ACCELERATION",
-      //   description: ["30G"],
-      // },
+      {
+        name: "ACCELERATION",
+        description: ["30G"],
+      },
       {
         name: "CONTENTS",
-        description: ["M630W Mouse, AA Battery, Receiver, Product Manual"],
+        description: ["MG530 Mouse, Product Manual"],
       },
       {
         name: "WARRANTY",
@@ -1203,7 +732,7 @@ const products = [
       },
       {
         name: "PRODUCTION DATE",
-        description: ["Labeled at the Bottom of the Mouse"],
+        description: ["Labeled at the back"],
       },
       {
         name: "KC CERTIFICATION ",
@@ -1211,7 +740,7 @@ const products = [
           <React.Fragment>
             <span>
               <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-M630W, R-R-HMM-R630W
+              R-R-HMM-MG530
             </span>
           </React.Fragment>,
         ],
@@ -1226,23 +755,24 @@ const products = [
       },
     ],
   },
-  //KEYBOARD SECTION
   {
-    productId: "ZK1",
-    categoryId: "CATEGORY_KB",
+    productId: "ZM1",
+    categoryId: "CATEGORY_MOUSE",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(
       ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "ZK1"),
-    name: "ZK1",
+      "CATEGORY_MOUSE"
+    ).replace(":productId", "ZM1"),
+    name: "ZM1",
     brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/ZK1_DB_english_g3stxw.jpg",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086124/product-brochures/mouse/zm-1_db_english_yho6c5.jpg",
     img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086156/product-images/keyboard/zk1-1_gbquyo.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086158/product-images/keyboard/ZK1-2_qtdwzn.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/zk1-3_v45bvo.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/ZK1-4_vioony.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/zm1-1_y1rcit.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/zm1-2_vjwbdf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/zm1-3_vfb5uc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/zm1-4_myflwy.png",
     ],
+    file: "https://drive.google.com/file/d/1s3e5rw55Is3BXAp5TV0mcdQs6QKjzzoQ/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -1264,6 +794,754 @@ const products = [
         abbreviation: "JP",
         country: "Japan",
       },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ZM1"],
+      },
+      {
+        name: "SIZE ",
+        description: ["120mm(L) x 66mm(W) x 35mm(H)"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["108g ± 2g"],
+      },
+      {
+        name: "SWITCH",
+        description: ["Huano Switch"],
+      },
+      {
+        name: "LIFESPAN",
+        description: ["20 million clicks"],
+      },
+      {
+        name: "SENSOR",
+        description: ["PIXART PMW 3389"],
+      },
+      {
+        name: "CABLE LENGTH",
+        description: ["1.62m"],
+      },
+      {
+        name: "POLLING RATE",
+        description: ["1000Hz"],
+      },
+      {
+        name: "LED",
+        description: ["Bottom RGB"],
+      },
+      {
+        name: "INTERFACE",
+        description: ["USB / Polyfabric Cable  "],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: [
+          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11® , PlayStation4®",
+        ],
+      },
+      {
+        name: "ACCELERATION",
+        description: ["50G"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Labeled at the back"],
+      },
+      {
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-ZM-1
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE ",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "ZM2",
+    categoryId: "CATEGORY_MOUSE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_MOUSE"
+    ).replace(":productId", "ZM2"),
+    name: "ZM2",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/ZM2_DB_Translation_Revision_tbsqns.jpg",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/ZM2-1_emfkkk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/ZM2-2_ypbfct.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/ZM2-3_daziuk.png",
+    ],
+    file: "https://drive.google.com/file/d/1LaxfxwtkesspX34799jmxCn0d5FDD_1l/view",
+    software: "",
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    isNewRelease: "New Release",
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ZM2"],
+      },
+      {
+        name: "SIZE ",
+        description: ["127.4mm(L) x 69.96mm(W) x 39.7mm(H)"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["111g"],
+      },
+      {
+        name: "SWITCH",
+        description: ["Huano Switch"],
+      },
+      {
+        name: "LIFESPAN",
+        description: ["20 million clicks"],
+      },
+      {
+        name: "SENSOR",
+        description: ["PAW3370 Optical Sensor"],
+      },
+      // {
+      //   name: "CABLE LENGTH",
+      //   description: ["1.62m"],
+      // },
+      {
+        name: "POLLING RATE",
+        description: ["1000Hz"],
+      },
+      {
+        name: "LED",
+        description: ["7 Mode RGB"],
+      },
+      {
+        name: "INTERFACE",
+        description: ["Gold-Plated USB"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: [
+          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®",
+        ],
+      },
+      {
+        name: "ACCELERATION",
+        description: ["50G"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Labeled at the back"],
+      },
+      {
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-ZM-2
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE ",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "MM1",
+    categoryId: "CATEGORY_MOUSE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_MOUSE"
+    ).replace(":productId", "MM1"),
+    name: "MM1",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086122/product-brochures/mouse/Mouse_MM1_DB_ywgchq.png",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/mm1-1_mqwr2z.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/mm1-2_pjwfjv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/mm1-3_ezkuje.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085976/product-images/mouse/mm1-4_psawbp.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/mm1-5_cch16g.png",
+    ],
+    file: "https://drive.google.com/file/d/1CV4uCWdVAbwRNqsS9fGFqI45kib0nQR5/view",
+    software: "",
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["MM1"],
+      },
+      {
+        name: "SIZE",
+        description: ["117.5mm(L) x 65.9mm(W) x 38.8mm(H)"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["108g ± 2g"],
+      },
+      {
+        name: "SWITCH",
+        description: ["Huano Switch"],
+      },
+      {
+        name: "LIFESPAN",
+        description: ["20 million clicks"],
+      },
+      {
+        name: "SENSOR",
+        description: ["PAW3327 Optical Sensor"],
+      },
+      {
+        name: "CABLE LENGTH",
+        description: ["1.9m"],
+      },
+      {
+        name: "POLLING RATE",
+        description: ["1000Hz"],
+      },
+      {
+        name: "LED",
+        description: ["RGB (7 MODES AVAILABLE)"],
+      },
+      {
+        name: "INTERFACE",
+        description: ["USB / Paracord Cable"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: [
+          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11® , PlayStation4®",
+        ],
+      },
+      {
+        name: "ACCELERATION ",
+        description: ["30G"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Labeled at the back"],
+      },
+      {
+        name: "KC Certification No",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-MM1-1
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "WM1",
+    categoryId: "CATEGORY_MOUSE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_MOUSE"
+    ).replace(":productId", "WM1"),
+    name: "WM1",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086117/product-brochures/mouse/WM1-DB_k6lydo.jpg",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085985/product-images/mouse/wm1-1_filoyf.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085985/product-images/mouse/wm1-2_qpmstr.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085983/product-images/mouse/wm1-3_tworek.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085982/product-images/mouse/wm1-4_xflhak.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085981/product-images/mouse/wm1-5_zwfjah.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085978/product-images/mouse/wm1-6_hf2c1e.png",
+    ],
+    file: "https://drive.google.com/file/d/1NOizd7dtZfLpMuHhaJKDRz3kv0PpCZy2/view",
+    software: "",
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      {
+        abbreviation: "JP",
+        country: "Japan",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WM1"],
+      },
+      {
+        name: "SIZE",
+        description: ["121.2mm(L) x 66.6mm(W) x 38.8mm(H)"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["70g ± 2g"],
+      },
+      {
+        name: "SWITCH",
+        description: ["Huano Switch"],
+      },
+      {
+        name: "LIFESPAN",
+        description: ["20 million clicks"],
+      },
+      {
+        name: "SENSOR",
+        description: ["PAW3370 Optical Sensor "],
+      },
+      {
+        name: "CABLE LENGTH",
+        description: ["1.9m"],
+      },
+      {
+        name: "POLLING RATE",
+        description: ["1000Hz"],
+      },
+      {
+        name: "LED",
+        description: ["RGB (7 modes available)"],
+      },
+      {
+        name: "DPI",
+        description: ["19,000 DPI (7 steps adjustable)"],
+      },
+      {
+        name: "INTERFACE",
+        description: [" USB / Paracord cable"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: [
+          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11® , PlayStation4®",
+        ],
+      },
+      {
+        name: "ACCELERATION",
+        description: ["50G"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Label at the back"],
+      },
+      {
+        name: "KC CERTIFICATION NUMBER",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-WM-1
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  //KEYBOARD SECTION
+  {
+    productId: "W101P",
+    categoryId: "CATEGORY_KB",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_KB"
+    ).replace(":productId", "W101P"),
+    name: "W101P",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Peacock_Green_-_4_pjmnll.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487924/product-images/keyboard/W101P_Peacock_Green_-_3_qegl29.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487922/product-images/keyboard/W101P_Peacock_Green_-_2_qucmti.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487932/product-images/keyboard/W101P_Sky_Blue_-_4_w9eclg.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487930/product-images/keyboard/W101P_Sky_Blue_-_3_wdarsi.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487928/product-images/keyboard/W101P_Sky_Blue_-_2_mzsepb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_4_culfli.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_3_vcfc39.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_2_zwsxuw.png",
+    ],
+    countryAvailability: [
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["W101P"],
+      },
+      // {
+      //   name: "SIZE",
+      //   description: ["446mm(L) x 135mm(W) x 37mm(H) ± 2mm"],
+      // },
+      // {
+      //   name: "WEIGHT",
+      //   description: ["1020g ± 10g"],
+      // },
+      {
+        name: "SWITCH",
+        description: ["4th Generation Jixian Optical Switch"],
+      },
+      {
+        name: "KEYCAP",
+        description: ["PBT 2 Color Keycap"],
+      },
+      // {
+      //   name: "NUMBER OF KEYS",
+      //   description: ["104 Keys"],
+      // },
+      {
+        name: "LIFESPAN",
+        description: ["100 Million Strokes"],
+      },
+      // {
+      //   name: "CONCURRENT INPUT",
+      //   description: ["104 Infinite Simultaneous Inputs"],
+      // },
+      // {
+      //   name: "CABLE LENGTH",
+      //   description: ["1.5m"],
+      // },
+      {
+        name: "POLLING RATE",
+        description: ["1000Hz"],
+      },
+      {
+        name: "LED",
+        description: ["RGB"],
+      },
+      {
+        name: "FEATURE",
+        description: ["IPX8 Waterproof"],
+      },
+      // {
+      //   name: "INTERFACE",
+      //   description: ["USB / Fabric Cable"],
+      // },
+      // {
+      //   name: "COMPATIBILITY",
+      //   description: ["Windows XP®, Windows 7®, Windows 8® , Windows 10®"],
+      // },
+      {
+        name: "PRODUCT TYPE ",
+        description: ["Gaming Keyboard"],
+      },
+      // {
+      //   name: "CONTENTS",
+      //   description: ["Manic EX580 Keyboard, Product Manual, Keycap Puller"],
+      // },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Labeled at the back of the keyboard"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      // {
+      //   name: "KC CERTIFICATION NUMBER",
+      //   description: [
+      //     <React.Fragment>
+      //       <span>
+      //         <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-X50
+      //         (Derivative model)
+      //       </span>
+      //     </React.Fragment>,
+      //   ],
+      // },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "W85-TKL",
+    categoryId: "CATEGORY_KB",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_KB"
+    ).replace(":productId", "W85-TKL"),
+    name: "Wizmax W85 TKL",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/W85TKL_-_3_qz4ln7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/W85TKL_-_1_sbfkw9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086165/product-images/keyboard/W85TKL_-_2_d23fix.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086157/product-images/keyboard/W85TKL_-_4_vt1ken.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086160/product-images/keyboard/W85TKL_-_5_rkmncy.png",
+    ],
+    countryAvailability: [
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["W85 TKL"],
+      },
+      // {
+      //   name: "SIZE",
+      //   description: ["438mm(L) x 126mm(W) x 15.8mm(H) ± 2mm"],
+      // },
+      // {
+      //   name: "WEIGHT",
+      //   description: ["555g ± 10g"],
+      // },
+      {
+        name: "SWITCH",
+        description: ["GATERON Yellow Pro Switch (Hot-Swappable)"],
+      },
+      {
+        name: "KEYCAP",
+        description: ["PBT 2 Color Keycap"],
+      },
+      {
+        name: "NUMBER OF KEYS",
+        description: ["85 Keys"],
+      },
+      {
+        name: "LIFESPAN",
+        description: ["60 million key strokes"],
+      },
+      {
+        name: "INTERFACE",
+        description: ["Wired/Wireless Connection Bluetooth/2.4GHz"],
+      },
+      {
+        name: "POLLING RATE",
+        description: ["1000Hz"],
+      },
+      {
+        name: "LED",
+        description: ["White LED Effect"],
+      },
+      {
+        name: "PRODUCT TYPE",
+        description: ["Gaming Keyboard"],
+      },
+      {
+        name: "BATTERY",
+        description: ["Li-Battery 3.7V, 3000mA/H (15H)"],
+      },
+      // {
+      //   name: "FEATURE",
+      //   description: ["IPX8 Waterproof"],
+      // },
+      // {
+      //   name: "CONTENTS",
+      //   description: ["Keyboard and Product Manual"],
+      // },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Labeled at the back of the keyboard"],
+      },
+      {
+        name: "WARRANTY ",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      // {
+      //   name: "KC CERTIFICATION NUMBER",
+      //   description: [
+      //     <React.Fragment>
+      //       <span>
+      //         <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+      //         R-R-HMM-K350
+      //       </span>
+      //     </React.Fragment>,
+      //   ],
+      // },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "ZK1",
+    categoryId: "CATEGORY_KB",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_KB"
+    ).replace(":productId", "ZK1"),
+    name: "ZK1",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/ZK1_DB_english_g3stxw.jpg",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086156/product-images/keyboard/zk1-1_gbquyo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086158/product-images/keyboard/ZK1-2_qtdwzn.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/zk1-3_v45bvo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/ZK1-4_vioony.png",
+    ],
+    file: "https://drive.google.com/file/d/1kzKGfJ28dFDYaNnycXAASsAGUTB022fw/view",
+    software: "",
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      {
+        abbreviation: "EC",
+        country: "Ecuador",
+      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -1370,6 +1648,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086162/product-images/keyboard/ZK2-4_c80n1i.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086153/product-images/keyboard/ZK2-5_dfjfpr.png",
     ],
+    file: "https://drive.google.com/file/d/1S-ZDfvUi4VMU5qqiNp63fg4X-IQmvjjo/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -1387,10 +1667,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -1498,6 +1778,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086160/product-images/keyboard/WK1B_-_3_dxdzid.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/WK1B_-_1_knqp2n.png",
     ],
+    file: "https://drive.google.com/file/d/1343sjatK2qoD1NnXKnqzEEKYwCYH15Kw/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -1515,10 +1797,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -1624,6 +1906,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/WK2-3_sbrzgd.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086150/product-images/keyboard/WK2-4_orwsfr.png",
     ],
+    file: "https://drive.google.com/file/d/1iJr41nnwrBK_0DVzz40KxC_3i_ytSFFK/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -1641,10 +1925,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -1752,6 +2036,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086161/product-images/keyboard/WK3-3_lili7s.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086161/product-images/keyboard/WK3-4_fuuonj.png",
     ],
+    file: "https://drive.google.com/file/d/1XUqp-Fjcxc-PbInEmahaBjodtYe1QxcB/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -1769,10 +2055,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -1880,6 +2166,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/WK4-3_vr8qv3.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086156/product-images/keyboard/WK4-4_iyqh2e.png",
     ],
+    file: "https://drive.google.com/file/d/15DXjMKtVustxCRuxRhtkI2Qod3wRshfM/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -1897,10 +2185,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -2010,6 +2298,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/MK1_-_5_k2biy6.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/MK1_-_6_uq9pgc.png",
     ],
+    file: "https://drive.google.com/file/d/1B5gkCp-v3b6dkADTrPK4nYQc4_KMW93_/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -2027,10 +2317,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -2155,14 +2445,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -2260,6 +2550,8 @@ const products = [
     name: "EX580L",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086198/product-brochures/keyboard/EX580L_DB-ENG_toi7ho.jpg",
+    manual:
+      "https://drive.google.com/file/d/1ia88ls4xdK69RXuGmn9JCxQfU-pwIuSi/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086147/product-images/keyboard/EX580_L_0005_05_sj0qik.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/EX580_L_0006_06_nsbbcj.png",
@@ -2269,6 +2561,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086167/product-images/keyboard/EX580_L_0011_11_u5iajl.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086149/product-images/keyboard/EX580_L_0012_12_xcm4lp.png",
     ],
+    file: "https://drive.google.com/file/d/1ZCf_SvxVVV1iMqg8bdYn0xsy1lc1fX7b/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -2282,14 +2576,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -2381,130 +2675,130 @@ const products = [
       },
     ],
   },
-  {
-    productId: "MANICX100",
-    categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "MANICX100"),
-    name: "Manic X100",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086189/product-brochures/keyboard/Keyboard_X100_DB_juxvlv.png",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/X100_-_3_j0letm.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/X100_-_2_ulmsyo.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/X100_-_4_j6hknh.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/X100_-_1_ryqy7k.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["MANIC X100"],
-      },
-      {
-        name: "SIZE",
-        description: ["440mm(L) x 140mm(W) x 47mm(H) ± 0.5mm"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["1100g ± 20g"],
-      },
-      {
-        name: "SWITCH",
-        description: ["Manic Blue/Red/Brown Switch"],
-      },
-      {
-        name: "NUMBER OF KEYS",
-        description: ["104 Keys"],
-      },
-      {
-        name: "LIFESPAN",
-        description: ["60 million strokes"],
-      },
-      {
-        name: "CONCURRENT INPUT",
-        description: ["104 Infinite Simultaneous Inputs"],
-      },
-      {
-        name: "CABLE LENGTH",
-        description: ["1.5m"],
-      },
-      {
-        name: "POLLING RATE",
-        description: ["1000Hz"],
-      },
-      {
-        name: "LED",
-        description: ["Front RGB"],
-      },
-      {
-        name: "INTERFACE",
-        description: ["USB / Fabric Cable"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: ["Windows XP®, Windows 7®, Windows 8® , Windows 10®"],
-      },
-      {
-        name: "PRODUCT TYPE ",
-        description: ["Mechanical Gaming Keyboard"],
-      },
-      {
-        name: "CONTENTS",
-        description: ["Manic X100 Keyboard, Product Manual, Keycap Puller"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Labeled on the back of the Product"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "KC CERTIFICATION NUMBER",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-X100
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
+  // {
+  //   productId: "MANICX100",
+  //   categoryId: "CATEGORY_KB",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(
+  //     ":categoryId",
+  //     "CATEGORY_KB"
+  //   ).replace(":productId", "MANICX100"),
+  //   name: "Manic X100",
+  //   brochure:
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086189/product-brochures/keyboard/Keyboard_X100_DB_juxvlv.png",
+  //   img: [
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/X100_-_3_j0letm.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/X100_-_2_ulmsyo.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/X100_-_4_j6hknh.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/X100_-_1_ryqy7k.png",
+  //   ],
+  //   countryAvailability: [
+  //     {
+  //       abbreviation: "KR",
+  //       country: "Korea",
+  //     },
+  //     {
+  //       abbreviation: "PH",
+  //       country: "Philippines",
+  //     },
+  //     {
+  //       abbreviation: "US",
+  //       country: "United States",
+  //     },
+  //     {
+  //       abbreviation: "EC",
+  //       country: "Ecuador",
+  //     },
+  //     {
+  //       abbreviation: "JP",
+  //       country: "Japan",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME",
+  //       description: ["MANIC X100"],
+  //     },
+  //     {
+  //       name: "SIZE",
+  //       description: ["440mm(L) x 140mm(W) x 47mm(H) ± 0.5mm"],
+  //     },
+  //     {
+  //       name: "WEIGHT",
+  //       description: ["1100g ± 20g"],
+  //     },
+  //     {
+  //       name: "SWITCH",
+  //       description: ["Manic Blue/Red/Brown Switch"],
+  //     },
+  //     {
+  //       name: "NUMBER OF KEYS",
+  //       description: ["104 Keys"],
+  //     },
+  //     {
+  //       name: "LIFESPAN",
+  //       description: ["60 million strokes"],
+  //     },
+  //     {
+  //       name: "CONCURRENT INPUT",
+  //       description: ["104 Infinite Simultaneous Inputs"],
+  //     },
+  //     {
+  //       name: "CABLE LENGTH",
+  //       description: ["1.5m"],
+  //     },
+  //     {
+  //       name: "POLLING RATE",
+  //       description: ["1000Hz"],
+  //     },
+  //     {
+  //       name: "LED",
+  //       description: ["Front RGB"],
+  //     },
+  //     {
+  //       name: "INTERFACE",
+  //       description: ["USB / Fabric Cable"],
+  //     },
+  //     {
+  //       name: "COMPATIBILITY",
+  //       description: ["Windows XP®, Windows 7®, Windows 8® , Windows 10®"],
+  //     },
+  //     {
+  //       name: "PRODUCT TYPE ",
+  //       description: ["Mechanical Gaming Keyboard"],
+  //     },
+  //     {
+  //       name: "CONTENTS",
+  //       description: ["Manic X100 Keyboard, Product Manual, Keycap Puller"],
+  //     },
+  //     {
+  //       name: "PRODUCTION DATE",
+  //       description: ["Labeled on the back of the Product"],
+  //     },
+  //     {
+  //       name: "WARRANTY",
+  //       description: ["1 year warranty under limited conditions apply"],
+  //     },
+  //     {
+  //       name: "KC CERTIFICATION NUMBER",
+  //       description: [
+  //         <React.Fragment>
+  //           <span>
+  //             <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+  //             R-R-HMM-X100
+  //           </span>
+  //         </React.Fragment>,
+  //       ],
+  //     },
+  //     {
+  //       name: "COMPANY NAME",
+  //       description: ["Hanmi Micronics Co., Ltd."],
+  //     },
+  //     {
+  //       name: "CUSTOMER SERVICE",
+  //       description: ["wizmaxglobal.com"],
+  //     },
+  //   ],
+  // },
   {
     productId: "MANICEX89",
     categoryId: "CATEGORY_KB",
@@ -2515,6 +2809,8 @@ const products = [
     name: "Manic EX89 TKL",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/EX89_DB_ENGLISH_i6khvn.jpg",
+    manual:
+      "https://drive.google.com/file/d/1P2JvOVu1do6mNKG60dbpYx0OmAw5b3Mc/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX89_TKL_-_5_dh3qar.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086145/product-images/keyboard/EX89_TKL_-_1_va3epb.png",
@@ -2531,18 +2827,18 @@ const products = [
         abbreviation: "PH",
         country: "Philippines",
       },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -2656,18 +2952,18 @@ const products = [
         abbreviation: "PH",
         country: "Philippines",
       },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -2775,26 +3071,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086164/product-images/keyboard/X40_-_5_kpoesi.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -2925,26 +3221,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/Manic_X40P-2_foagnk.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -3051,21 +3347,26 @@ const products = [
       },
     ],
   },
+
+  //HEADSET SECTION
   {
-    productId: "W85-TKL",
-    categoryId: "CATEGORY_KB",
+    productId: "MHS301",
+    categoryId: "CATEGORY_HEADSET",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(
       ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "W85-TKL"),
-    name: "Wizmax W85 TKL",
-    brochure: "",
+      "CATEGORY_HEADSET"
+    ).replace(":productId", "MHS301"),
+    name: "Manic HS-301",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086269/product-brochures/headset/Headset_HS-301_DB_tyh8v0.png",
+    manual:
+      "https://drive.google.com/file/d/1nCxcI4rI94zK6sxhbQoZBeSk-iHnLhkh/view",
     img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/W85TKL_-_3_qz4ln7.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086159/product-images/keyboard/W85TKL_-_1_sbfkw9.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086165/product-images/keyboard/W85TKL_-_2_d23fix.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086157/product-images/keyboard/W85TKL_-_4_vt1ken.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086160/product-images/keyboard/W85TKL_-_5_rkmncy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-301_05_qvwrg6.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-301_01_m4z1yl.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-301_02_iwhkvw.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-301_03_kfpogv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-301_04_j7s8jw.png",
     ],
     countryAvailability: [
       {
@@ -3080,238 +3381,587 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
-        name: "MODEL NAME",
-        description: ["W85 TKL"],
+        name: "MODEL NAME ",
+        description: ["Manic HS-301"],
       },
       // {
       //   name: "SIZE",
-      //   description: ["438mm(L) x 126mm(W) x 15.8mm(H) ± 2mm"],
-      // },
-      // {
-      //   name: "WEIGHT",
-      //   description: ["555g ± 10g"],
+      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
       // },
       {
-        name: "SWITCH",
-        description: ["GATERON Yellow Pro Switch (Hot-Swappable)"],
+        name: "WEIGHT",
+        description: ["348g"],
       },
       {
-        name: "KEYCAP",
-        description: ["PBT 2 Color Keycap"],
+        name: "WIRED/WIRELESS",
+        description: ["Wired"],
       },
       {
-        name: "NUMBER OF KEYS",
-        description: ["85 Keys"],
+        name: "INPUT TERMINAL",
+        description: ["USB A / Silver Plated"],
       },
       {
-        name: "LIFESPAN",
-        description: ["60 million key strokes"],
-      },
-      {
-        name: "INTERFACE",
-        description: ["Wired/Wireless Connection Bluetooth/2.4GHz"],
-      },
-      {
-        name: "POLLING RATE",
-        description: ["1000Hz"],
-      },
-      {
-        name: "LED",
-        description: ["White LED Effect"],
-      },
-      {
-        name: "PRODUCT TYPE",
-        description: ["Gaming Keyboard"],
-      },
-      {
-        name: "BATTERY",
-        description: ["Li-Battery 3.7V, 3000mA/H (15H)"],
+        name: "MICROPHONE ",
+        description: ["Hardware MIC Noise Canceling "],
       },
       // {
-      //   name: "FEATURE",
-      //   description: ["IPX8 Waterproof"],
+      //   name: "MICROPHONE DIMENSION (MIC) ",
+      //   description: ["⌀4 x 1.5mm"],
       // },
       // {
-      //   name: "CONTENTS",
-      //   description: ["Keyboard and Product Manual"],
+      //   name: "ENC MICROPHONE DIMENSION",
+      //   description: ["⌀6 x 5mm"],
       // },
       {
-        name: "PRODUCTION DATE",
-        description: ["Labeled at the back of the keyboard"],
+        name: "CABLE LENGTH",
+        description: ["2.2m"],
       },
       {
-        name: "WARRANTY ",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      // {
-      //   name: "KC CERTIFICATION NUMBER",
-      //   description: [
-      //     <React.Fragment>
-      //       <span>
-      //         <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-      //         R-R-HMM-K350
-      //       </span>
-      //     </React.Fragment>,
-      //   ],
-      // },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "W101P",
-    categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "W101P"),
-    name: "W101P",
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Peacock_Green_-_4_pjmnll.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487924/product-images/keyboard/W101P_Peacock_Green_-_3_qegl29.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487922/product-images/keyboard/W101P_Peacock_Green_-_2_qucmti.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487932/product-images/keyboard/W101P_Sky_Blue_-_4_w9eclg.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487930/product-images/keyboard/W101P_Sky_Blue_-_3_wdarsi.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487928/product-images/keyboard/W101P_Sky_Blue_-_2_mzsepb.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_4_culfli.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_3_vcfc39.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_2_zwsxuw.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["W101P"],
-      },
-      // {
-      //   name: "SIZE",
-      //   description: ["446mm(L) x 135mm(W) x 37mm(H) ± 2mm"],
-      // },
-      // {
-      //   name: "WEIGHT",
-      //   description: ["1020g ± 10g"],
-      // },
-      {
-        name: "SWITCH",
-        description: ["4th Generation Jixian Optical Switch"],
-      },
-      {
-        name: "KEYCAP",
-        description: ["PBT 2 Color Keycap"],
-      },
-      // {
-      //   name: "NUMBER OF KEYS",
-      //   description: ["104 Keys"],
-      // },
-      {
-        name: "LIFESPAN",
-        description: ["100 Million Strokes"],
-      },
-      // {
-      //   name: "CONCURRENT INPUT",
-      //   description: ["104 Infinite Simultaneous Inputs"],
-      // },
-      // {
-      //   name: "CABLE LENGTH",
-      //   description: ["1.5m"],
-      // },
-      {
-        name: "POLLING RATE",
-        description: ["1000Hz"],
+        name: "SURROUND SOUND ",
+        description: ["Virtual 7.1 Ch"],
       },
       {
         name: "LED",
         description: ["RGB"],
       },
       {
-        name: "FEATURE",
-        description: ["IPX8 Waterproof"],
+        name: "COMPATIBILITY",
+        description: ["Windows 7®, Windows 8®, Windows10®"],
       },
-      // {
-      //   name: "INTERFACE",
-      //   description: ["USB / Fabric Cable"],
-      // },
-      // {
-      //   name: "COMPATIBILITY",
-      //   description: ["Windows XP®, Windows 7®, Windows 8® , Windows 10®"],
-      // },
+      {
+        name: "PICK UP PATTERN",
+        description: ["Omni-directional"],
+      },
+      {
+        name: "SENSITIVITY",
+        description: ["120 ± 3dB"],
+      },
+      {
+        name: "MIC SENSITIVITY",
+        description: ["(-)38 ± 3dB"],
+      },
+      {
+        name: "FREQUENCY RANGE",
+        description: ["20-20,000HZ"],
+      },
+      {
+        name: "MAXIMUM OUTPUT",
+        description: ["100mW"],
+      },
+      {
+        name: "IMPEDANCE",
+        description: ["16Ω ± 15%"],
+      },
       {
         name: "PRODUCT TYPE ",
-        description: ["Gaming Keyboard"],
+        description: ["Gaming Headset"],
       },
-      // {
-      //   name: "CONTENTS",
-      //   description: ["Manic EX580 Keyboard, Product Manual, Keycap Puller"],
-      // },
+      {
+        name: "CONTENTS",
+        description: ["HS-301 Headset and Product Manual"],
+      },
       {
         name: "PRODUCTION DATE",
-        description: ["Labeled at the back of the keyboard"],
+        description: ["Label on the Back"],
       },
       {
         name: "WARRANTY",
         description: ["1 year warranty under limited conditions apply"],
       },
-      // {
-      //   name: "KC CERTIFICATION NUMBER",
-      //   description: [
-      //     <React.Fragment>
-      //       <span>
-      //         <img src="/images/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-X50
-      //         (Derivative model)
-      //       </span>
-      //     </React.Fragment>,
-      //   ],
-      // },
       {
-        name: "COMPANY NAME",
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-HS-301
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
         description: ["Hanmi Micronics Co., Ltd."],
       },
       {
-        name: "CUSTOMER SERVICE",
+        name: "CUSTOMER SERVICE ",
         description: ["wizmaxglobal.com"],
       },
     ],
   },
-  //HEADSET SECTION
+  {
+    productId: "MHS370",
+    categoryId: "CATEGORY_HEADSET",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_HEADSET"
+    ).replace(":productId", "MHS370"),
+    name: "Manic HS-370",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086265/product-brochures/headset/Headset_HS-370_DB_isqh2j.png",
+    manual:
+      "https://drive.google.com/file/d/1fdsFJC087DzQR0OUPIKtgnngNgMBZUNa/view",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/HS-370_02_clsujt.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-370_01_qr647g.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-370_03_ewd7fy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-370_04_iy3k0v.png",
+    ],
+    file: "https://drive.google.com/file/d/1BZjD8tFZz0wbmGJzKpKZjZsUc-9QTj-s/view",
+    software: "",
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME ",
+        description: ["Manic HS-370"],
+      },
+      // {
+      //   name: "SIZE",
+      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
+      // },
+      {
+        name: "WEIGHT",
+        description: ["379g"],
+      },
+      {
+        name: "WIRED/WIRELESS",
+        description: ["Wired"],
+      },
+      {
+        name: "INPUT TERMINAL",
+        description: ["USB A / Silver Plated"],
+      },
+      {
+        name: "MICROPHONE ",
+        description: ["Hardware MIC Noise Canceling "],
+      },
+      // {
+      //   name: "MICROPHONE DIMENSION (MIC) ",
+      //   description: ["⌀4 x 1.5mm"],
+      // },
+      // {
+      //   name: "ENC MICROPHONE DIMENSION",
+      //   description: ["⌀6 x 5mm"],
+      // },
+      {
+        name: "CABLE LENGTH",
+        description: ["2.4m"],
+      },
+      {
+        name: "SURROUND SOUND ",
+        description: ["Virtual 7.1 Ch"],
+      },
+      {
+        name: "LED",
+        description: ["RGB"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: ["Windows 7®, Windows 8®, Windows10®"],
+      },
+      {
+        name: "PICK UP PATTERN",
+        description: ["Omni-directional"],
+      },
+      {
+        name: "SENSITIVITY",
+        description: ["120 ± 3dB"],
+      },
+      {
+        name: "MIC SENSITIVITY",
+        description: ["(-)38 ± 3dB"],
+      },
+      {
+        name: "FREQUENCY RANGE",
+        description: ["20-20,000HZ"],
+      },
+      {
+        name: "MAXIMUM OUTPUT",
+        description: ["100mW"],
+      },
+      {
+        name: "IMPEDANCE",
+        description: ["16Ω ± 15%"],
+      },
+      {
+        name: "PRODUCT TYPE ",
+        description: ["Gaming Headset"],
+      },
+      {
+        name: "CONTENTS",
+        description: ["HS-370 Headset and Product Manual"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Label on the Back"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-HS-370
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE ",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "MHS420",
+    categoryId: "CATEGORY_HEADSET",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_HEADSET"
+    ).replace(":productId", "MHS420"),
+    name: "Manic HS-420",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086263/product-brochures/headset/Headset_HS-420_DB_ttq3ek.png",
+    manual:
+      "https://drive.google.com/file/d/1QWeV2pEc4hClPUGwNq-mkWRNOZ7BOUNz/view",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_01_Black_gmcsjv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/HS-420_02_Black_wymjks.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-420_03_Black_dhy8r7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-420_01_White_xaiqp3.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-420_02_White_wpbbye.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-420_03_White_k6xsvk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086239/product-images/headset/HS-420_01_Pink_bkm1ru.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_02_Pink_dfxfq4.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/HS-420_03_Pink_udeuoe.png",
+    ],
+    file: "https://drive.google.com/file/d/1flXlAYBI4_sJXNF7CwDU8OgZAYzu3qY3/view",
+    software: "",
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["Manic HS-420"],
+      },
+      // {
+      //   name: "SIZE",
+      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
+      // },
+      {
+        name: "WEIGHT",
+        description: ["401g"],
+      },
+      {
+        name: "WIRED/WIRELESS",
+        description: ["Wired"],
+      },
+      {
+        name: "INPUT TERMINAL",
+        description: ["USB A / Silver Plated"],
+      },
+      {
+        name: "MICROPHONE ",
+        description: ["Hardware MIC Noise Canceling "],
+      },
+      // {
+      //   name: "MICROPHONE DIMENSION (MIC) ",
+      //   description: ["⌀4 x 1.5mm"],
+      // },
+      // {
+      //   name: "ENC MICROPHONE DIMENSION",
+      //   description: ["⌀6 x 5mm"],
+      // },
+      {
+        name: "CABLE LENGTH",
+        description: ["2.4m"],
+      },
+      {
+        name: "SURROUND SOUND ",
+        description: ["Virtual 7.1 Ch"],
+      },
+      {
+        name: "LED",
+        description: ["RGB"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: ["Windows 7®, Windows 8®, Windows10®"],
+      },
+      {
+        name: "PICK UP PATTERN",
+        description: ["Omni-directional"],
+      },
+      {
+        name: "SENSITIVITY",
+        description: ["98 ± 3dB"],
+      },
+      {
+        name: "MIC SENSITIVITY",
+        description: ["(-)38 ± 3dB"],
+      },
+      {
+        name: "FREQUENCY RANGE",
+        description: ["20-20,000HZ"],
+      },
+      {
+        name: "MAXIMUM OUTPUT",
+        description: ["50mW"],
+      },
+      {
+        name: "IMPEDANCE",
+        description: ["120 ± 15%"],
+      },
+      {
+        name: "PRODUCT TYPE ",
+        description: ["Gaming Headset"],
+      },
+      {
+        name: "CONTENTS",
+        description: ["HS-420 Headset and Product Manual"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Label on the Back"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-HS-420
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE ",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "MHS530",
+    categoryId: "CATEGORY_HEADSET",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_HEADSET"
+    ).replace(":productId", "MHS530"),
+    name: "Manic HS-530",
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086266/product-brochures/headset/Headset_HS-530_DB_pdnlra.png",
+    manual:
+      "https://drive.google.com/file/d/1x2cBQ1tE7FjaubdFcK9gFvzEbgk-9g-o/view",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/HS-530_03_l0djbv.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/HS-530_01_wdeezt.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-530_02_d2qrlj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-530_05_slsatq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-530_06_Remote_glbmcm.png",
+    ],
+    file: "https://drive.google.com/file/d/17_uP1NvUFKmZtZrmj1-nPzEeAj4e2Q8D/view",
+    software: "",
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME ",
+        description: ["Manic HS-530"],
+      },
+      // {
+      //   name: "SIZE",
+      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
+      // },
+      {
+        name: "WEIGHT",
+        description: ["438g"],
+      },
+      {
+        name: "WIRED/WIRELESS",
+        description: ["Wired"],
+      },
+      {
+        name: "INPUT TERMINAL",
+        description: ["USB A / Silver Plated"],
+      },
+      {
+        name: "MICROPHONE ",
+        description: ["Hardware MIC Noise Canceling "],
+      },
+      // {
+      //   name: "MICROPHONE DIMENSION (MIC) ",
+      //   description: ["⌀4 x 1.5mm"],
+      // },
+      // {
+      //   name: "ENC MICROPHONE DIMENSION",
+      //   description: ["⌀6 x 5mm"],
+      // },
+      {
+        name: "CABLE LENGTH",
+        description: ["2.4m"],
+      },
+      {
+        name: "SURROUND SOUND ",
+        description: ["Virtual 7.1 Ch"],
+      },
+      {
+        name: "LED",
+        description: ["RGB"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: ["Windows 7®, Windows 8®, Windows10®"],
+      },
+      {
+        name: "PICK UP PATTERN",
+        description: ["Omni-directional"],
+      },
+      {
+        name: "SENSITIVITY",
+        description: ["120 ± 3dB"],
+      },
+      {
+        name: "MIC SENSITIVITY",
+        description: ["(-)38 ± 3dB"],
+      },
+      {
+        name: "FREQUENCY RANGE",
+        description: ["20-20,000HZ"],
+      },
+      {
+        name: "MAXIMUM OUTPUT",
+        description: ["100mW"],
+      },
+      {
+        name: "IMPEDANCE",
+        description: ["16Ω ± 15%"],
+      },
+      {
+        name: "PRODUCT TYPE ",
+        description: ["Gaming Headset"],
+      },
+      {
+        name: "CONTENTS",
+        description: ["HS-530 Headset and Product Manual"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Label on the Back"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+              R-R-HMM-HS-530
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE ",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
   {
     productId: "WH1",
     categoryId: "CATEGORY_HEADSET",
@@ -3322,6 +3972,8 @@ const products = [
     name: "WH1",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086264/product-brochures/headset/Headset_WH1_DB_fmg2zn.png",
+    manual:
+      "https://drive.google.com/file/d/1NqgdvGkkHdwMxwDZI1EcveHUUwtrAJi4/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/wh1-1_oo98c0.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086240/product-images/headset/wh1-2_ejidex.png",
@@ -3329,6 +3981,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/wh1-4_crycgc.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086241/product-images/headset/wh1-5_vybgt6.png",
     ],
+    file: "https://drive.google.com/file/d/1lUSguOfNMe7_G9CnB_cSvii07DBbqPJi/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -3342,14 +3996,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -3469,12 +4123,16 @@ const products = [
     name: "MH1",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086264/product-brochures/headset/MH1-DB_tvc1qc.png",
+    manual:
+      "https://drive.google.com/file/d/1Ph6FlsTGxsSEYm_eYvYyXtB6YE12nhuR/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/MH-1-1_erld5s.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/MH-1-2_z9alpn.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/MH-1-3_vd4wal.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/MH-1-4_hjhrld.png",
     ],
+    file: "https://drive.google.com/file/d/1edAorLxf2kGdL7RVSxOmHoI8cwzmcj0A/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -3492,10 +4150,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -3611,6 +4269,8 @@ const products = [
     name: "MH2",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086259/product-brochures/headset/MH2-DB_t7szyj.png",
+    manual:
+      "https://drive.google.com/file/d/10Suxn7fzFRZhWufFF3lWrzi4tPV9SQgy/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086242/product-images/headset/MH2-1_fu2t0b.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/MH2-2_gm8xna.png",
@@ -3618,6 +4278,8 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086241/product-images/headset/MH2-4_ycdpow.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086236/product-images/headset/MH2-5_wetip2.png",
     ],
+    file: "https://drive.google.com/file/d/1L6UHtPnLO_w8-bfvACTdHPosDJsBLqqP/view",
+    software: "",
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -3635,10 +4297,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -3753,26 +4415,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -3906,26 +4568,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/W301-8_czq7xn.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -4039,605 +4701,6 @@ const products = [
       },
     ],
   },
-  {
-    productId: "MHS301",
-    categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MHS301"),
-    name: "Manic HS-301",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086269/product-brochures/headset/Headset_HS-301_DB_tyh8v0.png",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-301_05_qvwrg6.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-301_01_m4z1yl.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-301_02_iwhkvw.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-301_03_kfpogv.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-301_04_j7s8jw.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME ",
-        description: ["Manic HS-301"],
-      },
-      // {
-      //   name: "SIZE",
-      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
-      // },
-      {
-        name: "WEIGHT",
-        description: ["348g"],
-      },
-      {
-        name: "WIRED/WIRELESS",
-        description: ["Wired"],
-      },
-      {
-        name: "INPUT TERMINAL",
-        description: ["USB A / Silver Plated"],
-      },
-      {
-        name: "MICROPHONE ",
-        description: ["Hardware MIC Noise Canceling "],
-      },
-      // {
-      //   name: "MICROPHONE DIMENSION (MIC) ",
-      //   description: ["⌀4 x 1.5mm"],
-      // },
-      // {
-      //   name: "ENC MICROPHONE DIMENSION",
-      //   description: ["⌀6 x 5mm"],
-      // },
-      {
-        name: "CABLE LENGTH",
-        description: ["2.2m"],
-      },
-      {
-        name: "SURROUND SOUND ",
-        description: ["Virtual 7.1 Ch"],
-      },
-      {
-        name: "LED",
-        description: ["RGB"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: ["Windows 7®, Windows 8®, Windows10®"],
-      },
-      {
-        name: "PICK UP PATTERN",
-        description: ["Omni-directional"],
-      },
-      {
-        name: "SENSITIVITY",
-        description: ["120 ± 3dB"],
-      },
-      {
-        name: "MIC SENSITIVITY",
-        description: ["(-)38 ± 3dB"],
-      },
-      {
-        name: "FREQUENCY RANGE",
-        description: ["20-20,000HZ"],
-      },
-      {
-        name: "MAXIMUM OUTPUT",
-        description: ["100mW"],
-      },
-      {
-        name: "IMPEDANCE",
-        description: ["16Ω ± 15%"],
-      },
-      {
-        name: "PRODUCT TYPE ",
-        description: ["Gaming Headset"],
-      },
-      {
-        name: "CONTENTS",
-        description: ["HS-301 Headset and Product Manual"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Label on the Back"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "KC CERTIFICATION ",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-HS-301
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME ",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE ",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "MHS370",
-    categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MHS370"),
-    name: "Manic HS-370",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086265/product-brochures/headset/Headset_HS-370_DB_isqh2j.png",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/HS-370_02_clsujt.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-370_01_qr647g.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-370_03_ewd7fy.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-370_04_iy3k0v.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME ",
-        description: ["Manic HS-370"],
-      },
-      // {
-      //   name: "SIZE",
-      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
-      // },
-      {
-        name: "WEIGHT",
-        description: ["379g"],
-      },
-      {
-        name: "WIRED/WIRELESS",
-        description: ["Wired"],
-      },
-      {
-        name: "INPUT TERMINAL",
-        description: ["USB A / Silver Plated"],
-      },
-      {
-        name: "MICROPHONE ",
-        description: ["Hardware MIC Noise Canceling "],
-      },
-      // {
-      //   name: "MICROPHONE DIMENSION (MIC) ",
-      //   description: ["⌀4 x 1.5mm"],
-      // },
-      // {
-      //   name: "ENC MICROPHONE DIMENSION",
-      //   description: ["⌀6 x 5mm"],
-      // },
-      {
-        name: "CABLE LENGTH",
-        description: ["2.4m"],
-      },
-      {
-        name: "SURROUND SOUND ",
-        description: ["Virtual 7.1 Ch"],
-      },
-      {
-        name: "LED",
-        description: ["RGB"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: ["Windows 7®, Windows 8®, Windows10®"],
-      },
-      {
-        name: "PICK UP PATTERN",
-        description: ["Omni-directional"],
-      },
-      {
-        name: "SENSITIVITY",
-        description: ["120 ± 3dB"],
-      },
-      {
-        name: "MIC SENSITIVITY",
-        description: ["(-)38 ± 3dB"],
-      },
-      {
-        name: "FREQUENCY RANGE",
-        description: ["20-20,000HZ"],
-      },
-      {
-        name: "MAXIMUM OUTPUT",
-        description: ["100mW"],
-      },
-      {
-        name: "IMPEDANCE",
-        description: ["16Ω ± 15%"],
-      },
-      {
-        name: "PRODUCT TYPE ",
-        description: ["Gaming Headset"],
-      },
-      {
-        name: "CONTENTS",
-        description: ["HS-370 Headset and Product Manual"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Label on the Back"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "KC CERTIFICATION ",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-HS-370
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME ",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE ",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "MHS420",
-    categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MHS420"),
-    name: "Manic HS-420",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086263/product-brochures/headset/Headset_HS-420_DB_ttq3ek.png",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_01_Black_gmcsjv.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/HS-420_02_Black_wymjks.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-420_03_Black_dhy8r7.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-420_01_White_xaiqp3.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-420_02_White_wpbbye.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-420_03_White_k6xsvk.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086239/product-images/headset/HS-420_01_Pink_bkm1ru.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_02_Pink_dfxfq4.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/HS-420_03_Pink_udeuoe.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["Manic HS-420"],
-      },
-      // {
-      //   name: "SIZE",
-      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
-      // },
-      {
-        name: "WEIGHT",
-        description: ["401g"],
-      },
-      {
-        name: "WIRED/WIRELESS",
-        description: ["Wired"],
-      },
-      {
-        name: "INPUT TERMINAL",
-        description: ["USB A / Silver Plated"],
-      },
-      {
-        name: "MICROPHONE ",
-        description: ["Hardware MIC Noise Canceling "],
-      },
-      // {
-      //   name: "MICROPHONE DIMENSION (MIC) ",
-      //   description: ["⌀4 x 1.5mm"],
-      // },
-      // {
-      //   name: "ENC MICROPHONE DIMENSION",
-      //   description: ["⌀6 x 5mm"],
-      // },
-      {
-        name: "CABLE LENGTH",
-        description: ["2.4m"],
-      },
-      {
-        name: "SURROUND SOUND ",
-        description: ["Virtual 7.1 Ch"],
-      },
-      {
-        name: "LED",
-        description: ["RGB"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: ["Windows 7®, Windows 8®, Windows10®"],
-      },
-      {
-        name: "PICK UP PATTERN",
-        description: ["Omni-directional"],
-      },
-      {
-        name: "SENSITIVITY",
-        description: ["98 ± 3dB"],
-      },
-      {
-        name: "MIC SENSITIVITY",
-        description: ["(-)38 ± 3dB"],
-      },
-      {
-        name: "FREQUENCY RANGE",
-        description: ["20-20,000HZ"],
-      },
-      {
-        name: "MAXIMUM OUTPUT",
-        description: ["50mW"],
-      },
-      {
-        name: "IMPEDANCE",
-        description: ["120 ± 15%"],
-      },
-      {
-        name: "PRODUCT TYPE ",
-        description: ["Gaming Headset"],
-      },
-      {
-        name: "CONTENTS",
-        description: ["HS-420 Headset and Product Manual"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Label on the Back"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "KC CERTIFICATION ",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-HS-420
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME ",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE ",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "MHS530",
-    categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MHS530"),
-    name: "Manic HS-530",
-    brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086266/product-brochures/headset/Headset_HS-530_DB_pdnlra.png",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/HS-530_03_l0djbv.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/HS-530_01_wdeezt.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-530_02_d2qrlj.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-530_05_slsatq.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-530_06_Remote_glbmcm.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME ",
-        description: ["Manic HS-530"],
-      },
-      // {
-      //   name: "SIZE",
-      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
-      // },
-      {
-        name: "WEIGHT",
-        description: ["438g"],
-      },
-      {
-        name: "WIRED/WIRELESS",
-        description: ["Wired"],
-      },
-      {
-        name: "INPUT TERMINAL",
-        description: ["USB A / Silver Plated"],
-      },
-      {
-        name: "MICROPHONE ",
-        description: ["Hardware MIC Noise Canceling "],
-      },
-      // {
-      //   name: "MICROPHONE DIMENSION (MIC) ",
-      //   description: ["⌀4 x 1.5mm"],
-      // },
-      // {
-      //   name: "ENC MICROPHONE DIMENSION",
-      //   description: ["⌀6 x 5mm"],
-      // },
-      {
-        name: "CABLE LENGTH",
-        description: ["2.4m"],
-      },
-      {
-        name: "SURROUND SOUND ",
-        description: ["Virtual 7.1 Ch"],
-      },
-      {
-        name: "LED",
-        description: ["RGB"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: ["Windows 7®, Windows 8®, Windows10®"],
-      },
-      {
-        name: "PICK UP PATTERN",
-        description: ["Omni-directional"],
-      },
-      {
-        name: "SENSITIVITY",
-        description: ["120 ± 3dB"],
-      },
-      {
-        name: "MIC SENSITIVITY",
-        description: ["(-)38 ± 3dB"],
-      },
-      {
-        name: "FREQUENCY RANGE",
-        description: ["20-20,000HZ"],
-      },
-      {
-        name: "MAXIMUM OUTPUT",
-        description: ["100mW"],
-      },
-      {
-        name: "IMPEDANCE",
-        description: ["16Ω ± 15%"],
-      },
-      {
-        name: "PRODUCT TYPE ",
-        description: ["Gaming Headset"],
-      },
-      {
-        name: "CONTENTS",
-        description: ["HS-530 Headset and Product Manual"],
-      },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Label on the Back"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      {
-        name: "KC CERTIFICATION ",
-        description: [
-          <React.Fragment>
-            <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-HS-530
-            </span>
-          </React.Fragment>,
-        ],
-      },
-      {
-        name: "COMPANY NAME ",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE ",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
   //PC CASE
   {
     productId: "EH1-MONDRIAN",
@@ -4660,26 +4723,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912241/product-images/pc_case/EH-1_Mondrian_-8_qnwwyh.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -4899,10 +4962,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5012,10 +5075,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5116,10 +5179,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5228,10 +5291,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5324,10 +5387,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5438,10 +5501,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5543,10 +5606,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5651,10 +5714,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5763,10 +5826,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5873,10 +5936,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -5991,10 +6054,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -6217,10 +6280,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -6332,10 +6395,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -6444,10 +6507,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -6676,10 +6739,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -6796,10 +6859,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -6918,10 +6981,10 @@ const products = [
         abbreviation: "EC",
         country: "Ecuador",
       },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7034,14 +7097,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7163,14 +7226,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7291,14 +7354,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7427,14 +7490,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7546,14 +7609,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7651,14 +7714,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7755,14 +7818,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7851,14 +7914,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -7948,14 +8011,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8049,14 +8112,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8130,26 +8193,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8227,26 +8290,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8324,26 +8387,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8438,14 +8501,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8561,26 +8624,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8696,26 +8759,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8831,26 +8894,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -8969,26 +9032,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9109,26 +9172,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
     ],
     countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "KR",
+      //   country: "Korea",
+      // },
+      // {
+      //   abbreviation: "PH",
+      //   country: "Philippines",
+      // },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9266,14 +9329,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9331,14 +9394,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9391,18 +9454,18 @@ const products = [
         abbreviation: "PH",
         country: "Philippines",
       },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9483,18 +9546,18 @@ const products = [
         abbreviation: "PH",
         country: "Philippines",
       },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "US",
+      //   country: "United States",
+      // },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9580,14 +9643,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9701,14 +9764,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9811,14 +9874,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9882,14 +9945,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -9946,14 +10009,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -10053,14 +10116,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
@@ -10117,14 +10180,14 @@ const products = [
         abbreviation: "US",
         country: "United States",
       },
-      {
-        abbreviation: "EC",
-        country: "Ecuador",
-      },
-      {
-        abbreviation: "JP",
-        country: "Japan",
-      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
     ],
     table: [
       {
