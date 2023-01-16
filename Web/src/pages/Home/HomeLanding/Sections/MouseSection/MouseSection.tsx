@@ -49,9 +49,9 @@ const MouseSection: React.FC = () => {
           <div className="mouse-caption-container">
             <h3>Survival Of The Fastest</h3>
             <p>Accurately Precise, Incredibly Fast</p>
-            <div className="learn-more" onClick={navigateToProductsMouse}>
+            <div className="learn-more" onClick={navigateToZM1}>
               <p>
-                Learn More
+                Learn More About ZM1
                 <span>
                   <GoTo />
                 </span>
@@ -60,7 +60,7 @@ const MouseSection: React.FC = () => {
           </div>
           <div className="mouse-img-container">
             <Img img={HOME_IMAGES.HOME_MOUSE_SECTION.MOUSE}></Img>
-            <div className="mouse-link-container" onClick={navigateToZM1}>
+            <div className="mouse-link-container">
               <p>
                 ZM1
                 <span>

@@ -56,7 +56,7 @@ const OtherProductsSection: React.FC = () => {
           </div>
           <Container fluid>
             <Row className="img-row">
-              {otherProductsImages.map((image) => {
+              {otherProductsImages.map((image, index) => {
                 return (
                   <Col xs={3} sm={3} md={4} lg={4} className="img-col">
                     <Img img={image.img}></Img>

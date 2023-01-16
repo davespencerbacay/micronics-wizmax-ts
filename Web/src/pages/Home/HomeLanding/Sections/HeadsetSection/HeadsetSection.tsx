@@ -23,6 +23,7 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
     }
   };
   const navigateToMondrian = () => {
+    window.scrollTo(0, 0);
     navigate("/products/CATEGORY_PCCASE/EH1-MONDRIAN");
   };
   return (
@@ -61,23 +62,14 @@ const HeadsetSection: React.FC<HeadsetSectionType> = (props) => {
           <div className="headset-container">
             <div className="img-container">
               <Img img={HOME_IMAGES.HOME_OTHERS_SECTION.PC_CASE}></Img>
-              <div className="product-link-container">
-                <p>EH1 Mondrian</p>
-                <button onClick={navigateToMondrian}>
-                  Learn More
-                  <span>
-                    <GoTo />
-                  </span>
-                </button>
-              </div>
             </div>
 
             <div className="caption-btn-container">
               <h3>The Stylish</h3>
               <p>Veraciously Votive To Victory</p>
-              <div className="learn-more" onClick={navigateToProductsHeadset}>
+              <div className="learn-more" onClick={navigateToMondrian}>
                 <p>
-                  Learn More
+                  Learn More About EH1 Mondrian
                   <span>
                     <GoTo />
                   </span>
