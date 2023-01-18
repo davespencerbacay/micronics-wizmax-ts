@@ -15,6 +15,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "M630W"),
     name: "Manic M630W",
+    manual:
+      "https://drive.google.com/file/d/1-Ij_w_AYtOBilh2jwTdPxLwlT_9ifka_/view",
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/M630W-B-2_aiszl4.png",
@@ -142,6 +144,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "WM2"),
     name: "WM2",
+    manual:
+      "https://drive.google.com/file/d/15BOQYCBO8PFNTm_l3LLVFsVA0S1TOiRU/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/WM2_DB_Translation_Revision_vbymny.jpg",
     img: [
@@ -272,6 +276,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MG40"),
     name: "MG40",
+    manual:
+      "https://drive.google.com/file/d/19nImfRLEsq46CBnFz2jrnLhMneiyaZq-/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/MANIC-G40-DB_ENGLISH_u90cef.jpg",
     img: [
@@ -391,6 +397,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MG501"),
     name: "MG501",
+    manual:
+      "https://drive.google.com/file/d/1pwD1n1LNuudnwYOZdrw17Vpc6KhTBPQ5/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086122/product-brochures/mouse/MG501_DB_Translation_z5pfzh.jpg",
     img: [
@@ -513,6 +521,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MZG106"),
     name: "Manic ZG106",
+    manual:
+      "https://drive.google.com/file/d/1qGw1tWPOOEgeXMgowH1nznCH1F1Kou7Y/view",
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085975/product-images/mouse/ZG106_3327-1_z2ea4p.png",
@@ -639,6 +649,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MG530"),
     name: "MG530",
+    manual:
+      "https://drive.google.com/file/d/1c0-gjf3GyjdJRILZbAIBDfxFU-C7bbAS/view",
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085977/product-images/mouse/MG530_-_3_qcpwtm.png",
@@ -763,6 +775,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "ZM1"),
     name: "ZM1",
+    manual:
+      "https://drive.google.com/file/d/1OpzlSlS2KDmr8zjxcGdDRg8m_a-C1UYf/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086124/product-brochures/mouse/zm-1_db_english_yho6c5.jpg",
     img: [
@@ -883,6 +897,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "ZM2"),
     name: "ZM2",
+    manual:
+      "https://drive.google.com/file/d/112LUCXPsyWPMIwA5RbA8Unb_rooSqwIM/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/ZM2_DB_Translation_Revision_tbsqns.jpg",
     img: [
@@ -1003,6 +1019,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MM1"),
     name: "MM1",
+    manual:
+      "https://drive.google.com/file/d/11PpcpRFsie07hBT4pCB2-JXJH4XaTahP/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086122/product-brochures/mouse/Mouse_MM1_DB_ywgchq.png",
     img: [
@@ -1124,6 +1142,8 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "WM1"),
     name: "WM1",
+    manual:
+      "https://drive.google.com/file/d/188daQlLouZTGcC_g2t_d6-27YkhpyyR-/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086117/product-brochures/mouse/WM1-DB_k6lydo.jpg",
     img: [
@@ -1511,6 +1531,8 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "ZK1"),
     name: "ZK1",
+    manual:
+      "https://drive.google.com/file/d/1JUtndEa8KuxLgbG-15bl0LZz885kfRqI/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/ZK1_DB_english_g3stxw.jpg",
     img: [
@@ -1639,6 +1661,8 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "ZK2"),
     name: "ZK2",
+    manual:
+      "https://drive.google.com/file/d/1R6CBFlP95D-jJYjw2ffeJZ1Mt07IIcae/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086199/product-brochures/keyboard/ZK2-DB-english_u3jzek.jpg",
     img: [
@@ -1770,6 +1794,8 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "WK1"),
     name: "WK1",
+    manual:
+      "https://drive.google.com/file/d/1K_8i83W4Jvr4VgisweDcONmHo2soMACC/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086196/product-brochures/keyboard/Keyboard_WK1_DB_updated_zkqmtu.png",
     img: [
@@ -1898,6 +1924,8 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "WK2"),
     name: "WK2",
+    manual:
+      "https://drive.google.com/file/d/1rTvxEAL8eEvvCTb2CDv_voQvbbSAYhab/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086198/product-brochures/keyboard/Keyboard_WK2_DB_updated_k8oprk.png",
     img: [
@@ -2028,6 +2056,8 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "WK3"),
     name: "WK3",
+    manual:
+      "https://drive.google.com/file/d/19f6p--jW6_iDR2X8xfMLCBTm2xx-9Q-i/view",
     brochure:
       "/images/micronics-assets/product-images/keyboard/brochure/https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086191/product-brochures/keyboard/Keyboard_WK3_DB_updated_xattjd.png",
     img: [
@@ -2158,6 +2188,8 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "WK4"),
     name: "WK4",
+    manual:
+      "https://drive.google.com/file/d/1cgy_HRpduo_eInSkokKlyd6kqqAtiB9h/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086208/product-brochures/keyboard/wk4_DB_english_ujvsps.jpg",
     img: [
@@ -2288,6 +2320,8 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "MK1"),
     name: "MK1",
+    manual:
+      "https://drive.google.com/file/d/17dN3T5s8TBlX9oZdy-DpwE_LObLwptQU/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086190/product-brochures/keyboard/Keyboard_MK1_DB_tvv4qc.png",
     img: [
@@ -2420,6 +2454,8 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "EX580"),
     name: "EX580",
+    manual:
+      "https://drive.google.com/file/d/13uZWLMJedW0z7UIpppnz6wUlvJ5SABnK/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086194/product-brochures/keyboard/EX580_ENG_s8a2hl.jpg",
     img: [

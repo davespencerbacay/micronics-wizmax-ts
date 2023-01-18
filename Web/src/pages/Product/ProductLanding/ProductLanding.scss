@@ -486,6 +486,7 @@
       align-items: center;
       text-align: center;
       margin-bottom: 5rem;
+      z-index: 2;
       .brochure-btn,
       .specs-btn {
         width: 30rem;
@@ -498,6 +499,7 @@
         font-weight: 500;
         color: rgb(92, 92, 92);
         text-transform: uppercase;
+        z-index: 2;
       }
       .brochure-btn {
         border-radius: 5rem 0rem 0rem 5rem;
@@ -526,6 +528,7 @@
       display: flex;
       flex-direction: row;
       .prev-product-title,
+      .prev-product-title-hide,
       .next-product-title,
       .next-product-title-hide {
         position: fixed;
@@ -538,22 +541,69 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        z-index: 2;
+        z-index: 1;
         p {
           font-size: 2rem;
         }
       }
+      //PREV PRODUCT TITLE
       .prev-product-title {
-        left: 0;
+        left: 0rem;
         border: 1px solid rgba(255, 255, 255, 0);
-        border-radius: 0 5rem 5rem 0;
+        border-radius: 0rem 5rem 5rem 0rem;
         box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.015),
-          10px 10px 15px rgba(70, 70, 70, 0.12);
+          -10px -10px 15px rgba(70, 70, 70, 0.12);
         transition: all 0.5s ease;
+        animation: dprevproducttitleshow 0.5s ease;
+        @keyframes dprevproducttitleshow {
+          0% {
+            left: -20rem;
+            opacity: 0;
+            visibility: hidden;
+          }
+          100% {
+            left: 0rem;
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        img {
+          width: 10rem;
+        }
         p {
-          transform: rotate(-90deg);
+          font-size: 1.5rem;
         }
       }
+      .prev-product-title-hide {
+        left: -20rem;
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 0rem 5rem 5rem 0rem;
+        box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.015),
+          -10px -10px 15px rgba(70, 70, 70, 0.12);
+        z-index: 1;
+        transition: all 0.5s ease;
+        animation: dprevproducttitlehide 0.5s ease;
+        @keyframes dprevproducttitlehide {
+          0% {
+            left: 0rem;
+            opacity: 1;
+            visibility: visible;
+          }
+          100% {
+            left: -20rem;
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+        img {
+          width: 10rem;
+        }
+        p {
+          font-size: 1.5rem;
+          transform: rotate(0deg);
+        }
+      }
+      //NEXT PRODUCT TITLE
       .next-product-title {
         right: 0rem;
         border: 1px solid rgba(255, 255, 255, 0);
@@ -574,8 +624,11 @@
             visibility: visible;
           }
         }
+        img {
+          width: 10rem;
+        }
         p {
-          transform: rotate(90deg);
+          font-size: 1.5rem;
         }
       }
       .next-product-title-hide {
@@ -599,8 +652,11 @@
             visibility: hidden;
           }
         }
+        img {
+          width: 10rem;
+        }
         p {
-          transform: rotate(90deg);
+          font-size: 1.5rem;
         }
       }
       .prev-next-btn-container {
@@ -608,6 +664,7 @@
         width: 100%;
         height: 15rem;
         .prev-product-btn,
+        .prev-product-btn-hide,
         .next-product-btn,
         .next-product-btn-hide {
           height: 100%;
@@ -620,28 +677,59 @@
           padding: 1rem;
           cursor: pointer;
         }
-
+        //PREV PRODUCT BUTTON
         .prev-product-btn {
           position: absolute;
           left: 0;
           border: 1px solid rgba(255, 255, 255, 0);
-          border-radius: 0 5rem 5rem 0;
+          border-radius: 0rem 5rem 5rem 0rem;
           box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.015),
-            10px 10px 15px rgba(70, 70, 70, 0.12);
-          animation: prevbtn 0.5s ease;
-
-          @keyframes prevbtn {
+            -10px -10px 15px rgba(70, 70, 70, 0.12);
+          z-index: 0;
+          transition: all 0.5s ease;
+          animation: dshowprevbtn 0.5s ease;
+          @keyframes dshowprevbtn {
             0% {
               opacity: 0;
+              left: -20rem;
+              visibility: hidden;
             }
             100% {
               opacity: 1;
+              left: 0;
+              visibility: visible;
             }
           }
-          img {
-            width: 10rem;
+          p {
+            font-size: 2rem;
           }
         }
+        .prev-product-btn-hide {
+          position: absolute;
+          left: -20rem;
+          border: 1px solid rgba(255, 255, 255, 0);
+          border-radius: 0rem 5rem 5rem 0rem;
+          box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.015),
+            -10px -10px 15px rgba(70, 70, 70, 0.12);
+          transition: all 0.5s ease;
+          animation: dhideprevbtn 0.5s ease;
+          @keyframes dhideprevbtn {
+            0% {
+              opacity: 1;
+              left: 0rem;
+              visibility: visible;
+            }
+            100% {
+              opacity: 0;
+              left: -20rem;
+              visibility: hidden;
+            }
+          }
+          p {
+            font-size: 2rem;
+          }
+        }
+        //NEXT PRODUCT BUTTON
         .next-product-btn {
           position: absolute;
           right: 0;
@@ -664,8 +752,8 @@
               visibility: visible;
             }
           }
-          img {
-            width: 10rem;
+          p {
+            font-size: 2rem;
           }
         }
         //hide button
@@ -690,8 +778,8 @@
               visibility: hidden;
             }
           }
-          img {
-            width: 10rem;
+          p {
+            font-size: 2rem;
           }
         }
       }

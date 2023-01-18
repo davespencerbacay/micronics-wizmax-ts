@@ -70,7 +70,7 @@ export const productCategories: IProductCategories[] = [
       ":categoryId",
       "CATEGORY_ACCESSORIES"
     ),
-    img: "./images/micronics-assets/product-categories/banner-images/Accessories.jpg",
+    img: "./images/micronics-assets/product-categories/banner-images/accessories.jpg",
     icon: "./images/icons/Accessories.png",
     text: "Transform your computer into a powerhouse with our top-rated accessories.",
   },
