@@ -205,7 +205,20 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                     previous
                   </p>
                 ) : (
-                  <p>{products[currentProduct - 1]?.name}</p>
+                  <p
+                    className={
+                      previousButtonHover
+                        ? "prev-product-title-hide"
+                        : "prev-product-title"
+                    }
+                    onMouseEnter={prevButtonHandler}
+                  >
+                    <img
+                      src={products[currentProduct - 1]?.img[0]}
+                      alt={products[currentProduct - 1]?.img[0]}
+                    />
+                    {<p>{products[currentProduct - 1]?.name}</p>}
+                  </p>
                 )}
               </div>
             )}
@@ -232,6 +245,10 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                 }
                 onMouseEnter={nextButtonHandler}
               >
+                <img
+                  src={products[currentProduct + 1]?.img[0]}
+                  alt={products[currentProduct + 1]?.img[0]}
+                />
                 {<p>{products[currentProduct + 1]?.name}</p>}
               </p>
             )}
@@ -249,17 +266,14 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
               style={{
                 display: currentProduct - 1 === -1 ? "none" : "flex",
               }}
+              onClick={() =>
+                prevProductHandler(
+                  products[currentProduct - 1].categoryId,
+                  products[currentProduct - 1].productId
+                )
+              }
             >
-              <img
-                src={products[currentProduct - 1]?.img[0]}
-                alt={products[currentProduct - 1]?.img[0]}
-                onClick={() =>
-                  prevProductHandler(
-                    products[currentProduct - 1].categoryId,
-                    products[currentProduct - 1].productId
-                  )
-                }
-              />
+              <p>PREVIOUS</p>
               {isMobile && (
                 <div className="left-arrow-close" onClick={closePrevButton}>
                   <GoTo />
@@ -277,22 +291,19 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
               style={{
                 display: lastProduct === currentProduct ? "none" : "flex",
               }}
+              onClick={() =>
+                nextProductHandler(
+                  products[currentProduct + 1].categoryId,
+                  products[currentProduct + 1].productId
+                )
+              }
             >
               {isMobile && (
                 <div className="right-arrow-close" onClick={closeNextButton}>
                   <GoTo />
                 </div>
               )}
-              <img
-                src={products[currentProduct + 1]?.img[0]}
-                alt={products[currentProduct + 1]?.img[0]}
-                onClick={() =>
-                  nextProductHandler(
-                    products[currentProduct + 1].categoryId,
-                    products[currentProduct + 1].productId
-                  )
-                }
-              />
+              <p>NEXT</p>
             </div>
           </div>
         </div>
