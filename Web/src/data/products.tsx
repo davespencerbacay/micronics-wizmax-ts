@@ -1,5 +1,6 @@
 import { ROUTE_PATH } from "constants/routes";
 import React from "react";
+import filters from "./productFilters";
 
 const products = [
   /**
@@ -15,6 +16,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "M630W"),
     name: "Manic M630W",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/1-Ij_w_AYtOBilh2jwTdPxLwlT_9ifka_/view",
     brochure: "",
@@ -144,6 +146,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "WM2"),
     name: "WM2",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/15BOQYCBO8PFNTm_l3LLVFsVA0S1TOiRU/view",
     brochure:
@@ -276,6 +279,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MG40"),
     name: "MG40",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/19nImfRLEsq46CBnFz2jrnLhMneiyaZq-/view",
     brochure:
@@ -397,6 +401,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MG501"),
     name: "MG501",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/1pwD1n1LNuudnwYOZdrw17Vpc6KhTBPQ5/view",
     brochure:
@@ -521,6 +526,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MZG106"),
     name: "Manic ZG106",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/1qGw1tWPOOEgeXMgowH1nznCH1F1Kou7Y/view",
     brochure: "",
@@ -649,6 +655,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MG530"),
     name: "MG530",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/1c0-gjf3GyjdJRILZbAIBDfxFU-C7bbAS/view",
     brochure: "",
@@ -775,6 +782,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "ZM1"),
     name: "ZM1",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/1OpzlSlS2KDmr8zjxcGdDRg8m_a-C1UYf/view",
     brochure:
@@ -897,6 +905,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "ZM2"),
     name: "ZM2",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/112LUCXPsyWPMIwA5RbA8Unb_rooSqwIM/view",
     brochure:
@@ -1019,6 +1028,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "MM1"),
     name: "MM1",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/11PpcpRFsie07hBT4pCB2-JXJH4XaTahP/view",
     brochure:
@@ -1142,6 +1152,7 @@ const products = [
       "CATEGORY_MOUSE"
     ).replace(":productId", "WM1"),
     name: "WM1",
+    filters: filters[0].mouseFilters,
     manual:
       "https://drive.google.com/file/d/188daQlLouZTGcC_g2t_d6-27YkhpyyR-/view",
     brochure:
@@ -1271,6 +1282,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "W101P"),
     name: "W101P",
+    filters: filters[0].keyboardFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Peacock_Green_-_4_pjmnll.png",
@@ -1407,6 +1419,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "W85-TKL"),
     name: "Wizmax W85 TKL",
+    filters: filters[0].keyboardFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/W85TKL_-_3_qz4ln7.png",
@@ -1531,6 +1544,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "ZK1"),
     name: "ZK1",
+    filters: filters[0].keyboardFilters,
     manual:
       "https://drive.google.com/file/d/1JUtndEa8KuxLgbG-15bl0LZz885kfRqI/view",
     brochure:
@@ -1661,6 +1675,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "ZK2"),
     name: "ZK2",
+    filters: filters[0].keyboardFilters,
     manual:
       "https://drive.google.com/file/d/1R6CBFlP95D-jJYjw2ffeJZ1Mt07IIcae/view",
     brochure:
@@ -1794,6 +1809,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "WK1"),
     name: "WK1",
+    filters: filters[0].keyboardFilters,
     manual:
       "https://drive.google.com/file/d/1K_8i83W4Jvr4VgisweDcONmHo2soMACC/view",
     brochure:
@@ -1924,6 +1940,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "WK2"),
     name: "WK2",
+    filters: filters[0].keyboardFilters,
     manual:
       "https://drive.google.com/file/d/1rTvxEAL8eEvvCTb2CDv_voQvbbSAYhab/view",
     brochure:
@@ -2056,6 +2073,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "WK3"),
     name: "WK3",
+    filters: filters[0].keyboardFilters,
     manual:
       "https://drive.google.com/file/d/19f6p--jW6_iDR2X8xfMLCBTm2xx-9Q-i/view",
     brochure:
@@ -2188,6 +2206,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "WK4"),
     name: "WK4",
+    filters: filters[0].keyboardFilters,
     manual:
       "https://drive.google.com/file/d/1cgy_HRpduo_eInSkokKlyd6kqqAtiB9h/view",
     brochure:
@@ -2320,6 +2339,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "MK1"),
     name: "MK1",
+    filters: filters[0].keyboardFilters,
     manual:
       "https://drive.google.com/file/d/17dN3T5s8TBlX9oZdy-DpwE_LObLwptQU/view",
     brochure:
@@ -2454,6 +2474,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "EX580"),
     name: "EX580",
+    filters: filters[0].keyboardFilters,
     manual:
       "https://drive.google.com/file/d/13uZWLMJedW0z7UIpppnz6wUlvJ5SABnK/view",
     brochure:
@@ -2584,6 +2605,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "EX580L"),
     name: "EX580L",
+    filters: filters[0].keyboardFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086198/product-brochures/keyboard/EX580L_DB-ENG_toi7ho.jpg",
     manual:
@@ -2843,6 +2865,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "MANICEX89"),
     name: "Manic EX89 TKL",
+    filters: filters[0].keyboardFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/EX89_DB_ENGLISH_i6khvn.jpg",
     manual:
@@ -2972,6 +2995,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "MK350"),
     name: "Manic K350",
+    filters: filters[0].keyboardFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086189/product-brochures/keyboard/K350_DB_ENG_g8sasm.jpg",
     img: [
@@ -3097,6 +3121,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "MX40"),
     name: "Manic X40",
+    filters: filters[0].keyboardFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086211/product-brochures/keyboard/DB_X40_ENGLISH_pkw25q.jpg",
     img: [
@@ -3250,6 +3275,7 @@ const products = [
       "CATEGORY_KB"
     ).replace(":productId", "MX40P"),
     name: "Manic X40P",
+    filters: filters[0].keyboardFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/Manic_X40P-3_mbbzxw.png",
@@ -3393,6 +3419,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "MHS301"),
     name: "Manic HS-301",
+    filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086269/product-brochures/headset/Headset_HS-301_DB_tyh8v0.png",
     manual:
@@ -3544,6 +3571,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "MHS370"),
     name: "Manic HS-370",
+    filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086265/product-brochures/headset/Headset_HS-370_DB_isqh2j.png",
     manual:
@@ -3696,6 +3724,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "MHS420"),
     name: "Manic HS-420",
+    filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086263/product-brochures/headset/Headset_HS-420_DB_ttq3ek.png",
     manual:
@@ -3853,6 +3882,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "MHS530"),
     name: "Manic HS-530",
+    filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086266/product-brochures/headset/Headset_HS-530_DB_pdnlra.png",
     manual:
@@ -4006,6 +4036,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "WH1"),
     name: "WH1",
+    filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086264/product-brochures/headset/Headset_WH1_DB_fmg2zn.png",
     manual:
@@ -4157,6 +4188,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "MH1"),
     name: "MH1",
+    filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086264/product-brochures/headset/MH1-DB_tvc1qc.png",
     manual:
@@ -4303,6 +4335,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "MH2"),
     name: "MH2",
+    filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086259/product-brochures/headset/MH2-DB_t7szyj.png",
     manual:
@@ -4446,6 +4479,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "MH3"),
     name: "MH3",
+    filters: filters[0].headsetFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
@@ -4592,6 +4626,7 @@ const products = [
       "CATEGORY_HEADSET"
     ).replace(":productId", "W301"),
     name: "W301",
+    filters: filters[0].headsetFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086239/product-images/headset/W301-4_vzgams.png",
@@ -4746,6 +4781,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "EH1-MONDRIAN"),
     name: "EH1 Mondrian",
+    filters: filters[0].pccaseFilters,
     isNewRelease: "New Release",
     brochure: "",
     img: [
@@ -4973,6 +5009,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GX3-CHANG"),
     name: "GX3 Chang",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086332/product-brochures/pc_case/DB_GX3_ENGLISH_UPDATED_whqbhn.jpg",
     img: [
@@ -5086,6 +5123,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GM3-MOON"),
     name: "GM3 Moon",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086355/product-brochures/pc_case/DB_GM3_MOON_UPDATED_oxy2wc.jpg",
     img: [
@@ -5191,6 +5229,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GX1-PUNCH"),
     name: "GX1 Punch",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086351/product-brochures/pc_case/GXPUNCH-DB_czuszg.jpg",
     img: [
@@ -5302,6 +5341,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "EL1-RAPANG"),
     name: "EL1 Rapang",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086343/product-brochures/pc_case/rapang-db_zkjycy.jpg",
     img: [
@@ -5399,6 +5439,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "EM1-WOOFER-B"),
     name: "EM1 Woofer",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086337/product-brochures/pc_case/EM1-Woofer-Black_updated_fmbqw5.jpg",
     img: [
@@ -5510,6 +5551,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "EM2-STEREO-B"),
     name: "EM2 Stereo",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086346/product-brochures/pc_case/DB_EM2-STEREO_Black_UPDATED_zy2ose.jpg",
     img: [
@@ -5619,6 +5661,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GM1-TRANSFORM-B"),
     name: "GM1 Transform",
+    filters: filters[0].pccaseFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
@@ -5726,6 +5769,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "OM1-CIRCLE"),
     name: "OM1 Circle",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086341/product-brochures/pc_case/OM1-DB_xk4tsz.jpg",
     img: [
@@ -5835,6 +5879,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GH1-MESH-W"),
     name: "GH1 Mesh White",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086342/product-brochures/pc_case/GH-1-MESH-DB_v8oy61.jpg",
     img: [
@@ -5948,6 +5993,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "SHADOW-2"),
     name: "Shadow 2",
+    filters: filters[0].pccaseFilters,
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
@@ -6065,6 +6111,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GH2-METAL"),
     name: "GH2 Metal",
+    filters: filters[0].pccaseFilters,
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
@@ -6291,6 +6338,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GH4-LETO"),
     name: "GH4 Leto",
+    filters: filters[0].pccaseFilters,
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
@@ -6406,6 +6454,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GL1-MORTAR"),
     name: "GL1 Mortar",
+    filters: filters[0].pccaseFilters,
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
@@ -6519,6 +6568,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GH4-LETOMESH"),
     name: "GH4 Letomesh",
+    filters: filters[0].pccaseFilters,
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/GH-1-MESH-DB.jpg",
     img: [
@@ -6751,6 +6801,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GX2-NEURON-GLASS"),
     name: "GX2-Neuron Glass",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086340/product-brochures/pc_case/UPDATED_GX2_NEURON_GLASS_DB_TRANSLATED_rxe8r6.jpg",
     img: [
@@ -6871,6 +6922,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GX2-NEURON-MESH"),
     name: "GX2-Neuron Mesh",
+    filters: filters[0].pccaseFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086332/product-brochures/pc_case/UPDATED_GX2_NEURON_MESH_DB_TRANSLATED_pbk7go.jpg",
     img: [
@@ -6992,6 +7044,7 @@ const products = [
       "CATEGORY_PCCASE"
     ).replace(":productId", "GM2-HELIOS"),
     name: "GM2 Helios",
+    filters: filters[0].pccaseFilters,
     // brochure:
     //   "/images/micronics-assets/product-images/pc_case/brochure/(UPDATED) GX2 NEURON MESH DB_TRANSLATED.jpg",
     img: [
@@ -7108,6 +7161,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "MA-400-FALCON"),
     name: "MA-400 Falcon",
+    filters: filters[0].fanscoolersFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672216971/product-brochures/fans_coolers/Cooler_MA-400_Falcon_DB_gg5sai.png",
     img: [
@@ -7237,6 +7291,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "CA-40-EAGLE"),
     name: "CA-40 Eagle",
+    filters: filters[0].fanscoolersFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672218307/product-brochures/fans_coolers/Cooler_CA-40_Eagle_DB_aenjnu.png",
     img: [
@@ -7366,6 +7421,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "MA-420-SWALLOW"),
     name: "MA-420 Swallow",
+    filters: filters[0].fanscoolersFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672218581/product-brochures/fans_coolers/Cooler_MA-420_Swallow_DB_ivxdyn.png",
     img: [
@@ -7502,6 +7558,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "CA-50-SPARROW"),
     name: "CA-50 Sparrow",
+    filters: filters[0].fanscoolersFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672218829/product-brochures/fans_coolers/Cooler_CA-50_Sparrow_esg4vt.png",
     img: [
@@ -7626,6 +7683,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "ML240-FROZEN-TUNA-BNW"),
     name: "ML240 Frozen Tuna",
+    filters: filters[0].fanscoolersFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219072/product-brochures/fans_coolers/DB_ML240-Frozen-Tuna_english_m0oiqv.jpg",
     img: [
@@ -7731,6 +7789,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "ML360-FROZEN-TUNA-BNW"),
     name: "ML360 Frozen Tuna",
+    filters: filters[0].fanscoolersFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219317/product-brochures/fans_coolers/DB_ML360-Frozen-Tuna_english_zjrrcl.jpg",
     img: [
@@ -7836,6 +7895,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "MA-4-FRIGATE"),
     name: "MA-4 Frigate",
+    filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_2_tdnaee.png",
@@ -7930,6 +7990,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "MA-6-FRIGATE"),
     name: "MA-6 Frigate",
+    filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
@@ -8026,6 +8087,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "CF-12AW"),
     name: "CF-12AW",
+    filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219703/product-images/fans_coolers/CF-12AW-3_y4buq8.png",
@@ -8127,6 +8189,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "CF-12SB"),
     name: "CF-12SB",
+    filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219886/product-images/fans_coolers/CF-12SB-2_toqwec.png",
@@ -8224,6 +8287,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "MF-10"),
     name: "MF-10",
+    filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
@@ -8321,6 +8385,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "MF-13"),
     name: "MF-13",
+    filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
@@ -8418,6 +8483,7 @@ const products = [
       "CATEGORY_FC"
     ).replace(":productId", "MF-14"),
     name: "MF-14",
+    filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
@@ -8516,6 +8582,7 @@ const products = [
       "CATEGORY_PSU"
     ).replace(":productId", "WIZMAX-GOLD"),
     name: "Wizmax Gold",
+    filters: filters[0].psuFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220595/product-brochures/psu/850W-C_qg6z2f.jpg",
     img: [
@@ -8655,6 +8722,7 @@ const products = [
       "CATEGORY_PSU"
     ).replace(":productId", "WIZMAX-SILVER"),
     name: "Wizmax Silver",
+    filters: filters[0].psuFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
@@ -8790,6 +8858,7 @@ const products = [
       "CATEGORY_PSU"
     ).replace(":productId", "WIZMAX-GOLD-FM"),
     name: "Wizmax Gold FM",
+    filters: filters[0].psuFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
@@ -8925,6 +8994,7 @@ const products = [
       "CATEGORY_PSU"
     ).replace(":productId", "WIZMAX-PLATINUM"),
     name: "Wizmax Platinum",
+    filters: filters[0].psuFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
@@ -9063,6 +9133,7 @@ const products = [
       "CATEGORY_PSU"
     ).replace(":productId", "ASTRO-II-PLATINUM"),
     name: "Astro II Platinum",
+    filters: filters[0].psuFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
@@ -9202,6 +9273,7 @@ const products = [
       "CATEGORY_PSU"
     ).replace(":productId", "ASTRO-II-GD"),
     name: "Astro II Gold",
+    filters: filters[0].psuFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672222141/product-brochures/psu/Astro-II-GD-DB_nu7oiq.jpg",
     img: [
@@ -9343,6 +9415,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "WARP-SHIELD-H"),
     name: "Warp Shield H",
+    filters: filters[0].accessoriesFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221756/product-brochures/accessories/SHIELDH-DB_english_cb5xht.jpg",
     img: [
@@ -9409,6 +9482,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "WARP-SHIELD-S"),
     name: "Warp Shield S",
+    filters: filters[0].accessoriesFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221756/product-brochures/accessories/SHIELD_S-DB_english_t8wtn1.jpg",
     img: [
@@ -9474,6 +9548,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "MN-GL4"),
     name: "MN-GL4",
+    filters: filters[0].accessoriesFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832864/product-brochures/accessories/Accesories_MN-GL4_DB_qumcvf.png",
     img: [
@@ -9566,6 +9641,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "MN-GL20"),
     name: "MN-GL20",
+    filters: filters[0].accessoriesFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833030/product-brochures/accessories/Accesories_MN-GL20_DB_yyf4ip.png",
     img: [
@@ -9659,6 +9735,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "ROUND-STUDIO-BT-1000"),
     name: "Round Studio BT-1000",
+    filters: filters[0].accessoriesFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833981/product-brochures/accessories/BT1000_DB_ENG_nqtrrv.jpg",
     img: [
@@ -9779,6 +9856,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "ROUND-STUDIO-UB1000"),
     name: "Round Studio UB-1000",
+    filters: filters[0].accessoriesFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834162/product-brochures/accessories/UB-1000_DB-ENG_kfzzl7.jpg",
     img: [
@@ -9889,6 +9967,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "MANIC-GAMING-FIELD-P1"),
     name: "Manic Gaming Field P1",
+    filters: filters[0].accessoriesFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834418/product-brochures/accessories/P1_DB_ENGLISH_lgi9na.jpg",
     img: [
@@ -9961,6 +10040,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "MPAMPAM"),
     name: "Manic PAMPAM",
+    filters: filters[0].accessoriesFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834533/product-brochures/accessories/PAMPAM_DB_ENGLISH_n18xfo.jpg",
     img: [
@@ -10026,6 +10106,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "WGX4"),
     name: "Warp GX4 M.2 NMVe",
+    filters: filters[0].accessoriesFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834868/product-images/accessories/GX4_SSD_2TB-1_jrs1su.png",
@@ -10134,6 +10215,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "MC-LC1"),
     name: "MC-LC1",
+    filters: filters[0].accessoriesFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835095/product-images/accessories/MN-LC1-1_bzjujg.png",
@@ -10197,6 +10279,7 @@ const products = [
       "CATEGORY_ACCESSORIES"
     ).replace(":productId", "UV-M100"),
     name: "UV-M100",
+    filters: filters[0].accessoriesFilters,
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835221/product-images/accessories/UV-M100-1_gjqzan.png",
