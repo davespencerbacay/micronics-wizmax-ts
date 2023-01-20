@@ -99,14 +99,25 @@ const Drivers: React.FC = () => {
                               className={isMobile ? "table-btn-container" : ""}
                             >
                               <ShadowedButton
-                                onClick={() => downloadHandler(p.file)}
+                                onClick={() => downloadHandler(p.brochure)}
+                                disable={p.brochure ? false : true}
                               >
-                                Driver <DownloadIcon />
+                                Brochure
+                                <DownloadIcon />
                               </ShadowedButton>
                               <ShadowedButton
-                                onClick={() => downloadHandler(p.software)}
+                                onClick={() => downloadHandler(p.file)}
+                                disable={p.file ? false : true}
                               >
-                                Software <DownloadIcon />
+                                Driver
+                                <DownloadIcon />
+                              </ShadowedButton>
+                              <ShadowedButton
+                                onClick={() => downloadHandler(p.manual)}
+                                disable={p.manual ? true : false}
+                              >
+                                Manual
+                                <DownloadIcon />
                               </ShadowedButton>
                             </div>
                           </div>

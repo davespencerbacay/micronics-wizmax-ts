@@ -123,6 +123,11 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     window.scrollTo(0, 0);
     setShowSubLinks(false);
   };
+  const navigateToSupport = () => {
+    navigate("/support/drivers-and-softwares");
+    window.scrollTo(0, 0);
+    setShowSubLinks(false);
+  };
   // LIGHT AND DARK THEME CONTEXT
   const isDarkMode = useIsDarkMode();
 
@@ -154,8 +159,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
     {
       text: useIntl("navigationBar.support"),
       path: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES,
-      handler: () => navLinkHandlers("support"),
-      onClick: () => linkHandler("support"),
+      // handler: () => navLinkHandlers("products"),
+      onClick: () => navigateToSupport(),
     },
     {
       text: useIntl("navigationBar.shop"),
