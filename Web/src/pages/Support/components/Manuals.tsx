@@ -85,7 +85,7 @@ const Drivers: React.FC = () => {
                             className={isMobile ? "table-btn-container" : ""}
                           >
                             <ShadowedButton
-                              onClick={() => downloadHandler(p.db)}
+                              onClick={() => downloadHandler(p.brochure)}
                             >
                               Brochure <DownloadIcon />
                             </ShadowedButton>

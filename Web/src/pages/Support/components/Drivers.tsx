@@ -1,7 +1,7 @@
 import { useIntl } from "i18n/intl";
 import Banner from "library/Banner/Banner";
 import Sidebar from "library/Sidebar/Sidebar";
-import React from "react";
+import React, { useRef } from "react";
 import { Col, Container, Row } from "reactstrap";
 import { productCategories } from "data/productCategories";
 import { ROUTE_PATH } from "constants/routes";
@@ -14,6 +14,7 @@ import { useParams } from "react-router-dom";
 import NoInformationToDisplay from "library/NoInformationToDisplay/NoInformationToDisplay";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
+import DownloadsProcedure from "./DownloadsProcedure/DownloadsProcedure";
 
 const Drivers: React.FC = () => {
   const isMobile = useResponsive("mobile");
@@ -52,59 +53,73 @@ const Drivers: React.FC = () => {
     window.open(file, "_blank")!.focus();
   };
 
+  const catRef = useRef<HTMLDivElement>(null);
+
+  const scrollToCategories = () => {
+    console.log("sample");
+    if (catRef.current) {
+      catRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="support-container">
       <Banner
-        title="DOWNLOAD DRIVERS AND SOFTWARES"
-        subTitle="Find softwares and drivers for your Wizmax Hardware."
+        title="DOWNLOAD BROCHURES, DRIVERS, AND MANUALS"
+        subTitle="Find brochures, drivers, and manuals for your Wizmax Hardware."
         variant="light"
         align="center"
       />
-      <Container className="support-content">
-        <Row>
-          <Col xs={12} md={3} lg={3}>
-            <Sidebar navItems={mappedNavItems} title="Categories" />
-          </Col>
-          <Col xs={12} md={9} lg={9}>
-            <div className="support-table">
-              <div className="table-captions">
-                <h2>{selectedCategory} Drivers</h2>
-                <span>{displayedProducts.length} results</span>
-              </div>
+      <DownloadsProcedure onClick={scrollToCategories} />
+      <div ref={catRef}>
+        <Container className="support-content">
+          <Row>
+            <Col xs={12} md={3} lg={3}>
+              <Sidebar navItems={mappedNavItems} title="Categories" />
+            </Col>
+            <Col xs={12} md={9} lg={9}>
+              <div className="support-table">
+                <div className="table-captions">
+                  <h2>{selectedCategory} Drivers</h2>
+                  <span>{displayedProducts.length} results</span>
+                </div>
 
-              <div className="table-content">
-                <NoInformationToDisplay
-                  showNoInfo={displayedProducts.length === 0}
-                >
-                  <React.Fragment>
-                    {displayedProducts.map((p: any) => (
-                      <div className="table-items">
-                        <div className="title-btn-container">
-                          <h5>{p.name}</h5>
-                          <div
-                            className={isMobile ? "table-btn-container" : ""}
-                          >
-                            <ShadowedButton
-                              onClick={() => downloadHandler(p.file)}
+                <div className="table-content">
+                  <NoInformationToDisplay
+                    showNoInfo={displayedProducts.length === 0}
+                  >
+                    <React.Fragment>
+                      {displayedProducts.map((p: any) => (
+                        <div className="table-items">
+                          <div className="title-btn-container">
+                            <h5>{p.name}</h5>
+                            <div
+                              className={isMobile ? "table-btn-container" : ""}
                             >
-                              Driver <DownloadIcon />
-                            </ShadowedButton>
-                            <ShadowedButton
-                              onClick={() => downloadHandler(p.software)}
-                            >
-                              Software <DownloadIcon />
-                            </ShadowedButton>
+                              <ShadowedButton
+                                onClick={() => downloadHandler(p.file)}
+                              >
+                                Driver <DownloadIcon />
+                              </ShadowedButton>
+                              <ShadowedButton
+                                onClick={() => downloadHandler(p.software)}
+                              >
+                                Software <DownloadIcon />
+                              </ShadowedButton>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
-                  </React.Fragment>
-                </NoInformationToDisplay>
+                      ))}
+                    </React.Fragment>
+                  </NoInformationToDisplay>
+                </div>
               </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+            </Col>
+          </Row>
+        </Container>
+      </div>
       <ScrollToTopButton />
     </div>
   );
