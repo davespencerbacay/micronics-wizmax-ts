@@ -7284,6 +7284,131 @@ const products = [
     ],
   },
   {
+    productId: "MA-600-PENGUIN",
+    categoryId: "CATEGORY_FC",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(
+      ":categoryId",
+      "CATEGORY_FC"
+    ).replace(":productId", "MA-600-PENGUIN"),
+    name: "MA-600 Penguin",
+    filters: filters[0].fanscoolersFilters,
+    brochure:
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611407/product-brochures/fans_coolers/Cooler_MA-600_Penguin_ahd0jj.png",
+    img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611142/product-images/fans_coolers/MA-600_Penguin-1_eoexsy.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611143/product-images/fans_coolers/MA-600_Penguin-2_fzslcq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611138/product-images/fans_coolers/MA-600_Penguin-3_cruvml.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611137/product-images/fans_coolers/MA-600_Penguin-4_a6s2y1.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611141/product-images/fans_coolers/MA-600_Penguin-5_la3k1c.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611137/product-images/fans_coolers/MA-600_Penguin-6_rbcqlt.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611135/product-images/fans_coolers/MA-600_Penguin-7_dodl64.png",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["MA-600 Penguin"],
+      },
+      {
+        name: "SOCKET COMPATIBILITY",
+        description: ["LGA1700 / LGA1200 / LGA115X / AM4"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["130mm(W) x 102.5mm(D) x 157mm(H)"],
+      },
+      {
+        name: "NET WEIGHT",
+        description: ["1239g (±5%)"],
+      },
+      {
+        name: "HEAT PIPE SIZE / MATERIAL",
+        description: ["Ø6mm x 6 pipes / Nickel Plated Copper"],
+      },
+      {
+        name: "FAN DIMENSIONS",
+        description: ["120mm x 120mm x 25mm"],
+      },
+      {
+        name: "FAN SPEED",
+        description: ["1,800RPM (±10%)"],
+      },
+      {
+        name: "FAN AIRFLOW",
+        description: ["75.81CFM"],
+      },
+      {
+        name: "STATIC PRESSURE",
+        description: ["1.98mm-H₂O"],
+      },
+      {
+        name: "BEARING TYPE",
+        description: ["Rifle Bearing"],
+      },
+      {
+        name: "SOUND LEVEL",
+        description: ["33.26dBA (±10%)"],
+      },
+      {
+        name: "FAN LIFESPAN",
+        description: ["30,000 hours"],
+      },
+      {
+        name: "FAN POWER CONNECTOR",
+        description: ["4-PIN PWM"],
+      },
+      {
+        name: "FAN RATED VOLTAGE",
+        description: ["DC 12V"],
+      },
+      {
+        name: "FAN RATED CURRENT",
+        description: ["0.22A (±10%)"],
+      },
+      {
+        name: "POWER CONSUMPTION",
+        description: ["2.7W (±10%)"],
+      },
+      {
+        name: "TDP",
+        description: ["210W (±5%)"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
     productId: "CA-40-EAGLE",
     categoryId: "CATEGORY_FC",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(
@@ -7560,7 +7685,7 @@ const products = [
     name: "CA-50 Sparrow",
     filters: filters[0].fanscoolersFilters,
     brochure:
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672218829/product-brochures/fans_coolers/Cooler_CA-50_Sparrow_esg4vt.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1674611849/product-brochures/fans_coolers/Cooler_CA-50_Sparrow_esg4vt_htkr9f.png",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672218709/product-images/fans_coolers/CA-50_Sparrow-1_ghlmsn.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672218709/product-images/fans_coolers/CA-50_Sparrow-2_ceic7q.png",
