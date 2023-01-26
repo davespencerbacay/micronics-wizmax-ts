@@ -74,6 +74,18 @@ const DownloadsProcedure: React.FC<IDownloadsProcedure> = (props) => {
   const downloadManualHandler = () => {
     window.open(productManual, "_blank")!.focus();
   };
+  const backToSearch = () => {
+    setSelectedProduct("");
+    setProductName("");
+    setProductBrochure("");
+    setProductDriver("");
+    setProductManual("");
+    if (clearResultRef.current) {
+      clearResultRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="dlp-container">
       <div className="step1" ref={clearResultRef}>
@@ -169,6 +181,7 @@ const DownloadsProcedure: React.FC<IDownloadsProcedure> = (props) => {
             "No Manual Available"
           )}
         </div>
+        <p onClick={backToSearch}>Back to Search</p>
       </div>
     </div>
   );
