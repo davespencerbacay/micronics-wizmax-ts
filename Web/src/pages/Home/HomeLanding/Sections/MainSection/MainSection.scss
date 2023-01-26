@@ -82,256 +82,217 @@
 }
 
 //DESKTOP VIEW
-@media only screen and (min-width: 1440px) {
-  .main-container {
+@media only screen and (min-width: 754px) {
+  .main-desktop-container {
     height: 100vh;
-    margin-top: 5rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    .container-fluid {
-    }
-    .main-caption {
-      width: 100%;
-      height: 80vh;
-      font-size: 7rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    .grid-details {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      position: relative;
+      align-items: center;
+      .text-container {
+        p {
+          font-size: 5rem;
+          font-family: "MetropolisBold", sans-serif;
 
-      font-family: "MetropolisBold", sans-serif;
-      .text1,
-      .text2 {
-        position: relative;
-        left: 10rem;
+          &:nth-child(1) {
+            color: skyblue;
+          }
+          &:nth-child(2) {
+            color: darkslategray;
+          }
+          &:nth-child(3) {
+            color: pink;
+          }
+        }
       }
-      .text3-container {
-        cursor: pointer;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+      .button-container {
         button {
-          font-family: "Exo", sans-serif;
+          position: relative;
+          font-size: 1.3rem;
           display: flex;
-          flex-direction: row;
-          justify-content: center;
+          padding: 0rem 1rem;
           align-items: center;
-          text-align: center;
+          justify-content: center;
           border: none;
           border-radius: 5rem;
-          background-color: white;
-          box-shadow: -20px -10px 15px rgba(0, 0, 0, 0.015),
+          background-color: rgba(0, 0, 0, 0.05);
+          box-shadow: inset -20px -10px 15px rgba(0, 0, 0, 0.015),
             10px 10px 15px rgba(70, 70, 70, 0.12);
-          font-size: 1.5rem;
-          padding-left: 1rem;
-          padding-right: 1rem;
           span {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: auto;
+            height: 100%;
             svg {
               width: 1rem;
+              height: 1rem;
             }
           }
         }
       }
     }
-    .main-text-button {
-      text-align: center;
-      cursor: pointer;
-      font-family: "Roboto", sans-serif;
-      font-size: 1.5rem;
-      position: relative;
-      height: 20vh;
-      p {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        transform: rotate(90deg);
-        span {
-          margin: 0.5rem;
-          position: relative;
-        }
-        .span1 {
-          opacity: 0.8;
-          animation-name: span1;
-          animation-timing-function: ease;
-          animation-duration: 1s;
-          animation-direction: normal;
-          animation-iteration-count: infinite;
-          @keyframes span1 {
-            0% {
-              left: 0;
-            }
-            100% {
-              left: 1rem;
-            }
-          }
-        }
-        .span2 {
-          opacity: 0.6;
-          animation-name: span2;
-          animation-timing-function: ease;
-          animation-duration: 1s;
-          animation-direction: normal;
-          animation-iteration-count: infinite;
-          @keyframes span2 {
-            25% {
-              left: 0;
-            }
-            100% {
-              left: 1rem;
-            }
-          }
-        }
-        .span3 {
-          opacity: 0.4;
-          animation-name: span3;
-          animation-timing-function: ease;
-          animation-duration: 1s;
-          animation-direction: normal;
-          animation-iteration-count: infinite;
-          @keyframes span3 {
-            50% {
-              left: 0;
-            }
-            100% {
-              left: 1rem;
-            }
-          }
-        }
-      }
-    }
-    .main-image-container {
-      height: 80vh;
-      padding: 5rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: flex-end;
-      .main-mh2 {
-        position: relative;
-        top: 15rem;
-        width: 100%;
-        height: auto;
-      }
+    .grid-images {
+      background: url("../../../../../../public/images/micronics-assets/home-page/main-bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 }
 //1024px below view
-@media only screen and (max-width: 1440px) and (min-width: 754px) {
-  .main-container {
-    height: 100vh;
-    margin-top: 5rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    .container-fluid {
-    }
-    .main-caption {
+@media only screen and (max-width: 1024px) and (min-width: 754px) {
+  .main-desktop-container {
+    display: flex;
+    flex-direction: column-reverse;
+    .grid-details {
       width: 100%;
-      height: 70vh;
-      font-size: 5rem;
+      height: 30vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      position: relative;
-
-      font-family: "MetropolisBold", sans-serif;
-      .text1,
-      .text2 {
-        position: relative;
-        left: 10rem;
-      }
-    }
-    .main-text-button {
+      align-items: center;
       text-align: center;
-      cursor: pointer;
-      font-family: "Roboto", sans-serif;
-      font-size: 1.5rem;
-      position: relative;
-      height: 30vh;
-      p {
+      .text-container {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
         text-align: center;
-        transform: rotate(90deg);
-        span {
-          margin: 0.5rem;
-          position: relative;
+        align-items: center;
+        gap: 5rem;
+        p {
+          text-align: center;
         }
-        .span1 {
-          opacity: 0.8;
-          animation-name: span1;
-          animation-timing-function: ease;
-          animation-duration: 1s;
-          animation-direction: normal;
-          animation-iteration-count: infinite;
-          @keyframes span1 {
-            0% {
-              left: 0;
-            }
-            100% {
-              left: 1rem;
-            }
-          }
-        }
-        .span2 {
-          opacity: 0.6;
-          animation-name: span2;
-          animation-timing-function: ease;
-          animation-duration: 1s;
-          animation-direction: normal;
-          animation-iteration-count: infinite;
-          @keyframes span2 {
-            25% {
-              left: 0;
-            }
-            100% {
-              left: 1rem;
-            }
-          }
-        }
-        .span3 {
-          opacity: 0.4;
-          animation-name: span3;
-          animation-timing-function: ease;
-          animation-duration: 1s;
-          animation-direction: normal;
-          animation-iteration-count: infinite;
-          @keyframes span3 {
-            50% {
-              left: 0;
-            }
-            100% {
-              left: 1rem;
-            }
-          }
+      }
+      .button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        button {
+          padding: 0 1rem;
+          width: 30%;
         }
       }
     }
-    .main-image-container {
+    .grid-images {
       height: 70vh;
-
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: flex-end;
-      .main-mh2 {
-        position: relative;
-        top: 0rem;
-        width: 100%;
-        height: auto;
-      }
     }
   }
 }
+// //1024px below view
+// @media only screen and (max-width: 1440px) and (min-width: 754px) {
+//   .main-container {
+//     height: 100vh;
+//     margin-top: 5rem;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-attachment: fixed;
+//     .container-fluid {
+//     }
+//     .main-caption {
+//       width: 100%;
+//       height: 70vh;
+//       font-size: 5rem;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: flex-start;
+//       position: relative;
+
+//       font-family: "MetropolisBold", sans-serif;
+//       .text1,
+//       .text2 {
+//         position: relative;
+//         left: 10rem;
+//       }
+//     }
+//     .main-text-button {
+//       text-align: center;
+//       cursor: pointer;
+//       font-family: "Roboto", sans-serif;
+//       font-size: 1.5rem;
+//       position: relative;
+//       height: 30vh;
+//       p {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: center;
+//         align-items: center;
+//         text-align: center;
+//         transform: rotate(90deg);
+//         span {
+//           margin: 0.5rem;
+//           position: relative;
+//         }
+//         .span1 {
+//           opacity: 0.8;
+//           animation-name: span1;
+//           animation-timing-function: ease;
+//           animation-duration: 1s;
+//           animation-direction: normal;
+//           animation-iteration-count: infinite;
+//           @keyframes span1 {
+//             0% {
+//               left: 0;
+//             }
+//             100% {
+//               left: 1rem;
+//             }
+//           }
+//         }
+//         .span2 {
+//           opacity: 0.6;
+//           animation-name: span2;
+//           animation-timing-function: ease;
+//           animation-duration: 1s;
+//           animation-direction: normal;
+//           animation-iteration-count: infinite;
+//           @keyframes span2 {
+//             25% {
+//               left: 0;
+//             }
+//             100% {
+//               left: 1rem;
+//             }
+//           }
+//         }
+//         .span3 {
+//           opacity: 0.4;
+//           animation-name: span3;
+//           animation-timing-function: ease;
+//           animation-duration: 1s;
+//           animation-direction: normal;
+//           animation-iteration-count: infinite;
+//           @keyframes span3 {
+//             50% {
+//               left: 0;
+//             }
+//             100% {
+//               left: 1rem;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .main-image-container {
+//       height: 70vh;
+
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: flex-end;
+//       align-items: flex-end;
+//       .main-mh2 {
+//         position: relative;
+//         top: 0rem;
+//         width: 100%;
+//         height: auto;
+//       }
+//     }
+//   }
+// }

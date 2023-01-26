@@ -1,6 +1,7 @@
 import { HOME_IMAGES } from "constants/home";
 import useResponsive from "hooks/useResponsive";
 import Img from "library/Images/Image";
+import ChevronRight from "library/Images/Navigations/ChevronArrows/ChevronRight";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React from "react";
 import { useNavigate } from "react-router-dom";
@@ -18,6 +19,9 @@ const MainSection: React.FC<MainSectionType> = (props) => {
 
   const navigateToMH2 = () => {
     navigate("/products/HEADSET/MH2");
+  };
+  const goToW101P = () => {
+    navigate("/products/CATEGORY_KB/W101P");
   };
   return (
     <section
@@ -50,45 +54,25 @@ const MainSection: React.FC<MainSectionType> = (props) => {
           </Row>
         </Container>
       ) : (
-        <Container fluid>
-          <Row>
-            <Col className="col1" xs={5} sm={5} md={6} lg={6}>
-              <div className="main-caption">
-                <p className="text1">Pique Your</p>
-                <p className="text2">Gaming Experience.</p>
-                <div className="text3-container">
-                  <button onClick={navigateToMH2}>
-                    Learn More About MH2
-                    <span>
-                      <GoTo />
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </Col>
-            <Col xs={5} sm={5} md={6} lg={6}>
-              <div className="main-image-container">
-                <Img
-                  img={HOME_IMAGES.HOME_HEADSET_SECTION.HEADSET_LEFT}
-                  className="main-mh2"
-                />
-              </div>
-            </Col>
-            <Col xs={2} sm={2} md={12} lg={12}>
-              <div
-                className="main-text-button"
-                onClick={props.videoSectionHandler}
-              >
-                <p>
-                  Explore More
-                  <span className="span1">&gt;</span>
-                  <span className="span2">&gt;</span>
-                  <span className="span3">&gt;</span>
-                </p>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+        <div className="main-desktop-container">
+          <div className="grid-details">
+            <div className="text-container">
+              <p>Fresh.</p>
+              <p>Fun.</p>
+              <p>Fab.</p>
+            </div>
+
+            <div className="button-container">
+              <button onClick={goToW101P}>
+                Learn More About W101P{" "}
+                <span>
+                  <GoTo />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div className="grid-images"></div>
+        </div>
       )}
     </section>
   );
