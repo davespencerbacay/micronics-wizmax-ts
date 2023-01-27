@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
+  z-index: 2;
   .searchbar {
     background-color: #1d1d1d;
     width: min(30%, 100%);
@@ -54,7 +54,7 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    border-radius: 0 0 2rem 2rem;
+    border-radius: 0 0 5px 5px;
     transition: all 0.5s ease;
     animation: hidesearchbar 0.5s ease;
     @keyframes hidesearchbar {
@@ -68,7 +68,8 @@
     input {
       background-color: white;
       width: min(100%, 100%);
-      border-radius: 2rem;
+      height: 30px;
+      border-radius: 5px;
       padding: 1rem;
       outline: none;
       border: 1px solid #1d1d1d;
@@ -106,6 +107,7 @@
         justify-content: space-around;
         align-items: center;
         cursor: pointer;
+        border-bottom: 1px solid gray;
         h2 {
           font-size: 2rem;
           color: white;

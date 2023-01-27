@@ -130,7 +130,18 @@
       justify-content: center;
       text-align: center;
       align-items: center;
-
+      .color-availability-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        .color-availability {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          border: 1px solid lightgray;
+          cursor: pointer;
+        }
+      }
       .thumbnail-product-label {
         font-family: "MetropolisBold", sans-serif;
         font-weight: bold;
