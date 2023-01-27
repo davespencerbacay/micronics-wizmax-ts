@@ -1,7 +1,7 @@
 import products from "data/products";
 import useResponsive from "hooks/useResponsive";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Col, Collapse, Container, Row } from "reactstrap";
 import "./ProductThumbnail.scss";
@@ -16,7 +16,6 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   const productFilterByCategoryId = products.filter(
     (product) => product.categoryId === props.catId
   );
-  console.log(productFilterByCategoryId);
 
   const [isOpen, setIsOpen] = useState<any>(false);
   const [openCountryAvailability, setOpenCountryAvailability] =
@@ -25,7 +24,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   const toggleCountryAvailability = (id: any) => {
     let countryAvailabilityOpen = [isOpen];
     countryAvailabilityOpen[id] = !countryAvailabilityOpen[id];
-    console.log(countryAvailabilityOpen);
+
     if (openCountryAvailability) {
       setIsOpen(!countryAvailabilityOpen);
       setOpenCountryAvailability("");
@@ -51,18 +50,52 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
     setShowToolTip("");
   };
   const isMobile = useResponsive("mobile");
+
+  //COLOR VARIATION
+
+  const [colorIndex, setColorIndex] = useState<any>(0);
+  useEffect(() => {}, [colorIndex]);
+  const colorHandler = (index: any) => {
+    setColorIndex(index);
+  };
   return (
     <Container fluid>
       <Row>
         {productFilterByCategoryId.map((p: any, index: any) => {
-          console.log("index", index, "image", p.img[0]);
           return (
             <Col xs={6} sm={6} md={2} lg={2} key={index}>
-              <div className="thumbnail-container">
+              <div className="thumbnail-container" key={index}>
                 <Link to={p.path}>
-                  <img src={p.img[0]} alt={p.img[0]} />
+                  {p.colorAvailability ? (
+                    <img
+                      key={index}
+                      src={p.colorAvailability?.[colorIndex].images?.[0]}
+                      alt={p.colorAvailability?.[colorIndex].images?.[0]}
+                    />
+                  ) : (
+                    <img src={p.img[0]} alt={p.img[0]} />
+                  )}
                 </Link>
                 <div className="thumbnail-details-container">
+                  {p.colorAvailability && (
+                    <div className="color-availability-container">
+                      {p.colorAvailability.map((color: any, index: any) => {
+                        return (
+                          <div
+                            onClick={() => colorHandler(index)}
+                            className="color-availability"
+                            style={{
+                              background:
+                                color.color && color.secondaryColor
+                                  ? `conic-gradient(${color.secondaryColor} 0deg, ${color.secondaryColor} 180deg, ${color.color} 180deg, ${color.color} 360deg)`
+                                  : `conic-gradient(${color.color} 0deg, ${color.color} 360deg)`,
+                            }}
+                          ></div>
+                        );
+                      })}
+                    </div>
+                  )}
+
                   <p className="thumbnail-product-label">{p.name}</p>
                   <Button
                     className="thumbnail-country-availability-btn"

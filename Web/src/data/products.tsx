@@ -29,6 +29,20 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085970/product-images/mouse/M630W-B-6_nvvqqv.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/M630W-B-7_rxsc2t.png",
     ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/M630W-B-2_aiszl4.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/M630W-B-2_aiszl4.png",
+        ],
+      },
+    ],
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -1295,6 +1309,35 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_3_vcfc39.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_2_zwsxuw.png",
     ],
+    colorAvailability: [
+      {
+        color: "#FFC0CB",
+        secondaryColor: "",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_4_culfli.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_3_vcfc39.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Ash_Pink_-_2_zwsxuw.png",
+        ],
+      },
+      {
+        color: "#16537E",
+        secondaryColor: "",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487923/product-images/keyboard/W101P_Peacock_Green_-_4_pjmnll.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487924/product-images/keyboard/W101P_Peacock_Green_-_3_qegl29.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487922/product-images/keyboard/W101P_Peacock_Green_-_2_qucmti.png",
+        ],
+      },
+      {
+        color: "#87CEEB",
+        secondaryColor: "",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487932/product-images/keyboard/W101P_Sky_Blue_-_4_w9eclg.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487930/product-images/keyboard/W101P_Sky_Blue_-_3_wdarsi.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673487928/product-images/keyboard/W101P_Sky_Blue_-_2_mzsepb.png",
+        ],
+      },
+    ],
     countryAvailability: [
       // {
       //   abbreviation: "KR",
@@ -2077,7 +2120,7 @@ const products = [
     manual:
       "https://drive.google.com/file/d/19f6p--jW6_iDR2X8xfMLCBTm2xx-9Q-i/view",
     brochure:
-      "/images/micronics-assets/product-images/keyboard/brochure/https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086191/product-brochures/keyboard/Keyboard_WK3_DB_updated_xattjd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086191/product-brochures/keyboard/Keyboard_WK3_DB_updated_xattjd.png",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086157/product-images/keyboard/WK3_-_1_phxefg.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086163/product-images/keyboard/WK3-2_lsqqfa.png",
@@ -2488,6 +2531,40 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086150/product-images/keyboard/EX580_-_6_omcboi.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/EX580_-_7_jv9lri.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/EX580_-_8_qq7ih1.png",
+    ],
+    colorAvailability: [
+      {
+        color: "#A7C7E7",
+        secondaryColor: "Pink",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX580_-_4_sy9aye.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/EX580_-_8_qq7ih1.png",
+        ],
+      },
+      {
+        color: "#A7C7E7",
+        secondaryColor: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX580_-_3_jo6vah.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/EX580_-_7_jv9lri.png",
+        ],
+      },
+      {
+        color: "#E9CDD0",
+        secondaryColor: "#A7C7E7",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX580_-_2_kgm53x.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086150/product-images/keyboard/EX580_-_6_omcboi.png",
+        ],
+      },
+      {
+        color: "#E9CDD0",
+        secondaryColor: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086151/product-images/keyboard/EX580_-_1_hedycm.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086150/product-images/keyboard/EX580_-_5_jfswvo.png",
+        ],
+      },
     ],
     countryAvailability: [
       {
@@ -3742,6 +3819,32 @@ const products = [
     ],
     file: "https://drive.google.com/file/d/1flXlAYBI4_sJXNF7CwDU8OgZAYzu3qY3/view",
     software: "",
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_01_Black_gmcsjv.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/HS-420_02_Black_wymjks.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086230/product-images/headset/HS-420_03_Black_dhy8r7.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-420_01_White_xaiqp3.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-420_02_White_wpbbye.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/HS-420_03_White_k6xsvk.png",
+        ],
+      },
+      {
+        color: "Pink",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086239/product-images/headset/HS-420_01_Pink_bkm1ru.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_02_Pink_dfxfq4.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/HS-420_03_Pink_udeuoe.png",
+        ],
+      },
+    ],
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -5447,6 +5550,20 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086306/product-images/pc_case/wb-1_uvk57h.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/wb-3_cpwbya.png",
     ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086298/product-images/pc_case/wb-2_w009ns.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086298/product-images/pc_case/wb-2_w009ns.png",
+        ],
+      },
+    ],
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -5562,6 +5679,20 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086313/product-images/pc_case/em2-stereo-black4_ihigmn.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086314/product-images/pc_case/em2-stereo-black5_qu4oaf.png",
     ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086314/product-images/pc_case/em2-stereo-black6_gdgnfe.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086314/product-images/pc_case/em2-stereo-black6_gdgnfe.png",
+        ],
+      },
+    ],
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -5667,6 +5798,20 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-1_fc8hcm.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086304/product-images/pc_case/gm1b_ldvnfp.png",
+    ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
+        ],
+      },
     ],
     countryAvailability: [
       {
@@ -7815,6 +7960,22 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219018/product-images/fans_coolers/ML240_Frozen_Tuna-2_pqc1vp.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219017/product-images/fans_coolers/ML240_Frozen_Tuna-1_vbtgpj.png",
     ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219018/product-images/fans_coolers/ML240_Frozen_Tuna-2_pqc1vp.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219017/product-images/fans_coolers/ML240_Frozen_Tuna-1_vbtgpj.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219018/product-images/fans_coolers/ML240_Frozen_Tuna-2_pqc1vp.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219017/product-images/fans_coolers/ML240_Frozen_Tuna-1_vbtgpj.png",
+        ],
+      },
+    ],
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -7921,6 +8082,22 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219361/product-images/fans_coolers/ML360_FROZEN_TUNA-4_eddhvb.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219358/product-images/fans_coolers/ML360_FROZEN_TUNA-1_xrn7de.png",
     ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219361/product-images/fans_coolers/ML360_FROZEN_TUNA-4_eddhvb.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219358/product-images/fans_coolers/ML360_FROZEN_TUNA-1_xrn7de.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219361/product-images/fans_coolers/ML360_FROZEN_TUNA-4_eddhvb.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219358/product-images/fans_coolers/ML360_FROZEN_TUNA-1_xrn7de.png",
+        ],
+      },
+    ],
     countryAvailability: [
       {
         abbreviation: "KR",
@@ -8025,6 +8202,22 @@ const products = [
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_2_tdnaee.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_1_nmw6wo.png",
+    ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_2_tdnaee.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_1_nmw6wo.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_2_tdnaee.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_1_nmw6wo.png",
+        ],
+      },
     ],
     countryAvailability: [
       {
@@ -8515,6 +8708,20 @@ const products = [
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
     ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+        ],
+      },
+    ],
     countryAvailability: [
       // {
       //   abbreviation: "KR",
@@ -8612,6 +8819,20 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+    ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+        ],
+      },
     ],
     countryAvailability: [
       // {
@@ -9867,6 +10088,26 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_3_nyfky4.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_1_iozrvy.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_2_frdimb.png",
+    ],
+    colorAvailability: [
+      {
+        color: "Pink",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_2_frdimb.png",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_1_iozrvy.png",
+        ],
+      },
+      {
+        color: "Silver",
+        images: [
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_3_nyfky4.png",
+        ],
+      },
     ],
     countryAvailability: [
       {
