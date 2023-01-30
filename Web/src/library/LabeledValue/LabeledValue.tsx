@@ -24,7 +24,6 @@ const LabeledValue: React.FC<ILabeledValue> = (props) => {
       <div className={labelValueClassnames}>
         <div>
           <h5>{props.title}</h5>
-          <p>{props.subTitle}</p>
         </div>
         <div>
           {props.buttonProps?.show ? (
@@ -32,6 +31,7 @@ const LabeledValue: React.FC<ILabeledValue> = (props) => {
               {props.buttonProps.text}
             </button>
           ) : null}
+          <p className="field-warning-text">{props.subTitle}</p>
         </div>
       </div>
     );

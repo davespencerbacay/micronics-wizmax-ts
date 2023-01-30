@@ -9,6 +9,7 @@ import Form from "./components/Form/Form";
 import { useNavigate } from "react-router-dom";
 import { ROUTE_PATH } from "constants/routes";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
+import ScrollToTop from "library/ScrollToTop/ScrollToTop";
 
 const Contact = () => {
   const LOCALIZATION = {
@@ -23,6 +24,7 @@ const Contact = () => {
 
   return (
     <React.Fragment>
+      <ScrollToTop />
       <Banner
         title={LOCALIZATION.bannerTitle}
         subTitle={LOCALIZATION.bannerDescription}

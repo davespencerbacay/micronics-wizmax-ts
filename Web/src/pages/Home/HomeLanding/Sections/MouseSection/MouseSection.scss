@@ -52,8 +52,11 @@
   .mouse-img-container {
     position: relative;
     top: 30rem;
+    right: 0rem;
+    overflow: hidden;
     img {
       width: 100%;
+      scale: 2;
     }
   }
 }

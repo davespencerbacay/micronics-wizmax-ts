@@ -33,27 +33,46 @@ const MainSection: React.FC<MainSectionType> = (props) => {
       }}
     >
       {isMobileMode ? (
-        <Container fluid>
-          <Row>
-            <Col xs={12} sm={12} md={12} lg={12}>
-              <div className="mobile-logo-container">
-                <Img
-                  img={HOME_IMAGES.HOME_MOBILE_LOGO}
-                  className="mobile-logo"
-                />
-              </div>
-            </Col>
-            <Col xs={12} sm={12} md={12} lg={12}>
-              <p className="text-button" onClick={props.headsetSectionHandler}>
-                Explore More
-                <span className="span1">&gt;</span>
-                <span className="span2">&gt;</span>
-                <span className="span3">&gt;</span>
-              </p>
-            </Col>
-          </Row>
-        </Container>
+        <div className="main-desktop-container">
+          <div className="grid-details">
+            <div className="text-container">
+              <p>Fresh.</p>
+              <p>Fun.</p>
+              <p>Fab.</p>
+            </div>
+
+            <div className="button-container">
+              <button onClick={goToW101P}>
+                Learn More About W101P{" "}
+                <span>
+                  <GoTo />
+                </span>
+              </button>
+            </div>
+          </div>
+          <div className="grid-images"></div>
+        </div>
       ) : (
+        // <Container fluid>
+        //   <Row>
+        //     <Col xs={12} sm={12} md={12} lg={12}>
+        //       <div className="mobile-logo-container">
+        //         <Img
+        //           img={HOME_IMAGES.HOME_MOBILE_LOGO}
+        //           className="mobile-logo"
+        //         />
+        //       </div>
+        //     </Col>
+        //     <Col xs={12} sm={12} md={12} lg={12}>
+        //       <p className="text-button" onClick={props.headsetSectionHandler}>
+        //         Explore More
+        //         <span className="span1">&gt;</span>
+        //         <span className="span2">&gt;</span>
+        //         <span className="span3">&gt;</span>
+        //       </p>
+        //     </Col>
+        //   </Row>
+        // </Container>
         <div className="main-desktop-container">
           <div className="grid-details">
             <div className="text-container">

@@ -7,6 +7,7 @@ import "./BecomeDistributor.scss";
 import Form from "./components/Form/Form";
 import Inquiries from "../../library/Inquiries/Inquiries";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
+import ScrollToTop from "library/ScrollToTop/ScrollToTop";
 
 const BecomeDistributor = () => {
   const LOCALIZATION = {
@@ -20,6 +21,7 @@ const BecomeDistributor = () => {
 
   return (
     <React.Fragment>
+      <ScrollToTop />
       <Banner
         title={LOCALIZATION.bannerTitle}
         subTitle={LOCALIZATION.bannerDescription}

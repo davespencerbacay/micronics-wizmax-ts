@@ -57,8 +57,15 @@ const Drivers: React.FC = () => {
 
   const scrollToCategories = () => {
     console.log("sample");
+    // if (catRef.current) {
+    //   catRef.current.scrollIntoView({
+    //     behavior: "smooth",
+    //     block: "start",
+    //   });
+    // }
     if (catRef.current) {
-      catRef.current.scrollIntoView({
+      window.scrollBy({
+        top: 2750,
         behavior: "smooth",
       });
     }
