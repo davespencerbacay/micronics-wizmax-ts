@@ -201,9 +201,18 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                         ? "prev-product-title-hide"
                         : "prev-product-title"
                     }
-                    onClick={prevButtonClickHandler}
+                    onClick={() =>
+                      prevProductHandler(
+                        products[currentProduct - 1].categoryId,
+                        products[currentProduct - 1].productId
+                      )
+                    }
                   >
-                    previous
+                    <img
+                      src={products[currentProduct - 1]?.img[0]}
+                      alt={products[currentProduct - 1]?.img[0]}
+                    />
+                    {<p>{products[currentProduct - 1]?.name}</p>}
                   </p>
                 ) : (
                   <p
@@ -233,9 +242,18 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                     ? "next-product-title-hide"
                     : "next-product-title"
                 }
-                onClick={nextButtonOnClickHandler}
+                onClick={() =>
+                  nextProductHandler(
+                    products[currentProduct + 1].categoryId,
+                    products[currentProduct + 1].productId
+                  )
+                }
               >
-                next
+                <img
+                  src={products[currentProduct + 1]?.img[0]}
+                  alt={products[currentProduct + 1]?.img[0]}
+                />
+                {<p>{products[currentProduct + 1]?.name}</p>}
               </p>
             ) : (
               <p

@@ -15,6 +15,7 @@ import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import classNames from "classnames";
 import { REGIONS_COUNTRIES } from "constants/shops";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
+import ScrollToTop from "library/ScrollToTop/ScrollToTop";
 
 const Shop: React.FC = () => {
   const themeCtx = useContext(ThemeContext);
@@ -56,6 +57,7 @@ const Shop: React.FC = () => {
         subTitle="Get the best products for your workspace"
       />
       <Container>
+        <ScrollToTop />
         {REGIONS_COUNTRIES.REGIONS.map((regions: any) => {
           return (
             <div className="shop-container">

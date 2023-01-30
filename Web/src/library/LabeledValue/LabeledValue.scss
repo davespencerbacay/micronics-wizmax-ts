@@ -17,6 +17,9 @@
     border-bottom: 1px dotted #333;
     font-size: 1.3rem;
   }
+  .field-warning-text {
+    color: red;
+  }
 }
 
 .label-value-bold {
@@ -27,5 +30,8 @@
 .label-value-light {
   h5 {
     font-weight: 400;
+  }
+  p {
+    color: red;
   }
 }

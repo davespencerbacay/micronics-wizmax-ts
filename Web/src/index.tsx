@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <AppContextProvider>
         <Provider>
           <Router>
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
             <Routes>
               {REACT_ROUTES.map((ROUTE, index) => (
                 <React.Fragment key={index}>

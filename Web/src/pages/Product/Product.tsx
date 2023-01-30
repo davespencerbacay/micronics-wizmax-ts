@@ -9,6 +9,7 @@ import { ThemeVariants } from "context/ThemeContext";
 import ProductThumbnail from "./ProductThumbnail";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
+import ScrollToTop from "library/ScrollToTop/ScrollToTop";
 
 const Product: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
@@ -35,6 +36,7 @@ const Product: React.FC = () => {
   };
   return (
     <div className="product-container">
+      <ScrollToTop />
       <CategoryTab
         refLinkHandler={isMobile ? refLinkTitleHandler : refLinkHandler}
       />

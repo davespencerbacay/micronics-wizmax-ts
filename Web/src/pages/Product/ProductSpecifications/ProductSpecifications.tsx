@@ -23,7 +23,16 @@ const ProductSpecifications: React.FC<IProductSpecifications> = (props) => {
                       {specs.subname && (
                         <div className="subname-container">
                           {specs.subname.map((name: any) => {
-                            return <p className="specs-subname">{name}</p>;
+                            return (
+                              <p
+                                className="specs-subname"
+                                style={{
+                                  fontSize: name.length > 15 ? "1.3rem" : "",
+                                }}
+                              >
+                                {name}
+                              </p>
+                            );
                           })}
                         </div>
                       )}
@@ -31,7 +40,13 @@ const ProductSpecifications: React.FC<IProductSpecifications> = (props) => {
                         <div className="subdescription-container">
                           {specs.subdescription.map((description: any) => {
                             return (
-                              <p className="specs-subdescription">
+                              <p
+                                className="specs-subdescription"
+                                style={{
+                                  fontSize:
+                                    description.length > 20 ? "1.3rem" : "",
+                                }}
+                              >
                                 {description}
                               </p>
                             );

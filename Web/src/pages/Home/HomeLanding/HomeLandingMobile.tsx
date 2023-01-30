@@ -1,3 +1,4 @@
+import ScrollToTop from "library/ScrollToTop/ScrollToTop";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import React, { useRef } from "react";
 import "./HomeLandingMobile.scss";
@@ -17,6 +18,7 @@ const HomeLandingMobile: React.FC = () => {
   };
   return (
     <div className="home-landing-mobile-container">
+      <ScrollToTop />
       <MainSection headsetSectionHandler={headsetSectionHandler} />
       <HeadsetSection sectionRef={headsetSection} />
       <MouseSection />

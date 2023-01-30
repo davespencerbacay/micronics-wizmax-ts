@@ -14,6 +14,11 @@ const OtherProductsSection: React.FC = () => {
     navigate("/products");
     window.scrollTo(0, 6900);
   };
+  const navigateToSpecificLink = (index: any) => {
+    if (index) {
+      navigate("/products");
+    }
+  };
   return (
     <React.Fragment>
       {isMobileMode ? (
@@ -58,7 +63,14 @@ const OtherProductsSection: React.FC = () => {
             <Row className="img-row">
               {otherProductsImages.map((image, index) => {
                 return (
-                  <Col xs={3} sm={3} md={4} lg={4} className="img-col">
+                  <Col
+                    xs={3}
+                    sm={3}
+                    md={4}
+                    lg={4}
+                    className="img-col"
+                    onClick={() => navigateToSpecificLink(index)}
+                  >
                     <Img img={image.img}></Img>
                   </Col>
                 );
