@@ -77,7 +77,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                   )}
                 </Link>
                 <div className="thumbnail-details-container">
-                  {p.colorAvailability && (
+                  {p.colorAvailability ? (
                     <div className="color-availability-container">
                       {p.colorAvailability.map((color: any, index: any) => {
                         return (
@@ -94,15 +94,21 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                         );
                       })}
                     </div>
+                  ) : (
+                    <div className="color-availability-container-null"></div>
                   )}
-
+                  <div className="country-availability-container">
+                    {p.countryAvailability.map((country: any) => {
+                      return <p>{country.abbreviation}</p>;
+                    })}
+                  </div>
                   <p className="thumbnail-product-label">{p.name}</p>
                   <Button
                     className="thumbnail-country-availability-btn"
                     onClick={() => toggleCountryAvailability(index)}
                     onBlur={() => closeCountryAvailability(index)}
                   >
-                    Country Availability
+                    Featured Specifications
                     <span>
                       <GoTo
                         className={
@@ -117,30 +123,39 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                       isOpen={isOpen[index]}
                     >
                       <Row>
-                        {p.countryAvailability.map(
-                          (country: any, index: any) => {
-                            return (
-                              <Col
-                                className="thumbnail-country-availability-col"
-                                xs={4}
-                                sm={3}
-                                md={3}
-                                lg={3}
-                              >
-                                <p
-                                  className="thumbnail-country-availability"
-                                  onMouseOver={() => showToolTipHandler(index)}
-                                  onMouseLeave={hideToolTipHandler}
-                                >
-                                  {showToolTip === index && (
-                                    <span>{country.country}</span>
-                                  )}
-                                  {country.abbreviation}
-                                </p>
-                              </Col>
-                            );
-                          }
-                        )}
+                        {p.featuredSpecs.map((specs: any, index: any) => {
+                          return (
+                            <Col
+                              className="thumbnail-country-availability-col"
+                              xs={4}
+                              sm={3}
+                              md={12}
+                              lg={12}
+                            >
+                              <p className="thumbnail-country-availability">
+                                {specs.specs}
+                              </p>
+                            </Col>
+                            // <Col
+                            //   className="thumbnail-country-availability-col"
+                            //   xs={4}
+                            //   sm={3}
+                            //   md={3}
+                            //   lg={3}
+                            // >
+                            //   <p
+                            //     className="thumbnail-country-availability"
+                            //     onMouseOver={() => showToolTipHandler(index)}
+                            //     onMouseLeave={hideToolTipHandler}
+                            //   >
+                            //     {showToolTip === index && (
+                            //       <span>{country.country}</span>
+                            //     )}
+                            //     {country.abbreviation}
+                            //   </p>
+                            // </Col>
+                          );
+                        })}
                       </Row>
                     </Collapse>
                   </Button>

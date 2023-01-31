@@ -65,6 +65,20 @@ const products = [
         country: "Japan",
       },
     ],
+    featuredSpecs: [
+      {
+        specs: "Silent Switches",
+      },
+      {
+        specs: "Optical Sensor",
+      },
+      {
+        specs: "2.4 GHz Wireless Connection",
+      },
+      {
+        specs: "Windows 7, 10, 11",
+      },
+    ],
     isNewRelease: "New Release",
     table: [
       {
@@ -194,6 +208,23 @@ const products = [
       {
         abbreviation: "JP",
         country: "Japan",
+      },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Huano Switches",
+      },
+      {
+        specs: "PAW3370 Optical Sensor",
+      },
+      {
+        specs: "7 mode RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
       },
     ],
     isNewRelease: "New Release",
@@ -328,6 +359,23 @@ const products = [
         country: "Japan",
       },
     ],
+    featuredSpecs: [
+      {
+        specs: "Omron Switches",
+      },
+      {
+        specs: "PMW 3360 Optical Sensor",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
+    ],
     isNewRelease: "New Release",
     table: [
       {
@@ -447,6 +495,23 @@ const products = [
       {
         abbreviation: "JP",
         country: "Japan",
+      },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Huano Switches",
+      },
+      {
+        specs: "ADNS 3050 Optical Sensor",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
       },
     ],
     isNewRelease: "New Release",
@@ -576,6 +641,23 @@ const products = [
         country: "Japan",
       },
     ],
+    featuredSpecs: [
+      {
+        specs: "Huano Switches",
+      },
+      {
+        specs: "PAW 3327 Optical Sensor",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
+    ],
     isNewRelease: "New Release",
     table: [
       {
@@ -701,6 +783,23 @@ const products = [
       {
         abbreviation: "JP",
         country: "Japan",
+      },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Huano Switches",
+      },
+      {
+        specs: "PAW 3327 Optical Sensor",
+      },
+      {
+        specs: "7 mode RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
       },
     ],
     isNewRelease: "New Release",
@@ -831,6 +930,23 @@ const products = [
         country: "Japan",
       },
     ],
+    featuredSpecs: [
+      {
+        specs: "Huano Switches",
+      },
+      {
+        specs: "PMW 3389",
+      },
+      {
+        specs: "7 mode RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -951,6 +1067,23 @@ const products = [
       {
         abbreviation: "JP",
         country: "Japan",
+      },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Huano Switches",
+      },
+      {
+        specs: "PAW 3370 Optical Sensor",
+      },
+      {
+        specs: "7 mode RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/Gold plated USB Type A",
       },
     ],
     isNewRelease: "New Release",
@@ -1078,6 +1211,23 @@ const products = [
         country: "Japan",
       },
     ],
+    featuredSpecs: [
+      {
+        specs: "Huano Switches",
+      },
+      {
+        specs: "PAW 3370 Optical Sensor",
+      },
+      {
+        specs: "7 mode RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/Gold plated USB Type A",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -1201,6 +1351,23 @@ const products = [
       {
         abbreviation: "JP",
         country: "Japan",
+      },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Huano Switches",
+      },
+      {
+        specs: "PAW 3370 Optical Sensor",
+      },
+      {
+        specs: "7 mode RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
       },
     ],
     table: [
@@ -1360,6 +1527,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "4th Generation Jixian Optical Switches",
+      },
+      {
+        specs: "2 color PBT Keycaps",
+      },
+      {
+        specs: "White Front LED Lighting",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "IPX8 Water Proof",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -1493,6 +1677,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "Gateron Yellow Pro Switch",
+      },
+      {
+        specs: "Hot-swappable Switches",
+      },
+      {
+        specs: "2 color PBT Keycaps",
+      },
+      {
+        specs: "Wired/Wireless (Bluetooth/2.4GHz) Connection",
+      },
+      {
+        specs: "White Front LED Lighting",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -1621,6 +1822,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "104 Anti-ghosting Keys + 3 Button + 1 Wheel",
+      },
+      {
+        specs: "Front RGB + Bottom RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
     ],
     table: [
       {
@@ -1753,6 +1971,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "104 Anti-ghosting Keys",
+      },
+      {
+        specs: "Front RGB + Side RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
     ],
     table: [
       {
@@ -1887,6 +2122,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "104 Anti-ghosting Keys",
+      },
+      {
+        specs: "Front RGB + Bottom RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -2017,6 +2269,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "104 Anti-ghosting Keys",
+      },
+      {
+        specs: "Front RGB + Top RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
     ],
     table: [
       {
@@ -2151,6 +2420,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "87 Infinite Simultaneous Input, Anti-ghosting Keys",
+      },
+      {
+        specs: "Front RGB + Bottom RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/Wireless (Bluetooth/2.4GHz) Connection",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME ",
@@ -2283,6 +2569,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "87 Anti-ghosting Keys",
+      },
+      {
+        specs: "Front RGB + Top RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
     ],
     table: [
       {
@@ -2418,6 +2721,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "104 Anti-ghosting Keys",
+      },
+      {
+        specs: "Front RGB + Top RGB Lighting Effect",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
     ],
     table: [
       {
@@ -2588,6 +2908,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "4th Generation Jixian Optical Switches",
+      },
+      {
+        specs: "Blue Pink / Blue White / Pink Blue / Pink White",
+      },
+      {
+        specs: "Double Injection Crystal Keycaps",
+      },
+      {
+        specs: "Front Rainbow RGB Lighting Effect",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -2719,6 +3056,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "Black / White",
+      },
+      {
+        specs: "104 Anti-ghosting Keys",
+      },
+      {
+        specs: "Front Rainbow RGB Lighting Effect",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
     ],
     table: [
       {
@@ -2976,6 +3330,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "2nd Generation Manic Switches",
+      },
+      {
+        specs: "89 Anti-ghosting Keys",
+      },
+      {
+        specs: "Front RGB Lighting Effect",
+      },
+      {
+        specs: "Double Injection ABS Keycaps",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -3101,6 +3472,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Pantograph (Scissor Switch)",
+      },
+      {
+        specs: "Aluminium Case",
+      },
+      {
+        specs: "110 Keys",
+      },
+      {
+        specs: "Mac OS and Win XP, 7, 10, 11",
+      },
+      {
+        specs: "Wired/USB Type A",
+      },
     ],
     table: [
       {
@@ -3229,6 +3617,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "4th Generation Jixian Optical Switches",
+      },
+      {
+        specs: "Double Injection ABS Keycaps",
+      },
+      {
+        specs: "Rainbow / Orange Front LED Lighting",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "IPX7 Water Proof",
+      },
     ],
     table: [
       {
@@ -3381,6 +3786,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "4th Generation Jixian Optical Switches",
+      },
+      {
+        specs: "Double Injection PBT Keycaps",
+      },
+      {
+        specs: "White Front LED Lighting",
+      },
+      {
+        specs: "1000Hz Polling Rate",
+      },
+      {
+        specs: "IPX8 Water Proof",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -3529,6 +3951,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "50mm Super Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "High Sensitivity Microphone",
+      },
+      {
+        specs: "7 Color Lighting Effect",
+      },
+      {
+        specs: "Wired/USB Type A (2.2m)",
+      },
     ],
     table: [
       {
@@ -3682,6 +4121,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "50mm Super Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "Noise Cancelling Microphone",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "Wired/USB Type A (2.4m)",
+      },
     ],
     table: [
       {
@@ -3867,6 +4323,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "50mm Super Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "Noise Cancelling Microphone",
+      },
+      {
+        specs: "Black / White / Pink",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -4020,6 +4493,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "50mm Super Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "Noise Cancelling Microphone",
+      },
+      {
+        specs: "Gaming Vibration Effect",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
     ],
     table: [
       {
@@ -4175,6 +4665,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "50mm Neodymium Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "Noise Cancelling Microphone",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "Dedicated Software",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME ",
@@ -4326,6 +4833,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "50mm Neodymium Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "Noise Cancelling Microphone",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "Dedicated Software",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME ",
@@ -4474,6 +4998,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "50mm Neodymium Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "Noise Cancelling Microphone",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "Dedicated Software",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME ",
@@ -4608,6 +5149,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "50mm Neodymium Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "Noise Cancelling Microphone",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "Dedicated Software",
+      },
     ],
     table: [
       {
@@ -4762,6 +5320,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "40mm Super Driver Unit",
+      },
+      {
+        specs: "Virtual 7.1 Ch Surround Sound",
+      },
+      {
+        specs: "Noise Cancelling Microphone",
+      },
+      {
+        specs: "RGB Lighting Effect",
+      },
+      {
+        specs: "Wired/USB Type A (2.4m)",
+      },
     ],
     table: [
       {
@@ -4918,6 +5493,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "E-ATX / ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "405mm Max GPU Card Length",
+      },
+      {
+        specs: "175mm Max CPU Cooler Height",
+      },
+      {
+        specs: "235mm(W) x 450mm(D) x 525mm(H)",
+      },
     ],
     table: [
       {
@@ -5143,6 +5735,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "E-ATX / ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "460mm Max GPU Card Length",
+      },
+      {
+        specs: "190mm Max CPU Cooler Height",
+      },
+      {
+        specs: "250mm(W) x 585mm(D) x 518mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -5257,6 +5866,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "340mm Max GPU Card Length",
+      },
+      {
+        specs: "175mm Max CPU Cooler Height",
+      },
+      {
+        specs: "225mm(W) x 392mm(D) x 485mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -5361,6 +5987,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "E-ATX / ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "375mm Max GPU Card Length",
+      },
+      {
+        specs: "170mm Max CPU Cooler Height",
+      },
+      {
+        specs: "216mm(W) x 450mm(D) x 485mm(H)",
+      },
     ],
     table: [
       {
@@ -5475,6 +6118,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "300mm Max GPU Card Length",
+      },
+      {
+        specs: "150mm Max CPU Cooler Height",
+      },
+      {
+        specs: "170mm(W) x 370mm(D) x 385mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -5585,6 +6245,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "320mm Max GPU Card Length",
+      },
+      {
+        specs: "160mm Max CPU Cooler Height",
+      },
+      {
+        specs: "210mm(W) x 373mm(D) x 424mm(H)",
+      },
     ],
     table: [
       {
@@ -5715,6 +6392,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "E-ATX / ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "340mm Max GPU Card Length",
+      },
+      {
+        specs: "160mm Max CPU Cooler Height",
+      },
+      {
+        specs: "210mm(W) x 394mm(D) x 490mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -5835,6 +6529,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "355mm Max GPU Card Length",
+      },
+      {
+        specs: "160mm Max CPU Cooler Height",
+      },
+      {
+        specs: "216mm(W) x 450mm(D) x 485mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -5943,6 +6654,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "320mm Max GPU Card Length",
+      },
+      {
+        specs: "160mm Max CPU Cooler Height",
+      },
+      {
+        specs: "210mm(W) x 368mm(D) x 465mm(H)",
+      },
     ],
     table: [
       {
@@ -6057,6 +6785,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "E-ATX / ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "350mm Max GPU Card Length",
+      },
+      {
+        specs: "160mm Max CPU Cooler Height",
+      },
+      {
+        specs: "216mm(W) x 426mm(D) x 490mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -6167,6 +6912,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "475mm Max GPU Card Length",
+      },
+      {
+        specs: "180mm Max CPU Cooler Height",
+      },
+      {
+        specs: "250mm(W) x 642mm(D) x 580mm(H)",
+      },
     ],
     table: [
       {
@@ -6286,6 +7048,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "335mm Max GPU Card Length",
+      },
+      {
+        specs: "165mm Max CPU Cooler Height",
+      },
+      {
+        specs: "210mm(W) x 397mm(D) x 425mm(H)",
+      },
     ],
     table: [
       {
@@ -6514,6 +7293,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "335mm Max GPU Card Length",
+      },
+      {
+        specs: "165mm Max CPU Cooler Height",
+      },
+      {
+        specs: "210mm(W) x 397mm(D) x 425mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -6630,6 +7426,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "345mm Max GPU Card Length",
+      },
+      {
+        specs: "160mm Max CPU Cooler Height",
+      },
+      {
+        specs: "200mm(W) x 390mm(D) x 449mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -6742,6 +7555,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "E-ATX / ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "350mm Max GPU Card Length",
+      },
+      {
+        specs: "165mm Max CPU Cooler Height",
+      },
+      {
+        specs: "216mm(W) x 400mm(D) x 495mm(H)",
+      },
     ],
     table: [
       {
@@ -6976,6 +7806,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "E-ATX / ATX / M-ATX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "395mm Max GPU Card Length",
+      },
+      {
+        specs: "165mm Max CPU Cooler Height",
+      },
+      {
+        specs: "239mm(W) x 475mm(D) x 515mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -7096,6 +7943,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "E-ATX / ATX / M-ATX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "395mm Max GPU Card Length",
+      },
+      {
+        specs: "165mm Max CPU Cooler Height",
+      },
+      {
+        specs: "239mm(W) x 475mm(D) x 515mm(H)",
+      },
     ],
     table: [
       {
@@ -7220,6 +8084,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "ATX / M-ATX / ITX Mainboard",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+      {
+        specs: "340mm Max GPU Card Length",
+      },
+      {
+        specs: "175mm Max CPU Cooler Height",
+      },
+      {
+        specs: "225mm(W) x 386mm(D) x 483mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -7340,6 +8221,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "130W TDP",
+      },
+      {
+        specs: "4x Ø6mm Copper Heatpipes",
+      },
+      {
+        specs: "120mm Rainbow RGB PWM Fan",
+      },
+      {
+        specs: "159.96mm Height",
+      },
+      {
+        specs: "LGA1700 / LGA1200 / LGA115X / AM4 Sockets",
+      },
     ],
     table: [
       {
@@ -7470,6 +8368,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "210W TDP",
+      },
+      {
+        specs: "6x Ø6mm Nickel Plated Copper Heatpipes",
+      },
+      {
+        specs: "120mm PWM Fan",
+      },
+      {
+        specs: "153mm Height",
+      },
+      {
+        specs: "LGA1700 / LGA1200 / LGA115X / AM4 Sockets",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -7595,6 +8510,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "130W TDP",
+      },
+      {
+        specs: "4x Ø6mm Copper Heatpipes",
+      },
+      {
+        specs: "120mm Rainbow RGB PWM Fan",
+      },
+      {
+        specs: "159.96mm Height",
+      },
+      {
+        specs: "LGA1200 / LGA115X / AM4 Sockets",
+      },
     ],
     table: [
       {
@@ -7724,6 +8656,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "150W TDP",
+      },
+      {
+        specs: "4x Ø6mm Nickel Plated Copper Heatpipes",
+      },
+      {
+        specs: "120mm aRGB PWM Fan",
+      },
+      {
+        specs: "153mm Height",
+      },
+      {
+        specs: "LGA1700 / LGA1200 / LGA115X / AM4 Sockets",
+      },
     ],
     table: [
       {
@@ -7862,6 +8811,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "180W TDP",
+      },
+      {
+        specs: "5x Ø6mm Nickel Plated Copper Heatpipes",
+      },
+      {
+        specs: "120mm PWM Fan",
+      },
+      {
+        specs: "153mm Height",
+      },
+      {
+        specs: "LGA1700 / LGA1200 / LGA115X / AM4 Sockets",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -7998,6 +8964,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "280W TDP",
+      },
+      {
+        specs: "Digital Indicator for Coolan Temp. and RPM",
+      },
+      {
+        specs: "240mm Aluminium Radiator",
+      },
+      {
+        specs: "Mainboard aRGB Linkage Support",
+      },
+      {
+        specs: "LGA1700 / LGA1200 / LGA115X / AM4 Sockets",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -8120,6 +9103,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "320W TDP",
+      },
+      {
+        specs: "Digital Indicator for Coolan Temp. and RPM",
+      },
+      {
+        specs: "360mm Aluminium Radiator",
+      },
+      {
+        specs: "Mainboard aRGB Linkage Support",
+      },
+      {
+        specs: "LGA1700 / LGA1200 / LGA115X / AM4 Sockets",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -8241,6 +9241,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "210W TDP",
+      },
+      {
+        specs: "4x Direct Touch Copper Heatpipes",
+      },
+      {
+        specs: "130mm Fan",
+      },
+      {
+        specs: "156.4mm Height",
+      },
+      {
+        specs: "LGA1700 / LGA1200 / LGA115X / AM5 / AM4 Sockets",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -8337,6 +9354,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "250W TDP",
+      },
+      {
+        specs: "6x Nickel Plated Copper Heatpipes",
+      },
+      {
+        specs: "140mm Fan",
+      },
+      {
+        specs: "165mm Height",
+      },
+      {
+        specs: "LGA1700 / LGA1200 / LGA115X / AM5 / AM4 Sockets",
+      },
     ],
     table: [
       {
@@ -8435,6 +9469,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "120mm x 120mm x 25mm",
+      },
+      {
+        specs: "Rifle Bearing (30,000 Hours Lifespan)",
+      },
+      {
+        specs: "33.26 dBA / 75.81 CFM / 1.89 mmH2O",
+      },
+      {
+        specs: "4 Pin PWM (800 - 1800 RPM)",
+      },
+      {
+        specs: "Black / White w/ aRGB Lighting Effect",
+      },
     ],
     table: [
       {
@@ -8538,6 +9589,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "120mm x 120mm x 25mm",
+      },
+      {
+        specs: "Rifle Bearing (30,000 Hours Lifespan)",
+      },
+      {
+        specs: "33.26 dBA / 75.81 CFM / 1.89 mmH2O",
+      },
+      {
+        specs: "4 Pin PWM (800 - 1800 RPM)",
+      },
+      {
+        specs: "Black / White w/o RGB Lighting Effect",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -8631,6 +9699,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "100mm x 100mm x 26mm",
+      },
+      {
+        specs: "Sleeve Bearing (50,000 Hours Lifespan)",
+      },
+      {
+        specs: "33dBA / 51CFM / 2.3mmH2O",
+      },
+      {
+        specs: "Black / White w/o RGB Lighting Effect",
+      },
+      {
+        specs: "4 Pin PWM (up to 2000RPM)",
+      },
     ],
     table: [
       {
@@ -8744,6 +9829,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "130mm x 130mm x 26mm",
+      },
+      {
+        specs: "Sleeve Bearing (50,000 Hours Lifespan)",
+      },
+      {
+        specs: "33dBA / 71.7CFM / 1.9mmH2O",
+      },
+      {
+        specs: "Black / White w/o RGB Lighting Effect",
+      },
+      {
+        specs: "4 Pin PWM (up to 1500RPM)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -8856,6 +9958,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "140mm x 140mm x 26mm",
+      },
+      {
+        specs: "Sleeve Bearing (50,000 Hours Lifespan)",
+      },
+      {
+        specs: "33dBA / 83CFM / 2.2mmH2O",
+      },
+      {
+        specs: "Black / White w/o RGB Lighting Effect",
+      },
+      {
+        specs: "4 Pin PWM (up to 1500RPM)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -8958,6 +10077,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "850W / 750W / 650W",
+      },
+      {
+        specs: "80PLUS Gold Certification",
+      },
+      {
+        specs: "Fixed Cables",
+      },
+      {
+        specs: "105°C Capacitors / Free Voltage Input",
+      },
+      {
+        specs: "2nd Gen. After Cooling & Fanless Mode",
+      },
     ],
     table: [
       {
@@ -9095,6 +10231,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "850W / 750W / 650W",
+      },
+      {
+        specs: "80PLUS Silver Certification",
+      },
+      {
+        specs: "Fixed Cables",
+      },
+      {
+        specs: "105°C Capacitors / Free Voltage Input",
+      },
+      {
+        specs: "2nd Gen. After Cooling & Fanless Mode",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -9231,6 +10384,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "1200W / 1050W / 850W / 750W",
+      },
+      {
+        specs: "80PLUS Gold Certification",
+      },
+      {
+        specs: "Full Modular (Premium 16AWG Cable)",
+      },
+      {
+        specs: "ATX 3.0 & PCIe 5.0 Ready",
+      },
+      {
+        specs: "2nd Gen. After Cooling & Fanless Mode",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -9366,6 +10536,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "1200W / 1050W / 850W / 750W",
+      },
+      {
+        specs: "80PLUS Platinum Certification",
+      },
+      {
+        specs: "Full Modular (Premium 16AWG Cable)",
+      },
+      {
+        specs: "ATX 3.0 & PCIe 5.0 Ready",
+      },
+      {
+        specs: "2nd Gen. After Cooling & Fanless Mode",
+      },
     ],
     table: [
       {
@@ -9505,6 +10692,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "1300W / 1000W / 850W",
+      },
+      {
+        specs: "80PLUS Platinum Certification",
+      },
+      {
+        specs: "Full Modular (Premium 16AWG Cable)",
+      },
+      {
+        specs: "ATX 3.0 & PCIe 5.0 Ready",
+      },
+      {
+        specs: "2nd Gen. After Cooling & Fanless Mode",
+      },
     ],
     table: [
       {
@@ -9646,6 +10850,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "1650W 80PLUS Gold Certification",
+      },
+      {
+        specs: "Patented D-VRM Digital Voltage Control",
+      },
+      {
+        specs: "Full Modular (Premium 16AWG Cable)",
+      },
+      {
+        specs: "ATX 3.0 & PCIe 5.0 Ready",
+      },
+      {
+        specs: "Fan Delay Function & Fanless Mode",
+      },
     ],
     table: [
       {
@@ -9793,6 +11014,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "M.2 2280 SSD Compatibility",
+      },
+      {
+        specs: "Dual Heatpipe Structure",
+      },
+      {
+        specs: "Single / Double Sided M.2 SSD compatible",
+      },
+      {
+        specs: "Aluminium and Copper Materials",
+      },
+      {
+        specs: "24.5mm(W) x 75mm(L) x 30mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -9859,6 +11097,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "M.2 2280 SSD Compatibility",
+      },
+      {
+        specs: "Dual Heatpipe Structure",
+      },
+      {
+        specs: "Single / Double Sided M.2 SSD compatible",
+      },
+      {
+        specs: "Aluminium Material",
+      },
+      {
+        specs: "24.5mm(W) x 75mm(L) x 20mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -9923,6 +11178,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Non-Conductive Thermal Compound",
+      },
+      {
+        specs: "8.5W/m-k Thermal Conductivity",
+      },
+      {
+        specs: "-40 ~ 150°C Operating Temperature",
+      },
+      {
+        specs: "<0.102°C-in2/W Thermal Impedance",
+      },
+      {
+        specs: ">5.0KV/mm Breakdown Voltage",
+      },
     ],
     table: [
       {
@@ -10016,6 +11288,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Non-Conductive Thermal Compound",
+      },
+      {
+        specs: "8.5W/m-k Thermal Conductivity",
+      },
+      {
+        specs: "-40 ~ 150°C Operating Temperature",
+      },
+      {
+        specs: "<0.102°C-in2/W Thermal Impedance",
+      },
+      {
+        specs: ">5.0KV/mm Breakdown Voltage",
+      },
     ],
     table: [
       {
@@ -10130,6 +11419,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "4.2 EDR Bluetooth Connection",
+      },
+      {
+        specs: "Dark Gray / White / Pink",
+      },
+      {
+        specs: "2x 45mm Driver Units (2x 5W Output Power)",
+      },
+      {
+        specs: "18650 Li-ion Cell (2200mAh) (4-6hrs)",
+      },
+      {
+        specs: " 45cm(W) x 6.5cm(D) x 6.5cm(H)",
+      },
     ],
     table: [
       {
@@ -10253,6 +11559,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "Black",
+      },
+      {
+        specs: "2x 45mm Driver Units (2x 5W Output Power)",
+      },
+      {
+        specs: "120Hz-18KHz Frequency Response",
+      },
+      {
+        specs: "98cm Power Cable / 95cm AUX Cable",
+      },
+      {
+        specs: "45cm(W) x 6.5cm(D) x 6.5cm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -10364,6 +11687,20 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "Smooth Sliding and Water Proof Surface",
+      },
+      {
+        specs: "3-Step Structural Design",
+      },
+      {
+        specs: "5mm Comfortable Thickness",
+      },
+      {
+        specs: "780mm(W) x 300mm(H) Wide Size",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -10436,6 +11773,23 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "Black",
+      },
+      {
+        specs: "10° Ergonomic Design",
+      },
+      {
+        specs: "Soft Synthetic Leather",
+      },
+      {
+        specs: "Non-Slip Bottom Pad",
+      },
+      {
+        specs: "433mm(W) x 73mm(L) x 15mm(H)",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -10500,6 +11854,23 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "M.2 2280, PCIe Gen 4x4",
+      },
+      {
+        specs: "512GB / 1TB / 2TB",
+      },
+      {
+        specs: "7500mb/s Read / 6700mb/s Write",
+      },
+      {
+        specs: "4000TBW",
+      },
+      {
+        specs: "(80±0.15) x (22±0.15) x (15±0.08)mm",
+      },
     ],
     table: [
       {
@@ -10609,6 +11980,17 @@ const products = [
       //   country: "Japan",
       // },
     ],
+    featuredSpecs: [
+      {
+        specs: "LED Controller",
+      },
+      {
+        specs: "3-Pin Connection",
+      },
+      {
+        specs: "5V",
+      },
+    ],
     table: [
       {
         name: "MODEL NAME",
@@ -10673,6 +12055,20 @@ const products = [
       //   abbreviation: "JP",
       //   country: "Japan",
       // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Keyboard Sterilization Monitor Stand",
+      },
+      {
+        specs: "USB (Micro 5 pin) Interface",
+      },
+      {
+        specs: "UVC+UVA Hybrid LED",
+      },
+      {
+        specs: "615(L)mm x 209.5(W)mm x 91(H)mm",
+      },
     ],
     table: [
       {
