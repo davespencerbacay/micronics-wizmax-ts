@@ -2,6 +2,8 @@
   font-family: MetropolisBold;
   src: url("../../../../../../public/fonts/Metropolis/Metropolis/Metropolis-Bold.otf");
 }
+@media only screen and (max-width: 753px) {
+}
 .main-desktop-container {
   display: flex;
   flex-direction: column-reverse;
@@ -150,6 +152,7 @@
     display: grid;
     grid-template-columns: 30% 70%;
     .grid-details {
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -201,6 +204,7 @@
       background: url("../../../../../../public/images/micronics-assets/home-page/main-bg.jpg");
       background-size: cover;
       background-repeat: no-repeat;
+      height: 100%;
     }
   }
 }
