@@ -28,19 +28,34 @@
       font-weight: bold;
       font-size: 2rem;
     }
+    .country-availability-container {
+      display: flex;
+      gap: 1rem;
+      text-overflow: ellipsis;
+      margin: 1rem;
+      p {
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 2px solid gray;
+        padding: 5px;
+        color: gray;
+      }
+    }
     .thumbnail-country-availability-btn {
-      margin: 0.1rem;
+      padding: 0.5rem 3rem;
+      width: 100%;
       transition: all 0.5s ease;
       font-family: "Roboto", sans-serif;
       font-size: 1.5rem;
       font-weight: 400;
       color: black;
       border-radius: 1rem;
-      background-color: white;
       border: 1px solid rgba(255, 255, 255, 0);
-      box-shadow: -20px -10px 15px rgba(0, 0, 0, 0.015),
+      background-color: rgba(0, 0, 0, 0.05);
+      box-shadow: inset -20px -10px 15px rgba(0, 0, 0, 0.015),
         10px 10px 15px rgba(70, 70, 70, 0.12);
       span {
+        margin: 0 0.5rem;
         .arrowOpen {
           width: 1rem;
           transition: all 0.5s ease;
@@ -60,14 +75,16 @@
             padding: 0;
             .thumbnail-country-availability {
               position: relative;
-              border: 0.2rem solid rgba(128, 128, 128, 0.5);
-              color: rgba(128, 128, 128, 0.493);
-              border-radius: 0.5rem;
               margin: 0.1rem;
-              text-align: center;
+              font-size: 1rem;
               animation-name: letters;
               animation-timing-function: ease;
               animation-duration: 1s;
+              border: none;
+              border-radius: 0;
+              border-bottom: 1px solid gray;
+              color: black;
+              text-align: left;
               @keyframes letters {
                 0% {
                   opacity: 0;
@@ -86,20 +103,21 @@
                 }
               }
               &:hover {
-                background-color: gray;
-                color: white;
+                background-color: transparent;
+
+                color: black;
               }
-              span {
-                width: 10rem;
-                position: absolute;
-                bottom: 2rem;
-                left: 3rem;
-                background-color: gray;
-                color: white;
-                border-radius: 1rem 1rem 1rem 0rem;
-                padding: 0.5rem;
-                margin: 0.1rem;
-              }
+              // span {
+              //   width: 10rem;
+              //   position: absolute;
+              //   bottom: 2rem;
+              //   left: 3rem;
+              //   background-color: gray;
+              //   color: white;
+              //   border-radius: 1rem 1rem 1rem 0rem;
+              //   padding: 0.5rem;
+              //   margin: 0.1rem;
+              // }
             }
           }
         }
@@ -165,19 +183,21 @@
         font-size: 2rem;
       }
       .thumbnail-country-availability-btn {
-        margin: 0.1rem;
-        padding: 0 3rem;
+        padding: 0.5rem 3rem;
+        gap: 1rem;
+        width: 70%;
         transition: all 0.5s ease;
         font-family: "Roboto", sans-serif;
         font-size: 1.5rem;
         font-weight: 400;
         color: black;
-        border-radius: 5rem;
+        border-radius: 1rem;
         border: 1px solid rgba(255, 255, 255, 0);
         background-color: rgba(0, 0, 0, 0.05);
         box-shadow: inset -20px -10px 15px rgba(0, 0, 0, 0.015),
           10px 10px 15px rgba(70, 70, 70, 0.12);
         span {
+          margin: 1rem;
           .arrowOpen {
             width: 1rem;
             transition: all 0.5s ease;
@@ -199,17 +219,17 @@
               padding: 0;
               .thumbnail-country-availability {
                 position: relative;
-                border: 0.2rem solid rgba(128, 128, 128, 0.5);
-                // color: rgba(128, 128, 128, 0.493);
-                border-radius: 0.5rem;
                 margin: 0.1rem;
                 font-size: 1rem;
                 text-align: center;
                 animation-name: letters;
                 animation-timing-function: ease;
                 animation-duration: 1s;
-                background-color: gray;
-                color: white;
+                border: none;
+                border-radius: 0;
+                border-bottom: 1px solid gray;
+                color: black;
+                text-align: left;
                 @keyframes letters {
                   0% {
                     opacity: 0;
@@ -227,20 +247,30 @@
                     opacity: 1;
                   }
                 }
+                &:hover {
+                  background-color: transparent;
 
-                span {
-                  width: 10rem;
-                  position: absolute;
-                  bottom: 2rem;
-                  left: 3rem;
-                  background-color: gray;
-                  color: white;
-                  border-radius: 1rem 1rem 1rem 0rem;
-                  padding: 0.5rem;
-                  margin: 0.1rem;
+                  color: black;
                 }
+                // span {
+                //   width: 10rem;
+                //   position: absolute;
+                //   bottom: 2rem;
+                //   left: 3rem;
+                //   background-color: gray;
+                //   color: white;
+                //   border-radius: 1rem 1rem 1rem 0rem;
+                //   padding: 0.5rem;
+                //   margin: 0.1rem;
+                // }
               }
             }
+          }
+          .learn-more-link {
+            width: 100%;
+            margin-top: 1rem;
+            font-size: 1rem;
+            text-align: left;
           }
         }
       }

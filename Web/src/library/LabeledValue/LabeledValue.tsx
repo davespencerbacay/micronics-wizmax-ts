@@ -25,13 +25,13 @@ const LabeledValue: React.FC<ILabeledValue> = (props) => {
         <div>
           <h5>{props.title}</h5>
         </div>
-        <div>
+        <div className="warning-and-distributor">
+          <p className="field-warning-text">{props.subTitle}</p>
           {props.buttonProps?.show ? (
             <button onClick={props.buttonProps.onClick}>
               {props.buttonProps.text}
             </button>
           ) : null}
-          <p className="field-warning-text">{props.subTitle}</p>
         </div>
       </div>
     );

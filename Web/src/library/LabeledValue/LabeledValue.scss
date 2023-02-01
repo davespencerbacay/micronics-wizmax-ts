@@ -1,6 +1,4 @@
 .label-value {
-  display: flex;
-  justify-content: space-between;
   h5 {
     font-family: "Roboto", sans-serif;
     font-weight: 800;
@@ -19,6 +17,19 @@
   }
   .field-warning-text {
     color: red;
+  }
+  .warning-and-distributor {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.labeled-input {
+  input {
+    padding: 1rem;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.15),
+      inset 5px 5px 5px rgba(0, 0, 0, 0.13);
+    font-size: 0.5rem;
   }
 }
 

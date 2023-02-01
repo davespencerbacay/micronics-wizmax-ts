@@ -97,18 +97,20 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                   ) : (
                     <div className="color-availability-container-null"></div>
                   )}
+
+                  <p className="thumbnail-product-label">{p.name}</p>
                   <div className="country-availability-container">
                     {p.countryAvailability.map((country: any) => {
                       return <p>{country.abbreviation}</p>;
                     })}
                   </div>
-                  <p className="thumbnail-product-label">{p.name}</p>
                   <Button
+                    tabIndex={0}
                     className="thumbnail-country-availability-btn"
                     onClick={() => toggleCountryAvailability(index)}
                     onBlur={() => closeCountryAvailability(index)}
                   >
-                    Featured Specifications
+                    Specifications
                     <span>
                       <GoTo
                         className={
@@ -127,8 +129,8 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                           return (
                             <Col
                               className="thumbnail-country-availability-col"
-                              xs={4}
-                              sm={3}
+                              xs={12}
+                              sm={12}
                               md={12}
                               lg={12}
                             >
@@ -156,6 +158,9 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                             // </Col>
                           );
                         })}
+                        <Link className="learn-more-link" to={p.path}>
+                          Learn More...
+                        </Link>
                       </Row>
                     </Collapse>
                   </Button>

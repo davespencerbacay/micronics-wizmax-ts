@@ -1,12 +1,8 @@
 .scroll-top-container {
   position: fixed;
-  bottom: 10rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%, -50%);
   z-index: 9999999;
   .scroll-top-arrow-container {
     border-radius: 50%;

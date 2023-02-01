@@ -126,6 +126,10 @@
         tr {
           border-top: 0.1rem solid lightgray;
           border-bottom: 0.1rem solid lightgray;
+
+          width: 100%;
+          td {
+          }
           .specs-name {
             font-family: "Roboto", sans-serif;
             font-size: 2rem;
@@ -138,14 +142,17 @@
             justify-content: flex-start;
             align-items: flex-start;
             text-align: center;
+            width: 100%;
           }
           .subdescription-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            position: relative;
+            left: 34rem;
             .specs-subdescription {
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-end;
-              align-items: flex-end;
-              width: 200%;
             }
           }
 

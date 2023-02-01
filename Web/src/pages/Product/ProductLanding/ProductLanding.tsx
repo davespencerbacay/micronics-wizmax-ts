@@ -57,7 +57,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
     infinite: true,
     lazyLoad: true,
     speed: 300,
-    slidesToShow: slideToShow < 4 ? 1 : 3,
+    slidesToShow: slideToShow < 4 ? 1 : slideToShow === 1 ? 1 : 3,
     centerMode: true,
     centerPadding: "0rem",
     swipeToSlide: true,

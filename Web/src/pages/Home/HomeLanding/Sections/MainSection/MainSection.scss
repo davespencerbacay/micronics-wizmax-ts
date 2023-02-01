@@ -15,6 +15,8 @@
     height: 30vh;
     .text-container {
       display: flex;
+      position: relative;
+      bottom: 7rem;
       p {
         font-size: 5rem;
         font-family: "MetropolisBold", sans-serif;
@@ -33,6 +35,7 @@
     .button-container {
       button {
         position: relative;
+        bottom: 7rem;
         font-size: 1.3rem;
         display: flex;
         padding: 0rem 1rem;
@@ -64,6 +67,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70vh;
+    position: relative;
+    bottom: 2rem;
   }
 }
 // .headset-container {
