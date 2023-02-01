@@ -9329,9 +9329,6 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
     ],
     countryAvailability: [
       {
@@ -11382,19 +11379,19 @@ const products = [
       {
         color: "Pink",
         images: [
-          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_2_frdimb.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1675221451/product-images/accessories/BT1000V2_0001_01_kc2znw.png",
         ],
       },
       {
         color: "White",
         images: [
-          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_1_iozrvy.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1675221450/product-images/accessories/BT1000V2_0002_02_d4vfxc.png",
         ],
       },
       {
         color: "Silver",
         images: [
-          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_3_nyfky4.png",
+          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1675221450/product-images/accessories/BT1000V2_0003_03_sdz3t3.png",
         ],
       },
     ],

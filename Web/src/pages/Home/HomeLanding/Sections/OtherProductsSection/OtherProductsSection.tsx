@@ -53,9 +53,7 @@ const OtherProductsSection: React.FC = () => {
             <div className="learn-more" onClick={navigateToProductsOthers}>
               <p>
                 View All
-                <span>
-                  <GoTo></GoTo>
-                </span>
+                <GoTo></GoTo>
               </p>
             </div>
           </div>

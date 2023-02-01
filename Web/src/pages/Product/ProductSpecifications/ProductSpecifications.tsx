@@ -69,7 +69,7 @@ const ProductSpecifications: React.FC<IProductSpecifications> = (props) => {
         </div>
       ) : (
         <div className="specifications-container">
-          <Table className="specifications-table" responsive>
+          <Table className="specifications-table">
             <tbody>
               {props.specifications.map((specs: any) => {
                 if (specs.subname && specs.subdescription !== null) {
