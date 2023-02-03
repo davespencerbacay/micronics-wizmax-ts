@@ -77,6 +77,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                   )}
                 </Link>
                 <div className="thumbnail-details-container">
+                  <p className="thumbnail-product-label">{p.name}</p>
                   {p.colorAvailability ? (
                     <div className="color-availability-container">
                       {p.colorAvailability.map((color: any, index: any) => {
@@ -97,19 +98,26 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                   ) : (
                     <div className="color-availability-container-null"></div>
                   )}
-
-                  <p className="thumbnail-product-label">{p.name}</p>
-                  <div className="country-availability-container">
-                    {p.countryAvailability.map((country: any) => {
-                      return <p>{country.abbreviation}</p>;
-                    })}
-                  </div>
+                  {p.countryAvailability ? (
+                    <div className="country-availability-container">
+                      {p.countryAvailability.map((country: any) => {
+                        return <p>{country.abbreviation}</p>;
+                      })}
+                    </div>
+                  ) : (
+                    <div className="country-availability-container-null"></div>
+                  )}
                   <Button
                     tabIndex={0}
                     className="thumbnail-country-availability-btn"
                     onClick={() => toggleCountryAvailability(index)}
                     onBlur={() => closeCountryAvailability(index)}
                   >
+                    {!p.countryAvailability && !p.colorAvailability ? (
+                      <div className="country-color-unavailability"></div>
+                    ) : (
+                      ""
+                    )}
                     Specifications
                     <span>
                       <GoTo

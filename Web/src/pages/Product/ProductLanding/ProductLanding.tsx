@@ -2,6 +2,7 @@ import classNames from "classnames";
 import products from "data/products";
 import useResponsive from "hooks/useResponsive";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
+import ScrollToTop from "library/ScrollToTop/ScrollToTop";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
@@ -123,6 +124,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   console.log(nextButtonClick);
   return (
     <React.Fragment>
+      <ScrollToTop />
       <div className="product-landing-container">
         <div className="slider-container">
           <Slider {...settings}>

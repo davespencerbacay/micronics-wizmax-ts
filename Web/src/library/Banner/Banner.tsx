@@ -12,7 +12,7 @@ const Banner: React.FC<IBanner> = (props) => {
   const bannerClassnames = classNames({
     banner: true,
     dark: variant === "dark",
-    light: variant === "light",
+    // light: variant === "light",
     center: align === "center",
     left: align === "left",
     right: align === "right",

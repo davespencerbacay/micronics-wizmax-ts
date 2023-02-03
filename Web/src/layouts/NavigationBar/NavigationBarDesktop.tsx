@@ -23,6 +23,7 @@ import {
   faMagnifyingGlass,
   faMoon,
   faSun,
+  faX,
 } from "@fortawesome/free-solid-svg-icons";
 import "./NavigationBarDesktop.scss";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -232,7 +233,7 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
           <NavItem className="navbar-item">
             <FontAwesomeIcon
               className="search-icon"
-              icon={faMagnifyingGlass}
+              icon={openSearchBar ? faX : faMagnifyingGlass}
               onClick={SearchBarHandler}
             />
           </NavItem>
