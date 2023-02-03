@@ -35,6 +35,15 @@ $lightgray: #d3d3d3;
       color: #d3d3d3;
       transition: all 0.3s ease;
       cursor: pointer;
+      animation: searchxanimation 0.5s ease;
+      @keyframes searchxanimation {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
       &:hover {
         color: white;
       }
