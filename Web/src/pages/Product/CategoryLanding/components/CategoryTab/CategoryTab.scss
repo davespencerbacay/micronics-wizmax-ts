@@ -1,22 +1,43 @@
 .product-nav-mobile {
   position: fixed;
-  bottom: 0rem;
-  background-color: white;
-  width: 100%;
+  right: 0rem;
+  top: 30vh;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+  border-radius: 10px 0px 0px 10px;
+  width: 50%;
   z-index: 2;
   padding: 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  &.inactive {
+    transform: translateX(80%);
+    transition: all 0.5s ease;
+  }
+  .product-nav-mobile-arrows {
+    display: flex;
+    font-weight: lighter;
+    transition: all 0.5s ease;
+  }
   .product-nav-mobile-container {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
     .product-nav-mobile-items {
-      border: 1px solid rgba(255, 255, 255, 0);
-      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.015),
-        0px 0px 10px rgba(70, 70, 70, 0.12);
-      margin: auto;
+      border-bottom: 1px solid gray;
+      width: 15rem;
+      padding: 1rem 0;
+      &:last-child {
+        border: none;
+      }
       img {
         padding: 0.5rem;
         width: 5rem;

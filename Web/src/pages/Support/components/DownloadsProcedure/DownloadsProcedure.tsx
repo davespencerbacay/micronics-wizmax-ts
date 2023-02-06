@@ -142,7 +142,7 @@ const DownloadsProcedure: React.FC<IDownloadsProcedure> = (props) => {
         )}
       </div>
       <div className="step2" ref={selectedProductRef}>
-        <h2>2. Confirm Searched Product</h2>
+        <h2>2. Searched Product</h2>
         <div className="product-img-result-container">
           <img src={selectedProduct} alt={selectedProduct} />
         </div>

@@ -1,3 +1,5 @@
+import { fa1, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ROUTE_PATH } from "constants/routes";
 import { productCategories } from "data/productCategories";
 import useResponsive from "hooks/useResponsive";
@@ -27,15 +29,28 @@ const CategoryTab: React.FC<CategoryTabType> = (props) => {
   // const navMobileUnfocusHandler = () => {
   //   isNavClick(false);
   // };
+  const [showNav, setShowNav] = useState(false);
+
+  const toggleNavHandler = () => {
+    setShowNav((prevState) => !prevState);
+  };
   return (
     <React.Fragment>
       {isMobile ? (
         <div
           tabIndex={0}
-          className="product-nav-mobile"
+          className={`product-nav-mobile ${showNav ? null : "inactive"}`}
           // ref={navMobileRef}
           // onBlur={navMobileUnfocusHandler}
         >
+          <div
+            className="product-nav-mobile-arrows"
+            onClick={toggleNavHandler}
+            style={{ transform: showNav ? "rotateY(180deg)" : "" }}
+          >
+            <FontAwesomeIcon icon={faChevronLeft} />
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </div>
           <Nav className="product-nav-mobile-container">
             {productCategories.map((cat, index) => {
               return (
@@ -45,15 +60,22 @@ const CategoryTab: React.FC<CategoryTabType> = (props) => {
                       className="product-nav-mobile-items"
                       key={cat.categoryId}
                     >
-                      <img
+                      {/* <img
                         src={cat.icon}
                         alt={cat.icon}
                         onClick={() => {
                           props.refLinkHandler(index);
                           // navMobileUnfocusHandler();
                         }}
-                      />
-                      {/* <p>{cat.name}</p> */}
+                      /> */}
+
+                      <p
+                        onClick={() => {
+                          props.refLinkHandler(index);
+                        }}
+                      >
+                        {cat.name}
+                      </p>
                       {/* <Link to={cat.link}>{cat.name}</Link> */}
                     </NavItem>
                   }
