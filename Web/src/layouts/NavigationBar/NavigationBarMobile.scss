@@ -296,4 +296,70 @@
       }
     }
   }
+  .searchbar-container {
+    position: absolute;
+    right: 0;
+    top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 1;
+    svg {
+      background-color: rgba(0, 0, 0, 0.05);
+      box-shadow: inset -20px -10px 15px rgba(0, 0, 0, 0.015),
+        10px 10px 15px rgba(70, 70, 70, 0.12);
+      padding: 1rem;
+      border-radius: 100%;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .result-container {
+    position: absolute;
+    top: 7rem;
+    background-color: white;
+    width: 100%;
+    max-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+    z-index: -1;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: inset -20px -10px 15px rgba(0, 0, 0, 0.015),
+      10px 10px 15px rgba(70, 70, 70, 0.12);
+    &.active {
+      transform: translateX(0%);
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+    input {
+      width: 100%;
+      outline: none;
+    }
+    .results {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      position: relative;
+      top: 0rem;
+      .filter-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img {
+          width: 10rem;
+        }
+      }
+    }
+  }
 }

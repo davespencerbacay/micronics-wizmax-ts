@@ -54,7 +54,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   //COLOR VARIATION
 
   const [colorIndex, setColorIndex] = useState<any>(0);
-  useEffect(() => {}, [colorIndex]);
+  useEffect(() => {}, [colorIndex, productFilterByCategoryId]);
   const colorHandler = (index: any) => {
     setColorIndex(index);
   };
@@ -77,7 +77,16 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                   )}
                 </Link>
                 <div className="thumbnail-details-container">
-                  <p className="thumbnail-product-label">{p.name}</p>
+                  <p
+                    className="thumbnail-product-label"
+                    style={{ fontSize: p.name.length > 15 ? "1.909rem" : "" }}
+                  >
+                    {p.name}
+                  </p>
+                  {p.name.length <= 20 && (
+                    <span className="space-filler"></span>
+                  )}
+
                   {p.colorAvailability ? (
                     <div className="color-availability-container">
                       {p.colorAvailability.map((color: any, index: any) => {

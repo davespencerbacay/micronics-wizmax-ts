@@ -24,6 +24,9 @@ import { SOCIAL_MEDIA } from "constants/";
 import NavbarLogoMobile from "library/NavigationBar/NavbarLogoMobile";
 import PopupSection from "pages/Home/HomeLanding/Sections/PopupSection/PopupSection";
 import Img from "library/Images/Image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faX } from "@fortawesome/free-solid-svg-icons";
+import products from "data/products";
 
 //NAVIGATION LINKS AND ROUTES
 interface INavigationLinksMobile {
@@ -175,6 +178,26 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
     setLine1Animation((prevState) => !prevState);
     setLine2Animation((prevState) => !prevState);
   };
+  const [resultActive, setResultActive] = useState(false);
+  const searchbarToggleHandler = () => {
+    setResultActive((prevState) => !prevState);
+    setKeyWord("");
+  };
+  const navigateTo = useNavigate();
+  const [keyWord, setKeyWord] = useState("");
+  const [searchedProducts, setSearchedProducts] = useState<any>([]);
+
+  const keyWordHandler = (keyword: any) => {
+    setKeyWord(keyword.target.value);
+    setSearchedProducts(products);
+    console.log(keyWord);
+  };
+
+  const navigateToProduct = (catId: any, prodId: any) => {
+    navigateTo(`/products/${catId}/${prodId}`);
+    setKeyWord("");
+    setResultActive(false);
+  };
   return (
     <React.Fragment>
       <div className="navbar-mobile">
@@ -222,6 +245,67 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
           <Link to={ROUTE_PATH.INDEX}>
             <NavbarLogoMobile />
           </Link>
+        </div>
+        <div className="searchbar-container">
+          <FontAwesomeIcon
+            icon={resultActive ? faX : faSearch}
+            onClick={searchbarToggleHandler}
+          />
+        </div>
+        <div className={`result-container ${resultActive ? "active" : ""}`}>
+          <input
+            type="search"
+            name="s"
+            id="search"
+            placeholder="Search for Products . . ."
+            onChange={keyWordHandler}
+          />
+          {keyWord && (
+            <div className="results">
+              {searchedProducts
+                .filter((product: any) => {
+                  const searchByName = product?.name
+                    .toString()
+                    .toLowerCase()
+                    .includes(keyWord.toString().toLowerCase().trim());
+
+                  const searchByFilter = product?.filters?.some((key: any) =>
+                    key.includes(keyWord.trim().toLowerCase())
+                  );
+
+                  let filteredData;
+                  if (searchByName) {
+                    filteredData = searchByName;
+                  } else {
+                    filteredData = searchByFilter;
+                  }
+                  console.log(filteredData);
+
+                  return filteredData;
+                })
+                .map((product: any, index: any) => {
+                  return (
+                    <div
+                      className="filter-container"
+                      key={index}
+                      onClick={() => {
+                        navigateToProduct(
+                          product.categoryId,
+                          product.productId
+                        );
+                      }}
+                    >
+                      <div>
+                        <h2>{product.name}</h2>
+                      </div>
+                      <div>
+                        <img src={product.img[0]} alt={product.img[0]} />
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          )}
         </div>
       </div>
     </React.Fragment>
