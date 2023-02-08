@@ -39,8 +39,15 @@ const Shop: React.FC = () => {
   const close = (country: any) => {
     let shopClose = [isOpen];
     shopClose[country] = !shopClose[country];
-    setIsOpen(!shopClose);
-    setIsCountryClicked("");
+    if (isOpen) {
+      setIsOpen(!shopClose);
+      setIsCountryClicked("");
+    } else {
+      setIsOpen(shopClose);
+      setIsCountryClicked(country);
+    }
+    // setIsOpen(!shopClose);
+    // setIsCountryClicked("");
   };
 
   // const arrowClassname = classNames({
@@ -88,6 +95,7 @@ const Shop: React.FC = () => {
                         {countries.shops?.map((shop: any, index: any) => {
                           return (
                             <a
+                              onFocus={() => toggle(countries.country)}
                               className="links"
                               href={shop.link}
                               target="_blank"
