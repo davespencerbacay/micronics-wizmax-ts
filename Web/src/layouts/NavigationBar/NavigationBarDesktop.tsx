@@ -211,8 +211,8 @@ const NavigationBarDesktop: React.FC<INavigationBarDesktop> = (props) => {
       id: 2,
       col: {
         xs: 8,
-        sm: 8,
-        md: 8,
+        sm: 10,
+        md: 10,
         lg: 8,
       },
       component: (

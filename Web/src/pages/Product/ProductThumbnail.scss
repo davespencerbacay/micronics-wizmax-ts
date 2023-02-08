@@ -193,6 +193,8 @@
       }
       .country-availability-container {
         display: flex;
+        align-items: center;
+        justify-content: center;
         gap: 1rem;
         text-overflow: ellipsis;
         margin: 1rem;
@@ -302,6 +304,8 @@
             }
           }
           .learn-more-link {
+            position: relative;
+            right: 0.5rem;
             width: 100%;
             margin: 1rem 0rem;
             font-size: 1rem;
