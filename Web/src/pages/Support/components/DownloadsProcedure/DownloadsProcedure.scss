@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     h2 {
       font-size: 3rem;
     }
@@ -24,6 +25,8 @@
       text-decoration: underline;
       margin-bottom: 1rem;
       cursor: pointer;
+      position: relative;
+      left: 1.5rem;
     }
     input {
       border-radius: 5rem;
@@ -32,6 +35,8 @@
         inset 10px 10px 15px rgba(70, 70, 70, 0.12);
       outline: none;
       padding: 5px 15px;
+      position: relative;
+      left: 1.5rem;
     }
     .search-result-container {
       margin-top: 1rem;
@@ -182,6 +187,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: center;
       h2 {
         font-size: 5rem;
       }
@@ -189,6 +195,8 @@
         text-decoration: underline;
         margin-bottom: 1rem;
         cursor: pointer;
+        position: relative;
+        left: 1.5rem;
       }
       input {
         border-radius: 5rem;
@@ -197,6 +205,8 @@
           inset 10px 10px 15px rgba(70, 70, 70, 0.12);
         outline: none;
         padding: 5px 15px;
+        position: relative;
+        left: 1.5rem;
       }
       .search-result-container {
         margin-top: 1rem;

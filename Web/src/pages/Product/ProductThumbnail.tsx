@@ -52,25 +52,38 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   const isMobile = useResponsive("mobile");
 
   //COLOR VARIATION
-
+  const [thumbnailIndex, setThumbnailIndex] = useState(0);
   const [colorIndex, setColorIndex] = useState<any>(0);
-  useEffect(() => {}, [colorIndex, productFilterByCategoryId]);
-  const colorHandler = (index: any) => {
-    setColorIndex(index);
+  useEffect(() => {}, [colorIndex, productFilterByCategoryId, thumbnailIndex]);
+  const colorHandler = (colorIndex: any, index: any) => {
+    console.log(index, "main", colorIndex, "color index");
+    setThumbnailIndex(index);
+    if (index === thumbnailIndex) {
+      setColorIndex(colorIndex);
+    } else {
+      setColorIndex(0);
+    }
   };
   return (
     <Container fluid>
       <Row>
         {productFilterByCategoryId.map((p: any, index: any) => {
           return (
-            <Col xs={6} sm={6} md={4} lg={2} key={index}>
+            <Col xs={6} sm={6} md={4} lg={3} xl={3} xxl={2} key={index}>
               <div className="thumbnail-container" key={index}>
                 <Link to={p.path}>
                   {p.colorAvailability ? (
                     <img
-                      key={index}
-                      src={p.colorAvailability?.[colorIndex].images?.[0]}
-                      alt={p.colorAvailability?.[colorIndex].images?.[0]}
+                      src={
+                        index === thumbnailIndex
+                          ? p.colorAvailability?.[colorIndex].images?.[0]
+                          : p.colorAvailability?.[0].images?.[0]
+                      }
+                      alt={
+                        index === thumbnailIndex
+                          ? p.colorAvailability?.[colorIndex].images?.[0]
+                          : p.colorAvailability?.[0].images?.[0]
+                      }
                     />
                   ) : (
                     <img src={p.img[0]} alt={p.img[0]} />
@@ -89,20 +102,22 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
 
                   {p.colorAvailability ? (
                     <div className="color-availability-container">
-                      {p.colorAvailability.map((color: any, index: any) => {
-                        return (
-                          <div
-                            onClick={() => colorHandler(index)}
-                            className="color-availability"
-                            style={{
-                              background:
-                                color.color && color.secondaryColor
-                                  ? `conic-gradient(${color.secondaryColor} 0deg, ${color.secondaryColor} 180deg, ${color.color} 180deg, ${color.color} 360deg)`
-                                  : `conic-gradient(${color.color} 0deg, ${color.color} 360deg)`,
-                            }}
-                          ></div>
-                        );
-                      })}
+                      {p.colorAvailability.map(
+                        (color: any, colorIndex: any) => {
+                          return (
+                            <div
+                              onClick={() => colorHandler(colorIndex, index)}
+                              className="color-availability"
+                              style={{
+                                background:
+                                  color.color && color.secondaryColor
+                                    ? `conic-gradient(${color.secondaryColor} 0deg, ${color.secondaryColor} 180deg, ${color.color} 180deg, ${color.color} 360deg)`
+                                    : `conic-gradient(${color.color} 0deg, ${color.color} 360deg)`,
+                              }}
+                            ></div>
+                          );
+                        }
+                      )}
                     </div>
                   ) : (
                     <div className="color-availability-container-null"></div>

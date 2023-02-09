@@ -31,9 +31,13 @@
     justify-content: flex-end;
     align-items: flex-end;
     text-align: end;
+    &.inactive {
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
     .product-nav-mobile-items {
       border-bottom: 1px solid gray;
-      width: 15rem;
+      width: 100%;
       padding: 1rem 0;
       &:last-child {
         border: none;
