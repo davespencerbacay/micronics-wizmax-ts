@@ -51,7 +51,11 @@ const CategoryTab: React.FC<CategoryTabType> = (props) => {
             <FontAwesomeIcon icon={faChevronLeft} />
             <FontAwesomeIcon icon={faChevronLeft} />
           </div>
-          <Nav className="product-nav-mobile-container">
+          <Nav
+            className={`product-nav-mobile-container ${
+              showNav ? null : "inactive"
+            }`}
+          >
             {productCategories.map((cat, index) => {
               return (
                 <React.Fragment>
