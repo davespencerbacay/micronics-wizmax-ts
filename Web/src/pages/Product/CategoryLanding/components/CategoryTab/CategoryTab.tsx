@@ -40,12 +40,13 @@ const CategoryTab: React.FC<CategoryTabType> = (props) => {
         <div
           tabIndex={0}
           className={`product-nav-mobile ${showNav ? null : "inactive"}`}
+          onClick={toggleNavHandler}
           // ref={navMobileRef}
           // onBlur={navMobileUnfocusHandler}
         >
           <div
             className="product-nav-mobile-arrows"
-            onClick={toggleNavHandler}
+            // onClick={toggleNavHandler}
             style={{ transform: showNav ? "rotateY(180deg)" : "" }}
           >
             <FontAwesomeIcon icon={faChevronLeft} />
