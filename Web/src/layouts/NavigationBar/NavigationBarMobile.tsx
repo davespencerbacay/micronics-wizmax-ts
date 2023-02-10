@@ -242,7 +242,7 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
           </ListGroup>
         </Container>
         <div className="navbar-logo-container">
-          <Link to={ROUTE_PATH.INDEX}>
+          <Link to={ROUTE_PATH.INDEX} onClick={() => scrollTo(0, 0)}>
             <NavbarLogoMobile />
           </Link>
         </div>
