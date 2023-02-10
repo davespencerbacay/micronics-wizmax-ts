@@ -472,6 +472,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-3_trm1hu.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-1_nylamn.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/MG501-2_mi8uez.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085971/product-images/mouse/MG501-3_trm1hu.png",
     ],
     file: "https://drive.google.com/file/d/1e9WsE5_H3KqXSmZ62ArEC4ews-qjuvU5/view",
     software: "",
@@ -1044,6 +1045,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/ZM2-1_emfkkk.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085973/product-images/mouse/ZM2-2_ypbfct.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/ZM2-3_daziuk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085980/product-images/mouse/ZM2-1_emfkkk.png",
     ],
     file: "https://drive.google.com/file/d/1LaxfxwtkesspX34799jmxCn0d5FDD_1l/view",
     software: "",
@@ -3450,6 +3452,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/K350_-_3_o8brsb.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086149/product-images/keyboard/K350_-_1_uc8yz3.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086147/product-images/keyboard/K350_-_2_sic6ax.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086152/product-images/keyboard/K350_-_3_o8brsb.png",
     ],
     countryAvailability: [
       {
@@ -3763,6 +3766,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/Manic_X40P-3_mbbzxw.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/Manic_X40P-1_wzaefl.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086148/product-images/keyboard/Manic_X40P-2_foagnk.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/Manic_X40P-3_mbbzxw.png",
     ],
     countryAvailability: [
       // {
@@ -5965,6 +5969,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086309/product-images/pc_case/gx-3_ojilvc.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gx-2_zf81vf.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086289/product-images/pc_case/gx-1_pjmrzo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086309/product-images/pc_case/gx-3_ojilvc.png",
     ],
     countryAvailability: [
       {
@@ -6209,6 +6214,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086298/product-images/pc_case/wb-2_w009ns.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086306/product-images/pc_case/wb-1_uvk57h.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/wb-3_cpwbya.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086298/product-images/pc_case/wb-2_w009ns.png",
     ],
     colorAvailability: [
       {
@@ -6492,6 +6498,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-1_fc8hcm.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086304/product-images/pc_case/gm1b_ldvnfp.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
     ],
     colorAvailability: [
       {
@@ -6632,6 +6639,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/om1-1_wkppqa.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/om1-2_ycsrdj.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/om1-3_aez8f1.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/om1-1_wkppqa.png",
     ],
     countryAvailability: [
       {
@@ -6890,6 +6898,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/Shadow_2-2_wbhlpt.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086289/product-images/pc_case/Shadow_2-1_njr0yr.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/Shadow_2-3_xfwm4r.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086303/product-images/pc_case/Shadow_2-2_wbhlpt.png",
     ],
     countryAvailability: [
       {
@@ -7533,6 +7542,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/GH4_LetoMesh-1_rkjk1m.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086292/product-images/pc_case/GH4_LetoMesh-2_tqtlwq.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/GH4_LetoMesh-3_bo48f5.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086288/product-images/pc_case/GH4_LetoMesh-1_rkjk1m.png",
     ],
     countryAvailability: [
       {
@@ -7783,6 +7793,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GX2-NEURON-GLASS2_kemy3i.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086291/product-images/pc_case/GX2-NEURON-GLASS1_qqdsku.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086300/product-images/pc_case/GX2-NEURON-GLASS3_clbxon.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GX2-NEURON-GLASS2_kemy3i.png",
     ],
     countryAvailability: [
       {
@@ -7921,6 +7932,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086296/product-images/pc_case/GX2-NEURON-MESH3_oym7bi.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086294/product-images/pc_case/GX2-NEURON-MESH2_zqegix.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086297/product-images/pc_case/GX2-NEURON-MESH1_gncfbd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086296/product-images/pc_case/GX2-NEURON-MESH3_oym7bi.png",
     ],
     countryAvailability: [
       {
@@ -8925,6 +8937,8 @@ const products = [
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219018/product-images/fans_coolers/ML240_Frozen_Tuna-2_pqc1vp.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219017/product-images/fans_coolers/ML240_Frozen_Tuna-1_vbtgpj.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219018/product-images/fans_coolers/ML240_Frozen_Tuna-2_pqc1vp.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219017/product-images/fans_coolers/ML240_Frozen_Tuna-1_vbtgpj.png",
     ],
     colorAvailability: [
       {
@@ -9062,6 +9076,8 @@ const products = [
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219317/product-brochures/fans_coolers/DB_ML360-Frozen-Tuna_english_zjrrcl.jpg",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219361/product-images/fans_coolers/ML360_FROZEN_TUNA-4_eddhvb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219358/product-images/fans_coolers/ML360_FROZEN_TUNA-1_xrn7de.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219361/product-images/fans_coolers/ML360_FROZEN_TUNA-4_eddhvb.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219358/product-images/fans_coolers/ML360_FROZEN_TUNA-1_xrn7de.png",
     ],
@@ -9202,6 +9218,8 @@ const products = [
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_2_tdnaee.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_1_nmw6wo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_2_tdnaee.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219512/product-images/fans_coolers/MA-4_Frigrate_Black_-_1_nmw6wo.png",
     ],
     colorAvailability: [
       {
@@ -9328,6 +9346,9 @@ const products = [
     filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
     ],
     countryAvailability: [
@@ -9674,6 +9695,9 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-10_white_d6w54x.png",
     ],
     countryAvailability: [
       // {
@@ -9788,6 +9812,9 @@ const products = [
     filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
     ],
     colorAvailability: [
@@ -9917,6 +9944,9 @@ const products = [
     filters: filters[0].fanscoolersFilters,
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
     ],
     colorAvailability: [
@@ -10205,6 +10235,9 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220738/product-images/psu/Wizmax-Silver_iembac.png",
     ],
     countryAvailability: [
       // {
@@ -10358,6 +10391,9 @@ const products = [
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220937/product-images/psu/Wizmax-Gold_Full_Modular_oi9vpo.png",
     ],
     countryAvailability: [
       // {
@@ -10510,6 +10546,9 @@ const products = [
     filters: filters[0].psuFilters,
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
     ],
     countryAvailability: [
@@ -10666,6 +10705,9 @@ const products = [
     filters: filters[0].psuFilters,
     brochure: "",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221331/product-images/psu/Astro-2-Platinum_tk1pcd.png",
     ],
     countryAvailability: [
@@ -10824,6 +10866,9 @@ const products = [
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672222141/product-brochures/psu/Astro-II-GD-DB_nu7oiq.jpg",
     img: [
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221460/product-images/psu/Astro_2_Gold_xpqhr9.png",
     ],
     countryAvailability: [
@@ -11153,6 +11198,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832756/product-images/accessories/MN-GL4-1_ep7piv.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832753/product-images/accessories/MN-GL4-2_amaew9.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832754/product-images/accessories/MN-GL4-3_rzojlr.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673832756/product-images/accessories/MN-GL4-1_ep7piv.png",
     ],
     countryAvailability: [
       {
@@ -11263,6 +11309,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833064/product-images/accessories/MN-GL20-2_ubpi1u.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833061/product-images/accessories/MN-GL20-1_qrnwz8.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833060/product-images/accessories/MN-GL20-3_w3ozab.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833064/product-images/accessories/MN-GL20-2_ubpi1u.png",
     ],
     countryAvailability: [
       {
@@ -11374,6 +11421,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_3_nyfky4.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_1_iozrvy.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_2_frdimb.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673833895/product-images/accessories/BT-1000_-_3_nyfky4.png",
     ],
     colorAvailability: [
       {
@@ -11747,6 +11795,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834561/product-images/accessories/Pampam-2_rm6opl.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834562/product-images/accessories/Pampam-1_a7jl4q.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834562/product-images/accessories/Pampam-3_yv7na9.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834561/product-images/accessories/Pampam-2_rm6opl.png",
     ],
     countryAvailability: [
       {
@@ -11829,6 +11878,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834868/product-images/accessories/GX4_SSD_2TB-1_jrs1su.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834864/product-images/accessories/GX4_SSD_2TB-2_u4eltg.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834860/product-images/accessories/GX4_SSD_2TB-3_whg3uc.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673834868/product-images/accessories/GX4_SSD_2TB-1_jrs1su.png",
     ],
     countryAvailability: [
       {
@@ -11954,6 +12004,8 @@ const products = [
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835095/product-images/accessories/MN-LC1-1_bzjujg.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835097/product-images/accessories/MN-LC1-2_afwxpu.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835095/product-images/accessories/MN-LC1-1_bzjujg.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835097/product-images/accessories/MN-LC1-2_afwxpu.png",
     ],
     countryAvailability: [
       {
@@ -12030,6 +12082,7 @@ const products = [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835221/product-images/accessories/UV-M100-1_gjqzan.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835220/product-images/accessories/UV-M100-2_rlhkay.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835220/product-images/accessories/UV-M100-3_smb50h.png",
+      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1673835221/product-images/accessories/UV-M100-1_gjqzan.png",
     ],
     countryAvailability: [
       {

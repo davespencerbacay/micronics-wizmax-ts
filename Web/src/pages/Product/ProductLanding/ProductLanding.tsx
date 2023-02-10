@@ -52,7 +52,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
     nextButtonHover,
   ]);
   const [imageIndex, setImageIndex] = useState<any>(0);
-
+  useEffect(() => {}, [slideToShow]);
   let settings: any = {
     className: "center",
     infinite: true,
@@ -237,41 +237,45 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
           </div>
           {/* NEXT PRODUCT TITLE */}
           <div className="next-product-title-container">
-            {isMobile ? (
-              <p
-                className={
-                  nextButtonClick
-                    ? "next-product-title-hide"
-                    : "next-product-title"
-                }
-                onClick={() =>
-                  nextProductHandler(
-                    products[currentProduct + 1].categoryId,
-                    products[currentProduct + 1].productId
-                  )
-                }
-              >
-                <img
-                  src={products[currentProduct + 1]?.img[0]}
-                  alt={products[currentProduct + 1]?.img[0]}
-                />
-                {<p>{products[currentProduct + 1]?.name}</p>}
-              </p>
-            ) : (
-              <p
-                className={
-                  nextButtonHover
-                    ? "next-product-title-hide"
-                    : "next-product-title"
-                }
-                onMouseEnter={nextButtonHandler}
-              >
-                <img
-                  src={products[currentProduct + 1]?.img[0]}
-                  alt={products[currentProduct + 1]?.img[0]}
-                />
-                {<p>{products[currentProduct + 1]?.name}</p>}
-              </p>
+            {currentProduct + 1 !== products.length && (
+              <React.Fragment>
+                {isMobile ? (
+                  <p
+                    className={
+                      nextButtonClick
+                        ? "next-product-title-hide"
+                        : "next-product-title"
+                    }
+                    onClick={() =>
+                      nextProductHandler(
+                        products[currentProduct + 1].categoryId,
+                        products[currentProduct + 1].productId
+                      )
+                    }
+                  >
+                    <img
+                      src={products[currentProduct + 1]?.img[0]}
+                      alt={products[currentProduct + 1]?.img[0]}
+                    />
+                    {<p>{products[currentProduct + 1]?.name}</p>}
+                  </p>
+                ) : (
+                  <p
+                    className={
+                      nextButtonHover
+                        ? "next-product-title-hide"
+                        : "next-product-title"
+                    }
+                    onMouseEnter={nextButtonHandler}
+                  >
+                    <img
+                      src={products[currentProduct + 1]?.img[0]}
+                      alt={products[currentProduct + 1]?.img[0]}
+                    />
+                    {<p>{products[currentProduct + 1]?.name}</p>}
+                  </p>
+                )}
+              </React.Fragment>
             )}
           </div>
 
