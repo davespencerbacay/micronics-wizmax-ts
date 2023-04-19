@@ -116,10 +116,10 @@ export const REACT_ROUTES: ReactRoutesType[] = [
 export const IMAGES = {
   COMPANY_LOGOS: {
     MAIN: "/images/logos/main-logo.png",
-    HORIZONTAL_BLACK: "/images/logos/wizmax-logo-horizonall-black.png",
-    HORIZONTAL_WHITE: "/images/logos/wizmax-logo-horizontal-white.png",
-    NAVBAR_WHITE: "/images/logos/navbar-logo.png",
-    NAVBAR_BLACK: "/images/logos/navbar-logo-black.png",
+    HORIZONTAL_BLACK: "/images/logos/footer-logo-v2.png",
+    HORIZONTAL_WHITE: "/images/logos/footer-logo-v2.png",
+    NAVBAR_WHITE: "/images/logos/navbar-logo-v2.png",
+    NAVBAR_BLACK: "/images/logos/navbar-logo-v2.png",
   },
   FACEBOOK: "/images/micronics-assets/facebook.png",
   TWITTER: "/images/micronics-assets/twitter.png",
