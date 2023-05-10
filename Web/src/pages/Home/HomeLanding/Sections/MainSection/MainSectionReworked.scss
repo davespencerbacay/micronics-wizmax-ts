@@ -1,0 +1,235 @@
+@font-face {
+  font-family: Gothic;
+  src: url("../../../../../../public/fonts/century-gothic/GOTHICB0.TTF");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../../../../../../public/fonts/Inter/static/Inter-Medium.ttf");
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  //MAIN STYLE
+  .main {
+    width: 80%;
+    animation: mainopacity 0.5s ease;
+    @keyframes mainopacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .listen-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .list,
+      .en {
+        font-size: 20rem;
+        font-weight: bold;
+        font-family: Gothic, sans-serif;
+        font-weight: bolder;
+        letter-spacing: 1rem;
+        position: relative;
+        bottom: 5rem;
+      }
+
+      .en {
+        z-index: 2;
+      }
+    }
+
+    .details-container {
+      display: flex;
+      justify-content: center;
+      max-height: 15rem;
+
+      p {
+        padding: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        text-align: end;
+        align-items: flex-end;
+        width: 20%;
+        position: relative;
+        right: 17rem;
+        bottom: 10rem;
+        font-family: Inter, sans-serif;
+      }
+
+      .img-container {
+        width: 50%;
+        height: 80%;
+        position: absolute;
+        left: 60%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        img {
+          width: 100%;
+          height: 100%;
+          transform: rotate3d(0, 1, 0, 30deg) rotate3d(1, 0, 0, -15deg);
+        }
+      }
+    }
+
+    .learn-more-btn {
+      border: none;
+      border-radius: 5rem;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px 20px;
+      position: relative;
+      left: 45rem;
+      bottom: 8rem;
+      width: 106px;
+      height: 36px;
+      font-family: Inter, sans-serif;
+      font-size: 1rem;
+    }
+  }
+  //KEYBOARD VIEW STYLE
+  .kb-main {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: kbopacity 0.5s ease;
+    @keyframes kbopacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .top-content {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      top: 13rem;
+      z-index: 1;
+      p {
+        position: relative;
+        left: 11rem;
+        font-family: Inter, sans-serif;
+      }
+    }
+
+    .dominate-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 5rem;
+      .dom,
+      .inate {
+        font-size: 20rem;
+        font-family: Gothic, sans-serif;
+        text-transform: uppercase;
+      }
+      .dom {
+      }
+      .inate {
+        z-index: 2;
+      }
+    }
+    .img-container {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .center-content {
+      display: flex;
+      justify-content: flex-end;
+      z-index: 1;
+      position: relative;
+      top: 5rem;
+      font-family: Inter, sans-serif;
+      p {
+        text-align: right;
+        width: 30%;
+      }
+    }
+    .btn-container {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      top: 5rem;
+      button {
+        border: none;
+        border-radius: 5rem;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+        width: 106px;
+        height: 36px;
+        font-family: Inter, sans-serif;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .main {
+      width: 90%;
+
+      .listen-container {
+        flex-direction: row;
+      }
+
+      .list,
+      .en {
+        font-size: 12rem;
+        bottom: 3rem;
+      }
+
+      .details-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+      }
+
+      p {
+        width: auto;
+        right: auto;
+        bottom: 0;
+      }
+
+      .img-container {
+        width: 80%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .learn-more-btn {
+        left: 0;
+        right: 0;
+        margin: 2rem auto;
+      }
+    }
+  }
+}

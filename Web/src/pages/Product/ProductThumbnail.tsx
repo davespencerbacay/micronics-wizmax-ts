@@ -135,7 +135,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                     tabIndex={0}
                     className="thumbnail-country-availability-btn"
                     onClick={() => toggleCountryAvailability(index)}
-                    onBlur={() => closeCountryAvailability(index)}
+                    // onBlur={() => closeCountryAvailability(index)}
                   >
                     {!p.countryAvailability && !p.colorAvailability ? (
                       <div className="country-color-unavailability"></div>
