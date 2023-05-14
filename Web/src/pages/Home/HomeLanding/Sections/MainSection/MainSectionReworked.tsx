@@ -6,7 +6,7 @@ import KeyboardView from "./CarouselViews/KeyboardView";
 const MainSectionReworked: React.FC = () => {
   const MainSlider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const slideViews = [<MainView />, <KeyboardView />];
+    const slideViews = [<MainView />];
 
     useEffect(() => {
       const interval = setInterval(() => {
