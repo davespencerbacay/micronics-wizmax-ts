@@ -6,13 +6,16 @@ export const HOME_IMAGES = {
     HEADSET: "images/micronics-assets/home-page/headset-mh2.png",
     HEADSET_LEFT: "images/micronics-assets/home-page/MH2-FacingLeft.png",
     HEADSET_W301: "images/micronics-assets/home-page/W301-4.png",
+    LISTEN_HEADSET: "images/micronics-assets/home-page/listen_headset.png",
   },
   HOME_MOUSE_SECTION: {
     MOUSE: "images/micronics-assets/home-page/Mouse_012023.png",
+    POWERFUL_MOUSE: "images/micronics-assets/home-page/powerful_mouse.png",
   },
   HOME_KEYBOARD_SECTION: {
     KEYBOARD: "images/micronics-assets/home-page/Keyboard New.png",
     KB_W101P: "images/micronics-assets/home-page/W101P Sky Blue - 3.png",
+    DOMINATE_KB: "images/micronics-assets/home-page/dominate_kb.png",
   },
   HOME_OTHERS_SECTION: {
     ACCESSORIES_1: "images/micronics-assets/home-page/Accessories-1.png",

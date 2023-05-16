@@ -1,24 +1,27 @@
 import { HOME_IMAGES } from "constants/home";
 import React from "react";
+import truncatedText from "helpers/truncatedText";
 
 const KeyboardView: React.FC = () => {
   return (
     <div className="kb-main">
       <div className="top-content">
-        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-      </div>
-      <div className="dominate-container">
-        <p className="dom">dom</p>
-        <p className="inate">inate</p>
+        <p>
+          {truncatedText(
+            "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+            40
+          )}
+        </p>
       </div>
       <div className="img-container">
-        <img src={HOME_IMAGES.HOME_KEYBOARD_SECTION.KB_W101P} alt="W101P" />
+        <img src={HOME_IMAGES.HOME_KEYBOARD_SECTION.DOMINATE_KB} alt="W101P" />
       </div>
       <div className="center-content">
         <p>
-          Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem
-          Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-          Lorem Ipsum
+          {truncatedText(
+            "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+            100
+          )}
         </p>
       </div>
       <div className="btn-container">
