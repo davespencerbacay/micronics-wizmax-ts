@@ -6,7 +6,7 @@ export const HOME_IMAGES = {
     HEADSET: "images/micronics-assets/home-page/headset-mh2.png",
     HEADSET_LEFT: "images/micronics-assets/home-page/MH2-FacingLeft.png",
     HEADSET_W301: "images/micronics-assets/home-page/W301-4.png",
-    LISTEN_HEADSET: "images/micronics-assets/home-page/listen_headset.png",
+    LISTEN_HEADSET: "images/micronics-assets/home-page/listen_image_170523.png",
   },
   HOME_MOUSE_SECTION: {
     MOUSE: "images/micronics-assets/home-page/Mouse_012023.png",

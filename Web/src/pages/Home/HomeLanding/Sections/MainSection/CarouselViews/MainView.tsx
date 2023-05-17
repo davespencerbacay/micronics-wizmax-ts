@@ -9,12 +9,9 @@ const MainView: React.FC = () => {
           Hear every detail, dominate every game. Get in the game and experience
           sounds like never before with immersive audio.
         </p>
-        <div className="img-container">
-          <img
-            src={HOME_IMAGES.HOME_HEADSET_SECTION.LISTEN_HEADSET}
-            alt="W301"
-          />
-        </div>
+      </div>
+      <div className="img-container">
+        <img src={HOME_IMAGES.HOME_HEADSET_SECTION.LISTEN_HEADSET} alt="W301" />
       </div>
       <button className="learn-more-btn">Learn More</button>
     </div>
