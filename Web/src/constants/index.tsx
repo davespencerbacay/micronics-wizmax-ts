@@ -120,6 +120,7 @@ export const IMAGES = {
     HORIZONTAL_WHITE: "/images/logos/footer-logo-v2.png",
     NAVBAR_WHITE: "/images/logos/navbar-logo-v2.png",
     NAVBAR_BLACK: "/images/logos/navbar-logo-v2.png",
+    NAVBAR_MAIN: "/images/logos/nav-logo.png",
   },
   FACEBOOK: "/images/micronics-assets/facebook.png",
   TWITTER: "/images/micronics-assets/twitter.png",
