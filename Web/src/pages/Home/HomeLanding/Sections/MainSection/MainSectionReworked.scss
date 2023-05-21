@@ -32,6 +32,8 @@
       justify-content: center;
       height: 100%;
       line-height: 2rem;
+      position: relative;
+      top: 30rem;
       p {
         padding: 1rem;
         display: flex;
@@ -80,13 +82,13 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        position: relative;
-        top: 37rem;
+
         height: 100vh;
         p {
           width: 40%;
           position: relative;
           right: 5rem;
+          top: 13rem;
         }
       }
       .img-container {
@@ -100,19 +102,19 @@
       }
       .learn-more-btn {
         position: relative;
-        left: 7rem;
-        top: -27rem;
+        left: 12%;
+        top: -30rem;
         z-index: 9999999;
       }
     }
     //1024px - 1440px
-    @media only screen and (max-width: 1439px) and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) and (max-width: 1440px) {
       .details-container {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         position: relative;
-        top: 37rem;
+        top: 40rem;
         height: 100vh;
         p {
           width: 30%;
@@ -131,42 +133,107 @@
       }
       .learn-more-btn {
         position: relative;
-        left: 18rem;
-        top: -27rem;
+        left: 20%;
+        top: -30rem;
         z-index: 9999999;
       }
     }
-    // //1440px
-    // @media only screen and (min-width: 1440px) {
-    //   .details-container {
-    //     display: flex;
-    //     justify-content: flex-start;
-    //     align-items: flex-start;
-    //     position: relative;
-    //     top: 36rem;
-    //     height: 100vh;
-    //     p {
-    //       width: 20%;
-    //       position: relative;
-    //       right: -23rem;
-    //     }
-    //   }
-    //   .img-container {
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    //     img {
-    //       scale: 1;
-    //     }
-    //   }
-    //   .learn-more-btn {
-    //     position: relative;
-    //     left: 35rem;
-    //     top: -27rem;
-    //     z-index: 9999999;
-    //   }
-    // }
+    //1441px - 1680px
+    @media screen and (max-width: 1680px) and (min-width: 1441px) {
+      .details-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        height: 100vh;
+        p {
+          width: 20%;
+          position: relative;
+          right: -23rem;
+          top: 7rem;
+        }
+      }
+      .img-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+          scale: 1;
+        }
+      }
+      .learn-more-btn {
+        position: relative;
+        left: 30%;
+        top: -25rem;
+        z-index: 9999999;
+      }
+    }
+    //1681px - 1920px
+    @media screen and (max-width: 1920px) and (min-width: 1681px) {
+      .details-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        height: 100vh;
+        p {
+          width: 20%;
+          position: relative;
+          right: -28rem;
+          top: 15rem;
+        }
+      }
+      .img-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+          scale: 1;
+        }
+      }
+      .learn-more-btn {
+        position: relative;
+        left: 32%;
+        top: -30rem;
+        z-index: 9999999;
+      }
+    }
+    //1921px - 2560px
+    @media screen and (max-width: 2560px) and (min-width: 1921px) {
+      .details-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        height: 100vh;
+        p {
+          width: 20%;
+          position: relative;
+          right: -30rem;
+          top: 15rem;
+        }
+      }
+      .img-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        img {
+          scale: 0.9;
+        }
+      }
+      .learn-more-btn {
+        position: relative;
+        left: 33%;
+        top: -30rem;
+        z-index: 9999999;
+      }
+    }
+    //2561px
+    @media screen and (min-width: 2561px) {
+    }
   }
   //KEYBOARD VIEW STYLE
   .kb-main {

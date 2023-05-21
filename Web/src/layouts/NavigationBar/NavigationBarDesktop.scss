@@ -6,14 +6,13 @@ $lightgray: #d3d3d3;
   padding: 0;
   &-brand {
     height: 5rem;
-
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     text-align: end;
     img {
       padding: 0 1rem;
-      width: 80%;
+      width: 70%;
     }
   }
   &-nav {
