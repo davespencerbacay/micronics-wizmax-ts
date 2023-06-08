@@ -10,11 +10,12 @@ import countProducts from "helpers/countProducts";
 import products from "data/products";
 import ShadowedButton from "library/ShadowedButton/ShadowedButton";
 import DownloadIcon from "library/Icons/DownloadIcon";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import NoInformationToDisplay from "library/NoInformationToDisplay/NoInformationToDisplay";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
 import DownloadsProcedure from "./DownloadsProcedure/DownloadsProcedure";
+import Button from "library/Button/Button";
 
 const Drivers: React.FC = () => {
   const isMobile = useResponsive("mobile");
@@ -71,6 +72,8 @@ const Drivers: React.FC = () => {
     }
   };
 
+  const navigate = useNavigate();
+
   return (
     <div className="support-container">
       <Banner
@@ -78,7 +81,23 @@ const Drivers: React.FC = () => {
         subTitle="Find brochures, drivers, and manuals for your Wizmax Hardware."
         variant="light"
         align="center"
-      />
+      >
+        <Button
+          style={{
+            background: "#1d1d1f",
+            fontSize: "14px",
+            borderRadius: "7px",
+            padding: ".5rem 2rem",
+            marginTop: "1rem",
+            cursor: "pointer",
+            position: "relative",
+            zIndex: "99",
+          }}
+          onClick={() => navigate(ROUTE_PATH.WARRANTY_FAQ)}
+        >
+          Warranty FAQ
+        </Button>
+      </Banner>
       <DownloadsProcedure onClick={scrollToCategories} />
       <div ref={catRef}>
         <Container className="support-content">

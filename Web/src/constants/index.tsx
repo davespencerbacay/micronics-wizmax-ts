@@ -10,6 +10,7 @@ import Drivers from "pages/Support/components/Drivers";
 import ProductLanding from "pages/Product/ProductLanding/ProductLanding";
 import Manuals from "pages/Support/components/Manuals";
 import Ces from "pages/Special/ces";
+import WarrantyFaq from "pages/Policy/WarrantyFaq";
 
 /* Change context consts */
 export const STORAGE_KEY: Record<string, string> = {
@@ -109,6 +110,10 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   {
     PATH: ROUTE_PATH.CES,
     ELEMENT: <PageWrapper component={<Ces />} showFooter={false} />,
+  },
+  {
+    PATH: ROUTE_PATH.WARRANTY_FAQ,
+    ELEMENT: <PageWrapper component={<WarrantyFaq />} />,
   },
 ];
 
