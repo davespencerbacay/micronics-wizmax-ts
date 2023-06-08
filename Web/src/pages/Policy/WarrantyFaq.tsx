@@ -407,7 +407,16 @@ const WarrantyFaq = () => {
           <p>
             Please see list of{" "}
             <span style={{ color: "red", textDecoration: "underline" }}>
-              authorized WIZMAX resellers
+              <a
+                style={{
+                  color: "red",
+                  textDecoration: "underline",
+                }}
+                href="https://wizmaxglobal.com/shop"
+                target="_blank"
+              >
+                authorized WIZMAX resellers
+              </a>
             </span>
             , which is constantly being updated to include new resellers. If the
             customer is unsure if their distributor is an authorized reseller,

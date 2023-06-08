@@ -7,6 +7,12 @@
     text-transform: uppercase;
     font-size: 4rem;
   }
+
+  @media only screen and (max-width: 760px) {
+    .page-title {
+      margin-top: 5rem;
+    }
+  }
   .section {
     margin-bottom: 5rem;
 
