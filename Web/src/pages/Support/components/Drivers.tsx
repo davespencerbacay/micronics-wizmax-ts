@@ -15,7 +15,6 @@ import NoInformationToDisplay from "library/NoInformationToDisplay/NoInformation
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
 import DownloadsProcedure from "./DownloadsProcedure/DownloadsProcedure";
-import Button from "library/Button/Button";
 
 const Drivers: React.FC = () => {
   const isMobile = useResponsive("mobile");
@@ -72,8 +71,11 @@ const Drivers: React.FC = () => {
     }
   };
 
+  //Go To Warranty Page
   const navigate = useNavigate();
-
+  const handleWarrantyPage = () => {
+    navigate("/support/warranty");
+  };
   return (
     <div className="support-container">
       <Banner
@@ -81,23 +83,10 @@ const Drivers: React.FC = () => {
         subTitle="Find brochures, drivers, and manuals for your Wizmax Hardware."
         variant="light"
         align="center"
-      >
-        <Button
-          style={{
-            background: "#1d1d1f",
-            fontSize: "14px",
-            borderRadius: "7px",
-            padding: ".5rem 2rem",
-            marginTop: "1rem",
-            cursor: "pointer",
-            position: "relative",
-            zIndex: "99",
-          }}
-          onClick={() => navigate(ROUTE_PATH.WARRANTY_FAQ)}
-        >
-          Warranty FAQ
-        </Button>
-      </Banner>
+      />
+      <button className="warranty-btn" onClick={handleWarrantyPage}>
+        Warranty FAQ
+      </button>
       <DownloadsProcedure onClick={scrollToCategories} />
       <div ref={catRef}>
         <Container className="support-content">
