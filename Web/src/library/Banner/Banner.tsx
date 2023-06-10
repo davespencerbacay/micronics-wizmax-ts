@@ -6,6 +6,7 @@ interface IBanner {
   subTitle?: string;
   variant?: "dark" | "light";
   align?: "center" | "left" | "right";
+  children?: JSX.Element;
 }
 const Banner: React.FC<IBanner> = (props) => {
   const { title, subTitle, variant, align } = props;
@@ -23,6 +24,8 @@ const Banner: React.FC<IBanner> = (props) => {
       <div className="container">
         <h2>{title}</h2>
         <p>{subTitle}</p>
+
+        {props.children}
       </div>
     </div>
   );
