@@ -10,6 +10,7 @@ import Drivers from "pages/Support/components/Drivers";
 import ProductLanding from "pages/Product/ProductLanding/ProductLanding";
 import Manuals from "pages/Support/components/Manuals";
 import Ces from "pages/Special/ces";
+import Warranty from "pages/Support/components/Warranty/Warranty";
 
 /* Change context consts */
 export const STORAGE_KEY: Record<string, string> = {
@@ -95,6 +96,10 @@ export const REACT_ROUTES: ReactRoutesType[] = [
     ELEMENT: <PageWrapper component={<Manuals />} />,
   },
   {
+    PATH: ROUTE_PATH.SUPPORT_WARRANTY,
+    ELEMENT: <PageWrapper component={<Warranty />} />,
+  },
+  {
     PATH: ROUTE_PATH.SHOP,
     ELEMENT: <PageWrapper component={<Shop />} />,
   },
@@ -121,6 +126,7 @@ export const IMAGES = {
     NAVBAR_WHITE: "/images/logos/navbar-logo-v2.png",
     NAVBAR_BLACK: "/images/logos/navbar-logo-v2.png",
     NAVBAR_MAIN: "/images/logos/nav-logo.png",
+    WARRANTY_LOGO: "/images/logos/main-logo.png"
   },
   FACEBOOK: "/images/micronics-assets/facebook.png",
   TWITTER: "/images/micronics-assets/twitter.png",

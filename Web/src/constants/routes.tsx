@@ -8,6 +8,7 @@ export const ROUTE_PATH = {
   SUPPORT_DRIVERS_SOFTWARES: "/support/drivers-and-softwares",
   SUPPORT_DRIVERS_SOFTWARES_BY_CATEGORY_ID:
     "/support/drivers-and-softwares/:categoryId",
+  SUPPORT_WARRANTY: "/support/warranty",
   SHOP: "/shop",
   CONTACT: "/contact",
   CONTACT_INQUIRY: "/contact",

@@ -10,7 +10,7 @@ import countProducts from "helpers/countProducts";
 import products from "data/products";
 import ShadowedButton from "library/ShadowedButton/ShadowedButton";
 import DownloadIcon from "library/Icons/DownloadIcon";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import NoInformationToDisplay from "library/NoInformationToDisplay/NoInformationToDisplay";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
@@ -71,6 +71,11 @@ const Drivers: React.FC = () => {
     }
   };
 
+  //Go To Warranty Page
+  const navigate = useNavigate();
+  const handleWarrantyPage = () => {
+    navigate("/support/warranty");
+  };
   return (
     <div className="support-container">
       <Banner
@@ -79,6 +84,9 @@ const Drivers: React.FC = () => {
         variant="light"
         align="center"
       />
+      <button className="warranty-btn" onClick={handleWarrantyPage}>
+        Warranty FAQ
+      </button>
       <DownloadsProcedure onClick={scrollToCategories} />
       <div ref={catRef}>
         <Container className="support-content">
