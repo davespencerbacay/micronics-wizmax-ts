@@ -164,7 +164,8 @@ const DownloadsProcedure: React.FC<IDownloadsProcedure> = (props) => {
               Brochure <DownloadIcon />
             </button>
           ) : (
-            "No Brochure Available"
+            <p className="no-brochure-available">No Brochure Available</p>
+            
           )}
           {productDriver !== "" ? (
             <button onClick={downloadDriverHandler}>
