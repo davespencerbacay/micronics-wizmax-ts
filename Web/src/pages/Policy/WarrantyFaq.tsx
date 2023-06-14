@@ -55,10 +55,8 @@ const WarrantyFaq = () => {
             refurbished parts for repair. The replaced parts or products will
             become WIZMAX’s property. Unless the local laws provided otherwise,
             any replacement hardware product or parts will be warranted for the
-            remainder of the original warranty period or{" "}
-            <span className="red-subject">
-              thirty (30) days, whichever is longer.
-            </span>
+            remainder of the original warranty period or thirty (30) days,
+            whichever is longer.
           </p>
         </div>
 
@@ -178,7 +176,7 @@ const WarrantyFaq = () => {
               not in accordance with any supplied product instructions
             </li>
             <li>
-              <span className="red-subject">
+              <span>
                 Used for commercial purposes, including for &quot;LAN&rdquo;,
                 &ldquo;Call Centers&quot; or used for rental or lease
               </span>
@@ -274,7 +272,7 @@ const WarrantyFaq = () => {
         </div>
 
         <div className="section">
-          <h2 className="red-subject">How to make a Limited Warranty Claim?</h2>
+          <h2>How to make a Limited Warranty Claim?</h2>
           <p>
             If you bought a WIZMAX product from a different seller, it might be
             more efficient to resolve any warranty issues by contacting the
@@ -325,7 +323,7 @@ const WarrantyFaq = () => {
           </p>
 
           <ul>
-            <li>Product&amp;#39;s UPC box bar code</li>
+            <li>Product's UPC box bar code</li>
             <li>Photos of the actual product</li>
             <li>Warranty certification</li>
             <li>Documents issued by non-production WIZMAX sellers</li>
@@ -406,12 +404,9 @@ const WarrantyFaq = () => {
           <h2>Who is authorized to sell WIZMAX products?</h2>
           <p>
             Please see list of{" "}
-            <span style={{ color: "red", textDecoration: "underline" }}>
+            <span>
               <a
-                style={{
-                  color: "red",
-                  textDecoration: "underline",
-                }}
+                style={{ color: "black", textDecoration: "underline" }}
                 href="https://wizmaxglobal.com/shop"
                 target="_blank"
               >
@@ -421,7 +416,10 @@ const WarrantyFaq = () => {
             , which is constantly being updated to include new resellers. If the
             customer is unsure if their distributor is an authorized reseller,
             they can contact the support team at{" "}
-            <a href="mailto:support@wizmaxglobal.com">
+            <a
+              style={{ color: "black", textDecoration: "underline" }}
+              href="mailto:support@wizmaxglobal.com"
+            >
               support@wizmaxglobal.com
             </a>{" "}
             for further assistance.
@@ -516,6 +514,16 @@ const WarrantyFaq = () => {
               </tr>
             </tbody>
           </table>
+          <div style={{ margin: "2rem 0", width: "30%" }}>
+            <h4>Disclaimer: </h4>
+            <p style={{ fontSize: "1.3rem" }}>
+              The limited warranty period may differ based on the country of
+              purchase, and this Warranty guide is intended as a general
+              reference for service and warranty information. For specific
+              product warranty details, kindly reach out to your local dealer or
+              distributor.
+            </p>
+          </div>
         </div>
 
         <div className="section">
@@ -551,7 +559,7 @@ const WarrantyFaq = () => {
             event that you are unable to find the solution to your issue in our
             knowledge base articles, our support team is available to assist
             you. Please contact us at{" "}
-            <a href="mailto:support@wizmaxglobal.com">
+            <a style={{ color: "black", textDecoration: "underline" }} href="mailto:support@wizmaxglobal.com">
               support@wizmaxglobal.com
             </a>
           </p>
