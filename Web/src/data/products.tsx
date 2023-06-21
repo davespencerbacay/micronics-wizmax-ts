@@ -5465,7 +5465,7 @@ const products = [
     name: "EH1 Mondrian",
     filters: filters[0].pccaseFilters,
     isNewRelease: "New Release",
-    brochure: "",
+    brochure: "https://res.cloudinary.com/ddwocxwmc/image/upload/v1687356550/product-brochures/pc_case/EH1_-_Mondrian_vtjnui.jpg",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912245/product-images/pc_case/EH-1_Mondrian_-4_kuvx4z.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912243/product-images/pc_case/EH-1_Mondrian_-1_jqkie6.png",
@@ -6493,7 +6493,7 @@ const products = [
     ).replace(":productId", "GM1-TRANSFORM-B"),
     name: "GM1 Transform",
     filters: filters[0].pccaseFilters,
-    brochure: "",
+    brochure: "https://res.cloudinary.com/ddwocxwmc/image/upload/v1687357251/product-brochures/pc_case/GM-1_Transform_Black_English_DB_copy_efgufx.jpg",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-2_avvsdf.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086295/product-images/pc_case/gm1b-1_fc8hcm.png",

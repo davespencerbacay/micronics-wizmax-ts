@@ -10,13 +10,16 @@ import ProductThumbnail from "./ProductThumbnail";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
 import ScrollToTop from "library/ScrollToTop/ScrollToTop";
+import { useParams } from "react-router-dom";
 
 const Product: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
   const categoryRefLinkTitle = useRef<(HTMLDivElement | null)[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<any>(0);
+  const params = useParams();
+  console.log("PARAMETERS", params.categoryId)
   const isMobile = useResponsive("mobile");
-  useEffect(() => {}, [isMobile, categoryRefLink]);
+  useEffect(() => {}, [isMobile, categoryRefLink, params]);
   const refLinkHandler = (index: any) => {
     console.log("INDEXSXASXSA", index);
     if (categoryRefLink) {
