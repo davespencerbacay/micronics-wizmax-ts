@@ -95,13 +95,17 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
                       </div>
                     </Link>
                   ) : sublink.id === "product" ? (
-                    <div onClick={() => routeHandler(sublink.route)}>
-                      <Link to={sublink.path}>
-                        {sublink.icon}
-                        <div>{sublink.text}</div>
-                      </Link>
+                    <div style={{ cursor: "normal" }}>
+                      {sublink.icon}
+                      <div>{sublink.text}</div>
                     </div>
                   ) : (
+                    // <div onClick={() => routeHandler(sublink.route)}>
+                    //   <Link to={sublink.path}>
+                    //     {sublink.icon}
+                    //     <div>{sublink.text}</div>
+                    //   </Link>
+                    // </div>
                     <Link to={sublink.path}>
                       {sublink.icon}
                       <div>{sublink.text}</div>
