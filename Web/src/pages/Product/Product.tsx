@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CategoryBanner from "./CategoryLanding/components/CategoryBanner/CategoryBanner";
 import CategoryCaption from "./CategoryLanding/components/CategoryCaption/CategoryCaption";
 import CategoryTab from "./CategoryLanding/components/CategoryTab/CategoryTab";
@@ -10,14 +10,20 @@ import ProductThumbnail from "./ProductThumbnail";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
 import ScrollToTop from "library/ScrollToTop/ScrollToTop";
+import { useParams } from "react-router-dom";
 
 const Product: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
   const categoryRefLinkTitle = useRef<(HTMLDivElement | null)[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<any>(0);
+  const params = useParams();
+  console.log("PARAMETERS", params.categoryId)
   const isMobile = useResponsive("mobile");
-  useEffect(() => {}, [isMobile, categoryRefLink]);
+  useEffect(() => {}, [isMobile, categoryRefLink, params]);
   const refLinkHandler = (index: any) => {
+    console.log("INDEXSXASXSA", index);
     if (categoryRefLink) {
+      setSelectedCategory(index);
       console.log(categoryRefLink.current[index]);
       categoryRefLink.current[index]?.scrollIntoView({
         behavior: "smooth",
@@ -34,45 +40,53 @@ const Product: React.FC = () => {
       });
     }
   };
+  useEffect(() => {
+    setSelectedCategory;
+  }, selectedCategory);
   return (
-    <div className="product-container">
+    <>
       <ScrollToTop />
       <CategoryTab
         refLinkHandler={isMobile ? refLinkTitleHandler : refLinkHandler}
       />
+
       {productCategories.map((cat, index) => {
         return (
           <React.Fragment key={cat.categoryId}>
-            <CategoryBanner
-              img={cat.img}
-              categoryRef={(refLink: any) =>
-                (categoryRefLink.current[index] = refLink)
-              }
-              categoryId={cat.categoryId}
-            />
-            <CategoryCaption
-              name={cat.name}
-              text={cat.text}
-              catRef={(refLink: any) =>
-                (categoryRefLinkTitle.current[index] = refLink)
-              }
-            />
+            {index === selectedCategory && (
+              <div className="product-container">
+                <CategoryBanner
+                  img={index === selectedCategory ? cat.img : ""}
+                  categoryRef={(refLink: any) =>
+                    (categoryRefLink.current[index] = refLink)
+                  }
+                  categoryId={index === selectedCategory ? cat.categoryId : ""}
+                />
+                <CategoryCaption
+                  name={index === selectedCategory ? cat.name : ""}
+                  text={index === selectedCategory ? cat.text : ""}
+                  catRef={(refLink: any) =>
+                    (categoryRefLinkTitle.current[index] = refLink)
+                  }
+                />
 
-            <ProductBox
-              variants={ThemeVariants.dark}
-              className="product-thumbnail-box"
-            >
-              <ProductThumbnail
-                catId={cat.categoryId}
-                img={cat.img}
-                name={cat.name}
-              />
-            </ProductBox>
+                <ProductBox
+                  variants={ThemeVariants.dark}
+                  className="product-thumbnail-box"
+                >
+                  <ProductThumbnail
+                    catId={index === selectedCategory ? cat.categoryId : ""}
+                    img={index === selectedCategory ? cat.img : ""}
+                    name={index === selectedCategory ? cat.name : ""}
+                  />
+                </ProductBox>
+              </div>
+            )}
           </React.Fragment>
         );
       })}
       <ScrollToTopButton />
-    </div>
+    </>
   );
 };
 

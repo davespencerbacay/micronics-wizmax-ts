@@ -235,12 +235,12 @@ $lightgray: #d3d3d3;
       a {
         color: black;
       }
-      &:hover {
-        border-bottom: 1px solid black;
-        transition: all 300ms ease;
-        margin-bottom: 3px;
-        margin-top: 4px;
-      }
+      // &:hover {
+      //   border-bottom: 1px solid black;
+      //   transition: all 300ms ease;
+      //   margin-bottom: 3px;
+      //   margin-top: 4px;
+      // }
     }
 
     .sub-navbar-support-items {
