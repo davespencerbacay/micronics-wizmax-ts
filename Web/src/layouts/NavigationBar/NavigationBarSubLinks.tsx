@@ -11,6 +11,7 @@ import { ROUTE_PATH } from "constants/routes";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import { IShops } from "constants/shops";
 import intl from "i18n/intl";
+import { getRouteId, saveRouteId } from "helpers/routeId";
 
 interface INavigationBarSubLinks {
   subLinks: SubLinksType[] | null;
@@ -19,13 +20,14 @@ interface INavigationBarSubLinks {
   children?: string | JSX.Element;
   showSubLinks?: boolean;
   hideAllLinks: () => void;
+  // navRoute: (data: number) => void;
 }
 
 export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
   props
 ) => {
   const [hideSubNavbar, setHideSubNavbar] = useState(false);
-
+  const [navSaveRouteId, setNavSaveRouteId] = useState(0);
   const GetLinkID = () => {
     let productLink = props.subLinks?.find((link) => link.id === "product");
     let supportLinkID = props.subLinks?.find((link) => link.id === "support");
@@ -57,27 +59,30 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
     setHideSubNavbar(false);
     props.hideAllLinks();
   };
-  const [routePath, setRoutePath] = useState("");
-  useEffect(() => {}, [routePath]);
+
   const routeHandler = (path: any) => {
-    setRoutePath(path);
-    console.log(path);
-    if (path === "Keyboard") {
-      window.scrollTo(0, 2200);
-    } else if (path === "Headset") {
-      window.scrollTo(0, 4800);
-    } else if (path === "FC") {
-      window.scrollTo(0, 6900);
-    } else if (path === "PC Case") {
-      window.scrollTo(0, 8700);
-    } else if (path === "PSU") {
-      window.scrollTo(0, 11700);
-    } else if (path === "Accessories") {
-      window.scrollTo(0, 13200);
-    } else {
-      window.scrollTo(0, 0);
-    }
+    console.log("IPAPASA", path);
+    setNavSaveRouteId(path);
+    // if (path === "Keyboard") {
+    //   window.scrollTo(0, 2200);
+    // } else if (path === "Headset") {
+    //   window.scrollTo(0, 4800);
+    // } else if (path === "FC") {
+    //   window.scrollTo(0, 6900);
+    // } else if (path === "PC Case") {
+    //   window.scrollTo(0, 8700);
+    // } else if (path === "PSU") {
+    //   window.scrollTo(0, 11700);
+    // } else if (path === "Accessories") {
+    //   window.scrollTo(0, 13200);
+    // } else {
+    //   window.scrollTo(0, 0);
+    // }
   };
+
+  useEffect(() => {
+    saveRouteId("routeId",navSaveRouteId);
+  },[navSaveRouteId])
 
   if (props.showSubLinks || !hideSubNavbar) {
     return (
@@ -95,9 +100,16 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
                       </div>
                     </Link>
                   ) : sublink.id === "product" ? (
-                    <div style={{ cursor: "normal" }}>
-                      {sublink.icon}
-                      <div>{sublink.text}</div>
+                    <div
+                      style={{ cursor: "normal" }}
+                      onClick={() => routeHandler(sublink.routeId)}
+                    >
+                      <Link to={sublink.path}>
+                        {sublink.icon}
+                        <div>{sublink.text}</div>
+                      </Link>
+                      {/* {sublink.icon}
+                      <div>{sublink.text}</div> */}
                     </div>
                   ) : (
                     // <div onClick={() => routeHandler(sublink.route)}>
@@ -106,10 +118,7 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
                     //     <div>{sublink.text}</div>
                     //   </Link>
                     // </div>
-                    <Link to={sublink.path}>
-                      {sublink.icon}
-                      <div>{sublink.text}</div>
-                    </Link>
+                    <div></div>
                   )}
 
                   {sublink.id === "shop" &&

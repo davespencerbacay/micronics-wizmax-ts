@@ -33,14 +33,15 @@ export type SubLinksType = {
   shops?: IShops[];
   shopName?: ShopLinksType[];
   shopLink?: ShopLinksType[];
-  route?: any;
+  routeId?: number;
 };
 
 const PRODUCT_IMAGES = {
   MOUSE: "/images/micronics-assets/product-images/Mouse-1.png",
   KEYBOARD: "/images/micronics-assets/product-images/Keyboard-1.png",
   HEADSET: "/images/micronics-assets/product-images/Headset-1.png",
-  PC_CASE: "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912245/product-images/pc_case/EH-1_Mondrian_-4_kuvx4z.png",
+  PC_CASE:
+    "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672912245/product-images/pc_case/EH-1_Mondrian_-4_kuvx4z.png",
   FANS_COOLERS: "/images/micronics-assets/product-images/Fans Coolers-1.png",
   PSU: "/images/micronics-assets/product-images/PSU-1.png",
   ACCESSORIES: "/images/micronics-assets/product-images/Accessories.svg",
@@ -49,57 +50,58 @@ const PRODUCT_IMAGES = {
 export const productSubLinks: SubLinksType[] = [
   {
     id: "product",
+    routeId: 0,
     icon: <Img img={PRODUCT_IMAGES.MOUSE} width={130}></Img>,
     text: intl("productSubLinks.mouse"),
-    path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
+    path: ROUTE_PATH.PRODUCT,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    route: 1,
+    routeId: 1,
     icon: <Img img={PRODUCT_IMAGES.KEYBOARD} width={130}></Img>,
     text: intl("productSubLinks.keyboard"),
-    path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
+    path: ROUTE_PATH.PRODUCT,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    route: 2,
+    routeId: 2,
     icon: <Img img={PRODUCT_IMAGES.HEADSET} width={130}></Img>,
     text: intl("productSubLinks.headset"),
-    path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
+    path: ROUTE_PATH.PRODUCT,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    route: 3,
+    routeId: 3,
     icon: <Img img={PRODUCT_IMAGES.FANS_COOLERS} width={130}></Img>,
     text: intl("productSubLinks.fansCoolers"),
-    path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
+    path: ROUTE_PATH.PRODUCT,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    route: 4,
+    routeId: 4,
     icon: <Img img={PRODUCT_IMAGES.PC_CASE} width={130}></Img>,
     text: intl("productSubLinks.pcCase"),
-    path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
+    path: ROUTE_PATH.PRODUCT,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    route: 5,
+    routeId: 5,
     icon: <Img img={PRODUCT_IMAGES.PSU} width={130}></Img>,
     text: intl("productSubLinks.psu"),
-    path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
+    path: ROUTE_PATH.PRODUCT,
     className: "sub-navbar-items",
   },
   {
     id: "product",
-    route: 6,
+    routeId: 6,
     icon: <Img img={PRODUCT_IMAGES.ACCESSORIES} width={130}></Img>,
     text: intl("productSubLinks.accessories"),
-    path: ROUTE_PATH.PRODUCT_CATEGORY.replace("/:categoryId", ""),
+    path: ROUTE_PATH.PRODUCT,
     className: "sub-navbar-items",
   },
 ];
