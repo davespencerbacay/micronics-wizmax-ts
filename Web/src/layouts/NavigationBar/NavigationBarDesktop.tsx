@@ -44,6 +44,7 @@ import { ColumnProps } from "reactstrap/types/lib/Col";
 
 interface INavigationBarDesktop {
   changeLanguage: (language: string) => void;
+  navRoute?: (data: number) => void;
 }
 interface INavItems {
   text: string;

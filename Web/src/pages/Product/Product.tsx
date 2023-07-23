@@ -10,20 +10,19 @@ import ProductThumbnail from "./ProductThumbnail";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
 import ScrollToTop from "library/ScrollToTop/ScrollToTop";
-import { useParams } from "react-router-dom";
+import { getRouteId } from "helpers/routeId";
 
 const Product: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
   const categoryRefLinkTitle = useRef<(HTMLDivElement | null)[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<any>(0);
-  const params = useParams();
-  console.log("PARAMETERS", params.categoryId)
+  const [selectedCategory, setSelectedCategory] = useState<any>();
+  const [selectedNavCategory, setSelectedNavCategory] = useState<any>();
+  console.log("TUMANGGAP NG PAGPASA", selectedNavCategory)
   const isMobile = useResponsive("mobile");
-  useEffect(() => {}, [isMobile, categoryRefLink, params]);
   const refLinkHandler = (index: any) => {
-    console.log("INDEXSXASXSA", index);
     if (categoryRefLink) {
       setSelectedCategory(index);
+      localStorage.setItem("routeId", JSON.stringify(0));
       console.log(categoryRefLink.current[index]);
       categoryRefLink.current[index]?.scrollIntoView({
         behavior: "smooth",
@@ -40,9 +39,22 @@ const Product: React.FC = () => {
       });
     }
   };
+
   useEffect(() => {
     setSelectedCategory;
-  }, selectedCategory);
+    setSelectedNavCategory;
+    const updateDataFromLocalStorage = () => {
+      const storedData = localStorage.getItem("routeId");
+      if (storedData) {
+        setSelectedNavCategory(JSON.parse(storedData));
+      }
+    };
+    updateDataFromLocalStorage();
+    window.addEventListener('storage', updateDataFromLocalStorage);
+    return () => {
+      window.removeEventListener('storage', updateDataFromLocalStorage);
+    };
+  }, [selectedCategory, isMobile, categoryRefLink, selectedNavCategory]);
   return (
     <>
       <ScrollToTop />
@@ -51,39 +63,87 @@ const Product: React.FC = () => {
       />
 
       {productCategories.map((cat, index) => {
-        return (
-          <React.Fragment key={cat.categoryId}>
-            {index === selectedCategory && (
-              <div className="product-container">
-                <CategoryBanner
-                  img={index === selectedCategory ? cat.img : ""}
-                  categoryRef={(refLink: any) =>
-                    (categoryRefLink.current[index] = refLink)
-                  }
-                  categoryId={index === selectedCategory ? cat.categoryId : ""}
-                />
-                <CategoryCaption
-                  name={index === selectedCategory ? cat.name : ""}
-                  text={index === selectedCategory ? cat.text : ""}
-                  catRef={(refLink: any) =>
-                    (categoryRefLinkTitle.current[index] = refLink)
-                  }
-                />
-
-                <ProductBox
-                  variants={ThemeVariants.dark}
-                  className="product-thumbnail-box"
-                >
-                  <ProductThumbnail
-                    catId={index === selectedCategory ? cat.categoryId : ""}
-                    img={index === selectedCategory ? cat.img : ""}
-                    name={index === selectedCategory ? cat.name : ""}
-                  />
-                </ProductBox>
-              </div>
-            )}
-          </React.Fragment>
-        );
+        if(index === selectedNavCategory && selectedNavCategory !== 0) {
+          return (
+            <React.Fragment key={cat.categoryId}>
+              
+  
+    <div className="product-container">
+      <CategoryBanner
+        img={index === selectedNavCategory ? cat.img : ""}
+        categoryRef={(refLink: any) =>
+          (categoryRefLink.current[index] = refLink)
+        }
+        categoryId={
+          index === selectedNavCategory ? cat.categoryId : ""
+        }
+      />
+      <CategoryCaption
+        name={index === selectedNavCategory ? cat.name : ""}
+        text={index === selectedNavCategory ? cat.text : ""}
+        catRef={(refLink: any) =>
+          (categoryRefLinkTitle.current[index] = refLink)
+        }
+      />
+  
+      <ProductBox
+        variants={ThemeVariants.dark}
+        className="product-thumbnail-box"
+      >
+        <ProductThumbnail
+          catId={index === selectedNavCategory ? cat.categoryId : ""}
+          img={index === selectedNavCategory ? cat.img : ""}
+          name={index === selectedNavCategory ? cat.name : ""}
+        />
+      </ProductBox>
+    </div>
+  
+              
+              
+            </React.Fragment>
+          );
+        }
+        if(index === selectedCategory) {
+          return (
+            <React.Fragment key={cat.categoryId}>
+              
+  
+    <div className="product-container">
+      <CategoryBanner
+        img={index === selectedCategory ? cat.img : ""}
+        categoryRef={(refLink: any) =>
+          (categoryRefLink.current[index] = refLink)
+        }
+        categoryId={
+          index === selectedCategory ? cat.categoryId : ""
+        }
+      />
+      <CategoryCaption
+        name={index === selectedCategory ? cat.name : ""}
+        text={index === selectedCategory ? cat.text : ""}
+        catRef={(refLink: any) =>
+          (categoryRefLinkTitle.current[index] = refLink)
+        }
+      />
+  
+      <ProductBox
+        variants={ThemeVariants.dark}
+        className="product-thumbnail-box"
+      >
+        <ProductThumbnail
+          catId={index === selectedCategory ? cat.categoryId : ""}
+          img={index === selectedCategory ? cat.img : ""}
+          name={index === selectedCategory ? cat.name : ""}
+        />
+      </ProductBox>
+    </div>
+  
+              
+              
+            </React.Fragment>
+          ); 
+        }
+        
       })}
       <ScrollToTopButton />
     </>
