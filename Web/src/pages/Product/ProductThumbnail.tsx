@@ -69,7 +69,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
       <Row>
         {productFilterByCategoryId.map((p: any, index: any) => {
           return (
-            <Col xs={6} sm={6} md={4} lg={3} xl={3} xxl={2} key={index}>
+            <Col xs={6} sm={6} md={4} lg={12} xl={12} xxl={12} key={index}>
               <div className="thumbnail-container" key={index}>
                 <Link to={p.path}>
                   {p.colorAvailability ? (
