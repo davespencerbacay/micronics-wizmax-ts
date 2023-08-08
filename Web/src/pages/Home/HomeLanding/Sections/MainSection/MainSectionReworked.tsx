@@ -1,25 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./MainSectionReworked.scss";
-import MainView from "./CarouselViews/MainView";
-import KeyboardView from "./CarouselViews/KeyboardView";
-import MouseView from "./CarouselViews/MouseView";
+import Button from "library/Button/Button";
+import { useNavigate } from "react-router-dom";
+import { ROUTE_PATH } from "constants/routes";
 
 const MainSectionReworked: React.FC = () => {
-  const MainSlider = () => {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const slideViews = [<MainView />];
-    //, <KeyboardView />, <MouseView />
-
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % slideViews.length);
-      }, 3000);
-    }, []);
-    return slideViews[currentSlide];
-  };
+  const navigate = useNavigate();
   return (
-    <div id="main-container" className="main-container">
-      <MainSlider />
+    <div className="main-section-container">
+      <div className="main-section-content">
+        <h2>EH1 - Mondrian</h2>
+        <p>Design that stands out. Art that stands up.</p>
+        <Button
+          onClick={() => navigate("products/CATEGORY_PCCASE/EH1-MONDRIAN")}
+        >
+          Learn More
+        </Button>
+        <div className="image-holder">
+          <img
+            src="images/micronics-assets/product-images/Keyboard-home.png"
+            alt="images/micronics-assets/product-images/Keyboard-home.png"
+          />
+        </div>
+      </div>
     </div>
   );
 };

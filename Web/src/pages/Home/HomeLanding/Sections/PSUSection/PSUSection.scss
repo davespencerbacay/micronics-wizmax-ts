@@ -1,52 +1,43 @@
 @font-face {
-  font-family: Gothic;
-  src: url("../../../../../../public/fonts/century-gothic/GOTHICB0.TTF");
-}
-
-@font-face {
   font-family: Inter;
   src: url("../../../../../../public/fonts/Inter/static/Inter-Medium.ttf");
 }
 
-.main-section-container {
+.PSUSection-container {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   background: #fff;
-  padding: 10rem 0;
+  padding: 15rem 0;
 
-  .main-section-content {
+  .PSUSection-content {
     h2 {
-      font-size: 10rem;
+      font-size: 7.3rem;
+      font-family: "Inter", sans-serif;
       font-weight: 700;
     }
     p {
-      color: #a5a5a5;
+      font-family: "Inter", sans-serif;
       font-size: 2rem;
-      font-family: "Inter";
+      margin-bottom: 4rem;
+      color: #a5a5a5;
       font-weight: 300;
-      margin-bottom: 3rem;
     }
     button {
       border-radius: 70px;
       padding: 0.7rem 1.5rem;
       font-size: 1.2rem;
       background: #15161b;
-      margin-bottom: 5rem;
-    }
-
-    .image-holder {
-      img {
-        width: 100%;
-      }
+      margin-bottom: 7rem;
     }
   }
 }
 
 @media screen and (max-width: 425px) {
-  .main-section-container {
-    .main-section-content {
+  .PSUSection-container {
+    padding: 10rem 0;
+    .PSUSection-content {
       h2 {
         font-size: 5rem;
       }
