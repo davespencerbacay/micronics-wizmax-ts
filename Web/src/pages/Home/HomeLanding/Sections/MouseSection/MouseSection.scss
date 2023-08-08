@@ -118,7 +118,20 @@
       img {
         width: 100%;
         scale: 1;
+        margin-top: 15rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mouse-section {
+    .mouse-img-container img {
+      margin-top: -15rem;
+      margin-bottom: 10rem;
+    }
+    .mouse-link-container {
+      margin-top: -8rem;
     }
   }
 }
