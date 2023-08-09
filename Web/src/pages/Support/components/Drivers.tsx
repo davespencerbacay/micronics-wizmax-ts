@@ -127,6 +127,7 @@ const Drivers: React.FC = () => {
                               <ShadowedButton
                                 onClick={() => downloadHandler(p.brochure)}
                                 disable={p.brochure ? false : true}
+                                className="shadowed-btn"
                               >
                                 Brochure
                                 <DownloadIcon />
@@ -134,6 +135,7 @@ const Drivers: React.FC = () => {
                               <ShadowedButton
                                 onClick={() => downloadHandler(p.file)}
                                 disable={p.file ? false : true}
+                                className="shadowed-btn"
                               >
                                 Driver
                                 <DownloadIcon />
@@ -141,6 +143,7 @@ const Drivers: React.FC = () => {
                               <ShadowedButton
                                 onClick={() => downloadHandler(p.manual)}
                                 disable={p.manual ? true : false}
+                                className="shadowed-btn"
                               >
                                 Manual
                                 <DownloadIcon />
