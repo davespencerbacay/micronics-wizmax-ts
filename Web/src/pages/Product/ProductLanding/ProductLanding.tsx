@@ -28,7 +28,6 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   const [slideToShow, setSlideToShow] = useState(0);
   const navigate = useNavigate();
   const isMobile = useResponsive("mobile");
-  console.log(productId);
 
   useEffect(() => {
     const singleProduct = products.find((p: any) => p.productId === productId);

@@ -10,21 +10,19 @@ import ProductThumbnail from "./ProductThumbnail";
 import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
 import ScrollToTop from "library/ScrollToTop/ScrollToTop";
-import { useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
+import url_params from "helpers/url_params";
 
 const Product: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
   const categoryRefLinkTitle = useRef<(HTMLDivElement | null)[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<any>(0);
   const params = useParams();
-  console.log("PARAMETERS", params.categoryId)
   const isMobile = useResponsive("mobile");
   useEffect(() => {}, [isMobile, categoryRefLink, params]);
   const refLinkHandler = (index: any) => {
-    console.log("INDEXSXASXSA", index);
     if (categoryRefLink) {
       setSelectedCategory(index);
-      console.log(categoryRefLink.current[index]);
       categoryRefLink.current[index]?.scrollIntoView({
         behavior: "smooth",
         block: "end",
@@ -33,16 +31,24 @@ const Product: React.FC = () => {
   };
   const refLinkTitleHandler = (index: any) => {
     if (categoryRefLinkTitle) {
-      console.log(categoryRefLinkTitle.current[index]);
       categoryRefLinkTitle.current[index]?.scrollIntoView({
         behavior: "smooth",
         block: "center",
       });
     }
   };
+
+  const search = useLocation().search;
+  const categoryId = new URLSearchParams(search).get("categoryId");
+
   useEffect(() => {
-    setSelectedCategory;
-  }, selectedCategory);
+    if (categoryId) {
+      setSelectedCategory(parseInt(categoryId ?? ""));
+    } else {
+      setSelectedCategory(0);
+    }
+  }, [categoryId]);
+
   return (
     <>
       <ScrollToTop />

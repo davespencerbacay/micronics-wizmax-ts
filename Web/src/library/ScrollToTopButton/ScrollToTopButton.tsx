@@ -8,7 +8,6 @@ const ScrollToTopButton: React.FC = () => {
   const toggleVisibility = () => {
     const scrolled = document.documentElement.scrollTop;
     const scrollHeight = document.documentElement.scrollHeight * 0.3;
-    console.log(scrollHeight);
     if (scrolled > scrollHeight) {
       setVisible(true);
     } else if (scrolled <= scrollHeight) {

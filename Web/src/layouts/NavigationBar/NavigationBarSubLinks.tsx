@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, createSearchParams, useNavigate } from "react-router-dom";
 import { Navbar, Nav, NavItem } from "reactstrap";
 import {
   IInquiryTexts,
@@ -25,6 +25,7 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
   props
 ) => {
   const [hideSubNavbar, setHideSubNavbar] = useState(false);
+  const navigate = useNavigate();
 
   const GetLinkID = () => {
     let productLink = props.subLinks?.find((link) => link.id === "product");
@@ -61,7 +62,6 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
   useEffect(() => {}, [routePath]);
   const routeHandler = (path: any) => {
     setRoutePath(path);
-    console.log(path);
     if (path === "Keyboard") {
       window.scrollTo(0, 2200);
     } else if (path === "Headset") {
@@ -95,9 +95,20 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
                       </div>
                     </Link>
                   ) : sublink.id === "product" ? (
-                    <div style={{ cursor: "normal" }}>
-                      {sublink.icon}
-                      <div>{sublink.text}</div>
+                    <div
+                      onClick={() => {
+                        navigate({
+                          pathname: "/products",
+                          search: createSearchParams({
+                            categoryId: index?.toString(),
+                          }).toString(),
+                        });
+                      }}
+                    >
+                      <Link to={sublink.path}>
+                        {sublink.icon}
+                        <div>{sublink.text}</div>
+                      </Link>
                     </div>
                   ) : (
                     // <div onClick={() => routeHandler(sublink.route)}>

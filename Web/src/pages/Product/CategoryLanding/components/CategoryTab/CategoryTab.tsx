@@ -1,16 +1,20 @@
-import { fa1, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ROUTE_PATH } from "constants/routes";
 import { productCategories } from "data/productCategories";
 import useResponsive from "hooks/useResponsive";
 import intl from "i18n/intl";
-import Img from "library/Images/Image";
-import ChevronRight from "library/Images/Navigations/ChevronArrows/ChevronRight";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import {
+  Link,
+  createSearchParams,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
 import { Nav, NavItem } from "reactstrap";
 import "./CategoryTab.scss";
+import classNames from "classnames";
 
 type CategoryTabType = {
   refLinkHandler: (any: any) => void;
@@ -18,27 +22,24 @@ type CategoryTabType = {
 
 const CategoryTab: React.FC<CategoryTabType> = (props) => {
   const isMobile = useResponsive("mobile");
-  // const [navClick, isNavClick] = useState(false);
-  // const navMobileRef = React.createRef<any>();
-  // useEffect(() => {}, [navMobileRef, navClick]);
-  // const navClickHandler = () => {
-  //   isNavClick((prevState) => !prevState);
-  //   navMobileRef.current.focus;
-  //   console.log(navMobileRef.current);
-  // };
-  // const navMobileUnfocusHandler = () => {
-  //   isNavClick(false);
-  // };
   const [showNav, setShowNav] = useState(false);
+  const [url, setUrl] = useState("");
+  useEffect(() => {
+    setUrl(location.pathname);
+  }, [location]);
+  const navigate = useNavigate();
 
   const toggleNavHandler = () => {
     setShowNav((prevState) => !prevState);
   };
+
+  const search = useLocation().search;
+  const categoryId = new URLSearchParams(search).get("categoryId");
+
   return (
     <React.Fragment>
       {isMobile ? (
         <div
-          tabIndex={0}
           className={`product-nav-mobile ${showNav ? null : "inactive"}`}
           onClick={toggleNavHandler}
           // ref={navMobileRef}
@@ -58,6 +59,9 @@ const CategoryTab: React.FC<CategoryTabType> = (props) => {
             }`}
           >
             {productCategories.map((cat, index) => {
+              const navSublinkClassnames = classNames({
+                active: index === parseInt(categoryId ?? ""),
+              });
               return (
                 <React.Fragment>
                   {
@@ -65,23 +69,20 @@ const CategoryTab: React.FC<CategoryTabType> = (props) => {
                       className="product-nav-mobile-items"
                       key={cat.categoryId}
                     >
-                      {/* <img
-                        src={cat.icon}
-                        alt={cat.icon}
-                        onClick={() => {
-                          props.refLinkHandler(index);
-                          // navMobileUnfocusHandler();
-                        }}
-                      /> */}
-
                       <p
                         onClick={() => {
                           props.refLinkHandler(index);
+                          navigate({
+                            pathname: "",
+                            search: createSearchParams({
+                              foo: "bar",
+                            }).toString(),
+                          });
                         }}
+                        className={navSublinkClassnames}
                       >
                         {cat.name}
                       </p>
-                      {/* <Link to={cat.link}>{cat.name}</Link> */}
                     </NavItem>
                   }
                 </React.Fragment>
@@ -92,12 +93,29 @@ const CategoryTab: React.FC<CategoryTabType> = (props) => {
       ) : (
         <div>
           <Nav className="nav-container" pills>
-            {productCategories.map((cat, index) => (
-              <NavItem className="nav-items" key={cat.categoryId}>
-                <p onClick={() => props.refLinkHandler(index)}>{cat.name}</p>
-                {/* <Link to={cat.link}>{cat.name}</Link> */}
-              </NavItem>
-            ))}
+            {productCategories.map((cat, index) => {
+              const navSublinkClassnames = classNames({
+                active: index === parseInt(categoryId ?? ""),
+              });
+              return (
+                <NavItem className="nav-items" key={cat.categoryId}>
+                  <p
+                    onClick={() => {
+                      props.refLinkHandler(index);
+                      navigate({
+                        pathname: "",
+                        search: createSearchParams({
+                          categoryId: index?.toString(),
+                        }).toString(),
+                      });
+                    }}
+                    className={navSublinkClassnames}
+                  >
+                    {cat.name}
+                  </p>
+                </NavItem>
+              );
+            })}
           </Nav>
           <div className="shop-now">
             {intl("productPage.checkAndShop")} &nbsp;
