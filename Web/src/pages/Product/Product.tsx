@@ -12,6 +12,8 @@ import useResponsive from "hooks/useResponsive";
 import ScrollToTop from "library/ScrollToTop/ScrollToTop";
 import { useLocation, useParams } from "react-router-dom";
 import url_params from "helpers/url_params";
+import { Helmet } from "react-helmet";
+import { COMPANY_NAME } from "../../constants";
 
 const Product: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
@@ -57,8 +59,25 @@ const Product: React.FC = () => {
       />
 
       {productCategories.map((cat, index) => {
+        const title =
+          selectedCategory === 1
+            ? "Keyboard"
+            : selectedCategory === 2
+            ? "Headset"
+            : selectedCategory === 3
+            ? "Fan & Coolers"
+            : selectedCategory === 4
+            ? "PC Case"
+            : selectedCategory === 5
+            ? "PSU"
+            : selectedCategory === 6
+            ? "Accessories"
+            : "Mouse";
         return (
           <React.Fragment key={cat.categoryId}>
+            <Helmet>
+              <title>{`${title} | ${COMPANY_NAME} `}</title>
+            </Helmet>
             {index === selectedCategory && (
               <div className="product-container">
                 <CategoryBanner

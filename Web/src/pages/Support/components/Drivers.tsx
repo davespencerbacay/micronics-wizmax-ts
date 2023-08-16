@@ -16,6 +16,8 @@ import ScrollToTopButton from "library/ScrollToTopButton/ScrollToTopButton";
 import useResponsive from "hooks/useResponsive";
 import DownloadsProcedure from "./DownloadsProcedure/DownloadsProcedure";
 import Button from "library/Button/Button";
+import { Helmet } from "react-helmet";
+import { COMPANY_NAME } from "../../../constants";
 
 const Drivers: React.FC = () => {
   const isMobile = useResponsive("mobile");
@@ -58,12 +60,7 @@ const Drivers: React.FC = () => {
 
   const scrollToCategories = () => {
     console.log("sample");
-    // if (catRef.current) {
-    //   catRef.current.scrollIntoView({
-    //     behavior: "smooth",
-    //     block: "start",
-    //   });
-    // }
+
     if (catRef.current) {
       window.scrollBy({
         top: 2750,
@@ -74,8 +71,15 @@ const Drivers: React.FC = () => {
 
   const navigate = useNavigate();
 
+  const title = "Support";
+
   return (
     <div className="support-container">
+      <>
+        <Helmet>
+          <title>{`${title} | ${COMPANY_NAME}`}</title>
+        </Helmet>
+      </>
       <Banner
         title="DOWNLOAD BROCHURES, DRIVERS, AND MANUALS"
         subTitle="Find brochures, drivers, and manuals for your Wizmax Hardware."
