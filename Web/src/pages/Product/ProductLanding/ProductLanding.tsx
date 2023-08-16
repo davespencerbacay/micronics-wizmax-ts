@@ -10,6 +10,7 @@ import Slider from "react-slick";
 import ProductBrochure from "../ProductBrochure/ProductBrochure";
 import ProductSpecifications from "../ProductSpecifications/ProductSpecifications";
 import "./ProductLanding.scss";
+import ColorBadge from "./ColorBadge";
 
 type ProductLandingType = {
   img?: string;
@@ -121,6 +122,19 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
     setNextButtonClick(false);
   };
   console.log(nextButtonClick);
+
+  const [thumbnailIndex, setThumbnailIndex] = useState(0);
+  const [colorIndex, setColorIndex] = useState<any>(0);
+
+  const colorHandler = (colorIndex: any, index: any) => {
+    console.log(index, "main", colorIndex, "color index");
+    setThumbnailIndex(index);
+    if (index === thumbnailIndex) {
+      setColorIndex(colorIndex);
+    } else {
+      setColorIndex(0);
+    }
+  };
   return (
     <React.Fragment>
       <ScrollToTop />
@@ -129,14 +143,6 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
           <Slider {...settings}>
             {product.img &&
               product.img.map((image: any, index: any) => {
-                console.log(
-                  "index",
-                  index,
-                  "image index",
-                  imageIndex,
-                  "length",
-                  product.img.length
-                );
                 return (
                   <div
                     className={
@@ -174,6 +180,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
               })}
           </Slider>
           <h3>{product.name}</h3>
+          <ColorBadge colors={product.colorAvailability} />
         </div>
         <div className="brochure-specs-btn">
           <button className={brochureBtn} onClick={brochureBtnHandler}>
