@@ -1,3 +1,5 @@
+import ADMIN_ROUTES from "./adminRoutes";
+
 /* Route */
 export const ROUTE_PATH = {
   INDEX: "/",
@@ -16,4 +18,6 @@ export const ROUTE_PATH = {
   WARRANTY_FAQ: "/warranty-faq",
   //special links
   CES: "/ces",
+
+  ...ADMIN_ROUTES,
 };
