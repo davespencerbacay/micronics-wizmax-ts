@@ -1,10 +1,11 @@
 import React from "react";
+import LoginForm from "./pages/Login/LoginForm";
 
 const Portal: React.FC = () => {
   return (
-    <>
-      <h2>Portal</h2>
-    </>
+    <div className="admin-portal-container">
+      <LoginForm />
+    </div>
   );
 };
 
