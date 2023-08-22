@@ -1,7 +1,22 @@
 {
   "dependencies": {
+    "concurrently": "^8.2.1",
     "install": "^0.13.0",
+    "nodemon": "^3.0.1",
     "npm": "^9.1.3",
     "react-bootstrap-icons": "^1.10.2"
-  }
+  },
+  "name": "micronics-wizmax-ts",
+  "description": "- Home page - Endorsing the products (3D, Animations, etc)\r - Product page - Endorsing all the products\r - Contact page - Users are able to contact or email the contact person of Micronics for any inquiries\r - Distributor page - Users are able to inquire for a partnership with the Micronics.\r - Shop page - Users are able to view all shops of Micronics nationwide\r - Internalization - Users are able to change the texts language of the application",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node Server/server.js",
+    "server": "nodemon Server/server.js",
+		"client": "npm start --prefix Web",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
