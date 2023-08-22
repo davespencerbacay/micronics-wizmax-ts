@@ -1,10 +1,10 @@
 import React from "react";
 import { Grid, TextField } from "@mui/material";
 import { Field, Formik } from "formik";
-import { FaUserAlt } from "react-icons/fa";
 import { PiHandWavingLight } from "react-icons/pi";
+import * as Yup from "yup";
 import "./LoginForm.scss";
-import { error } from "console";
+import FormikTextInput from "library/Formik/MUI/FormikTextInput";
 
 const LoginForm: React.FC = () => {
   const initialValues = {
@@ -12,6 +12,15 @@ const LoginForm: React.FC = () => {
     password: "",
     rememberMeToggle: false,
   };
+
+  const validationSchema = Yup.object().shape({
+    email: Yup.string()
+      .email("Please enter a valid email.")
+      .required("Email is required."),
+    password: Yup.string()
+      .min(8, "Password must be atleast 8 characters.")
+      .required("Password is required."),
+  });
 
   return (
     <div className="login-container">
@@ -47,6 +56,7 @@ const LoginForm: React.FC = () => {
           </div>
           <Formik
             initialValues={initialValues}
+            validationSchema={validationSchema}
             onSubmit={(data) => {
               console.log("Form Submitted");
             }}
@@ -55,26 +65,26 @@ const LoginForm: React.FC = () => {
               <form onSubmit={handleSubmit}>
                 <div className="login-form-control">
                   <label htmlFor="">Email</label>
-                  <TextField
+                  <FormikTextInput
                     name="email"
                     placeholder="Enter your Email"
                     value={values.email}
-                    onChange={handleChange}
                     onBlur={handleBlur}
                     type="email"
                     variant="outlined"
+                    error={errors.email as any}
                   />
                 </div>
                 <div className="login-form-control">
                   <label htmlFor="">Password</label>
-                  <TextField
+                  <FormikTextInput
                     name="password"
                     placeholder="Enter your Passsword"
                     value={values.password}
-                    onChange={handleChange}
                     onBlur={handleBlur}
                     type="password"
                     variant="outlined"
+                    error={errors.password as any}
                   />
                 </div>
                 <div className="login-options">

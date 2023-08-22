@@ -50,6 +50,10 @@
       flex-direction: column;
       font-family: "Roboto", sans-serif;
       margin-bottom: 2rem;
+
+      .Mui-error {
+        font-size: 1.3rem;
+      }
     }
     .login-options {
       display: flex;
@@ -90,7 +94,6 @@
       }
       &:hover {
         opacity: 0.5;
-        transition: 0.7s;
       }
     }
   }
