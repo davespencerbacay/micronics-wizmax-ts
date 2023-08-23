@@ -1,5 +1,36 @@
 import asyncHandler from "../middleware/asyncHandler.js";
 import User from "../models/userModel.js";
+import generateToken from "../utils/generateToken.js";
+
+// @desc  Login User
+// route  POST/api/users/login
+// access Private
+const authUser = asyncHandler(async (req, res) => {
+  const { email, password } = req.body;
+
+  const user = await User.findOne({ email });
+
+  if (user && (await user.matchPassword(password))) {
+    generateToken(res, user._id);
+
+    res.json({
+      _id: user._id,
+      name: user.firstName + " " + user.lastName,
+      email: user.email,
+    });
+  } else {
+    res.status(401);
+    throw new Error("Invalid Username or password!");
+  }
+});
+
+const logOutUser = asyncHandler(async (req, res) => {
+  res.cookie("jwt", "", {
+    httpOnly: true,
+    expires: new Date(0),
+  });
+  res.status(200).json({ message: "Logged out successfully." });
+});
 
 // @desc  Fetch All Users
 // route  GET/api/users
@@ -25,8 +56,35 @@ const getUserById = asyncHandler(async (req, res) => {
 // route  POST/api/users/
 // access Private
 const createUser = asyncHandler(async (req, res) => {
-  const createdUser = await User.create(req.body);
-  res.send(createdUser);
+  const { email, password, firstName, lastName, isAdmin } = req.body;
+
+  const userExist = await User.findOne({ email });
+  if (userExist) {
+    res.status(400);
+    throw new Error("User already exist");
+  }
+  const user = await User.create({
+    firstName,
+    lastName,
+    email,
+    password,
+    isAdmin,
+  });
+
+  if (user) {
+    generateToken(res, user._id);
+
+    res.status(201).json({
+      _id: user._id,
+      name: user.firstName + " " + user.lastName,
+      email: user.email,
+      password: user.password,
+      isAdmin: user.isAdmin,
+    });
+  } else {
+    res.status(400);
+    throw new Error("Invalid User Data!");
+  }
 });
 
 // @desc  Update User
@@ -34,14 +92,29 @@ const createUser = asyncHandler(async (req, res) => {
 // access Private
 const updateUserById = asyncHandler(async (req, res) => {
   try {
-    const { id } = req.params;
-    const user = await User.findByIdAndUpdate(id, req.body);
+    const user = await User.findById(req.user._id);
 
-    if (!user) {
-      res.status(404).json("[User] not Found!");
+    if (user) {
+      user.firstName = req.body.firstName || user.firstName;
+      user.lastName = req.body.lastName || user.lastName;
+      user.email = req.body.email || user.email;
+
+      if (req.body.password) {
+        user.password = req.body.password;
+      }
+
+      const updatedUser = await user.save();
+
+      res.json({
+        _id: updatedUser._id,
+        name: updatedUser.firstName + " " + updatedUser.lastName,
+        password: updatedUser.password,
+        email: updatedUser.email,
+        isAdmin: updatedUser.isAdmin,
+      });
     } else {
-      const updatedUser = await User.findById(id);
-      res.status(200).json(updatedUser);
+      res.status(404);
+      throw new Error("User not found");
     }
   } catch (error) {
     res.status(500).json({ message: `${error.message}` });
@@ -66,4 +139,12 @@ const deleteUserById = asyncHandler(async (req, res) => {
   }
 });
 
-export { getUsers, getUserById, createUser, updateUserById, deleteUserById };
+export {
+  authUser,
+  logOutUser,
+  getUsers,
+  getUserById,
+  createUser,
+  updateUserById,
+  deleteUserById,
+};
