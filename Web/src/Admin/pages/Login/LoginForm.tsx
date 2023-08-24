@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Grid, TextField } from "@mui/material";
 import { Field, Formik } from "formik";
 import { PiHandWavingLight } from "react-icons/pi";
 import * as Yup from "yup";
-import "./LoginForm.scss";
 import FormikTextInput from "library/Formik/MUI/FormikTextInput";
+import "./LoginForm.scss";
+import { Users } from "Admin/api/users";
+import ADMIN_ROUTES from "constants/adminRoutes";
+import Spinner from "library/Spinner/Spinner";
+import AlertMessage from "library/AlertMessage/Alert";
 
 const LoginForm: React.FC = () => {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
+  const navigate = useNavigate();
+
   const initialValues = {
     email: "",
     password: "",
@@ -57,12 +67,29 @@ const LoginForm: React.FC = () => {
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
-            onSubmit={(data) => {
-              console.log("Form Submitted");
+            onSubmit={async (data) => {
+              try {
+                setLoading(true);
+                const response = await Users.login(data.email, data.password);
+                const token = response.token;
+                if (token) {
+                  localStorage.setItem("token", token);
+                  navigate("/");
+                  setLoading(false);
+                }
+              } catch (error) {
+                setLoading(false);
+                setError(true);
+              }
             }}
           >
             {({ values, handleChange, handleBlur, handleSubmit, errors }) => (
               <form onSubmit={handleSubmit}>
+                {error ? (
+                  <div className="error-container">
+                    <AlertMessage message="Invalid Email or Password" />
+                  </div>
+                ) : null}
                 <div className="login-form-control">
                   <label htmlFor="">Email</label>
                   <FormikTextInput
@@ -98,13 +125,14 @@ const LoginForm: React.FC = () => {
                   <button>Login</button>
                 </div>
                 {/* Form error and values checker */}
-                {/* <pre> {JSON.stringify(values, null, 2)} </pre>
-                <pre> {JSON.stringify(errors, null, 2)} </pre> */}
+                <pre> {JSON.stringify(values, null, 2)} </pre>
+                <pre> {JSON.stringify(errors, null, 2)} </pre>
               </form>
             )}
           </Formik>
         </Grid>
       </Grid>
+      {loading ? <Spinner variant="fixed" /> : null}
     </div>
   );
 };

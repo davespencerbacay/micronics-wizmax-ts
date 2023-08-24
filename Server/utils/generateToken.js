@@ -12,6 +12,16 @@ const generateToken = (res, userId) => {
     sameSite: "strict",
     maxAge: 1 * 24 * 60 * 60 * 1000, //1day
   });
+
+  return jwt.sign(
+    {
+      userId,
+    },
+    process.env.JWT_SECRET,
+    {
+      expiresIn: "30D",
+    }
+  );
 };
 
 export default generateToken;
