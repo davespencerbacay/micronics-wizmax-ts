@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Grid, TextField } from "@mui/material";
 import { Field, Formik } from "formik";
@@ -31,6 +31,13 @@ const LoginForm: React.FC = () => {
       .min(8, "Password must be atleast 8 characters.")
       .required("Password is required."),
   });
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (token) {
+      navigate(ADMIN_ROUTES.DASHBOARD);
+    }
+  }, []);
 
   return (
     <div className="login-container">
@@ -74,7 +81,7 @@ const LoginForm: React.FC = () => {
                 const token = response.token;
                 if (token) {
                   localStorage.setItem("token", token);
-                  navigate("/");
+                  navigate(ADMIN_ROUTES.DASHBOARD);
                   setLoading(false);
                 }
               } catch (error) {
@@ -125,8 +132,8 @@ const LoginForm: React.FC = () => {
                   <button>Login</button>
                 </div>
                 {/* Form error and values checker */}
-                <pre> {JSON.stringify(values, null, 2)} </pre>
-                <pre> {JSON.stringify(errors, null, 2)} </pre>
+                {/* <pre> {JSON.stringify(values, null, 2)} </pre>
+                <pre> {JSON.stringify(errors, null, 2)} </pre> */}
               </form>
             )}
           </Formik>
