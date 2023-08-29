@@ -84,7 +84,7 @@ const LoginForm: React.FC = () => {
                 const response = await Users.login(data.email, data.password);
                 const token = response.token;
                 if (token) {
-                  localStorage.setItem("token", token);
+                  localStorage.setItem("user", JSON.stringify(response));
                   navigate(ADMIN_ROUTES.DASHBOARD);
                   setLoading(false);
                 }

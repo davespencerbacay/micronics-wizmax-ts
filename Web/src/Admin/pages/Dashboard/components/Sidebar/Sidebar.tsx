@@ -10,7 +10,6 @@ import {
   SidebarContent,
 } from "react-pro-sidebar";
 import {
-  FaUser,
   FaAngleDoubleLeft,
   FaAngleDoubleRight,
   FaTachometerAlt,
@@ -19,6 +18,7 @@ import {
   FaRegLaughWink,
   FaHeart,
 } from "react-icons/fa";
+import { BsGlobe } from "react-icons/bs";
 import "./Sidebar.scss";
 import ADMIN_ROUTES from "constants/adminRoutes";
 
@@ -31,7 +31,7 @@ const Sidebar: React.FC = () => {
       collapsed={collapsed}
       toggled={toggled}
       onToggle={() => setToggled(true)}
-      breakPoint="md"
+      breakPoint="sm"
     >
       {/* Header */}
       <SidebarHeader>
@@ -68,6 +68,54 @@ const Sidebar: React.FC = () => {
             Dashboard
             <NavLink to={ADMIN_ROUTES.DASHBOARD} />
           </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
+          <MenuItem icon={<FaTachometerAlt />}>
+            Dashboard
+            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          </MenuItem>
           {/* <MenuItem icon={<FaGem />}>Components </MenuItem> */}
           <MenuItem icon={<FaGem />}>
             Components <Link to="/components" />
@@ -97,11 +145,19 @@ const Sidebar: React.FC = () => {
         <div className="sidebar-btn-wrapper" style={{ padding: "16px" }}>
           <Link
             className="sidebar-btn"
-            style={{ cursor: "pointer" }}
-            to="/profile"
+            style={{ cursor: "pointer", color: "#fff" }}
+            to={"/"}
           >
-            <FaUser />
-            <span>My Account</span>
+            <BsGlobe />
+            <span
+              style={{
+                color: "#cfc1db",
+                marginLeft: "1rem",
+                fontWeight: "300",
+              }}
+            >
+              Wizmax Global Website
+            </span>
           </Link>
         </div>
       </SidebarFooter>
