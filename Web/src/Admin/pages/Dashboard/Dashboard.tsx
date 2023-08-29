@@ -1,23 +1,19 @@
 import React from "react";
-import { Container, Grid } from "@mui/material";
-import "./Dashboard.scss";
+import { Grid } from "@mui/material";
 import Sidebar from "./components/Sidebar/Sidebar";
+import "./Dashboard.scss";
 
 const Dashboard: React.FC = () => {
   return (
     <div className="dashboard-container">
-      <Grid container spacing={2}>
-        <Grid item md={3}>
+      <Grid container spacing={1}>
+        <Grid item md={2}>
           <div className="dashboard-sidebar">
-            <aside>
-              <Sidebar />
-            </aside>
+            <Sidebar />
           </div>
         </Grid>
-        <Grid item md={9}>
-          <Container>
-            <div className="dashboard-main-container">main</div>
-          </Container>
+        <Grid item md={10}>
+          <div className="dashboard-main-container">main</div>
         </Grid>
       </Grid>
     </div>
