@@ -11,6 +11,7 @@ import ProductLanding from "pages/Product/ProductLanding/ProductLanding";
 import Manuals from "pages/Support/components/Manuals";
 import Ces from "pages/Special/ces";
 import WarrantyFaq from "pages/Policy/WarrantyFaq";
+import InvalidRoute from "pages/InvalidRoute/InvalidRoute";
 
 /* Change context consts */
 export const STORAGE_KEY: Record<string, string> = {
@@ -114,6 +115,10 @@ export const REACT_ROUTES: ReactRoutesType[] = [
   {
     PATH: ROUTE_PATH.WARRANTY_FAQ,
     ELEMENT: <PageWrapper component={<WarrantyFaq />} />,
+  },
+  {
+    PATH: ROUTE_PATH.NOTFOUND,
+    ELEMENT: <PageWrapper component={<InvalidRoute />} />,
   },
 ];
 

@@ -16,4 +16,5 @@ export const ROUTE_PATH = {
   WARRANTY_FAQ: "/warranty-faq",
   //special links
   CES: "/ces",
+  NOTFOUND: "*",
 };
