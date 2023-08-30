@@ -10,11 +10,13 @@ import { Users } from "Admin/api/users";
 import ADMIN_ROUTES from "constants/adminRoutes";
 import Spinner from "library/Spinner/Spinner";
 import AlertMessage from "library/AlertMessage/Alert";
+import useIsLoggedIn from "hooks/useIsLoggedIn";
 
 const LoginForm: React.FC = () => {
+  const isLoggedIn = useIsLoggedIn();
+  const [isRendered, setIsRendered] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-
   const navigate = useNavigate();
 
   const initialValues = {
@@ -33,11 +35,13 @@ const LoginForm: React.FC = () => {
   });
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
-    if (token) {
-      navigate(ADMIN_ROUTES.DASHBOARD);
-    }
-  }, []);
+    setTimeout(() => {
+      if (isLoggedIn) {
+        navigate(ADMIN_ROUTES.DASHBOARD);
+      }
+      setIsRendered(true);
+    }, 1000);
+  }, [isLoggedIn]);
 
   return (
     <div className="login-container">
@@ -80,7 +84,7 @@ const LoginForm: React.FC = () => {
                 const response = await Users.login(data.email, data.password);
                 const token = response.token;
                 if (token) {
-                  localStorage.setItem("token", token);
+                  localStorage.setItem("user", JSON.stringify(response));
                   navigate(ADMIN_ROUTES.DASHBOARD);
                   setLoading(false);
                 }
@@ -139,7 +143,7 @@ const LoginForm: React.FC = () => {
           </Formik>
         </Grid>
       </Grid>
-      {loading ? <Spinner variant="fixed" /> : null}
+      {loading || !isRendered ? <Spinner variant="fixed" /> : null}
     </div>
   );
 };

@@ -44,6 +44,7 @@ const Users = {
 
     return response;
   },
+  getUserById: (userId: string) => requests.get(`/api/users/${userId}`),
 };
 
 export { Users };
