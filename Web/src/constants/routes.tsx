@@ -20,4 +20,5 @@ export const ROUTE_PATH = {
   CES: "/ces",
 
   ...ADMIN_ROUTES,
+  NOTFOUND: "*",
 };
