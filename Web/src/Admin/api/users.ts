@@ -1,4 +1,4 @@
-import { UserLoginData } from "Admin/models/userModel";
+import { UserLoginData, UsersData } from "Admin/models/userModel";
 import axios, { AxiosResponse } from "axios";
 import getUserToken from "helpers/getUserToken";
 
@@ -20,7 +20,10 @@ axios.interceptors.response.use(async (response) => {
 
 axios.interceptors.request.use((config) => {
   const token = getUserToken();
-  if (token && config.headers) config.headers.Authorization = `Bearer ${token}`;
+  if (token && config.headers) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+
   return config;
 });
 
@@ -35,7 +38,10 @@ const requests = {
 };
 
 const Users = {
-  getUsers: () => requests.get("/api/users"),
+  getUsers: async () => {
+    const response = await requests.get<UsersData[] | undefined>("/api/users");
+    return response;
+  },
   login: async (email: string, password: string) => {
     const response = await requests.post<UserLoginData>("/api/users/login", {
       email,

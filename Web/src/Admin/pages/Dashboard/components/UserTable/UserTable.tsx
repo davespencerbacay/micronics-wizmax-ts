@@ -1,52 +1,67 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-
 import "./UserTable.scss";
+import Spinner from "library/Spinner/Spinner";
+import { Users } from "Admin/api/users";
+import { UsersData } from "Admin/models/userModel";
 
 const UserTable: React.FC = () => {
+  const [users, setUsers] = useState<UsersData[] | undefined>();
+  const [loading, setLoading] = useState(false);
+
+  // Fetch All Users Function
+  useEffect(() => {
+    setLoading(true);
+    const getUsers = async () => {
+      const response = await Users.getUsers();
+      setUsers(response);
+      setLoading(false);
+    };
+
+    getUsers();
+  }, []);
+
   const columns: GridColDef[] = [
     { field: "id", headerName: "ID", width: 90 },
     {
-      field: "firstName",
-      headerName: "First name",
+      field: "fullName",
+      headerName: "Fullname",
       width: 150,
       editable: true,
     },
     {
-      field: "lastName",
+      field: "email",
       headerName: "Last name",
       width: 150,
       editable: true,
     },
-
     {
-      field: "fullName",
-      headerName: "Full name",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 160,
-      valueGetter: (params: GridValueGetterParams) =>
-        `${params.row.firstName || ""} ${params.row.lastName || ""}`,
+      field: "dateCreated",
+      headerName: "Date Created",
+      width: 150,
+      editable: true,
     },
   ];
 
-  const rows = [
-    { id: 1, lastName: "Snow", firstName: "Jon" },
-    { id: 2, lastName: "Lannister", firstName: "Cersei" },
-    { id: 3, lastName: "Lannister", firstName: "Jaime" },
-    { id: 4, lastName: "Stark", firstName: "Arya" },
-    { id: 5, lastName: "Targaryen", firstName: "Daenerys" },
-    { id: 6, lastName: "Melisandre", firstName: "Frederic" },
-    { id: 7, lastName: "Clifford", firstName: "Ferrara" },
-    { id: 8, lastName: "Frances", firstName: "Rossini" },
-    { id: 9, lastName: "Roxie", firstName: "Harvey" },
-  ];
+  const rows = users?.map((user) => {
+    return {
+      id: user._id,
+      fullName: user.firstName + " " + user.lastName,
+      email: user.email,
+      dateCreated: user.createdAt,
+    };
+  });
+
+  if (loading) {
+    return <Spinner variant="fixed" />;
+  }
+
   return (
     <div>
       <Box sx={{ height: 400, width: "100%" }}>
         <DataGrid
-          rows={rows}
+          rows={rows || []}
           columns={columns}
           initialState={{
             pagination: {

@@ -5,14 +5,23 @@ import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js";
 import cookieParser from "cookie-parser";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
-
-// Environment Variables
-const PORT = process.env.PORT;
+import cors from "cors";
 
 // Connect to Mongo Data Base
 connectDB();
 
+// Environment Variables
+const PORT = process.env.PORT;
+
 const app = express();
+
+// CORS
+const corsOptions = {
+  origin: "*",
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
