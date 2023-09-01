@@ -44,7 +44,7 @@ const Dashboard: React.FC = () => {
           </div>
         </Grid>
         <Grid item sm={10}>
-          <div className="dashboard-main-container">
+          <div className="dashboard-main-content-container">
             <div className="header-panel-container">
               <button onClick={handleClick}>
                 <AvatarSetter name={userName} />
@@ -68,10 +68,7 @@ const Dashboard: React.FC = () => {
             </div>
             <Grid container spacing={2} sx={{ marginTop: "1rem" }}>
               <Grid item md={6}>
-                <Card
-                  title="Most Recent Users"
-                  subtitle="This is list of all users."
-                >
+                <Card title="Most Recent Users" subtitle=" List of all users.">
                   <div className="user-table-container">
                     <UserTable />
                   </div>

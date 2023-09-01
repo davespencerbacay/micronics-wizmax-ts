@@ -1,0 +1,17 @@
+.user-table-container {
+  .MuiDataGrid-columnHeader {
+    font-size: 1.5rem;
+    font-family: "Public Sans", sans-serif, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .MuiDataGrid-cellContent {
+    font-size: 1.3rem;
+    font-family: "Public Sans", sans-serif, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  .MuiTablePagination-displayedRows {
+    font-size: 1.3rem;
+  }
+}

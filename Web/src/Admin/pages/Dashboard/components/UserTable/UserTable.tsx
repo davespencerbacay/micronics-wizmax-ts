@@ -2,6 +2,8 @@ import React from "react";
 import Box from "@mui/material/Box";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 
+import "./UserTable.scss";
+
 const UserTable: React.FC = () => {
   const columns: GridColDef[] = [
     { field: "id", headerName: "ID", width: 90 },
@@ -17,13 +19,7 @@ const UserTable: React.FC = () => {
       width: 150,
       editable: true,
     },
-    {
-      field: "age",
-      headerName: "Age",
-      type: "number",
-      width: 110,
-      editable: true,
-    },
+
     {
       field: "fullName",
       headerName: "Full name",
@@ -36,15 +32,15 @@ const UserTable: React.FC = () => {
   ];
 
   const rows = [
-    { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
-    { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
-    { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-    { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-    { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: 16 },
-    { id: 6, lastName: "Melisandre", firstName: "Frederic", age: 150 },
-    { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-    { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-    { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
+    { id: 1, lastName: "Snow", firstName: "Jon" },
+    { id: 2, lastName: "Lannister", firstName: "Cersei" },
+    { id: 3, lastName: "Lannister", firstName: "Jaime" },
+    { id: 4, lastName: "Stark", firstName: "Arya" },
+    { id: 5, lastName: "Targaryen", firstName: "Daenerys" },
+    { id: 6, lastName: "Melisandre", firstName: "Frederic" },
+    { id: 7, lastName: "Clifford", firstName: "Ferrara" },
+    { id: 8, lastName: "Frances", firstName: "Rossini" },
+    { id: 9, lastName: "Roxie", firstName: "Harvey" },
   ];
   return (
     <div>
