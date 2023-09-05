@@ -3,6 +3,7 @@ const ADMIN_ROUTES = {
   DASHBOARD: "/dashboard/",
   PROFILE: "/profile",
   CALENDARS: "/calendars",
+  USERS: "/users",
 };
 
 export default ADMIN_ROUTES;

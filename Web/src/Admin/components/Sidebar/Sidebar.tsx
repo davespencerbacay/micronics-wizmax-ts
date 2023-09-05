@@ -17,6 +17,7 @@ import {
   FaList,
   FaRegLaughWink,
   FaHeart,
+  FaUsers,
 } from "react-icons/fa";
 import { BsGlobe } from "react-icons/bs";
 import "./Sidebar.scss";
@@ -68,53 +69,9 @@ const Sidebar: React.FC = () => {
             Dashboard
             <NavLink to={ADMIN_ROUTES.DASHBOARD} />
           </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
-          </MenuItem>
-          <MenuItem icon={<FaTachometerAlt />}>
-            Dashboard
-            <NavLink to={ADMIN_ROUTES.DASHBOARD} />
+          <MenuItem icon={<FaUsers />}>
+            Users
+            <NavLink to={ADMIN_ROUTES.USERS} />
           </MenuItem>
           {/* <MenuItem icon={<FaGem />}>Components </MenuItem> */}
           <MenuItem icon={<FaGem />}>
