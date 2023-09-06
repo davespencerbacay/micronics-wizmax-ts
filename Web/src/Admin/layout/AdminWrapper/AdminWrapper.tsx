@@ -17,13 +17,15 @@ const AdminWrapper: React.FC<AdminWrapperProps> = (props) => {
             <Sidebar />
           </aside>
         </Grid>
-        <Grid item md={10}>
-          <nav className="top-nav">
-            <TopNavBar />
-          </nav>
+        <Grid item md={10} className="right-col-content-wrapper">
+          <div className="right-col-content-container">
+            <nav className="top-nav">
+              <TopNavBar />
+            </nav>
+            <main className="adminWrapper-content">{props.children}</main>
+          </div>
         </Grid>
       </Grid>
-      <main className="AdminWrapper-content">{props.children}</main>
     </div>
   );
 };
