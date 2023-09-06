@@ -2,14 +2,15 @@ import React from "react";
 import TopNavBar from "./components/TopNavBar";
 import Sidebar from "Admin/components/Sidebar/Sidebar";
 import { Grid } from "@mui/material";
+import "./AdminWrapper.scss";
 
-interface WrapperProps {
+interface AdminWrapperProps {
   children: React.ReactNode;
 }
 
-const Wrapper: React.FC<WrapperProps> = (props) => {
+const AdminWrapper: React.FC<AdminWrapperProps> = (props) => {
   return (
-    <div className="wrapper-container">
+    <div className="adminWrapper-container">
       <Grid container spacing={2}>
         <Grid item md={2}>
           <aside className="sidebar-container">
@@ -22,9 +23,9 @@ const Wrapper: React.FC<WrapperProps> = (props) => {
           </nav>
         </Grid>
       </Grid>
-      <main className="wrapper-content">{props.children}</main>
+      <main className="AdminWrapper-content">{props.children}</main>
     </div>
   );
 };
 
-export default Wrapper;
+export default AdminWrapper;

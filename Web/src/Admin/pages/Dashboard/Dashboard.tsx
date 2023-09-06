@@ -1,12 +1,12 @@
-import Wrapper from "Admin/layout/Wrapper/Wrapper";
 import React from "react";
+import AdminWrapper from "Admin/layout/AdminWrapper/AdminWrapper";
 
-const Dashboard = () => {
+const Dashboard: React.FC = () => {
   return (
     <div>
-      <Wrapper>
+      <AdminWrapper>
         <h1>hello</h1>
-      </Wrapper>
+      </AdminWrapper>
     </div>
   );
 };

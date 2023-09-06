@@ -1,0 +1,13 @@
+.adminWrapper-container {
+  background: #eee;
+  .sidebar-container {
+    height: 100vh;
+  }
+  .top-nav {
+    background: #fff;
+    padding: 1rem;
+    margin: 2rem 8rem 2rem 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
