@@ -1,24 +1,5 @@
 .dashboard-container {
-  height: 100vh;
-  background: #eee;
-
-  .dashboard-sidebar {
-    height: 100vh;
-  }
-  .dashboard-main-content-container {
-    margin-right: 6rem;
+  .user-table-container {
     margin-top: 2rem;
-
-    .header-panel-container {
-      padding: 1rem 2rem;
-      background: #fff;
-      display: flex;
-      justify-content: flex-end;
-
-      button {
-        border: none;
-        background: none;
-      }
-    }
   }
 }
