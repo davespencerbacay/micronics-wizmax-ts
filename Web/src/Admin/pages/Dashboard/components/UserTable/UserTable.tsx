@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import "./UserTable.scss";
 import Spinner from "library/Spinner/Spinner";
-import { Users } from "Admin/api/users";
+import { Users } from "Admin/api/agent";
 import { UsersData } from "Admin/models/userModel";
 
 const UserTable: React.FC = () => {

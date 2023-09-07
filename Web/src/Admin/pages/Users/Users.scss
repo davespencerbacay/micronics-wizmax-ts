@@ -1,0 +1,39 @@
+.user-page-container {
+  margin-top: 2rem;
+
+  .add-user-btn {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1.3rem;
+      color: #fff;
+      border: none;
+      box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #eee;
+      background: #5783db;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.MuiBox-root {
+  padding: 2rem;
+
+  h3 {
+    font-size: 1.7rem;
+    font-family: "Roboto", sans-serif;
+    color: #5783db !important;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+
+  .form-control-user {
+    label {
+      font-size: 1.7rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 600;
+      color: #5e5757;
+    }
+  }
+}

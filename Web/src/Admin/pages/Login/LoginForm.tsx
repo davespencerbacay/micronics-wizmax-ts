@@ -6,7 +6,7 @@ import { PiHandWavingLight } from "react-icons/pi";
 import * as Yup from "yup";
 import FormikTextInput from "library/Formik/MUI/FormikTextInput";
 import "./LoginForm.scss";
-import { Users } from "Admin/api/users";
+import { Users } from "Admin/api/agent";
 import ADMIN_ROUTES from "constants/adminRoutes";
 import Spinner from "library/Spinner/Spinner";
 import AlertMessage from "library/AlertMessage/Alert";
