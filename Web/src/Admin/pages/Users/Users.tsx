@@ -80,7 +80,7 @@ const Users: React.FC = () => {
 												<label htmlFor="firstName">First Name</label>
 												<FormikTextInput
 													name="firstName"
-													placeholder="Enter your Last Name"
+													placeholder="Enter your First Name"
 												/>
 											</div>
 											<div className="form-control-user">
