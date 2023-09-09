@@ -9,6 +9,7 @@ import List from "@mui/material/List";
 import { Formik, Form } from "formik";
 import * as yup from "yup";
 import FormikTextInput from "library/Formik/MUI/FormikTextInput";
+import { toast } from "react-toastify";
 import "./Users.scss";
 
 type Anchor = "right";
@@ -41,7 +42,10 @@ const Users: React.FC = () => {
 		const validationSchema = yup.object({
 			firstName: yup.string().required("This field is required").max(20),
 			lastName: yup.string().required("This field is required").max(20),
-			email: yup.string().required("This field is required"),
+			email: yup
+				.string()
+				.email("This is not an email.")
+				.required("This field is required"),
 		});
 
 		return (
@@ -65,6 +69,13 @@ const Users: React.FC = () => {
 								}}
 							>
 								{({ values, errors, isSubmitting, handleReset }) => {
+									let disabled =
+										values.email === "" ||
+										values.firstName === "" ||
+										values.lastName === "";
+
+									console.log(disabled);
+
 									return (
 										<Form>
 											<div className="form-control-user">
@@ -97,8 +108,9 @@ const Users: React.FC = () => {
 												</button>
 												<button
 													type="submit"
-													disabled={isSubmitting}
+													disabled={isSubmitting || disabled}
 													className="form-action-btn submit-btn"
+													onClick={() => toast.success("Form Submitted.")}
 												>
 													Add
 												</button>
