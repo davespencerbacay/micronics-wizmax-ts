@@ -74,8 +74,6 @@ const Users: React.FC = () => {
 										values.firstName === "" ||
 										values.lastName === "";
 
-									console.log(disabled);
-
 									return (
 										<Form>
 											<div className="form-control-user">
