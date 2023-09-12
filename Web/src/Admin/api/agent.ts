@@ -68,6 +68,8 @@ const Users = {
     });
     return response;
   },
+  deleteUser: async (userId: string) =>
+    await requests.del(`http://localhost:5000/api/users/${userId}`),
 };
 
 export { Users };

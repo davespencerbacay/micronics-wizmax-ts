@@ -14,10 +14,7 @@ type Anchor = "right";
 const Users: React.FC = () => {
   const [loading, setLoading] = useState(false);
 
-  const [state, setState] = React.useState({
-    top: false,
-    left: false,
-    bottom: false,
+  const [state, setState] = useState({
     right: false,
   });
 

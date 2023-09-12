@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-import "./UserTable.scss";
+import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import Spinner from "library/Spinner/Spinner";
 import { Users } from "Admin/api/agent";
 import { UsersData } from "Admin/models/userModel";
+import "./UserTable.scss";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const UserTable: React.FC = () => {
   const [users, setUsers] = useState<UsersData[] | undefined>();
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
   // Fetch All Users Function
   useEffect(() => {
@@ -28,21 +32,36 @@ const UserTable: React.FC = () => {
       field: "fullName",
       headerName: "Fullname",
       width: 150,
-      editable: true,
+      editable: false,
     },
     {
       field: "email",
-      headerName: "Last name",
+      headerName: "Email",
       width: 150,
-      editable: true,
+      editable: false,
     },
     {
       field: "dateCreated",
       headerName: "Date Created",
-      width: 150,
-      editable: true,
+      width: 800,
+      editable: false,
+    },
+    {
+      field: "actions",
+      headerName: "Actions",
+      width: 200,
+      renderCell: (params) => params.value,
+      headerAlign: "center",
+      align: "center",
     },
   ];
+
+  const deleteUserHandler = async (userId: string) => {
+    setLoading(true);
+    await Users.deleteUser(userId);
+    toast.success("User successfully Deleted");
+    setLoading(false);
+  };
 
   const rows = users?.map((user) => {
     return {
@@ -50,6 +69,17 @@ const UserTable: React.FC = () => {
       fullName: user.firstName + " " + user.lastName,
       email: user.email,
       dateCreated: user.createdAt,
+      actions: (
+        <div className="grid-actions-btn">
+          <button className="edit-btn">Edit</button>
+          <button
+            className="delete-btn"
+            onClick={() => deleteUserHandler(user._id)}
+          >
+            Delete
+          </button>
+        </div>
+      ),
     };
   });
 
@@ -71,7 +101,6 @@ const UserTable: React.FC = () => {
             },
           }}
           pageSizeOptions={[5]}
-          checkboxSelection
           disableRowSelectionOnClick
         />
       </Box>
