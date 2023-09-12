@@ -84,8 +84,7 @@ const createUser = asyncHandler(async (req, res) => {
       _id: user._id,
       name: user.firstName + " " + user.lastName,
       email: user.email,
-      password: user.password,
-      isAdmin: user.isAdmin,
+      createdAt: user.createdAt,
     });
   } else {
     res.status(400);
@@ -103,6 +102,7 @@ const updateUserById = asyncHandler(async (req, res) => {
       user.firstName = req.body.firstName || user.firstName;
       user.lastName = req.body.lastName || user.lastName;
       user.email = req.body.email || user.email;
+      user.isAdmin = req.body.isAdmin || user.isAdmin;
 
       if (req.body.password) {
         user.password = req.body.password;
