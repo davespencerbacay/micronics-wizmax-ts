@@ -70,6 +70,21 @@ const Users = {
   },
   deleteUser: async (userId: string) =>
     await requests.del(`http://localhost:5000/api/users/${userId}`),
+  updateUser: async (
+    userId: string,
+    firstName: string,
+    lastName: string,
+    email: string,
+    password: string,
+    isAdmin: boolean
+  ) =>
+    requests.put(`http://localhost:5000/api/users/${userId}`, {
+      firstName,
+      lastName,
+      email,
+      password,
+      isAdmin,
+    }),
 };
 
 export { Users };

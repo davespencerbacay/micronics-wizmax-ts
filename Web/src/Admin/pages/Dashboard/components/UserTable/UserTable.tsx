@@ -4,15 +4,16 @@ import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import Spinner from "library/Spinner/Spinner";
 import { Users } from "Admin/api/agent";
 import { UsersData } from "Admin/models/userModel";
-import "./UserTable.scss";
-import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import "./UserTable.scss";
+import { Drawer, List } from "@mui/material";
+import EditUser from "Admin/pages/Users/components/EditUser";
+
+type Anchor = "right";
 
 const UserTable: React.FC = () => {
   const [users, setUsers] = useState<UsersData[] | undefined>();
   const [loading, setLoading] = useState(false);
-
-  const navigate = useNavigate();
 
   // Fetch All Users Function
   useEffect(() => {
@@ -63,6 +64,35 @@ const UserTable: React.FC = () => {
     setLoading(false);
   };
 
+  // Edit User Function
+  const [state, setState] = useState({
+    right: false,
+  });
+
+  const toggleDrawer =
+    (anchor: Anchor, open: boolean) =>
+    (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === "keydown" &&
+        ((event as React.KeyboardEvent).key === "Tab" ||
+          (event as React.KeyboardEvent).key === "Shift")
+      ) {
+        return;
+      }
+
+      setState({ ...state, [anchor]: open });
+    };
+
+  const list = (anchor: Anchor) => {
+    return (
+      <Box sx={{ width: 400 }} role="presentation">
+        <List>
+          <EditUser />
+        </List>
+      </Box>
+    );
+  };
+
   const rows = users?.map((user) => {
     return {
       id: user._id,
@@ -71,7 +101,17 @@ const UserTable: React.FC = () => {
       dateCreated: user.createdAt,
       actions: (
         <div className="grid-actions-btn">
-          <button className="edit-btn">Edit</button>
+          <button className="edit-btn" onClick={toggleDrawer("right", true)}>
+            Edit
+          </button>
+          <Drawer
+            anchor="right"
+            open={state["right"]}
+            onClose={toggleDrawer("right", false)}
+          >
+            {list("right")}
+          </Drawer>
+
           <button
             className="delete-btn"
             onClick={() => deleteUserHandler(user._id)}

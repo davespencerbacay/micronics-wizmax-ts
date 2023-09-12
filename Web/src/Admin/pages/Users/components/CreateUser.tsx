@@ -60,21 +60,21 @@ const CreateUser: React.FC = () => {
                     <label htmlFor="firstName">First Name</label>
                     <FormikTextInput
                       name="firstName"
-                      placeholder="Enter your First Name"
+                      placeholder="Enter user First Name"
                     />
                   </div>
                   <div className="form-control-user">
                     <label htmlFor="lastName">Last Name</label>
                     <FormikTextInput
                       name="lastName"
-                      placeholder="Enter your Last Name"
+                      placeholder="Enter user Last Name"
                     />
                   </div>
                   <div className="form-control-user">
                     <label htmlFor="email">Email</label>
                     <FormikTextInput
                       name="email"
-                      placeholder="Enter your Email"
+                      placeholder="Enter user Email"
                     />
                   </div>
                   <div className="form-control-user">
