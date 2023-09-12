@@ -66,7 +66,7 @@ const UserTable: React.FC = () => {
           initialState={{
             pagination: {
               paginationModel: {
-                pageSize: 5,
+                pageSize: 20,
               },
             },
           }}

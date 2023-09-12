@@ -2,7 +2,7 @@ import Dashboard from "Admin/pages/Dashboard/Dashboard";
 import { ROUTE_PATH } from "./routes";
 import Portal from "Admin/Portal";
 import GuardedWrapper from "Admin/layout/GuardedWrapper/GuardedWrapper";
-import Users from "Admin/pages/Users/Users";
+import UserPage from "Admin/pages/Users/UserPage";
 
 const ADMIN_REACT_ROUTES = [
   {
@@ -21,7 +21,7 @@ const ADMIN_REACT_ROUTES = [
     PATH: ROUTE_PATH.USERS,
     ELEMENT: (
       <GuardedWrapper>
-        <Users />
+        <UserPage />
       </GuardedWrapper>
     ),
   },

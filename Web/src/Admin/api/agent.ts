@@ -50,7 +50,24 @@ const Users = {
 
     return response;
   },
-  getUserById: (userId: string) => requests.get(`/api/users/${userId}`),
+  getUserById: (userId: string) =>
+    requests.get<UsersData>(`/api/users/${userId}`),
+  createUser: async (
+    firstName: string,
+    lastName: string,
+    email: string,
+    password: string,
+    isAdmin: boolean
+  ) => {
+    const response = await requests.post("http://localhost:5000/api/users/", {
+      firstName,
+      lastName,
+      email,
+      password,
+      isAdmin,
+    });
+    return response;
+  },
 };
 
 export { Users };
