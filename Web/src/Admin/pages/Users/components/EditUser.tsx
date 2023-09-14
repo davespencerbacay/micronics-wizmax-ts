@@ -1,107 +1,139 @@
-import { Formik, Field, Form } from "formik";
+import React, { useEffect, useState } from "react";
+import { Users } from "Admin/api/agent";
+import { Form, Formik } from "formik";
 import FormikTextInput from "library/Formik/FormikInput";
-import React from "react";
 import { toast } from "react-toastify";
-import { Users as UserApiService } from "../../../api/agent";
+import { Checkbox } from "@mui/material";
+import Spinner from "library/Spinner/Spinner";
 import * as yup from "yup";
 
-const EditUser: React.FC = () => {
-  const validationSchema = yup.object({
-    firstName: yup.string().max(20),
-    lastName: yup.string().max(20),
-    email: yup.string().email("This is not an email."),
-    password: yup.string().max(20, "Password too long."),
-  });
-  return (
-    <React.Fragment>
-      <h3>Edit User</h3>
-      <Formik
-        validateOnChange={true}
-        initialValues={{
-          firstName: "",
-          lastName: "",
-          email: "",
-          password: "",
-          isAdmin: false,
-        }}
-        validationSchema={validationSchema}
-        onSubmit={async (data, { setSubmitting }) => {
-          setSubmitting(true);
-          const response = await UserApiService.updateUser(
-            "",
-            data.firstName,
-            data.lastName,
-            data.email,
-            data.password,
-            data.isAdmin
-          );
-          console.log(response);
-          setSubmitting(false);
-        }}
-      >
-        {({ values, errors, isSubmitting, handleReset }) => {
-          let disabled =
-            values.email === "" ||
-            values.firstName === "" ||
-            values.lastName === "" ||
-            values.isAdmin === null ||
-            values.password === "";
+interface EditUserProps {
+  id?: string;
+}
 
-          return (
-            <Form>
-              <div className="form-control-user">
-                <label htmlFor="firstName">First Name</label>
-                <FormikTextInput
-                  name="firstName"
-                  placeholder="Enter user First Name"
-                />
-              </div>
-              <div className="form-control-user">
-                <label htmlFor="lastName">Last Name</label>
-                <FormikTextInput
-                  name="lastName"
-                  placeholder="Enter user Last Name"
-                />
-              </div>
-              <div className="form-control-user">
-                <label htmlFor="email">Email</label>
-                <FormikTextInput name="email" placeholder="Enter user Email" />
-              </div>
-              <div className="form-control-user">
-                <label htmlFor="email">Password</label>
-                <FormikTextInput
-                  name="password"
-                  placeholder="Enter user password"
-                />
-              </div>
-              <div className="form-control-user checkbox">
-                <Field type="checkbox" name="isAdmin" />
-                <label htmlFor="email">Is admin?</label>
-              </div>
-              <div className="form-action-btn-container">
-                <button
-                  onClick={handleReset}
-                  className="form-action-btn reset-btn"
-                >
-                  Reset
-                </button>
-                <button
-                  type="submit"
-                  disabled={isSubmitting || disabled}
-                  className="form-action-btn submit-btn"
-                  onClick={() => toast.success("User sucessfully edited.")}
-                >
-                  Edit
-                </button>
-              </div>
-              {/* Uncomment this one if on testing */}
-              <pre>{JSON.stringify(values, null, 2)}</pre>
-              <pre>{JSON.stringify(errors, null, 2)}</pre>
-            </Form>
-          );
-        }}
-      </Formik>
-    </React.Fragment>
+const EditUser: React.FC<EditUserProps> = (props) => {
+  const [loading, setLoading] = useState(false);
+  const [initialValues, setInitialValues] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    isAdmin: false,
+    password: "",
+  });
+
+  useEffect(() => {
+    const getUser = async () => {
+      setLoading(true);
+      const user = await Users.getUserById(props.id ?? "");
+      if (user.email) {
+        setInitialValues({
+          firstName: user.firstName,
+          lastName: user.lastName,
+          email: user.email,
+          isAdmin: user.isAdmin,
+          password: user.password,
+        });
+        setLoading(false);
+      }
+    };
+
+    getUser();
+  }, [props.id]);
+
+  const validationSchema = yup.object({
+    firstName: yup.string().min(2, "This Field must be atleast 2 characters"),
+    email: yup.string().email("This is not an email."),
+  });
+
+  return (
+    <div>
+      {loading ? (
+        <Spinner variant="relative" />
+      ) : (
+        <React.Fragment>
+          <h3>Edit User</h3>
+          <Formik
+            initialValues={initialValues}
+            validateOnChange
+            validationSchema={validationSchema}
+            onSubmit={async (data) => {
+              setLoading(true);
+              const editUser = await Users.updateUser(
+                props.id ?? "",
+                data.firstName,
+                data.lastName,
+                data.email,
+                data.password,
+                data.isAdmin
+              );
+              setLoading(false);
+            }}
+            enableReinitialize
+          >
+            {({ handleReset, values, errors, setFieldValue }) => {
+              return (
+                <Form>
+                  <div className="form-control-user">
+                    <label htmlFor="firstName">First Name</label>
+                    <FormikTextInput
+                      name="firstName"
+                      placeholder="Edit User First Name"
+                      value={values.firstName}
+                    />
+                  </div>
+                  <div className="form-control-user">
+                    <label htmlFor="firstName">Last Name</label>
+                    <FormikTextInput
+                      name="lastName"
+                      placeholder="Edit User Last Name"
+                      value={values.lastName}
+                    />
+                  </div>
+                  <div className="form-control-user">
+                    <label htmlFor="email">Email </label>
+                    <FormikTextInput
+                      name="email"
+                      placeholder="Edit Email"
+                      value={values.email}
+                    />
+                  </div>
+                  <div className="form-control-user checkbox">
+                    <Checkbox
+                      name="isAdmin"
+                      value={values.isAdmin}
+                      onChange={(e) => {
+                        const value = e.target.checked;
+                        setFieldValue("isAdmin", value);
+                      }}
+                    />
+                    <label htmlFor="isAdmin">Is Admin? </label>
+                  </div>
+                  <div className="form-action-btn-container">
+                    <button
+                      onClick={handleReset}
+                      className="form-action-btn reset-btn"
+                    >
+                      Reset
+                    </button>
+                    <button
+                      type="submit"
+                      className="form-action-btn submit-btn"
+                      onClick={() => toast.success("User successfully Edited.")}
+                    >
+                      Edit
+                    </button>
+                  </div>
+
+                  {/* Uncomment this one if on testing */}
+                  <pre>{JSON.stringify(values, null, 2)}</pre>
+                  <pre>{JSON.stringify(errors, null, 2)}</pre>
+                </Form>
+              );
+            }}
+          </Formik>
+        </React.Fragment>
+      )}
+    </div>
   );
 };
 

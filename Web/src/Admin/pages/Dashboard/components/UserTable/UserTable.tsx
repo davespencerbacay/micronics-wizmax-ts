@@ -14,6 +14,7 @@ type Anchor = "right";
 const UserTable: React.FC = () => {
   const [users, setUsers] = useState<UsersData[] | undefined>();
   const [loading, setLoading] = useState(false);
+  const [userId, setUserId] = useState<string>("");
 
   // Fetch All Users Function
   useEffect(() => {
@@ -62,6 +63,9 @@ const UserTable: React.FC = () => {
     await Users.deleteUser(userId);
     toast.success("User successfully Deleted");
     setLoading(false);
+
+    const filteredUsers = users?.filter((data) => data._id !== userId);
+    setUsers(filteredUsers);
   };
 
   // Edit User Function
@@ -70,7 +74,7 @@ const UserTable: React.FC = () => {
   });
 
   const toggleDrawer =
-    (anchor: Anchor, open: boolean) =>
+    (anchor: Anchor, open: boolean, id?: string | undefined) =>
     (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
         event.type === "keydown" &&
@@ -81,17 +85,8 @@ const UserTable: React.FC = () => {
       }
 
       setState({ ...state, [anchor]: open });
+      setUserId(id ?? "");
     };
-
-  const list = (anchor: Anchor) => {
-    return (
-      <Box sx={{ width: 400 }} role="presentation">
-        <List>
-          <EditUser />
-        </List>
-      </Box>
-    );
-  };
 
   const rows = users?.map((user) => {
     return {
@@ -101,16 +96,12 @@ const UserTable: React.FC = () => {
       dateCreated: user.createdAt,
       actions: (
         <div className="grid-actions-btn">
-          <button className="edit-btn" onClick={toggleDrawer("right", true)}>
+          <button
+            className="edit-btn"
+            onClick={toggleDrawer("right", true, user._id)}
+          >
             Edit
           </button>
-          <Drawer
-            anchor="right"
-            open={state["right"]}
-            onClose={toggleDrawer("right", false)}
-          >
-            {list("right")}
-          </Drawer>
 
           <button
             className="delete-btn"
@@ -144,6 +135,17 @@ const UserTable: React.FC = () => {
           disableRowSelectionOnClick
         />
       </Box>
+      <Drawer
+        anchor="right"
+        open={state["right"]}
+        onClose={toggleDrawer("right", false)}
+      >
+        <Box sx={{ width: 400 }} role="presentation">
+          <List>
+            <EditUser id={userId} />
+          </List>
+        </Box>
+      </Drawer>
     </div>
   );
 };
