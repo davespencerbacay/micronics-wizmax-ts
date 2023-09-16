@@ -68,6 +68,7 @@ const EditUser: React.FC<EditUserProps> = (props) => {
 							);
 							toast.success("User successfully edited.");
 							setLoading(false);
+							window.location.reload(); //Remove this if push is applied
 						}}
 						enableReinitialize
 					>

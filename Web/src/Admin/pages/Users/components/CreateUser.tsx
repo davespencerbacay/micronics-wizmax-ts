@@ -56,14 +56,15 @@ const CreateUser: React.FC = () => {
 
 							setSubmitting(false);
 							setLoading(true);
-							toast.success("User sucessfully created.");
 							const updatedUser = users?.push(createUser);
+							toast.success("User sucessfully created.");
 							const newData = {
 								...users,
 								createUser,
 							};
 							setUsers(newData as any);
 							setLoading(false);
+							window.location.reload(); //Remove this if push method is applied
 						}}
 					>
 						{({ values, errors, isSubmitting, handleReset }) => {

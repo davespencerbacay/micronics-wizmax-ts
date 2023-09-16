@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import { Drawer, List } from "@mui/material";
 import EditUser from "Admin/pages/Users/components/EditUser";
 import "./UserTable.scss";
+import { BiPlus } from "react-icons/bi";
 
 type Anchor = "right";
 
