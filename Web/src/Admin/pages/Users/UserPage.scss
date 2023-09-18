@@ -29,36 +29,48 @@
 	h3 {
 		font-size: 1.8rem;
 		font-family: "Roboto", sans-serif;
-		color: #1d3147 !important;
+		color: #463f3a !important;
 		margin-bottom: 2rem;
 		font-weight: 600;
 	}
 
 	.form-control-user {
-		margin: 2rem 0;
+		margin: 1rem 0;
+		color: #403d39;
+
+		.invalid-feedback {
+			font-size: 1.2rem;
+		}
+
 		label {
-			font-size: 1.4rem;
+			font-size: 1.2rem;
 			font-family: "Roboto", sans-serif;
 			font-weight: 500;
-			color: #415a77;
+			color: #403d39;
 		}
 
 		input {
 			box-shadow: none;
 			background: #fff !important;
-			border: 1px solid #415a77;
-			border-radius: 10px !important;
+			border-radius: 5px !important;
+			border: 1px solid #c9cad9;
 			padding: 1rem;
-			font-size: 1.7rem;
-			color: #0d1b2a;
-			font-weight: 500;
+			font-size: 1.4rem;
+			color: #403d39;
+			font-weight: 600;
 			font-family: "Roboto", sans-serif;
-			color: #0d1b2a;
+			transition: 0.7s;
+
+			&:focus {
+				border: 1px solid #457b9d;
+				box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #457b9d;
+			}
 
 			&::placeholder {
 				font-weight: 400;
 				font-family: "Roboto", sans-serif;
 				opacity: 0.5;
+				font-size: 1.3rem;
 			}
 		}
 	}
@@ -74,15 +86,16 @@
 
 	.form-action-btn-container {
 		display: flex;
-		justify-content: flex-end;
+		flex-direction: row-reverse;
+		justify-content: left;
 
 		button {
 			margin: 2rem 0.5rem;
 			padding: 0.5rem 1rem;
 			width: 80px;
-			border-radius: 20px;
+			border-radius: 5px;
 			border: none;
-			color: #415a77;
+			color: #457b9d;
 			font-weight: 500;
 			font-size: 1.5rem;
 			color: #fff;

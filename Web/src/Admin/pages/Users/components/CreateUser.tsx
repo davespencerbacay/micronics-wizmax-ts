@@ -57,13 +57,13 @@ const CreateUser: React.FC = () => {
 							setSubmitting(false);
 							setLoading(true);
 							const updatedUser = users?.push(createUser);
-							toast.success("User sucessfully created.");
 							const newData = {
 								...users,
 								createUser,
 							};
 							setUsers(newData as any);
 							setLoading(false);
+							toast.success("User sucessfully created.");
 							window.location.reload(); //Remove this if push method is applied
 						}}
 					>
@@ -118,7 +118,7 @@ const CreateUser: React.FC = () => {
 										</button>
 										<button
 											type="submit"
-											disabled={isSubmitting || disabled}
+											// disabled={isSubmitting || disabled}
 											className="form-action-btn submit-btn"
 										>
 											Add
