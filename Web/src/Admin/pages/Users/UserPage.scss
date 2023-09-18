@@ -1,145 +1,164 @@
 .user-page-container {
-  margin-top: 2rem;
+	margin-top: 2rem;
 
-  .add-user-btn {
-    display: flex;
-    justify-content: flex-end;
-    button {
-      padding: 0.5rem 1rem;
-      font-size: 1.3rem;
-      color: #fff;
-      border: none;
-      box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #eee;
-      background: #5783db;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-    }
-  }
+	.add-user-btn {
+		display: flex;
+		justify-content: flex-end;
+		button {
+			padding: 0.5rem 1rem;
+			font-size: 1.3rem;
+			color: #fff;
+			border: none;
+			box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #eee;
+			background: #5783db;
+			border-radius: 5px;
+			margin-bottom: 1rem;
+		}
+	}
 }
 
 .MuiBox-root {
-  //   padding: 2rem;
-  .Mui-error {
-    font-size: 1.3rem;
-    font-weight: 500;
-    font-family: "Roboto", sans-serif;
-  }
+	//   padding: 2rem;
+	.Mui-error {
+		font-size: 1.3rem;
+		font-weight: 500;
+		font-family: "Roboto", sans-serif;
+	}
 
-  h3 {
-    font-size: 1.8rem;
-    font-family: "Roboto", sans-serif;
-    color: #463f3a !important;
-    margin-bottom: 2rem;
-    font-weight: 600;
-  }
+	h3 {
+		font-size: 1.8rem;
+		font-family: "Roboto", sans-serif;
+		color: #463f3a !important;
+		margin-bottom: 2rem;
+		font-weight: 600;
+	}
 
-  .form-control-user {
-    margin: 1rem 0;
-    color: #403d39;
+	.form-control-user {
+		margin: 1rem 0;
+		color: #403d39;
 
-    .invalid-feedback {
-      font-size: 1.2rem;
-    }
+		.invalid-feedback {
+			font-size: 1.2rem;
+		}
 
-    label {
-      font-size: 1.2rem;
-      font-family: "Roboto", sans-serif;
-      font-weight: 500;
-      color: #403d39;
-    }
+		label {
+			font-size: 1.2rem;
+			font-family: "Roboto", sans-serif;
+			font-weight: 500;
+			color: #403d39;
+		}
 
-    input {
-      box-shadow: none;
-      background: #fff !important;
-      border-radius: 5px !important;
-      border: 1px solid #c9cad9;
-      padding: 1rem;
-      font-size: 1.4rem;
-      color: #403d39;
-      font-weight: 600;
-      font-family: "Roboto", sans-serif;
-      transition: 0.7s;
+		input {
+			box-shadow: none;
+			background: #fff !important;
+			border-radius: 5px !important;
+			border: 1px solid #c9cad9;
+			padding: 1rem;
+			font-size: 1.4rem;
+			color: #403d39;
+			font-weight: 600;
+			font-family: "Roboto", sans-serif;
+			transition: 0.7s;
 
-      &:focus {
-        border: 1px solid #457b9d;
-        box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #457b9d;
-      }
+			&:focus {
+				border: 1px solid #457b9d;
+				box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #457b9d;
+			}
 
-      &::placeholder {
-        font-weight: 400;
-        font-family: "Roboto", sans-serif;
-        opacity: 0.5;
-        font-size: 1.3rem;
-      }
-    }
-  }
+			&::placeholder {
+				font-weight: 400;
+				font-family: "Roboto", sans-serif;
+				opacity: 0.5;
+				font-size: 1.3rem;
+			}
+		}
+	}
 
-  .checkbox {
-    display: flex;
-    align-items: center;
+	.checkbox {
+		display: flex;
+		align-items: center;
 
-    input {
-      margin-right: 1rem;
-    }
-  }
+		input {
+			margin-right: 1rem;
+		}
+	}
 
-  .form-action-btn-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: left;
+	.form-action-btn-container {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: left;
 
-    button {
-      margin: 2rem 0.5rem;
-      padding: 0.5rem 1rem;
-      width: 80px;
-      border-radius: 5px;
-      border: none;
-      color: #457b9d;
-      font-weight: 500;
-      font-size: 1.5rem;
-      color: #fff;
+		button {
+			margin: 2rem 0.5rem;
+			padding: 0.5rem 1rem;
+			width: 80px;
+			border-radius: 5px;
+			border: none;
+			color: #457b9d;
+			font-weight: 500;
+			font-size: 1.5rem;
+			color: #fff;
 
-      &:hover {
-        opacity: 0.7;
-      }
-    }
-    .submit-btn {
-      background: #5783db;
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+		.submit-btn {
+			background: #5783db;
 
-      &:disabled {
-        opacity: 0.3;
-      }
-    }
+			&:disabled {
+				opacity: 0.3;
+			}
+		}
 
-    .reset-btn {
-      background: #ef233c;
-    }
-  }
+		.reset-btn {
+			background: #ef233c;
+		}
+	}
 }
 
 .user-table {
-  .content-label {
-    font-weight: 400;
-    color: #fff;
-    padding: 1.4rem;
-    background: #343a40;
-    // background: #696767; Options only
-  }
+	.content-label {
+		//This is h3
+		display: flex;
+		align-items: center;
+		font-weight: 300;
+		border-radius: 5px 5px 0 0;
+		color: #fff;
+		padding: 1.4rem;
+		background: #343a40;
+		// background: #696767; Options only
 
-  .MuiDataGrid-columnHeaderTitleContainer {
-    font-size: 1.5rem;
-    font-weight: 600;
-    font-family: "Roboto", sans-serif;
-    color: #2f3e46;
-  }
-  .MuiDataGrid-cellContent {
-    font-size: 1.3rem;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-    color: #6c757d;
-  }
+		svg {
+			margin-right: 1rem;
+		}
+	}
+
+	.MuiDataGrid-columnHeaderTitleContainer {
+		font-size: 1.5rem;
+		font-weight: 600;
+		font-family: "Roboto", sans-serif;
+		color: #2f3e46;
+	}
+	.MuiDataGrid-cellContent {
+		font-size: 1.4rem;
+		font-weight: 600;
+		font-family: "Roboto", sans-serif;
+		color: #2f2b3dad;
+	}
 }
 
 .MuiPaper-root {
-  padding: 2rem 1.5rem;
+	padding: 2rem 1.5rem;
+}
+
+.MuiDataGrid-root {
+	box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #eee;
+	background: #fff;
+	border-radius: 0 0 10px 10px !important;
+}
+
+.MuiTablePagination-displayedRows {
+	font-size: 1.4rem !important;
+	font-weight: 500 !important;
 }

@@ -1,17 +1,17 @@
 .adminWrapper-container {
-  background: #eee;
-  .sidebar-container {
-    height: 100vh;
-  }
-  .right-col-content-wrapper {
-    .right-col-content-container {
-      margin: 2rem 8rem 2rem 4rem;
-      .top-nav {
-        background: #fff;
-        padding: 1rem;
-        display: flex;
-        flex-direction: row-reverse;
-      }
-    }
-  }
+	background: #f5f3f4;
+	.sidebar-container {
+		height: 100vh;
+	}
+	.right-col-content-wrapper {
+		.right-col-content-container {
+			margin: 2rem 8rem 2rem 4rem;
+			.top-nav {
+				background: #fff;
+				padding: 1rem;
+				display: flex;
+				flex-direction: row-reverse;
+			}
+		}
+	}
 }
