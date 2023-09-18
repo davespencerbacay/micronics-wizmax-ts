@@ -37,6 +37,7 @@ $grey-800: rgba(0, 0, 0, 0.05);
 .profile-menu {
 	.MuiPaper-root {
 		border-radius: 5px !important;
+		padding: 0;
 		width: 200px;
 		box-shadow: 0px 10px 36px 0px rgba(0, 0, 0, 0.29);
 		ul {
