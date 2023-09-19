@@ -46,7 +46,13 @@ const UserTable: React.FC = () => {
 		{
 			field: "dateCreated",
 			headerName: "Date Created",
-			width: 550,
+			width: 250,
+			editable: false,
+		},
+		{
+			field: "isAdmin",
+			headerName: "Role",
+			width: 250,
 			editable: false,
 		},
 		{
@@ -95,11 +101,14 @@ const UserTable: React.FC = () => {
 
 		const fullName = `${user.firstName} ${user.lastName}`;
 
+		const showRole = user.isAdmin ? "Admin" : "User";
+
 		return {
 			id: user._id,
 			fullName: helpers.titleCase(fullName),
 			email: user.email,
 			dateCreated: formattedDate,
+			isAdmin: showRole,
 			actions: (
 				<div className="grid-actions-btn">
 					<button
