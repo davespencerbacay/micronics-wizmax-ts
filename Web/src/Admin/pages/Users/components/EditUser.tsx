@@ -128,8 +128,8 @@ const EditUser: React.FC<EditUserProps> = (props) => {
 									</div>
 
 									{/* Uncomment this one if on testing */}
-									<pre>{JSON.stringify(values, null, 2)}</pre>
-									<pre>{JSON.stringify(errors, null, 2)}</pre>
+									{/* <pre>{JSON.stringify(values, null, 2)}</pre>
+									<pre>{JSON.stringify(errors, null, 2)}</pre> */}
 								</Form>
 							);
 						}}
