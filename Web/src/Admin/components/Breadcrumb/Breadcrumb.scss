@@ -3,7 +3,7 @@
     font-size: 12px;
     font-weight: 900;
     text-transform: uppercase;
-    color: rgba(51, 48, 60, 0.38);
+    color: rgba(51, 48, 60, 0.38) !important;
     margin-left: 1rem;
     cursor: pointer;
 
@@ -13,6 +13,6 @@
   }
 
   p.crumb-active {
-    color: #000;
+    color: #000 !important;
   }
 }
