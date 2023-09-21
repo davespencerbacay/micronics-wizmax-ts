@@ -1,17 +1,19 @@
 .adminWrapper-container {
-	background: #f5f3f4;
-	.sidebar-container {
-		height: 100vh;
-	}
-	.right-col-content-wrapper {
-		.right-col-content-container {
-			margin: 2rem 8rem 2rem 4rem;
-			.top-nav {
-				background: #fff;
-				padding: 1rem;
-				display: flex;
-				flex-direction: row-reverse;
-			}
-		}
-	}
+  background: #f8f7fa;
+  .sidebar-container {
+    height: 100vh;
+  }
+  .right-col-content-wrapper {
+    .right-col-content-container {
+      margin: 2rem 8rem 2rem 4rem;
+      .top-nav {
+        box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #eee;
+        background: #fff;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
 }
