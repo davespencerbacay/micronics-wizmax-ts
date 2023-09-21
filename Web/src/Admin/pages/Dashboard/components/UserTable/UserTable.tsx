@@ -46,13 +46,15 @@ const UserTable: React.FC = () => {
 		{
 			field: "dateCreated",
 			headerName: "Date Created",
-			width: 250,
+			width: 200,
 			editable: false,
 		},
 		{
 			field: "isAdmin",
 			headerName: "Role",
-			width: 250,
+			width: 200,
+			align: "center",
+			headerAlign: "center",
 			editable: false,
 		},
 		{
