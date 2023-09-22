@@ -45,7 +45,7 @@ const CreateUser: React.FC = () => {
 						validationSchema={validationSchema}
 						onSubmit={async (data, { setSubmitting }) => {
 							setSubmitting(true);
-
+							setLoading(true);
 							const createUser: UsersData = await UserApiService.createUser(
 								data.firstName,
 								data.lastName,
@@ -55,7 +55,6 @@ const CreateUser: React.FC = () => {
 							);
 
 							setSubmitting(false);
-							setLoading(true);
 							const updatedUser = users?.push(createUser);
 							const newData = {
 								...users,
@@ -64,7 +63,9 @@ const CreateUser: React.FC = () => {
 							setUsers(newData as any);
 							setLoading(false);
 							toast.success("User sucessfully created.");
-							window.location.reload(); //Remove this if push method is applied
+							setTimeout(() => {
+								window.location.reload();
+							}, 1000);
 						}}
 					>
 						{({ values, errors, isSubmitting, handleReset }) => {
