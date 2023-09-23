@@ -6,6 +6,7 @@ import { Users as UserApiService } from "../../../api/agent";
 import * as yup from "yup";
 import Spinner from "library/Spinner/Spinner";
 import { UsersData } from "Admin/models/userModel";
+import AlertMessage from "../../../../library/AlertMessage/Alert";
 
 const CreateUser: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -28,10 +29,14 @@ const CreateUser: React.FC = () => {
   if (loading) {
     return <Spinner variant="fixed" />;
   }
+
   return (
     <React.Fragment>
       <div className="drawer-container">
         <h3>Add User</h3>
+        <div className="alert-content">
+          <AlertMessage message="User Already exist." />
+        </div>
         <div className="form-container">
           <Formik
             validateOnChange={true}
@@ -70,7 +75,6 @@ const CreateUser: React.FC = () => {
               } catch (error) {
                 if (error as Error) {
                   setLoading(false);
-                  toast.error("User already exist.");
                 }
               }
             }}
@@ -126,15 +130,15 @@ const CreateUser: React.FC = () => {
                     </button>
                     <button
                       type="submit"
-                      // disabled={isSubmitting || disabled}
+                      disabled={isSubmitting || disabled}
                       className="form-action-btn submit-btn"
                     >
                       Add
                     </button>
                   </div>
                   {/* Uncomment this one if on testing */}
-                  {/* <pre>{JSON.stringify(values, null, 2)}</pre>
-          <pre>{JSON.stringify(errors, null, 2)}</pre> */}
+                  <pre> Values: {JSON.stringify(values, null, 2)}</pre>
+                  <pre> Errors: {JSON.stringify(errors, null, 2)}</pre>
                 </Form>
               );
             }}

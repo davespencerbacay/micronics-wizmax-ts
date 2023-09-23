@@ -6,11 +6,11 @@ import Spinner from "library/Spinner/Spinner";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
-import CreateUser from "./components/CreateUser";
 import "./UserPage.scss";
 import { FaUsers } from "react-icons/fa";
 import { ROUTE_PATH } from "constants/routes";
 import { CrumbTypes } from "../Dashboard/components/types";
+import Form from "./components/Form";
 
 type Anchor = "right";
 
@@ -39,7 +39,8 @@ const Users: React.FC = () => {
     return (
       <Box sx={{ width: 400 }} role="presentation">
         <List>
-          <CreateUser />
+          {/* <CreateUser /> */}
+          <Form isEditMode={false} header="Add User" />
         </List>
       </Box>
     );
