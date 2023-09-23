@@ -85,7 +85,7 @@ const Form: React.FC<FormProps> = (props) => {
               );
 
               setSubmitting(false);
-              const updatedUser = users?.push(createUser);
+              users?.push(createUser);
               const newData = {
                 ...users,
                 createUser,
@@ -93,9 +93,23 @@ const Form: React.FC<FormProps> = (props) => {
               setUsers(newData as any);
               setLoading(false);
               toast.success("User sucessfully created.");
-              setTimeout(() => {
-                window.location.reload();
-              }, 1000);
+              setUsers((prevState) => {
+                const oldData = prevState;
+                const newUser = {
+                  firstName: data.firstName,
+                  lastName: data.lastName,
+                  email: data.email,
+                  password: data.password,
+                  isAdmin: data.isAdmin,
+                };
+
+                const newData = {
+                  ...oldData,
+                  newUser,
+                };
+                return newData as any;
+              });
+              window.location.reload(); //Remove this if push is applied
             } else {
               setLoading(true);
               const editUser = await Users.updateUser(
