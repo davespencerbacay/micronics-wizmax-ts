@@ -44,28 +44,36 @@ const CreateUser: React.FC = () => {
 						}}
 						validationSchema={validationSchema}
 						onSubmit={async (data, { setSubmitting }) => {
-							setSubmitting(true);
-							setLoading(true);
-							const createUser: UsersData = await UserApiService.createUser(
-								data.firstName,
-								data.lastName,
-								data.email,
-								data.password,
-								data.isAdmin
-							);
+							try {
+								setSubmitting(true);
+								setLoading(true);
+								const createUser: UsersData = await UserApiService.createUser(
+									data.firstName,
+									data.lastName,
+									data.email,
+									data.password,
+									data.isAdmin
+								);
 
-							setSubmitting(false);
-							const updatedUser = users?.push(createUser);
-							const newData = {
-								...users,
-								createUser,
-							};
-							setUsers(newData as any);
-							setLoading(false);
-							toast.success("User sucessfully created.");
-							setTimeout(() => {
-								window.location.reload();
-							}, 1000);
+								setSubmitting(false);
+								const updatedUser = users?.push(createUser);
+								const newData = {
+									...users,
+									createUser,
+								};
+								setUsers(newData as any);
+								setLoading(false);
+								toast.success("User sucessfully created.");
+								setTimeout(() => {
+									window.location.reload();
+								}, 1000);
+							} catch (error) {
+								if ((error as Error).message) {
+									setLoading(false);
+									toast.error("User already exist.");
+									// toast.info("Use other email to proceed.");
+								}
+							}
 						}}
 					>
 						{({ values, errors, isSubmitting, handleReset }) => {
