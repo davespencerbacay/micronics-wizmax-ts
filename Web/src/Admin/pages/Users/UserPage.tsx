@@ -1,6 +1,6 @@
 import AdminWrapper from "Admin/layout/AdminWrapper/AdminWrapper";
-import React, { useState } from "react";
-import UserTable from "../Dashboard/components/UserTable/UserTable";
+import React, { useEffect, useState } from "react";
+import UserTable from "./components/UserTable/UserTable";
 import { BiPlus } from "react-icons/bi";
 import Spinner from "library/Spinner/Spinner";
 import Box from "@mui/material/Box";
@@ -11,88 +11,173 @@ import { FaUsers } from "react-icons/fa";
 import { ROUTE_PATH } from "constants/routes";
 import { CrumbTypes } from "../Dashboard/components/types";
 import Form from "./components/Form";
+import { GridColDef } from "@mui/x-data-grid";
+import { UsersData } from "Admin/models/userModel";
+import { Users } from "Admin/api/agent";
+import { toast } from "react-toastify";
+import helpers from "helpers/helpers";
 
-type Anchor = "right";
+const crumbs: CrumbTypes[] = [
+  {
+    title: "Wizmax Global",
+    url: ROUTE_PATH.DASHBOARD,
+    isActive: false,
+  },
+  {
+    title: "Users",
+    url: ROUTE_PATH.USERS,
+    isActive: true,
+  },
+];
 
-const Users: React.FC = () => {
+const UserPage: React.FC = () => {
   const [loading, setLoading] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isEditMode, setIsEditMode] = useState(false);
+  const [users, setUsers] = useState<UsersData[] | undefined>();
+  const [userId, setUserId] = useState<string>("");
 
+  // Fetch All Users Function
+  useEffect(() => {
+    setLoading(true);
+    const getUsers = async () => {
+      const response = await Users.getUsers();
+      setUsers(response);
+      setLoading(false);
+    };
+
+    getUsers();
+  }, []);
+
+  const columns: GridColDef[] = [
+    { field: "id", headerName: "ID", width: 250, editable: true },
+    {
+      field: "fullName",
+      headerName: "Fullname",
+      width: 260,
+      editable: false,
+    },
+    {
+      field: "email",
+      headerName: "Email",
+      width: 220,
+      editable: false,
+    },
+    {
+      field: "dateCreated",
+      headerName: "Date Created",
+      width: 200,
+      editable: false,
+    },
+    {
+      field: "isAdmin",
+      headerName: "Role",
+      width: 300,
+      align: "center",
+      headerAlign: "center",
+      editable: false,
+    },
+    {
+      field: "actions",
+      headerName: "Actions",
+      width: 180,
+      renderCell: (params) => params.value,
+      headerAlign: "center",
+      align: "center",
+    },
+  ];
+
+  const deleteUserHandler = async (userId: string) => {
+    setLoading(true);
+    await Users.deleteUser(userId);
+    toast.success("User successfully Deleted");
+    setLoading(false);
+
+    const filteredUsers = users?.filter((data) => data._id !== userId);
+    setUsers(filteredUsers);
+  };
+
+  // Edit User Function
   const [state, setState] = useState({
     right: false,
   });
 
-  const toggleDrawer =
-    (anchor: Anchor, open: boolean) =>
-    (event: React.KeyboardEvent | React.MouseEvent) => {
-      if (
-        event.type === "keydown" &&
-        ((event as React.KeyboardEvent).key === "Tab" ||
-          (event as React.KeyboardEvent).key === "Shift")
-      ) {
-        return;
-      }
+  const rows = users?.map((user) => {
+    const date = new Date(user.createdAt);
+    const formattedDate = date.toDateString();
+    const fullName = `${user.firstName} ${user.lastName}`;
+    const showRole = user.isAdmin ? "Admin" : "Staff";
 
-      setState({ ...state, [anchor]: open });
+    return {
+      id: user._id,
+      fullName: helpers.titleCase(fullName),
+      email: user.email,
+      dateCreated: formattedDate,
+      isAdmin: showRole,
+      actions: (
+        <div className="grid-actions-btn">
+          <button
+            className="edit-btn"
+            onClick={() => {
+              setIsEditMode(true);
+              setUserId(user._id);
+              setIsDrawerOpen(true);
+            }}
+          >
+            Edit
+          </button>
+
+          <button
+            className="delete-btn"
+            onClick={() => deleteUserHandler(user._id)}
+          >
+            Delete
+          </button>
+        </div>
+      ),
     };
-
-  const list = (anchor: Anchor) => {
-    return (
-      <Box sx={{ width: 400 }} role="presentation">
-        <List>
-          {/* <CreateUser /> */}
-          <Form isEditMode={false} header="Add User" />
-        </List>
-      </Box>
-    );
-  };
-
-  const crumbs: CrumbTypes[] = [
-    {
-      title: "Wizmax Global",
-      url: ROUTE_PATH.DASHBOARD,
-      isActive: false,
-    },
-    {
-      title: "Users",
-      url: ROUTE_PATH.USERS,
-      isActive: true,
-    },
-  ];
+  });
 
   return (
-    <React.Fragment>
+    <AdminWrapper breadcrumb={crumbs}>
       {loading ? (
         <Spinner variant="fixed" />
       ) : (
-        <AdminWrapper breadcrumb={crumbs}>
-          <div className="user-page-container">
-            <div className="add-user-btn">
-              <button onClick={toggleDrawer("right", true)}>
-                {" "}
-                <BiPlus /> Add an User
-              </button>
-              <div className="drawer-container">
-                <Drawer
-                  anchor="right"
-                  open={state["right"]}
-                  onClose={toggleDrawer("right", false)}
-                >
-                  {list("right")}
-                </Drawer>
-              </div>
-            </div>
-            <div className="user-table">
-              <h3 className="content-label">
-                {" "}
-                <FaUsers /> Users
-              </h3>
-              <UserTable />
+        <div className="user-page-container">
+          <div className="add-user-btn">
+            <button
+              onClick={() => {
+                setIsDrawerOpen(true);
+                setIsEditMode(false);
+                setUserId("");
+              }}
+            >
+              <BiPlus /> Add an User
+            </button>
+            <div className="drawer-container">
+              <Drawer
+                anchor="right"
+                open={isDrawerOpen}
+                onClose={() => setIsDrawerOpen(false)}
+              >
+                <Box sx={{ width: 400 }} role="presentation">
+                  <List>
+                    <Form isEditMode={isEditMode} id={userId} />
+                  </List>
+                </Box>
+              </Drawer>
             </div>
           </div>
-        </AdminWrapper>
+          <div className="user-table">
+            <h3 className="content-label">
+              <FaUsers /> Users
+            </h3>
+            <UserTable columns={columns} rows={rows} loading={loading} />
+          </div>
+        </div>
       )}
-    </React.Fragment>
+    </AdminWrapper>
   );
 };
 
-export default Users;
+export default UserPage;
