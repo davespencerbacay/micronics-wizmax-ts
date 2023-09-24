@@ -212,8 +212,8 @@ const Form: React.FC<FormProps> = (props) => {
 								</button>
 							</div>
 							{/* Uncomment this one if on testing */}
-							<pre> Values: {JSON.stringify(values, null, 2)}</pre>
-							<pre> Errors: {JSON.stringify(errors, null, 2)}</pre>
+							{/* <pre> Values: {JSON.stringify(values, null, 2)}</pre>
+							<pre> Errors: {JSON.stringify(errors, null, 2)}</pre> */}
 						</FormikForm>
 					);
 				}}
