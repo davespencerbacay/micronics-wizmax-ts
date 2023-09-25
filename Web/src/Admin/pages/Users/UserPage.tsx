@@ -169,9 +169,11 @@ const UserPage: React.FC = () => {
             </div>
           </div>
           <div className="user-table">
-            <h3 className="content-label">
-              <FaUsers /> Users
-            </h3>
+            <div className="content-label">
+              <h3>Users</h3>
+              <p>List of all users.</p>
+            </div>
+
             <UserTable columns={columns} rows={rows} loading={loading} />
           </div>
         </div>
