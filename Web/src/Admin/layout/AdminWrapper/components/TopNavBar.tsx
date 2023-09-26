@@ -27,7 +27,7 @@ const TopNavBar: React.FC = () => {
   // Local Storage Value Variables
   const localStorageResponse = localStorage.getItem("user");
   const response = JSON.parse(localStorageResponse ?? "");
-  const userName = response.name;
+  const userName = response.name.toUpperCase();
   return (
     <div className="top-navbar-container">
       <button onClick={handleClick}>
