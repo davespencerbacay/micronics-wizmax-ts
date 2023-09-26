@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
 import Spinner from "library/Spinner/Spinner";
 import { Users } from "Admin/api/agent";
 import { UsersData } from "Admin/models/userModel";
 import { toast } from "react-toastify";
 import { Drawer, List } from "@mui/material";
 import EditUser from "Admin/pages/Users/components/EditUser";
-import "./UserTable.scss";
 import helpers from "helpers/helpers";
+import "./UserTable.scss";
 
 type Anchor = "right";
 
@@ -16,6 +18,9 @@ const UserTable: React.FC = () => {
 	const [users, setUsers] = useState<UsersData[] | undefined>();
 	const [loading, setLoading] = useState(false);
 	const [userId, setUserId] = useState<string>("");
+	const [open, setOpen] = React.useState(false);
+	const handleOpen = () => setOpen(true);
+	const handleClose = () => setOpen(false);
 
 	// Fetch All Users Function
 	useEffect(() => {
@@ -28,6 +33,19 @@ const UserTable: React.FC = () => {
 
 		getUsers();
 	}, []);
+
+	const style = {
+		position: "absolute" as "absolute",
+		borderRadius: 3,
+		top: "50%",
+		left: "50%",
+		transform: "translate(-50%, -50%)",
+		width: 400,
+		bgcolor: "#eee",
+		border: "1px solid #000",
+		boxShadow: 15,
+		p: 5,
+	};
 
 	const columns: GridColDef[] = [
 		{ field: "id", headerName: "ID", width: 250, editable: true },
@@ -75,6 +93,7 @@ const UserTable: React.FC = () => {
 
 		const filteredUsers = users?.filter((data) => data._id !== userId);
 		setUsers(filteredUsers);
+		setOpen(false);
 	};
 
 	// Edit User Function
@@ -120,12 +139,36 @@ const UserTable: React.FC = () => {
 						Edit
 					</button>
 
-					<button
-						className="delete-btn"
-						onClick={() => deleteUserHandler(user._id)}
-					>
+					<button className="delete-btn" onClick={() => setOpen(true)}>
 						Delete
 					</button>
+					<Modal
+						open={open}
+						onClose={handleClose}
+						aria-labelledby="modal-modal-title"
+						aria-describedby="modal-modal-description"
+					>
+						<Box sx={style}>
+							<div className="modal-container">
+								<h3>Are you sure you want to delete this user?</h3>
+								<div className="modal-btn">
+									<Button
+										variant="contained"
+										onClick={() => deleteUserHandler(user._id)}
+									>
+										Yes
+									</Button>
+									<Button
+										variant="contained"
+										color="error"
+										onClick={() => setOpen(false)}
+									>
+										No
+									</Button>
+								</div>
+							</div>
+						</Box>
+					</Modal>
 				</div>
 			),
 		};
