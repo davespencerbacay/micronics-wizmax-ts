@@ -8,7 +8,6 @@ import { Users } from "Admin/api/agent";
 import { UsersData } from "Admin/models/userModel";
 import { toast } from "react-toastify";
 import { Drawer, List } from "@mui/material";
-import EditUser from "Admin/pages/Users/components/EditUser";
 import helpers from "helpers/helpers";
 import "./UserTable.scss";
 
@@ -201,9 +200,7 @@ const UserTable: React.FC = () => {
 				onClose={toggleDrawer("right", false)}
 			>
 				<Box sx={{ width: 400 }} role="presentation">
-					<List>
-						<EditUser id={userId} />
-					</List>
+					<List></List>
 				</Box>
 			</Drawer>
 		</div>
