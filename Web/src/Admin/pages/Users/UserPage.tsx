@@ -112,6 +112,7 @@ const UserPage: React.FC = () => {
 
 		const filteredUsers = users?.filter((data) => data._id !== userId);
 		setUsers(filteredUsers);
+		setOpen(false);
 	};
 
 	// Edit User Function
