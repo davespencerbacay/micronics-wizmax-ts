@@ -13,7 +13,7 @@ const AlertMessage: React.FC<AlertMessageProps> = (props) => {
         <div className="message-icon">
           <FaExclamationCircle />
         </div>
-        <h3>{props.message}</h3>
+        <h3 className="message-content">{props.message}</h3>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import AdminWrapper from "Admin/layout/AdminWrapper/AdminWrapper";
 import { Grid } from "@mui/material";
 import "./Dashboard.scss";
-import DashBoardUser from "./components/UserTable/DashBoardUser";
+import DashBoardUser from "../Users/components/UserTable/DashBoardUser";
 import { CrumbTypes } from "./components/types";
 import { ROUTE_PATH } from "constants/routes";
 
