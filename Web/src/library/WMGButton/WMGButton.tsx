@@ -30,7 +30,7 @@ const WMGButton: React.FC<WMGButtonProps> = (props) => {
 };
 
 WMGButton.defaultProps = {
-  color: "#1e6091",
+  color: "#0077b6",
 };
 
 export default WMGButton;

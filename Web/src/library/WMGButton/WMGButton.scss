@@ -15,17 +15,17 @@
 .default {
   &:hover {
     background: #fff !important;
-    color: #1e6091;
+    color: #0077b6;
     font-weight: 600;
   }
 }
 
 .danger {
-  background: #e5383b;
+  background: #f02d3a;
 
   &:hover {
     background: #fff;
-    color: #e5383b;
+    color: #f02d3a;
     font-weight: 600;
   }
 }

@@ -100,9 +100,6 @@ const UserPage: React.FC = () => {
     transform: "translate(-50%, -50%)",
     width: 400,
     bgcolor: "#eee",
-    border: "1px solid #000",
-    boxShadow: 1,
-    p: 4,
   };
 
   const deleteUserHandler = async (userId: string) => {
@@ -159,19 +156,15 @@ const UserPage: React.FC = () => {
               <div className="modal-container">
                 <h3>Are you sure you want to delete this user?</h3>
                 <div className="modal-btn">
-                  <Button
-                    variant="contained"
+                  <WMGButton
+                    variant="default"
                     onClick={() => deleteUserHandler(user._id)}
                   >
                     Yes
-                  </Button>
-                  <Button
-                    variant="contained"
-                    color="error"
-                    onClick={() => setOpen(false)}
-                  >
+                  </WMGButton>
+                  <WMGButton variant="danger" onClick={() => setOpen(false)}>
                     No
-                  </Button>
+                  </WMGButton>
                 </div>
               </div>
             </Box>
@@ -210,13 +203,12 @@ const UserPage: React.FC = () => {
                 </Box>
               </Drawer>
             </div>
-          </div>
-          <div className="user-table">
             <div className="content-label">
               <h3>Users</h3>
               <p>List of all users.</p>
             </div>
-
+          </div>
+          <div className="user-table">
             <UserTable columns={columns} rows={rows} loading={loading} />
           </div>
         </div>
