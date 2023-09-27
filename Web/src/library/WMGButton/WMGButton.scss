@@ -1,0 +1,31 @@
+.button-container {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  border: 1px solid transparent;
+  transition: 0.5s;
+
+  &:hover {
+    opacity: 0.7;
+    border: 1px solid #ced4da;
+  }
+}
+
+.default {
+  &:hover {
+    background: #fff !important;
+    color: #1e6091;
+    font-weight: 600;
+  }
+}
+
+.danger {
+  background: #e5383b;
+
+  &:hover {
+    background: #fff;
+    color: #e5383b;
+    font-weight: 600;
+  }
+}

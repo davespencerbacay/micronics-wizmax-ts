@@ -17,6 +17,7 @@ import { Users } from "Admin/api/agent";
 import { toast } from "react-toastify";
 import helpers from "helpers/helpers";
 import "./UserPage.scss";
+import WMGButton from "library/WMGButton/WMGButton";
 
 const crumbs: CrumbTypes[] = [
   {
@@ -134,8 +135,8 @@ const UserPage: React.FC = () => {
       isAdmin: showRole,
       actions: (
         <div className="grid-actions-btn">
-          <button
-            className="edit-btn"
+          <WMGButton
+            variant="default"
             onClick={() => {
               setIsEditMode(true);
               setUserId(user._id);
@@ -143,11 +144,11 @@ const UserPage: React.FC = () => {
             }}
           >
             Edit
-          </button>
+          </WMGButton>
 
-          <button className="delete-btn" onClick={() => setOpen(true)}>
+          <WMGButton variant="danger" onClick={() => setOpen(true)}>
             Delete
-          </button>
+          </WMGButton>
           <Modal
             open={open}
             onClose={handleClose}
