@@ -4,8 +4,10 @@ import "./WMGButton.scss";
 interface WMGButtonProps {
   children: React.ReactNode;
   color?: string;
+  disabled?: React.ReactNode;
   variant: "default" | "danger";
-  onClick: () => void;
+  type?: string;
+  onClick?: () => void;
 }
 
 const WMGButton: React.FC<WMGButtonProps> = (props) => {
