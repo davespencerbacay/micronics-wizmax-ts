@@ -9,17 +9,8 @@
     margin-bottom: 2rem;
     button {
       padding: 0.5rem 1rem;
-      font-size: 1.3rem;
-      color: #fff;
-      border: none;
-      box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #eee;
-      background: #5783db;
       border-radius: 5px;
       transition: 0.2s;
-
-      &:hover {
-        opacity: 0.7;
-      }
     }
     .content-label {
       color: #000;

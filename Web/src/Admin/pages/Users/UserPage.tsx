@@ -181,7 +181,8 @@ const UserPage: React.FC = () => {
       ) : (
         <div className="user-page-container">
           <div className="add-user-btn">
-            <button
+            <WMGButton
+              variant="default"
               onClick={() => {
                 setIsDrawerOpen(true);
                 setIsEditMode(false);
@@ -189,7 +190,7 @@ const UserPage: React.FC = () => {
               }}
             >
               <BiPlus /> Add an User
-            </button>
+            </WMGButton>
             <div className="drawer-container">
               <Drawer
                 anchor="right"
