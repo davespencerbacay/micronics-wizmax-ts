@@ -7,7 +7,7 @@ import Spinner from "library/Spinner/Spinner";
 import FormikTextInput from "library/Formik/FormikInput";
 import { Users } from "Admin/api/agent";
 import { Checkbox } from "@mui/material";
-import WMGButton from "library/WMGButton/WMGButton";
+import AdminButton from "library/AdminButton/AdminButton";
 
 interface FormProps {
   isEditMode: boolean;
@@ -197,16 +197,16 @@ const Form: React.FC<FormProps> = (props) => {
                 )}
               </div>
               <div className="form-action-btn-container">
-                <WMGButton variant="danger" onClick={handleReset}>
+                <AdminButton variant="danger" onClick={handleReset}>
                   Reset
-                </WMGButton>
-                <WMGButton
+                </AdminButton>
+                <AdminButton
                   variant="default"
                   type="submit"
                   disabled={isSubmitting || disabled}
                 >
                   {props.isEditMode ? "Edit" : "Add"}
-                </WMGButton>
+                </AdminButton>
               </div>
               {/* Uncomment this one if on testing */}
               {/* <pre> Values: {JSON.stringify(values, null, 2)}</pre>

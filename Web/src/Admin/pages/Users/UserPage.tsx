@@ -17,7 +17,7 @@ import { Users } from "Admin/api/agent";
 import { toast } from "react-toastify";
 import helpers from "helpers/helpers";
 import "./UserPage.scss";
-import WMGButton from "library/WMGButton/WMGButton";
+import AdminButton from "library/AdminButton/AdminButton";
 
 const crumbs: CrumbTypes[] = [
   {
@@ -132,7 +132,7 @@ const UserPage: React.FC = () => {
       isAdmin: showRole,
       actions: (
         <div className="grid-actions-btn">
-          <WMGButton
+          <AdminButton
             variant="default"
             onClick={() => {
               setIsEditMode(true);
@@ -141,11 +141,11 @@ const UserPage: React.FC = () => {
             }}
           >
             Edit
-          </WMGButton>
+          </AdminButton>
 
-          <WMGButton variant="danger" onClick={() => setOpen(true)}>
+          <AdminButton variant="danger" onClick={() => setOpen(true)}>
             Delete
-          </WMGButton>
+          </AdminButton>
           <Modal
             open={open}
             onClose={handleClose}
@@ -156,15 +156,15 @@ const UserPage: React.FC = () => {
               <div className="modal-container">
                 <h3>Are you sure you want to delete this user?</h3>
                 <div className="modal-btn">
-                  <WMGButton
+                  <AdminButton
                     variant="default"
                     onClick={() => deleteUserHandler(user._id)}
                   >
                     Yes
-                  </WMGButton>
-                  <WMGButton variant="danger" onClick={() => setOpen(false)}>
+                  </AdminButton>
+                  <AdminButton variant="danger" onClick={() => setOpen(false)}>
                     No
-                  </WMGButton>
+                  </AdminButton>
                 </div>
               </div>
             </Box>
@@ -181,7 +181,7 @@ const UserPage: React.FC = () => {
       ) : (
         <div className="user-page-container">
           <div className="add-user-btn">
-            <WMGButton
+            <AdminButton
               variant="default"
               onClick={() => {
                 setIsDrawerOpen(true);
@@ -190,7 +190,7 @@ const UserPage: React.FC = () => {
               }}
             >
               <BiPlus /> Add an User
-            </WMGButton>
+            </AdminButton>
             <div className="drawer-container">
               <Drawer
                 anchor="right"
