@@ -1,7 +1,7 @@
 import React from "react";
-import "./WMGButton.scss";
+import "./AdminButton.scss";
 
-interface WMGButtonProps {
+interface AdminButtonProps {
   children: React.ReactNode;
   color?: string;
   disabled?: React.ReactNode;
@@ -10,7 +10,7 @@ interface WMGButtonProps {
   onClick?: () => void;
 }
 
-const WMGButton: React.FC<WMGButtonProps> = (props) => {
+const AdminButton: React.FC<AdminButtonProps> = (props) => {
   if (props.variant === "danger") {
     return (
       <button className="button-container danger" onClick={props.onClick}>
@@ -29,8 +29,8 @@ const WMGButton: React.FC<WMGButtonProps> = (props) => {
   );
 };
 
-WMGButton.defaultProps = {
-  color: "#1e6091",
+AdminButton.defaultProps = {
+  color: "#0077b6",
 };
 
-export default WMGButton;
+export default AdminButton;
