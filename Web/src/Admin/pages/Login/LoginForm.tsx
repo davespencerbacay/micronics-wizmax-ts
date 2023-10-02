@@ -126,11 +126,12 @@ const LoginForm: React.FC = () => {
                   />
                 </div>
                 <div className="login-options">
-                  <label>
-                    <Field type="checkbox" name="rememberMeToggle" />
-                    Remember Me
-                  </label>
-                  <button>Forgot Password?</button>
+                  <button
+                    onClick={() => console.log("forgot password")}
+                    type="button"
+                  >
+                    Forgot Password?
+                  </button>
                 </div>
                 <div className="btn-login">
                   <button>Login</button>
