@@ -4,6 +4,8 @@ const ADMIN_ROUTES = {
 	PROFILE: "/profile",
 	CALENDARS: "/calendars",
 	USERS: "/users",
+	PRODUCTS: "/portal/products",
+	FAQs: "/faqs",
 };
 
 export default ADMIN_ROUTES;
