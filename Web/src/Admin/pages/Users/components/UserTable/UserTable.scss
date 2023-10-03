@@ -1,50 +1,50 @@
 .user-table-container {
-  .MuiDataGrid-columnHeader {
-    font-size: 1.5rem;
-    font-family: "Public Sans", sans-serif, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-  .MuiDataGrid-cellContent {
-    font-size: 1.3rem;
-    font-family: "Public Sans", sans-serif, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
-      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-  .MuiTablePagination-displayedRows {
-    font-size: 1.3rem;
-  }
+	.MuiDataGrid-columnHeader {
+		font-size: 1.5rem;
+		font-family: "Public Sans", sans-serif, -apple-system, BlinkMacSystemFont,
+			"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+			"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	}
+	.MuiDataGrid-cellContent {
+		font-size: 1.3rem;
+		font-family: "Public Sans", sans-serif, -apple-system, BlinkMacSystemFont,
+			"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+			"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	}
+	.MuiTablePagination-displayedRows {
+		font-size: 1.3rem;
+	}
 }
 
 .grid-actions-btn {
-  button {
-    margin: 0 0.5rem;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    width: 50px;
-    border: none;
-  }
-  .delete-btn {
-    background: #e63946;
-    color: #fff;
-  }
+	button {
+		margin: 0 0.5rem;
+		padding: 0.5rem;
+		font-size: 1.2rem;
+		border-radius: 5px;
+		width: 50px;
+		border: none;
+	}
+	.delete-btn {
+		background: #e63946;
+		color: #fff;
+	}
 
-  .edit-btn {
-    background: #457b9d;
-    color: #fff;
-  }
+	.edit-btn {
+		background: #457b9d;
+		color: #fff;
+	}
 }
 
 .MuiBox-root {
-  .modal-btn {
-    display: flex;
-    justify-content: flex-end;
-    button {
-      margin: 0 0.5rem;
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-  }
+	.modal-btn {
+		display: flex;
+		justify-content: flex-end;
+		button {
+			margin: 0 0.5rem;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
 }
