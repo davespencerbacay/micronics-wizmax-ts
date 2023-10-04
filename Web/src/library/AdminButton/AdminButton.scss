@@ -1,34 +1,36 @@
 .button-container {
-	color: #fff;
-	font-family: "Montserrat", sans-serif;
-	border: 1px solid transparent;
-	transition: 0.2s;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid transparent;
+  transition: 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 
-	&:hover {
-		opacity: 0.7;
-		border: 1px solid #ced4da;
-	}
+  &:hover {
+    opacity: 0.7;
+    border: 1px solid #ced4da;
+  }
 
-	&:disabled {
-		opacity: 0.3;
-		pointer-events: none;
-	}
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .default {
-	&:hover {
-		background: #fff !important;
-		color: #0077b6;
-		font-weight: 600;
-	}
+  &:hover {
+    background: #fff !important;
+    color: #0077b6;
+    font-weight: 600;
+  }
 }
 
 .danger {
-	background: #f02d3a;
+  background: #f02d3a;
 
-	&:hover {
-		background: #fff;
-		color: #f02d3a;
-		font-weight: 600;
-	}
+  &:hover {
+    background: #fff;
+    color: #f02d3a;
+    font-weight: 600;
+  }
 }

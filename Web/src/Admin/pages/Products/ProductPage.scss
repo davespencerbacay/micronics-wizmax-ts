@@ -1,0 +1,14 @@
+.product-page-container {
+  margin: 2rem 0;
+  .product-top-actions {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-table {
+    display: flex;
+    border: 1px solid #ced4da;
+  }
+}
