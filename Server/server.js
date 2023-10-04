@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js";
+import productRoutes from "./routes/productRoutes.js";
 import cookieParser from "cookie-parser";
 import { errorHandler, notFound } from "./middleware/errorMiddleware.js";
 import cors from "cors";
@@ -35,6 +36,7 @@ app.get("/", (req, res) => {
 
 // User route
 app.use("/api/users", userRoutes);
+app.use("/api/products", productRoutes);
 
 // Custom Error Message
 app.use(notFound);
