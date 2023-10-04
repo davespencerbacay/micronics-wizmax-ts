@@ -80,12 +80,7 @@ const createUser = asyncHandler(async (req, res) => {
   if (user) {
     generateToken(res, user._id);
 
-    res.status(201).json({
-      _id: user._id,
-      name: user.firstName + " " + user.lastName,
-      email: user.email,
-      createdAt: user.createdAt,
-    });
+    res.status(201).json("User sucessfully created.");
   } else {
     res.status(400);
     throw new Error("Invalid User Data!");
