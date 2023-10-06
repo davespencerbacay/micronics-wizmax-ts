@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import { ROUTE_PATH } from "constants/routes";
 import { CrumbTypes } from "../Dashboard/components/types";
-import Form from "./components/Form";
+import Form from "./components/UserForm";
 import { GridColDef } from "@mui/x-data-grid";
 import { UsersData } from "Admin/models/userModel";
 import { Users } from "Admin/api/agent";
