@@ -4,13 +4,13 @@ import { DataGrid } from "@mui/x-data-grid";
 import Spinner from "library/Spinner/Spinner";
 import "./UserTable.scss";
 
-interface UserTable {
+export interface DataGridProps {
 	loading: boolean;
 	rows: any;
 	columns: any;
 }
 
-const UserTable: React.FC<UserTable> = (props) => {
+const UserTable: React.FC<DataGridProps> = (props) => {
 	if (props.loading) {
 		return <Spinner variant="fixed" />;
 	}
