@@ -70,12 +70,32 @@ const updateProductById = asyncHandler(async (req, res) => {
     const { id } = req.params;
     const product = await Product.findById(id);
 
+    /** Start of thumbnail */
+    let thumbnailResult;
+    if (typeof productImage === "string") {
+      thumbnailResult = req.body.productImage;
+    } else {
+      try {
+        thumbnailResult = await cloudinary.v2.uploader.upload(req.file.path, {
+          folder: "products",
+          use_filename: true,
+        });
+      } catch (error) {
+        console.log(error);
+        thumbnailResult = req.body.productImage;
+      }
+    }
+    /** End of thumbnail */
+
     if (product) {
-      (product.category = req.body.category || product.category),
-        (product.productName = req.body.productName || product.productName),
-        (product.productImage = req.body.productImage || product.productImage),
-        (product.productDescription =
-          req.body.productDescription || product.productDescription);
+      product.category = req.body.productCategory || product.category;
+      product.productName = req.body.productName || product.productName;
+      product.productImage =
+        typeof thumbnailResult === "string"
+          ? thumbnailResult
+          : thumbnailResult.secure_url;
+      product.productDescription =
+        req.body.productDescription || product.productDescription;
 
       const updatedProduct = await product.save();
 
