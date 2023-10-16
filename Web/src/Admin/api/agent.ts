@@ -99,6 +99,12 @@ const Products = {
     );
     return response;
   },
+  getSingleProduct: async (id: string) => {
+    const response = await requests.get<ProductsData | undefined>(
+      `/api/products/${id}`
+    );
+    return response;
+  },
   createProduct: async (
     productCategory: string,
     productImage: string,
@@ -132,13 +138,23 @@ const Products = {
     productId: string,
     productCategory: string,
     productImage: string,
-    productName: string
+    productName: string,
+    productDescription: string
   ) => {
+    axios.interceptors.request.use((config) => {
+      const token = getUserToken();
+      if (token && config.headers) {
+        config.headers.Authorization = `Bearer ${token}`;
+        config.headers["Content-Type"] = "multipart/form-data";
+      }
+      return config;
+    });
     await requests.put(`http://localhost:5000/api/products/${productId}`, {
       productId,
       productCategory,
       productImage,
       productName,
+      productDescription,
     });
   },
 };

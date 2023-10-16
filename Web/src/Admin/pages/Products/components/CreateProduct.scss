@@ -14,6 +14,24 @@
     .product-form-control {
       margin: 1.5rem 0;
 
+      .MuiButtonBase-root {
+        font: 600 1rem "Montserrat";
+      }
+
+      .product-img-container {
+        display: flex;
+        margin: 1.5rem 0;
+        img {
+          padding: 0.5rem;
+
+          border: 1px solid #c0b8b8;
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      }
+
       label {
         font: 700 1.5rem "Montserrat";
       }
