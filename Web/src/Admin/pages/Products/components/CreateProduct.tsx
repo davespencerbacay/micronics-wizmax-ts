@@ -141,7 +141,7 @@ const CreateProduct: React.FC = () => {
                       />
                     </MUIButton>
                   </div>
-                  <div className="product-form-control">
+                  <div className="product-form-control category">
                     <label htmlFor="productCategory">Product Category</label>
                     <Select
                       options={options}
@@ -169,8 +169,8 @@ const CreateProduct: React.FC = () => {
                     </AdminButton>
                   </div>
                   {/* PRE tags for checking : Comment if will not needed */}
-                  <pre>{JSON.stringify(values, null, 2)}</pre>
-                  <pre>{JSON.stringify(errors, null, 2)}</pre>
+                  {/* <pre>{JSON.stringify(values, null, 2)}</pre>
+                  <pre>{JSON.stringify(errors, null, 2)}</pre> */}
                 </Form>
               )}
             </Formik>

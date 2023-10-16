@@ -34,7 +34,7 @@
       background: none;
       border: 1px solid #808080;
       padding: 0.5rem 0;
-      font: 500 1.5rem "Montserrat";
+      font: 600 1.5rem "Montserrat";
 
       &:focus {
         outline: none;
@@ -43,6 +43,11 @@
 
     .MuiInputBase-inputMultiline {
       padding: 1rem;
+      font-weight: 600;
+
+      &::placeholder {
+        font-weight: 500;
+      }
     }
 
     .product-form-btn-actions {
@@ -55,5 +60,11 @@
         font-weight: 500;
       }
     }
+  }
+}
+
+.category {
+  .css-13cymwt-control {
+    font: 600 1.5rem "Montserrat";
   }
 }
