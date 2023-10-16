@@ -7,17 +7,18 @@ import {
   updateProductById,
   deleteProductById,
 } from "../controllers/productController.js";
+import multerConfig from "../utils/multer.js";
 
 const router = express.Router();
 
 router
   .route("/")
-  .post(protect, admin, createProduct)
+  .post(protect, admin, multerConfig.single("productImage"), createProduct)
   .get(protect, admin, getProducts);
 router
   .route("/:id")
   .get(protect, admin, getProductsById)
-  .put(protect, admin, updateProductById)
+  .put(protect, admin, multerConfig.single("productImage"), updateProductById)
   .delete(protect, admin, deleteProductById);
 
 export default router;

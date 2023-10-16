@@ -1,5 +1,6 @@
 import asyncHandler from "../middleware/asyncHandler.js";
 import Product from "../models/productModel.js";
+import cloudinary from "../utils/cloudinary.js";
 
 // @desc  Fetch All Products
 // route  GET/api/products
@@ -35,27 +36,29 @@ const getProductsById = asyncHandler(async (req, res) => {
 // route  POST/api/products/
 // access Private
 const createProduct = asyncHandler(async (req, res) => {
-  const { category, productName, productImage, productDescription } = req.body;
+  const { productCategory, productName, productImage, productDescription } =
+    req.body;
 
-  //   Check for Product Existence
-  const productExist = await Product.findOne({ productName });
-  if (productExist) {
-    res.status(400);
-    throw new Error("[Product] already exist");
-  }
-
-  const product = await Product.create({
-    category,
-    productName,
-    productImage,
-    productDescription,
-  });
-
-  if (product) {
-    res.status(201).json("Product sucessfully created.");
-  } else {
-    res.status(400);
-    throw new Error("Invalid Product Data");
+  try {
+    const productImageResult = await cloudinary.v2.uploader.upload(
+      req.file.path,
+      {
+        folder: "products",
+        use_filename: true,
+      }
+    );
+    const products = new Product({
+      category: productCategory,
+      productName,
+      productImage: productImageResult.secure_url,
+      productDescription,
+    });
+    await products.save();
+    res.status(201).json(products);
+  } catch (error) {
+    console.log(error);
+    res.status(404);
+    throw new Error("Error Occured");
   }
 });
 
