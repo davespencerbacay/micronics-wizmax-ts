@@ -1,0 +1,91 @@
+.adminWrapper-content {
+	height: 100vh;
+	.create-product-main-container {
+		h3 {
+			margin: 2rem 0;
+			font: 600 1.8rem "Montserrat";
+		}
+		.create-form-container {
+			margin: 1rem 0;
+			padding: 2rem;
+			box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.12);
+			-webkit-box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.12);
+			-moz-box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 0.12);
+			border-radius: 5px;
+
+			.product-form-control {
+				margin: 1.5rem 0;
+
+				.MuiButtonBase-root {
+					font: 600 1rem "Montserrat";
+				}
+
+				.product-img-container {
+					display: flex;
+					margin: 1.5rem 0;
+					img {
+						padding: 0.5rem;
+
+						border: 1px solid #c0b8b8;
+						width: 200px;
+						height: 200px;
+						object-fit: cover;
+						border-radius: 5px;
+					}
+				}
+
+				label {
+					font: 700 1.5rem "Montserrat";
+				}
+
+				input {
+					display: flex;
+					align-items: center;
+					padding: 1rem;
+					font-weight: 600;
+
+					&::placeholder {
+						font: 500 1.5rem "Montserrat";
+					}
+				}
+			}
+			.MuiFilledInput-root {
+				margin: 0.5rem 0;
+				background: none;
+				border: 1px solid #808080;
+				padding: 0.5rem 0;
+				font: 600 1.5rem "Montserrat";
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.MuiInputBase-inputMultiline {
+				padding: 1rem;
+				font-weight: 600;
+
+				&::placeholder {
+					font-weight: 500;
+				}
+			}
+
+			.product-form-btn-actions {
+				display: flex;
+				justify-content: end;
+
+				button {
+					margin: 1rem;
+					font-size: 1.5rem;
+					font-weight: 500;
+				}
+			}
+		}
+	}
+
+	.category {
+		.css-13cymwt-control {
+			font: 600 1.5rem "Montserrat";
+		}
+	}
+}
