@@ -10546,7 +10546,7 @@ const products = [
     ).replace(":productId", "WIZMAX-PLATINUM"),
     name: "Wizmax Platinum",
     filters: filters[0].psuFilters,
-    brochure: "/images/db/psu-brochure.png",
+    brochure: "/images/db/WIZMAX PLATINUM-1200W_ENGLISH.png",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
