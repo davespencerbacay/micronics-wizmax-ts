@@ -139,18 +139,23 @@ const ProductForm: React.FC = () => {
 							<Formik
 								initialValues={initialValues}
 								enableReinitialize
-								onSubmit={async (data) => {
-									if (isEditMode) {
-										setLoading(true);
-										await updateProductHandler(id ?? "", data);
-										toast.success("Product Successfully Updated.");
-										navigate(ADMIN_ROUTES.PRODUCTS);
+								onSubmit={async (data, { resetForm }) => {
+									try {
+										if (isEditMode) {
+											setLoading(true);
+											await updateProductHandler(id ?? "", data);
+											toast.success("Product Successfully Updated.");
+											navigate(ADMIN_ROUTES.PRODUCTS);
+											setLoading(false);
+										} else {
+											setLoading(true);
+											await createProductHandler(data);
+											navigate(ADMIN_ROUTES.PRODUCTS);
+											setLoading(false);
+										}
+									} catch (error) {
 										setLoading(false);
-									} else {
-										setLoading(true);
-										await createProductHandler(data);
-										navigate(ADMIN_ROUTES.PRODUCTS);
-										setLoading(false);
+										toast.error("Invalid Data");
 									}
 								}}
 							>
@@ -231,9 +236,7 @@ const ProductForm: React.FC = () => {
 											<AdminButton variant="default" type="submit">
 												{isEditMode ? "Edit Product" : "Add Product"}
 											</AdminButton>
-											<AdminButton variant="danger" type="button">
-												Reset
-											</AdminButton>
+											<AdminButton variant="danger">Reset</AdminButton>
 										</div>
 										{/* PRE tags for checking : Comment if  not needed */}
 										{/* <pre>{JSON.stringify(values, null, 2)}</pre>
