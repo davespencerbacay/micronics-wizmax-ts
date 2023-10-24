@@ -21,6 +21,18 @@
 					font: 600 1rem "Montserrat";
 				}
 
+				.MuiFormHelperText-root {
+					font-size: 1.3rem;
+					margin: 0;
+					font: 600 1.2rem "Montserrat";
+				}
+
+				.error-message-product {
+					.message {
+						margin: -1.3rem 0 -1rem 0;
+					}
+				}
+
 				.product-img-container {
 					display: flex;
 					margin: 1.5rem 0;
