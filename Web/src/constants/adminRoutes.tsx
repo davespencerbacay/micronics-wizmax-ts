@@ -8,6 +8,7 @@ const ADMIN_ROUTES = {
   FAQs: "/portal/faqs",
   CREATEPRODUCT: "/portal/create-product",
   UPDATEPRODUCT: "/portal/update-product/:id",
+  VIEWPRODUCT: "/portal/products/:id",
 };
 
 export default ADMIN_ROUTES;
