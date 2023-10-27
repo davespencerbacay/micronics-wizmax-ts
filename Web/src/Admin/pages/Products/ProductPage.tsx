@@ -104,8 +104,8 @@ const ProductPage: React.FC = () => {
 			);
 			setProducts(updatedProducts);
 			setLoading(false);
-			toast.success("Product successfully deleted.");
-			Swal.fire("Deleted!", "Product has been deleted.", "success");
+			toast.success("Product successfully Deleted.");
+			Swal.fire("Deleted!", "Product has been Deleted.", "success");
 		}
 	};
 

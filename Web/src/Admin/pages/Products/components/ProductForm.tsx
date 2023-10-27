@@ -12,7 +12,9 @@ import { toast } from "react-toastify";
 import { useNavigate, useParams } from "react-router-dom";
 import ADMIN_ROUTES from "constants/adminRoutes";
 import Spinner from "library/Spinner/Spinner";
+import * as yup from "yup";
 import "./ProductForm.scss";
+import AlertMessage from "library/AlertMessage/Alert";
 
 interface DataValues {
 	productCategory: string;
@@ -22,6 +24,10 @@ interface DataValues {
 }
 
 const ProductForm: React.FC = () => {
+	const [loading, setLoading] = useState(false);
+
+	const [thumbnailPreview, setThumbnailPreview] = useState("");
+
 	const [initialValues, setInitialValues] = useState({
 		productCategory: "",
 		productName: "",
@@ -29,9 +35,13 @@ const ProductForm: React.FC = () => {
 		productDescription: "",
 	});
 
-	const [loading, setLoading] = useState(false);
-
-	const [thumbnailPreview, setThumbnailPreview] = useState("");
+	// Validation Schema
+	const validationSchema = yup.object({
+		productCategory: yup.string().required("This field is required."),
+		productName: yup.string().required("This field is required."),
+		productImage: yup.string().required("This field is required."),
+		productDescription: yup.string().required("This field is required."),
+	});
 
 	//   React Select Options
 	const options = [
@@ -139,18 +149,24 @@ const ProductForm: React.FC = () => {
 							<Formik
 								initialValues={initialValues}
 								enableReinitialize
-								onSubmit={async (data) => {
-									if (isEditMode) {
-										setLoading(true);
-										await updateProductHandler(id ?? "", data);
-										toast.success("Product Successfully Updated.");
-										navigate(ADMIN_ROUTES.PRODUCTS);
+								validationSchema={validationSchema}
+								onSubmit={async (data, { resetForm }) => {
+									try {
+										if (isEditMode) {
+											setLoading(true);
+											await updateProductHandler(id ?? "", data);
+											toast.success("Product Successfully Updated.");
+											navigate(ADMIN_ROUTES.PRODUCTS);
+											setLoading(false);
+										} else {
+											setLoading(true);
+											await createProductHandler(data);
+											navigate(ADMIN_ROUTES.PRODUCTS);
+											setLoading(false);
+										}
+									} catch (error) {
 										setLoading(false);
-									} else {
-										setLoading(true);
-										await createProductHandler(data);
-										navigate(ADMIN_ROUTES.PRODUCTS);
-										setLoading(false);
+										toast.error("Invalid Data");
 									}
 								}}
 							>
@@ -178,6 +194,13 @@ const ProductForm: React.FC = () => {
 													onClick={clickedFileInput}
 												/>
 											</MUIButton>
+											<div className="error-message-product">
+												{values.productImage === "" ? (
+													<AlertMessage message="This field is required" />
+												) : (
+													<React.Fragment />
+												)}
+											</div>
 											{thumbnailPreview ||
 											(typeof values.productImage === "string" &&
 												values.productImage) ? (
@@ -197,6 +220,7 @@ const ProductForm: React.FC = () => {
 											<label htmlFor="productCategory">Product Category</label>
 											<Select
 												options={options}
+												isClearable
 												onChange={(e) =>
 													setFieldValue("productCategory", e?.value)
 												}
@@ -209,6 +233,13 @@ const ProductForm: React.FC = () => {
 														: undefined
 												}
 											/>
+											<div className="error-message-product">
+												{values.productCategory === "" ? (
+													<AlertMessage message="This field is required" />
+												) : (
+													<React.Fragment />
+												)}
+											</div>
 										</div>
 										<div className="product-form-control">
 											<label>Product Name</label>
@@ -231,13 +262,11 @@ const ProductForm: React.FC = () => {
 											<AdminButton variant="default" type="submit">
 												{isEditMode ? "Edit Product" : "Add Product"}
 											</AdminButton>
-											<AdminButton variant="danger" type="button">
-												Reset
-											</AdminButton>
+											<AdminButton variant="danger">Reset</AdminButton>
 										</div>
 										{/* PRE tags for checking : Comment if  not needed */}
 										{/* <pre>{JSON.stringify(values, null, 2)}</pre>
-                    <pre>{JSON.stringify(errors, null, 2)}</pre> */}
+										<pre>{JSON.stringify(errors, null, 2)}</pre> */}
 									</Form>
 								)}
 							</Formik>
