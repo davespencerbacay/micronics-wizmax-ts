@@ -5,52 +5,62 @@ import GuardedWrapper from "Admin/layout/GuardedWrapper/GuardedWrapper";
 import UserPage from "Admin/pages/Users/UserPage";
 import ProductPage from "Admin/pages/Products/ProductPage";
 import ProductForm from "Admin/pages/Products/components/ProductForm";
+import SingleProductPage from "Admin/pages/Products/components/SingleProduct/SingleProductPage";
 
 const ADMIN_REACT_ROUTES = [
-	{
-		PATH: ROUTE_PATH.ADMIN,
-		ELEMENT: <Portal />,
-	},
-	{
-		PATH: ROUTE_PATH.DASHBOARD,
-		ELEMENT: (
-			<GuardedWrapper>
-				<Dashboard />
-			</GuardedWrapper>
-		),
-	},
-	{
-		PATH: ROUTE_PATH.USERS,
-		ELEMENT: (
-			<GuardedWrapper>
-				<UserPage />
-			</GuardedWrapper>
-		),
-	},
-	{
-		PATH: ROUTE_PATH.PRODUCTS,
-		ELEMENT: (
-			<GuardedWrapper>
-				<ProductPage />
-			</GuardedWrapper>
-		),
-	},
-	{
-		PATH: ROUTE_PATH.CREATEPRODUCT,
-		ELEMENT: (
-			<GuardedWrapper>
-				<ProductForm />
-			</GuardedWrapper>
-		),
-	},
-	{
-		PATH: ROUTE_PATH.UPDATEPRODUCT,
-		ELEMENT: (
-			<GuardedWrapper>
-				<ProductForm />
-			</GuardedWrapper>
-		),
-	},
+  {
+    PATH: ROUTE_PATH.ADMIN,
+    ELEMENT: <Portal />,
+  },
+  {
+    PATH: ROUTE_PATH.DASHBOARD,
+    ELEMENT: (
+      <GuardedWrapper>
+        <Dashboard />
+      </GuardedWrapper>
+    ),
+  },
+  {
+    PATH: ROUTE_PATH.USERS,
+    ELEMENT: (
+      <GuardedWrapper>
+        <UserPage />
+      </GuardedWrapper>
+    ),
+  },
+  {
+    PATH: ROUTE_PATH.PRODUCTS,
+    ELEMENT: (
+      <GuardedWrapper>
+        <ProductPage />
+      </GuardedWrapper>
+    ),
+  },
+  {
+    PATH: ROUTE_PATH.CREATEPRODUCT,
+    ELEMENT: (
+      <GuardedWrapper>
+        <ProductForm />
+      </GuardedWrapper>
+    ),
+  },
+  {
+    PATH: ROUTE_PATH.UPDATEPRODUCT,
+    ELEMENT: (
+      <GuardedWrapper>
+        <ProductForm />
+      </GuardedWrapper>
+    ),
+  },
+
+  {
+    PATH: ROUTE_PATH.VIEWPRODUCT,
+    ELEMENT: (
+      <GuardedWrapper>
+        <SingleProductPage />
+      </GuardedWrapper>
+    ),
+  },
 ];
 
 export default ADMIN_REACT_ROUTES;

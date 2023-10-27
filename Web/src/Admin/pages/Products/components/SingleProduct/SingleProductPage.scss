@@ -1,0 +1,54 @@
+.view-product-container {
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px -1px #eee, 0 2px 4px -1px #504f4f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+  .two-col-container {
+    margin: 2rem 0;
+
+    .MuiGrid-root {
+      padding-top: unset;
+    }
+
+    .image-holder {
+      margin: 2rem;
+      img {
+        width: 600px;
+        height: 600px;
+        border-radius: 10px;
+      }
+    }
+
+    .product-captions {
+      width: 650px;
+
+      h2,
+      h3,
+      p {
+        font-family: "Montserrat", sans-serif;
+        color: #264653;
+      }
+
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 4rem 0;
+      }
+
+      h3 {
+        font-weight: 700;
+        margin: 2rem 0;
+        font-size: 1.5rem;
+      }
+
+      p {
+        line-height: 3rem;
+        margin: 2rem 0;
+        text-align: justify;
+        font-weight: 400;
+      }
+    }
+  }
+}

@@ -5119,170 +5119,170 @@ const products = [
       },
     ],
   },
-  {
-    productId: "MH3",
-    categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MH3"),
-    name: "MH3",
-    filters: filters[0].headsetFilters,
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
-    ],
-    countryAvailability: [
-      // {
-      //   abbreviation: "KR",
-      //   country: "Korea",
-      // },
-      // {
-      //   abbreviation: "PH",
-      //   country: "Philippines",
-      // },
-      // {
-      //   abbreviation: "US",
-      //   country: "United States",
-      // },
-      // {
-      //   abbreviation: "EC",
-      //   country: "Ecuador",
-      // },
-      // {
-      //   abbreviation: "JP",
-      //   country: "Japan",
-      // },
-    ],
-    featuredSpecs: [
-      {
-        specs: "50mm Neodymium Driver Unit",
-      },
-      {
-        specs: "Virtual 7.1 Ch Surround Sound",
-      },
-      {
-        specs: "Noise Cancelling Microphone",
-      },
-      {
-        specs: "RGB Lighting Effect",
-      },
-      {
-        specs: "Dedicated Software",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME ",
-        description: ["MH3"],
-      },
-      // {
-      //   name: "SIZE",
-      //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
-      // },
-      // {
-      //   name: "WEIGHT",
-      //   description: ["295g (Cable Excluded)"],
-      // },
-      // {
-      //   name: "WIRED/WIRELESS",
-      //   description: ["Wired"],
-      // },
-      // {
-      //   name: "INPUT TERMINAL",
-      //   description: ["USB A / Gold Plated"],
-      // },
-      {
-        name: "MICROPHONE ",
-        description: ["Hardware Microphone Noise Cancellation"],
-      },
-      {
-        name: "DRIVER UNIT ",
-        description: ["50mm Driver Unit"],
-      },
-      // {
-      //   name: "MICROPHONE DIMENSION (MIC) ",
-      //   description: ["⌀4 x 1.5mm"],
-      // },
-      // {
-      //   name: " ENC MICROPHONE DIMENSION",
-      //   description: ["⌀6 x 5mm"],
-      // },
-      // {
-      //   name: "CABLE LENGTH",
-      //   description: ["2200 ± 50mm"],
-      // },
-      {
-        name: "SURROUND SOUND ",
-        description: ["Virtual 7.1ch"],
-      },
-      {
-        name: "LED",
-        description: ["RGB"],
-      },
-      // {
-      //   name: "COMPATIBILITY",
-      //   description: [
-      //     "Windows XP®, Windows 7®, Windows 8®, Windows10®, Windows 11®, PlayStation4®",
-      //   ],
-      // },
-      // {
-      //   name: "PICK UP PATTERN",
-      //   description: ["Omni-directional"],
-      // },
-      // {
-      //   name: "SENSITIVITY",
-      //   description: ["-42dB ± 3dB / 1kHz "],
-      // },
-      // {
-      //   name: "FREQUENCY RANGE",
-      //   description: ["100Hz - 8kHz"],
-      // },
-      // {
-      //   name: "MAXIMUM OUTPUT",
-      //   description: ["30mW"],
-      // },
-      // {
-      //   name: "IMPEDANCE",
-      //   description: ["32Ω ± 15%"],
-      // },
-      {
-        name: "PRODUCT TYPE ",
-        description: ["Gaming Headset"],
-      },
-      // {
-      //   name: "CONTENTS",
-      //   description: ["WH1 Headset, Windscreen, Product Manual"],
-      // },
-      {
-        name: "PRODUCTION DATE",
-        description: ["Label on the Back"],
-      },
-      {
-        name: "WARRANTY",
-        description: ["1 year warranty under limited conditions apply"],
-      },
-      // {
-      //   name: "KC CERTIFICATION ",
-      //   description: [
-      //     <React.Fragment>
-      //       <span>
-      //         <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-      //         R-R-HMM-WH-1
-      //       </span>
-      //     </React.Fragment>,
-      //   ],
-      // },
-      {
-        name: "COMPANY NAME ",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE ",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
+  // {
+  //   productId: "MH3",
+  //   categoryId: "CATEGORY_HEADSET",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(
+  //     ":categoryId",
+  //     "CATEGORY_HEADSET"
+  //   ).replace(":productId", "MH3"),
+  //   name: "MH3",
+  //   filters: filters[0].headsetFilters,
+  //   brochure: "",
+  //   img: [
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/MH3_1000x1000px_ukzcwl.png",
+  //   ],
+  //   countryAvailability: [
+  //     // {
+  //     //   abbreviation: "KR",
+  //     //   country: "Korea",
+  //     // },
+  //     // {
+  //     //   abbreviation: "PH",
+  //     //   country: "Philippines",
+  //     // },
+  //     // {
+  //     //   abbreviation: "US",
+  //     //   country: "United States",
+  //     // },
+  //     // {
+  //     //   abbreviation: "EC",
+  //     //   country: "Ecuador",
+  //     // },
+  //     // {
+  //     //   abbreviation: "JP",
+  //     //   country: "Japan",
+  //     // },
+  //   ],
+  //   featuredSpecs: [
+  //     {
+  //       specs: "50mm Neodymium Driver Unit",
+  //     },
+  //     {
+  //       specs: "Virtual 7.1 Ch Surround Sound",
+  //     },
+  //     {
+  //       specs: "Noise Cancelling Microphone",
+  //     },
+  //     {
+  //       specs: "RGB Lighting Effect",
+  //     },
+  //     {
+  //       specs: "Dedicated Software",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME ",
+  //       description: ["MH3"],
+  //     },
+  //     // {
+  //     //   name: "SIZE",
+  //     //   description: ["206mm(L) x 102mm(W) x 218mm(H)"],
+  //     // },
+  //     // {
+  //     //   name: "WEIGHT",
+  //     //   description: ["295g (Cable Excluded)"],
+  //     // },
+  //     // {
+  //     //   name: "WIRED/WIRELESS",
+  //     //   description: ["Wired"],
+  //     // },
+  //     // {
+  //     //   name: "INPUT TERMINAL",
+  //     //   description: ["USB A / Gold Plated"],
+  //     // },
+  //     {
+  //       name: "MICROPHONE ",
+  //       description: ["Hardware Microphone Noise Cancellation"],
+  //     },
+  //     {
+  //       name: "DRIVER UNIT ",
+  //       description: ["50mm Driver Unit"],
+  //     },
+  //     // {
+  //     //   name: "MICROPHONE DIMENSION (MIC) ",
+  //     //   description: ["⌀4 x 1.5mm"],
+  //     // },
+  //     // {
+  //     //   name: " ENC MICROPHONE DIMENSION",
+  //     //   description: ["⌀6 x 5mm"],
+  //     // },
+  //     // {
+  //     //   name: "CABLE LENGTH",
+  //     //   description: ["2200 ± 50mm"],
+  //     // },
+  //     {
+  //       name: "SURROUND SOUND ",
+  //       description: ["Virtual 7.1ch"],
+  //     },
+  //     {
+  //       name: "LED",
+  //       description: ["RGB"],
+  //     },
+  //     // {
+  //     //   name: "COMPATIBILITY",
+  //     //   description: [
+  //     //     "Windows XP®, Windows 7®, Windows 8®, Windows10®, Windows 11®, PlayStation4®",
+  //     //   ],
+  //     // },
+  //     // {
+  //     //   name: "PICK UP PATTERN",
+  //     //   description: ["Omni-directional"],
+  //     // },
+  //     // {
+  //     //   name: "SENSITIVITY",
+  //     //   description: ["-42dB ± 3dB / 1kHz "],
+  //     // },
+  //     // {
+  //     //   name: "FREQUENCY RANGE",
+  //     //   description: ["100Hz - 8kHz"],
+  //     // },
+  //     // {
+  //     //   name: "MAXIMUM OUTPUT",
+  //     //   description: ["30mW"],
+  //     // },
+  //     // {
+  //     //   name: "IMPEDANCE",
+  //     //   description: ["32Ω ± 15%"],
+  //     // },
+  //     {
+  //       name: "PRODUCT TYPE ",
+  //       description: ["Gaming Headset"],
+  //     },
+  //     // {
+  //     //   name: "CONTENTS",
+  //     //   description: ["WH1 Headset, Windscreen, Product Manual"],
+  //     // },
+  //     {
+  //       name: "PRODUCTION DATE",
+  //       description: ["Label on the Back"],
+  //     },
+  //     {
+  //       name: "WARRANTY",
+  //       description: ["1 year warranty under limited conditions apply"],
+  //     },
+  //     // {
+  //     //   name: "KC CERTIFICATION ",
+  //     //   description: [
+  //     //     <React.Fragment>
+  //     //       <span>
+  //     //         <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
+  //     //         R-R-HMM-WH-1
+  //     //       </span>
+  //     //     </React.Fragment>,
+  //     //   ],
+  //     // },
+  //     {
+  //       name: "COMPANY NAME ",
+  //       description: ["Hanmi Micronics Co., Ltd."],
+  //     },
+  //     {
+  //       name: "CUSTOMER SERVICE ",
+  //       description: ["wizmaxglobal.com"],
+  //     },
+  //   ],
+  // },
   {
     productId: "W301",
     categoryId: "CATEGORY_HEADSET",
@@ -9337,120 +9337,120 @@ const products = [
       },
     ],
   },
-  {
-    productId: "MA-6-FRIGATE",
-    categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "MA-6-FRIGATE"),
-    name: "MA-6 Frigate",
-    filters: filters[0].fanscoolersFilters,
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      // {
-      //   abbreviation: "EC",
-      //   country: "Ecuador",
-      // },
-      // {
-      //   abbreviation: "JP",
-      //   country: "Japan",
-      // },
-    ],
-    featuredSpecs: [
-      {
-        specs: "250W TDP",
-      },
-      {
-        specs: "6x Nickel Plated Copper Heatpipes",
-      },
-      {
-        specs: "140mm Fan",
-      },
-      {
-        specs: "165mm Height",
-      },
-      {
-        specs: "LGA1700 / LGA1200 / LGA115X / AM5 / AM4 Sockets",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["MA-6 Frigate"],
-      },
-      {
-        name: "SIZE",
-        description: ["146(W)mm x 165(D)mm x 165(H)mm"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["1600g"],
-      },
-      {
-        name: "COLOR",
-        description: ["Black"],
-      },
-      {
-        name: "FAN SPEED",
-        description: ["1500 RPM"],
-      },
-      {
-        name: "FAN SIZE",
-        description: ["140mm x 140mm x 26mm"],
-      },
-      {
-        name: "TDP (Real)",
-        description: ["250W"],
-      },
-      {
-        name: "BASE",
-        description: ["Copper Heat Pipes"],
-      },
-      {
-        name: "COMPATIBILITY",
-        description: ["LGA 775/115X/1200/1700/2011/2066/AM3/AM4/AM5"],
-      },
-      {
-        name: "MAX STATIC PRESSURE",
-        description: ["2.2 mmH₂O"],
-      },
-      {
-        name: "MAX AIR FLOW",
-        description: ["83 CFM"],
-      },
-      // {
-      //   name: "WARRANTY",
-      //   description: ["Main Product: 3 years, Cooling Fan: 1 year"],
-      // },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
+  // {
+  //   productId: "MA-6-FRIGATE",
+  //   categoryId: "CATEGORY_FC",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(
+  //     ":categoryId",
+  //     "CATEGORY_FC"
+  //   ).replace(":productId", "MA-6-FRIGATE"),
+  //   name: "MA-6 Frigate",
+  //   filters: filters[0].fanscoolersFilters,
+  //   brochure: "",
+  //   img: [
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672219625/product-images/fans_coolers/MA-6_Frigate_Black_-_1_evzyvq.png",
+  //   ],
+  //   countryAvailability: [
+  //     {
+  //       abbreviation: "KR",
+  //       country: "Korea",
+  //     },
+  //     {
+  //       abbreviation: "PH",
+  //       country: "Philippines",
+  //     },
+  //     {
+  //       abbreviation: "US",
+  //       country: "United States",
+  //     },
+  //     // {
+  //     //   abbreviation: "EC",
+  //     //   country: "Ecuador",
+  //     // },
+  //     // {
+  //     //   abbreviation: "JP",
+  //     //   country: "Japan",
+  //     // },
+  //   ],
+  //   featuredSpecs: [
+  //     {
+  //       specs: "250W TDP",
+  //     },
+  //     {
+  //       specs: "6x Nickel Plated Copper Heatpipes",
+  //     },
+  //     {
+  //       specs: "140mm Fan",
+  //     },
+  //     {
+  //       specs: "165mm Height",
+  //     },
+  //     {
+  //       specs: "LGA1700 / LGA1200 / LGA115X / AM5 / AM4 Sockets",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME",
+  //       description: ["MA-6 Frigate"],
+  //     },
+  //     {
+  //       name: "SIZE",
+  //       description: ["146(W)mm x 165(D)mm x 165(H)mm"],
+  //     },
+  //     {
+  //       name: "WEIGHT",
+  //       description: ["1600g"],
+  //     },
+  //     {
+  //       name: "COLOR",
+  //       description: ["Black"],
+  //     },
+  //     {
+  //       name: "FAN SPEED",
+  //       description: ["1500 RPM"],
+  //     },
+  //     {
+  //       name: "FAN SIZE",
+  //       description: ["140mm x 140mm x 26mm"],
+  //     },
+  //     {
+  //       name: "TDP (Real)",
+  //       description: ["250W"],
+  //     },
+  //     {
+  //       name: "BASE",
+  //       description: ["Copper Heat Pipes"],
+  //     },
+  //     {
+  //       name: "COMPATIBILITY",
+  //       description: ["LGA 775/115X/1200/1700/2011/2066/AM3/AM4/AM5"],
+  //     },
+  //     {
+  //       name: "MAX STATIC PRESSURE",
+  //       description: ["2.2 mmH₂O"],
+  //     },
+  //     {
+  //       name: "MAX AIR FLOW",
+  //       description: ["83 CFM"],
+  //     },
+  //     // {
+  //     //   name: "WARRANTY",
+  //     //   description: ["Main Product: 3 years, Cooling Fan: 1 year"],
+  //     // },
+  //     {
+  //       name: "COMPANY NAME",
+  //       description: ["Hanmi Micronics Co., Ltd."],
+  //     },
+  //     {
+  //       name: "CUSTOMER SERVICE",
+  //       description: ["wizmaxglobal.com"],
+  //     },
+  //   ],
+  // },
   {
     productId: "CF-12AW",
     categoryId: "CATEGORY_FC",
@@ -9803,270 +9803,270 @@ const products = [
       },
     ],
   },
-  {
-    productId: "MF-13",
-    categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "MF-13"),
-    name: "MF-13",
-    filters: filters[0].fanscoolersFilters,
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
-    ],
-    colorAvailability: [
-      {
-        color: "Black",
-        images: [
-          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
-        ],
-      },
-      {
-        color: "White",
-        images: [
-          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
-        ],
-      },
-    ],
-    countryAvailability: [
-      // {
-      //   abbreviation: "KR",
-      //   country: "Korea",
-      // },
-      // {
-      //   abbreviation: "PH",
-      //   country: "Philippines",
-      // },
-      // {
-      //   abbreviation: "US",
-      //   country: "United States",
-      // },
-      // {
-      //   abbreviation: "EC",
-      //   country: "Ecuador",
-      // },
-      // {
-      //   abbreviation: "JP",
-      //   country: "Japan",
-      // },
-    ],
-    featuredSpecs: [
-      {
-        specs: "130mm x 130mm x 26mm",
-      },
-      {
-        specs: "Sleeve Bearing (50,000 Hours Lifespan)",
-      },
-      {
-        specs: "33dBA / 71.7CFM / 1.9mmH2O",
-      },
-      {
-        specs: "Black / White w/o RGB Lighting Effect",
-      },
-      {
-        specs: "4 Pin PWM (up to 1500RPM)",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["MF-13"],
-      },
-      {
-        name: "SIZE",
-        description: ["130(W)mm x 130(D)mm x 26(H)mm"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["166g"],
-      },
-      {
-        name: "COLOR",
-        description: ["White/Black"],
-      },
-      {
-        name: "FAN SPEED",
-        description: ["1500 RPM"],
-      },
-      // {
-      //   name: "FAN SIZE",
-      //   description: ["140mm x 140mm x 26mm"],
-      // },
-      // {
-      //   name: "TDP (Real)",
-      //   description: ["250W"],
-      // },
-      // {
-      //   name: "BASE",
-      //   description: ["Copper Heat Pipes"],
-      // },
-      // {
-      //   name: "COMPATIBILITY",
-      //   description: ["LGA 775/115X/1200/1700/2011/2066/AM3/AM4/AM5"],
-      // },
-      {
-        name: "MAX STATIC PRESSURE",
-        description: ["1.9 mmH₂O"],
-      },
-      {
-        name: "MAX AIR FLOW",
-        description: ["71.7 CFM"],
-      },
-      {
-        name: "MTBF",
-        description: ["50,000hr@45℃"],
-      },
-      // {
-      //   name: "WARRANTY",
-      //   description: ["Main Product: 3 years, Cooling Fan: 1 year"],
-      // },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "MF-14",
-    categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "MF-14"),
-    name: "MF-14",
-    filters: filters[0].fanscoolersFilters,
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
-      "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
-    ],
-    colorAvailability: [
-      {
-        color: "Black",
-        images: [
-          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
-        ],
-      },
-      {
-        color: "White",
-        images: [
-          "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
-        ],
-      },
-    ],
-    countryAvailability: [
-      // {
-      //   abbreviation: "KR",
-      //   country: "Korea",
-      // },
-      // {
-      //   abbreviation: "PH",
-      //   country: "Philippines",
-      // },
-      // {
-      //   abbreviation: "US",
-      //   country: "United States",
-      // },
-      // {
-      //   abbreviation: "EC",
-      //   country: "Ecuador",
-      // },
-      // {
-      //   abbreviation: "JP",
-      //   country: "Japan",
-      // },
-    ],
-    featuredSpecs: [
-      {
-        specs: "140mm x 140mm x 26mm",
-      },
-      {
-        specs: "Sleeve Bearing (50,000 Hours Lifespan)",
-      },
-      {
-        specs: "33dBA / 83CFM / 2.2mmH2O",
-      },
-      {
-        specs: "Black / White w/o RGB Lighting Effect",
-      },
-      {
-        specs: "4 Pin PWM (up to 1500RPM)",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["MF-14"],
-      },
-      {
-        name: "SIZE",
-        description: ["140(W)mm x 140(D)mm x 26(H)mm"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["186g"],
-      },
-      {
-        name: "COLOR",
-        description: ["White/Black"],
-      },
-      {
-        name: "FAN SPEED",
-        description: ["1500 RPM"],
-      },
-      // {
-      //   name: "FAN SIZE",
-      //   description: ["140mm x 140mm x 26mm"],
-      // },
-      // {
-      //   name: "TDP (Real)",
-      //   description: ["250W"],
-      // },
-      // {
-      //   name: "BASE",
-      //   description: ["Copper Heat Pipes"],
-      // },
-      // {
-      //   name: "COMPATIBILITY",
-      //   description: ["LGA 775/115X/1200/1700/2011/2066/AM3/AM4/AM5"],
-      // },
-      {
-        name: "MAX STATIC PRESSURE",
-        description: ["1.9 mmH₂O"],
-      },
-      {
-        name: "MAX AIR FLOW",
-        description: ["83 CFM"],
-      },
-      {
-        name: "MTBF",
-        description: ["50,000hr@45℃"],
-      },
-      // {
-      //   name: "WARRANTY",
-      //   description: ["Main Product: 3 years, Cooling Fan: 1 year"],
-      // },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
+  // {
+  //   productId: "MF-13",
+  //   categoryId: "CATEGORY_FC",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(
+  //     ":categoryId",
+  //     "CATEGORY_FC"
+  //   ).replace(":productId", "MF-13"),
+  //   name: "MF-13",
+  //   filters: filters[0].fanscoolersFilters,
+  //   brochure: "",
+  //   img: [
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+  //   ],
+  //   colorAvailability: [
+  //     {
+  //       color: "Black",
+  //       images: [
+  //         "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+  //       ],
+  //     },
+  //     {
+  //       color: "White",
+  //       images: [
+  //         "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-13_black_wnkppc.png",
+  //       ],
+  //     },
+  //   ],
+  //   countryAvailability: [
+  //     // {
+  //     //   abbreviation: "KR",
+  //     //   country: "Korea",
+  //     // },
+  //     // {
+  //     //   abbreviation: "PH",
+  //     //   country: "Philippines",
+  //     // },
+  //     // {
+  //     //   abbreviation: "US",
+  //     //   country: "United States",
+  //     // },
+  //     // {
+  //     //   abbreviation: "EC",
+  //     //   country: "Ecuador",
+  //     // },
+  //     // {
+  //     //   abbreviation: "JP",
+  //     //   country: "Japan",
+  //     // },
+  //   ],
+  //   featuredSpecs: [
+  //     {
+  //       specs: "130mm x 130mm x 26mm",
+  //     },
+  //     {
+  //       specs: "Sleeve Bearing (50,000 Hours Lifespan)",
+  //     },
+  //     {
+  //       specs: "33dBA / 71.7CFM / 1.9mmH2O",
+  //     },
+  //     {
+  //       specs: "Black / White w/o RGB Lighting Effect",
+  //     },
+  //     {
+  //       specs: "4 Pin PWM (up to 1500RPM)",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME",
+  //       description: ["MF-13"],
+  //     },
+  //     {
+  //       name: "SIZE",
+  //       description: ["130(W)mm x 130(D)mm x 26(H)mm"],
+  //     },
+  //     {
+  //       name: "WEIGHT",
+  //       description: ["166g"],
+  //     },
+  //     {
+  //       name: "COLOR",
+  //       description: ["White/Black"],
+  //     },
+  //     {
+  //       name: "FAN SPEED",
+  //       description: ["1500 RPM"],
+  //     },
+  //     // {
+  //     //   name: "FAN SIZE",
+  //     //   description: ["140mm x 140mm x 26mm"],
+  //     // },
+  //     // {
+  //     //   name: "TDP (Real)",
+  //     //   description: ["250W"],
+  //     // },
+  //     // {
+  //     //   name: "BASE",
+  //     //   description: ["Copper Heat Pipes"],
+  //     // },
+  //     // {
+  //     //   name: "COMPATIBILITY",
+  //     //   description: ["LGA 775/115X/1200/1700/2011/2066/AM3/AM4/AM5"],
+  //     // },
+  //     {
+  //       name: "MAX STATIC PRESSURE",
+  //       description: ["1.9 mmH₂O"],
+  //     },
+  //     {
+  //       name: "MAX AIR FLOW",
+  //       description: ["71.7 CFM"],
+  //     },
+  //     {
+  //       name: "MTBF",
+  //       description: ["50,000hr@45℃"],
+  //     },
+  //     // {
+  //     //   name: "WARRANTY",
+  //     //   description: ["Main Product: 3 years, Cooling Fan: 1 year"],
+  //     // },
+  //     {
+  //       name: "COMPANY NAME",
+  //       description: ["Hanmi Micronics Co., Ltd."],
+  //     },
+  //     {
+  //       name: "CUSTOMER SERVICE",
+  //       description: ["wizmaxglobal.com"],
+  //     },
+  //   ],
+  // },
+  // {
+  //   productId: "MF-14",
+  //   categoryId: "CATEGORY_FC",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(
+  //     ":categoryId",
+  //     "CATEGORY_FC"
+  //   ).replace(":productId", "MF-14"),
+  //   name: "MF-14",
+  //   filters: filters[0].fanscoolersFilters,
+  //   brochure: "",
+  //   img: [
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+  //     "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+  //   ],
+  //   colorAvailability: [
+  //     {
+  //       color: "Black",
+  //       images: [
+  //         "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+  //       ],
+  //     },
+  //     {
+  //       color: "White",
+  //       images: [
+  //         "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672220121/product-images/fans_coolers/MF-14_white_i7apq9.png",
+  //       ],
+  //     },
+  //   ],
+  //   countryAvailability: [
+  //     // {
+  //     //   abbreviation: "KR",
+  //     //   country: "Korea",
+  //     // },
+  //     // {
+  //     //   abbreviation: "PH",
+  //     //   country: "Philippines",
+  //     // },
+  //     // {
+  //     //   abbreviation: "US",
+  //     //   country: "United States",
+  //     // },
+  //     // {
+  //     //   abbreviation: "EC",
+  //     //   country: "Ecuador",
+  //     // },
+  //     // {
+  //     //   abbreviation: "JP",
+  //     //   country: "Japan",
+  //     // },
+  //   ],
+  //   featuredSpecs: [
+  //     {
+  //       specs: "140mm x 140mm x 26mm",
+  //     },
+  //     {
+  //       specs: "Sleeve Bearing (50,000 Hours Lifespan)",
+  //     },
+  //     {
+  //       specs: "33dBA / 83CFM / 2.2mmH2O",
+  //     },
+  //     {
+  //       specs: "Black / White w/o RGB Lighting Effect",
+  //     },
+  //     {
+  //       specs: "4 Pin PWM (up to 1500RPM)",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME",
+  //       description: ["MF-14"],
+  //     },
+  //     {
+  //       name: "SIZE",
+  //       description: ["140(W)mm x 140(D)mm x 26(H)mm"],
+  //     },
+  //     {
+  //       name: "WEIGHT",
+  //       description: ["186g"],
+  //     },
+  //     {
+  //       name: "COLOR",
+  //       description: ["White/Black"],
+  //     },
+  //     {
+  //       name: "FAN SPEED",
+  //       description: ["1500 RPM"],
+  //     },
+  //     // {
+  //     //   name: "FAN SIZE",
+  //     //   description: ["140mm x 140mm x 26mm"],
+  //     // },
+  //     // {
+  //     //   name: "TDP (Real)",
+  //     //   description: ["250W"],
+  //     // },
+  //     // {
+  //     //   name: "BASE",
+  //     //   description: ["Copper Heat Pipes"],
+  //     // },
+  //     // {
+  //     //   name: "COMPATIBILITY",
+  //     //   description: ["LGA 775/115X/1200/1700/2011/2066/AM3/AM4/AM5"],
+  //     // },
+  //     {
+  //       name: "MAX STATIC PRESSURE",
+  //       description: ["1.9 mmH₂O"],
+  //     },
+  //     {
+  //       name: "MAX AIR FLOW",
+  //       description: ["83 CFM"],
+  //     },
+  //     {
+  //       name: "MTBF",
+  //       description: ["50,000hr@45℃"],
+  //     },
+  //     // {
+  //     //   name: "WARRANTY",
+  //     //   description: ["Main Product: 3 years, Cooling Fan: 1 year"],
+  //     // },
+  //     {
+  //       name: "COMPANY NAME",
+  //       description: ["Hanmi Micronics Co., Ltd."],
+  //     },
+  //     {
+  //       name: "CUSTOMER SERVICE",
+  //       description: ["wizmaxglobal.com"],
+  //     },
+  //   ],
+  // },
   //PSU
   {
     productId: "WIZMAX-GOLD",
@@ -10546,7 +10546,7 @@ const products = [
     ).replace(":productId", "WIZMAX-PLATINUM"),
     name: "Wizmax Platinum",
     filters: filters[0].psuFilters,
-    brochure: "/images/db/psu-brochure.png",
+    brochure: "/images/db/WIZMAX PLATINUM-1200W_ENGLISH.png",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1672221070/product-images/psu/Wizmax-Platinum_wrzum7.png",
