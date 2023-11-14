@@ -230,7 +230,6 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                         : "prev-product-title"
                     }
                     onMouseEnter={prevButtonHandler}
-                    onMouseLeave={() => setPreviousButtonHover(false)}
                   >
                     <img
                       src={products[currentProduct - 1]?.img[0]}
@@ -274,7 +273,6 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                         : "next-product-title"
                     }
                     onMouseEnter={nextButtonHandler}
-                    onMouseLeave={() => setNextButtonHover(false)}
                   >
                     <img
                       src={products[currentProduct + 1]?.img[0]}
@@ -306,7 +304,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                 )
               }
             >
-              <p>PREVIOUS</p>
+              <p onMouseLeave={prevButtonHandler}>PREVIOUS</p>
               {isMobile && (
                 <div className="left-arrow-close" onClick={closePrevButton}>
                   <GoTo />
