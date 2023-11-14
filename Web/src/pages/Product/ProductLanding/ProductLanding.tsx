@@ -297,12 +297,13 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
               style={{
                 display: currentProduct - 1 === -1 ? "none" : "flex",
               }}
-              onClick={() =>
+              onClick={() => {
                 prevProductHandler(
                   products[currentProduct - 1].categoryId,
                   products[currentProduct - 1].productId
-                )
-              }
+                );
+                window.location.reload();
+              }}
             >
               <p>PREVIOUS</p>
               {isMobile && (
@@ -322,12 +323,13 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
               style={{
                 display: lastProduct === currentProduct ? "none" : "flex",
               }}
-              onClick={() =>
+              onClick={() => {
                 nextProductHandler(
                   products[currentProduct + 1].categoryId,
                   products[currentProduct + 1].productId
-                )
-              }
+                );
+                window.location.reload();
+              }}
             >
               {isMobile && (
                 <div className="right-arrow-close" onClick={closeNextButton}>
