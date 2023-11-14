@@ -304,7 +304,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                 )
               }
             >
-              <p onMouseLeave={prevButtonLeaveHandler}>PREVIOUS</p>
+              <p>PREVIOUS</p>
               {isMobile && (
                 <div className="left-arrow-close" onClick={closePrevButton}>
                   <GoTo />
