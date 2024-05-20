@@ -33,9 +33,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   useEffect(() => {
     const singleProduct = products.find((p: any) => p.productId === productId);
     const productData = products;
-    const productIndex = productData.findIndex(
-      (i: any) => i.productId === productId
-    );
+    const productIndex = productData.findIndex((i: any) => i.productId === productId);
     const indexOfLastProduct = productData.length - 1;
     const slides = productData[productIndex].img.length;
 
@@ -43,14 +41,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
     setCurrentProduct(productIndex);
     setProduct(singleProduct);
     setSlideToShow(slides);
-  }, [
-    product,
-    productId,
-    currentProduct,
-    lastProduct,
-    previousButtonHover,
-    nextButtonHover,
-  ]);
+  }, [product, productId, currentProduct, lastProduct, previousButtonHover, nextButtonHover]);
   const [imageIndex, setImageIndex] = useState<any>(0);
   useEffect(() => {}, [slideToShow]);
   let settings: any = {
@@ -121,13 +112,11 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
   const closeNextButton = () => {
     setNextButtonClick(false);
   };
-  console.log(nextButtonClick);
 
   const [thumbnailIndex, setThumbnailIndex] = useState(0);
   const [colorIndex, setColorIndex] = useState<any>(0);
 
   const colorHandler = (colorIndex: any, index: any) => {
-    console.log(index, "main", colorIndex, "color index");
     setThumbnailIndex(index);
     if (index === thumbnailIndex) {
       setColorIndex(colorIndex);
@@ -169,9 +158,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                     }
                   >
                     <img
-                      className={
-                        product.img.length < 4 ? "activeProductImg1" : ""
-                      }
+                      className={product.img.length < 4 ? "activeProductImg1" : ""}
                       src={image}
                       alt={image}
                     />
@@ -191,12 +178,8 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
           </button>
         </div>
         <div className="brochure-specs-container container">
-          {brochureBtnIsActive && (
-            <ProductBrochure brochure={product.brochure} />
-          )}
-          {specsBtnIsActive && (
-            <ProductSpecifications specifications={product.table} />
-          )}
+          {brochureBtnIsActive && <ProductBrochure brochure={product.brochure} />}
+          {specsBtnIsActive && <ProductSpecifications specifications={product.table} />}
         </div>
         <div className="prev-next-product-container">
           <div className="prev-product-title-container">
@@ -205,9 +188,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                 {isMobile ? (
                   <p
                     className={
-                      previousButtonClick
-                        ? "prev-product-title-hide"
-                        : "prev-product-title"
+                      previousButtonClick ? "prev-product-title-hide" : "prev-product-title"
                     }
                     onClick={() =>
                       prevProductHandler(
@@ -225,9 +206,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                 ) : (
                   <p
                     className={
-                      previousButtonHover
-                        ? "prev-product-title-hide"
-                        : "prev-product-title"
+                      previousButtonHover ? "prev-product-title-hide" : "prev-product-title"
                     }
                     onMouseEnter={prevButtonHandler}
                   >
@@ -247,11 +226,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
               <React.Fragment>
                 {isMobile ? (
                   <p
-                    className={
-                      nextButtonClick
-                        ? "next-product-title-hide"
-                        : "next-product-title"
-                    }
+                    className={nextButtonClick ? "next-product-title-hide" : "next-product-title"}
                     onClick={() =>
                       nextProductHandler(
                         products[currentProduct + 1].categoryId,
@@ -267,11 +242,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
                   </p>
                 ) : (
                   <p
-                    className={
-                      nextButtonHover
-                        ? "next-product-title-hide"
-                        : "next-product-title"
-                    }
+                    className={nextButtonHover ? "next-product-title-hide" : "next-product-title"}
                     onMouseEnter={nextButtonHandler}
                   >
                     <img
@@ -315,9 +286,7 @@ const ProductLanding: React.FC<ProductLandingType> = (props) => {
             {/* NEXT BUTTON */}
             <div
               className={
-                nextButtonHover || nextButtonClick
-                  ? "next-product-btn"
-                  : "next-product-btn-hide"
+                nextButtonHover || nextButtonClick ? "next-product-btn" : "next-product-btn-hide"
               }
               onMouseLeave={nextButtonLeaveHandler}
               style={{

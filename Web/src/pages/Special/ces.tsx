@@ -19,7 +19,6 @@ const ces: React.FC = () => {
   const categoryRefLink = useRef<(HTMLDivElement | null)[]>([]);
   const refLinkHandler = (index: any) => {
     if (categoryRefLink) {
-      console.log(categoryRefLink.current[index]);
       categoryRefLink.current[index]?.scrollIntoView({
         behavior: "smooth",
         block: "start",
@@ -64,13 +63,9 @@ const ces: React.FC = () => {
             <React.Fragment key={cat.categoryId}>
               <CESProductTtitle
                 name={cat.name}
-                cesProductRef={(refLink: any) =>
-                  (categoryRefLink.current[index] = refLink)
-                }
+                cesProductRef={(refLink: any) => (categoryRefLink.current[index] = refLink)}
               />
-              <CESProductPage
-                productFilterByCategoryId={productFilterByCategoryId}
-              />
+              <CESProductPage productFilterByCategoryId={productFilterByCategoryId} />
             </React.Fragment>
           );
         })}

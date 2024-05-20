@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  Container,
-  FormGroup,
-  Input,
-  ListGroup,
-  ListGroupItem,
-} from "reactstrap";
+import { Container, FormGroup, Input, ListGroup, ListGroupItem } from "reactstrap";
 import { LOCALES } from "i18n";
 import "./NavigationBarMobile.scss";
 import intl from "i18n/intl";
@@ -190,7 +184,6 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
   const keyWordHandler = (keyword: any) => {
     setKeyWord(keyword.target.value);
     setSearchedProducts(products);
-    console.log(keyWord);
   };
 
   const navigateToProduct = (catId: any, prodId: any) => {
@@ -247,10 +240,7 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
           </Link>
         </div>
         <div className="searchbar-container">
-          <FontAwesomeIcon
-            icon={resultActive ? faX : faSearch}
-            onClick={searchbarToggleHandler}
-          />
+          <FontAwesomeIcon icon={resultActive ? faX : faSearch} onClick={searchbarToggleHandler} />
         </div>
         <div className={`result-container ${resultActive ? "active" : ""}`}>
           <input
@@ -279,7 +269,6 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
                   } else {
                     filteredData = searchByFilter;
                   }
-                  console.log(filteredData);
 
                   return filteredData;
                 })
@@ -289,10 +278,7 @@ const NavigationBarMobile: React.FC<INavigationBarMobile> = (props) => {
                       className="filter-container"
                       key={index}
                       onClick={() => {
-                        navigateToProduct(
-                          product.categoryId,
-                          product.productId
-                        );
+                        navigateToProduct(product.categoryId, product.productId);
                       }}
                     >
                       <div>

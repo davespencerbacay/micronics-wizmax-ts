@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, createSearchParams, useNavigate } from "react-router-dom";
 import { Navbar, Nav, NavItem } from "reactstrap";
-import {
-  IInquiryTexts,
-  IBecomeDistributorTexts,
-  SubLinksType,
-} from "./links/links";
+import { IInquiryTexts, IBecomeDistributorTexts, SubLinksType } from "./links/links";
 import "./NavigationBarDesktop.scss";
 import { ROUTE_PATH } from "constants/routes";
 import GoTo from "library/Images/Navigations/GoTo/GoTo";
@@ -21,9 +17,7 @@ interface INavigationBarSubLinks {
   hideAllLinks: () => void;
 }
 
-export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
-  props
-) => {
+export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (props) => {
   const [hideSubNavbar, setHideSubNavbar] = useState(false);
   const navigate = useNavigate();
 
@@ -37,10 +31,7 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
         {intl("productSubLinks.viewAllProducts")} <GoTo width={10} />
       </Link>
     ) : supportLinkID ? (
-      <Link
-        className="view-all-nav-item"
-        to={ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES}
-      >
+      <Link className="view-all-nav-item" to={ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES}>
         {intl("supportSubLinks.viewAll")} <GoTo width={10} />
       </Link>
     ) : shopLinkID ? (
@@ -48,9 +39,7 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
         {intl("shopSubLinks.viewAllShops")} <GoTo width={10} />
       </Link>
     ) : (
-      <div className="blank-nav-item">
-        {intl("contactSubLinks.wizmaxGlobal")}
-      </div>
+      <div className="blank-nav-item">{intl("contactSubLinks.wizmaxGlobal")}</div>
     );
   };
 
@@ -125,13 +114,10 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
 
                   {sublink.id === "shop" &&
                     sublink.shops?.map((shop: IShops) => {
-                      console.log(shop.name);
                       return (
                         <React.Fragment>
                           {shop.name === "Wizmax Official Store" ? (
-                            <p className="disabled-links">
-                              Wizmax Official Store
-                            </p>
+                            <p className="disabled-links">Wizmax Official Store</p>
                           ) : (
                             <a
                               className="shop-links"
@@ -150,11 +136,9 @@ export const NavigationBarSubLinks: React.FC<INavigationBarSubLinks> = (
                       <p className="contact-links">{text.text}</p>
                     ))}
                   {sublink.id === "contact" &&
-                    sublink.becomeDistributorTexts?.map(
-                      (text: IBecomeDistributorTexts) => (
-                        <p className="contact-links">{text.text}</p>
-                      )
-                    )}
+                    sublink.becomeDistributorTexts?.map((text: IBecomeDistributorTexts) => (
+                      <p className="contact-links">{text.text}</p>
+                    ))}
                 </NavItem>
               );
             })}

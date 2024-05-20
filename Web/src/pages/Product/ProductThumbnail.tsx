@@ -18,8 +18,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   );
 
   const [isOpen, setIsOpen] = useState<any>(false);
-  const [openCountryAvailability, setOpenCountryAvailability] =
-    useState<any>("");
+  const [openCountryAvailability, setOpenCountryAvailability] = useState<any>("");
 
   const toggleCountryAvailability = (id: any) => {
     let countryAvailabilityOpen = [isOpen];
@@ -35,8 +34,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   };
   const closeCountryAvailability = (countryStatus: any) => {
     let countryAvailabilityClose = [isOpen];
-    countryAvailabilityClose[countryStatus] =
-      !countryAvailabilityClose[countryStatus];
+    countryAvailabilityClose[countryStatus] = !countryAvailabilityClose[countryStatus];
     setIsOpen(!countryAvailabilityClose);
     setOpenCountryAvailability("");
   };
@@ -56,7 +54,6 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
   const [colorIndex, setColorIndex] = useState<any>(0);
   useEffect(() => {}, [colorIndex, productFilterByCategoryId, thumbnailIndex]);
   const colorHandler = (colorIndex: any, index: any) => {
-    console.log(index, "main", colorIndex, "color index");
     setThumbnailIndex(index);
     if (index === thumbnailIndex) {
       setColorIndex(colorIndex);
@@ -96,28 +93,24 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                   >
                     {p.name}
                   </p>
-                  {p.name.length <= 20 && (
-                    <span className="space-filler"></span>
-                  )}
+                  {p.name.length <= 20 && <span className="space-filler"></span>}
 
                   {p.colorAvailability ? (
                     <div className="color-availability-container">
-                      {p.colorAvailability.map(
-                        (color: any, colorIndex: any) => {
-                          return (
-                            <div
-                              onClick={() => colorHandler(colorIndex, index)}
-                              className="color-availability"
-                              style={{
-                                background:
-                                  color.color && color.secondaryColor
-                                    ? `conic-gradient(${color.secondaryColor} 0deg, ${color.secondaryColor} 180deg, ${color.color} 180deg, ${color.color} 360deg)`
-                                    : `conic-gradient(${color.color} 0deg, ${color.color} 360deg)`,
-                              }}
-                            ></div>
-                          );
-                        }
-                      )}
+                      {p.colorAvailability.map((color: any, colorIndex: any) => {
+                        return (
+                          <div
+                            onClick={() => colorHandler(colorIndex, index)}
+                            className="color-availability"
+                            style={{
+                              background:
+                                color.color && color.secondaryColor
+                                  ? `conic-gradient(${color.secondaryColor} 0deg, ${color.secondaryColor} 180deg, ${color.color} 180deg, ${color.color} 360deg)`
+                                  : `conic-gradient(${color.color} 0deg, ${color.color} 360deg)`,
+                            }}
+                          ></div>
+                        );
+                      })}
                     </div>
                   ) : (
                     <div className="color-availability-container-null"></div>
@@ -145,11 +138,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                     Specifications
                     <span>
                       <GoTo
-                        className={
-                          openCountryAvailability === index
-                            ? "arrowOpen"
-                            : "arrowClose"
-                        }
+                        className={openCountryAvailability === index ? "arrowOpen" : "arrowClose"}
                       />
                     </span>
                     <Collapse
@@ -157,7 +146,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                       isOpen={isOpen[index]}
                     >
                       <Row>
-                        {p.featuredSpecs.map((specs: any, index: any) => {
+                        {p.featuredSpecs?.map((specs: any, index: any) => {
                           return (
                             <Col
                               className="thumbnail-country-availability-col"
@@ -166,9 +155,7 @@ const ProductThumbnail: React.FC<ProductThumbnailType> = (props) => {
                               md={12}
                               lg={12}
                             >
-                              <p className="thumbnail-country-availability">
-                                {specs.specs}
-                              </p>
+                              <p className="thumbnail-country-availability">{specs.specs}</p>
                             </Col>
                             // <Col
                             //   className="thumbnail-country-availability-col"

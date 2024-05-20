@@ -53,6 +53,24 @@
       p {
         font-size: 1.7rem;
       }
+
+      .image-holder {
+        img {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-section-container {
+    .main-section-content {
+      .image-holder {
+        img {
+          width: 100% !important;
+        }
+      }
     }
   }
 }
