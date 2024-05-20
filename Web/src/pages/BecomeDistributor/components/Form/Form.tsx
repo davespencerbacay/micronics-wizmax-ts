@@ -70,12 +70,8 @@ const Form = () => {
     companyEmailAddress: Yup.string()
       .email("Invalid email address")
       .required("Email address field is required."),
-    businessWebsite: Yup.string().required(
-      "Business website field is required."
-    ),
-    businessAddress: Yup.string().required(
-      "Business address field is required."
-    ),
+    businessWebsite: Yup.string().required("Business website field is required."),
+    businessAddress: Yup.string().required("Business address field is required."),
     zipCode: Yup.string().required("Zip Code field is required."),
     name: Yup.string().required("Fullname/Contact field is required."),
     designation: Yup.string().required("Designation/Field field is required."),
@@ -93,20 +89,11 @@ const Form = () => {
           setSubmitting(true);
           setTimeout(() => {
             setShowToast(true);
-            console.log(data);
             setSubmitting(false);
           }, 5000);
         }}
       >
-        {({
-          values,
-          isSubmitting,
-          handleChange,
-          handleSubmit,
-          handleBlur,
-          errors,
-          dirty,
-        }) => {
+        {({ values, isSubmitting, handleChange, handleSubmit, handleBlur, errors, dirty }) => {
           const labeledInput: ILabeledInput[] = [
             {
               name: "companyName",
@@ -225,9 +212,7 @@ const Form = () => {
               <Row>
                 {labeledInput.map((data, index) => (
                   <Col {...{ ...data.colDef }} key={index}>
-                    <div
-                      className={data.isTextArea ? "textarea-container" : ""}
-                    >
+                    <div className={data.isTextArea ? "textarea-container" : ""}>
                       <LabeledInput
                         name={data.name}
                         label={data.label}

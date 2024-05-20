@@ -7,13 +7,10 @@ const ComingSoonSection: React.FC = () => {
     <div className="comingSoon-section-container">
       <div className="comingSoon-section-content">
         <h2>CaluX</h2>
-        <p>Refined Sophistication: Where Luxury Meets Keyboard Excellence.</p>
-        <div className="coming-soon-badge">COMING SOON</div>
+        <p>White Calux Keyboard will not be released.</p>
+        <div className="coming-soon-badge"></div>
         <div className="image-holder">
-          <img
-            src="images/micronics-assets/product-images/coming-soon-keyboard-home.png"
-            alt=""
-          />
+          <img src="images/micronics-assets/product-images/coming-soon-keyboard-home.png" alt="" />
         </div>
       </div>
     </div>

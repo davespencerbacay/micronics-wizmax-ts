@@ -22,7 +22,6 @@ const SearchBarDesktop: React.FC<ISearchBarDesktop> = (props) => {
   const keyWordHandler = (keyword: any) => {
     setKeyWord(keyword.target.value);
     setSearchedProducts(products);
-    console.log(keyWord);
   };
 
   const navigateToProduct = (catId: any, prodId: any) => {
@@ -36,9 +35,7 @@ const SearchBarDesktop: React.FC<ISearchBarDesktop> = (props) => {
     <React.Fragment>
       {props.searchBarState && (
         <div className="searchbar-container">
-          <div
-            className={props.searchBarState ? "searchbar" : "searchbar-hide"}
-          >
+          <div className={props.searchBarState ? "searchbar" : "searchbar-hide"}>
             <input
               id="search"
               type="search"
@@ -73,7 +70,6 @@ const SearchBarDesktop: React.FC<ISearchBarDesktop> = (props) => {
                     } else {
                       filteredData = searchByFilter;
                     }
-                    console.log(filteredData);
 
                     return filteredData;
                   })
@@ -83,10 +79,7 @@ const SearchBarDesktop: React.FC<ISearchBarDesktop> = (props) => {
                         className="filter-container"
                         key={index}
                         onClick={() => {
-                          navigateToProduct(
-                            product.categoryId,
-                            product.productId
-                          );
+                          navigateToProduct(product.categoryId, product.productId);
                           props.searchBarState2();
                         }}
                       >

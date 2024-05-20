@@ -1,13 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import Banner from "library/Banner/Banner";
-import {
-  Button,
-  Col,
-  Collapse,
-  Container,
-  Row,
-  UncontrolledCollapse,
-} from "reactstrap";
+import { Button, Col, Collapse, Container, Row, UncontrolledCollapse } from "reactstrap";
 import "./Shop.scss";
 import { ThemeContext } from "context/ThemeContext";
 import { Link } from "react-router-dom";
@@ -27,7 +20,6 @@ const Shop: React.FC = () => {
   const toggle = (country: any) => {
     let shopOpen = [isOpen];
     shopOpen[country] = !shopOpen[country];
-    console.log(shopOpen);
     if (isOpen) {
       setIsOpen(!shopOpen);
       setIsCountryClicked("");
@@ -83,9 +75,7 @@ const Shop: React.FC = () => {
                         {countries.country}
                         <span
                           className={
-                            isCountryClicked === countries.country
-                              ? "arrowClose"
-                              : "arrowOpen"
+                            isCountryClicked === countries.country ? "arrowClose" : "arrowOpen"
                           }
                         >
                           <GoTo />

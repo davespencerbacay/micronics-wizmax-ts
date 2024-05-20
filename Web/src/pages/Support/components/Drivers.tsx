@@ -32,10 +32,7 @@ const Drivers: React.FC = () => {
 
   const allProductItem = [
     {
-      link: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES_BY_CATEGORY_ID.replace(
-        ":categoryId",
-        "all"
-      ),
+      link: ROUTE_PATH.SUPPORT_DRIVERS_SOFTWARES_BY_CATEGORY_ID.replace(":categoryId", "all"),
       text: "All Products",
       count: countProducts(),
     },
@@ -59,8 +56,6 @@ const Drivers: React.FC = () => {
   const catRef = useRef<HTMLDivElement>(null);
 
   const scrollToCategories = () => {
-    console.log("sample");
-
     if (catRef.current) {
       window.scrollBy({
         top: 2750,
@@ -117,17 +112,13 @@ const Drivers: React.FC = () => {
                 </div>
 
                 <div className="table-content">
-                  <NoInformationToDisplay
-                    showNoInfo={displayedProducts.length === 0}
-                  >
+                  <NoInformationToDisplay showNoInfo={displayedProducts.length === 0}>
                     <React.Fragment>
                       {displayedProducts.map((p: any) => (
                         <div className="table-items">
                           <div className="title-btn-container">
                             <h5>{p.name}</h5>
-                            <div
-                              className={isMobile ? "table-btn-container" : ""}
-                            >
+                            <div className={isMobile ? "table-btn-container" : ""}>
                               <ShadowedButton
                                 onClick={() => downloadHandler(p.brochure)}
                                 disable={p.brochure ? false : true}

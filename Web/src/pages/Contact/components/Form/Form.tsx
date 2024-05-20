@@ -66,19 +66,11 @@ const Form = () => {
           setSubmitting(true);
           setTimeout(() => {
             setShowToast(true);
-            console.log(data);
             setSubmitting(false);
           }, 5000);
         }}
       >
-        {({
-          values,
-          isSubmitting,
-          handleChange,
-          handleSubmit,
-          handleBlur,
-          errors,
-        }) => {
+        {({ values, isSubmitting, handleChange, handleSubmit, handleBlur, errors }) => {
           const labeledInput: ILabeledInput[] = [
             {
               name: "fullName",
@@ -138,9 +130,7 @@ const Form = () => {
               <Row>
                 {labeledInput.map((data, index) => (
                   <Col {...{ ...data.colDef }} key={index}>
-                    <div
-                      className={data.isTextArea ? "textarea-container" : ""}
-                    >
+                    <div className={data.isTextArea ? "textarea-container" : ""}>
                       <LabeledInput
                         name={data.name}
                         label={data.label}

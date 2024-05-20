@@ -23,11 +23,9 @@ const DownloadsProcedure: React.FC<IDownloadsProcedure> = (props) => {
   const onKeyUp = (keyword: any) => {
     setKeyWord(keyword.target.value);
     setSearchProducts(products);
-    console.log(keyWord);
   };
 
   const productSelectHandler = (product: any) => {
-    console.log(product);
     setSelectedProduct(product.img[0]);
     setProductName(product.name);
     setKeyWord("");
@@ -38,7 +36,6 @@ const DownloadsProcedure: React.FC<IDownloadsProcedure> = (props) => {
     }
   };
   const productNameHandler = (product: any) => {
-    console.log(product);
     setProductBrochure(product.brochure);
     setProductDriver(product.file);
     setProductManual(product.manual);
@@ -165,7 +162,6 @@ const DownloadsProcedure: React.FC<IDownloadsProcedure> = (props) => {
             </button>
           ) : (
             <p className="no-brochure-available">No Brochure Available</p>
-            
           )}
           {productDriver !== "" ? (
             <button onClick={downloadDriverHandler}>

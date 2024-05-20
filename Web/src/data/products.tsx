@@ -9,16 +9,159 @@ const products = [
    *  */
   // MOUSE SECTION
   {
+    productId: "WIZMAX-W202TW",
+    categoryId: "CATEGORY_MOUSE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "WIZMAX-W202TW"
+    ),
+    name: "WIZMAX W202TW",
+    filters: filters[0].mouseFilters,
+    manual: "",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172098/MOUSE/WIZMAX%20W202TW/life-2_zikndf.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172095/MOUSE/WIZMAX%20W202TW/3_plxckm.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172095/MOUSE/WIZMAX%20W202TW/1_tifxgc.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172095/MOUSE/WIZMAX%20W202TW/4_d0mmiy.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172094/MOUSE/WIZMAX%20W202TW/2_jgjhcv.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172095/MOUSE/WIZMAX%20W202TW/1-logo_shli0o.jpg",
+    ],
+    colorAvailability: [
+      {
+        color: "Black",
+        images: [
+          "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172095/MOUSE/WIZMAX%20W202TW/1_tifxgc.jpg",
+        ],
+      },
+      {
+        color: "White",
+        images: [
+          "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172099/MOUSE/WIZMAX%20W202TW/life-1_bv3cil.jpg",
+        ],
+      },
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+    ],
+    featuredSpecs: [
+      {
+        specs: "Silent Switches",
+      },
+      {
+        specs: "Optical Sensor",
+      },
+      {
+        specs: "2.4 GHz Wireless Connection",
+      },
+      {
+        specs: "Windows 7, 10, 11",
+      },
+    ],
+    isNewRelease: "New Release",
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WIZMAX W202TW"],
+      },
+      {
+        name: "SIZE ",
+        description: ["119.1x69.9x40.1±1mm"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["65g(with Battery: 89g)"],
+      },
+      {
+        name: "SWITCH",
+        description: ["Silent switch(Wheels, DPI buttons excluded)"],
+      },
+      {
+        name: "LIFESPAN",
+        description: ["3 million clicks"],
+      },
+      {
+        name: "SENSOR",
+        description: ["Optical Sensor (DPI: 1,600)"],
+      },
+      {
+        name: "WIRELESS DISTANCE",
+        description: ["10m"],
+      },
+      // {
+      //   name: "CABLE LENGTH",
+      //   description: ["1.8m"],
+      // },
+      {
+        name: "POLLING RATE",
+        description: ["125Hz(2.4G Mode), 114Hz(BT Mode)"],
+      },
+      {
+        name: "DPI",
+        description: ["800, 1200, 1600 DPI"],
+      },
+      {
+        name: "INTERFACE",
+        description: ["Bluetooth, 2.4GHz"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: ["Windows, Mac, Android, IOS"],
+      },
+      {
+        name: "CONTENTS",
+        description: ["W202TW Mouse, AA Battery, Receiver, Product Manual"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Labeled at the Bottom of the Mouse"],
+      },
+      {
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-W202TW,
+              R-R-HMM-RECEIVER202TW
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE ",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
     productId: "M630W",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "M630W"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "M630W"
+    ),
     name: "Manic M630W",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/1-Ij_w_AYtOBilh2jwTdPxLwlT_9ifka_/view",
+    manual: "https://drive.google.com/file/d/1-Ij_w_AYtOBilh2jwTdPxLwlT_9ifka_/view",
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085979/product-images/mouse/M630W-B-2_aiszl4.png",
@@ -150,8 +293,8 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-M630W, R-R-HMM-R630W
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-M630W,
+              R-R-HMM-R630W
             </span>
           </React.Fragment>,
         ],
@@ -169,14 +312,13 @@ const products = [
   {
     productId: "WM2",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "WM2"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "WM2"
+    ),
     name: "WM2",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/15BOQYCBO8PFNTm_l3LLVFsVA0S1TOiRU/view",
+    manual: "https://drive.google.com/file/d/15BOQYCBO8PFNTm_l3LLVFsVA0S1TOiRU/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/WM2_DB_Translation_Revision_vbymny.jpg",
     img: [
@@ -300,8 +442,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-WM-2
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-WM-2
             </span>
           </React.Fragment>,
         ],
@@ -319,14 +460,13 @@ const products = [
   {
     productId: "MG40",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "MG40"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "MG40"
+    ),
     name: "MG40",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/19nImfRLEsq46CBnFz2jrnLhMneiyaZq-/view",
+    manual: "https://drive.google.com/file/d/19nImfRLEsq46CBnFz2jrnLhMneiyaZq-/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/MANIC-G40-DB_ENGLISH_u90cef.jpg",
     img: [
@@ -439,8 +579,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-REI-HMM-MANICG40
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-REI-HMM-MANICG40
             </span>
           </React.Fragment>,
         ],
@@ -458,14 +597,13 @@ const products = [
   {
     productId: "MG501",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "MG501"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "MG501"
+    ),
     name: "MG501",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/1pwD1n1LNuudnwYOZdrw17Vpc6KhTBPQ5/view",
+    manual: "https://drive.google.com/file/d/1pwD1n1LNuudnwYOZdrw17Vpc6KhTBPQ5/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086122/product-brochures/mouse/MG501_DB_Translation_z5pfzh.jpg",
     img: [
@@ -582,8 +720,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MG501
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-MG501
             </span>
           </React.Fragment>,
         ],
@@ -601,14 +738,13 @@ const products = [
   {
     productId: "MZG106",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "MZG106"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "MZG106"
+    ),
     name: "Manic ZG106",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/1qGw1tWPOOEgeXMgowH1nznCH1F1Kou7Y/view",
+    manual: "https://drive.google.com/file/d/1qGw1tWPOOEgeXMgowH1nznCH1F1Kou7Y/view",
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085975/product-images/mouse/ZG106_3327-1_z2ea4p.png",
@@ -703,9 +839,7 @@ const products = [
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®",
-        ],
+        description: ["Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®"],
       },
       {
         name: "ACCELERATION",
@@ -728,8 +862,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-ZG106
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-ZG106
             </span>
           </React.Fragment>,
         ],
@@ -747,14 +880,13 @@ const products = [
   {
     productId: "MG530",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "MG530"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "MG530"
+    ),
     name: "MG530",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/1c0-gjf3GyjdJRILZbAIBDfxFU-C7bbAS/view",
+    manual: "https://drive.google.com/file/d/1c0-gjf3GyjdJRILZbAIBDfxFU-C7bbAS/view",
     brochure: "",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671085977/product-images/mouse/MG530_-_3_qcpwtm.png",
@@ -847,9 +979,7 @@ const products = [
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®",
-        ],
+        description: ["Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®"],
       },
       {
         name: "ACCELERATION",
@@ -872,8 +1002,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MG530
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-MG530
             </span>
           </React.Fragment>,
         ],
@@ -891,14 +1020,13 @@ const products = [
   {
     productId: "ZM1",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "ZM1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "ZM1"
+    ),
     name: "ZM1",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/1OpzlSlS2KDmr8zjxcGdDRg8m_a-C1UYf/view",
+    manual: "https://drive.google.com/file/d/1OpzlSlS2KDmr8zjxcGdDRg8m_a-C1UYf/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086124/product-brochures/mouse/zm-1_db_english_yho6c5.jpg",
     img: [
@@ -1012,8 +1140,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-ZM-1
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-ZM-1
             </span>
           </React.Fragment>,
         ],
@@ -1031,14 +1158,13 @@ const products = [
   {
     productId: "ZM2",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "ZM2"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "ZM2"
+    ),
     name: "ZM2",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/112LUCXPsyWPMIwA5RbA8Unb_rooSqwIM/view",
+    manual: "https://drive.google.com/file/d/112LUCXPsyWPMIwA5RbA8Unb_rooSqwIM/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086115/product-brochures/mouse/ZM2_DB_Translation_Revision_tbsqns.jpg",
     img: [
@@ -1132,9 +1258,7 @@ const products = [
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®",
-        ],
+        description: ["Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®"],
       },
       {
         name: "ACCELERATION",
@@ -1153,8 +1277,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-ZM-2
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-ZM-2
             </span>
           </React.Fragment>,
         ],
@@ -1172,14 +1295,13 @@ const products = [
   {
     productId: "MM1",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "MM1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "MM1"
+    ),
     name: "MM1",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/11PpcpRFsie07hBT4pCB2-JXJH4XaTahP/view",
+    manual: "https://drive.google.com/file/d/11PpcpRFsie07hBT4pCB2-JXJH4XaTahP/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086122/product-brochures/mouse/Mouse_MM1_DB_ywgchq.png",
     img: [
@@ -1294,8 +1416,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MM1-1
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-MM1-1
             </span>
           </React.Fragment>,
         ],
@@ -1313,14 +1434,13 @@ const products = [
   {
     productId: "WM1",
     categoryId: "CATEGORY_MOUSE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_MOUSE"
-    ).replace(":productId", "WM1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_MOUSE").replace(
+      ":productId",
+      "WM1"
+    ),
     name: "WM1",
     filters: filters[0].mouseFilters,
-    manual:
-      "https://drive.google.com/file/d/188daQlLouZTGcC_g2t_d6-27YkhpyyR-/view",
+    manual: "https://drive.google.com/file/d/188daQlLouZTGcC_g2t_d6-27YkhpyyR-/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086117/product-brochures/mouse/WM1-DB_k6lydo.jpg",
     img: [
@@ -1440,8 +1560,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-WM-1
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-WM-1
             </span>
           </React.Fragment>,
         ],
@@ -1458,12 +1577,182 @@ const products = [
   },
   //KEYBOARD SECTION
   {
+    productId: "CALUX-Gateron",
+    categoryId: "CATEGORY_KB",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "CALUX-Gateron"
+    ),
+    name: "CALUX Gateron",
+    filters: filters[0].keyboardFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173535/CALUX/CALUX/Gateron/CALUX-New_Color-ENGLISH_TEXT.170_duqafs.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173534/CALUX/CALUX/Gateron/CALUX-New_Color-ENGLISH_TEXT.171_f1bwo2.png",
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["CALUX Gateron"],
+      },
+      // {
+      //   name: "SIZE",
+      //   description: ["446mm(L) x 135mm(W) x 37mm(H) ± 2mm"],
+      // },
+      // {
+      //   name: "WEIGHT",
+      //   description: ["1020g ± 10g"],
+      // },
+      {
+        name: "SWITCH",
+        description: ["Gateron"],
+      },
+      {
+        name: "KEYCAP",
+        description: ["ABS"],
+      },
+      {
+        name: "USB",
+        description: ["A to C"],
+      },
+      {
+        name: "Bluetooth Version",
+        description: ["Bluetooth 3.0, 5.0"],
+      },
+      {
+        name: "Battery",
+        description: ["3.7V/4000mAh Polymer Lithum-ion Battery"],
+      },
+      {
+        name: "Size",
+        description: ["430x123x25±1mm"],
+      },
+      {
+        name: "Weight",
+        description: ["1.35kg±30g"],
+      },
+      {
+        name: "Input",
+        description: ["5V 1A"],
+      },
+      {
+        name: "Polling Rate",
+        description: ["1000Hz"],
+      },
+      {
+        name: "Operating Current",
+        description: ["180mA MAX"],
+      },
+      {
+        name: "Key Layout",
+        description: ["108 key"],
+      },
+      {
+        name: "Cable Length",
+        description: ["1.8m(TPE Cable)"],
+      },
+      {
+        name: "LED",
+        description: ["White/1~4 Key Letter Lighting"],
+      },
+      {
+        name: "OS",
+        description: ["Windows/Mac"],
+      },
+    ],
+  },
+  {
+    productId: "CALUX-Cherry",
+    categoryId: "CATEGORY_KB",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "CALUX-Cherry"
+    ),
+    name: "CALUX Cherry",
+    filters: filters[0].keyboardFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716174130/Calux_Black_PERS_NO_BG_ENG-min_kknzmv.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716174102/Calux_Black.2-min_1_ru75ug.png",
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["CALUX Cherry"],
+      },
+      // {
+      //   name: "SIZE",
+      //   description: ["446mm(L) x 135mm(W) x 37mm(H) ± 2mm"],
+      // },
+      // {
+      //   name: "WEIGHT",
+      //   description: ["1020g ± 10g"],
+      // },
+      {
+        name: "SWITCH",
+        description: ["Cherry"],
+      },
+      {
+        name: "KEYCAP",
+        description: ["ABS"],
+      },
+      {
+        name: "USB",
+        description: ["A to C"],
+      },
+      {
+        name: "Bluetooth Version",
+        description: ["Bluetooth 3.0, 5.0"],
+      },
+      {
+        name: "Battery",
+        description: ["3.7V/4000mAh Polymer Lithum-ion Battery"],
+      },
+      {
+        name: "Size",
+        description: ["430x123x25±1mm"],
+      },
+      {
+        name: "Weight",
+        description: ["1.35kg±30g"],
+      },
+      {
+        name: "Input",
+        description: ["5V 1A"],
+      },
+      {
+        name: "Polling Rate",
+        description: ["1000Hz"],
+      },
+      {
+        name: "Operating Current",
+        description: ["180mA MAX"],
+      },
+      {
+        name: "Key Layout",
+        description: ["108 key"],
+      },
+      {
+        name: "Cable Length",
+        description: ["1.8m(TPE Cable)"],
+      },
+      {
+        name: "LED",
+        description: ["White/1~4 Key Letter Lighting"],
+      },
+      {
+        name: "OS",
+        description: ["Windows/Mac"],
+      },
+    ],
+  },
+  {
     productId: "W101P",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "W101P"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "W101P"
+    ),
     name: "W101P",
     filters: filters[0].keyboardFilters,
     brochure: "",
@@ -1643,10 +1932,10 @@ const products = [
   {
     productId: "W85-TKL",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "W85-TKL"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "W85-TKL"
+    ),
     name: "Wizmax W85 TKL",
     filters: filters[0].keyboardFilters,
     brochure: "",
@@ -1785,14 +2074,13 @@ const products = [
   {
     productId: "ZK1",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "ZK1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "ZK1"
+    ),
     name: "ZK1",
     filters: filters[0].keyboardFilters,
-    manual:
-      "https://drive.google.com/file/d/1JUtndEa8KuxLgbG-15bl0LZz885kfRqI/view",
+    manual: "https://drive.google.com/file/d/1JUtndEa8KuxLgbG-15bl0LZz885kfRqI/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/ZK1_DB_english_g3stxw.jpg",
     img: [
@@ -1914,8 +2202,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-ZK-1
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-ZK-1
             </span>
           </React.Fragment>,
         ],
@@ -1933,14 +2220,13 @@ const products = [
   {
     productId: "ZK2",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "ZK2"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "ZK2"
+    ),
     name: "ZK2",
     filters: filters[0].keyboardFilters,
-    manual:
-      "https://drive.google.com/file/d/1R6CBFlP95D-jJYjw2ffeJZ1Mt07IIcae/view",
+    manual: "https://drive.google.com/file/d/1R6CBFlP95D-jJYjw2ffeJZ1Mt07IIcae/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086199/product-brochures/keyboard/ZK2-DB-english_u3jzek.jpg",
     img: [
@@ -2038,9 +2324,7 @@ const products = [
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Windos XP®, Windows 8®, Windows 10®, Windows 11®, PlayStation4®",
-        ],
+        description: ["Windos XP®, Windows 8®, Windows 10®, Windows 11®, PlayStation4®"],
       },
       {
         name: "PRODUCT TYPE",
@@ -2065,8 +2349,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-ZK-2
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-ZK-2
             </span>
           </React.Fragment>,
         ],
@@ -2084,14 +2367,13 @@ const products = [
   {
     productId: "WK1",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "WK1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "WK1"
+    ),
     name: "WK1",
     filters: filters[0].keyboardFilters,
-    manual:
-      "https://drive.google.com/file/d/1K_8i83W4Jvr4VgisweDcONmHo2soMACC/view",
+    manual: "https://drive.google.com/file/d/1K_8i83W4Jvr4VgisweDcONmHo2soMACC/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086196/product-brochures/keyboard/Keyboard_WK1_DB_updated_zkqmtu.png",
     img: [
@@ -2213,8 +2495,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-WK-1
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-WK-1
             </span>
           </React.Fragment>,
         ],
@@ -2232,14 +2513,13 @@ const products = [
   {
     productId: "WK2",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "WK2"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "WK2"
+    ),
     name: "WK2",
     filters: filters[0].keyboardFilters,
-    manual:
-      "https://drive.google.com/file/d/1rTvxEAL8eEvvCTb2CDv_voQvbbSAYhab/view",
+    manual: "https://drive.google.com/file/d/1rTvxEAL8eEvvCTb2CDv_voQvbbSAYhab/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086198/product-brochures/keyboard/Keyboard_WK2_DB_updated_k8oprk.png",
     img: [
@@ -2363,8 +2643,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-WK-2
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-WK-2
             </span>
           </React.Fragment>,
         ],
@@ -2382,14 +2661,13 @@ const products = [
   {
     productId: "WK3",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "WK3"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "WK3"
+    ),
     name: "WK3",
     filters: filters[0].keyboardFilters,
-    manual:
-      "https://drive.google.com/file/d/19f6p--jW6_iDR2X8xfMLCBTm2xx-9Q-i/view",
+    manual: "https://drive.google.com/file/d/19f6p--jW6_iDR2X8xfMLCBTm2xx-9Q-i/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086191/product-brochures/keyboard/Keyboard_WK3_DB_updated_xattjd.png",
     img: [
@@ -2486,9 +2764,7 @@ const products = [
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 8®, Windows 10®, Windows 11®, PlayStation4®",
-        ],
+        description: ["Windows XP®, Windows 8®, Windows 10®, Windows 11®, PlayStation4®"],
       },
       {
         name: "PRODUCT TYPE",
@@ -2513,8 +2789,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-WK-3
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-WK-3
             </span>
           </React.Fragment>,
         ],
@@ -2532,14 +2807,13 @@ const products = [
   {
     productId: "WK4",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "WK4"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "WK4"
+    ),
     name: "WK4",
     filters: filters[0].keyboardFilters,
-    manual:
-      "https://drive.google.com/file/d/1cgy_HRpduo_eInSkokKlyd6kqqAtiB9h/view",
+    manual: "https://drive.google.com/file/d/1cgy_HRpduo_eInSkokKlyd6kqqAtiB9h/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086208/product-brochures/keyboard/wk4_DB_english_ujvsps.jpg",
     img: [
@@ -2663,8 +2937,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-WK-4
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-WK-4
             </span>
           </React.Fragment>,
         ],
@@ -2682,14 +2955,13 @@ const products = [
   {
     productId: "MK1",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "MK1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "MK1"
+    ),
     name: "MK1",
     filters: filters[0].keyboardFilters,
-    manual:
-      "https://drive.google.com/file/d/17dN3T5s8TBlX9oZdy-DpwE_LObLwptQU/view",
+    manual: "https://drive.google.com/file/d/17dN3T5s8TBlX9oZdy-DpwE_LObLwptQU/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086190/product-brochures/keyboard/Keyboard_MK1_DB_tvv4qc.png",
     img: [
@@ -2788,9 +3060,7 @@ const products = [
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8® , Windows 10®, PlayStation4®",
-        ],
+        description: ["Windows XP®, Windows 7®, Windows 8® , Windows 10®, PlayStation4®"],
       },
       {
         name: "PRODUCT TYPE ",
@@ -2798,9 +3068,7 @@ const products = [
       },
       {
         name: "CONTENTS",
-        description: [
-          "MK1 Keyboard, Keycap Remover, Switch Remover, Product Manual",
-        ],
+        description: ["MK1 Keyboard, Keycap Remover, Switch Remover, Product Manual"],
       },
       {
         name: "PRODUCTION DATE",
@@ -2815,8 +3083,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MK-1-FCC
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-MK-1-FCC
             </span>
           </React.Fragment>,
         ],
@@ -2834,14 +3101,13 @@ const products = [
   {
     productId: "EX580",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "EX580"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "EX580"
+    ),
     name: "EX580",
     filters: filters[0].keyboardFilters,
-    manual:
-      "https://drive.google.com/file/d/13uZWLMJedW0z7UIpppnz6wUlvJ5SABnK/view",
+    manual: "https://drive.google.com/file/d/13uZWLMJedW0z7UIpppnz6wUlvJ5SABnK/view",
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086194/product-brochures/keyboard/EX580_ENG_s8a2hl.jpg",
     img: [
@@ -2997,8 +3263,8 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-X50 (Derivative model)
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-X50 (Derivative
+              model)
             </span>
           </React.Fragment>,
         ],
@@ -3016,16 +3282,15 @@ const products = [
   {
     productId: "EX580L",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "EX580L"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "EX580L"
+    ),
     name: "EX580L",
     filters: filters[0].keyboardFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086198/product-brochures/keyboard/EX580L_DB-ENG_toi7ho.jpg",
-    manual:
-      "https://drive.google.com/file/d/1ia88ls4xdK69RXuGmn9JCxQfU-pwIuSi/view",
+    manual: "https://drive.google.com/file/d/1ia88ls4xdK69RXuGmn9JCxQfU-pwIuSi/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086147/product-images/keyboard/EX580_L_0005_05_sj0qik.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086154/product-images/keyboard/EX580_L_0006_06_nsbbcj.png",
@@ -3123,9 +3388,7 @@ const products = [
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Windows XP®, Windows 7®, Windows 8® , Windows 10®, Windows 11®",
-        ],
+        description: ["Windows XP®, Windows 7®, Windows 8® , Windows 10®, Windows 11®"],
       },
       {
         name: "PRODUCT TYPE ",
@@ -3150,8 +3413,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-EX580L
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-EX580L
             </span>
           </React.Fragment>,
         ],
@@ -3293,16 +3555,15 @@ const products = [
   {
     productId: "MANICEX89",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "MANICEX89"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "MANICEX89"
+    ),
     name: "Manic EX89 TKL",
     filters: filters[0].keyboardFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086204/product-brochures/keyboard/EX89_DB_ENGLISH_i6khvn.jpg",
-    manual:
-      "https://drive.google.com/file/d/1P2JvOVu1do6mNKG60dbpYx0OmAw5b3Mc/view",
+    manual: "https://drive.google.com/file/d/1P2JvOVu1do6mNKG60dbpYx0OmAw5b3Mc/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086146/product-images/keyboard/EX89_TKL_-_5_dh3qar.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086145/product-images/keyboard/EX89_TKL_-_1_va3epb.png",
@@ -3404,9 +3665,7 @@ const products = [
       },
       {
         name: "CONTENTS",
-        description: [
-          "Manic EX89 Keyboard, Keycap Remover, Switch Remover, Product Manual",
-        ],
+        description: ["Manic EX89 Keyboard, Keycap Remover, Switch Remover, Product Manual"],
       },
       {
         name: "PRODUCTION DATE",
@@ -3421,8 +3680,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-EX89
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-EX89
             </span>
           </React.Fragment>,
         ],
@@ -3440,10 +3698,10 @@ const products = [
   {
     productId: "MK350",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "MK350"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "MK350"
+    ),
     name: "Manic K350",
     filters: filters[0].keyboardFilters,
     brochure:
@@ -3540,9 +3798,7 @@ const products = [
       },
       {
         name: "COMPATIBILITY",
-        description: [
-          "Mac OS®, Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®",
-        ],
+        description: ["Mac OS®, Windows XP®, Windows 7®, Windows 8®, Windows 10®, Windows 11®"],
       },
       {
         name: "PRODUCT TYPE",
@@ -3565,8 +3821,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-K350
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-K350
             </span>
           </React.Fragment>,
         ],
@@ -3584,10 +3839,10 @@ const products = [
   {
     productId: "MX40",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "MX40"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "MX40"
+    ),
     name: "Manic X40",
     filters: filters[0].keyboardFilters,
     brochure:
@@ -3697,9 +3952,7 @@ const products = [
       },
       {
         name: "CONTENTS",
-        description: [
-          "Keyboard Cover, Remover, 4x Spare Switch, PC Room Sticker",
-        ],
+        description: ["Keyboard Cover, Remover, 4x Spare Switch, PC Room Sticker"],
       },
       // {
       //   name: "SWITCH",
@@ -3736,8 +3989,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MANICX40
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-MANICX40
             </span>
           </React.Fragment>,
         ],
@@ -3755,10 +4007,10 @@ const products = [
   {
     productId: "MX40P",
     categoryId: "CATEGORY_KB",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_KB"
-    ).replace(":productId", "MX40P"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_KB").replace(
+      ":productId",
+      "MX40P"
+    ),
     name: "Manic X40P",
     filters: filters[0].keyboardFilters,
     brochure: "",
@@ -3917,16 +4169,15 @@ const products = [
   {
     productId: "MHS301",
     categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MHS301"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "MHS301"
+    ),
     name: "Manic HS-301",
     filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086269/product-brochures/headset/Headset_HS-301_DB_tyh8v0.png",
-    manual:
-      "https://drive.google.com/file/d/1nCxcI4rI94zK6sxhbQoZBeSk-iHnLhkh/view",
+    manual: "https://drive.google.com/file/d/1nCxcI4rI94zK6sxhbQoZBeSk-iHnLhkh/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086237/product-images/headset/HS-301_05_qvwrg6.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086228/product-images/headset/HS-301_01_m4z1yl.png",
@@ -4067,8 +4318,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-HS-301
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-HS-301
             </span>
           </React.Fragment>,
         ],
@@ -4086,16 +4336,15 @@ const products = [
   {
     productId: "MHS370",
     categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MHS370"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "MHS370"
+    ),
     name: "Manic HS-370",
     filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086265/product-brochures/headset/Headset_HS-370_DB_isqh2j.png",
-    manual:
-      "https://drive.google.com/file/d/1fdsFJC087DzQR0OUPIKtgnngNgMBZUNa/view",
+    manual: "https://drive.google.com/file/d/1fdsFJC087DzQR0OUPIKtgnngNgMBZUNa/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/HS-370_02_clsujt.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086229/product-images/headset/HS-370_01_qr647g.png",
@@ -4237,8 +4486,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-HS-370
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-HS-370
             </span>
           </React.Fragment>,
         ],
@@ -4256,16 +4504,15 @@ const products = [
   {
     productId: "MHS420",
     categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MHS420"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "MHS420"
+    ),
     name: "Manic HS-420",
     filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086263/product-brochures/headset/Headset_HS-420_DB_ttq3ek.png",
-    manual:
-      "https://drive.google.com/file/d/1QWeV2pEc4hClPUGwNq-mkWRNOZ7BOUNz/view",
+    manual: "https://drive.google.com/file/d/1QWeV2pEc4hClPUGwNq-mkWRNOZ7BOUNz/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/HS-420_01_Black_gmcsjv.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086235/product-images/headset/HS-420_02_Black_wymjks.png",
@@ -4438,8 +4685,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-HS-420
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-HS-420
             </span>
           </React.Fragment>,
         ],
@@ -4457,16 +4703,15 @@ const products = [
   {
     productId: "MHS530",
     categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MHS530"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "MHS530"
+    ),
     name: "Manic HS-530",
     filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086266/product-brochures/headset/Headset_HS-530_DB_pdnlra.png",
-    manual:
-      "https://drive.google.com/file/d/1x2cBQ1tE7FjaubdFcK9gFvzEbgk-9g-o/view",
+    manual: "https://drive.google.com/file/d/1x2cBQ1tE7FjaubdFcK9gFvzEbgk-9g-o/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086232/product-images/headset/HS-530_03_l0djbv.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/HS-530_01_wdeezt.png",
@@ -4609,8 +4854,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-HS-530
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-HS-530
             </span>
           </React.Fragment>,
         ],
@@ -4628,16 +4872,15 @@ const products = [
   {
     productId: "WH1",
     categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "WH1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "WH1"
+    ),
     name: "WH1",
     filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086264/product-brochures/headset/Headset_WH1_DB_fmg2zn.png",
-    manual:
-      "https://drive.google.com/file/d/1NqgdvGkkHdwMxwDZI1EcveHUUwtrAJi4/view",
+    manual: "https://drive.google.com/file/d/1NqgdvGkkHdwMxwDZI1EcveHUUwtrAJi4/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086238/product-images/headset/wh1-1_oo98c0.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086240/product-images/headset/wh1-2_ejidex.png",
@@ -4778,8 +5021,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-WH-1
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-WH-1
             </span>
           </React.Fragment>,
         ],
@@ -4797,16 +5039,15 @@ const products = [
   {
     productId: "MH1",
     categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MH1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "MH1"
+    ),
     name: "MH1",
     filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086264/product-brochures/headset/MH1-DB_tvc1qc.png",
-    manual:
-      "https://drive.google.com/file/d/1Ph6FlsTGxsSEYm_eYvYyXtB6YE12nhuR/view",
+    manual: "https://drive.google.com/file/d/1Ph6FlsTGxsSEYm_eYvYyXtB6YE12nhuR/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086233/product-images/headset/MH-1-1_erld5s.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086231/product-images/headset/MH-1-2_z9alpn.png",
@@ -4942,8 +5183,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MH1-1
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-MH1-1
             </span>
           </React.Fragment>,
         ],
@@ -4961,16 +5201,15 @@ const products = [
   {
     productId: "MH2",
     categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "MH2"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "MH2"
+    ),
     name: "MH2",
     filters: filters[0].headsetFilters,
     brochure:
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086259/product-brochures/headset/MH2-DB_t7szyj.png",
-    manual:
-      "https://drive.google.com/file/d/10Suxn7fzFRZhWufFF3lWrzi4tPV9SQgy/view",
+    manual: "https://drive.google.com/file/d/10Suxn7fzFRZhWufFF3lWrzi4tPV9SQgy/view",
     img: [
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086242/product-images/headset/MH2-1_fu2t0b.png",
       "https://res.cloudinary.com/ddwocxwmc/image/upload/v1671086234/product-images/headset/MH2-2_gm8xna.png",
@@ -5103,8 +5342,7 @@ const products = [
         description: [
           <React.Fragment>
             <span>
-              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp;
-              R-R-HMM-MH2
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-MH2
             </span>
           </React.Fragment>,
         ],
@@ -5286,10 +5524,10 @@ const products = [
   {
     productId: "W301",
     categoryId: "CATEGORY_HEADSET",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_HEADSET"
-    ).replace(":productId", "W301"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "W301"
+    ),
     name: "W301",
     filters: filters[0].headsetFilters,
     brochure: "",
@@ -5456,12 +5694,110 @@ const products = [
   },
   //PC CASE
   {
+    productId: "ML-420-BTF",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-420-BTF"
+    ),
+    name: "ML-420 BTF",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175775/PC%20Case/ML-420%20View%20BTF/PNG/01_vws19v.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175781/PC%20Case/ML-420%20View%20BTF/PNG/02_cje7bx.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175786/PC%20Case/ML-420%20View%20BTF/PNG/03_hpjlia.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175665/PC%20Case/ML-420%20View%20BTF/PNG/04_osj6k3.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "ATX/M-ATX/ITX/E-ATX",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-420 BTF"],
+      },
+      {
+        name: "DIMENSION",
+        description: ["522mm(H)x246mm(W)x522mm(D)"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX/ITX/E-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["522mm(H)x246mm(W)x522mm(D)"],
+      },
+      // {
+      //   name: "I/O PANEL",
+      //   description: ["Power,LED Mode,Audio,USB 3.0 x2,USB 3.1 Type C"],
+      // },
+      // {
+      //   name: "COLOR",
+      //   description: ["White"],
+      // },
+      {
+        name: "VGA LENGTH",
+        description: ["455mm(MAX)"],
+      },
+      // {
+      //   name: "PCI SLOTS",
+      //   description: ["8+3 (Vertical)"],
+      // },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5in x3", "2.5in x7"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["180mm(MAX)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top", "Bottom", "Side", "Power Duct"],
+        subdescription: [
+          "140mm aRGB x3",
+          "140mm aRGB x1",
+          "120mm / 140mm x3(Optional)",
+          "120mm/140mm x1(Optional)",
+          "140mm aRGB x3(Optional)",
+          "120mm x2(Optional)",
+        ],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Top", "Side"],
+        subdescription: [
+          "240/280/360/420mm(Optional)",
+          "240/280/360/420mm(Optional)",
+          "240/280/360/420mm(Optional)",
+        ],
+      },
+    ],
+  },
+  {
     productId: "EH1-MONDRIAN",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "EH1-MONDRIAN"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "EH1-MONDRIAN"
+    ),
     name: "EH1 Mondrian",
     filters: filters[0].pccaseFilters,
     isNewRelease: "New Release",
@@ -5578,10 +5914,7 @@ const products = [
         name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
         description: [""],
         subname: ["Front", "Top"],
-        subdescription: [
-          "120/240/280/360mm (Optional)",
-          "120/140mm (Optional)",
-        ],
+        subdescription: ["120/240/280/360mm (Optional)", "120/140mm (Optional)"],
       },
       // {
       //   name: "SIDE PANEL",
@@ -5704,10 +6037,10 @@ const products = [
   {
     productId: "GX3-CHANG",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GX3-CHANG"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GX3-CHANG"
+    ),
     name: "GX3 Chang",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -5818,11 +6151,7 @@ const products = [
         name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
         description: [""],
         subname: ["Front", "Rear", "Top"],
-        subdescription: [
-          "120/240/280/360/420mm",
-          "120mm",
-          "120/240/280/360/420mm",
-        ],
+        subdescription: ["120/240/280/360/420mm", "120mm", "120/240/280/360/420mm"],
       },
       {
         name: "SIDE PANEL",
@@ -5835,10 +6164,10 @@ const products = [
   {
     productId: "GM3-MOON",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GM3-MOON"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GM3-MOON"
+    ),
     name: "GM3 Moon",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -5958,10 +6287,10 @@ const products = [
   {
     productId: "GX1-PUNCH",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GX1-PUNCH"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GX1-PUNCH"
+    ),
     name: "GX1 Punch",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -6034,9 +6363,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "Power, USB 2.0, USB 3.0, USB 3.1, Audio, Mic, Restart, LED Mode",
-        ],
+        description: ["Power, USB 2.0, USB 3.0, USB 3.1, Audio, Mic, Restart, LED Mode"],
       },
       {
         name: "COLOR",
@@ -6088,10 +6415,10 @@ const products = [
   {
     productId: "EL1-RAPANG",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "EL1-RAPANG"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "EL1-RAPANG"
+    ),
     name: "EL1 Rapang",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -6192,21 +6519,17 @@ const products = [
         name: "COOLER SPECIFICATIONS",
         description: [""],
         subname: ["Front", "Rear", "Side"],
-        subdescription: [
-          "120mm Fan x2 (Optional)",
-          "80mm Fan",
-          "120mm Fan (Optional)",
-        ],
+        subdescription: ["120mm Fan x2 (Optional)", "80mm Fan", "120mm Fan (Optional)"],
       },
     ],
   },
   {
     productId: "EM1-WOOFER-B",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "EM1-WOOFER-B"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "EM1-WOOFER-B"
+    ),
     name: "EM1 Woofer",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -6293,9 +6616,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "Power, USB 2.0 x2, USB 3.0, Audio, Mic, Restart, LED Mode",
-        ],
+        description: ["Power, USB 2.0 x2, USB 3.0, Audio, Mic, Restart, LED Mode"],
       },
       {
         name: "COLOR",
@@ -6347,10 +6668,10 @@ const products = [
   {
     productId: "EM2-STEREO-B",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "EM2-STEREO-B"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "EM2-STEREO-B"
+    ),
     name: "EM2 Stereo",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -6435,9 +6756,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "Power, USB 3.0, USB 2.0 x2, Audio, Mic, Restart, Fan Speed, LED Mode",
-        ],
+        description: ["Power, USB 3.0, USB 2.0 x2, Audio, Mic, Restart, Fan Speed, LED Mode"],
       },
       {
         name: "COLOR",
@@ -6488,10 +6807,10 @@ const products = [
   {
     productId: "GM1-TRANSFORM-B",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GM1-TRANSFORM-B"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GM1-TRANSFORM-B"
+    ),
     name: "GM1 Transform",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -6629,10 +6948,10 @@ const products = [
   {
     productId: "OM1-CIRCLE",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "OM1-CIRCLE"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "OM1-CIRCLE"
+    ),
     name: "OM1 Circle",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -6757,10 +7076,10 @@ const products = [
   {
     productId: "GH1-MESH-W",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GH1-MESH-W"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GH1-MESH-W"
+    ),
     name: "GH1 Mesh White",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -6835,9 +7154,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "Power, USB 2.0 x2, USB 3.0, Audio, Mic, Restart, LED Mode",
-        ],
+        description: ["Power, USB 2.0 x2, USB 3.0, Audio, Mic, Restart, LED Mode"],
       },
       {
         name: "COLOR",
@@ -6888,10 +7205,10 @@ const products = [
   {
     productId: "SHADOW-2",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "SHADOW-2"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "SHADOW-2"
+    ),
     name: "Shadow 2",
     filters: filters[0].pccaseFilters,
     // brochure:
@@ -7007,11 +7324,7 @@ const products = [
         name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
         description: [""],
         subname: ["Front", "Top", "Inside"],
-        subdescription: [
-          "240mm (Optional)",
-          "360mm (Optional)",
-          "240mm (Optional)",
-        ],
+        subdescription: ["240mm (Optional)", "360mm (Optional)", "240mm (Optional)"],
       },
       {
         name: "SIDE PANEL",
@@ -7024,10 +7337,10 @@ const products = [
   {
     productId: "GH2-METAL",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GH2-METAL"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GH2-METAL"
+    ),
     name: "GH2 Metal",
     filters: filters[0].pccaseFilters,
     // brochure:
@@ -7268,10 +7581,10 @@ const products = [
   {
     productId: "GH4-LETO",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GH4-LETO"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GH4-LETO"
+    ),
     name: "GH4 Leto",
     filters: filters[0].pccaseFilters,
     // brochure:
@@ -7344,9 +7657,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "Power, Reset, USB 3.0, USB 2.0 x 2, HD Audio, Mic, LED on & off",
-        ],
+        description: ["Power, Reset, USB 3.0, USB 2.0 x 2, HD Audio, Mic, LED on & off"],
       },
       {
         name: "COLOR",
@@ -7401,10 +7712,10 @@ const products = [
   {
     productId: "GL1-MORTAR",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GL1-MORTAR"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GL1-MORTAR"
+    ),
     name: "GL1 Mortar",
     filters: filters[0].pccaseFilters,
     // brochure:
@@ -7532,10 +7843,10 @@ const products = [
   {
     productId: "GH4-LETOMESH",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GH4-LETOMESH"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GH4-LETOMESH"
+    ),
     name: "GH4 Letomesh",
     filters: filters[0].pccaseFilters,
     // brochure:
@@ -7608,9 +7919,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "Power, Reset, USB 3.0, USB 2.0 x 2, HD Audio, Mic, LED on & off",
-        ],
+        description: ["Power, Reset, USB 3.0, USB 2.0 x 2, HD Audio, Mic, LED on & off"],
       },
       {
         name: "COLOR",
@@ -7783,10 +8092,10 @@ const products = [
   {
     productId: "GX2-NEURON-GLASS",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GX2-NEURON-GLASS"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GX2-NEURON-GLASS"
+    ),
     name: "GX2-Neuron Glass",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -7859,9 +8168,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "USB Type C, USB 3.0 x2, USB 2.0 x2 HD Audio, Mic, Power, Reset, LED mode",
-        ],
+        description: ["USB Type C, USB 3.0 x2, USB 2.0 x2 HD Audio, Mic, Power, Reset, LED mode"],
       },
       {
         name: "COLOR",
@@ -7922,10 +8229,10 @@ const products = [
   {
     productId: "GX2-NEURON-MESH",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GX2-NEURON-MESH"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GX2-NEURON-MESH"
+    ),
     name: "GX2-Neuron Mesh",
     filters: filters[0].pccaseFilters,
     brochure:
@@ -7998,9 +8305,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "USB Type C, USB 3.0 x2, USB 2.0 x2 HD Audio, Mic, Power, Reset, LED mode",
-        ],
+        description: ["USB Type C, USB 3.0 x2, USB 2.0 x2 HD Audio, Mic, Power, Reset, LED mode"],
       },
       {
         name: "COLOR",
@@ -8062,10 +8367,10 @@ const products = [
   {
     productId: "GM2-HELIOS",
     categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PCCASE"
-    ).replace(":productId", "GM2-HELIOS"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GM2-HELIOS"
+    ),
     name: "GM2 Helios",
     filters: filters[0].pccaseFilters,
     // brochure:
@@ -8138,9 +8443,7 @@ const products = [
       },
       {
         name: "I/O PANEL",
-        description: [
-          "Power, USB 3.0, USB 2.0 x2, HD Audio, Mic, LED on & off, Reset",
-        ],
+        description: ["Power, USB 3.0, USB 2.0 x2, HD Audio, Mic, LED on & off, Reset"],
       },
       {
         name: "COLOR",
@@ -8196,10 +8499,10 @@ const products = [
   {
     productId: "MA-400-FALCON",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "MA-400-FALCON"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "MA-400-FALCON"
+    ),
     name: "MA-400 Falcon",
     filters: filters[0].fanscoolersFilters,
     brochure:
@@ -8343,10 +8646,10 @@ const products = [
   {
     productId: "MA-600-PENGUIN",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "MA-600-PENGUIN"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "MA-600-PENGUIN"
+    ),
     name: "MA-600 Penguin",
     filters: filters[0].fanscoolersFilters,
     brochure:
@@ -8485,10 +8788,10 @@ const products = [
   {
     productId: "CA-40-EAGLE",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "CA-40-EAGLE"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "CA-40-EAGLE"
+    ),
     name: "CA-40 Eagle",
     filters: filters[0].fanscoolersFilters,
     brochure:
@@ -8632,10 +8935,10 @@ const products = [
   {
     productId: "MA-420-SWALLOW",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "MA-420-SWALLOW"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "MA-420-SWALLOW"
+    ),
     name: "MA-420 Swallow",
     filters: filters[0].fanscoolersFilters,
     brochure:
@@ -8786,10 +9089,10 @@ const products = [
   {
     productId: "CA-50-SPARROW",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "CA-50-SPARROW"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "CA-50-SPARROW"
+    ),
     name: "CA-50 Sparrow",
     filters: filters[0].fanscoolersFilters,
     brochure:
@@ -8928,10 +9231,10 @@ const products = [
   {
     productId: "ML240-FROZEN-TUNA-BNW",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "ML240-FROZEN-TUNA-BNW"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "ML240-FROZEN-TUNA-BNW"
+    ),
     name: "ML240 Frozen Tuna",
     filters: filters[0].fanscoolersFilters,
     brochure:
@@ -9037,13 +9340,7 @@ const products = [
       {
         name: "WATER BLOCK",
         description: [""],
-        subname: [
-          "Size",
-          "Impeller Speed",
-          "Voltage",
-          "Sound Level",
-          "Bearing",
-        ],
+        subname: ["Size", "Impeller Speed", "Voltage", "Sound Level", "Bearing"],
         subdescription: [
           "84.15mm(L) x 78.6mm(W) x 49.5mm(H)",
           "2,300RPM (±10%)",
@@ -9069,10 +9366,10 @@ const products = [
   {
     productId: "ML360-FROZEN-TUNA-BNW",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "ML360-FROZEN-TUNA-BNW"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "ML360-FROZEN-TUNA-BNW"
+    ),
     name: "ML360 Frozen Tuna",
     filters: filters[0].fanscoolersFilters,
     brochure:
@@ -9178,13 +9475,7 @@ const products = [
       {
         name: "WATER BLOCK",
         description: [""],
-        subname: [
-          "Size",
-          "Impeller Speed",
-          "Voltage",
-          "Sound Level",
-          "Bearing",
-        ],
+        subname: ["Size", "Impeller Speed", "Voltage", "Sound Level", "Bearing"],
         subdescription: [
           "84.15mm(L) x 78.6mm(W) x 49.5mm(H)",
           "2,300RPM (±10%)",
@@ -9210,10 +9501,10 @@ const products = [
   {
     productId: "MA-4-FRIGATE",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "MA-4-FRIGATE"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "MA-4-FRIGATE"
+    ),
     name: "MA-4 Frigate",
     filters: filters[0].fanscoolersFilters,
     brochure: "",
@@ -9454,10 +9745,10 @@ const products = [
   {
     productId: "CF-12AW",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "CF-12AW"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "CF-12AW"
+    ),
     name: "CF-12AW",
     filters: filters[0].fanscoolersFilters,
     brochure: "",
@@ -9573,10 +9864,10 @@ const products = [
   {
     productId: "CF-12SB",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "CF-12SB"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "CF-12SB"
+    ),
     name: "CF-12SB",
     filters: filters[0].fanscoolersFilters,
     brochure: "",
@@ -9688,10 +9979,10 @@ const products = [
   {
     productId: "MF-10",
     categoryId: "CATEGORY_FC",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_FC"
-    ).replace(":productId", "MF-10"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "MF-10"
+    ),
     name: "MF-10",
     filters: filters[0].fanscoolersFilters,
     brochure: "",
@@ -10069,12 +10360,236 @@ const products = [
   // },
   //PSU
   {
+    productId: "CLASSIC-II-FULCHANGE",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "CLASSIC-II-FULCHANGE"
+    ),
+    name: "CLASSIC II FULL CHANGE ATX 3.1 800W",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173485/PSU/CLASSIC/CLASSIC%20II%20FULL%20CHANGE%20ATX%203.1/3_jkapjx.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173481/PSU/CLASSIC/CLASSIC%20II%20FULL%20CHANGE%20ATX%203.1/4-700W_800W_sytdag.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173487/PSU/CLASSIC/CLASSIC%20II%20FULL%20CHANGE%20ATX%203.1/1-1_masnaf.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173499/PSU/CLASSIC/CLASSIC%20II%20FULL%20CHANGE%20ATX%203.1/2_bfu3vy.jpg",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+    ],
+    featuredSpecs: [
+      {
+        specs: "BRONZE",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["CLASSIC II FULL CHANGE ATX 3.1 800W"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["BRONZE"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Cable Size/Type",
+          "Main 20+4 Pin",
+          "CPU 8+4+4 Pin",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+        ],
+        subdescription: [
+          "Fixed Cables",
+          "16AWG / Flat Cable",
+          "x1 (550mm)",
+          "x1 (700mm + 150mm)",
+          "x2 (450mm + 150mm)",
+          "x1 (600mm)",
+          "x8 (450mm + 150mm + 150mm)",
+          "x4 (450mm + 150mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Current", "Frequency"],
+        subdescription: ["220~240V", "10A", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "22A, 22A, 67A, 0.3A, 3A",
+          "120W, 800W, 3.6W, 15W 800W",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "CLASSIC-II-GOLD-FULL-MODULER",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "CLASSIC-II-GOLD-FULL-MODULER"
+    ),
+    name: "CLASSIC II GOLD Full Moduler ATX 3.1 1050W",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173460/PSU/CLASSIC/CLASSIC%20II%20GOLD%20Full%20Modular%20ATX%203.1/4-850_lgyvce.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173488/PSU/CLASSIC/CLASSIC%20II%20GOLD%20Full%20Modular%20ATX%203.1/3_khfowy.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173475/PSU/CLASSIC/CLASSIC%20II%20GOLD%20Full%20Modular%20ATX%203.1/1_v55d7c.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173493/PSU/CLASSIC/CLASSIC%20II%20GOLD%20Full%20Modular%20ATX%203.1/2_czgibq.jpg",
+    ],
+    featuredSpecs: [
+      {
+        specs: "GOLD",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["CLASSIC II GOLD Full Moduler ATX 3.1 1050W"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["GOLD"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Cable Size/Type",
+          "Main 20+4 Pin",
+          "CPU 8PIN",
+          "CPU 4+4PIN",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+          "FDD",
+        ],
+        subdescription: [
+          "Full Modular",
+          "16AWG / Flat Cable",
+          "x1 (600mm)",
+          "x1 (700mm)",
+          "x1 (700mm)",
+          "x2 (600mm)",
+          "x1 (700mm)",
+          "x10 (500mm + 150mm + 150mm + 150mm)",
+          "x4 (500mm + 150mm)",
+          "x1 (100mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Current", "Frequency"],
+        subdescription: ["220~240V", "*A", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "22A, 22A, 87.5A, 0.3A, 3A",
+          "120W, 1050W, 3.6W, 15W 1050W",
+        ],
+      },
+    ],
+  },
+  {
     productId: "WIZMAX-GOLD",
     categoryId: "CATEGORY_PSU",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PSU"
-    ).replace(":productId", "WIZMAX-GOLD"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "WIZMAX-GOLD"
+    ),
     name: "Wizmax Gold",
     filters: filters[0].psuFilters,
     brochure:
@@ -10148,13 +10663,7 @@ const products = [
       {
         name: "FAN INFORMATION",
         description: [],
-        subname: [
-          "Fan Size",
-          "Fan Bearing",
-          "Fan Speed",
-          "Fan Noise @ 100%",
-          "Fan Lifespan",
-        ],
+        subname: ["Fan Size", "Fan Bearing", "Fan Speed", "Fan Noise @ 100%", "Fan Lifespan"],
         subdescription: [
           "120mm x 120mm x 25mm",
           "Hydraulic Dynamic Bearing",
@@ -10188,11 +10697,7 @@ const products = [
       {
         name: "OPERATION INFORMATION",
         description: [],
-        subname: [
-          "Operating Temperature",
-          "Protection",
-          "Safety/Environmental Certification",
-        ],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
         subdescription: [
           "~50°C",
           "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP",
@@ -10208,14 +10713,7 @@ const products = [
       {
         name: "DC OUTPUT",
         description: [],
-        subname: [
-          "Rail",
-          "Maximum Power",
-          " ",
-          " ",
-          " ",
-          "Total Continuous Power",
-        ],
+        subname: ["Rail", "Maximum Power", " ", " ", " ", "Total Continuous Power"],
         subdescription: [
           "+5V, +3.3V, +12V, -12V, +5Vsb",
           "22A, 22A, 70.8A, 0.3A, 3A",
@@ -10228,10 +10726,10 @@ const products = [
   {
     productId: "WIZMAX-SILVER",
     categoryId: "CATEGORY_PSU",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PSU"
-    ).replace(":productId", "WIZMAX-SILVER"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "WIZMAX-SILVER"
+    ),
     name: "Wizmax Silver",
     filters: filters[0].psuFilters,
     brochure: "",
@@ -10304,13 +10802,7 @@ const products = [
       {
         name: "FAN INFORMATION",
         description: [],
-        subname: [
-          "Fan Size",
-          "Fan Bearing",
-          "Fan Speed",
-          "Fan Noise @ 100%",
-          "Fan Lifespan",
-        ],
+        subname: ["Fan Size", "Fan Bearing", "Fan Speed", "Fan Noise @ 100%", "Fan Lifespan"],
         subdescription: [
           "120mm x 120mm x 25mm",
           "Hydraulic Dynamic Bearing",
@@ -10344,11 +10836,7 @@ const products = [
       {
         name: "OPERATION INFORMATION",
         description: [],
-        subname: [
-          "Operating Temperature",
-          "Protection",
-          "Safety/Environmental Certification",
-        ],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
         subdescription: [
           "~50°C",
           "SURGE 4K, ESD 15K, OVP, OPP, UVP, OTP, OCP, SCP",
@@ -10364,14 +10852,7 @@ const products = [
       {
         name: "DC OUTPUT",
         description: [],
-        subname: [
-          "Rail",
-          "Maximum Power",
-          " ",
-          " ",
-          " ",
-          "Total Continuous Power",
-        ],
+        subname: ["Rail", "Maximum Power", " ", " ", " ", "Total Continuous Power"],
         subdescription: [
           "+5V, +3.3V, +12V, -12V, +5Vsb",
           "22A, 22A, 70.8A, 0.3A, 3A",
@@ -10384,10 +10865,10 @@ const products = [
   {
     productId: "WIZMAX-GOLD-FM",
     categoryId: "CATEGORY_PSU",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PSU"
-    ).replace(":productId", "WIZMAX-GOLD-FM"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "WIZMAX-GOLD-FM"
+    ),
     name: "Wizmax Gold FM",
     filters: filters[0].psuFilters,
     brochure: "",
@@ -10460,13 +10941,7 @@ const products = [
       {
         name: "FAN INFORMATION",
         description: [],
-        subname: [
-          "Fan Size",
-          "Fan Bearing",
-          "Fan Speed",
-          "Fan Noise @ 100%",
-          "Fan Lifespan",
-        ],
+        subname: ["Fan Size", "Fan Bearing", "Fan Speed", "Fan Noise @ 100%", "Fan Lifespan"],
         subdescription: [
           "120mm x 120mm x 25mm",
           "Hydraulic Dynamic Bearing",
@@ -10500,11 +10975,7 @@ const products = [
       {
         name: "OPERATION INFORMATION",
         description: [],
-        subname: [
-          "Operating Temperature",
-          "Protection",
-          "Safety/Environmental Certification",
-        ],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
         subdescription: [
           "~50°C",
           "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP",
@@ -10520,14 +10991,7 @@ const products = [
       {
         name: "DC OUTPUT",
         description: [],
-        subname: [
-          "Rail",
-          "Maximum Power",
-          " ",
-          " ",
-          " ",
-          "Total Continuous Power",
-        ],
+        subname: ["Rail", "Maximum Power", " ", " ", " ", "Total Continuous Power"],
         subdescription: [
           "+5V, +3.3V, +12V, -12V, +5Vsb",
           "22A, 22A, 100A, 0.3A, 3A",
@@ -10540,10 +11004,10 @@ const products = [
   {
     productId: "WIZMAX-PLATINUM",
     categoryId: "CATEGORY_PSU",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PSU"
-    ).replace(":productId", "WIZMAX-PLATINUM"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "WIZMAX-PLATINUM"
+    ),
     name: "Wizmax Platinum",
     filters: filters[0].psuFilters,
     brochure: "/images/db/WIZMAX PLATINUM-1200W_ENGLISH.png",
@@ -10616,13 +11080,7 @@ const products = [
       {
         name: "FAN INFORMATION",
         description: [],
-        subname: [
-          "Fan Size",
-          "Fan Bearing",
-          "Fan Speed",
-          "Fan Noise @ 100%",
-          "Fan Lifespan",
-        ],
+        subname: ["Fan Size", "Fan Bearing", "Fan Speed", "Fan Noise @ 100%", "Fan Lifespan"],
         subdescription: [
           "120mm x 120mm x 25mm",
           "Fluid Dynamic Bearing",
@@ -10659,11 +11117,7 @@ const products = [
       {
         name: "OPERATION INFORMATION",
         description: [],
-        subname: [
-          "Operating Temperature",
-          "Protection",
-          "Safety/Environmental Certification",
-        ],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
         subdescription: [
           "~50°C",
           "SURGE 4K, ESD 15K, OVP, OPP, UVP, OTP, OCP, SCP",
@@ -10679,14 +11133,7 @@ const products = [
       {
         name: "DC OUTPUT",
         description: [],
-        subname: [
-          "Rail",
-          "Maximum Power",
-          " ",
-          " ",
-          " ",
-          "Total Continuous Power",
-        ],
+        subname: ["Rail", "Maximum Power", " ", " ", " ", "Total Continuous Power"],
         subdescription: [
           "+5V, +3.3V, +12V, -12V, +5Vsb",
           "25A, 25A, 100A, 0.3A, 3A",
@@ -10699,10 +11146,10 @@ const products = [
   {
     productId: "ASTRO-II-PLATINUM",
     categoryId: "CATEGORY_PSU",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PSU"
-    ).replace(":productId", "ASTRO-II-PLATINUM"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "ASTRO-II-PLATINUM"
+    ),
     name: "Astro II Platinum",
     filters: filters[0].psuFilters,
     brochure: "",
@@ -10775,13 +11222,7 @@ const products = [
       {
         name: "FAN INFORMATION",
         description: [],
-        subname: [
-          "Fan Size",
-          "Fan Bearing",
-          "Fan Speed",
-          "Fan Noise @ 100%",
-          "Fan Lifespan",
-        ],
+        subname: ["Fan Size", "Fan Bearing", "Fan Speed", "Fan Noise @ 100%", "Fan Lifespan"],
         subdescription: [
           "120mm x 120mm x 25mm",
           "Hydraulic Dynamic Bearing",
@@ -10819,11 +11260,7 @@ const products = [
       {
         name: "OPERATION INFORMATION",
         description: [],
-        subname: [
-          "Operating Temperature",
-          "Protection",
-          "Safety/Environmental Certification",
-        ],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
         subdescription: [
           "~50°C",
           "SURGE 4K, ESD 15K, OVP, OPP, UVP, OTP, OCP, SCP",
@@ -10839,14 +11276,7 @@ const products = [
       {
         name: "DC OUTPUT",
         description: [],
-        subname: [
-          "Rail",
-          "Maximum Power",
-          " ",
-          " ",
-          " ",
-          "Total Continuous Power",
-        ],
+        subname: ["Rail", "Maximum Power", " ", " ", " ", "Total Continuous Power"],
         subdescription: [
           "+5V, +3.3V, +12V, -12V, +5Vsb",
           "25A, 25A, 108.3A, 0.3A, 3A",
@@ -10859,10 +11289,10 @@ const products = [
   {
     productId: "ASTRO-II-GD",
     categoryId: "CATEGORY_PSU",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_PSU"
-    ).replace(":productId", "ASTRO-II-GD"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "ASTRO-II-GD"
+    ),
     name: "Astro II Gold",
     filters: filters[0].psuFilters,
     brochure:
@@ -10936,13 +11366,7 @@ const products = [
       {
         name: "FAN INFORMATION",
         description: [],
-        subname: [
-          "Fan Size",
-          "Fan Bearing",
-          "Fan Speed",
-          "Fan Noise @ 100%",
-          "Fan Lifespan",
-        ],
+        subname: ["Fan Size", "Fan Bearing", "Fan Speed", "Fan Noise @ 100%", "Fan Lifespan"],
         subdescription: [
           "135mm x 135mm x 25mm",
           "Ball Bearing",
@@ -10980,11 +11404,7 @@ const products = [
       {
         name: "OPERATION INFORMATION",
         description: [],
-        subname: [
-          "Operating Temperature",
-          "Protection",
-          "Safety/Environmental Certification",
-        ],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
         subdescription: [
           "~50°C",
           "SURGE 4K, ESD 15K, OVP, OPP, UVP, OTP, OCP, SCP, NLO, SIP",
@@ -11000,14 +11420,7 @@ const products = [
       {
         name: "DC OUTPUT",
         description: [],
-        subname: [
-          "Rail",
-          "Maximum Power",
-          " ",
-          " ",
-          " ",
-          "Total Continuous Power",
-        ],
+        subname: ["Rail", "Maximum Power", " ", " ", " ", "Total Continuous Power"],
         subdescription: [
           "+5V, +3.3V, +12V, -12V, +5Vsb",
           "25A, 25A, 137.5A, 0.3A, 3A",
@@ -11021,10 +11434,10 @@ const products = [
   {
     productId: "WARP-SHIELD-H",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "WARP-SHIELD-H"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "WARP-SHIELD-H"
+    ),
     name: "Warp Shield H",
     filters: filters[0].accessoriesFilters,
     brochure:
@@ -11105,10 +11518,10 @@ const products = [
   {
     productId: "WARP-SHIELD-S",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "WARP-SHIELD-S"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "WARP-SHIELD-S"
+    ),
     name: "Warp Shield S",
     filters: filters[0].accessoriesFilters,
     brochure:
@@ -11188,10 +11601,10 @@ const products = [
   {
     productId: "MN-GL4",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "MN-GL4"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "MN-GL4"
+    ),
     name: "MN-GL4",
     filters: filters[0].accessoriesFilters,
     brochure:
@@ -11299,10 +11712,10 @@ const products = [
   {
     productId: "MN-GL20",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "MN-GL20"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "MN-GL20"
+    ),
     name: "MN-GL20",
     filters: filters[0].accessoriesFilters,
     brochure:
@@ -11409,12 +11822,121 @@ const products = [
   },
   //SPEAKERS
   {
+    productId: "UB2000",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "UB2000"
+    ),
+    name: "UB2000",
+    filters: filters[0].accessoriesFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171262/SPEAKER/UB2000/04_tmhfu8.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171261/SPEAKER/UB2000/03_xwynm4.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171261/SPEAKER/UB2000/02_esonj9.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171261/SPEAKER/UB2000/01_rqkipu.png",
+    ],
+    colorAvailability: [
+      {
+        color: "BLACK",
+        images: [
+          "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171262/SPEAKER/UB2000/04_tmhfu8.png",
+        ],
+      },
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["UB2000"],
+      },
+      {
+        name: "COLOR",
+        description: ["BLACK"],
+      },
+      {
+        name: "SIZE",
+        description: ["44cm(W)x6.5cm(D)x4.2cm(H)"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["400g"],
+      },
+      {
+        name: "BLUETOOTH TYPE",
+        description: ["3W x2"],
+      },
+      {
+        name: "MUSIC PLAYTIME",
+        description: ["4-6 hrs"],
+      },
+      {
+        name: "BATTERY",
+        description: ["18650 Li-ion Cell(2200mAh)"],
+      },
+      {
+        name: "OUTPUT POWER",
+        description: ["3W x2"],
+      },
+      {
+        name: "DRIVER UNIT",
+        description: ["40mm x2"],
+      },
+      {
+        name: "FREQUENCY RESPONSE",
+        description: ["120Hz-180KHz"],
+      },
+      {
+        name: "SEPARATION",
+        description: ["≥80Db@1Khz"],
+      },
+      {
+        name: "POWER CABLE LENGTH",
+        description: ["140cm"],
+      },
+      {
+        name: "AUX CABLE LENGTH",
+        description: ["140cm"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year"],
+      },
+      {
+        name: "KC CERTIFICATION",
+        description: ["R-R-HMM-UB2000"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
     productId: "ROUND-STUDIO-BT-1000",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "ROUND-STUDIO-BT-1000"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "ROUND-STUDIO-BT-1000"
+    ),
     name: "Round Studio BT-1000",
     filters: filters[0].accessoriesFilters,
     brochure:
@@ -11570,10 +12092,10 @@ const products = [
   {
     productId: "ROUND-STUDIO-UB1000",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "ROUND-STUDIO-UB1000"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "ROUND-STUDIO-UB1000"
+    ),
     name: "Round Studio UB-1000",
     filters: filters[0].accessoriesFilters,
     brochure:
@@ -11698,10 +12220,10 @@ const products = [
   {
     productId: "MANIC-GAMING-FIELD-P1",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "MANIC-GAMING-FIELD-P1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "MANIC-GAMING-FIELD-P1"
+    ),
     name: "Manic Gaming Field P1",
     filters: filters[0].accessoriesFilters,
     brochure:
@@ -11767,9 +12289,7 @@ const products = [
       },
       {
         name: "PACKAGE",
-        description: [
-          "Box/Bulk(bulk products are shipped in plastic packaging without box)",
-        ],
+        description: ["Box/Bulk(bulk products are shipped in plastic packaging without box)"],
       },
       {
         name: "COMPANY NAME",
@@ -11785,10 +12305,10 @@ const products = [
   {
     productId: "MPAMPAM",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "MPAMPAM"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "MPAMPAM"
+    ),
     name: "Manic PAMPAM",
     filters: filters[0].accessoriesFilters,
     brochure:
@@ -11869,10 +12389,10 @@ const products = [
   {
     productId: "WGX4",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "WGX4"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "WGX4"
+    ),
     name: "Warp GX4 M.2 NMVe",
     filters: filters[0].accessoriesFilters,
     brochure: "",
@@ -11992,14 +12512,138 @@ const products = [
       },
     ],
   },
+  {
+    productId: "WARP-C1",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "WARP-C1"
+    ),
+    name: "WARP C1",
+    filters: filters[0].accessoriesFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172100/Accessories/WARP%20C1/3_gi0nmh.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172099/Accessories/WARP%20C1/2_pz4zud.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172098/Accessories/WARP%20C1/1_hxb7ea.jpg",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WARP C1"],
+      },
+      {
+        name: "SIZE",
+        description: ["71.5x22x3mm"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["12g"],
+      },
+      {
+        name: "Material",
+        description: ["Aluminum"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "WARP-C2",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "WARP-C2"
+    ),
+    name: "WARP C2",
+    filters: filters[0].accessoriesFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172102/Accessories/WARP%20C2/3_yr1r0k.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172101/Accessories/WARP%20C2/2_aifbjn.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172100/Accessories/WARP%20C2/1_nhbuai.jpg",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WARP C2"],
+      },
+      {
+        name: "SIZE",
+        description: ["72.5x22x10mm"],
+      },
+      {
+        name: "Material",
+        description: ["Aluminum"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
   //LED CONTROLLER
   {
     productId: "MC-LC1",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "MC-LC1"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "MC-LC1"
+    ),
     name: "MC-LC1",
     filters: filters[0].accessoriesFilters,
     brochure: "",
@@ -12073,10 +12717,10 @@ const products = [
   {
     productId: "UV-M100",
     categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(
-      ":categoryId",
-      "CATEGORY_ACCESSORIES"
-    ).replace(":productId", "UV-M100"),
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "UV-M100"
+    ),
     name: "UV-M100",
     filters: filters[0].accessoriesFilters,
     brochure: "",
@@ -12157,6 +12801,270 @@ const products = [
       },
       {
         name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+
+  /** May 20, 2024 */
+  {
+    productId: "WIZMAX-H300",
+    categoryId: "CATEGORY_HEADSET",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "WIZMAX-H300"
+    ),
+    name: "WIZMAX H300",
+    filters: filters[0].headsetFilters,
+    brochure: "",
+    manual: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171257/HEADSET/WIZMAX%20H300/03_yrp21v.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171257/HEADSET/WIZMAX%20H300/01_vzilml.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171257/HEADSET/WIZMAX%20H300/02_zvqrry.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171257/HEADSET/WIZMAX%20H300/04_sacijp.jpg",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+    ],
+
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WIZMAX-H300"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["270±5g"],
+      },
+      {
+        name: "WIRED/WIRELESS",
+        description: ["Wired"],
+      },
+      {
+        name: "INPUT TERMINAL",
+        description: ["USB"],
+      },
+      {
+        name: "MICROPHONE ",
+        description: ["Hardware MIC Noise Canceling"],
+      },
+      {
+        name: "Driver Unit",
+        description: ["50mm"],
+      },
+      {
+        name: "CABLE LENGTH",
+        description: ["2.2m"],
+      },
+      {
+        name: "SURROUND SOUND ",
+        description: ["Virtual 7.1 Ch"],
+      },
+      {
+        name: "LED",
+        description: ["White"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: ["PC/LAPTOP/Playstation 4"],
+      },
+      {
+        name: "PICK UP PATTERN",
+        description: ["Uni-directional"],
+      },
+      {
+        name: "SENSITIVITY",
+        description: ["101 ± 3dB(1kHz, 1mW)"],
+      },
+      {
+        name: "MIC SENSITIVITY",
+        description: ["(-)38 ± 3dB"],
+      },
+      {
+        name: "FREQUENCY RANGE",
+        description: ["20-20,000HZ"],
+      },
+      {
+        name: "MAXIMUM OUTPUT",
+        description: ["50mW"],
+      },
+      {
+        name: "IMPEDANCE",
+        description: ["32Ω ± 15%"],
+      },
+      {
+        name: "PRODUCT TYPE ",
+        description: ["Stereo Headset"],
+      },
+      {
+        name: "CONTENTS",
+        description: ["H300 Headset and Product Manual"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Label on the Back"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-H300
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE ",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "WIZMAX-H561",
+    categoryId: "CATEGORY_HEADSET",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_HEADSET").replace(
+      ":productId",
+      "WIZMAX-H561"
+    ),
+    name: "WIZMAX-H561",
+    filters: filters[0].headsetFilters,
+    brochure: "",
+    manual: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171258/HEADSET/WIZMAX%20H561/02_zw09rr.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171258/HEADSET/WIZMAX%20H561/03_l3vsem.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171258/HEADSET/WIZMAX%20H561/01_sod4e5.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716171257/HEADSET/WIZMAX%20H561/04_vh1rlt.jpg",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+    ],
+
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WIZMAX H561"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["260±5g"],
+      },
+      {
+        name: "WIRED/WIRELESS",
+        description: ["Wired"],
+      },
+      {
+        name: "INPUT TERMINAL",
+        description: ["USB"],
+      },
+      {
+        name: "MICROPHONE ",
+        description: ["Hardware MIC Noise Canceling"],
+      },
+      {
+        name: "Driver Unit",
+        description: ["50mm"],
+      },
+      {
+        name: "CABLE LENGTH",
+        description: ["2.2m"],
+      },
+      {
+        name: "SURROUND SOUND ",
+        description: ["Virtual 7.1 Ch"],
+      },
+      {
+        name: "LED",
+        description: ["RGB"],
+      },
+      {
+        name: "COMPATIBILITY",
+        description: ["PC"],
+      },
+      {
+        name: "SENSITIVITY",
+        description: ["112 ± 3dB(1kHz, 1mW)"],
+      },
+      {
+        name: "MIC SENSITIVITY",
+        description: ["(-)42 ± 3dB"],
+      },
+      {
+        name: "FREQUENCY RANGE",
+        description: ["20-20,000HZ"],
+      },
+      {
+        name: "MAXIMUM OUTPUT",
+        description: ["30mW"],
+      },
+      {
+        name: "IMPEDANCE",
+        description: ["32Ω ± 15%"],
+      },
+      {
+        name: "PRODUCT TYPE ",
+        description: ["Stereo Headset"],
+      },
+      {
+        name: "CONTENTS",
+        description: ["H561 Headset and Product Manual"],
+      },
+      {
+        name: "PRODUCTION DATE",
+        description: ["Label on the Back"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["1 year warranty under limited conditions apply"],
+      },
+      {
+        name: "KC CERTIFICATION ",
+        description: [
+          <React.Fragment>
+            <span>
+              <img src="/images/logos/kc-logo.png" alt="kc-logo" /> &nbsp; R-R-HMM-H561
+            </span>
+          </React.Fragment>,
+        ],
+      },
+      {
+        name: "COMPANY NAME ",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE ",
         description: ["wizmaxglobal.com"],
       },
     ],
