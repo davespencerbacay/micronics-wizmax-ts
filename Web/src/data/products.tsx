@@ -5792,6 +5792,673 @@ const products = [
     ],
   },
   {
+    productId: "ML-360-WIDE",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-360-WIDE"
+    ),
+    name: "ML-360 WIDE",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716755641/230511_245ATX.40-min_wucivg.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716755643/230511_245ATX.24-min_ubldzf.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716755640/230511_245ATX.27-min_ja2qzf.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716755640/wh-min_ona8o9.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "ATX/M-ATX",
+      },
+      {
+        specs: "Standard ATX Power Supply",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-360 WIDE"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["500mm(H)x240mm(W)x490mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["440mm(MAX)"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["180mm(MAX)"],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Top"],
+        subdescription: ["420mm(Optional)", "240/280/360mm(Optional)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Top", "Rear"],
+        subdescription: [
+          "140mm aRGB x3",
+          "120mm aRGB x 3 / 140mm aRGB x2(Optional)",
+          "140mm aRGB x1",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "ML-420-View-BTF",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-420-View-BTF"
+    ),
+    name: "ML-420 View BTF",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175693/PC%20Case/ML-420%20View%20BTF/01_qokhih.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175697/PC%20Case/ML-420%20View%20BTF/03_mb2xwh.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175693/PC%20Case/ML-420%20View%20BTF/01_qokhih.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175667/PC%20Case/ML-420%20View%20BTF/04_pydylv.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "ATX/M-ATX/ITX/E-ATX",
+      },
+      {
+        specs: "Standard ATX",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-420 View BTF"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX/ITX/E-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["522mm(H)x246mm(W)x522mm(D)"],
+      },
+      // {
+      //   name: "I/O PANEL",
+      //   description: ["Power,LED Mode,Audio,USB 3.0 x2,USB 3.1 Type C"],
+      // },
+      // {
+      //   name: "COLOR",
+      //   description: ["White"],
+      // },
+      {
+        name: "VGA LENGTH",
+        description: ["455mm(MAX)"],
+      },
+      // {
+      //   name: "PCI SLOTS",
+      //   description: ["8+3 (Vertical)"],
+      // },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5in x3", "2.5in x7"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["180mm(MAX)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top", "Bottom", "Side", "Power Duct"],
+        subdescription: [
+          "140mm aRGB x3",
+          "140mm aRGB x1",
+          "120mm / 140mm x3(Optional)",
+          "120mm/140mm x1(Optional)",
+          "140mm aRGB x3(Optional)",
+          "120mm x2(Optional)",
+        ],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Top", "Side"],
+        subdescription: [
+          "240/280/360/420mm(Optional)",
+          "240/280/360/420mm(Optional)",
+          "240/280/360/420mm(Optional)",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "MASTER-M60-MOON",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "MASTER-M60-MOON"
+    ),
+    name: "MASTER M60-MOON",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716755385/KakaoTalk_20240312_150800875_nmw6az.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716755384/KakaoTalk_20240312_141503481_vvtmjo.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "ATX/M-ATX/ITX",
+      },
+      {
+        specs: "Standard ATX",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["MASTER M60-MOON"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX/ITX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["461mm(H)x215mm(W)x390mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["410mm(MAX)"],
+      },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5in x3", "2.5in x7"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["160mm(MAX)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top"],
+        subdescription: ["120mm aRGB x3", "120mm aRGB x1", "120mm / 140mm x2(Optional)"],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Top", "Side"],
+        subdescription: ["240mm(Optional)", "360mm(Optional)"],
+      },
+    ],
+  },
+  {
+    productId: "ML-360-MINI",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-360-MINI"
+    ),
+    name: "ML-360 Mini",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175801/PC%20Case/ML-360%20MINI%20VIEW/KakaoTalk_20240418_103809312_01_sprzws.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "BLACK, WHITE",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-360 Mini"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["M-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["460mm(H)x210mm(W)x450mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["390mm(MAX)"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["170mm(MAX)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top"],
+        subdescription: ["120mm aRGB x3", "140mm aRGB x1", "120mm aRGB x 3(Optional)"],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Top", "Front"],
+        subdescription: ["240/280/360mm(Optional)", "360mm(Optional)"],
+      },
+    ],
+  },
+  {
+    productId: "ANGEL-MINI",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ANGEL-MINI"
+    ),
+    name: "ANGEL MINI",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757066/PC%20Case/angel/1_n7rugk.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757068/PC%20Case/angel/2_ffu1cs.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757070/PC%20Case/angel/3_gtszvm.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757072/PC%20Case/angel/4_wrimlw.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ANGEL MINI"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["M-ATX/ITX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["437mm(H)x212mm(W)x375mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["330mm(MAX)"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["165mm(MAX)"],
+      },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5 HDD·2.5", "2.5 SSD x2"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top", "Power Duct"],
+        subdescription: [
+          "120mm LED x3",
+          "120mm LED x1",
+          "120mm x2 / 140mm x2(Optional)",
+          "120mm x2(Optional)",
+        ],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Rear", "Front", "Side"],
+        subdescription: ["120mm(Optional)", "240/280/360mm(Optional)", "240/280mm(Optional)"],
+      },
+    ],
+  },
+  {
+    productId: "MANIC-GM4-WING",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "MANIC-GM4-WING"
+    ),
+    name: "MANIC GM4-WING",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757268/MANIC%20GM4-WING-20240526T205926Z-001/MANIC%20GM4-WING/PNG/1_r2tzel.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757288/MANIC%20GM4-WING-20240526T205926Z-001/MANIC%20GM4-WING/PNG/2_yhpvs9.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757270/MANIC%20GM4-WING-20240526T205926Z-001/MANIC%20GM4-WING/PNG/3_bhsxz1.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757289/MANIC%20GM4-WING-20240526T205926Z-001/MANIC%20GM4-WING/PNG/4_nazqxb.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["MANIC GM4-WING"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX/ITX/E-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["490mm(H)x225mm(W)x465mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["400mm(MAX)"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["175mm(MAX)"],
+      },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5 HDD·2.5", "2.5 SSD x2"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top", "Power Duct", "Inside(MB)"],
+        subdescription: [
+          "120mm aRGB x3",
+          "120mm aRGB x1",
+          "120mm x3 / 140mm x2(Optional)",
+          "120mm x2(Optional)",
+          "120mm x2(Optional)",
+        ],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Top", "Front"],
+        subdescription: ["240/280/360mm(Optional)", "240/280/360mm(Optional)"],
+      },
+    ],
+  },
+  {
+    productId: "HOLIC",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "HOLIC"
+    ),
+    name: "HOLIC",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757293/HOLIC-20240526T205929Z-001/HOLIC/Black/PNG/0_oqmetz.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757299/HOLIC-20240526T205929Z-001/HOLIC/Black/PNG/5_%C3%AD_%C3%B3_ndtyju.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757297/HOLIC-20240526T205929Z-001/HOLIC/Black/PNG/4_vhjnt9.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757302/HOLIC-20240526T205929Z-001/HOLIC/Gold/3_jbnurx.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757296/HOLIC-20240526T205929Z-001/HOLIC/Black/PNG/3_j5xsyz.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757301/HOLIC-20240526T205929Z-001/HOLIC/Gold/2_fnkhgl.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757295/HOLIC-20240526T205929Z-001/HOLIC/Black/PNG/2_zu9wtv.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757294/HOLIC-20240526T205929Z-001/HOLIC/Black/PNG/1_rvlwbe.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["HOLIC"],
+      },
+      {
+        name: "Colors",
+        description: ["GOLD, BLACK"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX/ITX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["420mm(H)x180mm(W)x390mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["310mm(MAX)"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["160mm(MAX)"],
+      },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5 HDD x1", "2.5 SSD x3"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Side", "Rear"],
+        subdescription: ["120mm x2", "120mm x1(Optional)", "120mm x1"],
+      },
+    ],
+  },
+  {
+    productId: "GH5-MIDAS",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "GH5-MIDAS"
+    ),
+    name: "GH5-MIDAS",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757325/GH5-MIDAS-20240526T205933Z-001/GH5-MIDAS/White/Png/1_f0rmol.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757313/GH5-MIDAS-20240526T205933Z-001/GH5-MIDAS/Black/PNG/00_bybibr.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757326/GH5-MIDAS-20240526T205933Z-001/GH5-MIDAS/White/Png/2_xlfkjr.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757339/GH5-MIDAS-20240526T205933Z-001/GH5-MIDAS/Black/PNG/01_rcobrp.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757329/GH5-MIDAS-20240526T205933Z-001/GH5-MIDAS/White/Png/4_qr6x9c.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757338/GH5-MIDAS-20240526T205933Z-001/GH5-MIDAS/Black/PNG/02-1_ag4719.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757327/GH5-MIDAS-20240526T205933Z-001/GH5-MIDAS/White/Png/3_fulpzz.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716757485/GH5-MIDAS-20240526T205933Z-001/GH5-MIDAS/Black/PNG/03_fc8ww0.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["GH5-MIDAS"],
+      },
+      {
+        name: "Colors",
+        description: ["BLACK, WHITE"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX/ITX/E-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["491mm(H)x230mm(W)x468mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["400mm(MAX)"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["175mm(MAX)"],
+      },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5 HDD·2.5", "2.5 SSD x2"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Top", "Rear", "MB Pannel/ Power Duct"],
+        subdescription: [
+          "140mm LED x3",
+          "120mm x3 / 140mm x2(Optional)",
+          "140mm LED x1",
+          "120mm x2(Optional)",
+        ],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Top", "Rear", "MB Pannel"],
+        subdescription: [
+          "240/280/360mm(Optional)",
+          "240/280/360mm(Optional)",
+          "120/140mm(Optional)",
+          "120/240mm(Optional)",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "ML-360",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-360"
+    ),
+    name: "ML-360",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716756377/PC%20Case/bk_fukwvw.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716756382/PC%20Case/wh_tbl6zw.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        color: "BLACK, WHITE",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-360"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["495mm(H)x210mm(W)x450mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["440mm(MAX)"],
+      },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5in x3", "2.5in x7"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["170mm(MAX)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top"],
+        subdescription: ["120mm aRGB x3", "120mm aRGB x 3(Optional)", "120mm aRGB x 3(Optional)"],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Top", "Side"],
+        subdescription: ["240/280/360mm(Optional)", "360mm(Optional)"],
+      },
+    ],
+  },
+  {
+    productId: "ML-360 WIDE-VIEW",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-360 WIDE-VIEW"
+    ),
+    name: "ML-360 WIDE VIEW",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175772/PC%20Case/ML-360%20WIDE%20VIEW/KakaoTalk_20240418_103805340_02_yi9rqr.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-360 WIDE VIEW"],
+      },
+    ],
+  },
+  {
     productId: "EH1-MONDRIAN",
     categoryId: "CATEGORY_PCCASE",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
