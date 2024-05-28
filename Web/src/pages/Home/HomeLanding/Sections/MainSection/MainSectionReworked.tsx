@@ -10,12 +10,12 @@ const MainSectionReworked: React.FC = () => {
     <div className="main-section-container">
       <div className="main-section-content">
         <h2>ML-420 BTF</h2>
-        <p>ML-420 VIEW BTF registration is completed </p>
+        <p>Perfectly created beauty</p>
         <Button onClick={() => navigate("products/CATEGORY_PCCASE/ML-420-BTF")}>Learn More</Button>
         <div className="image-holder">
           <img
-            src="https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175775/PC%20Case/ML-420%20View%20BTF/PNG/01_vws19v.png"
-            alt="https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175775/PC%20Case/ML-420%20View%20BTF/PNG/01_vws19v.png"
+            src="https://res.cloudinary.com/dv6kvjoed/image/upload/v1716176043/PC%20Case/ML-420%20BTF/W%2BB/2000px/_2_ykzg6b.jpg"
+            alt="https://res.cloudinary.com/dv6kvjoed/image/upload/v1716176043/PC%20Case/ML-420%20BTF/W%2BB/2000px/_2_ykzg6b.jpg"
             style={{ width: "40%" }}
           />
         </div>

@@ -5860,100 +5860,100 @@ const products = [
       },
     ],
   },
-  {
-    productId: "ML-420-View-BTF",
-    categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
-      ":productId",
-      "ML-420-View-BTF"
-    ),
-    name: "ML-420 View BTF",
-    filters: filters[0].pccaseFilters,
-    isNewRelease: "New Release",
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175693/PC%20Case/ML-420%20View%20BTF/01_qokhih.jpg",
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175697/PC%20Case/ML-420%20View%20BTF/03_mb2xwh.jpg",
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175693/PC%20Case/ML-420%20View%20BTF/01_qokhih.jpg",
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175667/PC%20Case/ML-420%20View%20BTF/04_pydylv.jpg",
-    ],
-    countryAvailability: [],
-    featuredSpecs: [
-      {
-        specs: "ATX/M-ATX/ITX/E-ATX",
-      },
-      {
-        specs: "Standard ATX",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["ML-420 View BTF"],
-      },
-      {
-        name: "Mainboard Form Factor",
-        description: ["ATX/M-ATX/ITX/E-ATX"],
-      },
-      {
-        name: "PSU Form Factor",
-        description: ["Standard ATX"],
-      },
-      {
-        name: "Dimension",
-        description: ["522mm(H)x246mm(W)x522mm(D)"],
-      },
-      // {
-      //   name: "I/O PANEL",
-      //   description: ["Power,LED Mode,Audio,USB 3.0 x2,USB 3.1 Type C"],
-      // },
-      // {
-      //   name: "COLOR",
-      //   description: ["White"],
-      // },
-      {
-        name: "VGA LENGTH",
-        description: ["455mm(MAX)"],
-      },
-      // {
-      //   name: "PCI SLOTS",
-      //   description: ["8+3 (Vertical)"],
-      // },
-      {
-        name: "DRIVE BAY",
-        description: [""],
-        subname: ["HDD", "SSD"],
-        subdescription: ["3.5in x3", "2.5in x7"],
-      },
-      {
-        name: "CPU COOLER MOUNTING HEIGHT",
-        description: ["180mm(MAX)"],
-      },
-      {
-        name: "COOLER SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Rear", "Top", "Bottom", "Side", "Power Duct"],
-        subdescription: [
-          "140mm aRGB x3",
-          "140mm aRGB x1",
-          "120mm / 140mm x3(Optional)",
-          "120mm/140mm x1(Optional)",
-          "140mm aRGB x3(Optional)",
-          "120mm x2(Optional)",
-        ],
-      },
-      {
-        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Top", "Side"],
-        subdescription: [
-          "240/280/360/420mm(Optional)",
-          "240/280/360/420mm(Optional)",
-          "240/280/360/420mm(Optional)",
-        ],
-      },
-    ],
-  },
+  // {
+  //   productId: "ML-420-View-BTF",
+  //   categoryId: "CATEGORY_PCCASE",
+  //   path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+  //     ":productId",
+  //     "ML-420-View-BTF"
+  //   ),
+  //   name: "ML-420 View BTF",
+  //   filters: filters[0].pccaseFilters,
+  //   isNewRelease: "New Release",
+  //   brochure: "",
+  //   img: [
+  //     "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175693/PC%20Case/ML-420%20View%20BTF/01_qokhih.jpg",
+  //     "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175697/PC%20Case/ML-420%20View%20BTF/03_mb2xwh.jpg",
+  //     "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175693/PC%20Case/ML-420%20View%20BTF/01_qokhih.jpg",
+  //     "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175667/PC%20Case/ML-420%20View%20BTF/04_pydylv.jpg",
+  //   ],
+  //   countryAvailability: [],
+  //   featuredSpecs: [
+  //     {
+  //       specs: "ATX/M-ATX/ITX/E-ATX",
+  //     },
+  //     {
+  //       specs: "Standard ATX",
+  //     },
+  //   ],
+  //   table: [
+  //     {
+  //       name: "MODEL NAME",
+  //       description: ["ML-420 View BTF"],
+  //     },
+  //     {
+  //       name: "Mainboard Form Factor",
+  //       description: ["ATX/M-ATX/ITX/E-ATX"],
+  //     },
+  //     {
+  //       name: "PSU Form Factor",
+  //       description: ["Standard ATX"],
+  //     },
+  //     {
+  //       name: "Dimension",
+  //       description: ["522mm(H)x246mm(W)x522mm(D)"],
+  //     },
+  //     // {
+  //     //   name: "I/O PANEL",
+  //     //   description: ["Power,LED Mode,Audio,USB 3.0 x2,USB 3.1 Type C"],
+  //     // },
+  //     // {
+  //     //   name: "COLOR",
+  //     //   description: ["White"],
+  //     // },
+  //     {
+  //       name: "VGA LENGTH",
+  //       description: ["455mm(MAX)"],
+  //     },
+  //     // {
+  //     //   name: "PCI SLOTS",
+  //     //   description: ["8+3 (Vertical)"],
+  //     // },
+  //     {
+  //       name: "DRIVE BAY",
+  //       description: [""],
+  //       subname: ["HDD", "SSD"],
+  //       subdescription: ["3.5in x3", "2.5in x7"],
+  //     },
+  //     {
+  //       name: "CPU COOLER MOUNTING HEIGHT",
+  //       description: ["180mm(MAX)"],
+  //     },
+  //     {
+  //       name: "COOLER SPECIFICATIONS",
+  //       description: [""],
+  //       subname: ["Front", "Rear", "Top", "Bottom", "Side", "Power Duct"],
+  //       subdescription: [
+  //         "140mm aRGB x3",
+  //         "140mm aRGB x1",
+  //         "120mm / 140mm x3(Optional)",
+  //         "120mm/140mm x1(Optional)",
+  //         "140mm aRGB x3(Optional)",
+  //         "120mm x2(Optional)",
+  //       ],
+  //     },
+  //     {
+  //       name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+  //       description: [""],
+  //       subname: ["Front", "Top", "Side"],
+  //       subdescription: [
+  //         "240/280/360/420mm(Optional)",
+  //         "240/280/360/420mm(Optional)",
+  //         "240/280/360/420mm(Optional)",
+  //       ],
+  //     },
+  //   ],
+  // },
   {
     productId: "MASTER-M60-MOON",
     categoryId: "CATEGORY_PCCASE",
@@ -11033,7 +11033,7 @@ const products = [
       ":productId",
       "CLASSIC-II-FULCHANGE"
     ),
-    name: "CLASSIC II FULL CHANGE ATX 3.1 800W",
+    name: "CLASSIC II FULL CHANGE ATX 3.1",
     filters: filters[0].psuFilters,
     brochure: "",
     img: [
@@ -11073,7 +11073,7 @@ const products = [
     table: [
       {
         name: "MODEL NAME",
-        description: ["CLASSIC II FULL CHANGE ATX 3.1 800W"],
+        description: ["CLASSIC II FULL CHANGE ATX 3.1"],
       },
       {
         name: "80 PLUS EFFICIENCY",
@@ -11150,7 +11150,7 @@ const products = [
       ":productId",
       "CLASSIC-II-GOLD-FULL-MODULER"
     ),
-    name: "CLASSIC II GOLD Full Moduler ATX 3.1 1050W",
+    name: "CLASSIC II GOLD Full Moduler ATX 3.1",
     filters: filters[0].psuFilters,
     brochure: "",
     img: [
@@ -11176,7 +11176,7 @@ const products = [
     table: [
       {
         name: "MODEL NAME",
-        description: ["CLASSIC II GOLD Full Moduler ATX 3.1 1050W"],
+        description: ["CLASSIC II GOLD Full Moduler ATX 3.1"],
       },
       {
         name: "80 PLUS EFFICIENCY",
@@ -11246,6 +11246,107 @@ const products = [
           "+5V, +3.3V, +12V, -12V, +5Vsb",
           "22A, 22A, 87.5A, 0.3A, 3A",
           "120W, 1050W, 3.6W, 15W 1050W",
+        ],
+      },
+    ],
+  },
+
+  {
+    productId: "ASTRO-II-GD-FULL-MODULAR-ATX-3.1",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "ASTRO-II-GD-FULL-MODULAR-ATX-3.1"
+    ),
+    name: "ASTRO II GD FULL MODULAR ATX 3.1",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173507/PSU/ASTRO/ASTRO%20II%20GD%20Full%20Modular%20ATX%203.1%201200W/ASTRO_II_GD_G_1200W_ATX_3.1_vpngas.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173522/PSU/ASTRO/ASTRO%20II%20GD%20Full%20Modular%20ATX%203.1%201200W/2000px_iasrfd.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173525/PSU/ASTRO/ASTRO%20II%20GD%20Full%20Modular%20ATX%203.1%201200W/2000px_f3yefb.png",
+    ],
+    featuredSpecs: [
+      {
+        specs: "GOLD",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["CLASSIC II GOLD Full Moduler ATX 3.1"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["GOLD"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Cable Size/Type",
+          "Main 20+4 Pin",
+          "CPU 8PIN",
+          "CPU 4+4PIN",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+        ],
+        subdescription: [
+          "Full Modular",
+          "16AWG / Flat Cable",
+          "x1 (600mm)",
+          "x1 (700mm)",
+          "x1 (700mm)",
+          "x4 (700mm + 150mm)",
+          "x1 (700mm)",
+          "x8 (500mm + 150mm + 150mm + 1500mm)",
+          "x4 (500mm + 150mm + 150mm + 1500mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection"],
+        subdescription: ["~50°C", "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO"],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Frequency"],
+        subdescription: ["100~240V", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "22A, 22A, 100A, 0.3A, 3A",
+          "120W, 1200W, 3.6W, 15W 1200W",
         ],
       },
     ],
