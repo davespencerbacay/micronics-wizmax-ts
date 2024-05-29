@@ -11144,6 +11144,805 @@ const products = [
     ],
   },
   {
+    productId: "WIZMAX-SILVER-ATX-3.1-850W",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "WIZMAX-SILVER-ATX-3.1-850W"
+    ),
+    name: "WIZMAX SILVER ATX 3.1",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173457/PSU/WIZMAX/WIZMAX%20SILVER%20ATX%203.1/1_sqjnh7.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173463/PSU/WIZMAX/WIZMAX%20SILVER%20ATX%203.1/3_tvcgwd.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173472/PSU/WIZMAX/WIZMAX%20SILVER%20ATX%203.1/2_li9luq.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "SILVER",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WIZMAX SILVER ATX 3.1"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["SILVER"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Main 20+4 Pin",
+          "CPU 8 Pin",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+        ],
+        subdescription: [
+          "Fixed Cables",
+          "x1 (500mm)",
+          "x1 (600mm + 150mm)",
+          "x4 (500mm + 150mm)",
+          "x1 (650mm)",
+          "x6 (400mm + 150mm + 150mm + 150mm)",
+          "x3 (400mm + 150mm + 150mm + 150mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: ["~50°C", "OVP, UVP, OPP, SCP, OTP, SIP, NLO", "KC, ErP Lot 6, RoHS"],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Current", "Frequency"],
+        subdescription: ["200~240V", "6.3A", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "20A, 20A, 75.0A, 0.3A, 3A",
+          "120W, 900W, 3.6W, 15W 900W",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "COOLMAX-FOCUS-II-ETA-BRONZE-800W-PCIE-5.1",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "COOLMAX-FOCUS-II-ETA-BRONZE-800W-PCIE-5.1"
+    ),
+    name: "COOLMAX FOCUS II ETA BRONZE PCIE 5.1",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173471/PSU/COOLMAX/COOLMAX%20FOCUS%20II%20ETA%20BRONZE%20800W%20PCIe%205.1/04_800W_-%C3%B1_kyhb7k.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173477/PSU/COOLMAX/COOLMAX%20FOCUS%20II%20ETA%20BRONZE%20800W%20PCIe%205.1/01_800W_jn5eb5.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173505/PSU/COOLMAX/COOLMAX%20FOCUS%20II%20ETA%20BRONZE%20800W%20PCIe%205.1/02_gu8ugu.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173511/PSU/COOLMAX/COOLMAX%20FOCUS%20II%20ETA%20BRONZE%20800W%20PCIe%205.1/03_qc8xlq.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "BRONZE/STANDARD",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["COOLMAX FOCUS II ETA BRONZE PCIE 5.1"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["BRONZE/STANDARD"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Main 20+4 Pin",
+          "CPU 8 Pin",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+        ],
+        subdescription: [
+          "Fixed Cables",
+          "x1 (500mm)",
+          "x1 (600mm + 150mm)",
+          "x2 (500mm + 150mm)",
+          "x1 (650mm)",
+          "x5 (400mm + 150mm + 150mm + 150mm)",
+          "x3 (400mm + 150mm + 150mm + 150mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Frequency"],
+        subdescription: ["100~240V", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "20A, 20A, 62.5A, 0.3A, 3A",
+          "105W, 750W, 3.6W, 15W 800W",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "ASTRO-II-GD-FULL-MOUDULAR-1650W-ATX-3.1",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "ASTRO-II-GD-FULL-MOUDULAR-1650W-ATX-3.1"
+    ),
+    name: "ASTRO II GD FULL MOUDULAR ATX 3.1",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173462/PSU/ASTRO/ASTRO%20II%20GD%20Full%20Modular%201650W%20ATX%203.1/01_hvuywo.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173466/PSU/ASTRO/ASTRO%20II%20GD%20Full%20Modular%201650W%20ATX%203.1/02_j3zete.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173469/PSU/ASTRO/ASTRO%20II%20GD%20Full%20Modular%201650W%20ATX%203.1/03_s1fsas.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "GOLD",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ASTRO II GD FULL MOUDULAR ATX 3.1"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["GOLD"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Main 20+4 Pin",
+          "CPU 4+4Pin",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+          "FDD",
+        ],
+        subdescription: [
+          "Full Modular",
+          "x1 (600mm)",
+          "x2 (750mm)",
+          "x6 (600mm + 150mm)",
+          "x2 (600mm)",
+          "x12 (600mm + 150mm + 150mm + 150mm)",
+          "x6 (600mm + 150mm + 150mm)",
+          "x1 (100mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Frequency"],
+        subdescription: ["100~240V", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "25A, 25A, 137.5A, 0.3A, 3A",
+          "130W, 1650W, 3.6W, 15W 1650W",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "CASLON-M-SILVER-ATX-3.1-850W",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "CASLON-M-SILVER-ATX-3.1-850W"
+    ),
+    name: "CASLON M SILVER ATX 3.1",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173492/PSU/CASLON/CASLON%20M%20SILVER%20ATX%203.1/0_850W_ghdria.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173494/PSU/CASLON/CASLON%20M%20SILVER%20ATX%203.1/1_fh5y6c.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173480/PSU/CASLON/CASLON%20M%20SILVER%20ATX%203.1/750W_dpfxub.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "SILVER",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["CASLON M SILVER ATX 3.1"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["SILVER"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Main 20+4 Pin",
+          "CPU 8Pin",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+          "FDD",
+        ],
+        subdescription: [
+          "Semi Modular",
+          "x1 (600mm)",
+          "x1 (700mm + 150mm)",
+          "x2 (600mm)",
+          "x1 (700mm)",
+          "x8 (450mm + 150mm + 150mm + 150mm)",
+          "x4 (450mm + 150mm + 150mm)",
+          "x1 (450mm + 150mm + 150mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Frequency"],
+        subdescription: ["100~240V", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "22A, 22A, 70.8A, 0.3A, 3A",
+          "120W, 850W, 3.6W, 15W 1650W",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "WIZMAX-TITANIUM-1200W",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "WIZMAX-TITANIUM-1200W"
+    ),
+    name: "WIZMAX TITANIUM",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173520/PSU/WIZMAX/WIZMAX%20TITANIUM%20900%2C1050%2C1200W/WIZMAX_TITANIUM_n9fze8.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "TITANIUM",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WIZMAX TITANIUM"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["TITANIUM"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: ["Modularity"],
+        subdescription: ["Full Modular"],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Frequency"],
+        subdescription: ["100~240V", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "22A, 22A, 100.0A, 0.3A, 3A",
+          "120W, 1200W, 3.6W, 15W 1200W",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "WIZMAX-PLATINUM-2000W",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "WIZMAX-PLATINUM-2000W"
+    ),
+    name: "WIZMAX PLATINUM 2000W",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173522/PSU/WIZMAX/WIZMAX%20PLATINUM%20ATX%203.1%201200W/1200_1_u92a5o.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173515/PSU/WIZMAX/WIZMAX%20PLATINUM%20ATX%203.1%201200W/1200_2_tfpiyj.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173519/PSU/WIZMAX/WIZMAX%20PLATINUM%20ATX%203.1%201200W/1200_3_etgv2z.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "PLATINUM",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WIZMAX PLATINUM 2000W"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["PLATINUM"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Main 20+4 Pin",
+          "CPU 4+4Pin",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+          "FDD",
+        ],
+        subdescription: [
+          "Full Modular",
+          "x1 (650mm)",
+          "x3 (700mm)",
+          "x6 (700mm)",
+          "x2 (700mm)",
+          "x12 (500mm + 100mm +100mm + 100mm)",
+          "x4 (500mm + 100mm + 100mm + 100mm)",
+          "x1 (100mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Frequency"],
+        subdescription: ["100~240V", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "22A, 22A, 166.7A, 0.3A, 3A",
+          "120W, 2000W, 3.6W, 15W 2000W",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "WIZMAX-GOLD-FULL-MODULAR-ATX-3.1-1000W",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "WIZMAX-GOLD-FULL-MODULAR-ATX-3.1-1000W"
+    ),
+    name: "WIZMAX GOLD FULL MODULAR ATX 3.1 1000W",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173495/PSU/WIZMAX/WIZMAX%20GOLD%20ATX%203.1/01_sqqdr6.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173496/PSU/WIZMAX/WIZMAX%20GOLD%20ATX%203.1/03_kk5wa7.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173513/PSU/WIZMAX/WIZMAX%20GOLD%20ATX%203.1/02_f1aqx5.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "GOLD",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WIZMAX GOLD FULL MODULAR ATX 3.1 1000W"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["GOLD"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Main 20+4 Pin",
+          "CPU 4+4Pin",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+          "FDD",
+        ],
+        subdescription: [
+          "Full Modular",
+          "x1 (650mm)",
+          "x2 (700mm)",
+          "x3 (700mm)",
+          "x2 (700mm)",
+          "x12 (500mm + 100mm +100mm + 100mm)",
+          "x4 (500mm + 100mm + 100mm + 100mm)",
+          "x1 (100mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Frequency"],
+        subdescription: ["100~240V", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "22A, 22A, 83.3A, 0.3A, 3A",
+          "120W, 1000W, 3.6W, 15W 1000W",
+        ],
+      },
+    ],
+  },
+  {
+    productId: "CASLON-M-GOLD-FM-ATX-3.1-1050W",
+    categoryId: "CATEGORY_PSU",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
+      ":productId",
+      "CASLON-M-GOLD-FM-ATX-3.1-1050W"
+    ),
+    name: "CASLON M GOLD FM ATX 3.1",
+    filters: filters[0].psuFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173492/PSU/CASLON/CASLON%20M%20SILVER%20ATX%203.1/0_850W_ghdria.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173494/PSU/CASLON/CASLON%20M%20SILVER%20ATX%203.1/1_fh5y6c.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716173480/PSU/CASLON/CASLON%20M%20SILVER%20ATX%203.1/750W_dpfxub.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "GOLD",
+      },
+      {
+        specs: "ATX12V",
+      },
+      {
+        specs: "150mm(W) x 140mm(D) X 86mm(H)",
+      },
+      {
+        specs: "99% Active PFC",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["CASLON M GOLD FM ATX 3.1"],
+      },
+      {
+        name: "80 PLUS EFFICIENCY",
+        description: ["GOLD"],
+      },
+      {
+        name: "FORM FACTOR",
+        description: ["ATX12V"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["150mm(W) x 140mm(D) X 86mm(H)"],
+      },
+      {
+        name: "PFC",
+        description: ["99% Active PFC"],
+      },
+      {
+        name: "CABLE INFORMATION",
+        description: [],
+        subname: [
+          "Modularity",
+          "Cable Size/Type",
+          "Main 20+4 Pin",
+          "CPU 8Pin",
+          "CPU 4+4Pin",
+          "PCI-E 6+2 Pin",
+          "12V-2x6 12+4 PIN",
+          "SATA",
+          "IDE",
+        ],
+        subdescription: [
+          "Full Modular",
+          "16AWG / Flat Cable",
+          "x1 (600mm)",
+          "x1 (700mm)",
+          "x1 (700mm)",
+          "x3 (700mm + 150mm)",
+          "x1 (700mm)",
+          "x10 (500mm + 150mm + 150mm + 1500mm)",
+          "x4 (500mm + 150mm + 150mm)",
+        ],
+      },
+      {
+        name: "OPERATION INFORMATION",
+        description: [],
+        subname: ["Operating Temperature", "Protection", "Safety/Environmental Certification"],
+        subdescription: [
+          "~50°C",
+          "SURGE 4K, ESD 15K, OVP, UVP, OPP, SCP, OTP, SIP, NLO",
+          "KC, ErP Lot 6, RoHS",
+        ],
+      },
+      {
+        name: "AC INPUT",
+        description: [""],
+        subname: ["Voltage", "Current", "Frequency"],
+        subdescription: ["100~240V", "8A", "50~60Hz"],
+      },
+      {
+        name: "DC OUTPUT",
+        description: [],
+        subname: ["Rail", "Maximum Power", "Total Continuous Power"],
+        subdescription: [
+          "+5V, +3.3V, +12V, -12V, +5Vsb",
+          "22A, 22A, 87.5A, 0.3A, 3A",
+          "120W, 1050W, 3.6W, 15W 1050W",
+        ],
+      },
+    ],
+  },
+  {
     productId: "CLASSIC-II-GOLD-FULL-MODULER",
     categoryId: "CATEGORY_PSU",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PSU").replace(
