@@ -5860,6 +5860,65 @@ const products = [
       },
     ],
   },
+  {
+    productId: "ML-360-MINI",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-360-MINI"
+    ),
+    name: "ML-360 Mini",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175801/PC%20Case/ML-360%20MINI%20VIEW/KakaoTalk_20240418_103809312_01_sprzws.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        specs: "BLACK, WHITE",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-360 Mini"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["M-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["460mm(H)x210mm(W)x450mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["390mm(MAX)"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["170mm(MAX)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top"],
+        subdescription: ["120mm aRGB x3", "140mm aRGB x1", "120mm aRGB x 3(Optional)"],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Top", "Front"],
+        subdescription: ["240/280/360mm(Optional)", "360mm(Optional)"],
+      },
+    ],
+  },
   // {
   //   productId: "ML-420-View-BTF",
   //   categoryId: "CATEGORY_PCCASE",
@@ -5955,6 +6014,95 @@ const products = [
   //   ],
   // },
   {
+    productId: "ML-360 WIDE-VIEW",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-360 WIDE-VIEW"
+    ),
+    name: "ML-360 WIDE VIEW",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175772/PC%20Case/ML-360%20WIDE%20VIEW/KakaoTalk_20240418_103805340_02_yi9rqr.jpg",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-360 WIDE VIEW"],
+      },
+    ],
+  },
+  {
+    productId: "ML-360",
+    categoryId: "CATEGORY_PCCASE",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
+      ":productId",
+      "ML-360"
+    ),
+    name: "ML-360",
+    filters: filters[0].pccaseFilters,
+    isNewRelease: "New Release",
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716756377/PC%20Case/bk_fukwvw.png",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716756382/PC%20Case/wh_tbl6zw.png",
+    ],
+    countryAvailability: [],
+    featuredSpecs: [
+      {
+        color: "BLACK, WHITE",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ML-360"],
+      },
+      {
+        name: "Mainboard Form Factor",
+        description: ["ATX/M-ATX"],
+      },
+      {
+        name: "PSU Form Factor",
+        description: ["Standard ATX"],
+      },
+      {
+        name: "Dimension",
+        description: ["495mm(H)x210mm(W)x450mm(D)"],
+      },
+      {
+        name: "VGA LENGTH",
+        description: ["440mm(MAX)"],
+      },
+      {
+        name: "DRIVE BAY",
+        description: [""],
+        subname: ["HDD", "SSD"],
+        subdescription: ["3.5in x3", "2.5in x7"],
+      },
+      {
+        name: "CPU COOLER MOUNTING HEIGHT",
+        description: ["170mm(MAX)"],
+      },
+      {
+        name: "COOLER SPECIFICATIONS",
+        description: [""],
+        subname: ["Front", "Rear", "Top"],
+        subdescription: ["120mm aRGB x3", "120mm aRGB x 3(Optional)", "120mm aRGB x 3(Optional)"],
+      },
+      {
+        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
+        description: [""],
+        subname: ["Top", "Side"],
+        subdescription: ["240/280/360mm(Optional)", "360mm(Optional)"],
+      },
+    ],
+  },
+  {
     productId: "MASTER-M60-MOON",
     categoryId: "CATEGORY_PCCASE",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
@@ -6020,65 +6168,6 @@ const products = [
         description: [""],
         subname: ["Top", "Side"],
         subdescription: ["240mm(Optional)", "360mm(Optional)"],
-      },
-    ],
-  },
-  {
-    productId: "ML-360-MINI",
-    categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
-      ":productId",
-      "ML-360-MINI"
-    ),
-    name: "ML-360 Mini",
-    filters: filters[0].pccaseFilters,
-    isNewRelease: "New Release",
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175801/PC%20Case/ML-360%20MINI%20VIEW/KakaoTalk_20240418_103809312_01_sprzws.png",
-    ],
-    countryAvailability: [],
-    featuredSpecs: [
-      {
-        specs: "BLACK, WHITE",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["ML-360 Mini"],
-      },
-      {
-        name: "Mainboard Form Factor",
-        description: ["M-ATX"],
-      },
-      {
-        name: "PSU Form Factor",
-        description: ["Standard ATX"],
-      },
-      {
-        name: "Dimension",
-        description: ["460mm(H)x210mm(W)x450mm(D)"],
-      },
-      {
-        name: "VGA LENGTH",
-        description: ["390mm(MAX)"],
-      },
-      {
-        name: "CPU COOLER MOUNTING HEIGHT",
-        description: ["170mm(MAX)"],
-      },
-      {
-        name: "COOLER SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Rear", "Top"],
-        subdescription: ["120mm aRGB x3", "140mm aRGB x1", "120mm aRGB x 3(Optional)"],
-      },
-      {
-        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
-        description: [""],
-        subname: ["Top", "Front"],
-        subdescription: ["240/280/360mm(Optional)", "360mm(Optional)"],
       },
     ],
   },
@@ -6366,95 +6455,6 @@ const products = [
           "120/140mm(Optional)",
           "120/240mm(Optional)",
         ],
-      },
-    ],
-  },
-  {
-    productId: "ML-360",
-    categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
-      ":productId",
-      "ML-360"
-    ),
-    name: "ML-360",
-    filters: filters[0].pccaseFilters,
-    isNewRelease: "New Release",
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716756377/PC%20Case/bk_fukwvw.png",
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716756382/PC%20Case/wh_tbl6zw.png",
-    ],
-    countryAvailability: [],
-    featuredSpecs: [
-      {
-        color: "BLACK, WHITE",
-      },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["ML-360"],
-      },
-      {
-        name: "Mainboard Form Factor",
-        description: ["ATX/M-ATX"],
-      },
-      {
-        name: "PSU Form Factor",
-        description: ["Standard ATX"],
-      },
-      {
-        name: "Dimension",
-        description: ["495mm(H)x210mm(W)x450mm(D)"],
-      },
-      {
-        name: "VGA LENGTH",
-        description: ["440mm(MAX)"],
-      },
-      {
-        name: "DRIVE BAY",
-        description: [""],
-        subname: ["HDD", "SSD"],
-        subdescription: ["3.5in x3", "2.5in x7"],
-      },
-      {
-        name: "CPU COOLER MOUNTING HEIGHT",
-        description: ["170mm(MAX)"],
-      },
-      {
-        name: "COOLER SPECIFICATIONS",
-        description: [""],
-        subname: ["Front", "Rear", "Top"],
-        subdescription: ["120mm aRGB x3", "120mm aRGB x 3(Optional)", "120mm aRGB x 3(Optional)"],
-      },
-      {
-        name: "WATER COOLER COMPATIBLE SPECIFICATIONS",
-        description: [""],
-        subname: ["Top", "Side"],
-        subdescription: ["240/280/360mm(Optional)", "360mm(Optional)"],
-      },
-    ],
-  },
-  {
-    productId: "ML-360 WIDE-VIEW",
-    categoryId: "CATEGORY_PCCASE",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_PCCASE").replace(
-      ":productId",
-      "ML-360 WIDE-VIEW"
-    ),
-    name: "ML-360 WIDE VIEW",
-    filters: filters[0].pccaseFilters,
-    isNewRelease: "New Release",
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716175772/PC%20Case/ML-360%20WIDE%20VIEW/KakaoTalk_20240418_103805340_02_yi9rqr.jpg",
-    ],
-    countryAvailability: [],
-    featuredSpecs: [],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["ML-360 WIDE VIEW"],
       },
     ],
   },
@@ -9163,6 +9163,146 @@ const products = [
     ],
   },
   //COOLERS
+  {
+    productId: "ICEROCK-MA-600T-ARGB",
+    categoryId: "CATEGORY_FC",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_FC").replace(
+      ":productId",
+      "ICEROCK-MA-600T-ARGB"
+    ),
+    name: "ICEROCK MA-600T ARGB",
+    filters: filters[0].fanscoolersFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1717118986/ICEROCK%20MA-600T%20ARGB-20240531T012728Z-001/ICEROCK%20MA-600T%20ARGB/00_yxwewz.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1717118987/ICEROCK%20MA-600T%20ARGB-20240531T012728Z-001/ICEROCK%20MA-600T%20ARGB/03_B_rjp5bx.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1717118987/ICEROCK%20MA-600T%20ARGB-20240531T012728Z-001/ICEROCK%20MA-600T%20ARGB/02_W_yrogjs.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1717118988/ICEROCK%20MA-600T%20ARGB-20240531T012728Z-001/ICEROCK%20MA-600T%20ARGB/04_B_hyakvi.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1717118984/ICEROCK%20MA-600T%20ARGB-20240531T012728Z-001/ICEROCK%20MA-600T%20ARGB/01_B_v40x4m.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1717118984/ICEROCK%20MA-600T%20ARGB-20240531T012728Z-001/ICEROCK%20MA-600T%20ARGB/01_W_y7oyyl.jpg",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    featuredSpecs: [
+      {
+        specs: "130W TDP",
+      },
+      {
+        specs: "White / Black",
+      },
+      {
+        specs: "LGA 1700/1200/115X/1366/AM4/AM5",
+      },
+      {
+        specs: "140mm(W) x 120mm(D) x 154.5mm(H)",
+      },
+      {
+        specs: "LGA 1700/1200/115X/1366/AM4/AM5",
+      },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["ICEROCK MA-600T ARGB"],
+      },
+      {
+        name: "COLORS",
+        description: ["Black / White"],
+      },
+      {
+        name: "SOCKET COMPATIBILITY",
+        description: ["LGA 1700/1200/115X/1366/AM4/AM5"],
+      },
+      {
+        name: "DIMENSIONS",
+        description: ["140mm(W) x 120mm(D) x 154.5mm(H)"],
+      },
+      {
+        name: "NET WEIGHT",
+        description: ["1070g(±20g)"],
+      },
+      {
+        name: "HEAT PIPE SIZE / MATERIAL",
+        description: ["Ø6mm x 6 pipes / Copper"],
+      },
+      {
+        name: "FAN DIMENSIONS",
+        description: ["120mm x 120mm x 25mm"],
+      },
+      {
+        name: "FAN SPEED",
+        description: ["1,800RPM (±10%)"],
+      },
+      {
+        name: "FAN AIRFLOW",
+        description: ["75.81CFM"],
+      },
+      {
+        name: "STATIC PRESSURE",
+        description: ["1.98mm-H₂O"],
+      },
+      {
+        name: "BEARING TYPE",
+        description: ["Rifle Bearing"],
+      },
+      {
+        name: "SOUND LEVEL",
+        description: ["33.26db(A)"],
+      },
+      {
+        name: "FAN RATED VOLTAGE",
+        description: ["DC 12V"],
+      },
+      {
+        name: "FAN RATED CURRENT",
+        description: ["0.28A"],
+      },
+      {
+        name: "FIN MATERIAL",
+        description: ["Aluminum"],
+      },
+      {
+        name: "LED TYPE",
+        description: ["Fixed RGB"],
+      },
+      {
+        name: "TDP",
+        description: ["250W"],
+      },
+      {
+        name: "WARRANTY",
+        description: ["2 years"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
   {
     productId: "MA-400-FALCON",
     categoryId: "CATEGORY_FC",
@@ -12999,6 +13139,130 @@ const products = [
   },
   //ACCESSORIES
   {
+    productId: "WARP-C1",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "WARP-C1"
+    ),
+    name: "WARP C1",
+    filters: filters[0].accessoriesFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172100/Accessories/WARP%20C1/3_gi0nmh.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172099/Accessories/WARP%20C1/2_pz4zud.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172098/Accessories/WARP%20C1/1_hxb7ea.jpg",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WARP C1"],
+      },
+      {
+        name: "SIZE",
+        description: ["71.5x22x3mm"],
+      },
+      {
+        name: "WEIGHT",
+        description: ["12g"],
+      },
+      {
+        name: "Material",
+        description: ["Aluminum"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
+    productId: "WARP-C2",
+    categoryId: "CATEGORY_ACCESSORIES",
+    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
+      ":productId",
+      "WARP-C2"
+    ),
+    name: "WARP C2",
+    filters: filters[0].accessoriesFilters,
+    brochure: "",
+    img: [
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172102/Accessories/WARP%20C2/3_yr1r0k.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172101/Accessories/WARP%20C2/2_aifbjn.jpg",
+      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172100/Accessories/WARP%20C2/1_nhbuai.jpg",
+    ],
+    countryAvailability: [
+      {
+        abbreviation: "KR",
+        country: "Korea",
+      },
+      {
+        abbreviation: "PH",
+        country: "Philippines",
+      },
+      {
+        abbreviation: "US",
+        country: "United States",
+      },
+      // {
+      //   abbreviation: "EC",
+      //   country: "Ecuador",
+      // },
+      // {
+      //   abbreviation: "JP",
+      //   country: "Japan",
+      // },
+    ],
+    table: [
+      {
+        name: "MODEL NAME",
+        description: ["WARP C2"],
+      },
+      {
+        name: "SIZE",
+        description: ["72.5x22x10mm"],
+      },
+      {
+        name: "Material",
+        description: ["Aluminum"],
+      },
+      {
+        name: "COMPANY NAME",
+        description: ["Hanmi Micronics Co., Ltd."],
+      },
+      {
+        name: "CUSTOMER SERVICE",
+        description: ["wizmaxglobal.com"],
+      },
+    ],
+  },
+  {
     productId: "WARP-SHIELD-H",
     categoryId: "CATEGORY_ACCESSORIES",
     path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
@@ -14068,130 +14332,6 @@ const products = [
       {
         name: "KC CERFTICATION",
         description: ["R-R-HMM-WarpNV4D"],
-      },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "WARP-C1",
-    categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
-      ":productId",
-      "WARP-C1"
-    ),
-    name: "WARP C1",
-    filters: filters[0].accessoriesFilters,
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172100/Accessories/WARP%20C1/3_gi0nmh.jpg",
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172099/Accessories/WARP%20C1/2_pz4zud.jpg",
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172098/Accessories/WARP%20C1/1_hxb7ea.jpg",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      // {
-      //   abbreviation: "EC",
-      //   country: "Ecuador",
-      // },
-      // {
-      //   abbreviation: "JP",
-      //   country: "Japan",
-      // },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["WARP C1"],
-      },
-      {
-        name: "SIZE",
-        description: ["71.5x22x3mm"],
-      },
-      {
-        name: "WEIGHT",
-        description: ["12g"],
-      },
-      {
-        name: "Material",
-        description: ["Aluminum"],
-      },
-      {
-        name: "COMPANY NAME",
-        description: ["Hanmi Micronics Co., Ltd."],
-      },
-      {
-        name: "CUSTOMER SERVICE",
-        description: ["wizmaxglobal.com"],
-      },
-    ],
-  },
-  {
-    productId: "WARP-C2",
-    categoryId: "CATEGORY_ACCESSORIES",
-    path: ROUTE_PATH.PRODUCT_LANDING.replace(":categoryId", "CATEGORY_ACCESSORIES").replace(
-      ":productId",
-      "WARP-C2"
-    ),
-    name: "WARP C2",
-    filters: filters[0].accessoriesFilters,
-    brochure: "",
-    img: [
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172102/Accessories/WARP%20C2/3_yr1r0k.jpg",
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172101/Accessories/WARP%20C2/2_aifbjn.jpg",
-      "https://res.cloudinary.com/dv6kvjoed/image/upload/v1716172100/Accessories/WARP%20C2/1_nhbuai.jpg",
-    ],
-    countryAvailability: [
-      {
-        abbreviation: "KR",
-        country: "Korea",
-      },
-      {
-        abbreviation: "PH",
-        country: "Philippines",
-      },
-      {
-        abbreviation: "US",
-        country: "United States",
-      },
-      // {
-      //   abbreviation: "EC",
-      //   country: "Ecuador",
-      // },
-      // {
-      //   abbreviation: "JP",
-      //   country: "Japan",
-      // },
-    ],
-    table: [
-      {
-        name: "MODEL NAME",
-        description: ["WARP C2"],
-      },
-      {
-        name: "SIZE",
-        description: ["72.5x22x10mm"],
-      },
-      {
-        name: "Material",
-        description: ["Aluminum"],
       },
       {
         name: "COMPANY NAME",
